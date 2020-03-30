@@ -1,0 +1,5 @@
+<map id="QXmppSessionIq" name="QXmppSessionIq">
+<area shape="rect" id="node1" title="The QXmppSessionIq class represents an IQ used for session establishment as defined by RFC 3921." alt="" coords="5,155,129,181"/>
+<area shape="rect" id="node2" href="$classQXmppIq.html" title="The QXmppIq class is the base class for all IQs." alt="" coords="29,80,106,107"/>
+<area shape="rect" id="node3" href="$classQXmppStanza.html" title="The QXmppStanza class is the base class for all XMPP stanzas." alt="" coords="14,5,121,32"/>
+</map>

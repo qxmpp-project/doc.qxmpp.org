@@ -1,0 +1,5 @@
+<map id="QXmppCarbonManager" name="QXmppCarbonManager">
+<area shape="rect" id="node1" title="The QXmppCarbonManager class handles message carbons as described in XEP&#45;0280: Message Carbons." alt="" coords="5,155,164,181"/>
+<area shape="rect" id="node2" href="$classQXmppClientExtension.html" title="The QXmppClientExtension class is the base class for QXmppClient extensions." alt="" coords="5,80,164,107"/>
+<area shape="rect" id="node3" href="$classQXmppLoggable.html" title="The QXmppLoggable class represents a source of logging messages." alt="" coords="25,5,144,32"/>
+</map>

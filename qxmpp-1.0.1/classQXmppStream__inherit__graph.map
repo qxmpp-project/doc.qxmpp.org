@@ -1,0 +1,8 @@
+<map id="QXmppStream" name="QXmppStream">
+<area shape="rect" id="node1" title="The QXmppStream class is the base class for all XMPP streams." alt="" coords="297,80,405,107"/>
+<area shape="rect" id="node3" href="$classQXmppIncomingClient.html" title="Interface for password checkers." alt="" coords="5,155,159,181"/>
+<area shape="rect" id="node4" href="$classQXmppIncomingServer.html" title="The QXmppIncomingServer class represents an incoming XMPP stream from an XMPP server." alt="" coords="183,155,341,181"/>
+<area shape="rect" id="node5" href="$classQXmppOutgoingClient.html" title="The QXmppOutgoingClient class represents an outgoing XMPP stream to an XMPP server." alt="" coords="365,155,517,181"/>
+<area shape="rect" id="node6" href="$classQXmppOutgoingServer.html" title="The QXmppOutgoingServer class represents an outgoing XMPP stream to another XMPP server." alt="" coords="541,155,697,181"/>
+<area shape="rect" id="node2" href="$classQXmppLoggable.html" title="The QXmppLoggable class represents a source of logging messages." alt="" coords="292,5,411,32"/>
+</map>

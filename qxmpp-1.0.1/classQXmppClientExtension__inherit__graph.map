@@ -1,0 +1,18 @@
+<map id="QXmppClientExtension" name="QXmppClientExtension">
+<area shape="rect" id="node1" title="The QXmppClientExtension class is the base class for QXmppClient extensions." alt="" coords="172,335,331,361"/>
+<area shape="rect" id="node3" href="$classQXmppArchiveManager.html" title="The QXmppArchiveManager class makes it possible to access message archives as defined by XEP&#45;0136: Me..." alt="" coords="406,5,566,32"/>
+<area shape="rect" id="node4" href="$classQXmppBookmarkManager.html" title="The QXmppBookmarkManager class allows you to store and retrieve bookmarks as defined by XEP&#45;0048: Boo..." alt="" coords="399,56,573,83"/>
+<area shape="rect" id="node5" href="$classQXmppCallManager.html" title="The QXmppCallManager class provides support for making and receiving voice calls." alt="" coords="417,107,555,133"/>
+<area shape="rect" id="node6" href="$classQXmppCarbonManager.html" title="The QXmppCarbonManager class handles message carbons as described in XEP&#45;0280: Message Carbons." alt="" coords="407,157,565,184"/>
+<area shape="rect" id="node7" href="$classQXmppDiscoveryManager.html" title="The QXmppDiscoveryManager class makes it possible to discover information about other entities as def..." alt="" coords="399,208,573,235"/>
+<area shape="rect" id="node8" href="$classQXmppEntityTimeManager.html" title="The QXmppEntityTimeManager class provided the functionality to get the local time of an entity as def..." alt="" coords="397,259,575,285"/>
+<area shape="rect" id="node9" href="$classQXmppMamManager.html" title="The QXmppMamManager class makes it possible to access message archives as defined by XEP&#45;0313: Messag..." alt="" coords="413,309,559,336"/>
+<area shape="rect" id="node10" href="$classQXmppMessageReceiptManager.html" title="The QXmppMessageReceiptManager class makes it possible to send and receive message delivery receipts ..." alt="" coords="379,360,593,387"/>
+<area shape="rect" id="node11" href="$classQXmppMucManager.html" title="The QXmppMucManager class makes it possible to interact with multi&#45;user chat rooms as defined by XEP&#45;..." alt="" coords="415,411,557,437"/>
+<area shape="rect" id="node12" href="$classQXmppRosterManager.html" title="The QXmppRosterManager class provides access to a connected client&#39;s roster." alt="" coords="409,461,563,488"/>
+<area shape="rect" id="node13" href="$classQXmppRpcManager.html" title="The QXmppRpcManager class make it possible to invoke remote methods and to expose local interfaces fo..." alt="" coords="416,512,556,539"/>
+<area shape="rect" id="node14" href="$classQXmppTransferManager.html" title="The QXmppTransferManager class provides support for sending and receiving files." alt="" coords="404,563,568,589"/>
+<area shape="rect" id="node15" href="$classQXmppVCardManager.html" title="The QXmppVCardManager class gets/sets XMPP vCards. It is an implementation of XEP&#45;0054: vcard&#45;temp." alt="" coords="409,613,563,640"/>
+<area shape="rect" id="node16" href="$classQXmppVersionManager.html" title="The QXmppVersionManager class makes it possible to request for the software version of an entity as d..." alt="" coords="406,664,566,691"/>
+<area shape="rect" id="node2" href="$classQXmppLoggable.html" title="The QXmppLoggable class represents a source of logging messages." alt="" coords="5,335,124,361"/>
+</map>
