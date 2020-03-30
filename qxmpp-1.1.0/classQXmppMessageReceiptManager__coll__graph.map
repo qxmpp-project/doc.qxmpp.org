@@ -1,0 +1,5 @@
+<map id="QXmppMessageReceiptManager" name="QXmppMessageReceiptManager">
+<area shape="rect" id="node1" title="The QXmppMessageReceiptManager class makes it possible to send and receive message delivery receipts ..." alt="" coords="5,155,220,181"/>
+<area shape="rect" id="node2" href="$classQXmppClientExtension.html" title="The QXmppClientExtension class is the base class for QXmppClient extensions." alt="" coords="33,80,192,107"/>
+<area shape="rect" id="node3" href="$classQXmppLoggable.html" title="The QXmppLoggable class represents a source of logging messages." alt="" coords="53,5,172,32"/>
+</map>

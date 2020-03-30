@@ -1,0 +1,5 @@
+<map id="QXmppTransferManager" name="QXmppTransferManager">
+<area shape="rect" id="node1" title="The QXmppTransferManager class provides support for sending and receiving files." alt="" coords="5,155,169,181"/>
+<area shape="rect" id="node2" href="$classQXmppClientExtension.html" title="The QXmppClientExtension class is the base class for QXmppClient extensions." alt="" coords="8,80,167,107"/>
+<area shape="rect" id="node3" href="$classQXmppLoggable.html" title="The QXmppLoggable class represents a source of logging messages." alt="" coords="28,5,147,32"/>
+</map>
