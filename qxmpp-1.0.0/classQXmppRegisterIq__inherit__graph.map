@@ -1,0 +1,5 @@
+<map id="QXmppRegisterIq" name="QXmppRegisterIq">
+<area shape="rect" id="node1" title="The QXmppRegisterIq class represents a registration IQ as defined by XEP&#45;0077: In&#45;Band Registration." alt="" coords="5,155,132,181"/>
+<area shape="rect" id="node2" href="$classQXmppIq.html" title="The QXmppIq class is the base class for all IQs." alt="" coords="30,80,107,107"/>
+<area shape="rect" id="node3" href="$classQXmppStanza.html" title="The QXmppStanza class is the base class for all XMPP stanzas." alt="" coords="15,5,122,32"/>
+</map>
