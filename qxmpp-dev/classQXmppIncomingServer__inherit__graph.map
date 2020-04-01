@@ -1,0 +1,4 @@
+<map id="QXmppIncomingServer" name="QXmppIncomingServer">
+<area shape="rect" id="node2" href="$classQXmppStream.html" title="The QXmppStream class is the base class for all XMPP streams. " alt="" coords="30,80,138,107"/>
+<area shape="rect" id="node3" href="$classQXmppLoggable.html" title="The QXmppLoggable class represents a source of logging messages. " alt="" coords="25,5,143,32"/>
+</map>

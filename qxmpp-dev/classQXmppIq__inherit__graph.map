@@ -1,0 +1,35 @@
+<map id="QXmppIq" name="QXmppIq">
+<area shape="rect" id="node3" href="$classQXmppArchiveChatIq.html" title="Represents an archive chat as defined by XEP&#45;0136: Message Archiving. " alt="" coords="307,5,456,32"/>
+<area shape="rect" id="node4" href="$classQXmppArchiveListIq.html" title="Represents an archive list as defined by XEP&#45;0136: Message Archiving. " alt="" coords="310,56,453,83"/>
+<area shape="rect" id="node5" href="$classQXmppArchivePrefIq.html" title="Represents an archive preference IQ as defined by XEP&#45;0136: Message Archiving. " alt="" coords="309,107,454,133"/>
+<area shape="rect" id="node6" href="$classQXmppArchiveRemoveIq.html" title="Represents an archive remove IQ as defined by XEP&#45;0136: Message Archiving. " alt="" coords="296,157,467,184"/>
+<area shape="rect" id="node7" href="$classQXmppArchiveRetrieveIq.html" title="Represents an archive retrieve IQ as defined by XEP&#45;0136: Message Archiving. " alt="" coords="296,208,467,235"/>
+<area shape="rect" id="node8" href="$classQXmppBindIq.html" title="The QXmppBindIq class represents an IQ used for resource binding as defined by RFC 3921..." alt="" coords="330,259,433,285"/>
+<area shape="rect" id="node9" href="$classQXmppBitsOfBinaryIq.html" title="QXmppBitsOfBinaryIq" alt="" coords="306,309,457,336"/>
+<area shape="rect" id="node10" href="$classQXmppByteStreamIq.html" title="QXmppByteStreamIq represents a SOCKS5 bytestreams negoatiation IQ as defined by XEP&#45;0065: SOCKS5 Byte..." alt="" coords="308,360,455,387"/>
+<area shape="rect" id="node11" href="$classQXmppDiscoveryIq.html" title="QXmppDiscoveryIq represents a discovery IQ request or result containing a list of features and other ..." alt="" coords="313,411,449,437"/>
+<area shape="rect" id="node12" href="$classQXmppEntityTimeIq.html" title="QXmppEntityTimeIq represents an entity time request/response as defined in XEP&#45;0202: Entity Time..." alt="" coords="311,461,451,488"/>
+<area shape="rect" id="node13" href="$classQXmppHttpUploadRequestIq.html" title="Represents an HTTP File Upload IQ for requesting an upload slot as defined by XEP&#45;0363: HTTP File Upl..." alt="" coords="285,512,477,539"/>
+<area shape="rect" id="node14" href="$classQXmppHttpUploadSlotIq.html" title="Represents an HTTP File Upload IQ result for receiving an upload slot as defined by XEP&#45;0363: HTTP Fi..." alt="" coords="298,563,465,589"/>
+<area shape="rect" id="node15" href="$classQXmppIbbCloseIq.html" title="QXmppIbbCloseIq represents an IBB close request as defined by XEP&#45;0047: In&#45;Band Bytestreams. " alt="" coords="317,613,446,640"/>
+<area shape="rect" id="node16" href="$classQXmppIbbDataIq.html" title="QXmppIbbCloseIq represents an IBB data request as defined by XEP&#45;0047: In&#45;Band Bytestreams. " alt="" coords="320,664,443,691"/>
+<area shape="rect" id="node17" href="$classQXmppIbbOpenIq.html" title="QXmppIbbOpenIq represents an IBB open request as defined by XEP&#45;0047: In&#45;Band Bytestreams. " alt="" coords="318,715,445,741"/>
+<area shape="rect" id="node18" href="$classQXmppJingleIq.html" title="The QXmppJingleIq class represents an IQ used for initiating media sessions as specified by XEP&#45;0166:..." alt="" coords="326,765,437,792"/>
+<area shape="rect" id="node19" href="$classQXmppMamQueryIq.html" title="The QXmppMamQueryIq class represents the query IQ for XEP&#45;0313: Message Archive Management. " alt="" coords="311,816,452,843"/>
+<area shape="rect" id="node20" href="$classQXmppMamResultIq.html" title="The QXmppMamQueryIq class represents the result IQ for XEP&#45;0313: Message Archive Management. " alt="" coords="309,867,453,893"/>
+<area shape="rect" id="node21" href="$classQXmppMixIq.html" title="The QXmppMixIq class represents an IQ used to do actions on a MIX channel as defined by XEP&#45;0369: Med..." alt="" coords="332,917,431,944"/>
+<area shape="rect" id="node22" href="$classQXmppMucAdminIq.html" title="The QXmppMucAdminIq class represents a chat room administration IQ as defined by XEP&#45;0045: Multi&#45;User..." alt="" coords="312,968,451,995"/>
+<area shape="rect" id="node23" href="$classQXmppMucOwnerIq.html" title="The QXmppMucOwnerIq class represents a chat room configuration IQ as defined by XEP&#45;0045: Multi&#45;User ..." alt="" coords="311,1019,451,1045"/>
+<area shape="rect" id="node24" href="$classQXmppNonSASLAuthIq.html" title="QXmppNonSASLAuthIq represents a Non&#45;SASL authentication IQ as defined by XEP&#45;0078: Non&#45;SASL Authentic..." alt="" coords="300,1069,463,1096"/>
+<area shape="rect" id="node25" href="$classQXmppPingIq.html" title="QXmppPingIq represents a Ping IQ as defined by XEP&#45;0199: XMPP Ping. " alt="" coords="330,1120,433,1147"/>
+<area shape="rect" id="node26" href="$classQXmppPubSubIq.html" title="The QXmppPubSubIq class represents an IQ used for the publish&#45;subscribe mechanisms defined by XEP&#45;006..." alt="" coords="320,1171,443,1197"/>
+<area shape="rect" id="node27" href="$classQXmppPushEnableIq.html" title="This class represents an IQ to enable or disablepush notifications on the user server. " alt="" coords="308,1221,455,1248"/>
+<area shape="rect" id="node28" href="$classQXmppRegisterIq.html" title="The QXmppRegisterIq class represents a registration IQ as defined by XEP&#45;0077: In&#45;Band Registration..." alt="" coords="318,1272,445,1299"/>
+<area shape="rect" id="node29" href="$classQXmppRosterIq.html" title="The QXmppRosterIq class represents a roster IQ. " alt="" coords="323,1323,439,1349"/>
+<area shape="rect" id="node30" href="$classQXmppRpcInvokeIq.html" title="The QXmppRpcInvokeIq class represents an IQ used to carry an RPC invocation as specified by XEP&#45;0009:..." alt="" coords="311,1373,451,1400"/>
+<area shape="rect" id="node31" href="$classQXmppRpcResponseIq.html" title="The QXmppRpcResponseIq class represents an IQ used to carry an RPC response as specified by XEP&#45;0009:..." alt="" coords="301,1424,461,1451"/>
+<area shape="rect" id="node32" href="$classQXmppSessionIq.html" title="The QXmppSessionIq class represents an IQ used for session establishment as defined by RFC 3921..." alt="" coords="319,1475,443,1501"/>
+<area shape="rect" id="node33" href="$classQXmppVCardIq.html" title="Represents the XMPP vCard. " alt="" coords="324,1525,439,1552"/>
+<area shape="rect" id="node34" href="$classQXmppVersionIq.html" title="The QXmppVersionIq class represents an IQ for conveying a software version as defined by XEP&#45;0092: So..." alt="" coords="321,1576,442,1603"/>
+<area shape="rect" id="node2" href="$classQXmppStanza.html" title="The QXmppStanza class is the base class for all XMPP stanzas. " alt="" coords="5,791,112,817"/>
+</map>
