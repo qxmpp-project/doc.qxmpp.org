@@ -1,8 +1,9 @@
 var searchData=
 [
-  ['vcardupdatenone',['VCardUpdateNone',['../classQXmppPresence.html#a642a378dd425bbbda1de4317e2dcd199ade94d49098994f9d9c63a2e3b26e85fe',1,'QXmppPresence']]],
-  ['vcardupdatenophoto',['VCardUpdateNoPhoto',['../classQXmppPresence.html#a642a378dd425bbbda1de4317e2dcd199a4d3c48d73da192a0054d24633622f564',1,'QXmppPresence']]],
-  ['vcardupdatenotready',['VCardUpdateNotReady',['../classQXmppPresence.html#a642a378dd425bbbda1de4317e2dcd199a628f45cf1da766418d773f83ba48af50',1,'QXmppPresence']]],
-  ['vcardupdatevalidphoto',['VCardUpdateValidPhoto',['../classQXmppPresence.html#a642a378dd425bbbda1de4317e2dcd199a77b3104e5b50933e952dd82740bbe703',1,'QXmppPresence']]],
-  ['verify',['Verify',['../classQXmppDialback.html#a0448107c56f892056f359013b80798bcab04f60abfc5f6b6e0f3166e285dd78c6',1,'QXmppDialback']]]
+  ['unavailable',['Unavailable',['../classQXmppPresence.html#a47ab8dd08436f9d7c90d2990678b5a6da6188ca67163c9045eb9568deefb9a363',1,'QXmppPresence']]],
+  ['undefinedcondition',['UndefinedCondition',['../classQXmppStanza_1_1Error.html#abcf1cbbe7b15ec82f3ac34723b604852a33a57062632042f76793d3c07741d10a',1,'QXmppStanza::Error']]],
+  ['unexpectedrequest',['UnexpectedRequest',['../classQXmppStanza_1_1Error.html#abcf1cbbe7b15ec82f3ac34723b604852ac71c1b7927a3f0bbc889807c343c45ab',1,'QXmppStanza::Error']]],
+  ['unknownencryption',['UnknownEncryption',['../classQXmppMessage.html#a1526e753b5cfe7ed7787d035b72c3742a3d891bce95ec28f88345014011abbc5a',1,'QXmppMessage']]],
+  ['unsubscribe',['Unsubscribe',['../classQXmppPresence.html#a47ab8dd08436f9d7c90d2990678b5a6da20986f18e387f68a5fdfa0e67c44bc44',1,'QXmppPresence']]],
+  ['unsubscribed',['Unsubscribed',['../classQXmppPresence.html#a47ab8dd08436f9d7c90d2990678b5a6da63414092d2fc4b90987f56731c150623',1,'QXmppPresence']]]
 ];

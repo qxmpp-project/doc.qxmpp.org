@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['q_5fdecl_5fenumerator_5fdeprecated_5fx',['Q_DECL_ENUMERATOR_DEPRECATED_X',['../classQXmppStanza_1_1Error.html#abcf1cbbe7b15ec82f3ac34723b604852afe6f471a56ed0a0c6116608a393adb36',1,'QXmppStanza::Error']]],
   ['queryid',['queryId',['../classQXmppMamQueryIq.html#a897a7a1aa8464c2737e349b0bfdd887e',1,'QXmppMamQueryIq']]],
   ['queryjid',['queryJid',['../classQXmppPubSubIq.html#af5a249b8391a6a020d5b0ec1447eb748',1,'QXmppPubSubIq']]],
   ['querynode',['queryNode',['../classQXmppPubSubIq.html#a606c69164283d376a9be351af1325e0f',1,'QXmppPubSubIq']]],

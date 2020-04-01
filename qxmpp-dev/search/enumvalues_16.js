@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['xa',['XA',['../classQXmppPresence.html#ad56af0f57b732c09b080b9347c4dba94af2b440870b33ce88182aaf32f871696b',1,'QXmppPresence']]],
-  ['xmppstreamerror',['XmppStreamError',['../classQXmppClient.html#a7c2851d07cc33119752abc6ec8ffc47aa29f30662c97dc09858f1d7e80eb1825a',1,'QXmppClient']]]
+  ['wait',['Wait',['../classQXmppStanza_1_1Error.html#a8a7b0e1c203bce100dff524e1ca444afa85c91e87f226714c7b9b20455391593d',1,'QXmppStanza::Error']]],
+  ['warningmessage',['WarningMessage',['../classQXmppLogger.html#a932dbbd4f70a1e9c0ff8f452e61fc9b8adb2cbaa9ae0daa021fa4feddf085910a',1,'QXmppLogger']]]
 ];

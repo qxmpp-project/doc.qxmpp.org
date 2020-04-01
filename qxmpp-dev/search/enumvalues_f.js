@@ -1,7 +1,6 @@
 var searchData=
 [
   ['paused',['Paused',['../classQXmppMessage.html#aeaa3cc5ccb7d451067a80dd1f3c7099aac05ed50993dc8450e49249db87c809cf',1,'QXmppMessage']]],
-  ['paymentrequired',['PaymentRequired',['../classQXmppStanza_1_1Error.html#abcf1cbbe7b15ec82f3ac34723b604852aa580c441020516a508b8f03618b20565',1,'QXmppStanza::Error']]],
   ['peerreflexivetype',['PeerReflexiveType',['../classQXmppJingleCandidate.html#a6314b3ed7de59b68131db6ffab55fe7daa8c05f2daae9c29c2d066c54d3b8673c',1,'QXmppJingleCandidate']]],
   ['permissionsaction',['PermissionsAction',['../classQXmppMucRoom.html#acd3129293f69d7e7cdd91b65aae0606fa47093bf22ebdf16142a7711c31e8b508',1,'QXmppMucRoom']]],
   ['policyviolation',['PolicyViolation',['../classQXmppStanza_1_1Error.html#abcf1cbbe7b15ec82f3ac34723b604852a79dcf639eb1a853e3648fea27f0b339f',1,'QXmppStanza::Error']]],

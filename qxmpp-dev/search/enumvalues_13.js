@@ -1,9 +1,8 @@
 var searchData=
 [
-  ['unavailable',['Unavailable',['../classQXmppPresence.html#a47ab8dd08436f9d7c90d2990678b5a6da6188ca67163c9045eb9568deefb9a363',1,'QXmppPresence']]],
-  ['undefinedcondition',['UndefinedCondition',['../classQXmppStanza_1_1Error.html#abcf1cbbe7b15ec82f3ac34723b604852a33a57062632042f76793d3c07741d10a',1,'QXmppStanza::Error']]],
-  ['unexpectedrequest',['UnexpectedRequest',['../classQXmppStanza_1_1Error.html#abcf1cbbe7b15ec82f3ac34723b604852ac71c1b7927a3f0bbc889807c343c45ab',1,'QXmppStanza::Error']]],
-  ['unknownencryption',['UnknownEncryption',['../classQXmppMessage.html#a1526e753b5cfe7ed7787d035b72c3742a3d891bce95ec28f88345014011abbc5a',1,'QXmppMessage']]],
-  ['unsubscribe',['Unsubscribe',['../classQXmppPresence.html#a47ab8dd08436f9d7c90d2990678b5a6da20986f18e387f68a5fdfa0e67c44bc44',1,'QXmppPresence']]],
-  ['unsubscribed',['Unsubscribed',['../classQXmppPresence.html#a47ab8dd08436f9d7c90d2990678b5a6da63414092d2fc4b90987f56731c150623',1,'QXmppPresence']]]
+  ['tlsdisabled',['TLSDisabled',['../classQXmppConfiguration.html#a7c6e193a68beb792038c066cfc574a18a1af5a23c6977c4f7d639a8a8bfe3ec19',1,'QXmppConfiguration']]],
+  ['tlsenabled',['TLSEnabled',['../classQXmppConfiguration.html#a7c6e193a68beb792038c066cfc574a18aaf3bb1e91fd95070ad94a10371b32771',1,'QXmppConfiguration']]],
+  ['tlsrequired',['TLSRequired',['../classQXmppConfiguration.html#a7c6e193a68beb792038c066cfc574a18a3cb02f5970640730f94f516ae3924d47',1,'QXmppConfiguration']]],
+  ['to',['To',['../classQXmppRosterIq_1_1Item.html#a0133cf9262cec7e299c4db7c247c5514af442c4841857e10e47b49915d4e19a2f',1,'QXmppRosterIq::Item']]],
+  ['transferstate',['TransferState',['../classQXmppTransferJob.html#aab5bb06ca0d2c4f1fac33b7012d1c14fabbaf0dcfacf7fcca8d8ba4eacd1e2d03',1,'QXmppTransferJob']]]
 ];

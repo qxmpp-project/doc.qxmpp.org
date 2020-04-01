@@ -1,5 +1,8 @@
 var searchData=
 [
-  ['wait',['Wait',['../classQXmppStanza_1_1Error.html#a8a7b0e1c203bce100dff524e1ca444afa85c91e87f226714c7b9b20455391593d',1,'QXmppStanza::Error']]],
-  ['warningmessage',['WarningMessage',['../classQXmppLogger.html#a932dbbd4f70a1e9c0ff8f452e61fc9b8adb2cbaa9ae0daa021fa4feddf085910a',1,'QXmppLogger']]]
+  ['vcardupdatenone',['VCardUpdateNone',['../classQXmppPresence.html#a642a378dd425bbbda1de4317e2dcd199ade94d49098994f9d9c63a2e3b26e85fe',1,'QXmppPresence']]],
+  ['vcardupdatenophoto',['VCardUpdateNoPhoto',['../classQXmppPresence.html#a642a378dd425bbbda1de4317e2dcd199a4d3c48d73da192a0054d24633622f564',1,'QXmppPresence']]],
+  ['vcardupdatenotready',['VCardUpdateNotReady',['../classQXmppPresence.html#a642a378dd425bbbda1de4317e2dcd199a628f45cf1da766418d773f83ba48af50',1,'QXmppPresence']]],
+  ['vcardupdatevalidphoto',['VCardUpdateValidPhoto',['../classQXmppPresence.html#a642a378dd425bbbda1de4317e2dcd199a77b3104e5b50933e952dd82740bbe703',1,'QXmppPresence']]],
+  ['verify',['Verify',['../classQXmppDialback.html#a0448107c56f892056f359013b80798bcab04f60abfc5f6b6e0f3166e285dd78c6',1,'QXmppDialback']]]
 ];
