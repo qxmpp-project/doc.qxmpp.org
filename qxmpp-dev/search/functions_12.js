@@ -35,6 +35,7 @@ var searchData=
   ['setbitsofbinarydata',['setBitsOfBinaryData',['../classQXmppMessage.html#a8ebef8adabe395e6b7abc797c4052e46',1,'QXmppMessage::setBitsOfBinaryData()'],['../classQXmppRegisterIq.html#ade5c402bd08953d68b5a3cf084ad61cd',1,'QXmppRegisterIq::setBitsOfBinaryData()']]],
   ['setbody',['setBody',['../classQXmppArchiveMessage.html#a1e69a102502f866a3fb09d1ba2a932ef',1,'QXmppArchiveMessage::setBody()'],['../classQXmppMessage.html#adfc1b70b910079c76c93ba472fc4e9e7',1,'QXmppMessage::setBody()']]],
   ['setbookmarks',['setBookmarks',['../classQXmppBookmarkManager.html#ac08a572f1426c49e565bf5cd96afee12',1,'QXmppBookmarkManager']]],
+  ['setby',['setBy',['../classQXmppStanza_1_1Error.html#ad7eb42651e2dadae093d084a168b284a',1,'QXmppStanza::Error']]],
   ['setcacertificates',['setCaCertificates',['../classQXmppConfiguration.html#abe15b8d3dc480dfe30242fa0648feb6a',1,'QXmppConfiguration']]],
   ['setcapabilityhash',['setCapabilityHash',['../classQXmppPresence.html#a4a8355d4ce1f84a97fdb098d7856829a',1,'QXmppPresence']]],
   ['setcapabilitynode',['setCapabilityNode',['../classQXmppPresence.html#a087a58383725086449c9b7d8a428d4be',1,'QXmppPresence']]],

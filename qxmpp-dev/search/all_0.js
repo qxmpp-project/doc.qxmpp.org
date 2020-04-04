@@ -24,7 +24,7 @@ var searchData=
   ['addresses',['addresses',['../classQXmppVCardIq.html#aecd0b9331c38ae98e7f7b1a695fd5009',1,'QXmppVCardIq']]],
   ['addroom',['addRoom',['../classQXmppMucManager.html#a931a67884858d4440b9c307bae50d8a8',1,'QXmppMucManager']]],
   ['addvideo',['addVideo',['../classQXmppCall.html#ac656e4c43a36c77d4f074ba8ecd85517',1,'QXmppCall']]],
-  ['affiliation',['affiliation',['../classQXmppMucItem.html#a6cc7d705d6982070334a1962a3762d46',1,'QXmppMucItem::affiliation() const'],['../classQXmppMucItem.html#a3a0d58827ab4d535326fc6d3dbcbd417',1,'QXmppMucItem::Affiliation()']]],
+  ['affiliation',['Affiliation',['../classQXmppMucItem.html#a3a0d58827ab4d535326fc6d3dbcbd417',1,'QXmppMucItem::Affiliation()'],['../classQXmppMucItem.html#a6cc7d705d6982070334a1962a3762d46',1,'QXmppMucItem::affiliation() const']]],
   ['after',['after',['../classQXmppResultSetQuery.html#a5586b012aa32e5530796b8b893df0a76',1,'QXmppResultSetQuery']]],
   ['algorithm',['algorithm',['../classQXmppBitsOfBinaryContentId.html#acde39463a40a1c377e5a455107adba7c',1,'QXmppBitsOfBinaryContentId']]],
   ['allowedactions',['allowedActions',['../classQXmppMucRoom.html#a3b41defb3bcf48bf7ce51c8163aac803',1,'QXmppMucRoom::allowedActions()'],['../classQXmppMucRoom.html#aab4b85581430951ae633e5030bace7e6',1,'QXmppMucRoom::allowedActions() const']]],
