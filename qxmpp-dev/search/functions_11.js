@@ -44,5 +44,6 @@ var searchData=
   ['roomadded',['roomAdded',['../classQXmppMucManager.html#a948446ebb49b07e772d8a70a0b8e71e6',1,'QXmppMucManager']]],
   ['rooms',['rooms',['../classQXmppMucManager.html#a58954c0403b29048ec8ecbe2b20e0dc5',1,'QXmppMucManager']]],
   ['rostermanager',['rosterManager',['../classQXmppClient.html#a6a0bb409bad66a4f5ea91056ee190ad4',1,'QXmppClient']]],
-  ['rosterreceived',['rosterReceived',['../classQXmppRosterManager.html#a978cf900248b0ef144460bb52052ded8',1,'QXmppRosterManager']]]
+  ['rosterreceived',['rosterReceived',['../classQXmppRosterManager.html#a978cf900248b0ef144460bb52052ded8',1,'QXmppRosterManager']]],
+  ['rosterversioningsupported',['rosterVersioningSupported',['../classQXmppStreamFeatures.html#acfb9261d02dba937c7a63432fe92d931',1,'QXmppStreamFeatures']]]
 ];

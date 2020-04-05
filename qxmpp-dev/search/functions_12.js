@@ -223,6 +223,7 @@ var searchData=
   ['setretrydate',['setRetryDate',['../classQXmppStanza_1_1Error.html#a5b4a5e02407acac9822789b888a82d2e',1,'QXmppStanza::Error']]],
   ['setringing',['setRinging',['../classQXmppJingleIq.html#a1b7383c7480885a0830b48d115968e27',1,'QXmppJingleIq']]],
   ['setrole',['setRole',['../classQXmppMucItem.html#aa54c2637d43ad27edfd427db5b8b901d',1,'QXmppMucItem::setRole()'],['../classQXmppVCardOrganization.html#a3a4acdd2353878b6474a02479b5ef595',1,'QXmppVCardOrganization::setRole()']]],
+  ['setrosterversioningsupported',['setRosterVersioningSupported',['../classQXmppStreamFeatures.html#af116c8d93ab54571a3174cd741b3201f',1,'QXmppStreamFeatures']]],
   ['setsaslauthmechanism',['setSaslAuthMechanism',['../classQXmppConfiguration.html#a3aec3c957fcb1f4f169499c31dc899d2',1,'QXmppConfiguration']]],
   ['setsid',['setSid',['../classQXmppJingleIq.html#a129f1b4d2bc61b88ac8f96bf2085cf3f',1,'QXmppJingleIq']]],
   ['setsize',['setSize',['../classQXmppHttpUploadRequestIq.html#aa6920b60f02b4f5a9f1fe1d1625aff8a',1,'QXmppHttpUploadRequestIq']]],
