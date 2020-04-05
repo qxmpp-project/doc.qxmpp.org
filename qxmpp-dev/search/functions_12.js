@@ -178,6 +178,7 @@ var searchData=
   ['setos',['setOs',['../classQXmppVersionIq.html#a8f6e8a6b8b02b98f99c12dfa8df78023',1,'QXmppVersionIq']]],
   ['setoutofbandurl',['setOutOfBandUrl',['../classQXmppMessage.html#a6d9933fa0e9ad1002e5d7872da059704',1,'QXmppMessage']]],
   ['setparameters',['setParameters',['../classQXmppJinglePayloadType.html#a3c17aed60c502b37ada75ed8e7e256e0',1,'QXmppJinglePayloadType']]],
+  ['setparentthread',['setParentThread',['../classQXmppMessage.html#a9403784fcd6fe55dc096c38b291a9b0a',1,'QXmppMessage']]],
   ['setpassword',['setPassword',['../classQXmppRegisterIq.html#a3a7bfff24c594b71a5c7d672c14e46fd',1,'QXmppRegisterIq::setPassword()'],['../classQXmppConfiguration.html#ab1deabbad52755bda2d975d5150dbf7a',1,'QXmppConfiguration::setPassword()'],['../classQXmppMucRoom.html#adfb1f258f106805c76bc501e8ea162f6',1,'QXmppMucRoom::setPassword()'],['../classQXmppPasswordRequest.html#a81b68dceb87c75e0dbfe79cdb05dc426',1,'QXmppPasswordRequest::setPassword()'],['../classQXmppPasswordReply.html#a11f9eccc067fc48dd09237499cccb53f',1,'QXmppPasswordReply::setPassword()']]],
   ['setpasswordchecker',['setPasswordChecker',['../classQXmppIncomingClient.html#a6c2286e741e49b582db08b8ddbffe5cb',1,'QXmppIncomingClient::setPasswordChecker()'],['../classQXmppServer.html#ae797b5932a1fe33d234677deea4bf5ac',1,'QXmppServer::setPasswordChecker()']]],
   ['setpermissions',['setPermissions',['../classQXmppMucRoom.html#a7bef5394e4cd2af9c57f13fb4c8dadf7',1,'QXmppMucRoom']]],
