@@ -25,6 +25,7 @@ var searchData=
   ['policyviolation',['PolicyViolation',['../classQXmppStanza_1_1Error.html#abcf1cbbe7b15ec82f3ac34723b604852a79dcf639eb1a853e3648fea27f0b339f',1,'QXmppStanza::Error']]],
   ['port',['port',['../classQXmppJingleCandidate.html#abeb987a216a4ab54a599f06e5d6669ab',1,'QXmppJingleCandidate::port()'],['../classQXmppConfiguration.html#aba1172d10bd036417bfe587ad1127790',1,'QXmppConfiguration::port()']]],
   ['postcode',['postcode',['../classQXmppVCardAddress.html#ad73f39a74a707b0258d7e1f6781a831d',1,'QXmppVCardAddress']]],
+  ['preapprovedsubscriptionssupported',['preApprovedSubscriptionsSupported',['../classQXmppStreamFeatures.html#a216e096dde988fcf31788f0e4d401224',1,'QXmppStreamFeatures']]],
   ['presencechanged',['presenceChanged',['../classQXmppRosterManager.html#ac95dd87aaa2c4cb61aa6ead2a17bc56e',1,'QXmppRosterManager']]],
   ['presencereceived',['presenceReceived',['../classQXmppClient.html#a10499b67cd25eed16f83118837fc5c29',1,'QXmppClient::presenceReceived()'],['../classQXmppOutgoingClient.html#a242817c83ce02d6f3c1956bfd15c3b15',1,'QXmppOutgoingClient::presenceReceived()']]],
   ['presencesubscribers',['presenceSubscribers',['../classQXmppServerExtension.html#a942c0a8411cabb7b4e13760e01e1ab70',1,'QXmppServerExtension']]],

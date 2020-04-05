@@ -234,8 +234,10 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Accepts a subscription request.</p>
-<p>You can call this method in reply to the subscriptionRequest() signal. </p>
+<p>Accepts an existing subscription request or pre-approves future subscription requests.</p>
+<p>You can call this method in reply to the subscriptionRequest() signal or to create a pre-approved subscription.</p>
+<dl class="section note"><dt>Note</dt><dd>Pre-approving subscription requests is only allowed, if the server supports RFC6121 and advertises the 'urn:xmpp:features:pre-approval' stream feature.</dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classQXmppStreamFeatures.html#a216e096dde988fcf31788f0e4d401224">QXmppStreamFeatures::preApprovedSubscriptionsSupported()</a> </dd></dl>
 
 </div>
 </div>

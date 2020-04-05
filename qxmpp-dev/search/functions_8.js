@@ -13,6 +13,7 @@ var searchData=
   ['invitationreceived',['invitationReceived',['../classQXmppMucManager.html#a8ad1ab6b9c8bf656bedbd8cd31a0076b',1,'QXmppMucManager']]],
   ['iqreceived',['iqReceived',['../classQXmppClient.html#ab3725eaae927f9c600c59a9e7e681909',1,'QXmppClient::iqReceived()'],['../classQXmppOutgoingClient.html#ac5199200ec81a1b3de18ca8563ac430a',1,'QXmppOutgoingClient::iqReceived()']]],
   ['isactive',['isActive',['../classQXmppClient.html#aa47739ef073b38b50283f10a078777e3',1,'QXmppClient']]],
+  ['isapproved',['isApproved',['../classQXmppRosterIq_1_1Item.html#a0b23547c3d176ca6b3c1df36df81eeed',1,'QXmppRosterIq::Item']]],
   ['isattentionrequested',['isAttentionRequested',['../classQXmppMessage.html#a842129f981773d855d5a66544efc3c52',1,'QXmppMessage']]],
   ['isauthenticated',['isAuthenticated',['../classQXmppClient.html#ab197dae001bbf6d5dcb8a17421c97f39',1,'QXmppClient::isAuthenticated()'],['../classQXmppOutgoingClient.html#a3f21642b3f3210a48f68c1792d97ba14',1,'QXmppOutgoingClient::isAuthenticated()']]],
   ['isauthorized',['isAuthorized',['../classQXmppInvokable.html#abb8f542ae1ebd422e9454bbeafc5dda8',1,'QXmppInvokable']]],

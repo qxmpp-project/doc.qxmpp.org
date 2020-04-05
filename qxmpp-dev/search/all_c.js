@@ -25,7 +25,7 @@ var searchData=
   ['mixparticipantid',['mixParticipantId',['../classQXmppRosterIq_1_1Item.html#a21fe67e1799cd792d82dde9c93806a11',1,'QXmppRosterIq::Item']]],
   ['mixuserjid',['mixUserJid',['../classQXmppMessage.html#a6e7f76ab685253ba0305aeca813eaa50',1,'QXmppMessage::mixUserJid()'],['../classQXmppPresence.html#ac108c08382b787d0633347d0c4fdd07b',1,'QXmppPresence::mixUserJid()']]],
   ['mixusernick',['mixUserNick',['../classQXmppMessage.html#a3729018f1ed68db47aeabcb049244a25',1,'QXmppMessage::mixUserNick()'],['../classQXmppPresence.html#aea6909bb847d7d5298d95a14fada47d1',1,'QXmppPresence::mixUserNick()']]],
-  ['mode',['Mode',['../classQXmppPushEnableIq.html#aed57a6ec7950ef97fd1b71d6d52c8753',1,'QXmppPushEnableIq::Mode()'],['../classQXmppPushEnableIq.html#a7c0734aaa3b63a5339651701aec7b034',1,'QXmppPushEnableIq::mode()']]],
+  ['mode',['mode',['../classQXmppPushEnableIq.html#a7c0734aaa3b63a5339651701aec7b034',1,'QXmppPushEnableIq::mode()'],['../classQXmppPushEnableIq.html#aed57a6ec7950ef97fd1b71d6d52c8753',1,'QXmppPushEnableIq::Mode()']]],
   ['modify',['Modify',['../classQXmppStanza_1_1Error.html#a8a7b0e1c203bce100dff524e1ca444afa588c6383385d045e0c218f9e1f25aa22',1,'QXmppStanza::Error']]],
   ['mucinvitationjid',['mucInvitationJid',['../classQXmppMessage.html#aaef2058cea80701d940320fd0303c7f4',1,'QXmppMessage']]],
   ['mucinvitationpassword',['mucInvitationPassword',['../classQXmppMessage.html#a1430c8b1fc39bc4aeba0791f8670166a',1,'QXmppMessage']]],

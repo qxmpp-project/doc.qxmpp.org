@@ -112,6 +112,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aeddd7822c960b65bda9aafa62411f4ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a03fdb953f1e12d90d94a80fe965df09d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classQXmppRosterIq_1_1Item.html#a0133cf9262cec7e299c4db7c247c5514">SubscriptionType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppRosterIq_1_1Item.html#a03fdb953f1e12d90d94a80fe965df09d">subscriptionType</a> () const</td></tr>
 <tr class="separator:a03fdb953f1e12d90d94a80fe965df09d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b23547c3d176ca6b3c1df36df81eeed"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppRosterIq_1_1Item.html#a0b23547c3d176ca6b3c1df36df81eeed">isApproved</a> () const</td></tr>
+<tr class="separator:a0b23547c3d176ca6b3c1df36df81eeed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac58d9f728ffc0a357b9dff093890de11"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppRosterIq_1_1Item.html#ac58d9f728ffc0a357b9dff093890de11">setBareJid</a> (const QString &amp;)</td></tr>
 <tr class="separator:ac58d9f728ffc0a357b9dff093890de11"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade2430a52808649b51ed9c6b554cf77a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppRosterIq_1_1Item.html#ade2430a52808649b51ed9c6b554cf77a">setGroups</a> (const QSet&lt; QString &gt; &amp;)</td></tr>
@@ -122,6 +124,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:af43b7efd16697d56e2e88ffdc5ff2929"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa9f572853402d0094676e524439b6383"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppRosterIq_1_1Item.html#aa9f572853402d0094676e524439b6383">setSubscriptionType</a> (<a class="el" href="classQXmppRosterIq_1_1Item.html#a0133cf9262cec7e299c4db7c247c5514">SubscriptionType</a>)</td></tr>
 <tr class="separator:aa9f572853402d0094676e524439b6383"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4212bbd1df8a225585b0d8b71d0a7946"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppRosterIq_1_1Item.html#a4212bbd1df8a225585b0d8b71d0a7946">setIsApproved</a> (bool)</td></tr>
+<tr class="separator:a4212bbd1df8a225585b0d8b71d0a7946"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a44951ab4efc8abbb8de8450317f7409e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppRosterIq_1_1Item.html#a44951ab4efc8abbb8de8450317f7409e">isMixChannel</a> () const</td></tr>
 <tr class="separator:a44951ab4efc8abbb8de8450317f7409e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9730c20ff5f3fa918bd8642f018d467f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppRosterIq_1_1Item.html#a9730c20ff5f3fa918bd8642f018d467f">setIsMixChannel</a> (bool)</td></tr>
@@ -219,6 +223,25 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Returns the groups of the roster entry.</p>
 <dl class="section return"><dt>Returns</dt><dd>QSet&lt;QString&gt; list of all the groups </dd></dl>
+
+</div>
+</div>
+<a id="a0b23547c3d176ca6b3c1df36df81eeed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0b23547c3d176ca6b3c1df36df81eeed">&#9670;&nbsp;</a></span>isApproved()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool QXmppRosterIq::Item::isApproved </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns whether the item has a pre-approved presence subscription.</p>
+<dl class="section since"><dt>Since</dt><dd>QXmpp 1.3 </dd></dl>
 
 </div>
 </div>
@@ -326,6 +349,27 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a4212bbd1df8a225585b0d8b71d0a7946"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4212bbd1df8a225585b0d8b71d0a7946">&#9670;&nbsp;</a></span>setIsApproved()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void QXmppRosterIq::Item::setIsApproved </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>approved</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Sets whether the item has a pre-approved presence subscription.</p>
+<p>This cannot be used to initiate a pre-approved subscription. For this purpose the client must send a &lt;presence/&gt; stanza of type <code>subscribed</code> to the user.</p>
+<dl class="section since"><dt>Since</dt><dd>QXmpp 1.3 </dd></dl>
 
 </div>
 </div>
