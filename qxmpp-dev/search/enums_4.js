@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['hint',['Hint',['../classQXmppMessage.html#aea1a3c281a281bc3a4fbc9f48b554256',1,'QXmppMessage']]]
+  ['gatheringstate',['GatheringState',['../classQXmppIceConnection.html#afa611e20d4575f1e7e295e3f67d4dca9',1,'QXmppIceConnection']]]
 ];

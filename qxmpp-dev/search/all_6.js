@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['gatheringstate',['gatheringState',['../classQXmppIceConnection.html#a6e655b651dbcb2fb0d3b6b4c693d15f3',1,'QXmppIceConnection::gatheringState()'],['../classQXmppIceConnection.html#a807796d5904385dc4216a9f505ba59f4',1,'QXmppIceConnection::gatheringState() const']]],
+  ['gatheringstate',['GatheringState',['../classQXmppIceConnection.html#afa611e20d4575f1e7e295e3f67d4dca9',1,'QXmppIceConnection::GatheringState()'],['../classQXmppIceConnection.html#a6e655b651dbcb2fb0d3b6b4c693d15f3',1,'QXmppIceConnection::gatheringState()'],['../classQXmppIceConnection.html#a807796d5904385dc4216a9f505ba59f4',1,'QXmppIceConnection::gatheringState() const']]],
   ['gatheringstatechanged',['gatheringStateChanged',['../classQXmppIceConnection.html#a83fcdbdcf0635ce3d33198d76324d06e',1,'QXmppIceConnection']]],
   ['generatecrc32',['generateCrc32',['../classQXmppUtils.html#ac10b0186b909d902c6670dd4aabfa772',1,'QXmppUtils']]],
   ['generatehmacmd5',['generateHmacMd5',['../classQXmppUtils.html#ac82b6aaa4ef413056a058dbb7d8f8069',1,'QXmppUtils']]],

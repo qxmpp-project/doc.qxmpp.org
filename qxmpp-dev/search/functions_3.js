@@ -14,7 +14,7 @@ var searchData=
   ['digest',['digest',['../classQXmppPasswordReply.html#af54bcf11e52666c246cb984948ab53ca',1,'QXmppPasswordReply']]],
   ['direction',['direction',['../classQXmppTransferJob.html#ab7147a5a0c3824397c61f4d982738156',1,'QXmppTransferJob']]],
   ['disconnected',['disconnected',['../classQXmppStream.html#a701163b1384f69e6947a420bb63a0d4a',1,'QXmppStream::disconnected()'],['../classQXmppIceConnection.html#aae4ecd60dbbf7276d2380893010ff01f',1,'QXmppIceConnection::disconnected()'],['../classQXmppClient.html#ad0451ed72955dba436c7b97ad2c9ac82',1,'QXmppClient::disconnected()']]],
-  ['disconnectfromhost',['disconnectFromHost',['../classQXmppStream.html#a8608905c2f2cc146567c85756832acb5',1,'QXmppStream']]],
+  ['disconnectfromhost',['disconnectFromHost',['../classQXmppStream.html#a8608905c2f2cc146567c85756832acb5',1,'QXmppStream::disconnectFromHost()'],['../classQXmppOutgoingClient.html#a0cccbb46c2c3e6ae6728dfcfc31078dc',1,'QXmppOutgoingClient::disconnectFromHost()']]],
   ['disconnectfromserver',['disconnectFromServer',['../classQXmppClient.html#a685f42452acbba55f3b15669fa76282d',1,'QXmppClient']]],
   ['discoveraddresses',['discoverAddresses',['../classQXmppIceComponent.html#ab5882d9997870e9339f2d678bfa66744',1,'QXmppIceComponent']]],
   ['discoveryfeatures',['discoveryFeatures',['../classQXmppClientExtension.html#a3ef15300fd584457adc40378a3103511',1,'QXmppClientExtension::discoveryFeatures()'],['../classQXmppRegistrationManager.html#a287f3cdc43b2b55f8a4f54bb731f2185',1,'QXmppRegistrationManager::discoveryFeatures()'],['../classQXmppServerExtension.html#a482546d20b1017dfe879da1fbd22c30a',1,'QXmppServerExtension::discoveryFeatures()']]],
