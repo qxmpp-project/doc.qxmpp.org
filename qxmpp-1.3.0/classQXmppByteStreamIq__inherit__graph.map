@@ -1,0 +1,5 @@
+<map id="QXmppByteStreamIq" name="QXmppByteStreamIq">
+<area shape="rect" id="node1" title="QXmppByteStreamIq represents a SOCKS5 bytestreams negoatiation IQ as defined by XEP&#45;0065: SOCKS5 Byte..." alt="" coords="5,155,164,181"/>
+<area shape="rect" id="node2" href="$classQXmppIq.html" title="The QXmppIq class is the base class for all IQs." alt="" coords="43,80,126,107"/>
+<area shape="rect" id="node3" href="$classQXmppStanza.html" title="The QXmppStanza class is the base class for all XMPP stanzas." alt="" coords="27,5,142,32"/>
+</map>

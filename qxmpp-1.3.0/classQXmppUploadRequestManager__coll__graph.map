@@ -1,0 +1,5 @@
+<map id="QXmppUploadRequestManager" name="QXmppUploadRequestManager">
+<area shape="rect" id="node1" title="The QXmppUploadRequestManager implements the core of XEP&#45;0369: HTTP File Upload." alt="" coords="5,155,232,181"/>
+<area shape="rect" id="node2" href="$classQXmppClientExtension.html" title="The QXmppClientExtension class is the base class for QXmppClient extensions." alt="" coords="33,80,205,107"/>
+<area shape="rect" id="node3" href="$classQXmppLoggable.html" title="The QXmppLoggable class represents a source of logging messages." alt="" coords="54,5,183,32"/>
+</map>

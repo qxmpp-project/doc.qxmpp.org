@@ -1,0 +1,5 @@
+<map id="QXmppMamManager" name="QXmppMamManager">
+<area shape="rect" id="node1" title="The QXmppMamManager class makes it possible to access message archives as defined by XEP&#45;0313: Messag..." alt="" coords="11,155,171,181"/>
+<area shape="rect" id="node2" href="$classQXmppClientExtension.html" title="The QXmppClientExtension class is the base class for QXmppClient extensions." alt="" coords="5,80,177,107"/>
+<area shape="rect" id="node3" href="$classQXmppLoggable.html" title="The QXmppLoggable class represents a source of logging messages." alt="" coords="27,5,156,32"/>
+</map>

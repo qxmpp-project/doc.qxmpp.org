@@ -1,0 +1,4 @@
+<map id="QXmppStreamFeatures" name="QXmppStreamFeatures">
+<area shape="rect" id="node1" title="The QXmppStreamFeatures class represents the features returned by an XMPP server or client." alt="" coords="5,80,179,107"/>
+<area shape="rect" id="node2" href="$classQXmppStanza.html" title="The QXmppStanza class is the base class for all XMPP stanzas." alt="" coords="35,5,149,32"/>
+</map>
