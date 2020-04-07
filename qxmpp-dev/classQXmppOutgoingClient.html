@@ -121,9 +121,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppOutgoingClient.html#a862561dc51e446669311d374fd96f060">messageReceived</a> (const <a class="el" href="classQXmppMessage.html">QXmppMessage</a> &amp;)</td></tr>
 <tr class="memdesc:a862561dc51e446669311d374fd96f060"><td class="mdescLeft">&#160;</td><td class="mdescRight">This signal is emitted when a message is received. <br /></td></tr>
 <tr class="separator:a862561dc51e446669311d374fd96f060"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac5199200ec81a1b3de18ca8563ac430a"><td class="memItemLeft" align="right" valign="top"><a id="ac5199200ec81a1b3de18ca8563ac430a"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppOutgoingClient.html#ac5199200ec81a1b3de18ca8563ac430a">iqReceived</a> (const <a class="el" href="classQXmppIq.html">QXmppIq</a> &amp;)</td></tr>
-<tr class="memdesc:ac5199200ec81a1b3de18ca8563ac430a"><td class="mdescLeft">&#160;</td><td class="mdescRight">This signal is emitted when an IQ is received. <br /></td></tr>
+<tr class="memitem:ac5199200ec81a1b3de18ca8563ac430a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppOutgoingClient.html#ac5199200ec81a1b3de18ca8563ac430a">iqReceived</a> (const <a class="el" href="classQXmppIq.html">QXmppIq</a> &amp;)</td></tr>
 <tr class="separator:ac5199200ec81a1b3de18ca8563ac430a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a89d92759e15510b8e0bcf951a4410e4f"><td class="memItemLeft" align="right" valign="top"><a id="a89d92759e15510b8e0bcf951a4410e4f"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppOutgoingClient.html#a89d92759e15510b8e0bcf951a4410e4f">sslErrors</a> (const QList&lt; QSslError &gt; &amp;errors)</td></tr>
@@ -286,6 +284,33 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Disconnects from the server and resets the stream management state.</p>
 <dl class="section since"><dt>Since</dt><dd>QXmpp 1.0 </dd></dl>
+
+</div>
+</div>
+<a id="ac5199200ec81a1b3de18ca8563ac430a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5199200ec81a1b3de18ca8563ac430a">&#9670;&nbsp;</a></span>iqReceived</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void QXmppOutgoingClient::iqReceived </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classQXmppIq.html">QXmppIq</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>This signal is emitted when an IQ response (type result or error) has been received that was not handled by <a class="el" href="classQXmppOutgoingClient.html#a9be28568b016d24502d2f766cf42cbba" title="This signal is emitted when an element is received. ">elementReceived()</a>. </p>
 
 </div>
 </div>

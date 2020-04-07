@@ -751,7 +751,8 @@ template&lt;typename T &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Notifies that an XMPP iq stanza is received. The <a class="el" href="classQXmppIq.html" title="The QXmppIq class is the base class for all IQs. ">QXmppIq</a> parameter contains the details of the iq sent to this client. IQ stanzas provide a structured request-response mechanism. Roster management, setting-getting vCards etc is done using iq stanzas. </p>
+<p>This signal is emitted when IQs of type result or error are received by the client and no registered <a class="el" href="classQXmppClientExtension.html" title="The QXmppClientExtension class is the base class for QXmppClient extensions. ">QXmppClientExtension</a> could handle it.</p>
+<p>This is useful when it is only important to check whether the response of an IQ was successful. However, the recommended way is still to use an additional <a class="el" href="classQXmppClientExtension.html" title="The QXmppClientExtension class is the base class for QXmppClient extensions. ">QXmppClientExtension</a> for this kind of tasks. </p>
 
 </div>
 </div>
