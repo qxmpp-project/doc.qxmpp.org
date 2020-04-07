@@ -6,6 +6,7 @@ var searchData=
   ['querytype',['queryType',['../classQXmppPubSubIq.html#abb7e9f9b5953bd68c4eba46e8c2819e4',1,'QXmppPubSubIq']]],
   ['queuedata',['queueData',['../classQXmppOutgoingServer.html#aeaab8b4ce42db69ab9cea8ace67a1265',1,'QXmppOutgoingServer']]],
   ['qxmpparchivelistiq',['QXmppArchiveListIq',['../classQXmppArchiveListIq.html#aa940621c68b3d637099e40916bdf5a37',1,'QXmppArchiveListIq']]],
+  ['qxmppattentionmanager',['QXmppAttentionManager',['../classQXmppAttentionManager.html#a8201f5b807074563108c55ae7c10c23b',1,'QXmppAttentionManager']]],
   ['qxmppbitsofbinarycontentid',['QXmppBitsOfBinaryContentId',['../classQXmppBitsOfBinaryContentId.html#ad56eae2542bcc731bce26e41a172f3dc',1,'QXmppBitsOfBinaryContentId']]],
   ['qxmppbookmarkconference',['QXmppBookmarkConference',['../classQXmppBookmarkConference.html#a01e949da407d33e9d53b92b7ebe81c68',1,'QXmppBookmarkConference']]],
   ['qxmppbookmarkmanager',['QXmppBookmarkManager',['../classQXmppBookmarkManager.html#af8d7ef4d015752c8b33ac81fd030f165',1,'QXmppBookmarkManager']]],

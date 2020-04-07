@@ -8,6 +8,7 @@ var searchData=
   ['qxmpparchiveprefiq',['QXmppArchivePrefIq',['../classQXmppArchivePrefIq.html',1,'']]],
   ['qxmpparchiveremoveiq',['QXmppArchiveRemoveIq',['../classQXmppArchiveRemoveIq.html',1,'']]],
   ['qxmpparchiveretrieveiq',['QXmppArchiveRetrieveIq',['../classQXmppArchiveRetrieveIq.html',1,'']]],
+  ['qxmppattentionmanager',['QXmppAttentionManager',['../classQXmppAttentionManager.html',1,'']]],
   ['qxmppbindiq',['QXmppBindIq',['../classQXmppBindIq.html',1,'']]],
   ['qxmppbitsofbinarycontentid',['QXmppBitsOfBinaryContentId',['../classQXmppBitsOfBinaryContentId.html',1,'']]],
   ['qxmppbitsofbinarydata',['QXmppBitsOfBinaryData',['../classQXmppBitsOfBinaryData.html',1,'']]],

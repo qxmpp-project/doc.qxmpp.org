@@ -3,6 +3,7 @@ var searchData=
   ['_7eerror',['~Error',['../classQXmppStanza_1_1Error.html#a725d29bd29e801cab233b7c6ef57c969',1,'QXmppStanza::Error']]],
   ['_7efield',['~Field',['../classQXmppDataForm_1_1Field.html#a72679dafc25450a90d43494c26c542d0',1,'QXmppDataForm::Field']]],
   ['_7emedia',['~Media',['../classQXmppDataForm_1_1Media.html#a2f0290da439f828807dd45d1f4b38865',1,'QXmppDataForm::Media']]],
+  ['_7eqxmppattentionmanager',['~QXmppAttentionManager',['../classQXmppAttentionManager.html#adcc919c0d7e6ad4dfc7dcba6408be724',1,'QXmppAttentionManager']]],
   ['_7eqxmppbookmarkmanager',['~QXmppBookmarkManager',['../classQXmppBookmarkManager.html#a42cd818053f01f38be71eba77ffca2ce',1,'QXmppBookmarkManager']]],
   ['_7eqxmppcallmanager',['~QXmppCallManager',['../classQXmppCallManager.html#ac4fdcd1083db02f65b8fb66f6333e114',1,'QXmppCallManager']]],
   ['_7eqxmppclient',['~QXmppClient',['../classQXmppClient.html#ac0307eb6e160f3d9c297c5864e957f46',1,'QXmppClient']]],

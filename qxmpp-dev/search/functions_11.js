@@ -19,6 +19,7 @@ var searchData=
   ['renameitem',['renameItem',['../classQXmppRosterManager.html#a65ecf5954b56e1d38be5b3554c4e3f30',1,'QXmppRosterManager']]],
   ['reopen',['reopen',['../classQXmppLogger.html#a18ebf48f34358d20dd57502a9db2f0c0',1,'QXmppLogger']]],
   ['replaceid',['replaceId',['../classQXmppMessage.html#acaa775d993d17c8461da731108f1c2ce',1,'QXmppMessage']]],
+  ['requestattention',['requestAttention',['../classQXmppAttentionManager.html#ae86580c3843e5fc1285ce534a51c734e',1,'QXmppAttentionManager']]],
   ['requestclientvcard',['requestClientVCard',['../classQXmppVCardManager.html#a3f049d6356f93f5f8fa81a1c30ea5ba9',1,'QXmppVCardManager']]],
   ['requestconfiguration',['requestConfiguration',['../classQXmppMucRoom.html#ab20d3d15a70354d109d1f30a13c8c1df',1,'QXmppMucRoom']]],
   ['requestfailed',['requestFailed',['../classQXmppUploadRequestManager.html#aa34ad4ef3b40fb49443139395c421d0f',1,'QXmppUploadRequestManager']]],
