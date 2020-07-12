@@ -287,7 +287,7 @@ var searchData=
   ['slashmecommandtext',['slashMeCommandText',['../classQXmppMessage.html#ab78ed304645ad55d93f400b101f8e269',1,'QXmppMessage::slashMeCommandText(const QString &amp;body)'],['../classQXmppMessage.html#a3ea847511df051b442b156c9eaecf16b',1,'QXmppMessage::slashMeCommandText() const']]],
   ['slotreceived',['slotReceived',['../classQXmppUploadRequestManager.html#ab0ab1f62fb78309610e80a628878fed9',1,'QXmppUploadRequestManager']]],
   ['socket',['socket',['../classQXmppStream.html#a8df30d84afb7a1f89e25bdcfd31df0fc',1,'QXmppStream']]],
-  ['socketerror',['socketError',['../classQXmppClient.html#a2b044b37ce88a2f2e65833b3d6e57a9f',1,'QXmppClient::socketError()'],['../classQXmppClient.html#a7c2851d07cc33119752abc6ec8ffc47aac48e9688ca9dce21676283ada1172863',1,'QXmppClient::SocketError()']]],
+  ['socketerror',['SocketError',['../classQXmppClient.html#a7c2851d07cc33119752abc6ec8ffc47aac48e9688ca9dce21676283ada1172863',1,'QXmppClient::SocketError()'],['../classQXmppClient.html#a2b044b37ce88a2f2e65833b3d6e57a9f',1,'QXmppClient::socketError()']]],
   ['socketerrorstring',['socketErrorString',['../classQXmppClient.html#aa1550c4c8937019c2eee1eb3c5a73171',1,'QXmppClient']]],
   ['socksmethod',['SocksMethod',['../classQXmppTransferJob.html#a962582d3049909305277e54e2095c71ba81571d8573b2003f6f3a66fcda644815',1,'QXmppTransferJob']]],
   ['speed',['speed',['../classQXmppTransferJob.html#a8c6ad5d3feb9c57b7515dabe039e4ed6',1,'QXmppTransferJob']]],
@@ -322,7 +322,7 @@ var searchData=
   ['subscriptionreceived',['subscriptionReceived',['../classQXmppRosterManager.html#a3407f699aded8ed2724cdbb121678c4a',1,'QXmppRosterManager']]],
   ['subscriptionrequired',['SubscriptionRequired',['../classQXmppStanza_1_1Error.html#abcf1cbbe7b15ec82f3ac34723b604852acf4f5e2e8bbdb4268fa3d27a031ea4e3',1,'QXmppStanza::Error']]],
   ['subscriptionstatus',['subscriptionStatus',['../classQXmppRosterIq_1_1Item.html#aeddd7822c960b65bda9aafa62411f4ad',1,'QXmppRosterIq::Item']]],
-  ['subscriptiontype',['SubscriptionType',['../classQXmppRosterIq_1_1Item.html#a0133cf9262cec7e299c4db7c247c5514',1,'QXmppRosterIq::Item::SubscriptionType()'],['../classQXmppRosterIq_1_1Item.html#a03fdb953f1e12d90d94a80fe965df09d',1,'QXmppRosterIq::Item::subscriptionType() const']]],
+  ['subscriptiontype',['subscriptionType',['../classQXmppRosterIq_1_1Item.html#a03fdb953f1e12d90d94a80fe965df09d',1,'QXmppRosterIq::Item::subscriptionType() const'],['../classQXmppRosterIq_1_1Item.html#a0133cf9262cec7e299c4db7c247c5514',1,'QXmppRosterIq::Item::SubscriptionType()']]],
   ['supportedbyserver',['supportedByServer',['../classQXmppRegistrationManager.html#a10dda950fc89d5d0758f8f7975b458ac',1,'QXmppRegistrationManager::supportedByServer()'],['../classQXmppRegistrationManager.html#a3141d15fa0225d1cf58676c933e07552',1,'QXmppRegistrationManager::supportedByServer() const']]],
   ['supportedbyserverchanged',['supportedByServerChanged',['../classQXmppRegistrationManager.html#ac9ebcce15041a231376a6af290f81c0b',1,'QXmppRegistrationManager']]],
   ['supportedmethods',['supportedMethods',['../classQXmppTransferManager.html#aeb4b1f1bb5e966f977d832014f0de9d8',1,'QXmppTransferManager::supportedMethods()'],['../classQXmppTransferManager.html#aecf788e76fece10c8b7b2971753a248a',1,'QXmppTransferManager::supportedMethods() const']]]
