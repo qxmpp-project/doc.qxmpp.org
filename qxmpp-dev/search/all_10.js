@@ -4,7 +4,7 @@ var searchData=
   ['queryid',['queryId',['../classQXmppMamQueryIq.html#a897a7a1aa8464c2737e349b0bfdd887e',1,'QXmppMamQueryIq']]],
   ['queryjid',['queryJid',['../classQXmppPubSubIq.html#af5a249b8391a6a020d5b0ec1447eb748',1,'QXmppPubSubIq']]],
   ['querynode',['queryNode',['../classQXmppPubSubIq.html#a606c69164283d376a9be351af1325e0f',1,'QXmppPubSubIq']]],
-  ['querytype',['QueryType',['../classQXmppPubSubIq.html#aeadecfdbdb64593cc7a27cbe9def8359',1,'QXmppPubSubIq::QueryType()'],['../classQXmppPubSubIq.html#abb7e9f9b5953bd68c4eba46e8c2819e4',1,'QXmppPubSubIq::queryType() const']]],
+  ['querytype',['queryType',['../classQXmppPubSubIq.html#abb7e9f9b5953bd68c4eba46e8c2819e4',1,'QXmppPubSubIq::queryType() const'],['../classQXmppPubSubIq.html#aeadecfdbdb64593cc7a27cbe9def8359',1,'QXmppPubSubIq::QueryType()']]],
   ['queuedata',['queueData',['../classQXmppOutgoingServer.html#aeaab8b4ce42db69ab9cea8ace67a1265',1,'QXmppOutgoingServer']]],
   ['qxmpparchivechat',['QXmppArchiveChat',['../classQXmppArchiveChat.html',1,'']]],
   ['qxmpparchivechatiq',['QXmppArchiveChatIq',['../classQXmppArchiveChatIq.html',1,'']]],

@@ -5,7 +5,7 @@ var searchData=
   ['unexpectedrequest',['UnexpectedRequest',['../classQXmppStanza_1_1Error.html#abcf1cbbe7b15ec82f3ac34723b604852ac71c1b7927a3f0bbc889807c343c45ab',1,'QXmppStanza::Error']]],
   ['unit',['unit',['../classQXmppVCardOrganization.html#a321f3182bca5a4fdf8f65554275aa6b5',1,'QXmppVCardOrganization']]],
   ['unknownencryption',['UnknownEncryption',['../classQXmppMessage.html#a1526e753b5cfe7ed7787d035b72c3742a3d891bce95ec28f88345014011abbc5a',1,'QXmppMessage']]],
-  ['unsubscribe',['unsubscribe',['../classQXmppRosterManager.html#aa743c82ec16b20e1134f994487db1023',1,'QXmppRosterManager::unsubscribe()'],['../classQXmppPresence.html#a47ab8dd08436f9d7c90d2990678b5a6da20986f18e387f68a5fdfa0e67c44bc44',1,'QXmppPresence::Unsubscribe()']]],
+  ['unsubscribe',['Unsubscribe',['../classQXmppPresence.html#a47ab8dd08436f9d7c90d2990678b5a6da20986f18e387f68a5fdfa0e67c44bc44',1,'QXmppPresence::Unsubscribe()'],['../classQXmppRosterManager.html#aa743c82ec16b20e1134f994487db1023',1,'QXmppRosterManager::unsubscribe()']]],
   ['unsubscribed',['Unsubscribed',['../classQXmppPresence.html#a47ab8dd08436f9d7c90d2990678b5a6da63414092d2fc4b90987f56731c150623',1,'QXmppPresence']]],
   ['updatecounter',['updateCounter',['../classQXmppLogger.html#a9dfaa287ed3dc1b37e9f0824f279bc9c',1,'QXmppLogger::updateCounter()'],['../classQXmppLoggable.html#aa309eaea9699e7fe652a400cef346ae2',1,'QXmppLoggable::updateCounter()']]],
   ['uploadservices',['uploadServices',['../classQXmppUploadRequestManager.html#a66360385ff63f8bd46c4a5ffd879a1f3',1,'QXmppUploadRequestManager']]],
