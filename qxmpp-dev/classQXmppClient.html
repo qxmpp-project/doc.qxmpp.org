@@ -107,6 +107,12 @@ Public Types</h2></td></tr>
  }<tr class="memdesc:a5f4e70d508c08967f72fd41c5343ad2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">This enumeration describes a client state.  <a href="classQXmppClient.html#a5f4e70d508c08967f72fd41c5343ad2e">More...</a><br /></td></tr>
 </td></tr>
 <tr class="separator:a5f4e70d508c08967f72fd41c5343ad2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab5506ec0769f208e1ccd5d23c6aaea8"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppClient.html#aab5506ec0769f208e1ccd5d23c6aaea8">StreamManagementState</a> { <a class="el" href="classQXmppClient.html#aab5506ec0769f208e1ccd5d23c6aaea8a2f2266e80f6675fce28888b4dde9acab">NoStreamManagement</a>, 
+<a class="el" href="classQXmppClient.html#aab5506ec0769f208e1ccd5d23c6aaea8acea8c2f8fb528ef8b02f55fbb4481795">NewStream</a>, 
+<a class="el" href="classQXmppClient.html#aab5506ec0769f208e1ccd5d23c6aaea8a219f7e0cb85cec5a017c21138c7ab4ac">ResumedStream</a>
+ }<tr class="memdesc:aab5506ec0769f208e1ccd5d23c6aaea8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Describes the use of <a href="https://xmpp.org/extensions/xep-0198.html">XEP-0198</a>: Stream Management.  <a href="classQXmppClient.html#aab5506ec0769f208e1ccd5d23c6aaea8">More...</a><br /></td></tr>
+</td></tr>
+<tr class="separator:aab5506ec0769f208e1ccd5d23c6aaea8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-slots"></a>
 Public Slots</h2></td></tr>
@@ -193,6 +199,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="separator:aa47739ef073b38b50283f10a078777e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8b946ef78294f79a158aa3ff2f2e1f3f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppClient.html#a8b946ef78294f79a158aa3ff2f2e1f3f">setActive</a> (bool active)</td></tr>
 <tr class="separator:a8b946ef78294f79a158aa3ff2f2e1f3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a65b66e4c1e2259a256bd6bd57d61bd57"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classQXmppClient.html#aab5506ec0769f208e1ccd5d23c6aaea8">StreamManagementState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppClient.html#a65b66e4c1e2259a256bd6bd57d61bd57">streamManagementState</a> () const</td></tr>
+<tr class="separator:a65b66e4c1e2259a256bd6bd57d61bd57"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5d62adbae72dedfed8a8fb47fc462694"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classQXmppPresence.html">QXmppPresence</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppClient.html#a5d62adbae72dedfed8a8fb47fc462694">clientPresence</a> () const</td></tr>
 <tr class="separator:a5d62adbae72dedfed8a8fb47fc462694"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad47d8d9bd5e44dd2566ff0d726b1e71b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppClient.html#ad47d8d9bd5e44dd2566ff0d726b1e71b">setClientPresence</a> (const <a class="el" href="classQXmppPresence.html">QXmppPresence</a> &amp;presence)</td></tr>
@@ -320,6 +328,30 @@ Additional Inherited Members</h2></td></tr>
 <tr><td class="fieldname"><a id="a5f4e70d508c08967f72fd41c5343ad2eac25719267a60fc7b0ef8ecc35fa439f7"></a>ConnectingState&#160;</td><td class="fielddoc"><p>Trying to connect to the server. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a5f4e70d508c08967f72fd41c5343ad2eae603afad2343f7682b39b90d3d845cf7"></a>ConnectedState&#160;</td><td class="fielddoc"><p>Connected to the server. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="aab5506ec0769f208e1ccd5d23c6aaea8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab5506ec0769f208e1ccd5d23c6aaea8">&#9670;&nbsp;</a></span>StreamManagementState</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classQXmppClient.html#aab5506ec0769f208e1ccd5d23c6aaea8">QXmppClient::StreamManagementState</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Describes the use of <a href="https://xmpp.org/extensions/xep-0198.html">XEP-0198</a>: Stream Management. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="aab5506ec0769f208e1ccd5d23c6aaea8a2f2266e80f6675fce28888b4dde9acab"></a>NoStreamManagement&#160;</td><td class="fielddoc"><p>Stream Management is not used. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aab5506ec0769f208e1ccd5d23c6aaea8acea8c2f8fb528ef8b02f55fbb4481795"></a>NewStream&#160;</td><td class="fielddoc"><p>Stream Management is used and the previous stream has not been resumed. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="aab5506ec0769f208e1ccd5d23c6aaea8a219f7e0cb85cec5a017c21138c7ab4ac"></a>ResumedStream&#160;</td><td class="fielddoc"><p>Stream Management is used and the previous stream has been resumed. </p>
 </td></tr>
 </table>
 
@@ -1067,6 +1099,26 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 <p>This signal is emitted to indicate that one or more SSL errors were encountered while establishing the identity of the server. </p>
+
+</div>
+</div>
+<a id="a65b66e4c1e2259a256bd6bd57d61bd57"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a65b66e4c1e2259a256bd6bd57d61bd57">&#9670;&nbsp;</a></span>streamManagementState()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classQXmppClient.html#aab5506ec0769f208e1ccd5d23c6aaea8">QXmppClient::StreamManagementState</a> QXmppClient::streamManagementState </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns the current <a href="https://xmpp.org/extensions/xep-0198.html">XEP-0198</a>: Stream Management state of the connection.</p>
+<p>Upon connection of the client this can be used to check whether the previous stream has been resumed.</p>
+<dl class="section since"><dt>Since</dt><dd>QXmpp 1.4 </dd></dl>
 
 </div>
 </div>

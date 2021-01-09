@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['newstream',['NewStream',['../classQXmppClient.html#aab5506ec0769f208e1ccd5d23c6aaea8acea8c2f8fb528ef8b02f55fbb4481795',1,'QXmppClient']]],
   ['noaction',['NoAction',['../classQXmppMucRoom.html#acd3129293f69d7e7cdd91b65aae0606fa12d272fee016d8ad12bea4dc36d38f63',1,'QXmppMucRoom']]],
   ['nocopy',['NoCopy',['../classQXmppMessage.html#aea1a3c281a281bc3a4fbc9f48b554256af1fa891156b7f7bd90a70712dc8e9d07',1,'QXmppMessage']]],
   ['noencryption',['NoEncryption',['../classQXmppMessage.html#a1526e753b5cfe7ed7787d035b72c3742aa4c6c318906833136dec7ace29a5d196',1,'QXmppMessage']]],
@@ -12,6 +13,7 @@ var searchData=
   ['nonsaslplain',['NonSASLPlain',['../classQXmppConfiguration.html#acdc5d816a74551209d5c50557e90fda2a1edaa0616b19f8d6f7a711f37f672762',1,'QXmppConfiguration']]],
   ['nopermanentstore',['NoPermanentStore',['../classQXmppMessage.html#aea1a3c281a281bc3a4fbc9f48b554256a75e808e83ff91973a7e245dd84a5fda9',1,'QXmppMessage']]],
   ['nostore',['NoStore',['../classQXmppMessage.html#aea1a3c281a281bc3a4fbc9f48b554256a1e1b6a9dd277d74027444682e794e606',1,'QXmppMessage']]],
+  ['nostreammanagement',['NoStreamManagement',['../classQXmppClient.html#aab5506ec0769f208e1ccd5d23c6aaea8a2f2266e80f6675fce28888b4dde9acab',1,'QXmppClient']]],
   ['notacceptable',['NotAcceptable',['../classQXmppStanza_1_1Error.html#abcf1cbbe7b15ec82f3ac34723b604852a4ab4a25948494ca44769a98f521ac254',1,'QXmppStanza::Error']]],
   ['notallowed',['NotAllowed',['../classQXmppStanza_1_1Error.html#abcf1cbbe7b15ec82f3ac34723b604852af4581ae9688b553b27c5f3a3409db52b',1,'QXmppStanza::Error']]],
   ['notauthorized',['NotAuthorized',['../classQXmppStanza_1_1Error.html#abcf1cbbe7b15ec82f3ac34723b604852a838bed9e44142af6f996b232784eb61a',1,'QXmppStanza::Error']]],

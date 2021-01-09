@@ -3,7 +3,7 @@ var searchData=
   ['label',['label',['../classQXmppDataForm_1_1Field.html#a3bfb16eb372a69130fa1678e8c87ba3f',1,'QXmppDataForm::Field']]],
   ['lang',['lang',['../classQXmppStanza.html#a0f6eda0c8bf5689528636b6c5a2b935f',1,'QXmppStanza']]],
   ['last',['last',['../classQXmppResultSetReply.html#a20f5f338126e9f0549cd63853d0770fb',1,'QXmppResultSetReply']]],
-  ['lastincomingsequencenumber',['lastIncomingSequenceNumber',['../classQXmppStream.html#a9e32981f093363bd0362242562dfccdb',1,'QXmppStream']]],
+  ['lastincomingsequencenumber',['lastIncomingSequenceNumber',['../classQXmppStream.html#a7d21b993795759e620afe626cedeb5b5',1,'QXmppStream']]],
   ['lastname',['lastName',['../classQXmppVCardIq.html#a1966a72fc433a38bc6bf0a54033ae8e5',1,'QXmppVCardIq']]],
   ['lastuserinteraction',['lastUserInteraction',['../classQXmppPresence.html#aa30c0b12635cfd8bbfe9d1dfb9d8e520',1,'QXmppPresence']]],
   ['leave',['leave',['../classQXmppMucRoom.html#aba377174fd4869c9d38952d71aa9297b',1,'QXmppMucRoom']]],

@@ -9,5 +9,6 @@ var searchData=
   ['remoteservertimeout',['RemoteServerTimeout',['../classQXmppStanza_1_1Error.html#abcf1cbbe7b15ec82f3ac34723b604852ad21a99ac977492b09da22f005321fb1f',1,'QXmppStanza::Error']]],
   ['remove',['Remove',['../classQXmppRosterIq_1_1Item.html#a0133cf9262cec7e299c4db7c247c5514a126d552db04eb0336747ca34e2c91cee',1,'QXmppRosterIq::Item']]],
   ['resourceconstraint',['ResourceConstraint',['../classQXmppStanza_1_1Error.html#abcf1cbbe7b15ec82f3ac34723b604852a22c91f54dc7e7d94c554e903a3d37242',1,'QXmppStanza::Error']]],
-  ['result',['Result',['../classQXmppDataForm.html#adab12c436b8c450e2b4f59da1aecadeeae5ab980ce478727be2a09112bd55e2f9',1,'QXmppDataForm::Result()'],['../classQXmppIq.html#a6bc7a0505a3be7309051ae2432a3d826a8fa093ce2dcc1baf865ca6203d2712f1',1,'QXmppIq::Result()'],['../classQXmppDialback.html#a0448107c56f892056f359013b80798bcaa6debf8f80d7366af3cff72363fd0477',1,'QXmppDialback::Result()']]]
+  ['result',['Result',['../classQXmppDataForm.html#adab12c436b8c450e2b4f59da1aecadeeae5ab980ce478727be2a09112bd55e2f9',1,'QXmppDataForm::Result()'],['../classQXmppIq.html#a6bc7a0505a3be7309051ae2432a3d826a8fa093ce2dcc1baf865ca6203d2712f1',1,'QXmppIq::Result()'],['../classQXmppDialback.html#a0448107c56f892056f359013b80798bcaa6debf8f80d7366af3cff72363fd0477',1,'QXmppDialback::Result()']]],
+  ['resumedstream',['ResumedStream',['../classQXmppClient.html#aab5506ec0769f208e1ccd5d23c6aaea8a219f7e0cb85cec5a017c21138c7ab4ac',1,'QXmppClient']]]
 ];

@@ -2,7 +2,7 @@ var searchData=
 [
   ['abort',['abort',['../classQXmppTransferJob.html#a22d997eaa5f3f906ef4d9e311a0e3939',1,'QXmppTransferJob']]],
   ['accept',['accept',['../classQXmppCall.html#a0627637efc9efd57aada1ce783b94457',1,'QXmppCall::accept()'],['../classQXmppTransferJob.html#ae8a1b5cb89a012eb1f8e85b5079379c0',1,'QXmppTransferJob::accept(const QString &amp;filePath)'],['../classQXmppTransferJob.html#aeb89d694c0f604dd7c955ceeb5e4347d',1,'QXmppTransferJob::accept(QIODevice *output)']]],
-  ['acceptsubscription',['acceptSubscription',['../classQXmppRosterManager.html#a0b8e48ba14b36a5ce3a04d8b3fe456ab',1,'QXmppRosterManager']]],
+  ['acceptsubscription',['acceptSubscription',['../classQXmppRosterManager.html#ae9622791dc98bb24e31d6a01aeb1f7e9',1,'QXmppRosterManager']]],
   ['accountdeleted',['accountDeleted',['../classQXmppRegistrationManager.html#a01d8e5d83fc5b71fcc67c56b552bfcd7',1,'QXmppRegistrationManager']]],
   ['accountdeletionfailed',['accountDeletionFailed',['../classQXmppRegistrationManager.html#a84ed6adae4aea25bcf9ece962d5f7765',1,'QXmppRegistrationManager']]],
   ['action',['action',['../classQXmppJingleIq.html#a49345a778e6029be6e9e09b375b3d0d3',1,'QXmppJingleIq']]],
@@ -15,7 +15,7 @@ var searchData=
   ['addhint',['addHint',['../classQXmppMessage.html#a31394f18bd084a5adaa0794aab2e4a24',1,'QXmppMessage']]],
   ['addincomingclient',['addIncomingClient',['../classQXmppServer.html#adc4c461cb514b5c5aba2d5d320f1d09d',1,'QXmppServer']]],
   ['addinvokableinterface',['addInvokableInterface',['../classQXmppRpcManager.html#a015ec2d968d2b4460325531157e8b0bf',1,'QXmppRpcManager']]],
-  ['additem',['addItem',['../classQXmppRosterIq.html#ab7c8d7ec0b185f48e175afb00b8f72d5',1,'QXmppRosterIq::addItem()'],['../classQXmppRosterManager.html#a7039e2a5c0bf0504606356872cd7b47a',1,'QXmppRosterManager::addItem()']]],
+  ['additem',['addItem',['../classQXmppRosterIq.html#ab7c8d7ec0b185f48e175afb00b8f72d5',1,'QXmppRosterIq::addItem()'],['../classQXmppRosterManager.html#ab4d8814fb06d963745b928846f8e51c4',1,'QXmppRosterManager::addItem()']]],
   ['addremotecandidate',['addRemoteCandidate',['../classQXmppIceConnection.html#a0a7f8f4176deddf2e2022f4634fbc08a',1,'QXmppIceConnection']]],
   ['address',['address',['../classQXmppVCardEmail.html#a77510b693868d069befeee154cf1657e',1,'QXmppVCardEmail']]],
   ['addresses',['addresses',['../classQXmppVCardIq.html#aecd0b9331c38ae98e7f7b1a695fd5009',1,'QXmppVCardIq']]],

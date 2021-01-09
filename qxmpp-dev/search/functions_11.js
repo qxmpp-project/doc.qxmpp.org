@@ -3,7 +3,7 @@ var searchData=
   ['reason',['reason',['../classQXmppJingleIq.html#a0467bf0a9f570394076caaa25b00097d',1,'QXmppJingleIq::reason()'],['../classQXmppJingleIq.html#a7df75230bb0ca644567dc7806b4b4ee7',1,'QXmppJingleIq::reason() const'],['../classQXmppMucItem.html#ab256c2fb8db63d0bb07e67a823eadbfe',1,'QXmppMucItem::reason()']]],
   ['receiptid',['receiptId',['../classQXmppMessage.html#a0323038ef0a0e9af8b620202fc7d53d8',1,'QXmppMessage']]],
   ['redirectionuri',['redirectionUri',['../classQXmppStanza_1_1Error.html#a6038c5cd134dfb160d20c382f9a2f069',1,'QXmppStanza::Error']]],
-  ['refusesubscription',['refuseSubscription',['../classQXmppRosterManager.html#a9e9ffd157b981d1fb4a3b641de2890c7',1,'QXmppRosterManager']]],
+  ['refusesubscription',['refuseSubscription',['../classQXmppRosterManager.html#a36bfe26e7b664d21dff5b57c4bbbf13e',1,'QXmppRosterManager']]],
   ['region',['region',['../classQXmppVCardAddress.html#a3d7876e965ea814922278868f0d26e2d',1,'QXmppVCardAddress']]],
   ['registermode',['registerMode',['../classQXmppStreamFeatures.html#ad232afac4d59f48cae987d29bbc24748',1,'QXmppStreamFeatures']]],
   ['registeronconnectenabled',['registerOnConnectEnabled',['../classQXmppRegistrationManager.html#aafa81ff385f2383a0975108f74071264',1,'QXmppRegistrationManager']]],
