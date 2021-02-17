@@ -1,4 +1,5 @@
 <map id="QXmppMixIq" name="QXmppMixIq">
-<area shape="rect" id="node2" href="$classQXmppIq.html" title="The QXmppIq class is the base class for all IQs. " alt="" coords="20,80,97,107"/>
-<area shape="rect" id="node3" href="$classQXmppStanza.html" title="The QXmppStanza class is the base class for all XMPP stanzas. " alt="" coords="5,5,112,32"/>
+<area shape="rect" id="node1" title="The QXmppMixIq class represents an IQ used to do actions on a MIX channel as defined by XEP&#45;0369: Med..." alt="" coords="9,155,116,181"/>
+<area shape="rect" id="node2" href="$classQXmppIq.html" title="The QXmppIq class is the base class for all IQs." alt="" coords="21,80,104,107"/>
+<area shape="rect" id="node3" href="$classQXmppStanza.html" title="The QXmppStanza class is the base class for all XMPP stanzas." alt="" coords="5,5,120,32"/>
 </map>

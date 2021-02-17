@@ -1,3 +1,4 @@
 <map id="QXmppIq" name="QXmppIq">
-<area shape="rect" id="node2" href="$classQXmppStanza.html" title="The QXmppStanza class is the base class for all XMPP stanzas. " alt="" coords="5,5,112,32"/>
+<area shape="rect" id="node1" title="The QXmppIq class is the base class for all IQs." alt="" coords="21,80,104,107"/>
+<area shape="rect" id="node2" href="$classQXmppStanza.html" title="The QXmppStanza class is the base class for all XMPP stanzas." alt="" coords="5,5,120,32"/>
 </map>

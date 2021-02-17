@@ -1,3 +1,4 @@
 <map id="QXmppStartTlsPacket" name="QXmppStartTlsPacket">
-<area shape="rect" id="node2" href="$classQXmppStanza.html" title="The QXmppStanza class is the base class for all XMPP stanzas. " alt="" coords="29,5,135,32"/>
+<area shape="rect" id="node1" title="The QXmppStartTlsPacket represents packets used for initiating STARTTLS negotiation when connecting." alt="" coords="5,80,168,107"/>
+<area shape="rect" id="node2" href="$classQXmppStanza.html" title="The QXmppStanza class is the base class for all XMPP stanzas." alt="" coords="29,5,144,32"/>
 </map>

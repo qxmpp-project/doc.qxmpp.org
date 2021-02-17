@@ -1,4 +1,5 @@
 <map id="QXmppBookmarkManager" name="QXmppBookmarkManager">
-<area shape="rect" id="node2" href="$classQXmppClientExtension.html" title="The QXmppClientExtension class is the base class for QXmppClient extensions. " alt="" coords="13,80,172,107"/>
-<area shape="rect" id="node3" href="$classQXmppLoggable.html" title="The QXmppLoggable class represents a source of logging messages. " alt="" coords="33,5,152,32"/>
+<area shape="rect" id="node1" title="The QXmppBookmarkManager class allows you to store and retrieve bookmarks as defined by XEP&#45;0048: Boo..." alt="" coords="5,155,200,181"/>
+<area shape="rect" id="node2" href="$classQXmppClientExtension.html" title="The QXmppClientExtension class is the base class for QXmppClient extensions." alt="" coords="17,80,189,107"/>
+<area shape="rect" id="node3" href="$classQXmppLoggable.html" title="The QXmppLoggable class represents a source of logging messages." alt="" coords="38,5,167,32"/>
 </map>
