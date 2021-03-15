@@ -1,0 +1,5 @@
+<map id="QXmppRpcResponseIq" name="QXmppRpcResponseIq">
+<area shape="rect" id="node1" title="The QXmppRpcResponseIq class represents an IQ used to carry an RPC response as specified by XEP&#45;0009:..." alt="" coords="5,155,175,181"/>
+<area shape="rect" id="node2" href="$classQXmppIq.html" title="The QXmppIq class is the base class for all IQs." alt="" coords="49,80,131,107"/>
+<area shape="rect" id="node3" href="$classQXmppStanza.html" title="The QXmppStanza class is the base class for all XMPP stanzas." alt="" coords="33,5,147,32"/>
+</map>
