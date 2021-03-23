@@ -25,9 +25,10 @@ var searchData=
   ['firstname_185',['firstName',['../classQXmppVCardIq.html#a4149f81ad4a2bf62d89e1ea1a46d171d',1,'QXmppVCardIq']]],
   ['forbidden_186',['Forbidden',['../classQXmppStanza_1_1Error.html#abcf1cbbe7b15ec82f3ac34723b604852a4263e07f41d676de34be3496d901efe1',1,'QXmppStanza::Error']]],
   ['form_187',['Form',['../classQXmppDataForm.html#adab12c436b8c450e2b4f59da1aecadeea7cf7ea376eb2622aee106753f21af876',1,'QXmppDataForm::Form()'],['../classQXmppDiscoveryIq.html#a4edecd9e4feb6515a673abec859f4e18',1,'QXmppDiscoveryIq::form()'],['../classQXmppMamQueryIq.html#afe545f3285c366ef89c6020237e390db',1,'QXmppMamQueryIq::form()'],['../classQXmppMucOwnerIq.html#aa37f62179d3b074202d6add18bdf2a99',1,'QXmppMucOwnerIq::form()'],['../classQXmppRegisterIq.html#a0107292c340dad83fa3add220f249ce7',1,'QXmppRegisterIq::form()']]],
-  ['foundation_188',['foundation',['../classQXmppJingleCandidate.html#acd1b02485658bb6469af182c5f4c4327',1,'QXmppJingleCandidate']]],
-  ['from_189',['From',['../classQXmppRosterIq_1_1Item.html#a0133cf9262cec7e299c4db7c247c5514a05fc5ab28e5f745a116caf16dbb6b387',1,'QXmppRosterIq::Item::From()'],['../classQXmppStanza.html#a850ef9a2479cddcbd7657c65ca40b153',1,'QXmppStanza::from()']]],
-  ['fromcidurl_190',['fromCidUrl',['../classQXmppBitsOfBinaryContentId.html#a3ef8f24818dab7243a0b7f82ae7d5a58',1,'QXmppBitsOfBinaryContentId']]],
-  ['fromcontentid_191',['fromContentId',['../classQXmppBitsOfBinaryContentId.html#a28aee1dc5263cd863f8312d062553e7a',1,'QXmppBitsOfBinaryContentId']]],
-  ['fullname_192',['fullName',['../classQXmppVCardIq.html#a40cee2a7d8b353fff804cf582eda5684',1,'QXmppVCardIq']]]
+  ['formtype_188',['formType',['../classQXmppDataForm.html#ab4bf8c965a5fcfbda14783854f18d208',1,'QXmppDataForm']]],
+  ['foundation_189',['foundation',['../classQXmppJingleCandidate.html#acd1b02485658bb6469af182c5f4c4327',1,'QXmppJingleCandidate']]],
+  ['from_190',['From',['../classQXmppRosterIq_1_1Item.html#a0133cf9262cec7e299c4db7c247c5514a05fc5ab28e5f745a116caf16dbb6b387',1,'QXmppRosterIq::Item::From()'],['../classQXmppStanza.html#a850ef9a2479cddcbd7657c65ca40b153',1,'QXmppStanza::from()']]],
+  ['fromcidurl_191',['fromCidUrl',['../classQXmppBitsOfBinaryContentId.html#a3ef8f24818dab7243a0b7f82ae7d5a58',1,'QXmppBitsOfBinaryContentId']]],
+  ['fromcontentid_192',['fromContentId',['../classQXmppBitsOfBinaryContentId.html#a28aee1dc5263cd863f8312d062553e7a',1,'QXmppBitsOfBinaryContentId']]],
+  ['fullname_193',['fullName',['../classQXmppVCardIq.html#a40cee2a7d8b353fff804cf582eda5684',1,'QXmppVCardIq']]]
 ];

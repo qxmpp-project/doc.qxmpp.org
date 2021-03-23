@@ -150,6 +150,8 @@ QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
 <tr class="separator:a481dcc9497ad8e47a55ca57cec0db4f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a78ba23e3b14a3367be036c94b7a52a0a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppDataForm.html#a78ba23e3b14a3367be036c94b7a52a0a">setType</a> (<a class="el" href="classQXmppDataForm.html#adab12c436b8c450e2b4f59da1aecadee">QXmppDataForm::Type</a> <a class="el" href="classQXmppDataForm.html#a481dcc9497ad8e47a55ca57cec0db4f4">type</a>)</td></tr>
 <tr class="separator:a78ba23e3b14a3367be036c94b7a52a0a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab4bf8c965a5fcfbda14783854f18d208"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppDataForm.html#ab4bf8c965a5fcfbda14783854f18d208">formType</a> () const</td></tr>
+<tr class="separator:ab4bf8c965a5fcfbda14783854f18d208"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab1316f8fac2e97648a4ea44a9738dce0"><td class="memItemLeft" align="right" valign="top"><a id="ab1316f8fac2e97648a4ea44a9738dce0"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppDataForm.html#ab1316f8fac2e97648a4ea44a9738dce0">isNull</a> () const</td></tr>
 <tr class="memdesc:ab1316f8fac2e97648a4ea44a9738dce0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the form has an unknown type. <br /></td></tr>
@@ -204,6 +206,26 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 
 <p>Returns the form's fields. </p>
 <p>Returns the form's fields by reference. </p>
+
+</div>
+</div>
+<a id="ab4bf8c965a5fcfbda14783854f18d208"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab4bf8c965a5fcfbda14783854f18d208">&#9670;&nbsp;</a></span>formType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString QXmppDataForm::formType </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Searches for a hidden field called 'FORM_TYPE' and returns its value.</p>
+<dl class="section return"><dt>Returns</dt><dd>The string value of the field or a null string if the field couldn't be found.</dd></dl>
+<dl class="section since"><dt>Since</dt><dd>QXmpp 1.5 </dd></dl>
 
 </div>
 </div>
