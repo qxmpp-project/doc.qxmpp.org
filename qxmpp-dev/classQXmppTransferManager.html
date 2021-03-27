@@ -73,17 +73,12 @@ $(function() {
 <div class="title">QXmppTransferManager Class Reference<div class="ingroups"><a class="el" href="group__Managers.html">Managers</a></div></div>  </div>
 </div><!--header-->
 <div class="contents">
-
-<p>The <a class="el" href="classQXmppTransferManager.html" title="The QXmppTransferManager class provides support for sending and receiving files.">QXmppTransferManager</a> class provides support for sending and receiving files.  
- <a href="classQXmppTransferManager.html#details">More...</a></p>
-
-<p><code>#include &lt;<a class="el" href="QXmppTransferManager_8h_source.html">QXmppTransferManager.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for QXmppTransferManager:</div>
 <div class="dyncontent">
 <div class="center"><img src="classQXmppTransferManager__inherit__graph.png" border="0" usemap="#QXmppTransferManager_inherit__map" alt="Inheritance graph"/></div>
 <map name="QXmppTransferManager_inherit__map" id="QXmppTransferManager_inherit__map">
-<area shape="rect" title="The QXmppTransferManager class provides support for sending and receiving files." alt="" coords="5,155,184,181"/>
+<area shape="rect" title=" " alt="" coords="5,155,184,181"/>
 <area shape="rect" href="classQXmppClientExtension.html" title="The QXmppClientExtension class is the base class for QXmppClient extensions." alt="" coords="9,80,181,107"/>
 <area shape="rect" href="classQXmppLoggable.html" title="The QXmppLoggable class represents a source of logging messages." alt="" coords="30,5,159,32"/>
 </map>
@@ -93,7 +88,7 @@ Collaboration diagram for QXmppTransferManager:</div>
 <div class="dyncontent">
 <div class="center"><img src="classQXmppTransferManager__coll__graph.png" border="0" usemap="#QXmppTransferManager_coll__map" alt="Collaboration graph"/></div>
 <map name="QXmppTransferManager_coll__map" id="QXmppTransferManager_coll__map">
-<area shape="rect" title="The QXmppTransferManager class provides support for sending and receiving files." alt="" coords="5,155,184,181"/>
+<area shape="rect" title=" " alt="" coords="5,155,184,181"/>
 <area shape="rect" href="classQXmppClientExtension.html" title="The QXmppClientExtension class is the base class for QXmppClient extensions." alt="" coords="9,80,181,107"/>
 <area shape="rect" href="classQXmppLoggable.html" title="The QXmppLoggable class represents a source of logging messages." alt="" coords="30,5,159,32"/>
 </map>
@@ -103,7 +98,7 @@ Collaboration diagram for QXmppTransferManager:</div>
 Public Slots</h2></td></tr>
 <tr class="memitem:a34228d973a450f716ad8216ce6347f67"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classQXmppTransferJob.html">QXmppTransferJob</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppTransferManager.html#a34228d973a450f716ad8216ce6347f67">sendFile</a> (const QString &amp;jid, const QString &amp;filePath, const QString &amp;description=QString())</td></tr>
 <tr class="separator:a34228d973a450f716ad8216ce6347f67"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9e08182cdd6f2df3c2d3c19bb9660d24"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classQXmppTransferJob.html">QXmppTransferJob</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppTransferManager.html#a9e08182cdd6f2df3c2d3c19bb9660d24">sendFile</a> (const QString &amp;jid, QIODevice *device, const QXmppTransferFileInfo &amp;fileInfo, const QString &amp;sid=QString())</td></tr>
+<tr class="memitem:a9e08182cdd6f2df3c2d3c19bb9660d24"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classQXmppTransferJob.html">QXmppTransferJob</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppTransferManager.html#a9e08182cdd6f2df3c2d3c19bb9660d24">sendFile</a> (const QString &amp;jid, QIODevice *device, const <a class="el" href="classQXmppTransferFileInfo.html">QXmppTransferFileInfo</a> &amp;fileInfo, const QString &amp;sid=QString())</td></tr>
 <tr class="separator:a9e08182cdd6f2df3c2d3c19bb9660d24"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
@@ -205,10 +200,10 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a50feb6fc691e90ba6b2e69c2a9aea794 inherit pro_methods_classQXmppLoggable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The <a class="el" href="classQXmppTransferManager.html" title="The QXmppTransferManager class provides support for sending and receiving files.">QXmppTransferManager</a> class provides support for sending and receiving files. </p>
-<p>Stream initiation is performed as described in <a href="https://xmpp.org/extensions/xep-0095.html">XEP-0095</a>: Stream Initiation and <a href="https://xmpp.org/extensions/xep-0096.html">XEP-0096</a>: SI File Transfer. The actual file transfer is then performed using either <a href="https://xmpp.org/extensions/xep-0065.html">XEP-0065</a>: SOCKS5 Bytestreams or <a href="https://xmpp.org/extensions/xep-0047.html">XEP-0047</a>: In-Band Bytestreams.</p>
+<div class="textblock"><p>The <a class="el" href="classQXmppTransferManager.html">QXmppTransferManager</a> class provides support for sending and receiving files.</p>
+<p>Stream initiation is performed as described in <a href="https://xmpp.org/extensions/xep-0095.html">XEP-0095: Stream Initiation</a> and <a href="https://xmpp.org/extensions/xep-0096.html">XEP-0096: SI File Transfer</a>. The actual file transfer is then performed using either <a href="https://xmpp.org/extensions/xep-0065.html">XEP-0065: SOCKS5 Bytestreams</a> or <a href="https://xmpp.org/extensions/xep-0047.html">XEP-0047: In-Band Bytestreams</a>.</p>
 <p>To make use of this manager, you need to instantiate it and load it into the <a class="el" href="classQXmppClient.html" title="The QXmppClient class is the main class for using QXmpp.">QXmppClient</a> instance as follows:</p>
-<div class="fragment"><div class="line"><a class="code" href="classQXmppTransferManager.html">QXmppTransferManager</a> *manager = <span class="keyword">new</span> <a class="code" href="classQXmppTransferManager.html#aa88b03ffc2b9039a50bae7e79e759ed7">QXmppTransferManager</a>;</div>
+<div class="fragment"><div class="line"><span class="keyword">auto</span> *manager = <span class="keyword">new</span> <a class="code" href="classQXmppTransferManager.html#aa88b03ffc2b9039a50bae7e79e759ed7">QXmppTransferManager</a>;</div>
 <div class="line"><a class="code" href="classQXmppClientExtension.html#a2476cb1a20963d15d45d39f24a0c1198">client</a>-&gt;<a class="code" href="classQXmppClient.html#a61ccf1c37ca3f26bfd14e65c8ecf1740">addExtension</a>(manager);</div>
 </div><!-- fragment --> </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aa88b03ffc2b9039a50bae7e79e759ed7"></a>
@@ -225,7 +220,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Constructs a <a class="el" href="classQXmppTransferManager.html" title="The QXmppTransferManager class provides support for sending and receiving files.">QXmppTransferManager</a> to handle incoming and outgoing file transfers. </p>
+<p>Constructs a <a class="el" href="classQXmppTransferManager.html">QXmppTransferManager</a> to handle incoming and outgoing file transfers. </p>
 
 </div>
 </div>
@@ -374,7 +369,7 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const QXmppTransferFileInfo &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classQXmppTransferFileInfo.html">QXmppTransferFileInfo</a> &amp;&#160;</td>
           <td class="paramname"><em>fileInfo</em>, </td>
         </tr>
         <tr>
@@ -489,9 +484,8 @@ The ownership of the <em>device</em> should be managed by the caller. </dd></dl>
 </ul>
 </div><!-- contents -->
 <div class="ttc" id="aclassQXmppClientExtension_html_a2476cb1a20963d15d45d39f24a0c1198"><div class="ttname"><a href="classQXmppClientExtension.html#a2476cb1a20963d15d45d39f24a0c1198">QXmppClientExtension::client</a></div><div class="ttdeci">QXmppClient * client()</div><div class="ttdef"><b>Definition:</b> QXmppClientExtension.cpp:70</div></div>
-<div class="ttc" id="aclassQXmppTransferManager_html_aa88b03ffc2b9039a50bae7e79e759ed7"><div class="ttname"><a href="classQXmppTransferManager.html#aa88b03ffc2b9039a50bae7e79e759ed7">QXmppTransferManager::QXmppTransferManager</a></div><div class="ttdeci">QXmppTransferManager()</div><div class="ttdef"><b>Definition:</b> QXmppTransferManager.cpp:715</div></div>
+<div class="ttc" id="aclassQXmppTransferManager_html_aa88b03ffc2b9039a50bae7e79e759ed7"><div class="ttname"><a href="classQXmppTransferManager.html#aa88b03ffc2b9039a50bae7e79e759ed7">QXmppTransferManager::QXmppTransferManager</a></div><div class="ttdeci">QXmppTransferManager()</div><div class="ttdef"><b>Definition:</b> QXmppTransferManager.cpp:781</div></div>
 <div class="ttc" id="aclassQXmppClient_html_a61ccf1c37ca3f26bfd14e65c8ecf1740"><div class="ttname"><a href="classQXmppClient.html#a61ccf1c37ca3f26bfd14e65c8ecf1740">QXmppClient::addExtension</a></div><div class="ttdeci">bool addExtension(QXmppClientExtension *extension)</div><div class="ttdef"><b>Definition:</b> QXmppClient.cpp:179</div></div>
-<div class="ttc" id="aclassQXmppTransferManager_html"><div class="ttname"><a href="classQXmppTransferManager.html">QXmppTransferManager</a></div><div class="ttdoc">The QXmppTransferManager class provides support for sending and receiving files.</div><div class="ttdef"><b>Definition:</b> QXmppTransferManager.h:234</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

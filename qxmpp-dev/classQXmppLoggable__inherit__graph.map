@@ -1,6 +1,6 @@
 <map id="QXmppLoggable" name="QXmppLoggable">
 <area shape="rect" id="node1" title="The QXmppLoggable class represents a source of logging messages." alt="" coords="5,563,135,589"/>
-<area shape="rect" id="node2" href="$classQXmppCall.html" title="The QXmppCall class represents a Voice&#45;Over&#45;IP call to a remote party." alt="" coords="223,360,318,387"/>
+<area shape="rect" id="node2" href="$classQXmppCall.html" title=" " alt="" coords="223,360,318,387"/>
 <area shape="rect" id="node3" href="$classQXmppClient.html" title="The QXmppClient class is the main class for using QXmpp." alt="" coords="217,411,325,437"/>
 <area shape="rect" id="node4" href="$classQXmppClientExtension.html" title="The QXmppClientExtension class is the base class for QXmppClient extensions." alt="" coords="185,461,357,488"/>
 <area shape="rect" id="node22" href="$classQXmppIceComponent.html" title="The QXmppIceComponent class represents a piece of a media stream requiring a single transport address..." alt="" coords="189,512,353,539"/>
@@ -8,7 +8,7 @@
 <area shape="rect" id="node24" href="$classQXmppServer.html" title="The QXmppServer class represents an XMPP server." alt="" coords="215,613,327,640"/>
 <area shape="rect" id="node25" href="$classQXmppServerExtension.html" title="The QXmppServerExtension class is the base class for QXmppServer extensions." alt="" coords="183,664,359,691"/>
 <area shape="rect" id="node26" href="$classQXmppStream.html" title="The QXmppStream class is the base class for all XMPP streams." alt="" coords="212,892,329,919"/>
-<area shape="rect" id="node31" href="$classQXmppTransferJob.html" title="The QXmppTransferJob class represents a single file transfer job." alt="" coords="199,943,342,969"/>
+<area shape="rect" id="node31" href="$classQXmppTransferJob.html" title=" " alt="" coords="199,943,342,969"/>
 <area shape="rect" id="node5" href="$classQXmppArchiveManager.html" title="The QXmppArchiveManager class makes it possible to access message archives as defined by XEP&#45;0136: Me..." alt="" coords="436,5,612,32"/>
 <area shape="rect" id="node6" href="$classQXmppAttentionManager.html" title="The QXmppAttentionManager class manages attention requests as defined by XEP&#45;0224: Attention." alt="" coords="431,56,617,83"/>
 <area shape="rect" id="node7" href="$classQXmppBookmarkManager.html" title="The QXmppBookmarkManager class allows you to store and retrieve bookmarks as defined by XEP&#45;0048: Boo..." alt="" coords="427,107,621,133"/>
@@ -22,7 +22,7 @@
 <area shape="rect" id="node15" href="$classQXmppRegistrationManager.html" title="The QXmppRegistrationManager class manages in&#45;band registration and account management tasks like cha..." alt="" coords="421,512,627,539"/>
 <area shape="rect" id="node16" href="$classQXmppRosterManager.html" title="The QXmppRosterManager class provides access to a connected client&#39;s roster." alt="" coords="439,563,609,589"/>
 <area shape="rect" id="node17" href="$classQXmppRpcManager.html" title="The QXmppRpcManager class make it possible to invoke remote methods and to expose local interfaces fo..." alt="" coords="449,613,599,640"/>
-<area shape="rect" id="node18" href="$classQXmppTransferManager.html" title="The QXmppTransferManager class provides support for sending and receiving files." alt="" coords="435,664,613,691"/>
+<area shape="rect" id="node18" href="$classQXmppTransferManager.html" title=" " alt="" coords="435,664,613,691"/>
 <area shape="rect" id="node19" href="$classQXmppUploadRequestManager.html" title="The QXmppUploadRequestManager implements the core of XEP&#45;0369: HTTP File Upload." alt="" coords="411,715,637,741"/>
 <area shape="rect" id="node20" href="$classQXmppVCardManager.html" title="The QXmppVCardManager class gets/sets XMPP vCards. It is an implementation of XEP&#45;0054: vcard&#45;temp." alt="" coords="441,765,607,792"/>
 <area shape="rect" id="node21" href="$classQXmppVersionManager.html" title="The QXmppVersionManager class makes it possible to request for the software version of an entity as d..." alt="" coords="437,816,611,843"/>
