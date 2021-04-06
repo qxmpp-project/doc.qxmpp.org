@@ -1,5 +1,5 @@
 <map id="QXmppIbbOpenIq" name="QXmppIbbOpenIq">
-<area shape="rect" id="node1" title="QXmppIbbOpenIq represents an IBB open request as defined by XEP&#45;0047: In&#45;Band Bytestreams." alt="" coords="5,155,141,181"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,155,141,181"/>
 <area shape="rect" id="node2" href="$classQXmppIq.html" title="The QXmppIq class is the base class for all IQs." alt="" coords="32,80,115,107"/>
 <area shape="rect" id="node3" href="$classQXmppStanza.html" title="The QXmppStanza class is the base class for all XMPP stanzas." alt="" coords="16,5,131,32"/>
 </map>

@@ -1,5 +1,5 @@
 <map id="QXmppMamQueryIq" name="QXmppMamQueryIq">
-<area shape="rect" id="node1" title="The QXmppMamQueryIq class represents the query IQ for XEP&#45;0313: Message Archive Management." alt="" coords="5,155,160,181"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,155,160,181"/>
 <area shape="rect" id="node2" href="$classQXmppIq.html" title="The QXmppIq class is the base class for all IQs." alt="" coords="41,80,124,107"/>
 <area shape="rect" id="node3" href="$classQXmppStanza.html" title="The QXmppStanza class is the base class for all XMPP stanzas." alt="" coords="25,5,140,32"/>
 </map>
