@@ -6,5 +6,5 @@ var searchData=
   ['organization_1562',['organization',['../classQXmppVCardOrganization.html#a884ffc619af8aacb7bc775bd0d396149',1,'QXmppVCardOrganization::organization()'],['../classQXmppVCardIq.html#a5c70ea311aeedf6070cf0f939befb6bf',1,'QXmppVCardIq::organization()']]],
   ['originid_1563',['originId',['../classQXmppMessage.html#aa3897a28dc06a8b93b221b5dc6bbfbbc',1,'QXmppMessage']]],
   ['os_1564',['os',['../classQXmppVersionIq.html#a03b2362a5633b956921cf752939d6d12',1,'QXmppVersionIq']]],
-  ['outofbandurl_1565',['outOfBandUrl',['../classQXmppMessage.html#a6a6b58f98ba934e429677f5033a23152',1,'QXmppMessage::outOfBandUrl()'],['../classQXmppRegisterIq.html#ad317032a2cfc30ee138e21b8530a42d4',1,'QXmppRegisterIq::outOfBandUrl()']]]
+  ['outofbandurl_1565',['outOfBandUrl',['../classQXmppMessage.html#a6a6b58f98ba934e429677f5033a23152',1,'QXmppMessage']]]
 ];
