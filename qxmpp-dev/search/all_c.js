@@ -19,7 +19,7 @@ var searchData=
   ['messagesent_375',['messageSent',['../classQXmppCarbonManager.html#a3d52013ec382bd58c86dfdec7edc456d',1,'QXmppCarbonManager']]],
   ['messagetype_376',['MessageType',['../classQXmppLogger.html#a932dbbd4f70a1e9c0ff8f452e61fc9b8',1,'QXmppLogger']]],
   ['messagetypes_377',['messageTypes',['../classQXmppLogger.html#a556ae378cb65e19460436437fa155ef2',1,'QXmppLogger::messageTypes()'],['../classQXmppLogger.html#ac6adc60f22ad6593d4176d67c2a0ef7b',1,'QXmppLogger::messageTypes()']]],
-  ['method_378',['Method',['../classQXmppTransferJob.html#a962582d3049909305277e54e2095c71b',1,'QXmppTransferJob::Method()'],['../classQXmppTransferJob.html#ae32e312cab4321da1a55e6caec7630e2',1,'QXmppTransferJob::method()'],['../classQXmppRpcInvokeIq.html#a6bbdc1e908da50739cab2b4c95b90626',1,'QXmppRpcInvokeIq::method()'],['../classQXmppTransferJob.html#a6d8074573826096278a8492fe48e650c',1,'QXmppTransferJob::method()']]],
+  ['method_378',['method',['../classQXmppTransferJob.html#ae32e312cab4321da1a55e6caec7630e2',1,'QXmppTransferJob::method()'],['../classQXmppRpcInvokeIq.html#a6bbdc1e908da50739cab2b4c95b90626',1,'QXmppRpcInvokeIq::method()'],['../classQXmppTransferJob.html#a6d8074573826096278a8492fe48e650c',1,'QXmppTransferJob::method() const'],['../classQXmppTransferJob.html#a962582d3049909305277e54e2095c71b',1,'QXmppTransferJob::Method()']]],
   ['middlename_379',['middleName',['../classQXmppVCardIq.html#a4d3505f65b438a00a752e86049f8fd4a',1,'QXmppVCardIq']]],
   ['mixannotate_380',['mixAnnotate',['../classQXmppRosterIq.html#af841760b77f1d26698680709790f35d5',1,'QXmppRosterIq']]],
   ['mixinvitation_381',['mixInvitation',['../classQXmppMessage.html#a4f05c5581bb15e599e5bc9124dcd41d4',1,'QXmppMessage']]],

@@ -124,6 +124,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="separator:ac95dd87aaa2c4cb61aa6ead2a17bc56e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3407f699aded8ed2724cdbb121678c4a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppRosterManager.html#a3407f699aded8ed2724cdbb121678c4a">subscriptionReceived</a> (const QString &amp;bareJid)</td></tr>
 <tr class="separator:a3407f699aded8ed2724cdbb121678c4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3605f2a0f7af87593143f8ac8b9db151"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppRosterManager.html#a3605f2a0f7af87593143f8ac8b9db151">subscriptionRequestReceived</a> (const QString &amp;subscriberBareJid, const <a class="el" href="classQXmppPresence.html">QXmppPresence</a> &amp;presence)</td></tr>
+<tr class="separator:a3605f2a0f7af87593143f8ac8b9db151"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa02bc7a630e38d0c3c1830b34381cdb0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppRosterManager.html#aa02bc7a630e38d0c3c1830b34381cdb0">itemAdded</a> (const QString &amp;bareJid)</td></tr>
 <tr class="separator:aa02bc7a630e38d0c3c1830b34381cdb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a946fa5a6386ce44b898b70bdc0eca159"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppRosterManager.html#a946fa5a6386ce44b898b70bdc0eca159">itemChanged</a> (const QString &amp;bareJid)</td></tr>
@@ -758,6 +760,53 @@ Additional Inherited Members</h2></td></tr>
 <p>This signal is emitted when a contact asks to subscribe to your presence.</p>
 <p>You can either accept the request by calling <a class="el" href="classQXmppRosterManager.html#ae9622791dc98bb24e31d6a01aeb1f7e9">acceptSubscription()</a> or refuse it by calling <a class="el" href="classQXmppRosterManager.html#a36bfe26e7b664d21dff5b57c4bbbf13e">refuseSubscription()</a>.</p>
 <dl class="section note"><dt>Note</dt><dd>If you set <a class="el" href="classQXmppConfiguration.html#a0d2b3dd9dc4723a5f8cf1894fa0ea1f3">QXmppConfiguration::autoAcceptSubscriptions()</a> to true, this signal will not be emitted. </dd></dl>
+
+</div>
+</div>
+<a id="a3605f2a0f7af87593143f8ac8b9db151"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3605f2a0f7af87593143f8ac8b9db151">&#9670;&nbsp;</a></span>subscriptionRequestReceived</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QXmppRosterManager::subscriptionRequestReceived </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>subscriberBareJid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classQXmppPresence.html">QXmppPresence</a> &amp;&#160;</td>
+          <td class="paramname"><em>presence</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>This signal is emitted when a JID asks to subscribe to the user's presence.</p>
+<p>The user can either accept the request by calling <a class="el" href="classQXmppRosterManager.html#ae9622791dc98bb24e31d6a01aeb1f7e9">acceptSubscription()</a> or refuse it by calling <a class="el" href="classQXmppRosterManager.html#a36bfe26e7b664d21dff5b57c4bbbf13e">refuseSubscription()</a>.</p>
+<dl class="section note"><dt>Note</dt><dd>If <a class="el" href="classQXmppConfiguration.html#a0d2b3dd9dc4723a5f8cf1894fa0ea1f3">QXmppConfiguration::autoAcceptSubscriptions()</a> is set to true, this signal will not be emitted.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">subscriberBareJid</td><td>bare JID that wants to subscribe to the user's presence </td></tr>
+    <tr><td class="paramname">presence</td><td>presence stanza containing the reason / message (presence.statusText())</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>Since</dt><dd>QXmpp 1.5 </dd></dl>
 
 </div>
 </div>
