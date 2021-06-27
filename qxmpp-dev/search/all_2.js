@@ -17,7 +17,7 @@ var searchData=
   ['channeljid_81',['channelJid',['../classQXmppMixInvitation.html#a52cfacf103179ff39e1c860381ea4380',1,'QXmppMixInvitation']]],
   ['channelname_82',['channelName',['../classQXmppMixIq.html#ac28067e15dba50130489b19babce22d4',1,'QXmppMixIq']]],
   ['channels_83',['channels',['../classQXmppJinglePayloadType.html#a2a3e5dfe19c32b26f9cc201fd2e85565',1,'QXmppJinglePayloadType']]],
-  ['chat_84',['chat',['../classQXmppArchiveChatIq.html#a4d04b6ff3df811839cc4007ce76a90f8',1,'QXmppArchiveChatIq::chat()'],['../classQXmppPresence.html#ad56af0f57b732c09b080b9347c4dba94a284dd672032786aab31be99dd495a65d',1,'QXmppPresence::Chat()']]],
+  ['chat_84',['Chat',['../classQXmppPresence.html#ad56af0f57b732c09b080b9347c4dba94a284dd672032786aab31be99dd495a65d',1,'QXmppPresence::Chat()'],['../classQXmppArchiveChatIq.html#a4d04b6ff3df811839cc4007ce76a90f8',1,'QXmppArchiveChatIq::chat()']]],
   ['chats_85',['chats',['../classQXmppArchiveListIq.html#a8514856ce1390ab8fc63630d0b21364d',1,'QXmppArchiveListIq']]],
   ['checkpassword_86',['checkPassword',['../classQXmppPasswordChecker.html#a62ba10636417e503f936560f4f2910a8',1,'QXmppPasswordChecker']]],
   ['cid_87',['cid',['../classQXmppBitsOfBinaryData.html#a0fb43db94eced171d20c962d11e5f478',1,'QXmppBitsOfBinaryData']]],
