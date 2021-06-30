@@ -63,7 +63,6 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-slots">Public Slots</a> &#124;
 <a href="#signals">Signals</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
@@ -102,12 +101,6 @@ Collaboration diagram for QXmppStream:</div>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
-Public Types</h2></td></tr>
-<tr class="memitem:a1e40e5c1463faf3b99cc3112a45132ae"><td class="memItemLeft" align="right" valign="top"><a id="a1e40e5c1463faf3b99cc3112a45132ae"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>IqResult</b> = std::variant&lt; QDomElement, QXmpp::PacketState &gt;</td></tr>
-<tr class="separator:a1e40e5c1463faf3b99cc3112a45132ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-slots"></a>
 Public Slots</h2></td></tr>
 <tr class="memitem:a8608905c2f2cc146567c85756832acb5"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppStream.html#a8608905c2f2cc146567c85756832acb5">disconnectFromHost</a> ()</td></tr>
@@ -149,13 +142,6 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aca1925ef047a64a8eb862d125a528aba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a47473db930db0242bb2f6289172b6ea8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppStream.html#a47473db930db0242bb2f6289172b6ea8">sendPacket</a> (const <a class="el" href="classQXmppStanza.html">QXmppStanza</a> &amp;)</td></tr>
 <tr class="separator:a47473db930db0242bb2f6289172b6ea8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a38208ca5bdfafcf904c828e5e85892e2"><td class="memItemLeft" align="right" valign="top">QFuture&lt; QXmpp::PacketState &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppStream.html#a38208ca5bdfafcf904c828e5e85892e2">send</a> (const <a class="el" href="classQXmppStanza.html">QXmppStanza</a> &amp;)</td></tr>
-<tr class="separator:a38208ca5bdfafcf904c828e5e85892e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a70336b317b6937c3fdda2ab775ddb3b9"><td class="memItemLeft" align="right" valign="top">QFuture&lt; IqResult &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppStream.html#a70336b317b6937c3fdda2ab775ddb3b9">sendIq</a> (const <a class="el" href="classQXmppIq.html">QXmppIq</a> &amp;)</td></tr>
-<tr class="separator:a70336b317b6937c3fdda2ab775ddb3b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3f4d077fa3d125d846779debce6e1987"><td class="memItemLeft" align="right" valign="top"><a id="a3f4d077fa3d125d846779debce6e1987"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>cancelOngoingIqs</b> ()</td></tr>
-<tr class="separator:a3f4d077fa3d125d846779debce6e1987"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4bdf3f0e3117de5abdefba60a281aef7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppStream.html#a4bdf3f0e3117de5abdefba60a281aef7">resetPacketCache</a> ()</td></tr>
 <tr class="separator:a4bdf3f0e3117de5abdefba60a281aef7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classQXmppLoggable"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classQXmppLoggable')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classQXmppLoggable.html">QXmppLoggable</a></td></tr>
@@ -194,9 +180,6 @@ Protected Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
-<tr class="memitem:a0ed23afb50ae53722d5899559bfb46cd"><td class="memItemLeft" align="right" valign="top"><a id="a0ed23afb50ae53722d5899559bfb46cd"></a>
-class&#160;</td><td class="memItemRight" valign="bottom"><b>QXmppStreamManager</b></td></tr>
-<tr class="separator:a0ed23afb50ae53722d5899559bfb46cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a50a79cf61070769e00ab30c96a4a93a5"><td class="memItemLeft" align="right" valign="top"><a id="a50a79cf61070769e00ab30c96a4a93a5"></a>
 class&#160;</td><td class="memItemRight" valign="bottom"><b>tst_QXmppStream</b></td></tr>
 <tr class="separator:a50a79cf61070769e00ab30c96a4a93a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -484,26 +467,6 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>tst_QXmppStream</b><
 
 </div>
 </div>
-<a id="a38208ca5bdfafcf904c828e5e85892e2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a38208ca5bdfafcf904c828e5e85892e2">&#9670;&nbsp;</a></span>send()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">QFuture&lt; QXmpp::PacketState &gt; QXmppStream::send </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classQXmppStanza.html">QXmppStanza</a> &amp;&#160;</td>
-          <td class="paramname"><em>stanza</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Sends an XMPP packet to the peer.</p>
-<dl class="section since"><dt>Since</dt><dd>QXmpp 1.5 </dd></dl>
-
-</div>
-</div>
 <a id="a7920b8a42c3755dda87e02dbe5e9e626"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7920b8a42c3755dda87e02dbe5e9e626">&#9670;&nbsp;</a></span>sendData</h2>
 
@@ -537,25 +500,6 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>tst_QXmppStream</b><
 
 </div>
 </div>
-<a id="a70336b317b6937c3fdda2ab775ddb3b9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a70336b317b6937c3fdda2ab775ddb3b9">&#9670;&nbsp;</a></span>sendIq()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">QFuture&lt; QXmppStream::IqResult &gt; QXmppStream::sendIq </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="classQXmppIq.html">QXmppIq</a> &amp;&#160;</td>
-          <td class="paramname"><em>iq</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Sends an IQ packet and returns the response asynchronously. </p>
-
-</div>
-</div>
 <a id="a47473db930db0242bb2f6289172b6ea8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a47473db930db0242bb2f6289172b6ea8">&#9670;&nbsp;</a></span>sendPacket()</h2>
 
@@ -566,7 +510,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>tst_QXmppStream</b><
           <td class="memname">bool QXmppStream::sendPacket </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classQXmppStanza.html">QXmppStanza</a> &amp;&#160;</td>
-          <td class="paramname"><em>stanza</em></td><td>)</td>
+          <td class="paramname"><em>packet</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
