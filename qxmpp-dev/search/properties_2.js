@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['filename_2275',['fileName',['../classQXmppTransferJob.html#a09fc2a0442bb5f8260c526eadafd103a',1,'QXmppTransferJob']]],
-  ['filesize_2276',['fileSize',['../classQXmppTransferJob.html#a92f22f4b3516e97f9fd45cf9dddc12bd',1,'QXmppTransferJob']]]
+  ['filename_2299',['fileName',['../classQXmppTransferJob.html#a09fc2a0442bb5f8260c526eadafd103a',1,'QXmppTransferJob']]],
+  ['filesize_2300',['fileSize',['../classQXmppTransferJob.html#a92f22f4b3516e97f9fd45cf9dddc12bd',1,'QXmppTransferJob']]]
 ];

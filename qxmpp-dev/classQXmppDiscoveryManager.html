@@ -63,6 +63,7 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#signals">Signals</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="classQXmppDiscoveryManager-members.html">List of all members</a>  </div>
@@ -96,6 +97,13 @@ Collaboration diagram for QXmppDiscoveryManager:</div>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a805e69dac064dbfc264ba3c31109a35d"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppDiscoveryManager.html#a805e69dac064dbfc264ba3c31109a35d">InfoResult</a> = std::variant&lt; <a class="el" href="classQXmppDiscoveryIq.html">QXmppDiscoveryIq</a>, <a class="el" href="classQXmppStanza_1_1Error.html">QXmppStanza::Error</a> &gt;</td></tr>
+<tr class="separator:a805e69dac064dbfc264ba3c31109a35d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16f719aaf141666f9e07d2c186491895"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppDiscoveryManager.html#a16f719aaf141666f9e07d2c186491895">ItemsResult</a> = std::variant&lt; QList&lt; <a class="el" href="classQXmppDiscoveryIq_1_1Item.html">QXmppDiscoveryIq::Item</a> &gt;, <a class="el" href="classQXmppStanza_1_1Error.html">QXmppStanza::Error</a> &gt;</td></tr>
+<tr class="separator:a16f719aaf141666f9e07d2c186491895"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
 Signals</h2></td></tr>
 <tr class="memitem:addbd7076f78b31433ed0a17bcae103ef"><td class="memItemLeft" align="right" valign="top"><a id="addbd7076f78b31433ed0a17bcae103ef"></a>
@@ -128,6 +136,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a6b6d270ebdc7569417482a3aeb0fb441"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3d28798296277e6f1a098b1e2ab786d7"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppDiscoveryManager.html#a3d28798296277e6f1a098b1e2ab786d7">requestItems</a> (const QString &amp;jid, const QString &amp;node=QString())</td></tr>
 <tr class="separator:a3d28798296277e6f1a098b1e2ab786d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62378e7f8ffbe78c1f0829f4273a3064"><td class="memItemLeft" align="right" valign="top">QFuture&lt; <a class="el" href="classQXmppDiscoveryManager.html#a805e69dac064dbfc264ba3c31109a35d">InfoResult</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppDiscoveryManager.html#a62378e7f8ffbe78c1f0829f4273a3064">requestDiscoInfo</a> (const QString &amp;jid, const QString &amp;node={})</td></tr>
+<tr class="separator:a62378e7f8ffbe78c1f0829f4273a3064"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5018a0c62e9f980ffc9c910a4f9aa6a3"><td class="memItemLeft" align="right" valign="top">QFuture&lt; <a class="el" href="classQXmppDiscoveryManager.html#a16f719aaf141666f9e07d2c186491895">ItemsResult</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppDiscoveryManager.html#a5018a0c62e9f980ffc9c910a4f9aa6a3">requestDiscoItems</a> (const QString &amp;jid, const QString &amp;node={})</td></tr>
+<tr class="separator:a5018a0c62e9f980ffc9c910a4f9aa6a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a06e5342778601024bb73df19efaf8e88"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppDiscoveryManager.html#a06e5342778601024bb73df19efaf8e88">clientCapabilitiesNode</a> () const</td></tr>
 <tr class="separator:a06e5342778601024bb73df19efaf8e88"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1c2405c6d1090a770af99336b87298a0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppDiscoveryManager.html#a1c2405c6d1090a770af99336b87298a0">setClientCapabilitiesNode</a> (const QString &amp;)</td></tr>
@@ -185,7 +197,40 @@ Additional Inherited Members</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The <a class="el" href="classQXmppDiscoveryManager.html" title="The QXmppDiscoveryManager class makes it possible to discover information about other entities as def...">QXmppDiscoveryManager</a> class makes it possible to discover information about other entities as defined by <a href="https://xmpp.org/extensions/xep-0030.html">XEP-0030</a>: Service Discovery. </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="a805e69dac064dbfc264ba3c31109a35d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a805e69dac064dbfc264ba3c31109a35d">&#9670;&nbsp;</a></span>InfoResult</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classQXmppDiscoveryManager.html#a805e69dac064dbfc264ba3c31109a35d">QXmppDiscoveryManager::InfoResult</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Contains the discovery information result in the form of an <a class="el" href="classQXmppDiscoveryIq.html">QXmppDiscoveryIq</a> or (in case the request did not succeed) a <a class="el" href="classQXmppStanza_1_1Error.html" title="The Error class represents a stanza error.">QXmppStanza::Error</a>.</p>
+<dl class="section since"><dt>Since</dt><dd>QXmpp 1.5 </dd></dl>
+
+</div>
+</div>
+<a id="a16f719aaf141666f9e07d2c186491895"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a16f719aaf141666f9e07d2c186491895">&#9670;&nbsp;</a></span>ItemsResult</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classQXmppDiscoveryManager.html#a16f719aaf141666f9e07d2c186491895">QXmppDiscoveryManager::ItemsResult</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Contains a list of service discovery items or (in case the request did not succeed) a <a class="el" href="classQXmppStanza_1_1Error.html" title="The Error class represents a stanza error.">QXmppStanza::Error</a>.</p>
+<dl class="section since"><dt>Since</dt><dd>QXmpp 1.5 </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a id="a3c3e53c9eacfbe9b6bc53793543bce6e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3c3e53c9eacfbe9b6bc53793543bce6e">&#9670;&nbsp;</a></span>capabilities()</h2>
 
@@ -295,6 +340,82 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Returns the type of the local XMPP client.</p>
 <p>With Qt builds for Android, Blackberry, iOS or Windows Phone this is set to "phone", otherwise it defaults to "pc". </p>
+
+</div>
+</div>
+<a id="a62378e7f8ffbe78c1f0829f4273a3064"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62378e7f8ffbe78c1f0829f4273a3064">&#9670;&nbsp;</a></span>requestDiscoInfo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QFuture&lt; <a class="el" href="classQXmppDiscoveryManager.html#a805e69dac064dbfc264ba3c31109a35d">QXmppDiscoveryManager::InfoResult</a> &gt; QXmppDiscoveryManager::requestDiscoInfo </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>jid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>node</em> = <code>{}</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Requests information from the specified XMPP entity.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">jid</td><td>The target entity's JID. </td></tr>
+    <tr><td class="paramname">node</td><td>The target node (optional).</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section warning"><dt>Warning</dt><dd>THIS API IS NOT FINALIZED YET!</dd></dl>
+<dl class="section since"><dt>Since</dt><dd>QXmpp 1.5 </dd></dl>
+
+</div>
+</div>
+<a id="a5018a0c62e9f980ffc9c910a4f9aa6a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5018a0c62e9f980ffc9c910a4f9aa6a3">&#9670;&nbsp;</a></span>requestDiscoItems()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QFuture&lt; <a class="el" href="classQXmppDiscoveryManager.html#a16f719aaf141666f9e07d2c186491895">QXmppDiscoveryManager::ItemsResult</a> &gt; QXmppDiscoveryManager::requestDiscoItems </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>jid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>node</em> = <code>{}</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Requests items from the specified XMPP entity.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">jid</td><td>The target entity's JID. </td></tr>
+    <tr><td class="paramname">node</td><td>The target node (optional).</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section warning"><dt>Warning</dt><dd>THIS API IS NOT FINALIZED YET!</dd></dl>
+<dl class="section since"><dt>Since</dt><dd>QXmpp 1.5 </dd></dl>
 
 </div>
 </div>

@@ -118,6 +118,8 @@ Public Types</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:aab5506ec0769f208e1ccd5d23c6aaea8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Describes the use of <a href="https://xmpp.org/extensions/xep-0198.html">XEP-0198</a>: Stream Management.  <a href="classQXmppClient.html#aab5506ec0769f208e1ccd5d23c6aaea8">More...</a><br /></td></tr>
 <tr class="separator:aab5506ec0769f208e1ccd5d23c6aaea8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5312db7ddd0aadacea286314154f8a6d"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppClient.html#a5312db7ddd0aadacea286314154f8a6d">IqResult</a> = std::variant&lt; QDomElement, QXmpp::PacketState &gt;</td></tr>
+<tr class="separator:a5312db7ddd0aadacea286314154f8a6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-slots"></a>
 Public Slots</h2></td></tr>
@@ -234,6 +236,10 @@ QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
 <a class="el" href="classQXmppStanza_1_1Error.html#abcf1cbbe7b15ec82f3ac34723b604852">QXmppStanza::Error::Condition</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppClient.html#af3a18178f3349e668f09ee46ba7d48db">xmppStreamError</a> ()</td></tr>
 <tr class="memdesc:af3a18178f3349e668f09ee46ba7d48db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the XMPP stream error if <a class="el" href="classQXmppClient.html#a7c2851d07cc33119752abc6ec8ffc47a">QXmppClient::Error</a> is <a class="el" href="classQXmppClient.html#a7c2851d07cc33119752abc6ec8ffc47aa29f30662c97dc09858f1d7e80eb1825a" title="Error due to XML stream.">QXmppClient::XmppStreamError</a>. <br /></td></tr>
 <tr class="separator:af3a18178f3349e668f09ee46ba7d48db"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ada57e133373174c6386f516fc7c994f3"><td class="memItemLeft" align="right" valign="top">QFuture&lt; QXmpp::PacketState &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppClient.html#ada57e133373174c6386f516fc7c994f3">send</a> (const <a class="el" href="classQXmppStanza.html">QXmppStanza</a> &amp;)</td></tr>
+<tr class="separator:ada57e133373174c6386f516fc7c994f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7bc90c8b2dd1170c256ca26e48ce24fd"><td class="memItemLeft" align="right" valign="top">QFuture&lt; <a class="el" href="classQXmppClient.html#a5312db7ddd0aadacea286314154f8a6d">IqResult</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppClient.html#a7bc90c8b2dd1170c256ca26e48ce24fd">sendIq</a> (const <a class="el" href="classQXmppIq.html">QXmppIq</a> &amp;)</td></tr>
+<tr class="separator:a7bc90c8b2dd1170c256ca26e48ce24fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6a0bb409bad66a4f5ea91056ee190ad4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classQXmppRosterManager.html">QXmppRosterManager</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppClient.html#a6a0bb409bad66a4f5ea91056ee190ad4">rosterManager</a> ()</td></tr>
 <tr class="separator:a6a0bb409bad66a4f5ea91056ee190ad4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab0db5aa6c6727d606497d8e3e84a3bf4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classQXmppVCardManager.html">QXmppVCardManager</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppClient.html#ab0db5aa6c6727d606497d8e3e84a3bf4">vCardManager</a> ()</td></tr>
@@ -288,7 +294,23 @@ Additional Inherited Members</h2></td></tr>
 <li><a class="el" href="classQXmppDiscoveryManager.html" title="The QXmppDiscoveryManager class makes it possible to discover information about other entities as def...">QXmppDiscoveryManager</a></li>
 <li><a class="el" href="classQXmppEntityTimeManager.html" title="The QXmppEntityTimeManager class provided the functionality to get the local time of an entity as def...">QXmppEntityTimeManager</a> </li>
 </ul>
-</div><h2 class="groupheader">Member Enumeration Documentation</h2>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="a5312db7ddd0aadacea286314154f8a6d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5312db7ddd0aadacea286314154f8a6d">&#9670;&nbsp;</a></span>IqResult</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classQXmppClient.html#a5312db7ddd0aadacea286314154f8a6d">QXmppClient::IqResult</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Result of an IQ request, either contains the QDomElement of the IQ answer (with type 'error' or 'result') or it contains the packet error, if the request couldn't be sent. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Enumeration Documentation</h2>
 <a id="a7c2851d07cc33119752abc6ec8ffc47a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a7c2851d07cc33119752abc6ec8ffc47a">&#9670;&nbsp;</a></span>Error</h2>
 
@@ -942,6 +964,55 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
+<a id="ada57e133373174c6386f516fc7c994f3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada57e133373174c6386f516fc7c994f3">&#9670;&nbsp;</a></span>send()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QFuture&lt; QXmpp::PacketState &gt; QXmppClient::send </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classQXmppStanza.html">QXmppStanza</a> &amp;&#160;</td>
+          <td class="paramname"><em>stanza</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Sends a packet and reports the result via QFuture.</p>
+<p>The QFuture might have multiple results. The first result of the future is reported immediately (it's safe to access resultAt(0)). If writing the data to the socket succeeds (that does not mean the server received it), QXmpp::Sent is reported. Otherwise QXmpp::NotSent is reported.</p>
+<p>If stream management is enabled the future continues to be active until the server acknowledges the packet. On success QXmpp::Acknowledged is reported and the future finishes.</p>
+<p>If connection errors occur the packet is resent if possible. If reconnecting is not possible, QXmpp::NotSent is reported.</p>
+<p>For you the most important result is the last one. QXmpp::Sent means the packet has been sent without stream management (no acknowledgment). QXmpp::Acknowledged means the packet has been sent and has been received by the server, QXmpp::NotSent means no success.</p>
+<dl class="section note"><dt>Note</dt><dd><b>TL;DR</b>: The future might have multiple results, so don't do: <div class="fragment"><div class="line"><a class="code" href="classQXmppClient.html#ada57e133373174c6386f516fc7c994f3">send</a>().result();</div>
+</div><!-- fragment --> Instead do the following to handle the final result: <div class="fragment"><div class="line"><a class="code" href="classQXmppClient.html#ada57e133373174c6386f516fc7c994f3">send</a>().results().last();</div>
+</div><!-- fragment --> QXmpp::Sent or QXmpp::Acknowledged mean success.</dd></dl>
+<dl class="section warning"><dt>Warning</dt><dd>THIS API IS NOT FINALIZED YET!</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>A QFuture that makes it possible to track the state of the packet. You can use QFutureWatcher in Qt 5 and QFuture::then() in Qt 6 to handle the results. </dd></dl>
+
+</div>
+</div>
+<a id="a7bc90c8b2dd1170c256ca26e48ce24fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7bc90c8b2dd1170c256ca26e48ce24fd">&#9670;&nbsp;</a></span>sendIq()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QFuture&lt; <a class="el" href="classQXmppClient.html#a5312db7ddd0aadacea286314154f8a6d">QXmppClient::IqResult</a> &gt; QXmppClient::sendIq </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classQXmppIq.html">QXmppIq</a> &amp;&#160;</td>
+          <td class="paramname"><em>iq</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Sends an IQ packet and returns the response asynchronously.</p>
+<dl class="section warning"><dt>Warning</dt><dd>THIS API IS NOT FINALIZED YET!</dd></dl>
+<dl class="section since"><dt>Since</dt><dd>QXmpp 1.5 </dd></dl>
+
+</div>
+</div>
 <a id="a44d230e24954da4a05e661318494fce4"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a44d230e24954da4a05e661318494fce4">&#9670;&nbsp;</a></span>sendMessage</h2>
 
@@ -1184,7 +1255,8 @@ template&lt;typename T &gt; </div>
 <li>QXmppClient.cpp</li>
 </ul>
 </div><!-- contents -->
-<div class="ttc" id="aclassQXmppDiscoveryManager_html"><div class="ttname"><a href="classQXmppDiscoveryManager.html">QXmppDiscoveryManager</a></div><div class="ttdoc">The QXmppDiscoveryManager class makes it possible to discover information about other entities as def...</div><div class="ttdef"><b>Definition:</b> QXmppDiscoveryManager.h:38</div></div>
+<div class="ttc" id="aclassQXmppClient_html_ada57e133373174c6386f516fc7c994f3"><div class="ttname"><a href="classQXmppClient.html#ada57e133373174c6386f516fc7c994f3">QXmppClient::send</a></div><div class="ttdeci">QFuture&lt; QXmpp::PacketState &gt; send(const QXmppStanza &amp;)</div><div class="ttdef"><b>Definition:</b> QXmppClient.cpp:340</div></div>
+<div class="ttc" id="aclassQXmppDiscoveryManager_html"><div class="ttname"><a href="classQXmppDiscoveryManager.html">QXmppDiscoveryManager</a></div><div class="ttdoc">The QXmppDiscoveryManager class makes it possible to discover information about other entities as def...</div><div class="ttdef"><b>Definition:</b> QXmppDiscoveryManager.h:42</div></div>
 <div class="ttc" id="aclassQXmppMessage_html"><div class="ttname"><a href="classQXmppMessage.html">QXmppMessage</a></div><div class="ttdoc">The QXmppMessage class represents an XMPP message.</div><div class="ttdef"><b>Definition:</b> QXmppMessage.h:45</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

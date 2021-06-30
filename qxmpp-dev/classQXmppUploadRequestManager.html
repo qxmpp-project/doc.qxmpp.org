@@ -63,6 +63,7 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#signals">Signals</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
@@ -97,6 +98,11 @@ Collaboration diagram for QXmppUploadRequestManager:</div>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a95a7915e3756cfa3f3bde96344073697"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppUploadRequestManager.html#a95a7915e3756cfa3f3bde96344073697">SlotResult</a> = std::variant&lt; <a class="el" href="classQXmppHttpUploadSlotIq.html">QXmppHttpUploadSlotIq</a>, <a class="el" href="classQXmppStanza_1_1Error.html">QXmppStanza::Error</a> &gt;</td></tr>
+<tr class="separator:a95a7915e3756cfa3f3bde96344073697"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
 Signals</h2></td></tr>
 <tr class="memitem:ab0ab1f62fb78309610e80a628878fed9"><td class="memItemLeft" align="right" valign="top"><a id="ab0ab1f62fb78309610e80a628878fed9"></a>
@@ -131,6 +137,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:af1ab4738e35d8240dd23d117b991f55e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6d93598af079b161a044a3bce5e96d7c"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppUploadRequestManager.html#a6d93598af079b161a044a3bce5e96d7c">requestUploadSlot</a> (const QString &amp;fileName, qint64 fileSize, const QMimeType &amp;mimeType, const QString &amp;uploadService=QString())</td></tr>
 <tr class="separator:a6d93598af079b161a044a3bce5e96d7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a972e683ae215c04168fa2d0f94d2e1e5"><td class="memItemLeft" align="right" valign="top">QFuture&lt; <a class="el" href="classQXmppUploadRequestManager.html#a95a7915e3756cfa3f3bde96344073697">SlotResult</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppUploadRequestManager.html#a972e683ae215c04168fa2d0f94d2e1e5">requestSlot</a> (const QFileInfo &amp;file, const QString &amp;uploadService={})</td></tr>
+<tr class="separator:a972e683ae215c04168fa2d0f94d2e1e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac0c614d325c0477a97d6c0a76a8d7698"><td class="memItemLeft" align="right" valign="top">QFuture&lt; <a class="el" href="classQXmppUploadRequestManager.html#a95a7915e3756cfa3f3bde96344073697">SlotResult</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppUploadRequestManager.html#ac0c614d325c0477a97d6c0a76a8d7698">requestSlot</a> (const QFileInfo &amp;file, const QString &amp;customFileName, const QString &amp;uploadService={})</td></tr>
+<tr class="separator:ac0c614d325c0477a97d6c0a76a8d7698"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab1175bbc562dab44aa840b430c7ea665"><td class="memItemLeft" align="right" valign="top">QFuture&lt; <a class="el" href="classQXmppUploadRequestManager.html#a95a7915e3756cfa3f3bde96344073697">SlotResult</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppUploadRequestManager.html#ab1175bbc562dab44aa840b430c7ea665">requestSlot</a> (const QString &amp;fileName, qint64 fileSize, const QMimeType &amp;mimeType, const QString &amp;uploadService={})</td></tr>
+<tr class="separator:ab1175bbc562dab44aa840b430c7ea665"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afb25703c43c31c405b58d57d1d032dcc"><td class="memItemLeft" align="right" valign="top"><a id="afb25703c43c31c405b58d57d1d032dcc"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppUploadRequestManager.html#afb25703c43c31c405b58d57d1d032dcc">serviceFound</a> () const</td></tr>
 <tr class="memdesc:afb25703c43c31c405b58d57d1d032dcc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if an HTTP File Upload service has been discovered. <br /></td></tr>
@@ -184,7 +196,24 @@ Protected Member Functions</h2></td></tr>
 <p>Keep in mind that theoretically any XMPP entity could promote to be an upload service and so is recognized by this manager. A potential attacker could exploit this vulnerability, so the client could be uploading files to the attacker (e.g. a normal user JID) instead of the own server.</p>
 <p>As soon as at least one upload service has been discovered, you can start to request upload slots by using <code><a class="el" href="classQXmppUploadRequestManager.html#a6c834eff22568216fb285165bcd25750">requestUploadSlot()</a></code>. Alternatively you can provide the JID of the upload service which should be used for uploading.</p>
 <dl class="section since"><dt>Since</dt><dd>QXmpp 1.1 </dd></dl>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="a95a7915e3756cfa3f3bde96344073697"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a95a7915e3756cfa3f3bde96344073697">&#9670;&nbsp;</a></span>SlotResult</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classQXmppUploadRequestManager.html#a95a7915e3756cfa3f3bde96344073697">QXmppUploadRequestManager::SlotResult</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Contains the requested upload slot from the service or a <a class="el" href="classQXmppStanza_1_1Error.html" title="The Error class represents a stanza error.">QXmppStanza::Error</a> in case the request failed.</p>
+<dl class="section since"><dt>Since</dt><dd>QXmpp 1.5 </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a id="a500070fed0033999030f568037bdc58e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a500070fed0033999030f568037bdc58e">&#9670;&nbsp;</a></span>handleStanza()</h2>
 
@@ -246,6 +275,141 @@ Protected Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="ac0c614d325c0477a97d6c0a76a8d7698"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac0c614d325c0477a97d6c0a76a8d7698">&#9670;&nbsp;</a></span>requestSlot() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto QXmppUploadRequestManager::requestSlot </td>
+          <td>(</td>
+          <td class="paramtype">const QFileInfo &amp;&#160;</td>
+          <td class="paramname"><em>file</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>customFileName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>uploadService</em> = <code>{}</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Requests an upload slot from the server.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">file</td><td>The info of the file to be uploaded. </td></tr>
+    <tr><td class="paramname">customFileName</td><td>This name is used instead of the file's actual name for requesting the upload slot. </td></tr>
+    <tr><td class="paramname">uploadService</td><td>The HTTP File Upload service that is used to request the upload slot. If this is empty, the first discovered one is used.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section warning"><dt>Warning</dt><dd>THIS API IS NOT FINALIZED YET!</dd></dl>
+<dl class="section since"><dt>Since</dt><dd>QXmpp 1.5 </dd></dl>
+
+</div>
+</div>
+<a id="a972e683ae215c04168fa2d0f94d2e1e5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a972e683ae215c04168fa2d0f94d2e1e5">&#9670;&nbsp;</a></span>requestSlot() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto QXmppUploadRequestManager::requestSlot </td>
+          <td>(</td>
+          <td class="paramtype">const QFileInfo &amp;&#160;</td>
+          <td class="paramname"><em>file</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>uploadService</em> = <code>{}</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Requests an upload slot from the server.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">file</td><td>The info of the file to be uploaded. </td></tr>
+    <tr><td class="paramname">uploadService</td><td>The HTTP File Upload service that is used to request the upload slot. If this is empty, the first discovered one is used.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section warning"><dt>Warning</dt><dd>THIS API IS NOT FINALIZED YET!</dd></dl>
+<dl class="section since"><dt>Since</dt><dd>QXmpp 1.5 </dd></dl>
+
+</div>
+</div>
+<a id="ab1175bbc562dab44aa840b430c7ea665"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab1175bbc562dab44aa840b430c7ea665">&#9670;&nbsp;</a></span>requestSlot() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto QXmppUploadRequestManager::requestSlot </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>fileName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">qint64&#160;</td>
+          <td class="paramname"><em>fileSize</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QMimeType &amp;&#160;</td>
+          <td class="paramname"><em>mimeType</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>uploadService</em> = <code>{}</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Requests an upload slot from the server.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fileName</td><td>The name of the file to be uploaded. This may be used by the server to generate the URL. </td></tr>
+    <tr><td class="paramname">fileSize</td><td>The size of the file to be uploaded. The server may reject too large files. </td></tr>
+    <tr><td class="paramname">mimeType</td><td>The content-type of the file. This can be used by the server to set the HTTP MIME-type of the URL. </td></tr>
+    <tr><td class="paramname">uploadService</td><td>The HTTP File Upload service that is used to request the upload slot. If this is empty, the first discovered one is used.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section warning"><dt>Warning</dt><dd>THIS API IS NOT FINALIZED YET!</dd></dl>
+<dl class="section since"><dt>Since</dt><dd>QXmpp 1.5 </dd></dl>
 
 </div>
 </div>
@@ -422,8 +586,8 @@ Protected Member Functions</h2></td></tr>
 </ul>
 </div><!-- contents -->
 <div class="ttc" id="aclassQXmppClientExtension_html_a2476cb1a20963d15d45d39f24a0c1198"><div class="ttname"><a href="classQXmppClientExtension.html#a2476cb1a20963d15d45d39f24a0c1198">QXmppClientExtension::client</a></div><div class="ttdeci">QXmppClient * client()</div><div class="ttdef"><b>Definition:</b> QXmppClientExtension.cpp:70</div></div>
-<div class="ttc" id="aclassQXmppClient_html_a61ccf1c37ca3f26bfd14e65c8ecf1740"><div class="ttname"><a href="classQXmppClient.html#a61ccf1c37ca3f26bfd14e65c8ecf1740">QXmppClient::addExtension</a></div><div class="ttdeci">bool addExtension(QXmppClientExtension *extension)</div><div class="ttdef"><b>Definition:</b> QXmppClient.cpp:179</div></div>
-<div class="ttc" id="aclassQXmppUploadRequestManager_html"><div class="ttname"><a href="classQXmppUploadRequestManager.html">QXmppUploadRequestManager</a></div><div class="ttdoc">The QXmppUploadRequestManager implements the core of XEP-0369: HTTP File Upload.</div><div class="ttdef"><b>Definition:</b> QXmppUploadRequestManager.h:97</div></div>
+<div class="ttc" id="aclassQXmppClient_html_a61ccf1c37ca3f26bfd14e65c8ecf1740"><div class="ttname"><a href="classQXmppClient.html#a61ccf1c37ca3f26bfd14e65c8ecf1740">QXmppClient::addExtension</a></div><div class="ttdeci">bool addExtension(QXmppClientExtension *extension)</div><div class="ttdef"><b>Definition:</b> QXmppClient.cpp:189</div></div>
+<div class="ttc" id="aclassQXmppUploadRequestManager_html"><div class="ttname"><a href="classQXmppUploadRequestManager.html">QXmppUploadRequestManager</a></div><div class="ttdoc">The QXmppUploadRequestManager implements the core of XEP-0369: HTTP File Upload.</div><div class="ttdef"><b>Definition:</b> QXmppUploadRequestManager.h:101</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">
