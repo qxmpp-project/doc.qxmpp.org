@@ -300,16 +300,17 @@ $(function() {
 <div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;    <span class="keywordtype">void</span> parse(<span class="keyword">const</span> QDomElement &amp;element) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    <span class="keywordtype">void</span> toXml(QXmlStreamWriter *writer) <span class="keyword">const override</span>;</div>
 <div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160; </div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;    <span class="keywordtype">void</span> parseExtension(<span class="keyword">const</span> QDomElement &amp;element, QXmppElementList &amp;unknownExtensions);</div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;    <span class="keywordtype">void</span> parseXElement(<span class="keyword">const</span> QDomElement &amp;element, QXmppElementList &amp;unknownElements);</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> parseExtension(<span class="keyword">const</span> QDomElement &amp;element);</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> serializeExtensions(QXmlStreamWriter *writer) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160; </div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;    QSharedDataPointer&lt;QXmppMessagePrivate&gt; d;</div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;};</div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160; </div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;Q_DECLARE_METATYPE(<a class="code" href="classQXmppMessage.html">QXmppMessage</a>)</div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160; </div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;<span class="preprocessor">#endif  // QXMPPMESSAGE_H</span></div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;    QSharedDataPointer&lt;QXmppMessagePrivate&gt; d;</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;};</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160; </div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;Q_DECLARE_METATYPE(<a class="code" href="classQXmppMessage.html">QXmppMessage</a>)</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160; </div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;<span class="preprocessor">#endif  // QXMPPMESSAGE_H</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aclassQXmppStanza_html_a767267784f17dadb5fcc63cbd79a6cf4"><div class="ttname"><a href="classQXmppStanza.html#a767267784f17dadb5fcc63cbd79a6cf4">QXmppStanza::operator=</a></div><div class="ttdeci">QXmppStanza &amp; operator=(const QXmppStanza &amp;other)</div><div class="ttdoc">Assigns other to this stanza.</div></div>
 <div class="ttc" id="aclassQXmppMessage_html_aeaa3cc5ccb7d451067a80dd1f3c7099aa2a197e88be8355a853534c2342e64c48"><div class="ttname"><a href="classQXmppMessage.html#aeaa3cc5ccb7d451067a80dd1f3c7099aa2a197e88be8355a853534c2342e64c48">QXmppMessage::Active</a></div><div class="ttdeci">@ Active</div><div class="ttdoc">User is actively participating in the chat session.</div><div class="ttdef"><b>Definition:</b> QXmppMessage.h:65</div></div>

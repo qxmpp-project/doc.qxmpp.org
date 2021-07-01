@@ -66,6 +66,7 @@ $(function() {
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="classQXmppMessage-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">QXmppMessage Class Reference<div class="ingroups"><a class="el" href="group__Stanzas.html">Stanzas</a></div></div>  </div>
@@ -370,6 +371,13 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:ad4cfd25b0941ce8a0bb197af69f1c224"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab78ed304645ad55d93f400b101f8e269"><td class="memItemLeft" align="right" valign="top">static QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppMessage.html#ab78ed304645ad55d93f400b101f8e269">slashMeCommandText</a> (const QString &amp;<a class="el" href="classQXmppMessage.html#a03ca378952b2324319afc379a66df5fb">body</a>)</td></tr>
 <tr class="separator:ab78ed304645ad55d93f400b101f8e269"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a18d02b6a6e830a2a2f2ba9b369267f93"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppMessage.html#a18d02b6a6e830a2a2f2ba9b369267f93">parseExtension</a> (const QDomElement &amp;element)</td></tr>
+<tr class="separator:a18d02b6a6e830a2a2f2ba9b369267f93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d1ec5a65d14d723e6964723d9389907"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppMessage.html#a0d1ec5a65d14d723e6964723d9389907">serializeExtensions</a> (QXmlStreamWriter *writer) const</td></tr>
+<tr class="separator:a0d1ec5a65d14d723e6964723d9389907"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The <a class="el" href="classQXmppMessage.html" title="The QXmppMessage class represents an XMPP message.">QXmppMessage</a> class represents an XMPP message. </p>
@@ -1092,6 +1100,42 @@ If this returns <a class="el" href="classQXmppMessage.html#a1526e753b5cfe7ed7787
 
 </div>
 </div>
+<a id="a18d02b6a6e830a2a2f2ba9b369267f93"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18d02b6a6e830a2a2f2ba9b369267f93">&#9670;&nbsp;</a></span>parseExtension()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool QXmppMessage::parseExtension </td>
+          <td>(</td>
+          <td class="paramtype">const QDomElement &amp;&#160;</td>
+          <td class="paramname"><em>element</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Parses a child element of the message stanza.</p>
+<p>Allows inherited classes to parse additional extension elements. This function may be executed multiple times with different elements.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">element</td><td>child element of the message to be parsed</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True, if the element was successfully parsed.</dd></dl>
+<dl class="section since"><dt>Since</dt><dd>QXmpp 1.5 </dd></dl>
+
+</div>
+</div>
 <a id="a0323038ef0a0e9af8b620202fc7d53d8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0323038ef0a0e9af8b620202fc7d53d8">&#9670;&nbsp;</a></span>receiptId()</h2>
 
@@ -1166,6 +1210,34 @@ If this returns <a class="el" href="classQXmppMessage.html#a1526e753b5cfe7ed7787
 </div><div class="memdoc">
 <p>Returns the message id to replace with this message as used in <a href="https://xmpp.org/extensions/xep-0308.html">XEP-0308</a>: Last Message Correction. If the returned string is empty, this message is not replacing another.</p>
 <dl class="section since"><dt>Since</dt><dd>QXmpp 1.0 </dd></dl>
+
+</div>
+</div>
+<a id="a0d1ec5a65d14d723e6964723d9389907"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d1ec5a65d14d723e6964723d9389907">&#9670;&nbsp;</a></span>serializeExtensions()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void QXmppMessage::serializeExtensions </td>
+          <td>(</td>
+          <td class="paramtype">QXmlStreamWriter *&#160;</td>
+          <td class="paramname"><em>xmlWriter</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Serializes all additional child elements.</p>
+<dl class="section since"><dt>Since</dt><dd>QXmpp 1.5 </dd></dl>
 
 </div>
 </div>
