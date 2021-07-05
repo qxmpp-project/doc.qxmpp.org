@@ -102,70 +102,83 @@ $(function() {
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &quot;QXmppPresence.h&quot;</span></div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &quot;QXmppRosterIq.h&quot;</span></div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &lt;QMap&gt;</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#include &lt;QObject&gt;</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#include &lt;QStringList&gt;</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">class </span>QXmppRosterManagerPrivate;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &lt;variant&gt;</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#include &lt;QMap&gt;</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#include &lt;QObject&gt;</span></div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#include &lt;QStringList&gt;</span></div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="classQXmppRosterManager.html">   69</a></span>&#160;<span class="keyword">class </span>QXMPP_EXPORT <a class="code" href="classQXmppRosterManager.html">QXmppRosterManager</a> : <span class="keyword">public</span> <a class="code" href="classQXmppClientExtension.html">QXmppClientExtension</a></div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;{</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    Q_OBJECT</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <a class="code" href="classQXmppRosterManager.html">QXmppRosterManager</a>(<a class="code" href="classQXmppClient.html">QXmppClient</a> *stream);</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    ~<a class="code" href="classQXmppRosterManager.html">QXmppRosterManager</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">class </span>QFuture;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">class </span>QXmppRosterManagerPrivate;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="classQXmppRosterManager.html">   73</a></span>&#160;<span class="keyword">class </span>QXMPP_EXPORT <a class="code" href="classQXmppRosterManager.html">QXmppRosterManager</a> : <span class="keyword">public</span> <a class="code" href="classQXmppClientExtension.html">QXmppClientExtension</a></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;{</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    Q_OBJECT</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordtype">bool</span> isRosterReceived() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    QStringList getRosterBareJids() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <a class="code" href="classQXmppRosterIq_1_1Item.html">QXmppRosterIq::Item</a> getRosterEntry(<span class="keyword">const</span> QString &amp;bareJid) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="classQXmppRosterManager.html#a8340805e06ab6590b52327d2de2676d7">   79</a></span>&#160;    <span class="keyword">using</span> <a class="code" href="classQXmppRosterManager.html#a8340805e06ab6590b52327d2de2676d7">Result</a> = std::variant&lt;QXmpp::Success, QXmppStanza::Error&gt;;</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    QStringList getResources(<span class="keyword">const</span> QString &amp;bareJid) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    QMap&lt;QString, QXmppPresence&gt; getAllPresencesForBareJid(</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        <span class="keyword">const</span> QString &amp;bareJid) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <a class="code" href="classQXmppPresence.html">QXmppPresence</a> getPresence(<span class="keyword">const</span> QString &amp;bareJid,</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                              <span class="keyword">const</span> QString &amp;resource) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classQXmppClientExtension.html#af026d292204dc538249d16086e9e8108">handleStanza</a>(<span class="keyword">const</span> QDomElement &amp;element) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="keyword">public</span> Q_SLOTS:</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordtype">bool</span> acceptSubscription(<span class="keyword">const</span> QString &amp;bareJid, <span class="keyword">const</span> QString &amp;reason = {});</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keywordtype">bool</span> refuseSubscription(<span class="keyword">const</span> QString &amp;bareJid, <span class="keyword">const</span> QString &amp;reason = {});</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <span class="keywordtype">bool</span> addItem(<span class="keyword">const</span> QString &amp;bareJid, <span class="keyword">const</span> QString &amp;name = {}, <span class="keyword">const</span> QSet&lt;QString&gt; &amp;groups = {});</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordtype">bool</span> removeItem(<span class="keyword">const</span> QString &amp;bareJid);</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    <span class="keywordtype">bool</span> renameItem(<span class="keyword">const</span> QString &amp;bareJid, <span class="keyword">const</span> QString &amp;name);</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keywordtype">bool</span> subscribe(<span class="keyword">const</span> QString &amp;bareJid, <span class="keyword">const</span> QString &amp;reason = {});</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <span class="keywordtype">bool</span> unsubscribe(<span class="keyword">const</span> QString &amp;bareJid, <span class="keyword">const</span> QString &amp;reason = {});</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <a class="code" href="classQXmppRosterManager.html">QXmppRosterManager</a>(<a class="code" href="classQXmppClient.html">QXmppClient</a> *stream);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    ~<a class="code" href="classQXmppRosterManager.html">QXmppRosterManager</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordtype">bool</span> isRosterReceived() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    QStringList getRosterBareJids() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <a class="code" href="classQXmppRosterIq_1_1Item.html">QXmppRosterIq::Item</a> getRosterEntry(<span class="keyword">const</span> QString &amp;bareJid) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    QStringList getResources(<span class="keyword">const</span> QString &amp;bareJid) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    QMap&lt;QString, QXmppPresence&gt; getAllPresencesForBareJid(</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        <span class="keyword">const</span> QString &amp;bareJid) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <a class="code" href="classQXmppPresence.html">QXmppPresence</a> getPresence(<span class="keyword">const</span> QString &amp;bareJid,</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                              <span class="keyword">const</span> QString &amp;resource) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    QFuture&lt;Result&gt; addRosterItem(<span class="keyword">const</span> QString &amp;bareJid, <span class="keyword">const</span> QString &amp;name = {}, <span class="keyword">const</span> QSet&lt;QString&gt; &amp;groups = {});</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    QFuture&lt;Result&gt; removeRosterItem(<span class="keyword">const</span> QString &amp;bareJid);</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    QFuture&lt;Result&gt; renameRosterItem(<span class="keyword">const</span> QString &amp;bareJid, <span class="keyword">const</span> QString &amp;name);</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    QFuture&lt;QXmpp::PacketState&gt; subscribeTo(<span class="keyword">const</span> QString &amp;bareJid, <span class="keyword">const</span> QString &amp;reason = {});</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    QFuture&lt;QXmpp::PacketState&gt; unsubscribeFrom(<span class="keyword">const</span> QString &amp;bareJid, <span class="keyword">const</span> QString &amp;reason = {});</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;Q_SIGNALS:</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keywordtype">void</span> rosterReceived();</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    <span class="keywordtype">void</span> presenceChanged(<span class="keyword">const</span> QString &amp;bareJid, <span class="keyword">const</span> QString &amp;resource);</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; </div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    <span class="keywordtype">void</span> subscriptionReceived(<span class="keyword">const</span> QString &amp;bareJid);</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160; </div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <span class="keywordtype">void</span> subscriptionRequestReceived(<span class="keyword">const</span> QString &amp;subscriberBareJid, <span class="keyword">const</span> <a class="code" href="classQXmppPresence.html">QXmppPresence</a> &amp;presence);</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160; </div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <span class="keywordtype">void</span> itemAdded(<span class="keyword">const</span> QString &amp;bareJid);</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160; </div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;    <span class="keywordtype">void</span> itemChanged(<span class="keyword">const</span> QString &amp;bareJid);</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160; </div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    <span class="keywordtype">void</span> itemRemoved(<span class="keyword">const</span> QString &amp;bareJid);</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160; </div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;<span class="keyword">private</span> Q_SLOTS:</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    <span class="keywordtype">void</span> _q_connected();</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    <span class="keywordtype">void</span> _q_disconnected();</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    <span class="keywordtype">void</span> _q_presenceReceived(<span class="keyword">const</span> <a class="code" href="classQXmppPresence.html">QXmppPresence</a> &amp;);</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classQXmppClientExtension.html#af026d292204dc538249d16086e9e8108">handleStanza</a>(<span class="keyword">const</span> QDomElement &amp;element) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="keyword">public</span> Q_SLOTS:</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="keywordtype">bool</span> acceptSubscription(<span class="keyword">const</span> QString &amp;bareJid, <span class="keyword">const</span> QString &amp;reason = {});</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    <span class="keywordtype">bool</span> refuseSubscription(<span class="keyword">const</span> QString &amp;bareJid, <span class="keyword">const</span> QString &amp;reason = {});</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keywordtype">bool</span> addItem(<span class="keyword">const</span> QString &amp;bareJid, <span class="keyword">const</span> QString &amp;name = {}, <span class="keyword">const</span> QSet&lt;QString&gt; &amp;groups = {});</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordtype">bool</span> removeItem(<span class="keyword">const</span> QString &amp;bareJid);</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keywordtype">bool</span> renameItem(<span class="keyword">const</span> QString &amp;bareJid, <span class="keyword">const</span> QString &amp;name);</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="keywordtype">bool</span> subscribe(<span class="keyword">const</span> QString &amp;bareJid, <span class="keyword">const</span> QString &amp;reason = {});</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    <span class="keywordtype">bool</span> unsubscribe(<span class="keyword">const</span> QString &amp;bareJid, <span class="keyword">const</span> QString &amp;reason = {});</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;Q_SIGNALS:</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <span class="keywordtype">void</span> rosterReceived();</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160; </div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    <span class="keywordtype">void</span> presenceChanged(<span class="keyword">const</span> QString &amp;bareJid, <span class="keyword">const</span> QString &amp;resource);</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160; </div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    <span class="keywordtype">void</span> subscriptionReceived(<span class="keyword">const</span> QString &amp;bareJid);</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160; </div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    <span class="keywordtype">void</span> subscriptionRequestReceived(<span class="keyword">const</span> QString &amp;subscriberBareJid, <span class="keyword">const</span> <a class="code" href="classQXmppPresence.html">QXmppPresence</a> &amp;presence);</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160; </div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    <span class="keywordtype">void</span> itemAdded(<span class="keyword">const</span> QString &amp;bareJid);</div>
 <div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160; </div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    QXmppRosterManagerPrivate *d;</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;};</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    <span class="keywordtype">void</span> itemChanged(<span class="keyword">const</span> QString &amp;bareJid);</div>
 <div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160; </div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;<span class="preprocessor">#endif  // QXMPPROSTER_H</span></div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    <span class="keywordtype">void</span> itemRemoved(<span class="keyword">const</span> QString &amp;bareJid);</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160; </div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;<span class="keyword">private</span> Q_SLOTS:</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;    <span class="keywordtype">void</span> _q_connected();</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    <span class="keywordtype">void</span> _q_disconnected();</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    <span class="keywordtype">void</span> _q_presenceReceived(<span class="keyword">const</span> <a class="code" href="classQXmppPresence.html">QXmppPresence</a> &amp;);</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160; </div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    QXmppRosterManagerPrivate *d;</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;};</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160; </div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;<span class="preprocessor">#endif  // QXMPPROSTER_H</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aclassQXmppRosterIq_1_1Item_html"><div class="ttname"><a href="classQXmppRosterIq_1_1Item.html">QXmppRosterIq::Item</a></div><div class="ttdoc">The QXmppRosterIq::Item class represents a roster entry.</div><div class="ttdef"><b>Definition:</b> QXmppRosterIq.h:46</div></div>
 <div class="ttc" id="aclassQXmppPresence_html"><div class="ttname"><a href="classQXmppPresence.html">QXmppPresence</a></div><div class="ttdoc">The QXmppPresence class represents an XMPP presence stanza.</div><div class="ttdef"><b>Definition:</b> QXmppPresence.h:35</div></div>
-<div class="ttc" id="aclassQXmppRosterManager_html"><div class="ttname"><a href="classQXmppRosterManager.html">QXmppRosterManager</a></div><div class="ttdoc">The QXmppRosterManager class provides access to a connected client's roster.</div><div class="ttdef"><b>Definition:</b> QXmppRosterManager.h:69</div></div>
+<div class="ttc" id="aclassQXmppRosterManager_html_a8340805e06ab6590b52327d2de2676d7"><div class="ttname"><a href="classQXmppRosterManager.html#a8340805e06ab6590b52327d2de2676d7">QXmppRosterManager::Result</a></div><div class="ttdeci">std::variant&lt; QXmpp::Success, QXmppStanza::Error &gt; Result</div><div class="ttdoc">Empty result containing QXmpp::Success or a QXmppStanza::Error.</div><div class="ttdef"><b>Definition:</b> QXmppRosterManager.h:79</div></div>
+<div class="ttc" id="aclassQXmppRosterManager_html"><div class="ttname"><a href="classQXmppRosterManager.html">QXmppRosterManager</a></div><div class="ttdoc">The QXmppRosterManager class provides access to a connected client's roster.</div><div class="ttdef"><b>Definition:</b> QXmppRosterManager.h:73</div></div>
 <div class="ttc" id="aclassQXmppClientExtension_html"><div class="ttname"><a href="classQXmppClientExtension.html">QXmppClientExtension</a></div><div class="ttdoc">The QXmppClientExtension class is the base class for QXmppClient extensions.</div><div class="ttdef"><b>Definition:</b> QXmppClientExtension.h:46</div></div>
 <div class="ttc" id="aclassQXmppClient_html"><div class="ttname"><a href="classQXmppClient.html">QXmppClient</a></div><div class="ttdoc">The QXmppClient class is the main class for using QXmpp.</div><div class="ttdef"><b>Definition:</b> QXmppClient.h:98</div></div>
 <div class="ttc" id="aclassQXmppClientExtension_html_af026d292204dc538249d16086e9e8108"><div class="ttname"><a href="classQXmppClientExtension.html#af026d292204dc538249d16086e9e8108">QXmppClientExtension::handleStanza</a></div><div class="ttdeci">virtual bool handleStanza(const QDomElement &amp;stanza)=0</div><div class="ttdoc">You need to implement this method to process incoming XMPP stanzas.</div></div>

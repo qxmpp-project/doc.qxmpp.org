@@ -63,6 +63,7 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-slots">Public Slots</a> &#124;
 <a href="#signals">Signals</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
@@ -97,6 +98,13 @@ Collaboration diagram for QXmppRosterManager:</div>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a8340805e06ab6590b52327d2de2676d7"><td class="memItemLeft" align="right" valign="top"><a id="a8340805e06ab6590b52327d2de2676d7"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppRosterManager.html#a8340805e06ab6590b52327d2de2676d7">Result</a> = std::variant&lt; QXmpp::Success, <a class="el" href="classQXmppStanza_1_1Error.html">QXmppStanza::Error</a> &gt;</td></tr>
+<tr class="memdesc:a8340805e06ab6590b52327d2de2676d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Empty result containing QXmpp::Success or a <a class="el" href="classQXmppStanza_1_1Error.html" title="The Error class represents a stanza error.">QXmppStanza::Error</a>. <br /></td></tr>
+<tr class="separator:a8340805e06ab6590b52327d2de2676d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-slots"></a>
 Public Slots</h2></td></tr>
 <tr class="memitem:ae9622791dc98bb24e31d6a01aeb1f7e9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppRosterManager.html#ae9622791dc98bb24e31d6a01aeb1f7e9">acceptSubscription</a> (const QString &amp;bareJid, const QString &amp;reason={})</td></tr>
@@ -162,6 +170,16 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a15f90c7efde9bb23b95fb02f6a7e1d74"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6cad7139b4825245e8d02e101e90e2d4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classQXmppPresence.html">QXmppPresence</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppRosterManager.html#a6cad7139b4825245e8d02e101e90e2d4">getPresence</a> (const QString &amp;bareJid, const QString &amp;resource) const</td></tr>
 <tr class="separator:a6cad7139b4825245e8d02e101e90e2d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2975bc1314d977e6d07bd0db42e4660e"><td class="memItemLeft" align="right" valign="top">QFuture&lt; <a class="el" href="classQXmppRosterManager.html#a8340805e06ab6590b52327d2de2676d7">Result</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppRosterManager.html#a2975bc1314d977e6d07bd0db42e4660e">addRosterItem</a> (const QString &amp;bareJid, const QString &amp;name={}, const QSet&lt; QString &gt; &amp;groups={})</td></tr>
+<tr class="separator:a2975bc1314d977e6d07bd0db42e4660e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a12954d454cc1baeb14ff41835168545c"><td class="memItemLeft" align="right" valign="top">QFuture&lt; <a class="el" href="classQXmppRosterManager.html#a8340805e06ab6590b52327d2de2676d7">Result</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppRosterManager.html#a12954d454cc1baeb14ff41835168545c">removeRosterItem</a> (const QString &amp;bareJid)</td></tr>
+<tr class="separator:a12954d454cc1baeb14ff41835168545c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9598995d7d0fdbc3bbde5a8a1333c54b"><td class="memItemLeft" align="right" valign="top">QFuture&lt; <a class="el" href="classQXmppRosterManager.html#a8340805e06ab6590b52327d2de2676d7">Result</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppRosterManager.html#a9598995d7d0fdbc3bbde5a8a1333c54b">renameRosterItem</a> (const QString &amp;bareJid, const QString &amp;name)</td></tr>
+<tr class="separator:a9598995d7d0fdbc3bbde5a8a1333c54b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad12cb36ec79b8faf492299137eb5d790"><td class="memItemLeft" align="right" valign="top">QFuture&lt; QXmpp::PacketState &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppRosterManager.html#ad12cb36ec79b8faf492299137eb5d790">subscribeTo</a> (const QString &amp;bareJid, const QString &amp;reason={})</td></tr>
+<tr class="separator:ad12cb36ec79b8faf492299137eb5d790"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a31f1004bf16b2ee67bcb8cd85f88ea43"><td class="memItemLeft" align="right" valign="top">QFuture&lt; QXmpp::PacketState &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppRosterManager.html#a31f1004bf16b2ee67bcb8cd85f88ea43">unsubscribeFrom</a> (const QString &amp;bareJid, const QString &amp;reason={})</td></tr>
+<tr class="separator:a31f1004bf16b2ee67bcb8cd85f88ea43"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classQXmppClientExtension"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classQXmppClientExtension')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classQXmppClientExtension.html">QXmppClientExtension</a></td></tr>
 <tr class="memitem:aec299452688f50431f1028668186e3ec inherit pub_methods_classQXmppClientExtension"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppClientExtension.html#aec299452688f50431f1028668186e3ec">QXmppClientExtension</a> ()</td></tr>
 <tr class="separator:aec299452688f50431f1028668186e3ec inherit pub_methods_classQXmppClientExtension"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -315,6 +333,51 @@ Additional Inherited Members</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a2975bc1314d977e6d07bd0db42e4660e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2975bc1314d977e6d07bd0db42e4660e">&#9670;&nbsp;</a></span>addRosterItem()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QFuture&lt; <a class="el" href="classQXmppRosterManager.html#a8340805e06ab6590b52327d2de2676d7">QXmppRosterManager::Result</a> &gt; QXmppRosterManager::addRosterItem </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>bareJid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>name</em> = <code>{}</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QSet&lt; QString &gt; &amp;&#160;</td>
+          <td class="paramname"><em>groups</em> = <code>{}</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Adds a new item to the roster without sending any subscription requests.</p>
+<p>As a result, the server will initiate a roster push, causing the <a class="el" href="classQXmppRosterManager.html#aa02bc7a630e38d0c3c1830b34381cdb0">itemAdded()</a> or <a class="el" href="classQXmppRosterManager.html#a946fa5a6386ce44b898b70bdc0eca159">itemChanged()</a> signal to be emitted.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bareJid</td><td></td></tr>
+    <tr><td class="paramname">name</td><td>Optional name for the item. </td></tr>
+    <tr><td class="paramname">groups</td><td>Optional groups for the item.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>Since</dt><dd>QXmpp 1.5 </dd></dl>
 
 </div>
 </div>
@@ -624,6 +687,33 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="a12954d454cc1baeb14ff41835168545c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a12954d454cc1baeb14ff41835168545c">&#9670;&nbsp;</a></span>removeRosterItem()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QFuture&lt; <a class="el" href="classQXmppRosterManager.html#a8340805e06ab6590b52327d2de2676d7">QXmppRosterManager::Result</a> &gt; QXmppRosterManager::removeRosterItem </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>bareJid</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Removes a roster item and cancels subscriptions to and from the contact.</p>
+<p>As a result, the server will initiate a roster push, causing the <a class="el" href="classQXmppRosterManager.html#a676caab8bdf1feb4753c0285744e77c7">itemRemoved()</a> signal to be emitted.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bareJid</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>Since</dt><dd>QXmpp 1.5 </dd></dl>
+
+</div>
+</div>
 <a id="a65ecf5954b56e1d38be5b3554c4e3f30"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a65ecf5954b56e1d38be5b3554c4e3f30">&#9670;&nbsp;</a></span>renameItem</h2>
 
@@ -666,6 +756,44 @@ Additional Inherited Members</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a9598995d7d0fdbc3bbde5a8a1333c54b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9598995d7d0fdbc3bbde5a8a1333c54b">&#9670;&nbsp;</a></span>renameRosterItem()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QFuture&lt; <a class="el" href="classQXmppRosterManager.html#a8340805e06ab6590b52327d2de2676d7">QXmppRosterManager::Result</a> &gt; QXmppRosterManager::renameRosterItem </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>bareJid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>name</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Renames a roster item.</p>
+<p>As a result, the server will initiate a roster push, causing the <a class="el" href="classQXmppRosterManager.html#a946fa5a6386ce44b898b70bdc0eca159">itemChanged()</a> signal to be emitted.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">bareJid</td><td></td></tr>
+    <tr><td class="paramname">name</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>Since</dt><dd>QXmpp 1.5 </dd></dl>
 
 </div>
 </div>
@@ -731,6 +859,37 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Requests a subscription to the given contact.</p>
 <p>As a result, the server will initiate a roster push, causing the <a class="el" href="classQXmppRosterManager.html#aa02bc7a630e38d0c3c1830b34381cdb0">itemAdded()</a> or <a class="el" href="classQXmppRosterManager.html#a946fa5a6386ce44b898b70bdc0eca159">itemChanged()</a> signal to be emitted. </p>
+
+</div>
+</div>
+<a id="ad12cb36ec79b8faf492299137eb5d790"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad12cb36ec79b8faf492299137eb5d790">&#9670;&nbsp;</a></span>subscribeTo()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QFuture&lt; QXmpp::PacketState &gt; QXmppRosterManager::subscribeTo </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>bareJid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>reason</em> = <code>{}</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Requests a subscription to the given contact.</p>
+<p>As a result, the server will initiate a roster push, causing the <a class="el" href="classQXmppRosterManager.html#aa02bc7a630e38d0c3c1830b34381cdb0">itemAdded()</a> or <a class="el" href="classQXmppRosterManager.html#a946fa5a6386ce44b898b70bdc0eca159">itemChanged()</a> signal to be emitted.</p>
+<dl class="section since"><dt>Since</dt><dd>QXmpp 1.5 </dd></dl>
 
 </div>
 </div>
@@ -845,6 +1004,37 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p>Removes a subscription to the given contact.</p>
 <p>As a result, the server will initiate a roster push, causing the <a class="el" href="classQXmppRosterManager.html#a946fa5a6386ce44b898b70bdc0eca159">itemChanged()</a> signal to be emitted. </p>
+
+</div>
+</div>
+<a id="a31f1004bf16b2ee67bcb8cd85f88ea43"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31f1004bf16b2ee67bcb8cd85f88ea43">&#9670;&nbsp;</a></span>unsubscribeFrom()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QFuture&lt; QXmpp::PacketState &gt; QXmppRosterManager::unsubscribeFrom </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>bareJid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>reason</em> = <code>{}</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Removes a subscription to the given contact.</p>
+<p>As a result, the server will initiate a roster push, causing the <a class="el" href="classQXmppRosterManager.html#a946fa5a6386ce44b898b70bdc0eca159">itemChanged()</a> signal to be emitted.</p>
+<dl class="section since"><dt>Since</dt><dd>QXmpp 1.5 </dd></dl>
 
 </div>
 </div>

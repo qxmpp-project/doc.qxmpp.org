@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['slotresult_2148',['SlotResult',['../classQXmppUploadRequestManager.html#a95a7915e3756cfa3f3bde96344073697',1,'QXmppUploadRequestManager']]]
+  ['result_2162',['Result',['../classQXmppRosterManager.html#a8340805e06ab6590b52327d2de2676d7',1,'QXmppRosterManager']]]
 ];
