@@ -321,6 +321,10 @@ QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
 <tr class="separator:a2c34168117737a0fed09724c9400529a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2360596599ba370edf9692acf355a3a6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppMessage.html#a2360596599ba370edf9692acf355a3a6">setIsFallback</a> (bool <a class="el" href="classQXmppMessage.html#a2c34168117737a0fed09724c9400529a">isFallback</a>)</td></tr>
 <tr class="separator:a2360596599ba370edf9692acf355a3a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a018cf876c41c5b070261c51645610d33"><td class="memItemLeft" align="right" valign="top">std::optional&lt; <a class="el" href="classQXmppTrustMessageElement.html">QXmppTrustMessageElement</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppMessage.html#a018cf876c41c5b070261c51645610d33">trustMessageElement</a> () const</td></tr>
+<tr class="separator:a018cf876c41c5b070261c51645610d33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae454b14a553d3d8d1a26ab5e628540e0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppMessage.html#ae454b14a553d3d8d1a26ab5e628540e0">setTrustMessageElement</a> (const std::optional&lt; <a class="el" href="classQXmppTrustMessageElement.html">QXmppTrustMessageElement</a> &gt; &amp;<a class="el" href="classQXmppMessage.html#a018cf876c41c5b070261c51645610d33">trustMessageElement</a>)</td></tr>
+<tr class="separator:ae454b14a553d3d8d1a26ab5e628540e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classQXmppStanza"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classQXmppStanza')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classQXmppStanza.html">QXmppStanza</a></td></tr>
 <tr class="memitem:aeda5073d2af6c52e78f127bca4306ace inherit pub_methods_classQXmppStanza"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppStanza.html#aeda5073d2af6c52e78f127bca4306ace">QXmppStanza</a> (const QString &amp;<a class="el" href="classQXmppStanza.html#a850ef9a2479cddcbd7657c65ca40b153">from</a>=QString(), const QString &amp;<a class="el" href="classQXmppStanza.html#a67a02790fd35ee0efb7dc8fd50b4d2dd">to</a>=QString())</td></tr>
 <tr class="separator:aeda5073d2af6c52e78f127bca4306ace inherit pub_methods_classQXmppStanza"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1930,6 +1934,26 @@ If this returns <a class="el" href="classQXmppMessage.html#a1526e753b5cfe7ed7787
 
 </div>
 </div>
+<a id="ae454b14a553d3d8d1a26ab5e628540e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae454b14a553d3d8d1a26ab5e628540e0">&#9670;&nbsp;</a></span>setTrustMessageElement()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void QXmppMessage::setTrustMessageElement </td>
+          <td>(</td>
+          <td class="paramtype">const std::optional&lt; <a class="el" href="classQXmppTrustMessageElement.html">QXmppTrustMessageElement</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>trustMessageElement</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Sets a trust message element as defined by <a href="https://xmpp.org/extensions/xep-0434.html">XEP-0434: Trust Messages (TM)</a>.</p>
+<dl class="section since"><dt>Since</dt><dd>QXmpp 1.5 </dd></dl>
+
+</div>
+</div>
 <a id="a794cd10f4265b4b7d9ef5e9fb6e0c9f0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a794cd10f4265b4b7d9ef5e9fb6e0c9f0">&#9670;&nbsp;</a></span>setType()</h2>
 
@@ -2119,6 +2143,25 @@ If this returns <a class="el" href="classQXmppMessage.html#a1526e753b5cfe7ed7787
 </div><div class="memdoc">
 <p>Returns the the chat state notification according to <a href="https://xmpp.org/extensions/xep-0085.html">XEP-0085</a>: Chat State Notifications.</p>
 <dl class="section since"><dt>Since</dt><dd>QXmpp 0.2 </dd></dl>
+
+</div>
+</div>
+<a id="a018cf876c41c5b070261c51645610d33"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a018cf876c41c5b070261c51645610d33">&#9670;&nbsp;</a></span>trustMessageElement()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::optional&lt; <a class="el" href="classQXmppTrustMessageElement.html">QXmppTrustMessageElement</a> &gt; QXmppMessage::trustMessageElement </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns an included trust message element as defined by <a href="https://xmpp.org/extensions/xep-0434.html">XEP-0434: Trust Messages (TM)</a>.</p>
+<dl class="section since"><dt>Since</dt><dd>QXmpp 1.5 </dd></dl>
 
 </div>
 </div>

@@ -364,6 +364,9 @@ $(function() {
 : <a class="el" href="classQXmppNonSASLAuthIq.html#aadf21b3ab63fb0ba14206af1fc23edf5">QXmppNonSASLAuthIq</a>
 , <a class="el" href="classQXmppPasswordReply.html#a523c595ac1c6f1a006cec1bb184b6050">QXmppPasswordReply</a>
 </li>
+<li>setDistrustedKeys()
+: <a class="el" href="classQXmppTrustMessageKeyOwner.html#af1272ee5a373e4ea6aa08eddafe001b9">QXmppTrustMessageKeyOwner</a>
+</li>
 <li>setDomain()
 : <a class="el" href="classQXmppConfiguration.html#a716050cec0aa3fc11e6f4fbfb1e6d4a1">QXmppConfiguration</a>
 , <a class="el" href="classQXmppPasswordRequest.html#a576c39a66597ea614abbb1639b2f6c73">QXmppPasswordRequest</a>
@@ -375,6 +378,9 @@ $(function() {
 </li>
 <li>setEmails()
 : <a class="el" href="classQXmppVCardIq.html#aeeaf5226fc110157e80b51e6833f5a35">QXmppVCardIq</a>
+</li>
+<li>setEncryption()
+: <a class="el" href="classQXmppTrustMessageElement.html#ad952af78259cdbfa96075e739850dd20">QXmppTrustMessageElement</a>
 </li>
 <li>setEncryptionMethod()
 : <a class="el" href="classQXmppMessage.html#a61a0abbf8830ecb79ddd30e206f2191f">QXmppMessage</a>
@@ -541,6 +547,7 @@ $(function() {
 , <a class="el" href="classQXmppMixParticipantItem.html#a8ba04979f555eea247992e06f9e42e0c">QXmppMixParticipantItem</a>
 , <a class="el" href="classQXmppMucItem.html#a0c2cc3987d51a7d5fad68569c686af59">QXmppMucItem</a>
 , <a class="el" href="classQXmppPushEnableIq.html#af8385da0a8bba4cb387e76c31a0d3402">QXmppPushEnableIq</a>
+, <a class="el" href="classQXmppTrustMessageKeyOwner.html#ad5d58f47255031a7f265871d8834eda3">QXmppTrustMessageKeyOwner</a>
 , <a class="el" href="classQXmppUploadService.html#ab8e93a0b50d8331f0bea97df59f73e91">QXmppUploadService</a>
 </li>
 <li>setKeepAliveInterval()
@@ -552,6 +559,9 @@ $(function() {
 <li>setKey()
 : <a class="el" href="classQXmppDataForm_1_1Field.html#a4ab9994979e765bbd65d4463d7910b6e">QXmppDataForm::Field</a>
 , <a class="el" href="classQXmppDialback.html#a91a464ea608a5924340593a075b9352a">QXmppDialback</a>
+</li>
+<li>setKeyOwners()
+: <a class="el" href="classQXmppTrustMessageElement.html#ae94d35e6e1e96def855d359061ba3402">QXmppTrustMessageElement</a>
 </li>
 <li>setLabel()
 : <a class="el" href="classQXmppDataForm_1_1Field.html#aee48675b341d4a4b990f146434ff2eeb">QXmppDataForm::Field</a>
@@ -1006,6 +1016,12 @@ $(function() {
 <li>setToken()
 : <a class="el" href="classQXmppMixInvitation.html#a9fe974da1b5118505dd73c891685ffc9">QXmppMixInvitation</a>
 </li>
+<li>setTrustedKeys()
+: <a class="el" href="classQXmppTrustMessageKeyOwner.html#ad89606e60c8f3f07e2b7f89da1332562">QXmppTrustMessageKeyOwner</a>
+</li>
+<li>setTrustMessageElement()
+: <a class="el" href="classQXmppMessage.html#ae454b14a553d3d8d1a26ab5e628540e0">QXmppMessage</a>
+</li>
 <li>setTurnPassword()
 : <a class="el" href="classQXmppCallManager.html#afcdf20af9e802cdabdb864daad5da7d7">QXmppCallManager</a>
 , <a class="el" href="classQXmppIceConnection.html#a1cb5ba7634ffcba433bc8b920ab2f859">QXmppIceConnection</a>
@@ -1052,6 +1068,9 @@ $(function() {
 </li>
 <li>setUrls()
 : <a class="el" href="classQXmppBookmarkSet.html#a64084ffccdb5ab1592aabadb318352e8">QXmppBookmarkSet</a>
+</li>
+<li>setUsage()
+: <a class="el" href="classQXmppTrustMessageElement.html#a74529ebc846f848703d4d5b9a475f8ca">QXmppTrustMessageElement</a>
 </li>
 <li>setUseNonSASLAuthentication()
 : <a class="el" href="classQXmppConfiguration.html#aa35552fc5f2cbc3f3651f75de5ea2b26">QXmppConfiguration</a>
@@ -1121,7 +1140,7 @@ $(function() {
 : <a class="el" href="classQXmppUploadService.html#ae2f76052a962e1635c40f3351bc1c783">QXmppUploadService</a>
 </li>
 <li>slashMeCommandText()
-: <a class="el" href="classQXmppMessage.html#ab78ed304645ad55d93f400b101f8e269">QXmppMessage</a>
+: <a class="el" href="classQXmppMessage.html#a3ea847511df051b442b156c9eaecf16b">QXmppMessage</a>
 </li>
 <li>slotReceived()
 : <a class="el" href="classQXmppUploadRequestManager.html#ab0ab1f62fb78309610e80a628878fed9">QXmppUploadRequestManager</a>
@@ -1185,11 +1204,15 @@ $(function() {
 </li>
 <li>State
 : <a class="el" href="classQXmppCall.html#a90205b5034613127d2c4adc6a0252759">QXmppCall</a>
-, <a class="el" href="classQXmppClient.html#a5f4e70d508c08967f72fd41c5343ad2e">QXmppClient</a>
 </li>
-<li>state
-: <a class="el" href="classQXmppClient.html#ac4cbb2e04e5ca683fadbc79ef173f0a5">QXmppClient</a>
-, <a class="el" href="classQXmppMessage.html#ac4180cdc43bfb13097543c2b51ee4114">QXmppMessage</a>
+<li>state()
+: <a class="el" href="classQXmppClient.html#ab57b4c97913d14fae3fafc78791c404c">QXmppClient</a>
+</li>
+<li>State
+: <a class="el" href="classQXmppClient.html#a5f4e70d508c08967f72fd41c5343ad2e">QXmppClient</a>
+</li>
+<li>state()
+: <a class="el" href="classQXmppMessage.html#ac4180cdc43bfb13097543c2b51ee4114">QXmppMessage</a>
 </li>
 <li>State
 : <a class="el" href="classQXmppMessage.html#aeaa3cc5ccb7d451067a80dd1f3c7099a">QXmppMessage</a>
@@ -1236,11 +1259,11 @@ $(function() {
 <li>streamManagementState()
 : <a class="el" href="classQXmppClient.html#a65b66e4c1e2259a256bd6bd57d61bd57">QXmppClient</a>
 </li>
-<li>StreamSecurityMode
-: <a class="el" href="classQXmppConfiguration.html#a7c6e193a68beb792038c066cfc574a18">QXmppConfiguration</a>
-</li>
 <li>streamSecurityMode()
 : <a class="el" href="classQXmppConfiguration.html#a3131853d2ee65c8eabc0cbdc7f7ad93b">QXmppConfiguration</a>
+</li>
+<li>StreamSecurityMode
+: <a class="el" href="classQXmppConfiguration.html#a7c6e193a68beb792038c066cfc574a18">QXmppConfiguration</a>
 </li>
 <li>street()
 : <a class="el" href="classQXmppVCardAddress.html#aa3520b7f541df50c55d672c70299f791">QXmppVCardAddress</a>
@@ -1248,7 +1271,7 @@ $(function() {
 <li>subject()
 : <a class="el" href="classQXmppArchiveChat.html#a24573d02a735db099a9aeb06dfd942ba">QXmppArchiveChat</a>
 , <a class="el" href="classQXmppMessage.html#a121ee2cf5f5a7590dd14d4b141040f13">QXmppMessage</a>
-, <a class="el" href="classQXmppMucRoom.html#ab7317ae2690851f5ce995b9069c7b0c9">QXmppMucRoom</a>
+, <a class="el" href="classQXmppMucRoom.html#a7f95cf9bbd6fa253ca68312bd97f93dd">QXmppMucRoom</a>
 </li>
 <li>SubjectAction
 : <a class="el" href="classQXmppMucRoom.html#acd3129293f69d7e7cdd91b65aae0606fa1b691dc1004e867aa844ba380bb383ad">QXmppMucRoom</a>
