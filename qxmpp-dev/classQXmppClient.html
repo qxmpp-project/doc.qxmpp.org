@@ -75,7 +75,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>The <a class="el" href="classQXmppClient.html" title="The QXmppClient class is the main class for using QXmpp.">QXmppClient</a> class is the main class for using QXmpp.  
+<p>The <a class="el" href="classQXmppClient.html" title="The QXmppClient class is the main class for using QXmpp.">QXmppClient</a> class is the main class for using <a class="el" href="namespaceQXmpp.html">QXmpp</a>.  
  <a href="classQXmppClient.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="QXmppClient_8h_source.html">QXmppClient.h</a>&gt;</code></p>
@@ -118,9 +118,9 @@ Public Types</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:aab5506ec0769f208e1ccd5d23c6aaea8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Describes the use of <a href="https://xmpp.org/extensions/xep-0198.html">XEP-0198</a>: Stream Management.  <a href="classQXmppClient.html#aab5506ec0769f208e1ccd5d23c6aaea8">More...</a><br /></td></tr>
 <tr class="separator:aab5506ec0769f208e1ccd5d23c6aaea8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5312db7ddd0aadacea286314154f8a6d"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppClient.html#a5312db7ddd0aadacea286314154f8a6d">IqResult</a> = std::variant&lt; QDomElement, QXmpp::PacketState &gt;</td></tr>
+<tr class="memitem:a5312db7ddd0aadacea286314154f8a6d"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppClient.html#a5312db7ddd0aadacea286314154f8a6d">IqResult</a> = std::variant&lt; QDomElement, <a class="el" href="namespaceQXmpp.html#a622a58e2c833d4c9f1a9dc6b1ed249a6">QXmpp::PacketState</a> &gt;</td></tr>
 <tr class="separator:a5312db7ddd0aadacea286314154f8a6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad5004eda51b93744a8ad8259ee692a2a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppClient.html#ad5004eda51b93744a8ad8259ee692a2a">EmptyResult</a> = std::variant&lt; QXmpp::Success, <a class="el" href="classQXmppStanza_1_1Error.html">QXmppStanza::Error</a> &gt;</td></tr>
+<tr class="memitem:ad5004eda51b93744a8ad8259ee692a2a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppClient.html#ad5004eda51b93744a8ad8259ee692a2a">EmptyResult</a> = std::variant&lt; <a class="el" href="structQXmpp_1_1Success.html">QXmpp::Success</a>, <a class="el" href="classQXmppStanza_1_1Error.html">QXmppStanza::Error</a> &gt;</td></tr>
 <tr class="separator:ad5004eda51b93744a8ad8259ee692a2a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-slots"></a>
@@ -241,7 +241,7 @@ QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
 <a class="el" href="classQXmppStanza_1_1Error.html#abcf1cbbe7b15ec82f3ac34723b604852">QXmppStanza::Error::Condition</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppClient.html#af3a18178f3349e668f09ee46ba7d48db">xmppStreamError</a> ()</td></tr>
 <tr class="memdesc:af3a18178f3349e668f09ee46ba7d48db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the XMPP stream error if <a class="el" href="classQXmppClient.html#a7c2851d07cc33119752abc6ec8ffc47a">QXmppClient::Error</a> is <a class="el" href="classQXmppClient.html#a7c2851d07cc33119752abc6ec8ffc47aa29f30662c97dc09858f1d7e80eb1825a" title="Error due to XML stream.">QXmppClient::XmppStreamError</a>. <br /></td></tr>
 <tr class="separator:af3a18178f3349e668f09ee46ba7d48db"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ada57e133373174c6386f516fc7c994f3"><td class="memItemLeft" align="right" valign="top">QFuture&lt; QXmpp::PacketState &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppClient.html#ada57e133373174c6386f516fc7c994f3">send</a> (const <a class="el" href="classQXmppStanza.html">QXmppStanza</a> &amp;)</td></tr>
+<tr class="memitem:ada57e133373174c6386f516fc7c994f3"><td class="memItemLeft" align="right" valign="top">QFuture&lt; <a class="el" href="namespaceQXmpp.html#a622a58e2c833d4c9f1a9dc6b1ed249a6">QXmpp::PacketState</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppClient.html#ada57e133373174c6386f516fc7c994f3">send</a> (const <a class="el" href="classQXmppStanza.html">QXmppStanza</a> &amp;)</td></tr>
 <tr class="separator:ada57e133373174c6386f516fc7c994f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7bc90c8b2dd1170c256ca26e48ce24fd"><td class="memItemLeft" align="right" valign="top">QFuture&lt; <a class="el" href="classQXmppClient.html#a5312db7ddd0aadacea286314154f8a6d">IqResult</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppClient.html#a7bc90c8b2dd1170c256ca26e48ce24fd">sendIq</a> (const <a class="el" href="classQXmppIq.html">QXmppIq</a> &amp;)</td></tr>
 <tr class="separator:a7bc90c8b2dd1170c256ca26e48ce24fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -292,7 +292,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a50feb6fc691e90ba6b2e69c2a9aea794 inherit pro_methods_classQXmppLoggable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The <a class="el" href="classQXmppClient.html" title="The QXmppClient class is the main class for using QXmpp.">QXmppClient</a> class is the main class for using QXmpp. </p>
+<div class="textblock"><p>The <a class="el" href="classQXmppClient.html" title="The QXmppClient class is the main class for using QXmpp.">QXmppClient</a> class is the main class for using <a class="el" href="namespaceQXmpp.html">QXmpp</a>. </p>
 <p>It provides the user all the required functionality to connect to the server and perform operations afterwards.</p>
 <p>This class will provide the handle/reference to <a class="el" href="classQXmppRosterManager.html" title="The QXmppRosterManager class provides access to a connected client&#39;s roster.">QXmppRosterManager</a> (roster management), <a class="el" href="classQXmppVCardManager.html" title="The QXmppVCardManager class gets/sets XMPP vCards. It is an implementation of XEP-0054: vcard-temp.">QXmppVCardManager</a> (vCard manager), and <a class="el" href="classQXmppVersionManager.html" title="The QXmppVersionManager class makes it possible to request for the software version of an entity as d...">QXmppVersionManager</a> (software version information).</p>
 <p>By default, the client will automatically try reconnecting to the server. You can change that behaviour using <a class="el" href="classQXmppConfiguration.html#af1b4829231216e457803e46e784c25ba">QXmppConfiguration::setAutoReconnectionEnabled()</a>.</p>
@@ -317,7 +317,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Result of a generic request without a return value. Contains Success in case everything went well. If the returned IQ contained an error a <a class="el" href="classQXmppStanza_1_1Error.html" title="The Error class represents a stanza error.">QXmppStanza::Error</a> is reported.</p>
-<dl class="section since"><dt>Since</dt><dd>QXmpp 1.5 </dd></dl>
+<dl class="section since"><dt>Since</dt><dd><a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.5 </dd></dl>
 
 </div>
 </div>
@@ -333,7 +333,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Result of an IQ request, either contains the QDomElement of the IQ answer (with type 'error' or 'result') or it contains the packet error, if the request couldn't be sent.</p>
-<dl class="section since"><dt>Since</dt><dd>QXmpp 1.5 </dd></dl>
+<dl class="section since"><dt>Since</dt><dd><a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.5 </dd></dl>
 
 </div>
 </div>
@@ -515,7 +515,7 @@ template&lt;typename T , typename... Args&gt; </div>
 </div><div class="memdoc">
 <p>Creates a new extension and adds it to the client.</p>
 <dl class="section return"><dt>Returns</dt><dd>the newly created extension</dd></dl>
-<dl class="section since"><dt>Since</dt><dd>QXmpp 1.5 </dd></dl>
+<dl class="section since"><dt>Since</dt><dd><a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.5 </dd></dl>
 
 </div>
 </div>
@@ -587,7 +587,7 @@ template&lt;typename T , typename... Args&gt; </div>
 <li>Session establishment</li>
 </ul>
 <p>After all these steps a successful XMPP connection is established and <a class="el" href="classQXmppClient.html#a46e84c5280564cdc2d60307309f97b92">connected()</a> signal is emitted.</p>
-<p>After the <a class="el" href="classQXmppClient.html#a46e84c5280564cdc2d60307309f97b92">connected()</a> signal is emitted QXmpp will send the roster request to the server. On receiving the roster, QXmpp will emit <a class="el" href="classQXmppRosterManager.html#a978cf900248b0ef144460bb52052ded8">QXmppRosterManager::rosterReceived()</a>. After this signal, <a class="el" href="classQXmppRosterManager.html" title="The QXmppRosterManager class provides access to a connected client&#39;s roster.">QXmppRosterManager</a> object gets populated and you can use <code><a class="el" href="classQXmppClient.html#a728fc96e0ca41b21d94e4686f8519c4d" title="Returns the extension which can be cast into type T*, or 0 if there is no such extension.">findExtension&lt;QXmppRosterManager&gt;()</a></code> to get the handle of <a class="el" href="classQXmppRosterManager.html" title="The QXmppRosterManager class provides access to a connected client&#39;s roster.">QXmppRosterManager</a> object. </p>
+<p>After the <a class="el" href="classQXmppClient.html#a46e84c5280564cdc2d60307309f97b92">connected()</a> signal is emitted <a class="el" href="namespaceQXmpp.html">QXmpp</a> will send the roster request to the server. On receiving the roster, <a class="el" href="namespaceQXmpp.html">QXmpp</a> will emit <a class="el" href="classQXmppRosterManager.html#a978cf900248b0ef144460bb52052ded8">QXmppRosterManager::rosterReceived()</a>. After this signal, <a class="el" href="classQXmppRosterManager.html" title="The QXmppRosterManager class provides access to a connected client&#39;s roster.">QXmppRosterManager</a> object gets populated and you can use <code><a class="el" href="classQXmppClient.html#a728fc96e0ca41b21d94e4686f8519c4d" title="Returns the extension which can be cast into type T*, or 0 if there is no such extension.">findExtension&lt;QXmppRosterManager&gt;()</a></code> to get the handle of <a class="el" href="classQXmppRosterManager.html" title="The QXmppRosterManager class provides access to a connected client&#39;s roster.">QXmppRosterManager</a> object. </p>
 
 </div>
 </div>
@@ -817,7 +817,7 @@ template&lt;typename T &gt; </div>
 <div class="line">} <span class="keywordflow">else</span> {</div>
 <div class="line">    <span class="comment">// extension not found</span></div>
 <div class="line">}</div>
-</div><!-- fragment --><dl class="section since"><dt>Since</dt><dd>QXmpp 1.2 </dd></dl>
+</div><!-- fragment --><dl class="section since"><dt>Since</dt><dd><a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.2 </dd></dl>
 
 </div>
 </div>
@@ -901,7 +901,7 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 <p>Returns true if the current client state is "active", false if it is "inactive". See <a href="https://xmpp.org/extensions/xep-0352.html">XEP-0352</a>: Client State Indication for details.</p>
 <p>On connect this is always reset to true.</p>
-<dl class="section since"><dt>Since</dt><dd>QXmpp 1.0 </dd></dl>
+<dl class="section since"><dt>Since</dt><dd><a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.0 </dd></dl>
 
 </div>
 </div>
@@ -1018,7 +1018,7 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 <p>Returns the reference to <a class="el" href="classQXmppRosterManager.html" title="The QXmppRosterManager class provides access to a connected client&#39;s roster.">QXmppRosterManager</a> object of the client.</p>
 <dl class="section return"><dt>Returns</dt><dd>Reference to the roster object of the connected client. Use this to get the list of friends in the roster and their presence information.</dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000015">Deprecated:</a></b></dt><dd>This method is deprecated since QXmpp 1.1. Use <code><a class="el" href="classQXmppClient.html#a728fc96e0ca41b21d94e4686f8519c4d" title="Returns the extension which can be cast into type T*, or 0 if there is no such extension.">QXmppClient::findExtension&lt;QXmppRosterManager&gt;()</a></code> instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000015">Deprecated:</a></b></dt><dd>This method is deprecated since <a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.1. Use <code><a class="el" href="classQXmppClient.html#a728fc96e0ca41b21d94e4686f8519c4d" title="Returns the extension which can be cast into type T*, or 0 if there is no such extension.">QXmppClient::findExtension&lt;QXmppRosterManager&gt;()</a></code> instead. </dd></dl>
 
 </div>
 </div>
@@ -1029,7 +1029,7 @@ template&lt;typename T &gt; </div>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">QFuture&lt; QXmpp::PacketState &gt; QXmppClient::send </td>
+          <td class="memname">QFuture&lt; <a class="el" href="namespaceQXmpp.html#a622a58e2c833d4c9f1a9dc6b1ed249a6">QXmpp::PacketState</a> &gt; QXmppClient::send </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classQXmppStanza.html">QXmppStanza</a> &amp;&#160;</td>
           <td class="paramname"><em>stanza</em></td><td>)</td>
@@ -1038,13 +1038,13 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 <p>Sends a packet and reports the result via QFuture.</p>
-<p>The QFuture might have multiple results. The first result of the future is reported immediately (it's safe to access resultAt(0)). If writing the data to the socket succeeds (that does not mean the server received it), QXmpp::Sent is reported. Otherwise QXmpp::NotSent is reported.</p>
-<p>If stream management is enabled the future continues to be active until the server acknowledges the packet. On success QXmpp::Acknowledged is reported and the future finishes.</p>
-<p>If connection errors occur the packet is resent if possible. If reconnecting is not possible, QXmpp::NotSent is reported.</p>
-<p>For you the most important result is the last one. QXmpp::Sent means the packet has been sent without stream management (no acknowledgment). QXmpp::Acknowledged means the packet has been sent and has been received by the server, QXmpp::NotSent means no success.</p>
+<p>The QFuture might have multiple results. The first result of the future is reported immediately (it's safe to access resultAt(0)). If writing the data to the socket succeeds (that does not mean the server received it), <a class="el" href="namespaceQXmpp.html#a622a58e2c833d4c9f1a9dc6b1ed249a6ad00488d129352edd0d83e8e0c1f9f488" title="The packet has been written to the socket.">QXmpp::Sent</a> is reported. Otherwise <a class="el" href="namespaceQXmpp.html#a622a58e2c833d4c9f1a9dc6b1ed249a6a5e7640904df8affc9886fe9d3bef5f92" title="The packet could not be sent (e.g. connection broke or user disconnected).">QXmpp::NotSent</a> is reported.</p>
+<p>If stream management is enabled the future continues to be active until the server acknowledges the packet. On success <a class="el" href="namespaceQXmpp.html#a622a58e2c833d4c9f1a9dc6b1ed249a6ae32225de11a8934bedd2aa7d3c7c4d39" title="The packet has been acknowledged by the other peer using Stream Management.">QXmpp::Acknowledged</a> is reported and the future finishes.</p>
+<p>If connection errors occur the packet is resent if possible. If reconnecting is not possible, <a class="el" href="namespaceQXmpp.html#a622a58e2c833d4c9f1a9dc6b1ed249a6a5e7640904df8affc9886fe9d3bef5f92" title="The packet could not be sent (e.g. connection broke or user disconnected).">QXmpp::NotSent</a> is reported.</p>
+<p>For you the most important result is the last one. <a class="el" href="namespaceQXmpp.html#a622a58e2c833d4c9f1a9dc6b1ed249a6ad00488d129352edd0d83e8e0c1f9f488" title="The packet has been written to the socket.">QXmpp::Sent</a> means the packet has been sent without stream management (no acknowledgment). <a class="el" href="namespaceQXmpp.html#a622a58e2c833d4c9f1a9dc6b1ed249a6ae32225de11a8934bedd2aa7d3c7c4d39" title="The packet has been acknowledged by the other peer using Stream Management.">QXmpp::Acknowledged</a> means the packet has been sent and has been received by the server, <a class="el" href="namespaceQXmpp.html#a622a58e2c833d4c9f1a9dc6b1ed249a6a5e7640904df8affc9886fe9d3bef5f92" title="The packet could not be sent (e.g. connection broke or user disconnected).">QXmpp::NotSent</a> means no success.</p>
 <dl class="section note"><dt>Note</dt><dd><b>TL;DR</b>: The future might have multiple results, so don't do: <div class="fragment"><div class="line"><a class="code" href="classQXmppClient.html#ada57e133373174c6386f516fc7c994f3">send</a>().result();</div>
 </div><!-- fragment --> Instead do the following to handle the final result: <div class="fragment"><div class="line"><a class="code" href="classQXmppClient.html#ada57e133373174c6386f516fc7c994f3">send</a>().results().last();</div>
-</div><!-- fragment --> QXmpp::Sent or QXmpp::Acknowledged mean success.</dd></dl>
+</div><!-- fragment --> <a class="el" href="namespaceQXmpp.html#a622a58e2c833d4c9f1a9dc6b1ed249a6ad00488d129352edd0d83e8e0c1f9f488" title="The packet has been written to the socket.">QXmpp::Sent</a> or <a class="el" href="namespaceQXmpp.html#a622a58e2c833d4c9f1a9dc6b1ed249a6ae32225de11a8934bedd2aa7d3c7c4d39" title="The packet has been acknowledged by the other peer using Stream Management.">QXmpp::Acknowledged</a> mean success.</dd></dl>
 <dl class="section warning"><dt>Warning</dt><dd>THIS API IS NOT FINALIZED YET!</dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>A QFuture that makes it possible to track the state of the packet. You can use QFutureWatcher in Qt 5 and QFuture::then() in Qt 6 to handle the results. </dd></dl>
 
@@ -1067,9 +1067,9 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 <p>Sends an IQ and returns possible stanza errors.</p>
 <p>If you want to parse a special IQ response in the result case, you can use <a class="el" href="classQXmppClient.html#a7bc90c8b2dd1170c256ca26e48ce24fd">sendIq()</a> and parse the returned QDomElement.</p>
-<dl class="section return"><dt>Returns</dt><dd>Returns QXmpp::Success (on response type 'result') or the contained <a class="el" href="classQXmppStanza_1_1Error.html" title="The Error class represents a stanza error.">QXmppStanza::Error</a> (on response type 'error')</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Returns <a class="el" href="structQXmpp_1_1Success.html">QXmpp::Success</a> (on response type 'result') or the contained <a class="el" href="classQXmppStanza_1_1Error.html" title="The Error class represents a stanza error.">QXmppStanza::Error</a> (on response type 'error')</dd></dl>
 <dl class="section warning"><dt>Warning</dt><dd>THIS API IS NOT FINALIZED YET!</dd></dl>
-<dl class="section since"><dt>Since</dt><dd>QXmpp 1.5 </dd></dl>
+<dl class="section since"><dt>Since</dt><dd><a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.5 </dd></dl>
 
 </div>
 </div>
@@ -1091,7 +1091,7 @@ template&lt;typename T &gt; </div>
 <p>Sends an IQ packet and returns the response asynchronously.</p>
 <p>This is useful for further processing and parsing of the returned QDomElement. If you don't expect a special response, you may want use <a class="el" href="classQXmppClient.html#ad0dc9a3516ddfec232281a2b4615263b">sendGenericIq()</a>.</p>
 <dl class="section warning"><dt>Warning</dt><dd>THIS API IS NOT FINALIZED YET!</dd></dl>
-<dl class="section since"><dt>Since</dt><dd>QXmpp 1.5 </dd></dl>
+<dl class="section since"><dt>Since</dt><dd><a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.5 </dd></dl>
 
 </div>
 </div>
@@ -1193,7 +1193,7 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 <p>Sets the client state as described in <a href="https://xmpp.org/extensions/xep-0352.html">XEP-0352</a>: Client State Indication.</p>
 <p>On connect this is always reset to true.</p>
-<dl class="section since"><dt>Since</dt><dd>QXmpp 1.0 </dd></dl>
+<dl class="section since"><dt>Since</dt><dd><a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.0 </dd></dl>
 
 </div>
 </div>
@@ -1290,7 +1290,7 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 <p>Returns the current <a href="https://xmpp.org/extensions/xep-0198.html">XEP-0198</a>: Stream Management state of the connection.</p>
 <p>Upon connection of the client this can be used to check whether the previous stream has been resumed.</p>
-<dl class="section since"><dt>Since</dt><dd>QXmpp 1.4 </dd></dl>
+<dl class="section since"><dt>Since</dt><dd><a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.4 </dd></dl>
 
 </div>
 </div>
@@ -1309,7 +1309,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 <p>Returns the reference to <a class="el" href="classQXmppVCardManager.html" title="The QXmppVCardManager class gets/sets XMPP vCards. It is an implementation of XEP-0054: vcard-temp.">QXmppVCardManager</a>, implementation of <a href="https://xmpp.org/extensions/xep-0054.html">XEP-0054</a>. <a href="http://xmpp.org/extensions/xep-0054.html">http://xmpp.org/extensions/xep-0054.html</a></p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000016">Deprecated:</a></b></dt><dd>This method is deprecated since QXmpp 1.1. Use <code><a class="el" href="classQXmppClient.html#a728fc96e0ca41b21d94e4686f8519c4d" title="Returns the extension which can be cast into type T*, or 0 if there is no such extension.">QXmppClient::findExtension&lt;QXmppVCardManager&gt;()</a></code> instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000016">Deprecated:</a></b></dt><dd>This method is deprecated since <a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.1. Use <code><a class="el" href="classQXmppClient.html#a728fc96e0ca41b21d94e4686f8519c4d" title="Returns the extension which can be cast into type T*, or 0 if there is no such extension.">QXmppClient::findExtension&lt;QXmppVCardManager&gt;()</a></code> instead. </dd></dl>
 
 </div>
 </div>
@@ -1328,7 +1328,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 <p>Returns the reference to <a class="el" href="classQXmppVersionManager.html" title="The QXmppVersionManager class makes it possible to request for the software version of an entity as d...">QXmppVersionManager</a>, implementation of <a href="https://xmpp.org/extensions/xep-0092.html">XEP-0092</a>. <a href="http://xmpp.org/extensions/xep-0092.html">http://xmpp.org/extensions/xep-0092.html</a></p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000017">Deprecated:</a></b></dt><dd>This method is deprecated since QXmpp 1.1. Use <code><a class="el" href="classQXmppClient.html#a728fc96e0ca41b21d94e4686f8519c4d" title="Returns the extension which can be cast into type T*, or 0 if there is no such extension.">QXmppClient::findExtension&lt;QXmppVersionManager&gt;()</a></code> instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000017">Deprecated:</a></b></dt><dd>This method is deprecated since <a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.1. Use <code><a class="el" href="classQXmppClient.html#a728fc96e0ca41b21d94e4686f8519c4d" title="Returns the extension which can be cast into type T*, or 0 if there is no such extension.">QXmppClient::findExtension&lt;QXmppVersionManager&gt;()</a></code> instead. </dd></dl>
 
 </div>
 </div>

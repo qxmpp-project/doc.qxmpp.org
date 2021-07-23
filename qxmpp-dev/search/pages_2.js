@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['xmpp_20extensions_2383',['XMPP Extensions',['../xep.html',1,'']]]
+  ['xmpp_20extensions_2395',['XMPP Extensions',['../xep.html',1,'']]]
 ];

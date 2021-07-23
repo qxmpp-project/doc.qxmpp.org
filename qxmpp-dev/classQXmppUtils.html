@@ -269,8 +269,8 @@ static QByteArray&#160;</td><td class="memItemRight" valign="bottom"><a class="e
 </table>
 </div><div class="memdoc">
 <p>Returns a random alphanumerical string of the specified size.</p>
-<p>Since QXmpp 1.3 this will generate a UUID, if the specified <code>length</code> is 36 which is also the new default value. The returned string is still 36 characters long, but will contain dashes (as specified in the UUID format).</p>
-<dl class="section note"><dt>Note</dt><dd>It is recommended to use UUIDs for cases where IDs must be unique and are possibly stored permanently. This can be done using <a class="el" href="classQXmppUtils.html#a36f082013849450a716771a55f31f818">QXmppUtils::generateStanzaUuid()</a>. However, since that function is only available since QXmpp 1.3, you may also want to continue to use this function because of compatibility reasons.</dd></dl>
+<p>Since <a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.3 this will generate a UUID, if the specified <code>length</code> is 36 which is also the new default value. The returned string is still 36 characters long, but will contain dashes (as specified in the UUID format).</p>
+<dl class="section note"><dt>Note</dt><dd>It is recommended to use UUIDs for cases where IDs must be unique and are possibly stored permanently. This can be done using <a class="el" href="classQXmppUtils.html#a36f082013849450a716771a55f31f818">QXmppUtils::generateStanzaUuid()</a>. However, since that function is only available since <a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.3, you may also want to continue to use this function because of compatibility reasons.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">length</td><td></td></tr>
@@ -303,7 +303,7 @@ static QByteArray&#160;</td><td class="memItemRight" valign="bottom"><a class="e
 </table>
 </div><div class="memdoc">
 <p>Creates a new stanza id in the UUID format.</p>
-<dl class="section since"><dt>Since</dt><dd>QXmpp 1.3 </dd></dl>
+<dl class="section since"><dt>Since</dt><dd><a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.3 </dd></dl>
 
 </div>
 </div>

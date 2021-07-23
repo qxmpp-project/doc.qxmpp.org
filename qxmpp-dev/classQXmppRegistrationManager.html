@@ -267,7 +267,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <p>Now you need to fill out the registration form. If this requires user interaction, it is recommended that you disconnect from the server at this point now. This is required, because some servers will kick inactive, not authorized clients after a few seconds.</p>
 <p>If the returned IQ contains a data form, that can be displayed to a user or can be filled out in another way.</p>
 <p>If the server does not support data forms, you can check the standard fields of the <a class="el" href="classQXmppRegisterIq.html" title="The QXmppRegisterIq class represents a registration IQ as defined by XEP-0077: In-Band Registration.">QXmppRegisterIq</a>. You need to search the fields for empty (non-null) strings. All fields that contain an empty string are required and can be filled out. You can just set values for those fields and send the form as described in the next step.</p>
-<dl class="section note"><dt>Note</dt><dd>QXmpp currently has only implemented the most important default fields in the <a class="el" href="classQXmppRegisterIq.html" title="The QXmppRegisterIq class represents a registration IQ as defined by XEP-0077: In-Band Registration.">QXmppRegisterIq</a>. The other fields are not very widespread, because data forms are usually used for such purposes.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd><a class="el" href="namespaceQXmpp.html">QXmpp</a> currently has only implemented the most important default fields in the <a class="el" href="classQXmppRegisterIq.html" title="The QXmppRegisterIq class represents a registration IQ as defined by XEP-0077: In-Band Registration.">QXmppRegisterIq</a>. The other fields are not very widespread, because data forms are usually used for such purposes.</dd></dl>
 <h4>Sending the completed form to the server</h4>
 <p><b>Option A</b>: If filling out the form goes very quick, you can set the filled out form directly using <a class="el" href="classQXmppRegistrationManager.html#a73e034f81a5f048f93e0b055b1544d8f">setRegistrationFormToSend()</a> and then directly trigger the form to be sent using <a class="el" href="classQXmppRegistrationManager.html#a6dc5b4a3cd46bc0b83ca5772c0000460">sendCachedRegistrationForm()</a>.</p>
 <div class="fragment"><div class="line">registrationManager-&gt;setRegistrationFormToSend(completedForm);</div>
@@ -285,7 +285,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <h4>Connecting with the newly created account</h4>
 <p>You need to disconnect now. The user can then enter their credentials and connect as usually.</p>
 <p>It is also possible to extract username and password from the sent form, but that does not work always. There might also be forms that have no clear username or password fields.</p>
-<dl class="section since"><dt>Since</dt><dd>QXmpp 1.2 </dd></dl>
+<dl class="section since"><dt>Since</dt><dd><a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.2 </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ab05276145d09d578981bd2994fbe1c40"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ab05276145d09d578981bd2994fbe1c40">&#9670;&nbsp;</a></span>QXmppRegistrationManager()</h2>
