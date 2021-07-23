@@ -184,6 +184,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ac0307eb6e160f3d9c297c5864e957f46"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a61ccf1c37ca3f26bfd14e65c8ecf1740"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppClient.html#a61ccf1c37ca3f26bfd14e65c8ecf1740">addExtension</a> (<a class="el" href="classQXmppClientExtension.html">QXmppClientExtension</a> *extension)</td></tr>
 <tr class="separator:a61ccf1c37ca3f26bfd14e65c8ecf1740"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6df7c877500e1548ffb351c46ae48e4"><td class="memTemplParams" colspan="2">template&lt;typename T , typename... Args&gt; </td></tr>
+<tr class="memitem:ab6df7c877500e1548ffb351c46ae48e4"><td class="memTemplItemLeft" align="right" valign="top">T *&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classQXmppClient.html#ab6df7c877500e1548ffb351c46ae48e4">addNewExtension</a> (Args... args)</td></tr>
+<tr class="separator:ab6df7c877500e1548ffb351c46ae48e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9459b68cf1cb56a2bad27909ec5e7e7b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppClient.html#a9459b68cf1cb56a2bad27909ec5e7e7b">insertExtension</a> (int index, <a class="el" href="classQXmppClientExtension.html">QXmppClientExtension</a> *extension)</td></tr>
 <tr class="separator:a9459b68cf1cb56a2bad27909ec5e7e7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae48477dc92abd66193789bfc60d16d62"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppClient.html#ae48477dc92abd66193789bfc60d16d62">removeExtension</a> (<a class="el" href="classQXmppClientExtension.html">QXmppClientExtension</a> *extension)</td></tr>
@@ -482,6 +485,37 @@ Additional Inherited Members</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="ab6df7c877500e1548ffb351c46ae48e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6df7c877500e1548ffb351c46ae48e4">&#9670;&nbsp;</a></span>addNewExtension()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T , typename... Args&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QXmppClient::addNewExtension </td>
+          <td>(</td>
+          <td class="paramtype">Args...&#160;</td>
+          <td class="paramname"><em>args</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Creates a new extension and adds it to the client.</p>
+<dl class="section return"><dt>Returns</dt><dd>the newly created extension</dd></dl>
+<dl class="section since"><dt>Since</dt><dd>QXmpp 1.5 </dd></dl>
 
 </div>
 </div>
@@ -1303,7 +1337,7 @@ template&lt;typename T &gt; </div>
 <li>QXmppClient.cpp</li>
 </ul>
 </div><!-- contents -->
-<div class="ttc" id="aclassQXmppClient_html_ada57e133373174c6386f516fc7c994f3"><div class="ttname"><a href="classQXmppClient.html#ada57e133373174c6386f516fc7c994f3">QXmppClient::send</a></div><div class="ttdeci">QFuture&lt; QXmpp::PacketState &gt; send(const QXmppStanza &amp;)</div><div class="ttdef"><b>Definition:</b> QXmppClient.cpp:353</div></div>
+<div class="ttc" id="aclassQXmppClient_html_ada57e133373174c6386f516fc7c994f3"><div class="ttname"><a href="classQXmppClient.html#ada57e133373174c6386f516fc7c994f3">QXmppClient::send</a></div><div class="ttdeci">QFuture&lt; QXmpp::PacketState &gt; send(const QXmppStanza &amp;)</div><div class="ttdef"><b>Definition:</b> QXmppClient.cpp:363</div></div>
 <div class="ttc" id="aclassQXmppDiscoveryManager_html"><div class="ttname"><a href="classQXmppDiscoveryManager.html">QXmppDiscoveryManager</a></div><div class="ttdoc">The QXmppDiscoveryManager class makes it possible to discover information about other entities as def...</div><div class="ttdef"><b>Definition:</b> QXmppDiscoveryManager.h:42</div></div>
 <div class="ttc" id="aclassQXmppMessage_html"><div class="ttname"><a href="classQXmppMessage.html">QXmppMessage</a></div><div class="ttdoc">The QXmppMessage class represents an XMPP message.</div><div class="ttdef"><b>Definition:</b> QXmppMessage.h:46</div></div>
 <!-- start footer part -->
