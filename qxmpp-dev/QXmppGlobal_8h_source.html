@@ -114,52 +114,51 @@ $(function() {
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#define QXMPP_AUTOTEST_EXPORT</span></div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">#define QXMPP_VERSION QT_VERSION_CHECK(1, 5, 0)</span></div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keyword">inline</span> QLatin1String QXmppVersion()</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;{</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordflow">return</span> QLatin1String(<span class="stringliteral">&quot;1.5.0&quot;</span>);</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;}</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="comment">// This sets which deprecated functions should still be usable</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="comment">// It works exactly like QT_DISABLE_DEPRECATED_BEFORE</span></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">#ifndef QXMPP_DISABLE_DEPRECATED_BEFORE</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor">#   define QXMPP_DISABLE_DEPRECATED_BEFORE 0x0</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="comment">// This works exactly like QT_DEPRECATED_SINCE, but checks QXMPP_DISABLE_DEPRECATED_BEFORE instead.</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor">#define QXMPP_DEPRECATED_SINCE(major, minor) (QT_VERSION_CHECK(major, minor, 0) &gt; QXMPP_DISABLE_DEPRECATED_BEFORE)</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="keyword">inline</span> QLatin1String QXmppVersion()</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;{</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordflow">return</span> QLatin1String(<span class="stringliteral">&quot;1.5.0&quot;</span>);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;}</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="comment">// This sets which deprecated functions should still be usable</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment">// It works exactly like QT_DISABLE_DEPRECATED_BEFORE</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor">#ifndef QXMPP_DISABLE_DEPRECATED_BEFORE</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor">#   define QXMPP_DISABLE_DEPRECATED_BEFORE 0x0</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor">#endif</span></div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="comment">// workaround for Qt &lt; 5.12</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor">#ifndef Q_DECL_ENUMERATOR_DEPRECATED_X</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor">#define Q_DECL_ENUMERATOR_DEPRECATED_X(msg)</span></div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor">#ifndef QT_WARNING_DISABLE_DEPRECATED</span></div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="preprocessor">#define QT_WARNING_DISABLE_DEPRECATED</span></div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceQXmpp.html">QXmpp</a> {</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
-<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="namespaceQXmpp.html#a622a58e2c833d4c9f1a9dc6b1ed249a6">   89</a></span>&#160;<span class="keyword">enum</span> <a class="code" href="namespaceQXmpp.html#a622a58e2c833d4c9f1a9dc6b1ed249a6">PacketState</a> : quint8 {</div>
-<div class="line"><a name="l00090"></a><span class="lineno"><a class="line" href="namespaceQXmpp.html#a622a58e2c833d4c9f1a9dc6b1ed249a6ad00488d129352edd0d83e8e0c1f9f488">   90</a></span>&#160;    <a class="code" href="namespaceQXmpp.html#a622a58e2c833d4c9f1a9dc6b1ed249a6ad00488d129352edd0d83e8e0c1f9f488">Sent</a>,          </div>
-<div class="line"><a name="l00091"></a><span class="lineno"><a class="line" href="namespaceQXmpp.html#a622a58e2c833d4c9f1a9dc6b1ed249a6ae32225de11a8934bedd2aa7d3c7c4d39">   91</a></span>&#160;    <a class="code" href="namespaceQXmpp.html#a622a58e2c833d4c9f1a9dc6b1ed249a6ae32225de11a8934bedd2aa7d3c7c4d39">Acknowledged</a>,  </div>
-<div class="line"><a name="l00092"></a><span class="lineno"><a class="line" href="namespaceQXmpp.html#a622a58e2c833d4c9f1a9dc6b1ed249a6a5e7640904df8affc9886fe9d3bef5f92">   92</a></span>&#160;    <a class="code" href="namespaceQXmpp.html#a622a58e2c833d4c9f1a9dc6b1ed249a6a5e7640904df8affc9886fe9d3bef5f92">NotSent</a>,       </div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;};</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
-<div class="line"><a name="l00098"></a><span class="lineno"><a class="line" href="structQXmpp_1_1Success.html">   98</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structQXmpp_1_1Success.html">Success</a> {};</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;}</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="preprocessor">#endif  // QXMPPGLOBAL_H</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="comment">// This works exactly like QT_DEPRECATED_SINCE, but checks QXMPP_DISABLE_DEPRECATED_BEFORE instead.</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor">#define QXMPP_DEPRECATED_SINCE(major, minor) (QT_VERSION_CHECK(major, minor, 0) &gt; QXMPP_DISABLE_DEPRECATED_BEFORE)</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="comment">// workaround for Qt &lt; 5.12</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor">#ifndef Q_DECL_ENUMERATOR_DEPRECATED_X</span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor">#define Q_DECL_ENUMERATOR_DEPRECATED_X(msg)</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="preprocessor">#ifndef QT_WARNING_DISABLE_DEPRECATED</span></div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor">#define QT_WARNING_DISABLE_DEPRECATED</span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceQXmpp.html">QXmpp</a> {</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160; </div>
+<div class="line"><a name="l00092"></a><span class="lineno"><a class="line" href="namespaceQXmpp.html#a622a58e2c833d4c9f1a9dc6b1ed249a6">   92</a></span>&#160;<span class="keyword">enum</span> <a class="code" href="namespaceQXmpp.html#a622a58e2c833d4c9f1a9dc6b1ed249a6">PacketState</a> : quint8 {</div>
+<div class="line"><a name="l00093"></a><span class="lineno"><a class="line" href="namespaceQXmpp.html#a622a58e2c833d4c9f1a9dc6b1ed249a6ad00488d129352edd0d83e8e0c1f9f488">   93</a></span>&#160;    <a class="code" href="namespaceQXmpp.html#a622a58e2c833d4c9f1a9dc6b1ed249a6ad00488d129352edd0d83e8e0c1f9f488">Sent</a>,          </div>
+<div class="line"><a name="l00094"></a><span class="lineno"><a class="line" href="namespaceQXmpp.html#a622a58e2c833d4c9f1a9dc6b1ed249a6ae32225de11a8934bedd2aa7d3c7c4d39">   94</a></span>&#160;    <a class="code" href="namespaceQXmpp.html#a622a58e2c833d4c9f1a9dc6b1ed249a6ae32225de11a8934bedd2aa7d3c7c4d39">Acknowledged</a>,  </div>
+<div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="namespaceQXmpp.html#a622a58e2c833d4c9f1a9dc6b1ed249a6a5e7640904df8affc9886fe9d3bef5f92">   95</a></span>&#160;    <a class="code" href="namespaceQXmpp.html#a622a58e2c833d4c9f1a9dc6b1ed249a6a5e7640904df8affc9886fe9d3bef5f92">NotSent</a>,       </div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;};</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
+<div class="line"><a name="l00101"></a><span class="lineno"><a class="line" href="structQXmpp_1_1Success.html">  101</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structQXmpp_1_1Success.html">Success</a> {};</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;}</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="preprocessor">#endif  // QXMPPGLOBAL_H</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="anamespaceQXmpp_html"><div class="ttname"><a href="namespaceQXmpp.html">QXmpp</a></div></div>
-<div class="ttc" id="anamespaceQXmpp_html_a622a58e2c833d4c9f1a9dc6b1ed249a6"><div class="ttname"><a href="namespaceQXmpp.html#a622a58e2c833d4c9f1a9dc6b1ed249a6">QXmpp::PacketState</a></div><div class="ttdeci">PacketState</div><div class="ttdef"><b>Definition:</b> QXmppGlobal.h:89</div></div>
-<div class="ttc" id="anamespaceQXmpp_html_a622a58e2c833d4c9f1a9dc6b1ed249a6a5e7640904df8affc9886fe9d3bef5f92"><div class="ttname"><a href="namespaceQXmpp.html#a622a58e2c833d4c9f1a9dc6b1ed249a6a5e7640904df8affc9886fe9d3bef5f92">QXmpp::NotSent</a></div><div class="ttdeci">@ NotSent</div><div class="ttdoc">The packet could not be sent (e.g. connection broke or user disconnected).</div><div class="ttdef"><b>Definition:</b> QXmppGlobal.h:92</div></div>
-<div class="ttc" id="anamespaceQXmpp_html_a622a58e2c833d4c9f1a9dc6b1ed249a6ad00488d129352edd0d83e8e0c1f9f488"><div class="ttname"><a href="namespaceQXmpp.html#a622a58e2c833d4c9f1a9dc6b1ed249a6ad00488d129352edd0d83e8e0c1f9f488">QXmpp::Sent</a></div><div class="ttdeci">@ Sent</div><div class="ttdoc">The packet has been written to the socket.</div><div class="ttdef"><b>Definition:</b> QXmppGlobal.h:90</div></div>
-<div class="ttc" id="anamespaceQXmpp_html_a622a58e2c833d4c9f1a9dc6b1ed249a6ae32225de11a8934bedd2aa7d3c7c4d39"><div class="ttname"><a href="namespaceQXmpp.html#a622a58e2c833d4c9f1a9dc6b1ed249a6ae32225de11a8934bedd2aa7d3c7c4d39">QXmpp::Acknowledged</a></div><div class="ttdeci">@ Acknowledged</div><div class="ttdoc">The packet has been acknowledged by the other peer using Stream Management.</div><div class="ttdef"><b>Definition:</b> QXmppGlobal.h:91</div></div>
-<div class="ttc" id="astructQXmpp_1_1Success_html"><div class="ttname"><a href="structQXmpp_1_1Success.html">QXmpp::Success</a></div><div class="ttdef"><b>Definition:</b> QXmppGlobal.h:98</div></div>
+<div class="ttc" id="anamespaceQXmpp_html_a622a58e2c833d4c9f1a9dc6b1ed249a6"><div class="ttname"><a href="namespaceQXmpp.html#a622a58e2c833d4c9f1a9dc6b1ed249a6">QXmpp::PacketState</a></div><div class="ttdeci">PacketState</div><div class="ttdef"><b>Definition:</b> QXmppGlobal.h:92</div></div>
+<div class="ttc" id="anamespaceQXmpp_html_a622a58e2c833d4c9f1a9dc6b1ed249a6a5e7640904df8affc9886fe9d3bef5f92"><div class="ttname"><a href="namespaceQXmpp.html#a622a58e2c833d4c9f1a9dc6b1ed249a6a5e7640904df8affc9886fe9d3bef5f92">QXmpp::NotSent</a></div><div class="ttdeci">@ NotSent</div><div class="ttdoc">The packet could not be sent (e.g. connection broke or user disconnected).</div><div class="ttdef"><b>Definition:</b> QXmppGlobal.h:95</div></div>
+<div class="ttc" id="anamespaceQXmpp_html_a622a58e2c833d4c9f1a9dc6b1ed249a6ad00488d129352edd0d83e8e0c1f9f488"><div class="ttname"><a href="namespaceQXmpp.html#a622a58e2c833d4c9f1a9dc6b1ed249a6ad00488d129352edd0d83e8e0c1f9f488">QXmpp::Sent</a></div><div class="ttdeci">@ Sent</div><div class="ttdoc">The packet has been written to the socket.</div><div class="ttdef"><b>Definition:</b> QXmppGlobal.h:93</div></div>
+<div class="ttc" id="anamespaceQXmpp_html_a622a58e2c833d4c9f1a9dc6b1ed249a6ae32225de11a8934bedd2aa7d3c7c4d39"><div class="ttname"><a href="namespaceQXmpp.html#a622a58e2c833d4c9f1a9dc6b1ed249a6ae32225de11a8934bedd2aa7d3c7c4d39">QXmpp::Acknowledged</a></div><div class="ttdeci">@ Acknowledged</div><div class="ttdoc">The packet has been acknowledged by the other peer using Stream Management.</div><div class="ttdef"><b>Definition:</b> QXmppGlobal.h:94</div></div>
+<div class="ttc" id="astructQXmpp_1_1Success_html"><div class="ttname"><a href="structQXmpp_1_1Success.html">QXmpp::Success</a></div><div class="ttdef"><b>Definition:</b> QXmppGlobal.h:101</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">
