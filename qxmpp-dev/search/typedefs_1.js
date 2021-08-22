@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['inforesult_2205',['InfoResult',['../classQXmppDiscoveryManager.html#a805e69dac064dbfc264ba3c31109a35d',1,'QXmppDiscoveryManager']]],
-  ['iqresult_2206',['IqResult',['../classQXmppStream.html#a56c75865a7951824d1f61e465b49a1f1',1,'QXmppStream::IqResult()'],['../classQXmppClient.html#a5312db7ddd0aadacea286314154f8a6d',1,'QXmppClient::IqResult()']]],
-  ['itemsresult_2207',['ItemsResult',['../classQXmppDiscoveryManager.html#a16f719aaf141666f9e07d2c186491895',1,'QXmppDiscoveryManager']]]
+  ['emptyresult_2435',['EmptyResult',['../classQXmppClient.html#ad5004eda51b93744a8ad8259ee692a2a',1,'QXmppClient']]],
+  ['entitytimeresult_2436',['EntityTimeResult',['../classQXmppEntityTimeManager.html#ae0fd9dc33d198bebd10ba46241755b0f',1,'QXmppEntityTimeManager']]]
 ];

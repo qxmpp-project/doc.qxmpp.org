@@ -21,14 +21,15 @@
 <area shape="rect" id="node21" href="$classQXmppMucOwnerIq.html" title="The QXmppMucOwnerIq class represents a chat room configuration IQ as defined by XEP&#45;0045: Multi&#45;User ..." alt="" coords="328,917,479,944"/>
 <area shape="rect" id="node22" href="$classQXmppNonSASLAuthIq.html" title=" " alt="" coords="317,968,489,995"/>
 <area shape="rect" id="node23" href="$classQXmppPingIq.html" title=" " alt="" coords="348,1019,459,1045"/>
-<area shape="rect" id="node24" href="$classQXmppPubSubIq.html" title="The QXmppPubSubIq class represents an IQ used for the publish&#45;subscribe mechanisms defined by XEP&#45;006..." alt="" coords="338,1069,469,1096"/>
-<area shape="rect" id="node25" href="$classQXmppPushEnableIq.html" title="This class represents an IQ to enable or disablepush notifications on the user server." alt="" coords="325,1120,482,1147"/>
-<area shape="rect" id="node26" href="$classQXmppRegisterIq.html" title="The QXmppRegisterIq class represents a registration IQ as defined by XEP&#45;0077: In&#45;Band Registration." alt="" coords="335,1171,471,1197"/>
-<area shape="rect" id="node27" href="$classQXmppRosterIq.html" title="The QXmppRosterIq class represents a roster IQ." alt="" coords="341,1221,465,1248"/>
-<area shape="rect" id="node28" href="$classQXmppRpcInvokeIq.html" title="The QXmppRpcInvokeIq class represents an IQ used to carry an RPC invocation as specified by XEP&#45;0009:..." alt="" coords="329,1272,478,1299"/>
-<area shape="rect" id="node29" href="$classQXmppRpcResponseIq.html" title="The QXmppRpcResponseIq class represents an IQ used to carry an RPC response as specified by XEP&#45;0009:..." alt="" coords="319,1323,488,1349"/>
-<area shape="rect" id="node30" href="$classQXmppSessionIq.html" title="The QXmppSessionIq class represents an IQ used for session establishment as defined by RFC 3921." alt="" coords="337,1373,469,1400"/>
-<area shape="rect" id="node31" href="$classQXmppVCardIq.html" title="Represents the XMPP vCard." alt="" coords="343,1424,464,1451"/>
-<area shape="rect" id="node32" href="$classQXmppVersionIq.html" title="The QXmppVersionIq class represents an IQ for conveying a software version as defined by XEP&#45;0092: So..." alt="" coords="338,1475,469,1501"/>
+<area shape="rect" id="node24" href="$classQXmppPubSubIqBase.html" title="The QXmppPubSubIqBase class is an abstract class used for parsing of generic PubSub IQs as defined by..." alt="" coords="322,1069,485,1096"/>
+<area shape="rect" id="node26" href="$classQXmppPushEnableIq.html" title="This class represents an IQ to enable or disablepush notifications on the user server." alt="" coords="325,1120,482,1147"/>
+<area shape="rect" id="node27" href="$classQXmppRegisterIq.html" title="The QXmppRegisterIq class represents a registration IQ as defined by XEP&#45;0077: In&#45;Band Registration." alt="" coords="335,1171,471,1197"/>
+<area shape="rect" id="node28" href="$classQXmppRosterIq.html" title="The QXmppRosterIq class represents a roster IQ." alt="" coords="341,1221,465,1248"/>
+<area shape="rect" id="node29" href="$classQXmppRpcInvokeIq.html" title="The QXmppRpcInvokeIq class represents an IQ used to carry an RPC invocation as specified by XEP&#45;0009:..." alt="" coords="329,1272,478,1299"/>
+<area shape="rect" id="node30" href="$classQXmppRpcResponseIq.html" title="The QXmppRpcResponseIq class represents an IQ used to carry an RPC response as specified by XEP&#45;0009:..." alt="" coords="319,1323,488,1349"/>
+<area shape="rect" id="node31" href="$classQXmppSessionIq.html" title="The QXmppSessionIq class represents an IQ used for session establishment as defined by RFC 3921." alt="" coords="337,1373,469,1400"/>
+<area shape="rect" id="node32" href="$classQXmppVCardIq.html" title="Represents the XMPP vCard." alt="" coords="343,1424,464,1451"/>
+<area shape="rect" id="node33" href="$classQXmppVersionIq.html" title="The QXmppVersionIq class represents an IQ for conveying a software version as defined by XEP&#45;0092: So..." alt="" coords="338,1475,469,1501"/>
 <area shape="rect" id="node2" href="$classQXmppStanza.html" title="The QXmppStanza class is the base class for all XMPP stanzas." alt="" coords="5,740,120,767"/>
+<area shape="rect" id="node25" href="$classQXmppPubSubIq.html" title=" " alt="" coords="556,1069,724,1096"/>
 </map>

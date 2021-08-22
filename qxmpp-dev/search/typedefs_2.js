@@ -1,4 +1,8 @@
 var searchData=
 [
-  ['result_2208',['Result',['../classQXmppRosterManager.html#a8340805e06ab6590b52327d2de2676d7',1,'QXmppRosterManager']]]
+  ['inforesult_2437',['InfoResult',['../classQXmppDiscoveryManager.html#a805e69dac064dbfc264ba3c31109a35d',1,'QXmppDiscoveryManager']]],
+  ['instantnoderesult_2438',['InstantNodeResult',['../classQXmppPubSubManager.html#a80cb4240bba894d87ed1cdc82271dd00',1,'QXmppPubSubManager']]],
+  ['iqresult_2439',['IqResult',['../classQXmppStream.html#a56c75865a7951824d1f61e465b49a1f1',1,'QXmppStream::IqResult()'],['../classQXmppClient.html#a5312db7ddd0aadacea286314154f8a6d',1,'QXmppClient::IqResult()']]],
+  ['itemresult_2440',['ItemResult',['../classQXmppPubSubManager.html#a4aa3799ba5cf9226556207d3c24db4f7',1,'QXmppPubSubManager']]],
+  ['itemsresult_2441',['ItemsResult',['../classQXmppDiscoveryManager.html#a16f719aaf141666f9e07d2c186491895',1,'QXmppDiscoveryManager::ItemsResult()'],['../classQXmppPubSubManager.html#aa4719f742f0891e56d5241d5504f6019',1,'QXmppPubSubManager::ItemsResult()']]]
 ];

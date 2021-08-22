@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['emptyresult_2203',['EmptyResult',['../classQXmppClient.html#ad5004eda51b93744a8ad8259ee692a2a',1,'QXmppClient']]],
-  ['entitytimeresult_2204',['EntityTimeResult',['../classQXmppEntityTimeManager.html#ae0fd9dc33d198bebd10ba46241755b0f',1,'QXmppEntityTimeManager']]]
+  ['affiliationsresult_2434',['AffiliationsResult',['../classQXmppPubSubManager.html#a10649f3bd71dff052b6f44b1839c5dfd',1,'QXmppPubSubManager']]]
 ];
