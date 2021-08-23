@@ -12,7 +12,7 @@ var searchData=
   ['sendiq_762',['sendIq',['../classQXmppStream.html#a70336b317b6937c3fdda2ab775ddb3b9',1,'QXmppStream::sendIq()'],['../classQXmppClient.html#a7bc90c8b2dd1170c256ca26e48ce24fd',1,'QXmppClient::sendIq()']]],
   ['sendmessage_763',['sendMessage',['../classQXmppClient.html#a44d230e24954da4a05e661318494fce4',1,'QXmppClient::sendMessage()'],['../classQXmppMucRoom.html#a7a3ead69818cc6b2c8536384528dbada',1,'QXmppMucRoom::sendMessage()']]],
   ['sendpacket_764',['sendPacket',['../classQXmppStream.html#a47473db930db0242bb2f6289172b6ea8',1,'QXmppStream::sendPacket()'],['../classQXmppClient.html#a28fb16fe7c83b134e46fea795bfffc35',1,'QXmppClient::sendPacket()'],['../classQXmppServer.html#a7617374585f26e9a4b5c878cc81415d8',1,'QXmppServer::sendPacket()']]],
-  ['sent_765',['Sent',['../namespaceQXmpp.html#a622a58e2c833d4c9f1a9dc6b1ed249a6ad00488d129352edd0d83e8e0c1f9f488',1,'QXmpp']]],
+  ['sent_765',['Sent',['../namespaceQXmpp.html#a9d3f5da97034483c8dabbebd8b4d902bad00488d129352edd0d83e8e0c1f9f488',1,'QXmpp']]],
   ['sentmessage_766',['SentMessage',['../classQXmppLogger.html#a932dbbd4f70a1e9c0ff8f452e61fc9b8ad1c7d954320b318802468a0655e81b42',1,'QXmppLogger']]],
   ['serializedatetime_767',['serializeDatetime',['../classQXmppDataFormBase.html#a74fc42a13cf120601349c7279bbe14e3',1,'QXmppDataFormBase']]],
   ['serializeemptyable_768',['serializeEmptyable',['../classQXmppDataFormBase.html#a52177c9d469fbbaaa0059c54acc2a0e7',1,'QXmppDataFormBase']]],

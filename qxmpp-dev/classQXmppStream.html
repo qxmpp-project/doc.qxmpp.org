@@ -104,7 +104,7 @@ Collaboration diagram for QXmppStream:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a56c75865a7951824d1f61e465b49a1f1"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppStream.html#a56c75865a7951824d1f61e465b49a1f1">IqResult</a> = std::variant&lt; QDomElement, <a class="el" href="namespaceQXmpp.html#a622a58e2c833d4c9f1a9dc6b1ed249a6">QXmpp::PacketState</a> &gt;</td></tr>
+<tr class="memitem:a56c75865a7951824d1f61e465b49a1f1"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppStream.html#a56c75865a7951824d1f61e465b49a1f1">IqResult</a> = std::variant&lt; QDomElement, <a class="el" href="namespaceQXmpp.html#a9d3f5da97034483c8dabbebd8b4d902b">QXmpp::PacketState</a> &gt;</td></tr>
 <tr class="separator:a56c75865a7951824d1f61e465b49a1f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-slots"></a>
@@ -148,7 +148,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aca1925ef047a64a8eb862d125a528aba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a47473db930db0242bb2f6289172b6ea8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppStream.html#a47473db930db0242bb2f6289172b6ea8">sendPacket</a> (const <a class="el" href="classQXmppStanza.html">QXmppStanza</a> &amp;)</td></tr>
 <tr class="separator:a47473db930db0242bb2f6289172b6ea8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a38208ca5bdfafcf904c828e5e85892e2"><td class="memItemLeft" align="right" valign="top">QFuture&lt; <a class="el" href="namespaceQXmpp.html#a622a58e2c833d4c9f1a9dc6b1ed249a6">QXmpp::PacketState</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppStream.html#a38208ca5bdfafcf904c828e5e85892e2">send</a> (const <a class="el" href="classQXmppStanza.html">QXmppStanza</a> &amp;)</td></tr>
+<tr class="memitem:a38208ca5bdfafcf904c828e5e85892e2"><td class="memItemLeft" align="right" valign="top">QFuture&lt; <a class="el" href="namespaceQXmpp.html#a9d3f5da97034483c8dabbebd8b4d902b">QXmpp::PacketState</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppStream.html#a38208ca5bdfafcf904c828e5e85892e2">send</a> (const <a class="el" href="classQXmppStanza.html">QXmppStanza</a> &amp;)</td></tr>
 <tr class="separator:a38208ca5bdfafcf904c828e5e85892e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a70336b317b6937c3fdda2ab775ddb3b9"><td class="memItemLeft" align="right" valign="top">QFuture&lt; <a class="el" href="classQXmppStream.html#a56c75865a7951824d1f61e465b49a1f1">IqResult</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppStream.html#a70336b317b6937c3fdda2ab775ddb3b9">sendIq</a> (const <a class="el" href="classQXmppIq.html">QXmppIq</a> &amp;)</td></tr>
 <tr class="separator:a70336b317b6937c3fdda2ab775ddb3b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -216,7 +216,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>TestClient</b></td><
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Contains a QDomElement containing the IQ response or if the request couldn't be sent a <a class="el" href="namespaceQXmpp.html#a622a58e2c833d4c9f1a9dc6b1ed249a6">QXmpp::PacketState</a>.</p>
+<p>Contains a QDomElement containing the IQ response or if the request couldn't be sent a <a class="el" href="namespaceQXmpp.html#a9d3f5da97034483c8dabbebd8b4d902b">QXmpp::PacketState</a>.</p>
 <dl class="section warning"><dt>Warning</dt><dd>THIS API IS NOT FINALIZED YET!</dd></dl>
 <dl class="section since"><dt>Since</dt><dd><a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.5 </dd></dl>
 
@@ -289,7 +289,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>TestClient</b></td><
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Cancels all ongoing IQ requests and reports <a class="el" href="namespaceQXmpp.html#a622a58e2c833d4c9f1a9dc6b1ed249a6a5e7640904df8affc9886fe9d3bef5f92" title="The packet could not be sent (e.g. connection broke or user disconnected).">QXmpp::NotSent</a>.</p>
+<p>Cancels all ongoing IQ requests and reports <a class="el" href="namespaceQXmpp.html#a9d3f5da97034483c8dabbebd8b4d902ba5e7640904df8affc9886fe9d3bef5f92" title="The packet could not be sent (e.g. connection broke or user disconnected).">QXmpp::NotSent</a>.</p>
 <dl class="section since"><dt>Since</dt><dd><a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.5 </dd></dl>
 
 </div>
@@ -529,7 +529,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>TestClient</b></td><
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">QFuture&lt; <a class="el" href="namespaceQXmpp.html#a622a58e2c833d4c9f1a9dc6b1ed249a6">QXmpp::PacketState</a> &gt; QXmppStream::send </td>
+          <td class="memname">QFuture&lt; <a class="el" href="namespaceQXmpp.html#a9d3f5da97034483c8dabbebd8b4d902b">QXmpp::PacketState</a> &gt; QXmppStream::send </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classQXmppStanza.html">QXmppStanza</a> &amp;&#160;</td>
           <td class="paramname"><em>stanza</em></td><td>)</td>

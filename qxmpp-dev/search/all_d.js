@@ -31,7 +31,7 @@ var searchData=
   ['notacceptable_466',['NotAcceptable',['../classQXmppStanza_1_1Error.html#abcf1cbbe7b15ec82f3ac34723b604852a4ab4a25948494ca44769a98f521ac254',1,'QXmppStanza::Error']]],
   ['notallowed_467',['NotAllowed',['../classQXmppStanza_1_1Error.html#abcf1cbbe7b15ec82f3ac34723b604852af4581ae9688b553b27c5f3a3409db52b',1,'QXmppStanza::Error']]],
   ['notauthorized_468',['NotAuthorized',['../classQXmppStanza_1_1Error.html#abcf1cbbe7b15ec82f3ac34723b604852a838bed9e44142af6f996b232784eb61a',1,'QXmppStanza::Error']]],
-  ['notsent_469',['NotSent',['../namespaceQXmpp.html#a622a58e2c833d4c9f1a9dc6b1ed249a6a5e7640904df8affc9886fe9d3bef5f92',1,'QXmpp']]],
+  ['notsent_469',['NotSent',['../namespaceQXmpp.html#a9d3f5da97034483c8dabbebd8b4d902ba5e7640904df8affc9886fe9d3bef5f92',1,'QXmpp']]],
   ['notset_470',['NotSet',['../classQXmppRosterIq_1_1Item.html#a0133cf9262cec7e299c4db7c247c5514a5cbc5c1d6fd784f7c17437c7b6ebe544',1,'QXmppRosterIq::Item']]],
   ['number_471',['number',['../classQXmppVCardPhone.html#a99a23d508a9c3a5180872f66fc1d7d7e',1,'QXmppVCardPhone']]]
 ];
