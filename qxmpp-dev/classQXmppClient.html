@@ -131,8 +131,8 @@ Public Slots</h2></td></tr>
 <tr class="separator:a06cf985c0cb91ea9341c0558c01de5b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a685f42452acbba55f3b15669fa76282d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppClient.html#a685f42452acbba55f3b15669fa76282d">disconnectFromServer</a> ()</td></tr>
 <tr class="separator:a685f42452acbba55f3b15669fa76282d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a28fb16fe7c83b134e46fea795bfffc35"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppClient.html#a28fb16fe7c83b134e46fea795bfffc35">sendPacket</a> (const <a class="el" href="classQXmppStanza.html">QXmppStanza</a> &amp;)</td></tr>
-<tr class="separator:a28fb16fe7c83b134e46fea795bfffc35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a646e489c4e14dd5c76e6c06122bbf0d3"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppClient.html#a646e489c4e14dd5c76e6c06122bbf0d3">sendPacket</a> (const <a class="el" href="classQXmppNonza.html">QXmppNonza</a> &amp;)</td></tr>
+<tr class="separator:a646e489c4e14dd5c76e6c06122bbf0d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a44d230e24954da4a05e661318494fce4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppClient.html#a44d230e24954da4a05e661318494fce4">sendMessage</a> (const QString &amp;bareJid, const QString &amp;message)</td></tr>
 <tr class="separator:a44d230e24954da4a05e661318494fce4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -1129,7 +1129,7 @@ template&lt;typename T &gt; </div>
 </table>
 </div><div class="memdoc">
 <p>Utility function to send message to all the resources associated with the specified bareJid. If there are no resources available, that is the contact is offline or not present in the roster, it will still send a message to the bareJid.</p>
-<dl class="section note"><dt>Note</dt><dd>Usage of this method is discouraged because most modern clients use carbon messages (<a href="https://xmpp.org/extensions/xep-0280.html">XEP-0280</a>: Message Carbons) and MAM (<a href="https://xmpp.org/extensions/xep-0313.html">XEP-0313</a>: Message Archive Management) and so could possibly receive messages multiple times or not receive them at all. <code><a class="el" href="classQXmppClient.html#a28fb16fe7c83b134e46fea795bfffc35">QXmppClient::sendPacket()</a></code> should be used instead with a <code><a class="el" href="classQXmppMessage.html" title="The QXmppMessage class represents an XMPP message.">QXmppMessage</a></code>.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Usage of this method is discouraged because most modern clients use carbon messages (<a href="https://xmpp.org/extensions/xep-0280.html">XEP-0280</a>: Message Carbons) and MAM (<a href="https://xmpp.org/extensions/xep-0313.html">XEP-0313</a>: Message Archive Management) and so could possibly receive messages multiple times or not receive them at all. <code><a class="el" href="classQXmppClient.html#a646e489c4e14dd5c76e6c06122bbf0d3">QXmppClient::sendPacket()</a></code> should be used instead with a <code><a class="el" href="classQXmppMessage.html" title="The QXmppMessage class represents an XMPP message.">QXmppMessage</a></code>.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">bareJid</td><td>bareJid of the receiving entity </td></tr>
@@ -1140,8 +1140,8 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a28fb16fe7c83b134e46fea795bfffc35"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a28fb16fe7c83b134e46fea795bfffc35">&#9670;&nbsp;</a></span>sendPacket</h2>
+<a id="a646e489c4e14dd5c76e6c06122bbf0d3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a646e489c4e14dd5c76e6c06122bbf0d3">&#9670;&nbsp;</a></span>sendPacket</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1152,7 +1152,7 @@ template&lt;typename T &gt; </div>
         <tr>
           <td class="memname">bool QXmppClient::sendPacket </td>
           <td>(</td>
-          <td class="paramtype">const <a class="el" href="classQXmppStanza.html">QXmppStanza</a> &amp;&#160;</td>
+          <td class="paramtype">const <a class="el" href="classQXmppNonza.html">QXmppNonza</a> &amp;&#160;</td>
           <td class="paramname"><em>packet</em></td><td>)</td>
           <td></td>
         </tr>
@@ -1337,7 +1337,7 @@ template&lt;typename T &gt; </div>
 <li>QXmppClient.cpp</li>
 </ul>
 </div><!-- contents -->
-<div class="ttc" id="aclassQXmppClient_html_ada57e133373174c6386f516fc7c994f3"><div class="ttname"><a href="classQXmppClient.html#ada57e133373174c6386f516fc7c994f3">QXmppClient::send</a></div><div class="ttdeci">QFuture&lt; QXmpp::PacketState &gt; send(const QXmppStanza &amp;)</div><div class="ttdef"><b>Definition:</b> QXmppClient.cpp:363</div></div>
+<div class="ttc" id="aclassQXmppClient_html_ada57e133373174c6386f516fc7c994f3"><div class="ttname"><a href="classQXmppClient.html#ada57e133373174c6386f516fc7c994f3">QXmppClient::send</a></div><div class="ttdeci">QFuture&lt; QXmpp::PacketState &gt; send(const QXmppStanza &amp;)</div><div class="ttdef"><b>Definition:</b> QXmppClient.cpp:362</div></div>
 <div class="ttc" id="aclassQXmppDiscoveryManager_html"><div class="ttname"><a href="classQXmppDiscoveryManager.html">QXmppDiscoveryManager</a></div><div class="ttdoc">The QXmppDiscoveryManager class makes it possible to discover information about other entities as def...</div><div class="ttdef"><b>Definition:</b> QXmppDiscoveryManager.h:42</div></div>
 <div class="ttc" id="aclassQXmppMessage_html"><div class="ttname"><a href="classQXmppMessage.html">QXmppMessage</a></div><div class="ttdoc">The QXmppMessage class represents an XMPP message.</div><div class="ttdef"><b>Definition:</b> QXmppMessage.h:46</div></div>
 <!-- start footer part -->

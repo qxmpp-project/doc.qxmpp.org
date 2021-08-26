@@ -1,5 +1,6 @@
 <map id="QXmppRosterIq" name="QXmppRosterIq">
-<area shape="rect" id="node1" title="The QXmppRosterIq class represents a roster IQ." alt="" coords="5,155,129,181"/>
-<area shape="rect" id="node2" href="$classQXmppIq.html" title="The QXmppIq class is the base class for all IQs." alt="" coords="26,80,109,107"/>
-<area shape="rect" id="node3" href="$classQXmppStanza.html" title="The QXmppStanza class is the base class for all XMPP stanzas." alt="" coords="10,5,125,32"/>
+<area shape="rect" id="node1" title="The QXmppRosterIq class represents a roster IQ." alt="" coords="5,229,129,256"/>
+<area shape="rect" id="node2" href="$classQXmppIq.html" title="The QXmppIq class is the base class for all IQs." alt="" coords="26,155,109,181"/>
+<area shape="rect" id="node3" href="$classQXmppStanza.html" title="The QXmppStanza class is the base class for all XMPP stanzas." alt="" coords="10,80,125,107"/>
+<area shape="rect" id="node4" href="$classQXmppNonza.html" title=" " alt="" coords="12,5,123,32"/>
 </map>

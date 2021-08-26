@@ -1,4 +1,5 @@
 <map id="QXmppPresence" name="QXmppPresence">
-<area shape="rect" id="node1" title="The QXmppPresence class represents an XMPP presence stanza." alt="" coords="5,80,135,107"/>
-<area shape="rect" id="node2" href="$classQXmppStanza.html" title="The QXmppStanza class is the base class for all XMPP stanzas." alt="" coords="13,5,127,32"/>
+<area shape="rect" id="node1" title="The QXmppPresence class represents an XMPP presence stanza." alt="" coords="5,155,135,181"/>
+<area shape="rect" id="node2" href="$classQXmppStanza.html" title="The QXmppStanza class is the base class for all XMPP stanzas." alt="" coords="13,80,127,107"/>
+<area shape="rect" id="node3" href="$classQXmppNonza.html" title=" " alt="" coords="15,5,125,32"/>
 </map>

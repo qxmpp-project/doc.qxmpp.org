@@ -199,7 +199,7 @@ $(function() {
 <div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;    QDomElement child = parent.firstChildElement(QStringLiteral(<span class="stringliteral">&quot;item&quot;</span>));</div>
 <div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;    <span class="keywordflow">while</span> (!child.isNull()) {</div>
 <div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;        T item;</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        item.parse(child);</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        item.<a class="code" href="classQXmppNonza.html#abc49e8874e808d39210b2be3abeba63a">parse</a>(child);</div>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        m_items &lt;&lt; item;</div>
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160; </div>
 <div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;        child = child.nextSiblingElement(QStringLiteral(<span class="stringliteral">&quot;item&quot;</span>));</div>
@@ -210,7 +210,7 @@ $(function() {
 <div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;<span class="keywordtype">void</span> <a class="code" href="classQXmppPubSubEvent.html">QXmppPubSubEvent&lt;T&gt;::serializeItems</a>(QXmlStreamWriter *writer)<span class="keyword"> const</span></div>
 <div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;<span class="keyword"></span>{</div>
 <div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span> &amp;item : qAsConst(m_items)) {</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;        item.toXml(writer);</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;        item.<a class="code" href="classQXmppNonza.html#aff27abe8740fc054a67d55c239ff8cc3">toXml</a>(writer);</div>
 <div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    }</div>
 <div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;}</div>
 <div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160; </div>
@@ -221,7 +221,9 @@ $(function() {
 <div class="ttc" id="aclassQXmppMessage_html_ab3aa184e6abbbc3900c278724f97d547"><div class="ttname"><a href="classQXmppMessage.html#ab3aa184e6abbbc3900c278724f97d547">QXmppMessage::operator=</a></div><div class="ttdeci">QXmppMessage &amp; operator=(const QXmppMessage &amp;other)</div><div class="ttdoc">Assigns other to this message.</div></div>
 <div class="ttc" id="aclassQXmppPubSubEventBase_html"><div class="ttname"><a href="classQXmppPubSubEventBase.html">QXmppPubSubEventBase</a></div><div class="ttdef"><b>Definition:</b> QXmppPubSubEvent.h:39</div></div>
 <div class="ttc" id="aclassQXmppDataForm_html"><div class="ttname"><a href="classQXmppDataForm.html">QXmppDataForm</a></div><div class="ttdef"><b>Definition:</b> QXmppDataForm.h:45</div></div>
+<div class="ttc" id="aclassQXmppNonza_html_aff27abe8740fc054a67d55c239ff8cc3"><div class="ttname"><a href="classQXmppNonza.html#aff27abe8740fc054a67d55c239ff8cc3">QXmppNonza::toXml</a></div><div class="ttdeci">virtual void toXml(QXmlStreamWriter *writer) const =0</div></div>
 <div class="ttc" id="aclassQXmppPubSubEvent_html_ac068d627dd9d2f817de627e0d396f44f"><div class="ttname"><a href="classQXmppPubSubEvent.html#ac068d627dd9d2f817de627e0d396f44f">QXmppPubSubEvent::setItems</a></div><div class="ttdeci">void setItems(const QVector&lt; T &gt; &amp;items)</div><div class="ttdef"><b>Definition:</b> QXmppPubSubEvent.h:124</div></div>
+<div class="ttc" id="aclassQXmppNonza_html_abc49e8874e808d39210b2be3abeba63a"><div class="ttname"><a href="classQXmppNonza.html#abc49e8874e808d39210b2be3abeba63a">QXmppNonza::parse</a></div><div class="ttdeci">virtual void parse(const QDomElement &amp;)=0</div></div>
 <div class="ttc" id="aclassQXmppMessage_html_a18d02b6a6e830a2a2f2ba9b369267f93"><div class="ttname"><a href="classQXmppMessage.html#a18d02b6a6e830a2a2f2ba9b369267f93">QXmppMessage::parseExtension</a></div><div class="ttdeci">virtual bool parseExtension(const QDomElement &amp;element)</div><div class="ttdef"><b>Definition:</b> QXmppMessage.cpp:1239</div></div>
 <div class="ttc" id="aclassQXmppPubSubEventBase_html_a5feac9d482cff2bff47429a2ab7ff814"><div class="ttname"><a href="classQXmppPubSubEventBase.html#a5feac9d482cff2bff47429a2ab7ff814">QXmppPubSubEventBase::EventType</a></div><div class="ttdeci">EventType</div><div class="ttdef"><b>Definition:</b> QXmppPubSubEvent.h:45</div></div>
 <div class="ttc" id="aclassQXmppPubSubEvent_html_a24698c3ed1ac6fff188c812a9b0b7f9f"><div class="ttname"><a href="classQXmppPubSubEvent.html#a24698c3ed1ac6fff188c812a9b0b7f9f">QXmppPubSubEvent::isPubSubEvent</a></div><div class="ttdeci">static bool isPubSubEvent(const QDomElement &amp;element)</div><div class="ttdef"><b>Definition:</b> QXmppPubSubEvent.h:134</div></div>

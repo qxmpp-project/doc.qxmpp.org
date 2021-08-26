@@ -1,6 +1,7 @@
 <map id="QXmppPubSubIq&lt; T &gt;" name="QXmppPubSubIq&lt; T &gt;">
-<area shape="rect" id="node1" title=" " alt="" coords="5,229,173,256"/>
-<area shape="rect" id="node2" href="$classQXmppPubSubIqBase.html" title="The QXmppPubSubIqBase class is an abstract class used for parsing of generic PubSub IQs as defined by..." alt="" coords="8,155,171,181"/>
-<area shape="rect" id="node3" href="$classQXmppIq.html" title="The QXmppIq class is the base class for all IQs." alt="" coords="48,80,131,107"/>
-<area shape="rect" id="node4" href="$classQXmppStanza.html" title="The QXmppStanza class is the base class for all XMPP stanzas." alt="" coords="32,5,147,32"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,304,173,331"/>
+<area shape="rect" id="node2" href="$classQXmppPubSubIqBase.html" title="The QXmppPubSubIqBase class is an abstract class used for parsing of generic PubSub IQs as defined by..." alt="" coords="8,229,171,256"/>
+<area shape="rect" id="node3" href="$classQXmppIq.html" title="The QXmppIq class is the base class for all IQs." alt="" coords="48,155,131,181"/>
+<area shape="rect" id="node4" href="$classQXmppStanza.html" title="The QXmppStanza class is the base class for all XMPP stanzas." alt="" coords="32,80,147,107"/>
+<area shape="rect" id="node5" href="$classQXmppNonza.html" title=" " alt="" coords="34,5,145,32"/>
 </map>

@@ -1,5 +1,6 @@
 <map id="QXmppVersionIq" name="QXmppVersionIq">
-<area shape="rect" id="node1" title="The QXmppVersionIq class represents an IQ for conveying a software version as defined by XEP&#45;0092: So..." alt="" coords="5,155,136,181"/>
-<area shape="rect" id="node2" href="$classQXmppIq.html" title="The QXmppIq class is the base class for all IQs." alt="" coords="29,80,112,107"/>
-<area shape="rect" id="node3" href="$classQXmppStanza.html" title="The QXmppStanza class is the base class for all XMPP stanzas." alt="" coords="13,5,128,32"/>
+<area shape="rect" id="node1" title="The QXmppVersionIq class represents an IQ for conveying a software version as defined by XEP&#45;0092: So..." alt="" coords="5,229,136,256"/>
+<area shape="rect" id="node2" href="$classQXmppIq.html" title="The QXmppIq class is the base class for all IQs." alt="" coords="29,155,112,181"/>
+<area shape="rect" id="node3" href="$classQXmppStanza.html" title="The QXmppStanza class is the base class for all XMPP stanzas." alt="" coords="13,80,128,107"/>
+<area shape="rect" id="node4" href="$classQXmppNonza.html" title=" " alt="" coords="15,5,126,32"/>
 </map>

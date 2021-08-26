@@ -1,5 +1,6 @@
 <map id="QXmppPingIq" name="QXmppPingIq">
-<area shape="rect" id="node1" title=" " alt="" coords="7,155,118,181"/>
-<area shape="rect" id="node2" href="$classQXmppIq.html" title="The QXmppIq class is the base class for all IQs." alt="" coords="21,80,104,107"/>
-<area shape="rect" id="node3" href="$classQXmppStanza.html" title="The QXmppStanza class is the base class for all XMPP stanzas." alt="" coords="5,5,120,32"/>
+<area shape="rect" id="node1" title=" " alt="" coords="7,229,118,256"/>
+<area shape="rect" id="node2" href="$classQXmppIq.html" title="The QXmppIq class is the base class for all IQs." alt="" coords="21,155,104,181"/>
+<area shape="rect" id="node3" href="$classQXmppStanza.html" title="The QXmppStanza class is the base class for all XMPP stanzas." alt="" coords="5,80,120,107"/>
+<area shape="rect" id="node4" href="$classQXmppNonza.html" title=" " alt="" coords="7,5,118,32"/>
 </map>
