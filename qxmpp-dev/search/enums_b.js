@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['role_2475',['Role',['../classQXmppMucItem.html#a5de278115b806b129dd6944dc8230d4a',1,'QXmppMucItem']]]
+  ['role_2544',['Role',['../classQXmppMucItem.html#a5de278115b806b129dd6944dc8230d4a',1,'QXmppMucItem']]]
 ];
