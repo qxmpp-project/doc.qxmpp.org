@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['querytype_2543',['QueryType',['../classQXmppDiscoveryIq.html#ade73cb3dd5a996d6f01912f0f76ffe50',1,'QXmppDiscoveryIq::QueryType()'],['../classQXmppPubSubIqBase.html#a9f74ae46bfc6ec2037728df21010079a',1,'QXmppPubSubIqBase::QueryType()']]]
+  ['role_2551',['Role',['../classQXmppMucItem.html#a5de278115b806b129dd6944dc8230d4a',1,'QXmppMucItem']]]
 ];

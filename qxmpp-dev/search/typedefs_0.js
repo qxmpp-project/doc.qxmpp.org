@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['affiliationsresult_2507',['AffiliationsResult',['../classQXmppPubSubManager.html#a10649f3bd71dff052b6f44b1839c5dfd',1,'QXmppPubSubManager']]]
+  ['affiliationsresult_2514',['AffiliationsResult',['../classQXmppPubSubManager.html#a10649f3bd71dff052b6f44b1839c5dfd',1,'QXmppPubSubManager']]]
 ];

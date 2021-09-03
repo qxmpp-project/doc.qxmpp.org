@@ -104,7 +104,7 @@ Collaboration diagram for QXmppStream:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a56c75865a7951824d1f61e465b49a1f1"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppStream.html#a56c75865a7951824d1f61e465b49a1f1">IqResult</a> = std::variant&lt; QDomElement, <a class="el" href="namespaceQXmpp.html#a9d3f5da97034483c8dabbebd8b4d902b">QXmpp::PacketState</a> &gt;</td></tr>
+<tr class="memitem:a56c75865a7951824d1f61e465b49a1f1"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppStream.html#a56c75865a7951824d1f61e465b49a1f1">IqResult</a> = std::variant&lt; QDomElement, <a class="el" href="structQXmpp_1_1SendError.html">QXmpp::SendError</a> &gt;</td></tr>
 <tr class="separator:a56c75865a7951824d1f61e465b49a1f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-slots"></a>
@@ -148,8 +148,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aca1925ef047a64a8eb862d125a528aba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4bf77c35def5e7a3fb2a95a7bf390d9c"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppStream.html#a4bf77c35def5e7a3fb2a95a7bf390d9c">sendPacket</a> (const <a class="el" href="classQXmppNonza.html">QXmppNonza</a> &amp;)</td></tr>
 <tr class="separator:a4bf77c35def5e7a3fb2a95a7bf390d9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7f50264eaf0e0f0b717e7e498e704c04"><td class="memItemLeft" align="right" valign="top">QFuture&lt; <a class="el" href="namespaceQXmpp.html#a9d3f5da97034483c8dabbebd8b4d902b">QXmpp::PacketState</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppStream.html#a7f50264eaf0e0f0b717e7e498e704c04">send</a> (const <a class="el" href="classQXmppNonza.html">QXmppNonza</a> &amp;)</td></tr>
-<tr class="separator:a7f50264eaf0e0f0b717e7e498e704c04"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd3c600ffd872c6785c581fac15ab982"><td class="memItemLeft" align="right" valign="top">QFuture&lt; <a class="el" href="namespaceQXmpp.html#a4bfd35589dff85a6ae7026dca8f3d72d">QXmpp::SendResult</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppStream.html#acd3c600ffd872c6785c581fac15ab982">send</a> (const <a class="el" href="classQXmppNonza.html">QXmppNonza</a> &amp;)</td></tr>
+<tr class="separator:acd3c600ffd872c6785c581fac15ab982"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a70336b317b6937c3fdda2ab775ddb3b9"><td class="memItemLeft" align="right" valign="top">QFuture&lt; <a class="el" href="classQXmppStream.html#a56c75865a7951824d1f61e465b49a1f1">IqResult</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppStream.html#a70336b317b6937c3fdda2ab775ddb3b9">sendIq</a> (const <a class="el" href="classQXmppIq.html">QXmppIq</a> &amp;)</td></tr>
 <tr class="separator:a70336b317b6937c3fdda2ab775ddb3b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3f4d077fa3d125d846779debce6e1987"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppStream.html#a3f4d077fa3d125d846779debce6e1987">cancelOngoingIqs</a> ()</td></tr>
@@ -216,7 +216,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>TestClient</b></td><
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Contains a QDomElement containing the IQ response or if the request couldn't be sent a <a class="el" href="namespaceQXmpp.html#a9d3f5da97034483c8dabbebd8b4d902b">QXmpp::PacketState</a>.</p>
+<p>Contains a QDomElement containing the IQ response or if the request couldn't be sent a QXmpp::PacketState.</p>
 <dl class="section warning"><dt>Warning</dt><dd>THIS API IS NOT FINALIZED YET!</dd></dl>
 <dl class="section since"><dt>Since</dt><dd><a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.5 </dd></dl>
 
@@ -289,7 +289,7 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>TestClient</b></td><
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Cancels all ongoing IQ requests and reports <a class="el" href="namespaceQXmpp.html#a9d3f5da97034483c8dabbebd8b4d902ba5e7640904df8affc9886fe9d3bef5f92" title="The packet could not be sent (e.g. connection broke or user disconnected).">QXmpp::NotSent</a>.</p>
+<p>Cancels all ongoing IQ requests and reports <a class="el" href="structQXmpp_1_1SendError.html#af5fa1657c7fe0c1a5d137e4b3e104c7baaf66e2a416d91bcf5ab2013eed91b311" title="The packet couldn&#39;t be sent because the connection hasn&#39;t been (re)established.">QXmpp::SendError::Disconnected</a>.</p>
 <dl class="section since"><dt>Since</dt><dd><a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.5 </dd></dl>
 
 </div>
@@ -522,17 +522,17 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>TestClient</b></td><
 
 </div>
 </div>
-<a id="a7f50264eaf0e0f0b717e7e498e704c04"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7f50264eaf0e0f0b717e7e498e704c04">&#9670;&nbsp;</a></span>send()</h2>
+<a id="acd3c600ffd872c6785c581fac15ab982"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd3c600ffd872c6785c581fac15ab982">&#9670;&nbsp;</a></span>send()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">QFuture&lt; <a class="el" href="namespaceQXmpp.html#a9d3f5da97034483c8dabbebd8b4d902b">QXmpp::PacketState</a> &gt; QXmppStream::send </td>
+          <td class="memname">QFuture&lt; <a class="el" href="namespaceQXmpp.html#a4bfd35589dff85a6ae7026dca8f3d72d">QXmpp::SendResult</a> &gt; QXmppStream::send </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classQXmppNonza.html">QXmppNonza</a> &amp;&#160;</td>
-          <td class="paramname"><em>stanza</em></td><td>)</td>
+          <td class="paramname"><em>nonza</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
