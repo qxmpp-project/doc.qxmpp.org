@@ -85,6 +85,10 @@ Inheritance diagram for QXmppTrustStorage:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
+<tr class="memitem:af1e9d660dfdb87cd51dc2da180994028"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppTrustStorage.html#af1e9d660dfdb87cd51dc2da180994028">SecurityPolicy</a> { <a class="el" href="classQXmppTrustStorage.html#af1e9d660dfdb87cd51dc2da180994028a4fe909ab44373ee4d456972321dbffb0">NoSecurityPolicy</a>, 
+<a class="el" href="classQXmppTrustStorage.html#af1e9d660dfdb87cd51dc2da180994028a4ba91a6f648ad9ab6bfc771efa984afa">Toakafa</a>
+ }</td></tr>
+<tr class="separator:af1e9d660dfdb87cd51dc2da180994028"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a20db8ebf03198cb8b163f1b73be188da"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppTrustStorage.html#a20db8ebf03198cb8b163f1b73be188da">TrustLevel</a> { <br />
 &#160;&#160;<a class="el" href="classQXmppTrustStorage.html#a20db8ebf03198cb8b163f1b73be188daa9ca1631cafd86045c2edf17b0eee281d">AutomaticallyDistrusted</a> = 1, 
 <a class="el" href="classQXmppTrustStorage.html#a20db8ebf03198cb8b163f1b73be188daad122d43a64d575f833e3bbdbca43a4cb">ManuallyDistrusted</a> = 2, 
@@ -98,6 +102,10 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:ada7f6dd5c0c14a6f89829513ba9ee0eb"><td class="memItemLeft" align="right" valign="top">virtual QFuture&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppTrustStorage.html#ada7f6dd5c0c14a6f89829513ba9ee0eb">setSecurityPolicies</a> (const QString &amp;encryption={}, <a class="el" href="classQXmppTrustStorage.html#af1e9d660dfdb87cd51dc2da180994028">SecurityPolicy</a> <a class="el" href="classQXmppTrustStorage.html#a9d9bc1a46aa2f3e741c6e0e1ebf99886">securityPolicy</a>=SecurityPolicy::NoSecurityPolicy)=0</td></tr>
+<tr class="separator:ada7f6dd5c0c14a6f89829513ba9ee0eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d9bc1a46aa2f3e741c6e0e1ebf99886"><td class="memItemLeft" align="right" valign="top">virtual QFuture&lt; <a class="el" href="classQXmppTrustStorage.html#af1e9d660dfdb87cd51dc2da180994028">SecurityPolicy</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppTrustStorage.html#a9d9bc1a46aa2f3e741c6e0e1ebf99886">securityPolicy</a> (const QString &amp;encryption)=0</td></tr>
+<tr class="separator:a9d9bc1a46aa2f3e741c6e0e1ebf99886"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af97eabe8f0c300a3012033931f98de9a"><td class="memItemLeft" align="right" valign="top">virtual QFuture&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppTrustStorage.html#af97eabe8f0c300a3012033931f98de9a">addOwnKey</a> (const QString &amp;encryption, const QString &amp;keyId)=0</td></tr>
 <tr class="separator:af97eabe8f0c300a3012033931f98de9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a00cedbc015220a01764a903d743c9e5d"><td class="memItemLeft" align="right" valign="top">virtual QFuture&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppTrustStorage.html#a00cedbc015220a01764a903d743c9e5d">removeOwnKey</a> (const QString &amp;encryption)=0</td></tr>
@@ -130,6 +138,27 @@ Public Member Functions</h2></td></tr>
 <dl class="section warning"><dt>Warning</dt><dd>THIS API IS NOT FINALIZED YET!</dd></dl>
 <dl class="section since"><dt>Since</dt><dd><a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.5 </dd></dl>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="af1e9d660dfdb87cd51dc2da180994028"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1e9d660dfdb87cd51dc2da180994028">&#9670;&nbsp;</a></span>SecurityPolicy</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classQXmppTrustStorage.html#af1e9d660dfdb87cd51dc2da180994028">QXmppTrustStorage::SecurityPolicy</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Security policy to decide which public long-term keys are used for encryption because they are trusted </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="af1e9d660dfdb87cd51dc2da180994028a4fe909ab44373ee4d456972321dbffb0"></a>NoSecurityPolicy&#160;</td><td class="fielddoc"><p>New keys must be trusted manually. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="af1e9d660dfdb87cd51dc2da180994028a4ba91a6f648ad9ab6bfc771efa984afa"></a>Toakafa&#160;</td><td class="fielddoc"><p>New keys are trusted automatically until the first authentication but automatically distrusted afterwards. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
 <a id="a20db8ebf03198cb8b163f1b73be188da"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a20db8ebf03198cb8b163f1b73be188da">&#9670;&nbsp;</a></span>TrustLevel</h2>
 
@@ -141,7 +170,7 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>trust level of public long-term keys used by end-to-end encryption protocols </p>
+<p>Trust level of public long-term keys used by end-to-end encryption protocols </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a20db8ebf03198cb8b163f1b73be188daa9ca1631cafd86045c2edf17b0eee281d"></a>AutomaticallyDistrusted&#160;</td><td class="fielddoc"><p>The key is automatically distrusted (e.g., by ATM's security policy). </p>
 </td></tr>
@@ -607,6 +636,85 @@ Public Member Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">encryption</td><td>encryption protocol namespace </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a9d9bc1a46aa2f3e741c6e0e1ebf99886"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d9bc1a46aa2f3e741c6e0e1ebf99886">&#9670;&nbsp;</a></span>securityPolicy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QXmppTrustStorage::securityPolicy </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>encryption</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns the security policy for an encryption protocol.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">encryption</td><td>encryption protocol namespace</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>the set security policy </dd></dl>
+
+</div>
+</div>
+<a id="ada7f6dd5c0c14a6f89829513ba9ee0eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ada7f6dd5c0c14a6f89829513ba9ee0eb">&#9670;&nbsp;</a></span>setSecurityPolicies()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QXmppTrustStorage::setSecurityPolicies </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>encryption</em> = <code>{}</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classQXmppTrustStorage.html#af1e9d660dfdb87cd51dc2da180994028">SecurityPolicy</a>&#160;</td>
+          <td class="paramname"><em>securityPolicy</em> = <code>SecurityPolicy::NoSecurityPolicy</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Sets the security policy for an encryption protocol or resets the set security policies.</p>
+<p>If securityPolicy is not passed, the set security policy for encryption is reset. If also encryption is not passed, all set security policies are reset.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">encryption</td><td>encryption protocol namespace </td></tr>
+    <tr><td class="paramname">securityPolicy</td><td>security policy being applied </td></tr>
   </table>
   </dd>
 </dl>

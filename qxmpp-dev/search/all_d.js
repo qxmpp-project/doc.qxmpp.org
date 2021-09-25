@@ -26,11 +26,12 @@ var searchData=
   ['nonsasldigest_479',['NonSASLDigest',['../classQXmppConfiguration.html#acdc5d816a74551209d5c50557e90fda2a97f33f490ab3d0bfdf717037551a62a3',1,'QXmppConfiguration']]],
   ['nonsaslplain_480',['NonSASLPlain',['../classQXmppConfiguration.html#acdc5d816a74551209d5c50557e90fda2a1edaa0616b19f8d6f7a711f37f672762',1,'QXmppConfiguration']]],
   ['nopermanentstore_481',['NoPermanentStore',['../classQXmppMessage.html#aea1a3c281a281bc3a4fbc9f48b554256a75e808e83ff91973a7e245dd84a5fda9',1,'QXmppMessage']]],
-  ['nostore_482',['NoStore',['../classQXmppMessage.html#aea1a3c281a281bc3a4fbc9f48b554256a1e1b6a9dd277d74027444682e794e606',1,'QXmppMessage']]],
-  ['nostreammanagement_483',['NoStreamManagement',['../classQXmppClient.html#aab5506ec0769f208e1ccd5d23c6aaea8a2f2266e80f6675fce28888b4dde9acab',1,'QXmppClient']]],
-  ['notacceptable_484',['NotAcceptable',['../classQXmppStanza_1_1Error.html#abcf1cbbe7b15ec82f3ac34723b604852a4ab4a25948494ca44769a98f521ac254',1,'QXmppStanza::Error']]],
-  ['notallowed_485',['NotAllowed',['../classQXmppStanza_1_1Error.html#abcf1cbbe7b15ec82f3ac34723b604852af4581ae9688b553b27c5f3a3409db52b',1,'QXmppStanza::Error']]],
-  ['notauthorized_486',['NotAuthorized',['../classQXmppStanza_1_1Error.html#abcf1cbbe7b15ec82f3ac34723b604852a838bed9e44142af6f996b232784eb61a',1,'QXmppStanza::Error']]],
-  ['notset_487',['NotSet',['../classQXmppRosterIq_1_1Item.html#a0133cf9262cec7e299c4db7c247c5514a5cbc5c1d6fd784f7c17437c7b6ebe544',1,'QXmppRosterIq::Item']]],
-  ['number_488',['number',['../classQXmppVCardPhone.html#a99a23d508a9c3a5180872f66fc1d7d7e',1,'QXmppVCardPhone']]]
+  ['nosecuritypolicy_482',['NoSecurityPolicy',['../classQXmppTrustStorage.html#af1e9d660dfdb87cd51dc2da180994028a4fe909ab44373ee4d456972321dbffb0',1,'QXmppTrustStorage']]],
+  ['nostore_483',['NoStore',['../classQXmppMessage.html#aea1a3c281a281bc3a4fbc9f48b554256a1e1b6a9dd277d74027444682e794e606',1,'QXmppMessage']]],
+  ['nostreammanagement_484',['NoStreamManagement',['../classQXmppClient.html#aab5506ec0769f208e1ccd5d23c6aaea8a2f2266e80f6675fce28888b4dde9acab',1,'QXmppClient']]],
+  ['notacceptable_485',['NotAcceptable',['../classQXmppStanza_1_1Error.html#abcf1cbbe7b15ec82f3ac34723b604852a4ab4a25948494ca44769a98f521ac254',1,'QXmppStanza::Error']]],
+  ['notallowed_486',['NotAllowed',['../classQXmppStanza_1_1Error.html#abcf1cbbe7b15ec82f3ac34723b604852af4581ae9688b553b27c5f3a3409db52b',1,'QXmppStanza::Error']]],
+  ['notauthorized_487',['NotAuthorized',['../classQXmppStanza_1_1Error.html#abcf1cbbe7b15ec82f3ac34723b604852a838bed9e44142af6f996b232784eb61a',1,'QXmppStanza::Error']]],
+  ['notset_488',['NotSet',['../classQXmppRosterIq_1_1Item.html#a0133cf9262cec7e299c4db7c247c5514a5cbc5c1d6fd784f7c17437c7b6ebe544',1,'QXmppRosterIq::Item']]],
+  ['number_489',['number',['../classQXmppVCardPhone.html#a99a23d508a9c3a5180872f66fc1d7d7e',1,'QXmppVCardPhone']]]
 ];
