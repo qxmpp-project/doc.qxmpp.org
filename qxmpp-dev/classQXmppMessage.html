@@ -66,7 +66,6 @@ $(function() {
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="classQXmppMessage-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">QXmppMessage Class Reference<div class="ingroups"><a class="el" href="group__Stanzas.html">Stanzas</a></div></div>  </div>
@@ -337,6 +336,10 @@ QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
 <tr class="separator:a018cf876c41c5b070261c51645610d33"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae454b14a553d3d8d1a26ab5e628540e0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppMessage.html#ae454b14a553d3d8d1a26ab5e628540e0">setTrustMessageElement</a> (const std::optional&lt; <a class="el" href="classQXmppTrustMessageElement.html">QXmppTrustMessageElement</a> &gt; &amp;<a class="el" href="classQXmppMessage.html#a018cf876c41c5b070261c51645610d33">trustMessageElement</a>)</td></tr>
 <tr class="separator:ae454b14a553d3d8d1a26ab5e628540e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3a32f6da9f4136906339d3e408b1f81e"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppMessage.html#a3a32f6da9f4136906339d3e408b1f81e">parseExtension</a> (const QDomElement &amp;element, <a class="el" href="namespaceQXmpp.html#abc6005b5a30290db2a9da3a9dde99a0d">QXmpp::SceMode</a>)</td></tr>
+<tr class="separator:a3a32f6da9f4136906339d3e408b1f81e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed8ea8cebe0afdb0574db80d2dc44f9d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppMessage.html#aed8ea8cebe0afdb0574db80d2dc44f9d">serializeExtensions</a> (QXmlStreamWriter *writer, <a class="el" href="namespaceQXmpp.html#abc6005b5a30290db2a9da3a9dde99a0d">QXmpp::SceMode</a>, const QString &amp;baseNamespace={}) const</td></tr>
+<tr class="separator:aed8ea8cebe0afdb0574db80d2dc44f9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classQXmppStanza"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classQXmppStanza')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classQXmppStanza.html">QXmppStanza</a></td></tr>
 <tr class="memitem:aeda5073d2af6c52e78f127bca4306ace inherit pub_methods_classQXmppStanza"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppStanza.html#aeda5073d2af6c52e78f127bca4306ace">QXmppStanza</a> (const QString &amp;<a class="el" href="classQXmppStanza.html#a850ef9a2479cddcbd7657c65ca40b153">from</a>=QString(), const QString &amp;<a class="el" href="classQXmppStanza.html#a67a02790fd35ee0efb7dc8fd50b4d2dd">to</a>=QString())</td></tr>
 <tr class="separator:aeda5073d2af6c52e78f127bca4306ace inherit pub_methods_classQXmppStanza"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -392,13 +395,6 @@ Static Public Member Functions</h2></td></tr>
 <tr class="separator:ad4cfd25b0941ce8a0bb197af69f1c224"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab78ed304645ad55d93f400b101f8e269"><td class="memItemLeft" align="right" valign="top">static QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppMessage.html#ab78ed304645ad55d93f400b101f8e269">slashMeCommandText</a> (const QString &amp;<a class="el" href="classQXmppMessage.html#a03ca378952b2324319afc379a66df5fb">body</a>)</td></tr>
 <tr class="separator:ab78ed304645ad55d93f400b101f8e269"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
-Protected Member Functions</h2></td></tr>
-<tr class="memitem:a18d02b6a6e830a2a2f2ba9b369267f93"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppMessage.html#a18d02b6a6e830a2a2f2ba9b369267f93">parseExtension</a> (const QDomElement &amp;element)</td></tr>
-<tr class="separator:a18d02b6a6e830a2a2f2ba9b369267f93"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0d1ec5a65d14d723e6964723d9389907"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppMessage.html#a0d1ec5a65d14d723e6964723d9389907">serializeExtensions</a> (QXmlStreamWriter *writer) const</td></tr>
-<tr class="separator:a0d1ec5a65d14d723e6964723d9389907"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The <a class="el" href="classQXmppMessage.html" title="The QXmppMessage class represents an XMPP message.">QXmppMessage</a> class represents an XMPP message. </p>
@@ -1140,8 +1136,8 @@ If this returns <a class="el" href="classQXmppMessage.html#a1526e753b5cfe7ed7787
 
 </div>
 </div>
-<a id="a18d02b6a6e830a2a2f2ba9b369267f93"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a18d02b6a6e830a2a2f2ba9b369267f93">&#9670;&nbsp;</a></span>parseExtension()</h2>
+<a id="a3a32f6da9f4136906339d3e408b1f81e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3a32f6da9f4136906339d3e408b1f81e">&#9670;&nbsp;</a></span>parseExtension()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1153,13 +1149,23 @@ If this returns <a class="el" href="classQXmppMessage.html#a1526e753b5cfe7ed7787
           <td class="memname">bool QXmppMessage::parseExtension </td>
           <td>(</td>
           <td class="paramtype">const QDomElement &amp;&#160;</td>
-          <td class="paramname"><em>element</em></td><td>)</td>
+          <td class="paramname"><em>element</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="namespaceQXmpp.html#abc6005b5a30290db2a9da3a9dde99a0d">QXmpp::SceMode</a>&#160;</td>
+          <td class="paramname"><em>sceMode</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
@@ -1167,7 +1173,8 @@ If this returns <a class="el" href="classQXmppMessage.html#a1526e753b5cfe7ed7787
 <p>Allows inherited classes to parse additional extension elements. This function may be executed multiple times with different elements.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">element</td><td>child element of the message to be parsed</td></tr>
+    <tr><td class="paramname">element</td><td>child element of the message to be parsed </td></tr>
+    <tr><td class="paramname">sceMode</td><td>Which elements to be parsed from the DOM (all known / only public / only sensitive)</td></tr>
   </table>
   </dd>
 </dl>
@@ -1274,8 +1281,8 @@ If this returns <a class="el" href="classQXmppMessage.html#a1526e753b5cfe7ed7787
 
 </div>
 </div>
-<a id="a0d1ec5a65d14d723e6964723d9389907"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0d1ec5a65d14d723e6964723d9389907">&#9670;&nbsp;</a></span>serializeExtensions()</h2>
+<a id="aed8ea8cebe0afdb0574db80d2dc44f9d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed8ea8cebe0afdb0574db80d2dc44f9d">&#9670;&nbsp;</a></span>serializeExtensions()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1287,17 +1294,41 @@ If this returns <a class="el" href="classQXmppMessage.html#a1526e753b5cfe7ed7787
           <td class="memname">void QXmppMessage::serializeExtensions </td>
           <td>(</td>
           <td class="paramtype">QXmlStreamWriter *&#160;</td>
-          <td class="paramname"><em>xmlWriter</em></td><td>)</td>
-          <td> const</td>
+          <td class="paramname"><em>writer</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespaceQXmpp.html#abc6005b5a30290db2a9da3a9dde99a0d">QXmpp::SceMode</a>&#160;</td>
+          <td class="paramname"><em>sceMode</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>baseNamespace</em> = <code>{}</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 <p>Serializes all additional child elements.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">writer</td><td>The XML stream writer to output the XML </td></tr>
+    <tr><td class="paramname">sceMode</td><td>The mode which decides which elements to output (only useful for encryption) </td></tr>
+    <tr><td class="paramname">baseNamespace</td><td>Custom namespace added to basic XMPP-Core elements like &lt;body/&gt; (needed when encrypting elements outside of the stream).</td></tr>
+  </table>
+  </dd>
+</dl>
 <dl class="section since"><dt>Since</dt><dd><a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.5 </dd></dl>
 
 </div>

@@ -64,7 +64,9 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Classes</a> &#124;
-<a href="#typedef-members">Typedefs</a>  </div>
+<a href="#typedef-members">Typedefs</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle">
 <div class="title">QXmpp Namespace Reference</div>  </div>
 </div><!--header-->
@@ -83,6 +85,19 @@ Classes</h2></td></tr>
 Typedefs</h2></td></tr>
 <tr class="memitem:a4bfd35589dff85a6ae7026dca8f3d72d"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceQXmpp.html#a4bfd35589dff85a6ae7026dca8f3d72d">SendResult</a> = std::variant&lt; <a class="el" href="structQXmpp_1_1SendSuccess.html">SendSuccess</a>, <a class="el" href="structQXmpp_1_1SendError.html">SendError</a> &gt;</td></tr>
 <tr class="separator:a4bfd35589dff85a6ae7026dca8f3d72d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:abc6005b5a30290db2a9da3a9dde99a0d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceQXmpp.html#abc6005b5a30290db2a9da3a9dde99a0d">SceMode</a> : uint8_t { <a class="el" href="namespaceQXmpp.html#abc6005b5a30290db2a9da3a9dde99a0daee79b2e32f2a9f1dc442a588a40678ce">SceAll</a>, 
+<a class="el" href="namespaceQXmpp.html#abc6005b5a30290db2a9da3a9dde99a0daf2c433f9e775df972b33f8bd9e420a74">ScePublic</a>, 
+<a class="el" href="namespaceQXmpp.html#abc6005b5a30290db2a9da3a9dde99a0da055a343bcd6d20ed9241ee74c10f70f3">SceSensitive</a>
+ }</td></tr>
+<tr class="separator:abc6005b5a30290db2a9da3a9dde99a0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:aa99256168d2956f77c1a06952d955e64"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceQXmpp.html#aa99256168d2956f77c1a06952d955e64">operator&amp;</a> (<a class="el" href="namespaceQXmpp.html#abc6005b5a30290db2a9da3a9dde99a0d">SceMode</a> mode1, <a class="el" href="namespaceQXmpp.html#abc6005b5a30290db2a9da3a9dde99a0d">SceMode</a> mode2)</td></tr>
+<tr class="separator:aa99256168d2956f77c1a06952d955e64"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Contains global functions and enumerations.</p>
@@ -100,6 +115,72 @@ Typedefs</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>A variant containing either a <a class="el" href="structQXmpp_1_1SendSuccess.html">SendSuccess</a> object or a <a class="el" href="structQXmpp_1_1SendError.html">SendError</a>. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Enumeration Type Documentation</h2>
+<a id="abc6005b5a30290db2a9da3a9dde99a0d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc6005b5a30290db2a9da3a9dde99a0d">&#9670;&nbsp;</a></span>SceMode</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespaceQXmpp.html#abc6005b5a30290db2a9da3a9dde99a0d">QXmpp::SceMode</a> : uint8_t</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Parsing/serialization mode when using Stanza Content Encryption.</p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://xmpp.org/extensions/xep-0420.html">XEP-0420: Stanza Content Encryption</a></dd></dl>
+<dl class="section since"><dt>Since</dt><dd><a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.5 </dd></dl>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="abc6005b5a30290db2a9da3a9dde99a0daee79b2e32f2a9f1dc442a588a40678ce"></a>SceAll&#160;</td><td class="fielddoc"><p>Processes all known elements. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="abc6005b5a30290db2a9da3a9dde99a0daf2c433f9e775df972b33f8bd9e420a74"></a>ScePublic&#160;</td><td class="fielddoc"><p>Only processes 'public' elements (e.g. needed for routing). </p>
+</td></tr>
+<tr><td class="fieldname"><a id="abc6005b5a30290db2a9da3a9dde99a0da055a343bcd6d20ed9241ee74c10f70f3"></a>SceSensitive&#160;</td><td class="fielddoc"><p>Only processes sensitive elements that should be encrypted. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Function Documentation</h2>
+<a id="aa99256168d2956f77c1a06952d955e64"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa99256168d2956f77c1a06952d955e64">&#9670;&nbsp;</a></span>operator&amp;()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr bool QXmpp::operator&amp; </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceQXmpp.html#abc6005b5a30290db2a9da3a9dde99a0d">SceMode</a>&#160;</td>
+          <td class="paramname"><em>mode1</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespaceQXmpp.html#abc6005b5a30290db2a9da3a9dde99a0d">SceMode</a>&#160;</td>
+          <td class="paramname"><em>mode2</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">constexpr</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Checks whether a mode is enabled.</p>
+<p>When an SceMode is given you can use this to check whether Public or Private elements are enabled.</p>
+<dl class="section since"><dt>Since</dt><dd><a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.5 </dd></dl>
 
 </div>
 </div>
