@@ -118,6 +118,8 @@ Public Types</h2></td></tr>
 <tr class="separator:a10649f3bd71dff052b6f44b1839c5dfd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a26042340b2a1f8d1ce8630d59f0ec2be"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppPubSubManager.html#a26042340b2a1f8d1ce8630d59f0ec2be">OptionsResult</a> = std::variant&lt; QXmppPubSubSubscribeOptions, <a class="el" href="classQXmppStanza_1_1Error.html">QXmppStanza::Error</a> &gt;</td></tr>
 <tr class="separator:a26042340b2a1f8d1ce8630d59f0ec2be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44847a8625c35223c78b2445b8589259"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppPubSubManager.html#a44847a8625c35223c78b2445b8589259">NodeConfigResult</a> = std::variant&lt; QXmppPubSubNodeConfig, <a class="el" href="classQXmppStanza_1_1Error.html">QXmppStanza::Error</a> &gt;</td></tr>
+<tr class="separator:a44847a8625c35223c78b2445b8589259"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -129,8 +131,12 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ac758623b6ed5ad6be8045707d6e42b3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a979a66612d4967f1f3e62c4cb994416a"><td class="memItemLeft" align="right" valign="top">QFuture&lt; <a class="el" href="classQXmppPubSubManager.html#a9a8741a70d0839185e8e52072ea0ed53">Result</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppPubSubManager.html#a979a66612d4967f1f3e62c4cb994416a">createNode</a> (const QString &amp;jid, const QString &amp;nodeName)</td></tr>
 <tr class="separator:a979a66612d4967f1f3e62c4cb994416a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59ae6d820bd10bc83eab5ec6378da03d"><td class="memItemLeft" align="right" valign="top">QFuture&lt; <a class="el" href="classQXmppPubSubManager.html#a9a8741a70d0839185e8e52072ea0ed53">Result</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppPubSubManager.html#a59ae6d820bd10bc83eab5ec6378da03d">createNode</a> (const QString &amp;jid, const QString &amp;nodeName, const QXmppPubSubNodeConfig &amp;config)</td></tr>
+<tr class="separator:a59ae6d820bd10bc83eab5ec6378da03d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a337d5fc890f8b89b4df4478d0699b358"><td class="memItemLeft" align="right" valign="top">QFuture&lt; <a class="el" href="classQXmppPubSubManager.html#a80cb4240bba894d87ed1cdc82271dd00">InstantNodeResult</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppPubSubManager.html#a337d5fc890f8b89b4df4478d0699b358">createInstantNode</a> (const QString &amp;jid)</td></tr>
 <tr class="separator:a337d5fc890f8b89b4df4478d0699b358"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed008d154cd9fde0716ab257c831bb70"><td class="memItemLeft" align="right" valign="top">QFuture&lt; <a class="el" href="classQXmppPubSubManager.html#a80cb4240bba894d87ed1cdc82271dd00">InstantNodeResult</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppPubSubManager.html#aed008d154cd9fde0716ab257c831bb70">createInstantNode</a> (const QString &amp;jid, const QXmppPubSubNodeConfig &amp;config)</td></tr>
+<tr class="separator:aed008d154cd9fde0716ab257c831bb70"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a79a4d74c566c3f918ffac887d08155df"><td class="memItemLeft" align="right" valign="top">QFuture&lt; <a class="el" href="classQXmppPubSubManager.html#a9a8741a70d0839185e8e52072ea0ed53">Result</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppPubSubManager.html#a79a4d74c566c3f918ffac887d08155df">deleteNode</a> (const QString &amp;jid, const QString &amp;nodeName)</td></tr>
 <tr class="separator:a79a4d74c566c3f918ffac887d08155df"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a807e630e7bbd301e758a729603da64e9"><td class="memTemplParams" colspan="2">template&lt;typename T  = QXmppPubSubItem&gt; </td></tr>
@@ -176,10 +182,18 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a55b13c212d26e7ce951dcfa73b23cf6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1d5fec42688950fbddb001846dd09e10"><td class="memItemLeft" align="right" valign="top">QFuture&lt; <a class="el" href="classQXmppPubSubManager.html#a9a8741a70d0839185e8e52072ea0ed53">Result</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppPubSubManager.html#a1d5fec42688950fbddb001846dd09e10">setSubscribeOptions</a> (const QString &amp;service, const QString &amp;nodeName, const QXmppPubSubSubscribeOptions &amp;options, const QString &amp;subscriberJid)</td></tr>
 <tr class="separator:a1d5fec42688950fbddb001846dd09e10"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a607358d37188d4541bb8e772fae1e1d9"><td class="memItemLeft" align="right" valign="top">QFuture&lt; <a class="el" href="classQXmppPubSubManager.html#a9a8741a70d0839185e8e52072ea0ed53">Result</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppPubSubManager.html#a607358d37188d4541bb8e772fae1e1d9">createPepNode</a> (const QString &amp;nodeName)</td></tr>
-<tr class="separator:a607358d37188d4541bb8e772fae1e1d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2c9463752a065287f4663352215da734"><td class="memItemLeft" align="right" valign="top">QFuture&lt; <a class="el" href="classQXmppPubSubManager.html#a9a8741a70d0839185e8e52072ea0ed53">Result</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppPubSubManager.html#a2c9463752a065287f4663352215da734">deletePepNode</a> (const QString &amp;nodeName)</td></tr>
-<tr class="separator:a2c9463752a065287f4663352215da734"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2f6ab9c2bb7747b9cfddf265af85cb3a"><td class="memItemLeft" align="right" valign="top">QFuture&lt; <a class="el" href="classQXmppPubSubManager.html#a44847a8625c35223c78b2445b8589259">NodeConfigResult</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppPubSubManager.html#a2f6ab9c2bb7747b9cfddf265af85cb3a">requestNodeConfiguration</a> (const QString &amp;service, const QString &amp;nodeName)</td></tr>
+<tr class="separator:a2f6ab9c2bb7747b9cfddf265af85cb3a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac03a3fd09cedb18841a9180cccc17f68"><td class="memItemLeft" align="right" valign="top">QFuture&lt; <a class="el" href="classQXmppPubSubManager.html#a9a8741a70d0839185e8e52072ea0ed53">Result</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppPubSubManager.html#ac03a3fd09cedb18841a9180cccc17f68">configureNode</a> (const QString &amp;service, const QString &amp;nodeName, const QXmppPubSubNodeConfig &amp;config)</td></tr>
+<tr class="separator:ac03a3fd09cedb18841a9180cccc17f68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ca02a1b84353d69fa9933459bcd5147"><td class="memItemLeft" align="right" valign="top">QFuture&lt; <a class="el" href="classQXmppPubSubManager.html#a9a8741a70d0839185e8e52072ea0ed53">Result</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppPubSubManager.html#a9ca02a1b84353d69fa9933459bcd5147">cancelNodeConfiguration</a> (const QString &amp;service, const QString &amp;nodeName)</td></tr>
+<tr class="separator:a9ca02a1b84353d69fa9933459bcd5147"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6332149214a2e105495e48ed94cdd379"><td class="memItemLeft" align="right" valign="top">QFuture&lt; <a class="el" href="classQXmppPubSubManager.html#a9a8741a70d0839185e8e52072ea0ed53">Result</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppPubSubManager.html#a6332149214a2e105495e48ed94cdd379">createPepNode</a> (const QString &amp;nodeName)</td></tr>
+<tr class="separator:a6332149214a2e105495e48ed94cdd379"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab44675edb423c9c84a2165e9fe9c77f0"><td class="memItemLeft" align="right" valign="top">QFuture&lt; <a class="el" href="classQXmppPubSubManager.html#a9a8741a70d0839185e8e52072ea0ed53">Result</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppPubSubManager.html#ab44675edb423c9c84a2165e9fe9c77f0">createPepNode</a> (const QString &amp;nodeName, const QXmppPubSubNodeConfig &amp;config)</td></tr>
+<tr class="separator:ab44675edb423c9c84a2165e9fe9c77f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa93baa57cde14f0fbe1a70fddc1aa1fe"><td class="memItemLeft" align="right" valign="top">QFuture&lt; <a class="el" href="classQXmppPubSubManager.html#a9a8741a70d0839185e8e52072ea0ed53">Result</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppPubSubManager.html#aa93baa57cde14f0fbe1a70fddc1aa1fe">deletePepNode</a> (const QString &amp;nodeName)</td></tr>
+<tr class="separator:aa93baa57cde14f0fbe1a70fddc1aa1fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1a7cb3d6f0bb7ac3b322d18b2c2f9375"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:a1a7cb3d6f0bb7ac3b322d18b2c2f9375"><td class="memTemplItemLeft" align="right" valign="top">QFuture&lt; <a class="el" href="classQXmppPubSubManager.html#a6a8b36519c98dae461f02751459c59db">PublishItemResult</a> &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classQXmppPubSubManager.html#a1a7cb3d6f0bb7ac3b322d18b2c2f9375">publishPepItem</a> (const QString &amp;nodeName, const T &amp;item, const QXmppPubSubPublishOptions &amp;publishOptions)</td></tr>
 <tr class="separator:a1a7cb3d6f0bb7ac3b322d18b2c2f9375"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -192,10 +206,16 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa50e3adc65aefa97fcfa5fef4d5a4f5f"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
 <tr class="memitem:aa50e3adc65aefa97fcfa5fef4d5a4f5f"><td class="memTemplItemLeft" align="right" valign="top">QFuture&lt; <a class="el" href="classQXmppPubSubManager.html#a820d4c0fe31ca1e5df31fe7cff2fdcc8">PublishItemsResult</a> &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classQXmppPubSubManager.html#aa50e3adc65aefa97fcfa5fef4d5a4f5f">publishPepItems</a> (const QString &amp;nodeName, const QVector&lt; T &gt; &amp;items)</td></tr>
 <tr class="separator:aa50e3adc65aefa97fcfa5fef4d5a4f5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a711bbc500722f89388af0e4609cd0c9d"><td class="memItemLeft" align="right" valign="top">QFuture&lt; <a class="el" href="classQXmppPubSubManager.html#a9a8741a70d0839185e8e52072ea0ed53">Result</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppPubSubManager.html#a711bbc500722f89388af0e4609cd0c9d">retractPepItem</a> (const QString &amp;nodeName, const QString &amp;itemId)</td></tr>
-<tr class="separator:a711bbc500722f89388af0e4609cd0c9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9bb13330bb54623810c6ef2eff435a0e"><td class="memItemLeft" align="right" valign="top">QFuture&lt; <a class="el" href="classQXmppPubSubManager.html#a9a8741a70d0839185e8e52072ea0ed53">Result</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppPubSubManager.html#a9bb13330bb54623810c6ef2eff435a0e">purgePepItems</a> (const QString &amp;nodeName)</td></tr>
-<tr class="separator:a9bb13330bb54623810c6ef2eff435a0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6049cb47a1c3a1fcff58ad78f2df7d8b"><td class="memItemLeft" align="right" valign="top">QFuture&lt; <a class="el" href="classQXmppPubSubManager.html#a9a8741a70d0839185e8e52072ea0ed53">Result</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppPubSubManager.html#a6049cb47a1c3a1fcff58ad78f2df7d8b">retractPepItem</a> (const QString &amp;nodeName, const QString &amp;itemId)</td></tr>
+<tr class="separator:a6049cb47a1c3a1fcff58ad78f2df7d8b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3764695b1d08d267bd20df97c9cfd6fc"><td class="memItemLeft" align="right" valign="top">QFuture&lt; <a class="el" href="classQXmppPubSubManager.html#a9a8741a70d0839185e8e52072ea0ed53">Result</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppPubSubManager.html#a3764695b1d08d267bd20df97c9cfd6fc">purgePepItems</a> (const QString &amp;nodeName)</td></tr>
+<tr class="separator:a3764695b1d08d267bd20df97c9cfd6fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac169d70e3ffda0c40b3bb2784cf667f1"><td class="memItemLeft" align="right" valign="top">QFuture&lt; <a class="el" href="classQXmppPubSubManager.html#a44847a8625c35223c78b2445b8589259">NodeConfigResult</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppPubSubManager.html#ac169d70e3ffda0c40b3bb2784cf667f1">requestPepNodeConfiguration</a> (const QString &amp;nodeName)</td></tr>
+<tr class="separator:ac169d70e3ffda0c40b3bb2784cf667f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5d0d6105e93392a44c9af076c72d6965"><td class="memItemLeft" align="right" valign="top">QFuture&lt; <a class="el" href="classQXmppPubSubManager.html#a9a8741a70d0839185e8e52072ea0ed53">Result</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppPubSubManager.html#a5d0d6105e93392a44c9af076c72d6965">configurePepNode</a> (const QString &amp;nodeName, const QXmppPubSubNodeConfig &amp;config)</td></tr>
+<tr class="separator:a5d0d6105e93392a44c9af076c72d6965"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef5d16ec66ffb0f3fa32bd20ed967269"><td class="memItemLeft" align="right" valign="top">QFuture&lt; <a class="el" href="classQXmppPubSubManager.html#a9a8741a70d0839185e8e52072ea0ed53">Result</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppPubSubManager.html#aef5d16ec66ffb0f3fa32bd20ed967269">cancelPepNodeConfiguration</a> (const QString &amp;nodeName)</td></tr>
+<tr class="separator:aef5d16ec66ffb0f3fa32bd20ed967269"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classQXmppClientExtension"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classQXmppClientExtension')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classQXmppClientExtension.html">QXmppClientExtension</a></td></tr>
 <tr class="memitem:aec299452688f50431f1028668186e3ec inherit pub_methods_classQXmppClientExtension"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppClientExtension.html#aec299452688f50431f1028668186e3ec">QXmppClientExtension</a> ()</td></tr>
 <tr class="separator:aec299452688f50431f1028668186e3ec inherit pub_methods_classQXmppClientExtension"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -327,6 +347,21 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
+<a id="a44847a8625c35223c78b2445b8589259"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44847a8625c35223c78b2445b8589259">&#9670;&nbsp;</a></span>NodeConfigResult</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classQXmppPubSubManager.html#a44847a8625c35223c78b2445b8589259">QXmppPubSubManager::NodeConfigResult</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Contains a node configuration (QXmppPubSubNodeConfig) or the returned IQ error (<a class="el" href="classQXmppStanza_1_1Error.html" title="The Error class represents a stanza error.">QXmppStanza::Error</a>). </p>
+
+</div>
+</div>
 <a id="ac6f8b54eca37a8bf19a8dedb1217ca27"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac6f8b54eca37a8bf19a8dedb1217ca27">&#9670;&nbsp;</a></span>NodesResult</h2>
 
@@ -455,8 +490,174 @@ template&lt;typename T &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="a9ca02a1b84353d69fa9933459bcd5147"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ca02a1b84353d69fa9933459bcd5147">&#9670;&nbsp;</a></span>cancelNodeConfiguration()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QFuture&lt; <a class="el" href="classQXmppPubSubManager.html#a9a8741a70d0839185e8e52072ea0ed53">QXmppPubSubManager::Result</a> &gt; QXmppPubSubManager::cancelNodeConfiguration </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>service</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>nodeName</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Cancels the configuration process and uses the default or exisiting configuration.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">service</td><td>JID of the pubsub service </td></tr>
+    <tr><td class="paramname">nodeName</td><td>Name of the pubsub node on the service </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classQXmppPubSubManager.html#a2f6ab9c2bb7747b9cfddf265af85cb3a">requestNodeConfiguration()</a> </dd></dl>
+
+</div>
+</div>
+<a id="aef5d16ec66ffb0f3fa32bd20ed967269"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef5d16ec66ffb0f3fa32bd20ed967269">&#9670;&nbsp;</a></span>cancelPepNodeConfiguration()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QXmppPubSubManager::cancelPepNodeConfiguration </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>nodeName</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>This is a convenience method equivalent to calling <a class="el" href="classQXmppPubSubManager.html#a9ca02a1b84353d69fa9933459bcd5147">cancelNodeConfiguration()</a> the current account's bare JID.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nodeName</td><td>Name of the pubsub node on the service </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classQXmppPubSubManager.html#ac169d70e3ffda0c40b3bb2784cf667f1">requestPepNodeConfiguration()</a> </dd></dl>
+
+</div>
+</div>
+<a id="ac03a3fd09cedb18841a9180cccc17f68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac03a3fd09cedb18841a9180cccc17f68">&#9670;&nbsp;</a></span>configureNode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QFuture&lt; <a class="el" href="classQXmppPubSubManager.html#a9a8741a70d0839185e8e52072ea0ed53">QXmppPubSubManager::Result</a> &gt; QXmppPubSubManager::configureNode </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>service</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>nodeName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QXmppPubSubNodeConfig &amp;&#160;</td>
+          <td class="paramname"><em>config</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Sets a node configuration.</p>
+<p>Requires owner privileges. You can use <a class="el" href="classQXmppPubSubManager.html#a2f6ab9c2bb7747b9cfddf265af85cb3a">requestNodeConfiguration()</a> to receive a data form with all valid options and default values.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">service</td><td>JID of the pubsub service </td></tr>
+    <tr><td class="paramname">nodeName</td><td>Name of the pubsub node on the service </td></tr>
+    <tr><td class="paramname">config</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classQXmppPubSubManager.html#a2f6ab9c2bb7747b9cfddf265af85cb3a">requestNodeConfiguration()</a> </dd></dl>
+
+</div>
+</div>
+<a id="a5d0d6105e93392a44c9af076c72d6965"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5d0d6105e93392a44c9af076c72d6965">&#9670;&nbsp;</a></span>configurePepNode()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QXmppPubSubManager::configurePepNode </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>nodeName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QXmppPubSubNodeConfig &amp;&#160;</td>
+          <td class="paramname"><em>config</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Sets a node configuration.</p>
+<p>This is a convenience method equivalent to calling <a class="el" href="classQXmppPubSubManager.html#ac03a3fd09cedb18841a9180cccc17f68">configureNode()</a> the current account's bare JID.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nodeName</td><td>Name of the pubsub node on the service </td></tr>
+    <tr><td class="paramname">config</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classQXmppPubSubManager.html#ac169d70e3ffda0c40b3bb2784cf667f1">requestPepNodeConfiguration()</a> </dd></dl>
+
+</div>
+</div>
 <a id="a337d5fc890f8b89b4df4478d0699b358"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a337d5fc890f8b89b4df4478d0699b358">&#9670;&nbsp;</a></span>createInstantNode()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a337d5fc890f8b89b4df4478d0699b358">&#9670;&nbsp;</a></span>createInstantNode() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -482,8 +683,46 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
+<a id="aed008d154cd9fde0716ab257c831bb70"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed008d154cd9fde0716ab257c831bb70">&#9670;&nbsp;</a></span>createInstantNode() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto QXmppPubSubManager::createInstantNode </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>jid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QXmppPubSubNodeConfig &amp;&#160;</td>
+          <td class="paramname"><em>config</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Creates an instant pubsub node with a custom configuration.</p>
+<p>The pubsub service automatically generates a random node name. On success it is returned via the QFuture.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">jid</td><td>Jabber ID of the entity hosting the pubsub service </td></tr>
+    <tr><td class="paramname">config</td><td>The configuration for the node </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+</div>
+</div>
 <a id="a979a66612d4967f1f3e62c4cb994416a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a979a66612d4967f1f3e62c4cb994416a">&#9670;&nbsp;</a></span>createNode()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a979a66612d4967f1f3e62c4cb994416a">&#9670;&nbsp;</a></span>createNode() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -520,20 +759,73 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a607358d37188d4541bb8e772fae1e1d9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a607358d37188d4541bb8e772fae1e1d9">&#9670;&nbsp;</a></span>createPepNode()</h2>
+<a id="a59ae6d820bd10bc83eab5ec6378da03d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a59ae6d820bd10bc83eab5ec6378da03d">&#9670;&nbsp;</a></span>createNode() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">auto QXmppPubSubManager::createPepNode </td>
+          <td class="memname">auto QXmppPubSubManager::createNode </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>jid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>nodeName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QXmppPubSubNodeConfig &amp;&#160;</td>
+          <td class="paramname"><em>config</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Creates an empty pubsub node with a custom configuration.</p>
+<p>Calling this before <a class="el" href="classQXmppPubSubManager.html#af156219aa75b8b7583f909dcaa4ed771">QXmppPubSubManager::publishItems</a> is usually not necessary when publishing to a node for the first time if the service suppports the auto-create feature (Section 7.1.4 of <a href="https://xmpp.org/extensions/xep-0060.html">XEP-0060</a>).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">jid</td><td>Jabber ID of the entity hosting the pubsub service </td></tr>
+    <tr><td class="paramname">nodeName</td><td>the name of the node to be created </td></tr>
+    <tr><td class="paramname">config</td><td>The configuration for the node </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="a6332149214a2e105495e48ed94cdd379"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6332149214a2e105495e48ed94cdd379">&#9670;&nbsp;</a></span>createPepNode() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QFuture&lt; <a class="el" href="classQXmppPubSubManager.html#a9a8741a70d0839185e8e52072ea0ed53">Result</a> &gt; QXmppPubSubManager::createPepNode </td>
           <td>(</td>
           <td class="paramtype">const QString &amp;&#160;</td>
           <td class="paramname"><em>nodeName</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <p>Creates an empty PEP node with the default configuration.</p>
 <p>This is a convenience method equivalent to calling <a class="el" href="classQXmppPubSubManager.html#a979a66612d4967f1f3e62c4cb994416a">QXmppPubSubManager::createNode</a> on the current account's bare JID.</p>
@@ -541,6 +833,53 @@ template&lt;typename T &gt; </div>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">nodeName</td><td>the name of the PEP node to be created </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+
+</div>
+</div>
+<a id="ab44675edb423c9c84a2165e9fe9c77f0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab44675edb423c9c84a2165e9fe9c77f0">&#9670;&nbsp;</a></span>createPepNode() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QFuture&lt; <a class="el" href="classQXmppPubSubManager.html#a9a8741a70d0839185e8e52072ea0ed53">Result</a> &gt; QXmppPubSubManager::createPepNode </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>nodeName</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QXmppPubSubNodeConfig &amp;&#160;</td>
+          <td class="paramname"><em>config</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Creates an empty PEP node with a custom configuration.</p>
+<p>This is a convenience method equivalent to calling <a class="el" href="classQXmppPubSubManager.html#a979a66612d4967f1f3e62c4cb994416a">QXmppPubSubManager::createNode</a> on the current account's bare JID.</p>
+<p>Calling this before <a class="el" href="classQXmppPubSubManager.html#a3f06c1fd696c44acb6a8305ebad673de">QXmppPubSubManager::publishPepItems</a> is usually not necessary when publishing to a node for the first time if the service suppports the auto-create feature (Section 7.1.4 of <a href="https://xmpp.org/extensions/xep-0060.html">XEP-0060</a>).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nodeName</td><td>the name of the PEP node to be created </td></tr>
+    <tr><td class="paramname">config</td><td>The configuration for the node </td></tr>
   </table>
   </dd>
 </dl>
@@ -585,20 +924,28 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a2c9463752a065287f4663352215da734"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2c9463752a065287f4663352215da734">&#9670;&nbsp;</a></span>deletePepNode()</h2>
+<a id="aa93baa57cde14f0fbe1a70fddc1aa1fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa93baa57cde14f0fbe1a70fddc1aa1fe">&#9670;&nbsp;</a></span>deletePepNode()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">auto QXmppPubSubManager::deletePepNode </td>
+          <td class="memname">QXmppPubSubManager::deletePepNode </td>
           <td>(</td>
           <td class="paramtype">const QString &amp;&#160;</td>
           <td class="paramname"><em>nodeName</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <p>Deletes a PEP node.</p>
 <p>This is a convenience method equivalent to calling <a class="el" href="classQXmppPubSubManager.html#a79a4d74c566c3f918ffac887d08155df">QXmppPubSubManager::deleteNode</a> on the current account's bare JID.</p>
@@ -1046,20 +1393,28 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a9bb13330bb54623810c6ef2eff435a0e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9bb13330bb54623810c6ef2eff435a0e">&#9670;&nbsp;</a></span>purgePepItems()</h2>
+<a id="a3764695b1d08d267bd20df97c9cfd6fc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3764695b1d08d267bd20df97c9cfd6fc">&#9670;&nbsp;</a></span>purgePepItems()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">auto QXmppPubSubManager::purgePepItems </td>
+          <td class="memname">QXmppPubSubManager::purgePepItems </td>
           <td>(</td>
           <td class="paramtype">const QString &amp;&#160;</td>
           <td class="paramname"><em>nodeName</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <p>Purges all items from a PEP node.</p>
 <p>This is a convenience method equivalent to calling <a class="el" href="classQXmppPubSubManager.html#a12ba91ce8fe382ab92d0cb57b8754c3d">QXmppPubSubManager::purgeItems</a> on the current account's bare JID.</p>
@@ -1305,6 +1660,85 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
+<a id="a2f6ab9c2bb7747b9cfddf265af85cb3a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2f6ab9c2bb7747b9cfddf265af85cb3a">&#9670;&nbsp;</a></span>requestNodeConfiguration()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QFuture&lt; <a class="el" href="classQXmppPubSubManager.html#a44847a8625c35223c78b2445b8589259">QXmppPubSubManager::NodeConfigResult</a> &gt; QXmppPubSubManager::requestNodeConfiguration </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>service</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>nodeName</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Requests the node configuration and starts the configuration process.</p>
+<p>Requires owner privileges. If the result is successful (a node config form has been returned) this starts the configuration process. The next step is to call <a class="el" href="classQXmppPubSubManager.html#ac03a3fd09cedb18841a9180cccc17f68">configureNode()</a> or <a class="el" href="classQXmppPubSubManager.html#a9ca02a1b84353d69fa9933459bcd5147">cancelNodeConfiguration()</a>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">service</td><td>JID of the pubsub service </td></tr>
+    <tr><td class="paramname">nodeName</td><td>Name of the pubsub node on the service </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classQXmppPubSubManager.html#ac03a3fd09cedb18841a9180cccc17f68">configureNode()</a> </dd>
+<dd>
+<a class="el" href="classQXmppPubSubManager.html#a9ca02a1b84353d69fa9933459bcd5147">cancelNodeConfiguration()</a> </dd></dl>
+
+</div>
+</div>
+<a id="ac169d70e3ffda0c40b3bb2784cf667f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac169d70e3ffda0c40b3bb2784cf667f1">&#9670;&nbsp;</a></span>requestPepNodeConfiguration()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QXmppPubSubManager::requestPepNodeConfiguration </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>nodeName</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Requests the node configuration and starts the configuration process.</p>
+<p>This is a convenience method equivalent to calling <a class="el" href="classQXmppPubSubManager.html#a2f6ab9c2bb7747b9cfddf265af85cb3a">requestNodeConfiguration()</a> the current account's bare JID.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">nodeName</td><td>Name of the pubsub node on the service </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classQXmppPubSubManager.html#a5d0d6105e93392a44c9af076c72d6965">configurePepNode()</a> </dd>
+<dd>
+<a class="el" href="classQXmppPubSubManager.html#aef5d16ec66ffb0f3fa32bd20ed967269">cancelPepNodeConfiguration()</a> </dd></dl>
+
+</div>
+</div>
 <a id="a80641535ee59f140e8e788804e99658b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a80641535ee59f140e8e788804e99658b">&#9670;&nbsp;</a></span>requestSubscribeOptions() <span class="overload">[1/2]</span></h2>
 
@@ -1493,14 +1927,17 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a711bbc500722f89388af0e4609cd0c9d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a711bbc500722f89388af0e4609cd0c9d">&#9670;&nbsp;</a></span>retractPepItem()</h2>
+<a id="a6049cb47a1c3a1fcff58ad78f2df7d8b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6049cb47a1c3a1fcff58ad78f2df7d8b">&#9670;&nbsp;</a></span>retractPepItem()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">auto QXmppPubSubManager::retractPepItem </td>
+          <td class="memname">QXmppPubSubManager::retractPepItem </td>
           <td>(</td>
           <td class="paramtype">const QString &amp;&#160;</td>
           <td class="paramname"><em>nodeName</em>, </td>
@@ -1517,6 +1954,11 @@ template&lt;typename T &gt; </div>
           <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 <p>Deletes an item from a PEP node.</p>
 <p>This is a convenience method equivalent to calling <a class="el" href="classQXmppPubSubManager.html#af9d2214db5a632c3376f3ec851593839">QXmppPubSubManager::retractItem</a> on the current account's bare JID.</p>
@@ -1634,7 +2076,7 @@ template&lt;typename T &gt; </div>
 <div class="ttc" id="aclassQXmppPubSubManager_html"><div class="ttname"><a href="classQXmppPubSubManager.html">QXmppPubSubManager</a></div><div class="ttdoc">The QXmppPubSubManager aims to provide publish-subscribe functionality as specified in XEP-0060: Publ...</div><div class="ttdef"><b>Definition:</b> QXmppPubSubManager.h:41</div></div>
 <div class="ttc" id="aclassQXmppClientExtension_html_a2476cb1a20963d15d45d39f24a0c1198"><div class="ttname"><a href="classQXmppClientExtension.html#a2476cb1a20963d15d45d39f24a0c1198">QXmppClientExtension::client</a></div><div class="ttdeci">QXmppClient * client()</div><div class="ttdef"><b>Definition:</b> QXmppClientExtension.cpp:70</div></div>
 <div class="ttc" id="aclassQXmppClient_html_a61ccf1c37ca3f26bfd14e65c8ecf1740"><div class="ttname"><a href="classQXmppClient.html#a61ccf1c37ca3f26bfd14e65c8ecf1740">QXmppClient::addExtension</a></div><div class="ttdeci">bool addExtension(QXmppClientExtension *extension)</div><div class="ttdef"><b>Definition:</b> QXmppClient.cpp:224</div></div>
-<div class="ttc" id="aclassQXmppPubSubManager_html_a7facb6f447279159aba1ef470790796b"><div class="ttname"><a href="classQXmppPubSubManager.html#a7facb6f447279159aba1ef470790796b">QXmppPubSubManager::QXmppPubSubManager</a></div><div class="ttdeci">QXmppPubSubManager()</div><div class="ttdef"><b>Definition:</b> QXmppPubSubManager.cpp:164</div></div>
+<div class="ttc" id="aclassQXmppPubSubManager_html_a7facb6f447279159aba1ef470790796b"><div class="ttname"><a href="classQXmppPubSubManager.html#a7facb6f447279159aba1ef470790796b">QXmppPubSubManager::QXmppPubSubManager</a></div><div class="ttdeci">QXmppPubSubManager()</div><div class="ttdef"><b>Definition:</b> QXmppPubSubManager.cpp:171</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">
