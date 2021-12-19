@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['stanzas_2828',['Stanzas',['../group__Stanzas.html',1,'']]]
+  ['stanzas_2832',['Stanzas',['../group__Stanzas.html',1,'']]]
 ];
