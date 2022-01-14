@@ -70,100 +70,81 @@ $(function() {
 <div class="title">QXmppDiscoveryManager.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * Copyright (C) 2008-2022 The QXmpp developers</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * Author:</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> *  Manjeet Dahiya</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> * Source:</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> *  https://github.com/qxmpp-project/qxmpp</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment"> * This file is a part of QXmpp library.</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"> * This library is free software; you can redistribute it and/or</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"> * modify it under the terms of the GNU Lesser General Public</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> * License as published by the Free Software Foundation; either</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> * version 2.1 of the License, or (at your option) any later version.</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> * This library is distributed in the hope that it will be useful,</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> * but WITHOUT ANY WARRANTY; without even the implied warranty of</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> * Lesser General Public License for more details.</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment"> */</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#ifndef QXMPPDISCOVERYMANAGER_H</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#define QXMPPDISCOVERYMANAGER_H</span></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// SPDX-FileCopyrightText: 2010 Manjeet Dahiya &lt;manjeetdahiya@gmail.com&gt;</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">// SPDX-License-Identifier: LGPL-2.1-or-later</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#ifndef QXMPPDISCOVERYMANAGER_H</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#define QXMPPDISCOVERYMANAGER_H</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;QXmppClientExtension.h&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;variant&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">class </span>QFuture;</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">class </span><a class="code" href="classQXmppDataForm.html">QXmppDataForm</a>;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">class </span><a class="code" href="classQXmppDiscoveryIq.html">QXmppDiscoveryIq</a>;</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">class </span>QXmppDiscoveryManagerPrivate;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="classQXmppDiscoveryManager.html">   23</a></span>&#160;<span class="keyword">class </span>QXMPP_EXPORT <a class="code" href="classQXmppDiscoveryManager.html">QXmppDiscoveryManager</a> : <span class="keyword">public</span> <a class="code" href="classQXmppClientExtension.html">QXmppClientExtension</a></div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;{</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    Q_OBJECT</div>
 <div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &quot;QXmppClientExtension.h&quot;</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &lt;variant&gt;</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <a class="code" href="classQXmppDiscoveryManager.html">QXmppDiscoveryManager</a>();</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    ~<a class="code" href="classQXmppDiscoveryManager.html">QXmppDiscoveryManager</a>() <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">class </span>QFuture;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">class </span><a class="code" href="classQXmppDataForm.html">QXmppDataForm</a>;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">class </span><a class="code" href="classQXmppDiscoveryIq.html">QXmppDiscoveryIq</a>;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">class </span>QXmppDiscoveryManagerPrivate;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno"><a class="line" href="classQXmppDiscoveryManager.html">   42</a></span>&#160;<span class="keyword">class </span>QXMPP_EXPORT <a class="code" href="classQXmppDiscoveryManager.html">QXmppDiscoveryManager</a> : <span class="keyword">public</span> <a class="code" href="classQXmppClientExtension.html">QXmppClientExtension</a></div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;{</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    Q_OBJECT</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <a class="code" href="classQXmppDiscoveryManager.html">QXmppDiscoveryManager</a>();</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    ~<a class="code" href="classQXmppDiscoveryManager.html">QXmppDiscoveryManager</a>() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <a class="code" href="classQXmppDiscoveryIq.html">QXmppDiscoveryIq</a> capabilities();</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    QString requestInfo(<span class="keyword">const</span> QString&amp; jid, <span class="keyword">const</span> QString&amp; node = QString());</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    QString requestItems(<span class="keyword">const</span> QString&amp; jid, <span class="keyword">const</span> QString&amp; node = QString());</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="classQXmppDiscoveryManager.html#a805e69dac064dbfc264ba3c31109a35d">   55</a></span>&#160;    <span class="keyword">using</span> <a class="code" href="classQXmppDiscoveryManager.html#a805e69dac064dbfc264ba3c31109a35d">InfoResult</a> = std::variant&lt;QXmppDiscoveryIq, QXmppStanza::Error&gt;;</div>
-<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="classQXmppDiscoveryManager.html#a16f719aaf141666f9e07d2c186491895">   56</a></span>&#160;    <span class="keyword">using</span> <a class="code" href="classQXmppDiscoveryManager.html#a16f719aaf141666f9e07d2c186491895">ItemsResult</a> = std::variant&lt;QList&lt;QXmppDiscoveryIq::Item&gt;, <a class="code" href="classQXmppStanza_1_1Error.html">QXmppStanza::Error</a>&gt;;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    QFuture&lt;InfoResult&gt; requestDiscoInfo(<span class="keyword">const</span> QString &amp;jid, <span class="keyword">const</span> QString &amp;node = {});</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    QFuture&lt;ItemsResult&gt; requestDiscoItems(<span class="keyword">const</span> QString &amp;jid, <span class="keyword">const</span> QString &amp;node = {});</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    QString clientCapabilitiesNode() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">void</span> setClientCapabilitiesNode(<span class="keyword">const</span> QString&amp;);</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="comment">// http://xmpp.org/registrar/disco-categories.html#client</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    QString clientCategory() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordtype">void</span> setClientCategory(<span class="keyword">const</span> QString&amp;);</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordtype">void</span> setClientName(<span class="keyword">const</span> QString&amp;);</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    QString clientName() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    QString clientType() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordtype">void</span> setClientType(<span class="keyword">const</span> QString&amp;);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <a class="code" href="classQXmppDiscoveryIq.html">QXmppDiscoveryIq</a> capabilities();</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    QString requestInfo(<span class="keyword">const</span> QString&amp; jid, <span class="keyword">const</span> QString&amp; node = QString());</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    QString requestItems(<span class="keyword">const</span> QString&amp; jid, <span class="keyword">const</span> QString&amp; node = QString());</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="classQXmppDiscoveryManager.html#a805e69dac064dbfc264ba3c31109a35d">   36</a></span>&#160;    <span class="keyword">using</span> <a class="code" href="classQXmppDiscoveryManager.html#a805e69dac064dbfc264ba3c31109a35d">InfoResult</a> = std::variant&lt;QXmppDiscoveryIq, QXmppStanza::Error&gt;;</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="classQXmppDiscoveryManager.html#a16f719aaf141666f9e07d2c186491895">   37</a></span>&#160;    <span class="keyword">using</span> <a class="code" href="classQXmppDiscoveryManager.html#a16f719aaf141666f9e07d2c186491895">ItemsResult</a> = std::variant&lt;QList&lt;QXmppDiscoveryIq::Item&gt;, <a class="code" href="classQXmppStanza_1_1Error.html">QXmppStanza::Error</a>&gt;;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    QFuture&lt;InfoResult&gt; requestDiscoInfo(<span class="keyword">const</span> QString &amp;jid, <span class="keyword">const</span> QString &amp;node = {});</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    QFuture&lt;ItemsResult&gt; requestDiscoItems(<span class="keyword">const</span> QString &amp;jid, <span class="keyword">const</span> QString &amp;node = {});</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    QString clientCapabilitiesNode() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordtype">void</span> setClientCapabilitiesNode(<span class="keyword">const</span> QString&amp;);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="comment">// http://xmpp.org/registrar/disco-categories.html#client</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    QString clientCategory() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordtype">void</span> setClientCategory(<span class="keyword">const</span> QString&amp;);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordtype">void</span> setClientName(<span class="keyword">const</span> QString&amp;);</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    QString clientName() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    QString clientType() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordtype">void</span> setClientType(<span class="keyword">const</span> QString&amp;);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <a class="code" href="classQXmppDataForm.html">QXmppDataForm</a> clientInfoForm() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordtype">void</span> setClientInfoForm(<span class="keyword">const</span> <a class="code" href="classQXmppDataForm.html">QXmppDataForm</a>&amp; form);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    QStringList <a class="code" href="classQXmppClientExtension.html#a3ef15300fd584457adc40378a3103511">discoveryFeatures</a>() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classQXmppClientExtension.html#af026d292204dc538249d16086e9e8108">handleStanza</a>(<span class="keyword">const</span> QDomElement&amp; element) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;Q_SIGNALS:</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordtype">void</span> infoReceived(<span class="keyword">const</span> <a class="code" href="classQXmppDiscoveryIq.html">QXmppDiscoveryIq</a>&amp;);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordtype">void</span> itemsReceived(<span class="keyword">const</span> <a class="code" href="classQXmppDiscoveryIq.html">QXmppDiscoveryIq</a>&amp;);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    QXmppDiscoveryManagerPrivate* d;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;};</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <a class="code" href="classQXmppDataForm.html">QXmppDataForm</a> clientInfoForm() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordtype">void</span> setClientInfoForm(<span class="keyword">const</span> <a class="code" href="classQXmppDataForm.html">QXmppDataForm</a>&amp; form);</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    QStringList <a class="code" href="classQXmppClientExtension.html#a3ef15300fd584457adc40378a3103511">discoveryFeatures</a>() <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classQXmppClientExtension.html#af026d292204dc538249d16086e9e8108">handleStanza</a>(<span class="keyword">const</span> QDomElement&amp; element) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;Q_SIGNALS:</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordtype">void</span> infoReceived(<span class="keyword">const</span> <a class="code" href="classQXmppDiscoveryIq.html">QXmppDiscoveryIq</a>&amp;);</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordtype">void</span> itemsReceived(<span class="keyword">const</span> <a class="code" href="classQXmppDiscoveryIq.html">QXmppDiscoveryIq</a>&amp;);</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    QXmppDiscoveryManagerPrivate* d;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;};</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="preprocessor">#endif  // QXMPPDISCOVERYMANAGER_H</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor">#endif  // QXMPPDISCOVERYMANAGER_H</span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aclassQXmppStanza_1_1Error_html"><div class="ttname"><a href="classQXmppStanza_1_1Error.html">QXmppStanza::Error</a></div><div class="ttdoc">The Error class represents a stanza error.</div><div class="ttdef"><b>Definition:</b> QXmppStanza.h:106</div></div>
-<div class="ttc" id="aclassQXmppDataForm_html"><div class="ttname"><a href="classQXmppDataForm.html">QXmppDataForm</a></div><div class="ttdef"><b>Definition:</b> QXmppDataForm.h:45</div></div>
-<div class="ttc" id="aclassQXmppDiscoveryManager_html"><div class="ttname"><a href="classQXmppDiscoveryManager.html">QXmppDiscoveryManager</a></div><div class="ttdoc">The QXmppDiscoveryManager class makes it possible to discover information about other entities as def...</div><div class="ttdef"><b>Definition:</b> QXmppDiscoveryManager.h:42</div></div>
-<div class="ttc" id="aclassQXmppClientExtension_html"><div class="ttname"><a href="classQXmppClientExtension.html">QXmppClientExtension</a></div><div class="ttdoc">The QXmppClientExtension class is the base class for QXmppClient extensions.</div><div class="ttdef"><b>Definition:</b> QXmppClientExtension.h:46</div></div>
-<div class="ttc" id="aclassQXmppClientExtension_html_a3ef15300fd584457adc40378a3103511"><div class="ttname"><a href="classQXmppClientExtension.html#a3ef15300fd584457adc40378a3103511">QXmppClientExtension::discoveryFeatures</a></div><div class="ttdeci">virtual QStringList discoveryFeatures() const</div><div class="ttdef"><b>Definition:</b> QXmppClientExtension.cpp:54</div></div>
-<div class="ttc" id="aclassQXmppDiscoveryManager_html_a805e69dac064dbfc264ba3c31109a35d"><div class="ttname"><a href="classQXmppDiscoveryManager.html#a805e69dac064dbfc264ba3c31109a35d">QXmppDiscoveryManager::InfoResult</a></div><div class="ttdeci">std::variant&lt; QXmppDiscoveryIq, QXmppStanza::Error &gt; InfoResult</div><div class="ttdef"><b>Definition:</b> QXmppDiscoveryManager.h:55</div></div>
-<div class="ttc" id="aclassQXmppDiscoveryManager_html_a16f719aaf141666f9e07d2c186491895"><div class="ttname"><a href="classQXmppDiscoveryManager.html#a16f719aaf141666f9e07d2c186491895">QXmppDiscoveryManager::ItemsResult</a></div><div class="ttdeci">std::variant&lt; QList&lt; QXmppDiscoveryIq::Item &gt;, QXmppStanza::Error &gt; ItemsResult</div><div class="ttdef"><b>Definition:</b> QXmppDiscoveryManager.h:56</div></div>
+<div class="ttc" id="aclassQXmppStanza_1_1Error_html"><div class="ttname"><a href="classQXmppStanza_1_1Error.html">QXmppStanza::Error</a></div><div class="ttdoc">The Error class represents a stanza error.</div><div class="ttdef"><b>Definition:</b> QXmppStanza.h:87</div></div>
+<div class="ttc" id="aclassQXmppDataForm_html"><div class="ttname"><a href="classQXmppDataForm.html">QXmppDataForm</a></div><div class="ttdef"><b>Definition:</b> QXmppDataForm.h:26</div></div>
+<div class="ttc" id="aclassQXmppDiscoveryManager_html"><div class="ttname"><a href="classQXmppDiscoveryManager.html">QXmppDiscoveryManager</a></div><div class="ttdoc">The QXmppDiscoveryManager class makes it possible to discover information about other entities as def...</div><div class="ttdef"><b>Definition:</b> QXmppDiscoveryManager.h:23</div></div>
+<div class="ttc" id="aclassQXmppClientExtension_html"><div class="ttname"><a href="classQXmppClientExtension.html">QXmppClientExtension</a></div><div class="ttdoc">The QXmppClientExtension class is the base class for QXmppClient extensions.</div><div class="ttdef"><b>Definition:</b> QXmppClientExtension.h:27</div></div>
+<div class="ttc" id="aclassQXmppClientExtension_html_a3ef15300fd584457adc40378a3103511"><div class="ttname"><a href="classQXmppClientExtension.html#a3ef15300fd584457adc40378a3103511">QXmppClientExtension::discoveryFeatures</a></div><div class="ttdeci">virtual QStringList discoveryFeatures() const</div><div class="ttdef"><b>Definition:</b> QXmppClientExtension.cpp:35</div></div>
+<div class="ttc" id="aclassQXmppDiscoveryManager_html_a805e69dac064dbfc264ba3c31109a35d"><div class="ttname"><a href="classQXmppDiscoveryManager.html#a805e69dac064dbfc264ba3c31109a35d">QXmppDiscoveryManager::InfoResult</a></div><div class="ttdeci">std::variant&lt; QXmppDiscoveryIq, QXmppStanza::Error &gt; InfoResult</div><div class="ttdef"><b>Definition:</b> QXmppDiscoveryManager.h:36</div></div>
+<div class="ttc" id="aclassQXmppDiscoveryManager_html_a16f719aaf141666f9e07d2c186491895"><div class="ttname"><a href="classQXmppDiscoveryManager.html#a16f719aaf141666f9e07d2c186491895">QXmppDiscoveryManager::ItemsResult</a></div><div class="ttdeci">std::variant&lt; QList&lt; QXmppDiscoveryIq::Item &gt;, QXmppStanza::Error &gt; ItemsResult</div><div class="ttdef"><b>Definition:</b> QXmppDiscoveryManager.h:37</div></div>
 <div class="ttc" id="aclassQXmppClientExtension_html_af026d292204dc538249d16086e9e8108"><div class="ttname"><a href="classQXmppClientExtension.html#af026d292204dc538249d16086e9e8108">QXmppClientExtension::handleStanza</a></div><div class="ttdeci">virtual bool handleStanza(const QDomElement &amp;stanza)=0</div><div class="ttdoc">You need to implement this method to process incoming XMPP stanzas.</div></div>
-<div class="ttc" id="aclassQXmppDiscoveryIq_html"><div class="ttname"><a href="classQXmppDiscoveryIq.html">QXmppDiscoveryIq</a></div><div class="ttdef"><b>Definition:</b> QXmppDiscoveryIq.h:36</div></div>
+<div class="ttc" id="aclassQXmppDiscoveryIq_html"><div class="ttname"><a href="classQXmppDiscoveryIq.html">QXmppDiscoveryIq</a></div><div class="ttdef"><b>Definition:</b> QXmppDiscoveryIq.h:17</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

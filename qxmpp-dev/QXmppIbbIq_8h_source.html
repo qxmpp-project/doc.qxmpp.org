@@ -70,112 +70,93 @@ $(function() {
 <div class="title">QXmppIbbIq.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * Copyright (C) 2008-2022 The QXmpp developers</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * Authors:</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> *  Manjeet Dahiya</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> *  Jeremy Lainé</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> * Source:</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"> *  https://github.com/qxmpp-project/qxmpp</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"> * This file is a part of QXmpp library.</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"> * This library is free software; you can redistribute it and/or</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> * modify it under the terms of the GNU Lesser General Public</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> * License as published by the Free Software Foundation; either</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> * version 2.1 of the License, or (at your option) any later version.</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> * This library is distributed in the hope that it will be useful,</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> * but WITHOUT ANY WARRANTY; without even the implied warranty of</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment"> * Lesser General Public License for more details.</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment"> */</span></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// SPDX-FileCopyrightText: 2010 Manjeet Dahiya &lt;manjeetdahiya@gmail.com&gt;</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">// SPDX-FileCopyrightText: 2010 Jeremy Lainé &lt;jeremy.laine@m4x.org&gt;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">// SPDX-License-Identifier: LGPL-2.1-or-later</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160; </div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#ifndef QXMPPIBBIQ_H</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#define QXMPPIBBIQ_H</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;QXmppIq.h&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="classQXmppIbbOpenIq.html">   11</a></span>&#160;<span class="keyword">class </span><a class="code" href="classQXmppIbbOpenIq.html">QXmppIbbOpenIq</a> : <span class="keyword">public</span> <a class="code" href="classQXmppIq.html">QXmppIq</a></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <a class="code" href="classQXmppIbbOpenIq.html">QXmppIbbOpenIq</a>();</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <span class="keywordtype">long</span> <a class="code" href="classQXmppIbbOpenIq.html#af971bfdde75d453b17236f1e34946a11">blockSize</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classQXmppIbbOpenIq.html#a0137690eae00672aad8cdf39e675f9e7">setBlockSize</a>(<span class="keywordtype">long</span> block_size);</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    QString <a class="code" href="classQXmppIbbOpenIq.html#a1695849d3bea149ce63df02d5d3526ad">sid</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classQXmppIbbOpenIq.html#a8f27edd76907f2e9e798f5ce3e98d231">setSid</a>(<span class="keyword">const</span> QString &amp;<a class="code" href="classQXmppIbbOpenIq.html#a1695849d3bea149ce63df02d5d3526ad">sid</a>);</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> isIbbOpenIq(<span class="keyword">const</span> QDomElement &amp;element);</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#ifndef QXMPPIBBIQ_H</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#define QXMPPIBBIQ_H</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &quot;QXmppIq.h&quot;</span></div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordtype">void</span> parseElementFromChild(<span class="keyword">const</span> QDomElement &amp;element) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordtype">void</span> toXmlElementFromChild(QXmlStreamWriter *writer) <span class="keyword">const override</span>;</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
-<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="classQXmppIbbOpenIq.html">   30</a></span>&#160;<span class="keyword">class </span><a class="code" href="classQXmppIbbOpenIq.html">QXmppIbbOpenIq</a> : <span class="keyword">public</span> <a class="code" href="classQXmppIq.html">QXmppIq</a></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;{</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <a class="code" href="classQXmppIbbOpenIq.html">QXmppIbbOpenIq</a>();</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordtype">long</span> m_block_size;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    QString m_sid;</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;};</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordtype">long</span> <a class="code" href="classQXmppIbbOpenIq.html#af971bfdde75d453b17236f1e34946a11">blockSize</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classQXmppIbbOpenIq.html#a0137690eae00672aad8cdf39e675f9e7">setBlockSize</a>(<span class="keywordtype">long</span> block_size);</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    QString <a class="code" href="classQXmppIbbOpenIq.html#a1695849d3bea149ce63df02d5d3526ad">sid</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classQXmppIbbOpenIq.html#a8f27edd76907f2e9e798f5ce3e98d231">setSid</a>(<span class="keyword">const</span> QString &amp;<a class="code" href="classQXmppIbbOpenIq.html#a1695849d3bea149ce63df02d5d3526ad">sid</a>);</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> isIbbOpenIq(<span class="keyword">const</span> QDomElement &amp;element);</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordtype">void</span> parseElementFromChild(<span class="keyword">const</span> QDomElement &amp;element) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordtype">void</span> toXmlElementFromChild(QXmlStreamWriter *writer) <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordtype">long</span> m_block_size;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    QString m_sid;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;};</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="classQXmppIbbCloseIq.html">   54</a></span>&#160;<span class="keyword">class </span><a class="code" href="classQXmppIbbCloseIq.html">QXmppIbbCloseIq</a> : <span class="keyword">public</span> <a class="code" href="classQXmppIq.html">QXmppIq</a></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;{</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <a class="code" href="classQXmppIbbCloseIq.html">QXmppIbbCloseIq</a>();</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    QString <a class="code" href="classQXmppIbbCloseIq.html#a59bcb36f0aa96846946924d91f538e84">sid</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classQXmppIbbCloseIq.html#a6a8ec4d15fb13d34966f973f59553ea9">setSid</a>(<span class="keyword">const</span> QString &amp;<a class="code" href="classQXmppIbbCloseIq.html#a59bcb36f0aa96846946924d91f538e84">sid</a>);</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> isIbbCloseIq(<span class="keyword">const</span> QDomElement &amp;element);</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordtype">void</span> parseElementFromChild(<span class="keyword">const</span> QDomElement &amp;element) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordtype">void</span> toXmlElementFromChild(QXmlStreamWriter *writer) <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    QString m_sid;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;};</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="keyword">class </span>QXMPP_EXPORT QXmppIbbDataIq : <span class="keyword">public</span> <a class="code" href="classQXmppIq.html">QXmppIq</a></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;{</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    QXmppIbbDataIq();</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    quint16 sequence() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordtype">void</span> setSequence(quint16 seq);</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    QString sid() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordtype">void</span> setSid(<span class="keyword">const</span> QString &amp;sid);</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    QByteArray payload() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordtype">void</span> setPayload(<span class="keyword">const</span> QByteArray &amp;data);</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> isIbbDataIq(<span class="keyword">const</span> QDomElement &amp;element);</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordtype">void</span> parseElementFromChild(<span class="keyword">const</span> QDomElement &amp;element) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keywordtype">void</span> toXmlElementFromChild(QXmlStreamWriter *writer) <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    quint16 m_seq;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    QString m_sid;</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    QByteArray m_payload;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;};</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="preprocessor">#endif  // QXMPPIBBIQS_H</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="classQXmppIbbCloseIq.html">   35</a></span>&#160;<span class="keyword">class </span><a class="code" href="classQXmppIbbCloseIq.html">QXmppIbbCloseIq</a> : <span class="keyword">public</span> <a class="code" href="classQXmppIq.html">QXmppIq</a></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;{</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <a class="code" href="classQXmppIbbCloseIq.html">QXmppIbbCloseIq</a>();</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    QString <a class="code" href="classQXmppIbbCloseIq.html#a59bcb36f0aa96846946924d91f538e84">sid</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classQXmppIbbCloseIq.html#a6a8ec4d15fb13d34966f973f59553ea9">setSid</a>(<span class="keyword">const</span> QString &amp;<a class="code" href="classQXmppIbbCloseIq.html#a59bcb36f0aa96846946924d91f538e84">sid</a>);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> isIbbCloseIq(<span class="keyword">const</span> QDomElement &amp;element);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordtype">void</span> parseElementFromChild(<span class="keyword">const</span> QDomElement &amp;element) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordtype">void</span> toXmlElementFromChild(QXmlStreamWriter *writer) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    QString m_sid;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;};</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keyword">class </span>QXMPP_EXPORT QXmppIbbDataIq : <span class="keyword">public</span> <a class="code" href="classQXmppIq.html">QXmppIq</a></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;{</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    QXmppIbbDataIq();</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    quint16 sequence() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">void</span> setSequence(quint16 seq);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    QString sid() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordtype">void</span> setSid(<span class="keyword">const</span> QString &amp;sid);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    QByteArray payload() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordtype">void</span> setPayload(<span class="keyword">const</span> QByteArray &amp;data);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> isIbbDataIq(<span class="keyword">const</span> QDomElement &amp;element);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordtype">void</span> parseElementFromChild(<span class="keyword">const</span> QDomElement &amp;element) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordtype">void</span> toXmlElementFromChild(QXmlStreamWriter *writer) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    quint16 m_seq;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    QString m_sid;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    QByteArray m_payload;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;};</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;<span class="preprocessor">#endif  // QXMPPIBBIQS_H</span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aclassQXmppIbbOpenIq_html_af971bfdde75d453b17236f1e34946a11"><div class="ttname"><a href="classQXmppIbbOpenIq.html#af971bfdde75d453b17236f1e34946a11">QXmppIbbOpenIq::blockSize</a></div><div class="ttdeci">long blockSize() const</div><div class="ttdef"><b>Definition:</b> QXmppIbbIq.cpp:49</div></div>
-<div class="ttc" id="aclassQXmppIbbCloseIq_html_a59bcb36f0aa96846946924d91f538e84"><div class="ttname"><a href="classQXmppIbbCloseIq.html#a59bcb36f0aa96846946924d91f538e84">QXmppIbbCloseIq::sid</a></div><div class="ttdeci">QString sid() const</div><div class="ttdef"><b>Definition:</b> QXmppIbbIq.cpp:122</div></div>
-<div class="ttc" id="aclassQXmppIbbOpenIq_html_a1695849d3bea149ce63df02d5d3526ad"><div class="ttname"><a href="classQXmppIbbOpenIq.html#a1695849d3bea149ce63df02d5d3526ad">QXmppIbbOpenIq::sid</a></div><div class="ttdeci">QString sid() const</div><div class="ttdef"><b>Definition:</b> QXmppIbbIq.cpp:67</div></div>
-<div class="ttc" id="aclassQXmppIbbOpenIq_html_a8f27edd76907f2e9e798f5ce3e98d231"><div class="ttname"><a href="classQXmppIbbOpenIq.html#a8f27edd76907f2e9e798f5ce3e98d231">QXmppIbbOpenIq::setSid</a></div><div class="ttdeci">void setSid(const QString &amp;sid)</div><div class="ttdef"><b>Definition:</b> QXmppIbbIq.cpp:76</div></div>
-<div class="ttc" id="aclassQXmppIbbCloseIq_html_a6a8ec4d15fb13d34966f973f59553ea9"><div class="ttname"><a href="classQXmppIbbCloseIq.html#a6a8ec4d15fb13d34966f973f59553ea9">QXmppIbbCloseIq::setSid</a></div><div class="ttdeci">void setSid(const QString &amp;sid)</div><div class="ttdef"><b>Definition:</b> QXmppIbbIq.cpp:131</div></div>
-<div class="ttc" id="aclassQXmppIbbCloseIq_html"><div class="ttname"><a href="classQXmppIbbCloseIq.html">QXmppIbbCloseIq</a></div><div class="ttdef"><b>Definition:</b> QXmppIbbIq.h:54</div></div>
-<div class="ttc" id="aclassQXmppIbbOpenIq_html_a0137690eae00672aad8cdf39e675f9e7"><div class="ttname"><a href="classQXmppIbbOpenIq.html#a0137690eae00672aad8cdf39e675f9e7">QXmppIbbOpenIq::setBlockSize</a></div><div class="ttdeci">void setBlockSize(long block_size)</div><div class="ttdef"><b>Definition:</b> QXmppIbbIq.cpp:58</div></div>
-<div class="ttc" id="aclassQXmppIq_html"><div class="ttname"><a href="classQXmppIq.html">QXmppIq</a></div><div class="ttdoc">The QXmppIq class is the base class for all IQs.</div><div class="ttdef"><b>Definition:</b> QXmppIq.h:41</div></div>
-<div class="ttc" id="aclassQXmppIbbOpenIq_html"><div class="ttname"><a href="classQXmppIbbOpenIq.html">QXmppIbbOpenIq</a></div><div class="ttdef"><b>Definition:</b> QXmppIbbIq.h:30</div></div>
+<div class="ttc" id="aclassQXmppIbbOpenIq_html_af971bfdde75d453b17236f1e34946a11"><div class="ttname"><a href="classQXmppIbbOpenIq.html#af971bfdde75d453b17236f1e34946a11">QXmppIbbOpenIq::blockSize</a></div><div class="ttdeci">long blockSize() const</div><div class="ttdef"><b>Definition:</b> QXmppIbbIq.cpp:30</div></div>
+<div class="ttc" id="aclassQXmppIbbCloseIq_html_a59bcb36f0aa96846946924d91f538e84"><div class="ttname"><a href="classQXmppIbbCloseIq.html#a59bcb36f0aa96846946924d91f538e84">QXmppIbbCloseIq::sid</a></div><div class="ttdeci">QString sid() const</div><div class="ttdef"><b>Definition:</b> QXmppIbbIq.cpp:103</div></div>
+<div class="ttc" id="aclassQXmppIbbOpenIq_html_a1695849d3bea149ce63df02d5d3526ad"><div class="ttname"><a href="classQXmppIbbOpenIq.html#a1695849d3bea149ce63df02d5d3526ad">QXmppIbbOpenIq::sid</a></div><div class="ttdeci">QString sid() const</div><div class="ttdef"><b>Definition:</b> QXmppIbbIq.cpp:48</div></div>
+<div class="ttc" id="aclassQXmppIbbOpenIq_html_a8f27edd76907f2e9e798f5ce3e98d231"><div class="ttname"><a href="classQXmppIbbOpenIq.html#a8f27edd76907f2e9e798f5ce3e98d231">QXmppIbbOpenIq::setSid</a></div><div class="ttdeci">void setSid(const QString &amp;sid)</div><div class="ttdef"><b>Definition:</b> QXmppIbbIq.cpp:57</div></div>
+<div class="ttc" id="aclassQXmppIbbCloseIq_html_a6a8ec4d15fb13d34966f973f59553ea9"><div class="ttname"><a href="classQXmppIbbCloseIq.html#a6a8ec4d15fb13d34966f973f59553ea9">QXmppIbbCloseIq::setSid</a></div><div class="ttdeci">void setSid(const QString &amp;sid)</div><div class="ttdef"><b>Definition:</b> QXmppIbbIq.cpp:112</div></div>
+<div class="ttc" id="aclassQXmppIbbCloseIq_html"><div class="ttname"><a href="classQXmppIbbCloseIq.html">QXmppIbbCloseIq</a></div><div class="ttdef"><b>Definition:</b> QXmppIbbIq.h:35</div></div>
+<div class="ttc" id="aclassQXmppIbbOpenIq_html_a0137690eae00672aad8cdf39e675f9e7"><div class="ttname"><a href="classQXmppIbbOpenIq.html#a0137690eae00672aad8cdf39e675f9e7">QXmppIbbOpenIq::setBlockSize</a></div><div class="ttdeci">void setBlockSize(long block_size)</div><div class="ttdef"><b>Definition:</b> QXmppIbbIq.cpp:39</div></div>
+<div class="ttc" id="aclassQXmppIq_html"><div class="ttname"><a href="classQXmppIq.html">QXmppIq</a></div><div class="ttdoc">The QXmppIq class is the base class for all IQs.</div><div class="ttdef"><b>Definition:</b> QXmppIq.h:22</div></div>
+<div class="ttc" id="aclassQXmppIbbOpenIq_html"><div class="ttname"><a href="classQXmppIbbOpenIq.html">QXmppIbbOpenIq</a></div><div class="ttdef"><b>Definition:</b> QXmppIbbIq.h:11</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">
