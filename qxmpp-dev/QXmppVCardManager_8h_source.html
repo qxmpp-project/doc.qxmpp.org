@@ -90,24 +90,24 @@ $(function() {
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <a class="code" href="classQXmppVCardManager.html">QXmppVCardManager</a>();</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    ~<a class="code" href="classQXmppVCardManager.html">QXmppVCardManager</a>() <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    QString requestVCard(<span class="keyword">const</span> QString&amp; bareJid = QString());</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    QString requestVCard(<span class="keyword">const</span> QString &amp;bareJid = QString());</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keyword">const</span> <a class="code" href="classQXmppVCardIq.html">QXmppVCardIq</a>&amp; clientVCard() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordtype">void</span> setClientVCard(<span class="keyword">const</span> <a class="code" href="classQXmppVCardIq.html">QXmppVCardIq</a>&amp;);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keyword">const</span> <a class="code" href="classQXmppVCardIq.html">QXmppVCardIq</a> &amp;clientVCard() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordtype">void</span> setClientVCard(<span class="keyword">const</span> <a class="code" href="classQXmppVCardIq.html">QXmppVCardIq</a> &amp;);</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    QString requestClientVCard();</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordtype">bool</span> isClientVCardReceived() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    QStringList <a class="code" href="classQXmppClientExtension.html#a3ef15300fd584457adc40378a3103511">discoveryFeatures</a>() <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classQXmppClientExtension.html#af026d292204dc538249d16086e9e8108">handleStanza</a>(<span class="keyword">const</span> QDomElement&amp; element) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classQXmppClientExtension.html#af026d292204dc538249d16086e9e8108">handleStanza</a>(<span class="keyword">const</span> QDomElement &amp;element) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;Q_SIGNALS:</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">void</span> vCardReceived(<span class="keyword">const</span> <a class="code" href="classQXmppVCardIq.html">QXmppVCardIq</a>&amp;);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">void</span> vCardReceived(<span class="keyword">const</span> <a class="code" href="classQXmppVCardIq.html">QXmppVCardIq</a> &amp;);</div>
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordtype">void</span> clientVCardReceived();</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    QXmppVCardManagerPrivate* d;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    QXmppVCardManagerPrivate *d;</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;};</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor">#endif  // QXMPPVCARDMANAGER_H</span></div>

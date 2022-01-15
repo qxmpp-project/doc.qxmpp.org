@@ -123,9 +123,9 @@ $(function() {
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceQXmpp.html">QXmpp</a> {</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
 <div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="namespaceQXmpp.html#abc6005b5a30290db2a9da3a9dde99a0d">   79</a></span>&#160;<span class="keyword">enum</span> <a class="code" href="namespaceQXmpp.html#abc6005b5a30290db2a9da3a9dde99a0d">SceMode</a> : uint8_t {</div>
-<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="namespaceQXmpp.html#abc6005b5a30290db2a9da3a9dde99a0daee79b2e32f2a9f1dc442a588a40678ce">   80</a></span>&#160;    <a class="code" href="namespaceQXmpp.html#abc6005b5a30290db2a9da3a9dde99a0daee79b2e32f2a9f1dc442a588a40678ce">SceAll</a>,         </div>
-<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="namespaceQXmpp.html#abc6005b5a30290db2a9da3a9dde99a0daf2c433f9e775df972b33f8bd9e420a74">   81</a></span>&#160;    <a class="code" href="namespaceQXmpp.html#abc6005b5a30290db2a9da3a9dde99a0daf2c433f9e775df972b33f8bd9e420a74">ScePublic</a>,      </div>
-<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="namespaceQXmpp.html#abc6005b5a30290db2a9da3a9dde99a0da055a343bcd6d20ed9241ee74c10f70f3">   82</a></span>&#160;    <a class="code" href="namespaceQXmpp.html#abc6005b5a30290db2a9da3a9dde99a0da055a343bcd6d20ed9241ee74c10f70f3">SceSensitive</a>,   </div>
+<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="namespaceQXmpp.html#abc6005b5a30290db2a9da3a9dde99a0daee79b2e32f2a9f1dc442a588a40678ce">   80</a></span>&#160;    <a class="code" href="namespaceQXmpp.html#abc6005b5a30290db2a9da3a9dde99a0daee79b2e32f2a9f1dc442a588a40678ce">SceAll</a>,        </div>
+<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="namespaceQXmpp.html#abc6005b5a30290db2a9da3a9dde99a0daf2c433f9e775df972b33f8bd9e420a74">   81</a></span>&#160;    <a class="code" href="namespaceQXmpp.html#abc6005b5a30290db2a9da3a9dde99a0daf2c433f9e775df972b33f8bd9e420a74">ScePublic</a>,     </div>
+<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="namespaceQXmpp.html#abc6005b5a30290db2a9da3a9dde99a0da055a343bcd6d20ed9241ee74c10f70f3">   82</a></span>&#160;    <a class="code" href="namespaceQXmpp.html#abc6005b5a30290db2a9da3a9dde99a0da055a343bcd6d20ed9241ee74c10f70f3">SceSensitive</a>,  </div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;};</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
 <div class="line"><a name="l00093"></a><span class="lineno"><a class="line" href="namespaceQXmpp.html#aa99256168d2956f77c1a06952d955e64">   93</a></span>&#160;<span class="keyword">inline</span> constexpr <span class="keywordtype">bool</span> <a class="code" href="namespaceQXmpp.html#aa99256168d2956f77c1a06952d955e64">operator&amp;</a>(<a class="code" href="namespaceQXmpp.html#abc6005b5a30290db2a9da3a9dde99a0d">SceMode</a> mode1, <a class="code" href="namespaceQXmpp.html#abc6005b5a30290db2a9da3a9dde99a0d">SceMode</a> mode2)</div>
@@ -133,11 +133,13 @@ $(function() {
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordflow">return</span> mode1 == <a class="code" href="namespaceQXmpp.html#abc6005b5a30290db2a9da3a9dde99a0daee79b2e32f2a9f1dc442a588a40678ce">SceAll</a> || mode1 == mode2;</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;}</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
-<div class="line"><a name="l00103"></a><span class="lineno"><a class="line" href="structQXmpp_1_1Success.html">  103</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structQXmpp_1_1Success.html">Success</a> {};</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;}</div>
+<div class="line"><a name="l00103"></a><span class="lineno"><a class="line" href="structQXmpp_1_1Success.html">  103</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structQXmpp_1_1Success.html">Success</a></div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;{</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;};</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="preprocessor">#endif  // QXMPPGLOBAL_H</span></div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;}</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;<span class="preprocessor">#endif  // QXMPPGLOBAL_H</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="anamespaceQXmpp_html_abc6005b5a30290db2a9da3a9dde99a0da055a343bcd6d20ed9241ee74c10f70f3"><div class="ttname"><a href="namespaceQXmpp.html#abc6005b5a30290db2a9da3a9dde99a0da055a343bcd6d20ed9241ee74c10f70f3">QXmpp::SceSensitive</a></div><div class="ttdeci">@ SceSensitive</div><div class="ttdoc">Only processes sensitive elements that should be encrypted.</div><div class="ttdef"><b>Definition:</b> QXmppGlobal.h:82</div></div>
 <div class="ttc" id="anamespaceQXmpp_html"><div class="ttname"><a href="namespaceQXmpp.html">QXmpp</a></div></div>
