@@ -70,101 +70,82 @@ $(function() {
 <div class="title">QXmppGlobal.h</div>  </div>
 </div><!--header-->
 <div class="contents">
-<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> * Copyright (C) 2008-2021 The QXmpp developers</span></div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> * Author:</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> *  Manjeet Dahiya</span></div>
-<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> *  Niels Ole Salscheider</span></div>
-<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> *  Linus Jahn</span></div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="comment"> * Source:</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="comment"> *  https://github.com/qxmpp-project/qxmpp</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="comment"> * This file is a part of QXmpp library.</span></div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="comment"> * This library is free software; you can redistribute it and/or</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment"> * modify it under the terms of the GNU Lesser General Public</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment"> * License as published by the Free Software Foundation; either</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment"> * version 2.1 of the License, or (at your option) any later version.</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="comment"> * This library is distributed in the hope that it will be useful,</span></div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="comment"> * but WITHOUT ANY WARRANTY; without even the implied warranty of</span></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment"> * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU</span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="comment"> * Lesser General Public License for more details.</span></div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="comment"> *</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="comment"> */</span></div>
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">// SPDX-FileCopyrightText: 2010 Manjeet Dahiya &lt;manjeetdahiya@gmail.com&gt;</span></div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">// SPDX-FileCopyrightText: 2017 Niels Ole Salscheider &lt;niels_ole@salscheider-online.de&gt;</span></div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">// SPDX-FileCopyrightText: 2019 Linus Jahn &lt;lnj@kaidan.im&gt;</span></div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">//</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">// SPDX-License-Identifier: LGPL-2.1-or-later</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160; </div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#ifndef QXMPPGLOBAL_H</span></div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#define QXMPPGLOBAL_H</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &lt;QString&gt;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#define QXMPP_BUILD_SHARED true</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#if QXMPP_BUILD_SHARED</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#    if defined(QXMPP_BUILD)</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#         define QXMPP_EXPORT Q_DECL_EXPORT</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#    else</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#         define QXMPP_EXPORT Q_DECL_IMPORT</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#    endif</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#else</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#    define QXMPP_EXPORT</span></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#define QXMPP_AUTOTEST_EXPORT</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#ifndef QXMPPGLOBAL_H</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#define QXMPPGLOBAL_H</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &lt;QString&gt;</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#define QXMPP_BUILD_SHARED true</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#if QXMPP_BUILD_SHARED</span></div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="preprocessor">#    if defined(QXMPP_BUILD)</span></div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#         define QXMPP_EXPORT Q_DECL_EXPORT</span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#    else</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#         define QXMPP_EXPORT Q_DECL_IMPORT</span></div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;<span class="preprocessor">#    endif</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;<span class="preprocessor">#else</span></div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="preprocessor">#    define QXMPP_EXPORT</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#define QXMPP_AUTOTEST_EXPORT</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#define QXMPP_VERSION QT_VERSION_CHECK(1, 5, 0)</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">inline</span> QLatin1String QXmppVersion()</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;{</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordflow">return</span> QLatin1String(<span class="stringliteral">&quot;1.5.0&quot;</span>);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;}</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="preprocessor">#define QXMPP_VERSION QT_VERSION_CHECK(1, 5, 0)</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="keyword">inline</span> QLatin1String QXmppVersion()</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;{</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordflow">return</span> QLatin1String(<span class="stringliteral">&quot;1.5.0&quot;</span>);</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;}</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="comment">// This sets which deprecated functions should still be usable</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="comment">// It works exactly like QT_DISABLE_DEPRECATED_BEFORE</span></div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="preprocessor">#ifndef QXMPP_DISABLE_DEPRECATED_BEFORE</span></div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="preprocessor">#   define QXMPP_DISABLE_DEPRECATED_BEFORE 0x0</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="comment">// This works exactly like QT_DEPRECATED_SINCE, but checks QXMPP_DISABLE_DEPRECATED_BEFORE instead.</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="preprocessor">#define QXMPP_DEPRECATED_SINCE(major, minor) (QT_VERSION_CHECK(major, minor, 0) &gt; QXMPP_DISABLE_DEPRECATED_BEFORE)</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="comment">// workaround for Qt &lt; 5.12</span></div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;<span class="preprocessor">#ifndef Q_DECL_ENUMERATOR_DEPRECATED_X</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor">#define Q_DECL_ENUMERATOR_DEPRECATED_X(msg)</span></div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="preprocessor">#ifndef QT_WARNING_DISABLE_DEPRECATED</span></div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor">#define QT_WARNING_DISABLE_DEPRECATED</span></div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceQXmpp.html">QXmpp</a> {</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
-<div class="line"><a name="l00098"></a><span class="lineno"><a class="line" href="namespaceQXmpp.html#abc6005b5a30290db2a9da3a9dde99a0d">   98</a></span>&#160;<span class="keyword">enum</span> <a class="code" href="namespaceQXmpp.html#abc6005b5a30290db2a9da3a9dde99a0d">SceMode</a> : uint8_t {</div>
-<div class="line"><a name="l00099"></a><span class="lineno"><a class="line" href="namespaceQXmpp.html#abc6005b5a30290db2a9da3a9dde99a0daee79b2e32f2a9f1dc442a588a40678ce">   99</a></span>&#160;    <a class="code" href="namespaceQXmpp.html#abc6005b5a30290db2a9da3a9dde99a0daee79b2e32f2a9f1dc442a588a40678ce">SceAll</a>,         </div>
-<div class="line"><a name="l00100"></a><span class="lineno"><a class="line" href="namespaceQXmpp.html#abc6005b5a30290db2a9da3a9dde99a0daf2c433f9e775df972b33f8bd9e420a74">  100</a></span>&#160;    <a class="code" href="namespaceQXmpp.html#abc6005b5a30290db2a9da3a9dde99a0daf2c433f9e775df972b33f8bd9e420a74">ScePublic</a>,      </div>
-<div class="line"><a name="l00101"></a><span class="lineno"><a class="line" href="namespaceQXmpp.html#abc6005b5a30290db2a9da3a9dde99a0da055a343bcd6d20ed9241ee74c10f70f3">  101</a></span>&#160;    <a class="code" href="namespaceQXmpp.html#abc6005b5a30290db2a9da3a9dde99a0da055a343bcd6d20ed9241ee74c10f70f3">SceSensitive</a>,   </div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;};</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
-<div class="line"><a name="l00112"></a><span class="lineno"><a class="line" href="namespaceQXmpp.html#aa99256168d2956f77c1a06952d955e64">  112</a></span>&#160;<span class="keyword">inline</span> constexpr <span class="keywordtype">bool</span> <a class="code" href="namespaceQXmpp.html#aa99256168d2956f77c1a06952d955e64">operator&amp;</a>(<a class="code" href="namespaceQXmpp.html#abc6005b5a30290db2a9da3a9dde99a0d">SceMode</a> mode1, <a class="code" href="namespaceQXmpp.html#abc6005b5a30290db2a9da3a9dde99a0d">SceMode</a> mode2)</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;{</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="keywordflow">return</span> mode1 == <a class="code" href="namespaceQXmpp.html#abc6005b5a30290db2a9da3a9dde99a0daee79b2e32f2a9f1dc442a588a40678ce">SceAll</a> || mode1 == mode2;</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;}</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160; </div>
-<div class="line"><a name="l00122"></a><span class="lineno"><a class="line" href="structQXmpp_1_1Success.html">  122</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structQXmpp_1_1Success.html">Success</a> {};</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160; </div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;}</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160; </div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;<span class="preprocessor">#endif  // QXMPPGLOBAL_H</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="comment">// This sets which deprecated functions should still be usable</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="comment">// It works exactly like QT_DISABLE_DEPRECATED_BEFORE</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#ifndef QXMPP_DISABLE_DEPRECATED_BEFORE</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">#   define QXMPP_DISABLE_DEPRECATED_BEFORE 0x0</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="comment">// This works exactly like QT_DEPRECATED_SINCE, but checks QXMPP_DISABLE_DEPRECATED_BEFORE instead.</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="preprocessor">#define QXMPP_DEPRECATED_SINCE(major, minor) (QT_VERSION_CHECK(major, minor, 0) &gt; QXMPP_DISABLE_DEPRECATED_BEFORE)</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;<span class="comment">// workaround for Qt &lt; 5.12</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="preprocessor">#ifndef Q_DECL_ENUMERATOR_DEPRECATED_X</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor">#define Q_DECL_ENUMERATOR_DEPRECATED_X(msg)</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">#ifndef QT_WARNING_DISABLE_DEPRECATED</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor">#define QT_WARNING_DISABLE_DEPRECATED</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceQXmpp.html">QXmpp</a> {</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno"><a class="line" href="namespaceQXmpp.html#abc6005b5a30290db2a9da3a9dde99a0d">   79</a></span>&#160;<span class="keyword">enum</span> <a class="code" href="namespaceQXmpp.html#abc6005b5a30290db2a9da3a9dde99a0d">SceMode</a> : uint8_t {</div>
+<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="namespaceQXmpp.html#abc6005b5a30290db2a9da3a9dde99a0daee79b2e32f2a9f1dc442a588a40678ce">   80</a></span>&#160;    <a class="code" href="namespaceQXmpp.html#abc6005b5a30290db2a9da3a9dde99a0daee79b2e32f2a9f1dc442a588a40678ce">SceAll</a>,         </div>
+<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="namespaceQXmpp.html#abc6005b5a30290db2a9da3a9dde99a0daf2c433f9e775df972b33f8bd9e420a74">   81</a></span>&#160;    <a class="code" href="namespaceQXmpp.html#abc6005b5a30290db2a9da3a9dde99a0daf2c433f9e775df972b33f8bd9e420a74">ScePublic</a>,      </div>
+<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="namespaceQXmpp.html#abc6005b5a30290db2a9da3a9dde99a0da055a343bcd6d20ed9241ee74c10f70f3">   82</a></span>&#160;    <a class="code" href="namespaceQXmpp.html#abc6005b5a30290db2a9da3a9dde99a0da055a343bcd6d20ed9241ee74c10f70f3">SceSensitive</a>,   </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;};</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
+<div class="line"><a name="l00093"></a><span class="lineno"><a class="line" href="namespaceQXmpp.html#aa99256168d2956f77c1a06952d955e64">   93</a></span>&#160;<span class="keyword">inline</span> constexpr <span class="keywordtype">bool</span> <a class="code" href="namespaceQXmpp.html#aa99256168d2956f77c1a06952d955e64">operator&amp;</a>(<a class="code" href="namespaceQXmpp.html#abc6005b5a30290db2a9da3a9dde99a0d">SceMode</a> mode1, <a class="code" href="namespaceQXmpp.html#abc6005b5a30290db2a9da3a9dde99a0d">SceMode</a> mode2)</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;{</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    <span class="keywordflow">return</span> mode1 == <a class="code" href="namespaceQXmpp.html#abc6005b5a30290db2a9da3a9dde99a0daee79b2e32f2a9f1dc442a588a40678ce">SceAll</a> || mode1 == mode2;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;}</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160; </div>
+<div class="line"><a name="l00103"></a><span class="lineno"><a class="line" href="structQXmpp_1_1Success.html">  103</a></span>&#160;<span class="keyword">struct </span><a class="code" href="structQXmpp_1_1Success.html">Success</a> {};</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;}</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;<span class="preprocessor">#endif  // QXMPPGLOBAL_H</span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="anamespaceQXmpp_html_abc6005b5a30290db2a9da3a9dde99a0da055a343bcd6d20ed9241ee74c10f70f3"><div class="ttname"><a href="namespaceQXmpp.html#abc6005b5a30290db2a9da3a9dde99a0da055a343bcd6d20ed9241ee74c10f70f3">QXmpp::SceSensitive</a></div><div class="ttdeci">@ SceSensitive</div><div class="ttdoc">Only processes sensitive elements that should be encrypted.</div><div class="ttdef"><b>Definition:</b> QXmppGlobal.h:101</div></div>
+<div class="ttc" id="anamespaceQXmpp_html_abc6005b5a30290db2a9da3a9dde99a0da055a343bcd6d20ed9241ee74c10f70f3"><div class="ttname"><a href="namespaceQXmpp.html#abc6005b5a30290db2a9da3a9dde99a0da055a343bcd6d20ed9241ee74c10f70f3">QXmpp::SceSensitive</a></div><div class="ttdeci">@ SceSensitive</div><div class="ttdoc">Only processes sensitive elements that should be encrypted.</div><div class="ttdef"><b>Definition:</b> QXmppGlobal.h:82</div></div>
 <div class="ttc" id="anamespaceQXmpp_html"><div class="ttname"><a href="namespaceQXmpp.html">QXmpp</a></div></div>
-<div class="ttc" id="anamespaceQXmpp_html_aa99256168d2956f77c1a06952d955e64"><div class="ttname"><a href="namespaceQXmpp.html#aa99256168d2956f77c1a06952d955e64">QXmpp::operator&amp;</a></div><div class="ttdeci">constexpr bool operator&amp;(SceMode mode1, SceMode mode2)</div><div class="ttdef"><b>Definition:</b> QXmppGlobal.h:112</div></div>
-<div class="ttc" id="anamespaceQXmpp_html_abc6005b5a30290db2a9da3a9dde99a0d"><div class="ttname"><a href="namespaceQXmpp.html#abc6005b5a30290db2a9da3a9dde99a0d">QXmpp::SceMode</a></div><div class="ttdeci">SceMode</div><div class="ttdef"><b>Definition:</b> QXmppGlobal.h:98</div></div>
-<div class="ttc" id="anamespaceQXmpp_html_abc6005b5a30290db2a9da3a9dde99a0daee79b2e32f2a9f1dc442a588a40678ce"><div class="ttname"><a href="namespaceQXmpp.html#abc6005b5a30290db2a9da3a9dde99a0daee79b2e32f2a9f1dc442a588a40678ce">QXmpp::SceAll</a></div><div class="ttdeci">@ SceAll</div><div class="ttdoc">Processes all known elements.</div><div class="ttdef"><b>Definition:</b> QXmppGlobal.h:99</div></div>
-<div class="ttc" id="anamespaceQXmpp_html_abc6005b5a30290db2a9da3a9dde99a0daf2c433f9e775df972b33f8bd9e420a74"><div class="ttname"><a href="namespaceQXmpp.html#abc6005b5a30290db2a9da3a9dde99a0daf2c433f9e775df972b33f8bd9e420a74">QXmpp::ScePublic</a></div><div class="ttdeci">@ ScePublic</div><div class="ttdoc">Only processes 'public' elements (e.g. needed for routing).</div><div class="ttdef"><b>Definition:</b> QXmppGlobal.h:100</div></div>
-<div class="ttc" id="astructQXmpp_1_1Success_html"><div class="ttname"><a href="structQXmpp_1_1Success.html">QXmpp::Success</a></div><div class="ttdef"><b>Definition:</b> QXmppGlobal.h:122</div></div>
+<div class="ttc" id="anamespaceQXmpp_html_aa99256168d2956f77c1a06952d955e64"><div class="ttname"><a href="namespaceQXmpp.html#aa99256168d2956f77c1a06952d955e64">QXmpp::operator&amp;</a></div><div class="ttdeci">constexpr bool operator&amp;(SceMode mode1, SceMode mode2)</div><div class="ttdef"><b>Definition:</b> QXmppGlobal.h:93</div></div>
+<div class="ttc" id="anamespaceQXmpp_html_abc6005b5a30290db2a9da3a9dde99a0d"><div class="ttname"><a href="namespaceQXmpp.html#abc6005b5a30290db2a9da3a9dde99a0d">QXmpp::SceMode</a></div><div class="ttdeci">SceMode</div><div class="ttdef"><b>Definition:</b> QXmppGlobal.h:79</div></div>
+<div class="ttc" id="anamespaceQXmpp_html_abc6005b5a30290db2a9da3a9dde99a0daee79b2e32f2a9f1dc442a588a40678ce"><div class="ttname"><a href="namespaceQXmpp.html#abc6005b5a30290db2a9da3a9dde99a0daee79b2e32f2a9f1dc442a588a40678ce">QXmpp::SceAll</a></div><div class="ttdeci">@ SceAll</div><div class="ttdoc">Processes all known elements.</div><div class="ttdef"><b>Definition:</b> QXmppGlobal.h:80</div></div>
+<div class="ttc" id="anamespaceQXmpp_html_abc6005b5a30290db2a9da3a9dde99a0daf2c433f9e775df972b33f8bd9e420a74"><div class="ttname"><a href="namespaceQXmpp.html#abc6005b5a30290db2a9da3a9dde99a0daf2c433f9e775df972b33f8bd9e420a74">QXmpp::ScePublic</a></div><div class="ttdeci">@ ScePublic</div><div class="ttdoc">Only processes 'public' elements (e.g. needed for routing).</div><div class="ttdef"><b>Definition:</b> QXmppGlobal.h:81</div></div>
+<div class="ttc" id="astructQXmpp_1_1Success_html"><div class="ttname"><a href="structQXmpp_1_1Success.html">QXmpp::Success</a></div><div class="ttdef"><b>Definition:</b> QXmppGlobal.h:103</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">
