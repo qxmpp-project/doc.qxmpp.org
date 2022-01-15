@@ -78,8 +78,10 @@ Inheritance diagram for QXmppTrustStorage:</div>
 <div class="dyncontent">
 <div class="center"><img src="classQXmppTrustStorage__inherit__graph.png" border="0" usemap="#QXmppTrustStorage_inherit__map" alt="Inheritance graph"/></div>
 <map name="QXmppTrustStorage_inherit__map" id="QXmppTrustStorage_inherit__map">
-<area shape="rect" title="The QXmppTrustStorage class stores trust data for end&#45;to&#45;end encryption." alt="" coords="33,5,183,32"/>
-<area shape="rect" href="classQXmppTrustMemoryStorage.html" title="The QXmppTrustMemoryStorage class stores trust data for end&#45;to&#45;end encryption in the memory." alt="" coords="5,80,211,107"/>
+<area shape="rect" title="The QXmppTrustStorage class stores trust data for end&#45;to&#45;end encryption." alt="" coords="127,5,278,32"/>
+<area shape="rect" href="classQXmppAtmTrustStorage.html" title="The QXmppAtmTrustStorage class stores trust data for XEP&#45;0450: Automatic Trust Management (ATM)." alt="" coords="5,80,184,107"/>
+<area shape="rect" href="classQXmppTrustMemoryStorage.html" title="The QXmppTrustMemoryStorage class stores trust data for end&#45;to&#45;end encryption in the memory." alt="" coords="208,80,413,107"/>
+<area shape="rect" href="classQXmppAtmTrustMemoryStorage.html" title="The QXmppAtmTrustMemoryStorage class stores trust data for XEP&#45;0450: Automatic Trust Management (ATM)..." alt="" coords="87,155,319,181"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -90,51 +92,57 @@ Public Types</h2></td></tr>
  }</td></tr>
 <tr class="separator:af1e9d660dfdb87cd51dc2da180994028"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a20db8ebf03198cb8b163f1b73be188da"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppTrustStorage.html#a20db8ebf03198cb8b163f1b73be188da">TrustLevel</a> { <br />
-&#160;&#160;<a class="el" href="classQXmppTrustStorage.html#a20db8ebf03198cb8b163f1b73be188daa9ca1631cafd86045c2edf17b0eee281d">AutomaticallyDistrusted</a> = 1, 
-<a class="el" href="classQXmppTrustStorage.html#a20db8ebf03198cb8b163f1b73be188daad122d43a64d575f833e3bbdbca43a4cb">ManuallyDistrusted</a> = 2, 
-<a class="el" href="classQXmppTrustStorage.html#a20db8ebf03198cb8b163f1b73be188daa2ae5221fc7133ff216f7a225f0d3c213">AutomaticallyTrusted</a> = 4, 
-<a class="el" href="classQXmppTrustStorage.html#a20db8ebf03198cb8b163f1b73be188daa5f3323cff00bdce224abc9bcff4468c9">ManuallyTrusted</a> = 8, 
+&#160;&#160;<a class="el" href="classQXmppTrustStorage.html#a20db8ebf03198cb8b163f1b73be188daa03597104c13e74a910f7b1ee089c90df">Undecided</a> = 1, 
+<a class="el" href="classQXmppTrustStorage.html#a20db8ebf03198cb8b163f1b73be188daa9ca1631cafd86045c2edf17b0eee281d">AutomaticallyDistrusted</a> = 2, 
+<a class="el" href="classQXmppTrustStorage.html#a20db8ebf03198cb8b163f1b73be188daad122d43a64d575f833e3bbdbca43a4cb">ManuallyDistrusted</a> = 4, 
+<a class="el" href="classQXmppTrustStorage.html#a20db8ebf03198cb8b163f1b73be188daa2ae5221fc7133ff216f7a225f0d3c213">AutomaticallyTrusted</a> = 8, 
 <br />
-&#160;&#160;<a class="el" href="classQXmppTrustStorage.html#a20db8ebf03198cb8b163f1b73be188daadf1b46f2bc190c74bb5bff745c6204e0">Authenticated</a> = 16
+&#160;&#160;<a class="el" href="classQXmppTrustStorage.html#a20db8ebf03198cb8b163f1b73be188daa5f3323cff00bdce224abc9bcff4468c9">ManuallyTrusted</a> = 16, 
+<a class="el" href="classQXmppTrustStorage.html#a20db8ebf03198cb8b163f1b73be188daadf1b46f2bc190c74bb5bff745c6204e0">Authenticated</a> = 32
 <br />
  }</td></tr>
 <tr class="separator:a20db8ebf03198cb8b163f1b73be188da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ada7f6dd5c0c14a6f89829513ba9ee0eb"><td class="memItemLeft" align="right" valign="top">virtual QFuture&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppTrustStorage.html#ada7f6dd5c0c14a6f89829513ba9ee0eb">setSecurityPolicies</a> (const QString &amp;encryption={}, <a class="el" href="classQXmppTrustStorage.html#af1e9d660dfdb87cd51dc2da180994028">SecurityPolicy</a> <a class="el" href="classQXmppTrustStorage.html#a9d9bc1a46aa2f3e741c6e0e1ebf99886">securityPolicy</a>=SecurityPolicy::NoSecurityPolicy)=0</td></tr>
-<tr class="separator:ada7f6dd5c0c14a6f89829513ba9ee0eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89642f761e52e0288a276d5fc6603390"><td class="memItemLeft" align="right" valign="top">virtual QFuture&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppTrustStorage.html#a89642f761e52e0288a276d5fc6603390">setSecurityPolicy</a> (const QString &amp;encryption, <a class="el" href="classQXmppTrustStorage.html#af1e9d660dfdb87cd51dc2da180994028">SecurityPolicy</a> <a class="el" href="classQXmppTrustStorage.html#a9d9bc1a46aa2f3e741c6e0e1ebf99886">securityPolicy</a>)=0</td></tr>
+<tr class="separator:a89642f761e52e0288a276d5fc6603390"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1f9e320dee19b97394492617c9392621"><td class="memItemLeft" align="right" valign="top">virtual QFuture&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppTrustStorage.html#a1f9e320dee19b97394492617c9392621">resetSecurityPolicy</a> (const QString &amp;encryption)=0</td></tr>
+<tr class="separator:a1f9e320dee19b97394492617c9392621"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9d9bc1a46aa2f3e741c6e0e1ebf99886"><td class="memItemLeft" align="right" valign="top">virtual QFuture&lt; <a class="el" href="classQXmppTrustStorage.html#af1e9d660dfdb87cd51dc2da180994028">SecurityPolicy</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppTrustStorage.html#a9d9bc1a46aa2f3e741c6e0e1ebf99886">securityPolicy</a> (const QString &amp;encryption)=0</td></tr>
 <tr class="separator:a9d9bc1a46aa2f3e741c6e0e1ebf99886"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a21ee17015a1778372a874134c850659b"><td class="memItemLeft" align="right" valign="top">virtual QFuture&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppTrustStorage.html#a21ee17015a1778372a874134c850659b">addOwnKey</a> (const QString &amp;encryption, const QByteArray &amp;keyId)=0</td></tr>
-<tr class="separator:a21ee17015a1778372a874134c850659b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00cedbc015220a01764a903d743c9e5d"><td class="memItemLeft" align="right" valign="top">virtual QFuture&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppTrustStorage.html#a00cedbc015220a01764a903d743c9e5d">removeOwnKey</a> (const QString &amp;encryption)=0</td></tr>
-<tr class="separator:a00cedbc015220a01764a903d743c9e5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9d4c46ca31e7fa4b3524b2f22fac0d8"><td class="memItemLeft" align="right" valign="top">virtual QFuture&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppTrustStorage.html#aa9d4c46ca31e7fa4b3524b2f22fac0d8">setOwnKey</a> (const QString &amp;encryption, const QByteArray &amp;keyId)=0</td></tr>
+<tr class="separator:aa9d4c46ca31e7fa4b3524b2f22fac0d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af943c52af3119baa4f36605e16fa99ba"><td class="memItemLeft" align="right" valign="top">virtual QFuture&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppTrustStorage.html#af943c52af3119baa4f36605e16fa99ba">resetOwnKey</a> (const QString &amp;encryption)=0</td></tr>
+<tr class="separator:af943c52af3119baa4f36605e16fa99ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa4d7836f88d792c316a2e659c0cf8310"><td class="memItemLeft" align="right" valign="top">virtual QFuture&lt; QByteArray &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppTrustStorage.html#aa4d7836f88d792c316a2e659c0cf8310">ownKey</a> (const QString &amp;encryption)=0</td></tr>
 <tr class="separator:aa4d7836f88d792c316a2e659c0cf8310"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0a6d0739502993bff1515f9c8b1b065f"><td class="memItemLeft" align="right" valign="top">virtual QFuture&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppTrustStorage.html#a0a6d0739502993bff1515f9c8b1b065f">addKeys</a> (const QString &amp;encryption, const QString &amp;keyOwnerJid, const QList&lt; QByteArray &gt; &amp;keyIds, <a class="el" href="classQXmppTrustStorage.html#a20db8ebf03198cb8b163f1b73be188da">TrustLevel</a> <a class="el" href="classQXmppTrustStorage.html#a4c313ba3d424a5becdbdd6dca03d93ac">trustLevel</a>=TrustLevel::AutomaticallyDistrusted)=0</td></tr>
 <tr class="separator:a0a6d0739502993bff1515f9c8b1b065f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac643c93a9f6836cf2ed28ee4e19d3d2c"><td class="memItemLeft" align="right" valign="top">virtual QFuture&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppTrustStorage.html#ac643c93a9f6836cf2ed28ee4e19d3d2c">removeKeys</a> (const QString &amp;encryption={}, const QList&lt; QByteArray &gt; &amp;keyIds={})=0</td></tr>
-<tr class="separator:ac643c93a9f6836cf2ed28ee4e19d3d2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1bb370f43a8bc60018d64fe9a515bcda"><td class="memItemLeft" align="right" valign="top">virtual QFuture&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppTrustStorage.html#a1bb370f43a8bc60018d64fe9a515bcda">removeKeys</a> (const QString &amp;encryption, const QList&lt; QByteArray &gt; &amp;keyIds)=0</td></tr>
+<tr class="separator:a1bb370f43a8bc60018d64fe9a515bcda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adcaa80365b8405a35e75e6cd4955ad3e"><td class="memItemLeft" align="right" valign="top">virtual QFuture&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppTrustStorage.html#adcaa80365b8405a35e75e6cd4955ad3e">removeKeys</a> (const QString &amp;encryption, const QString &amp;keyOwnerJid)=0</td></tr>
+<tr class="separator:adcaa80365b8405a35e75e6cd4955ad3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7f8a4022026f58f74fcb21c56a723f1d"><td class="memItemLeft" align="right" valign="top">virtual QFuture&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppTrustStorage.html#a7f8a4022026f58f74fcb21c56a723f1d">removeKeys</a> (const QString &amp;encryption)=0</td></tr>
+<tr class="separator:a7f8a4022026f58f74fcb21c56a723f1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a13a9964637506bc9f381d661892ab10f"><td class="memItemLeft" align="right" valign="top">virtual QFuture&lt; QHash&lt; <a class="el" href="classQXmppTrustStorage.html#a20db8ebf03198cb8b163f1b73be188da">TrustLevel</a>, QMultiHash&lt; QString, QByteArray &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppTrustStorage.html#a13a9964637506bc9f381d661892ab10f">keys</a> (const QString &amp;encryption, TrustLevels trustLevels={})=0</td></tr>
 <tr class="separator:a13a9964637506bc9f381d661892ab10f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76b656a0d0232685894cfa0acc1dd521"><td class="memItemLeft" align="right" valign="top">virtual QFuture&lt; QHash&lt; QString, QHash&lt; QByteArray, <a class="el" href="classQXmppTrustStorage.html#a20db8ebf03198cb8b163f1b73be188da">TrustLevel</a> &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppTrustStorage.html#a76b656a0d0232685894cfa0acc1dd521">keys</a> (const QString &amp;encryption, const QList&lt; QString &gt; &amp;keyOwnerJids, TrustLevels trustLevels={})=0</td></tr>
+<tr class="separator:a76b656a0d0232685894cfa0acc1dd521"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa65679ff79533a87b4e9ceab202def0d"><td class="memItemLeft" align="right" valign="top">virtual QFuture&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppTrustStorage.html#aa65679ff79533a87b4e9ceab202def0d">hasKey</a> (const QString &amp;encryption, const QString &amp;keyOwnerJid, TrustLevels trustLevels)=0</td></tr>
+<tr class="separator:aa65679ff79533a87b4e9ceab202def0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1c4aa869b59213af3d8d19ad71ba3bb6"><td class="memItemLeft" align="right" valign="top">virtual QFuture&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppTrustStorage.html#a1c4aa869b59213af3d8d19ad71ba3bb6">setTrustLevel</a> (const QString &amp;encryption, const QMultiHash&lt; QString, QByteArray &gt; &amp;keyIds, <a class="el" href="classQXmppTrustStorage.html#a20db8ebf03198cb8b163f1b73be188da">TrustLevel</a> <a class="el" href="classQXmppTrustStorage.html#a4c313ba3d424a5becdbdd6dca03d93ac">trustLevel</a>)=0</td></tr>
 <tr class="separator:a1c4aa869b59213af3d8d19ad71ba3bb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae90a2722e04a6048a1b2c74b9323991e"><td class="memItemLeft" align="right" valign="top">virtual QFuture&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppTrustStorage.html#ae90a2722e04a6048a1b2c74b9323991e">setTrustLevel</a> (const QString &amp;encryption, const QList&lt; QString &gt; &amp;keyOwnerJids, <a class="el" href="classQXmppTrustStorage.html#a20db8ebf03198cb8b163f1b73be188da">TrustLevel</a> oldTrustLevel, <a class="el" href="classQXmppTrustStorage.html#a20db8ebf03198cb8b163f1b73be188da">TrustLevel</a> newTrustLevel)=0</td></tr>
 <tr class="separator:ae90a2722e04a6048a1b2c74b9323991e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4c313ba3d424a5becdbdd6dca03d93ac"><td class="memItemLeft" align="right" valign="top">virtual QFuture&lt; <a class="el" href="classQXmppTrustStorage.html#a20db8ebf03198cb8b163f1b73be188da">TrustLevel</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppTrustStorage.html#a4c313ba3d424a5becdbdd6dca03d93ac">trustLevel</a> (const QString &amp;encryption, const QByteArray &amp;keyId)=0</td></tr>
 <tr class="separator:a4c313ba3d424a5becdbdd6dca03d93ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac50b57cf6d648227fd9d23e7792c450b"><td class="memItemLeft" align="right" valign="top">virtual QFuture&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppTrustStorage.html#ac50b57cf6d648227fd9d23e7792c450b">addKeysForPostponedTrustDecisions</a> (const QString &amp;encryption, const QByteArray &amp;senderKeyId, const QList&lt; <a class="el" href="classQXmppTrustMessageKeyOwner.html">QXmppTrustMessageKeyOwner</a> &gt; &amp;keyOwners)=0</td></tr>
-<tr class="separator:ac50b57cf6d648227fd9d23e7792c450b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad17db4c7bc2692aa426531fe08434f9d"><td class="memItemLeft" align="right" valign="top">virtual QFuture&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppTrustStorage.html#ad17db4c7bc2692aa426531fe08434f9d">removeKeysForPostponedTrustDecisions</a> (const QString &amp;encryption, const QList&lt; QByteArray &gt; &amp;keyIdsForAuthentication, const QList&lt; QByteArray &gt; &amp;keyIdsForDistrusting)=0</td></tr>
-<tr class="separator:ad17db4c7bc2692aa426531fe08434f9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6bb245cf899662871bbfe7fa1350bf2e"><td class="memItemLeft" align="right" valign="top">virtual QFuture&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppTrustStorage.html#a6bb245cf899662871bbfe7fa1350bf2e">removeKeysForPostponedTrustDecisions</a> (const QString &amp;encryption={}, const QList&lt; QByteArray &gt; &amp;senderKeyIds={})=0</td></tr>
-<tr class="separator:a6bb245cf899662871bbfe7fa1350bf2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a46c6d1d3ab7b9b8810468e2251c49606"><td class="memItemLeft" align="right" valign="top">virtual QFuture&lt; QHash&lt; bool, QMultiHash&lt; QString, QByteArray &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppTrustStorage.html#a46c6d1d3ab7b9b8810468e2251c49606">keysForPostponedTrustDecisions</a> (const QString &amp;encryption, const QList&lt; QByteArray &gt; &amp;senderKeyIds={})=0</td></tr>
-<tr class="separator:a46c6d1d3ab7b9b8810468e2251c49606"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a163f5a53086a02373a49d0589ee8ddad"><td class="memItemLeft" align="right" valign="top">virtual QFuture&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppTrustStorage.html#a163f5a53086a02373a49d0589ee8ddad">resetAll</a> (const QString &amp;encryption)=0</td></tr>
+<tr class="separator:a163f5a53086a02373a49d0589ee8ddad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The <a class="el" href="classQXmppTrustStorage.html" title="The QXmppTrustStorage class stores trust data for end-to-end encryption.">QXmppTrustStorage</a> class stores trust data for end-to-end encryption. </p>
+<p>The term "key" is used for a public long-term key.</p>
 <dl class="section warning"><dt>Warning</dt><dd>THIS API IS NOT FINALIZED YET!</dd></dl>
 <dl class="section since"><dt>Since</dt><dd><a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.5 </dd></dl>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
@@ -154,6 +162,7 @@ Public Member Functions</h2></td></tr>
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="af1e9d660dfdb87cd51dc2da180994028a4fe909ab44373ee4d456972321dbffb0"></a>NoSecurityPolicy&#160;</td><td class="fielddoc"><p>New keys must be trusted manually. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="af1e9d660dfdb87cd51dc2da180994028a4ba91a6f648ad9ab6bfc771efa984afa"></a>Toakafa&#160;</td><td class="fielddoc"><p>New keys are trusted automatically until the first authentication but automatically distrusted afterwards. </p>
+<dl class="section see"><dt>See also</dt><dd><a href="https://xmpp.org/extensions/xep-0450.html">XEP-0450: Automatic Trust Management (ATM)</a> </dd></dl>
 </td></tr>
 </table>
 
@@ -172,15 +181,18 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Trust level of public long-term keys used by end-to-end encryption protocols </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a20db8ebf03198cb8b163f1b73be188daa9ca1631cafd86045c2edf17b0eee281d"></a>AutomaticallyDistrusted&#160;</td><td class="fielddoc"><p>The key is automatically distrusted (e.g., by ATM's security policy). </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a20db8ebf03198cb8b163f1b73be188daa03597104c13e74a910f7b1ee089c90df"></a>Undecided&#160;</td><td class="fielddoc"><p>The key's trust is not decided. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a20db8ebf03198cb8b163f1b73be188daad122d43a64d575f833e3bbdbca43a4cb"></a>ManuallyDistrusted&#160;</td><td class="fielddoc"><p>The key is manually distrusted (e.g., by clicking a button or ATM). </p>
+<tr><td class="fieldname"><a id="a20db8ebf03198cb8b163f1b73be188daa9ca1631cafd86045c2edf17b0eee281d"></a>AutomaticallyDistrusted&#160;</td><td class="fielddoc"><p>The key is automatically distrusted (e.g., by the security policy TOAKAFA). </p>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classQXmppTrustStorage.html#af1e9d660dfdb87cd51dc2da180994028">SecurityPolicy</a> </dd></dl>
+</td></tr>
+<tr><td class="fieldname"><a id="a20db8ebf03198cb8b163f1b73be188daad122d43a64d575f833e3bbdbca43a4cb"></a>ManuallyDistrusted&#160;</td><td class="fielddoc"><p>The key is manually distrusted (e.g., by clicking a button or <a href="https://xmpp.org/extensions/xep-0450.html">XEP-0450: Automatic Trust Management (ATM)</a>). </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a20db8ebf03198cb8b163f1b73be188daa2ae5221fc7133ff216f7a225f0d3c213"></a>AutomaticallyTrusted&#160;</td><td class="fielddoc"><p>The key is automatically trusted (e.g., by the client for all keys of a bare JID until one of it is authenticated). </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a20db8ebf03198cb8b163f1b73be188daa5f3323cff00bdce224abc9bcff4468c9"></a>ManuallyTrusted&#160;</td><td class="fielddoc"><p>The key is manually trusted (e.g., by clicking a button). </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a20db8ebf03198cb8b163f1b73be188daadf1b46f2bc190c74bb5bff745c6204e0"></a>Authenticated&#160;</td><td class="fielddoc"><p>The key is authenticated (e.g., by QR code scanning or ATM). </p>
+<tr><td class="fieldname"><a id="a20db8ebf03198cb8b163f1b73be188daadf1b46f2bc190c74bb5bff745c6204e0"></a>Authenticated&#160;</td><td class="fielddoc"><p>The key is authenticated (e.g., by QR code scanning or <a href="https://xmpp.org/extensions/xep-0450.html">XEP-0450: Automatic Trust Management (ATM)</a>). </p>
 </td></tr>
 </table>
 
@@ -245,8 +257,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ac50b57cf6d648227fd9d23e7792c450b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac50b57cf6d648227fd9d23e7792c450b">&#9670;&nbsp;</a></span>addKeysForPostponedTrustDecisions()</h2>
+<a id="aa65679ff79533a87b4e9ceab202def0d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa65679ff79533a87b4e9ceab202def0d">&#9670;&nbsp;</a></span>hasKey()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -255,7 +267,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">QXmppTrustStorage::addKeysForPostponedTrustDecisions </td>
+          <td class="memname">QXmppTrustStorage::hasKey </td>
           <td>(</td>
           <td class="paramtype">const QString &amp;&#160;</td>
           <td class="paramname"><em>encryption</em>, </td>
@@ -263,14 +275,14 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const QByteArray &amp;&#160;</td>
-          <td class="paramname"><em>senderKeyId</em>, </td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>keyOwnerJid</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const QList&lt; <a class="el" href="classQXmppTrustMessageKeyOwner.html">QXmppTrustMessageKeyOwner</a> &gt; &amp;&#160;</td>
-          <td class="paramname"><em>keyOwners</em>&#160;</td>
+          <td class="paramtype">TrustLevels&#160;</td>
+          <td class="paramname"><em>trustLevels</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -284,22 +296,21 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Adds keys that cannot be authenticated or distrusted directly because the key of the trust message's sender is not yet authenticated.</p>
-<p>Those keys are being authenticated or distrusted once the sender's key is authenticated. Each element of keyOwners (i.e., keyOwner) can contain keys for postponed authentication as trustedKeys or for postponed distrusting as distrustedKeys.</p>
-<p>If keys of keyOwner.trustedKeys() are already stored for postponed distrusting, they are changed to be used for postponed authentication. If keys of keyOwner.distrustedKeys() are already stored for postponed authentication, they are changed to be used for postponed distrusting. If the same keys are in keyOwner.trustedKeys() and keyOwner.distrustedKeys(), they are used for postponed distrusting.</p>
+<p>Returns whether at least one key of a key owner with a specific trust level is stored.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">encryption</td><td>encryption protocol namespace </td></tr>
-    <tr><td class="paramname">senderKeyId</td><td>key ID of the trust message's sender </td></tr>
-    <tr><td class="paramname">keyOwners</td><td>key owners containing key IDs for postponed trust decisions </td></tr>
+    <tr><td class="paramname">keyOwnerJid</td><td>key owner's bare JID </td></tr>
+    <tr><td class="paramname">trustLevels</td><td>possible trust levels of the key</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>whether a key of the key owner with a passed trust level is stored </dd></dl>
 
 </div>
 </div>
-<a id="a21ee17015a1778372a874134c850659b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a21ee17015a1778372a874134c850659b">&#9670;&nbsp;</a></span>addOwnKey()</h2>
+<a id="a76b656a0d0232685894cfa0acc1dd521"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a76b656a0d0232685894cfa0acc1dd521">&#9670;&nbsp;</a></span>keys() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -308,7 +319,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">QXmppTrustStorage::addOwnKey </td>
+          <td class="memname">QXmppTrustStorage::keys </td>
           <td>(</td>
           <td class="paramtype">const QString &amp;&#160;</td>
           <td class="paramname"><em>encryption</em>, </td>
@@ -316,8 +327,14 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const QByteArray &amp;&#160;</td>
-          <td class="paramname"><em>keyId</em>&#160;</td>
+          <td class="paramtype">const QList&lt; QString &gt; &amp;&#160;</td>
+          <td class="paramname"><em>keyOwnerJids</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">TrustLevels&#160;</td>
+          <td class="paramname"><em>trustLevels</em> = <code>{}</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -331,19 +348,22 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Adds an own key (i.e., the key used by this client instance).</p>
+<p>Returns the IDs of keys mapped to their trust levels for specific key owners.</p>
+<p>If no trust levels are passed, all keys for encryption and keyOwnerJids are returned.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">encryption</td><td>encryption protocol namespace </td></tr>
-    <tr><td class="paramname">keyId</td><td>ID of the key </td></tr>
+    <tr><td class="paramname">keyOwnerJids</td><td>key owners' bare JIDs </td></tr>
+    <tr><td class="paramname">trustLevels</td><td>trust levels of the keys</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>the key IDs mapped to their trust levels for specific key owners </dd></dl>
 
 </div>
 </div>
 <a id="a13a9964637506bc9f381d661892ab10f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a13a9964637506bc9f381d661892ab10f">&#9670;&nbsp;</a></span>keys()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a13a9964637506bc9f381d661892ab10f">&#9670;&nbsp;</a></span>keys() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -375,8 +395,8 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Returns the JIDs of the key owners mapped to the IDs of their keys with a specific trust level.</p>
-<p>If no trust levels are passed, all keys are returned.</p>
+<p>Returns the JIDs of all key owners mapped to the IDs of their keys with specific trust levels.</p>
+<p>If no trust levels are passed, all keys for encryption are returned.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">encryption</td><td>encryption protocol namespace </td></tr>
@@ -384,53 +404,7 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>the key owner JIDs mapped to their keys with a specific trust level </dd></dl>
-
-</div>
-</div>
-<a id="a46c6d1d3ab7b9b8810468e2251c49606"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a46c6d1d3ab7b9b8810468e2251c49606">&#9670;&nbsp;</a></span>keysForPostponedTrustDecisions()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">QXmppTrustStorage::keysForPostponedTrustDecisions </td>
-          <td>(</td>
-          <td class="paramtype">const QString &amp;&#160;</td>
-          <td class="paramname"><em>encryption</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const QList&lt; QByteArray &gt; &amp;&#160;</td>
-          <td class="paramname"><em>senderKeyIds</em> = <code>{}</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Returns the JIDs of key owners mapped to the IDs of their keys stored for postponed authentication (true) or postponed distrusting (false).</p>
-<p>If senderKeyIds is empty, all keys for encryption are returned.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">encryption</td><td>encryption protocol namespace </td></tr>
-    <tr><td class="paramname">senderKeyIds</td><td>key IDs of the trust messages' senders</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>the key owner JIDs mapped to their keys </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>the key owner JIDs mapped to their keys with specific trust levels </dd></dl>
 
 </div>
 </div>
@@ -457,7 +431,7 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Returns an own key (i.e., the key used by this client instance).</p>
+<p>Returns the own key (i.e., the key used by this client instance) for an encryption protocol.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">encryption</td><td>encryption protocol namespace</td></tr>
@@ -468,8 +442,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ac643c93a9f6836cf2ed28ee4e19d3d2c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac643c93a9f6836cf2ed28ee4e19d3d2c">&#9670;&nbsp;</a></span>removeKeys()</h2>
+<a id="a7f8a4022026f58f74fcb21c56a723f1d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7f8a4022026f58f74fcb21c56a723f1d">&#9670;&nbsp;</a></span>removeKeys() <span class="overload">[1/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -481,13 +455,46 @@ Public Member Functions</h2></td></tr>
           <td class="memname">QXmppTrustStorage::removeKeys </td>
           <td>(</td>
           <td class="paramtype">const QString &amp;&#160;</td>
-          <td class="paramname"><em>encryption</em> = <code>{}</code>, </td>
+          <td class="paramname"><em>encryption</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Removes all keys for encryption.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">encryption</td><td>encryption protocol namespace </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a1bb370f43a8bc60018d64fe9a515bcda"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1bb370f43a8bc60018d64fe9a515bcda">&#9670;&nbsp;</a></span>removeKeys() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QXmppTrustStorage::removeKeys </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>encryption</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const QList&lt; QByteArray &gt; &amp;&#160;</td>
-          <td class="paramname"><em>keyIds</em> = <code>{}</code>&#160;</td>
+          <td class="paramname"><em>keyIds</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -502,7 +509,6 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Removes keys.</p>
-<p>If keyIds is not passed, all keys for encryption are removed. If encryption is also not passed, all keys are removed.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">encryption</td><td>encryption protocol namespace </td></tr>
@@ -513,8 +519,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ad17db4c7bc2692aa426531fe08434f9d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad17db4c7bc2692aa426531fe08434f9d">&#9670;&nbsp;</a></span>removeKeysForPostponedTrustDecisions() <span class="overload">[1/2]</span></h2>
+<a id="adcaa80365b8405a35e75e6cd4955ad3e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adcaa80365b8405a35e75e6cd4955ad3e">&#9670;&nbsp;</a></span>removeKeys() <span class="overload">[3/3]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -523,7 +529,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">QXmppTrustStorage::removeKeysForPostponedTrustDecisions </td>
+          <td class="memname">QXmppTrustStorage::removeKeys </td>
           <td>(</td>
           <td class="paramtype">const QString &amp;&#160;</td>
           <td class="paramname"><em>encryption</em>, </td>
@@ -531,59 +537,8 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const QList&lt; QByteArray &gt; &amp;&#160;</td>
-          <td class="paramname"><em>keyIdsForAuthentication</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const QList&lt; QByteArray &gt; &amp;&#160;</td>
-          <td class="paramname"><em>keyIdsForDistrusting</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Removes keys for postponed authentication or distrusting.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">encryption</td><td>encryption protocol namespace </td></tr>
-    <tr><td class="paramname">keyIdsForAuthentication</td><td>IDs of the keys for postponed authentication </td></tr>
-    <tr><td class="paramname">keyIdsForDistrusting</td><td>IDs of the keys for postponed distrusting </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a6bb245cf899662871bbfe7fa1350bf2e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6bb245cf899662871bbfe7fa1350bf2e">&#9670;&nbsp;</a></span>removeKeysForPostponedTrustDecisions() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">QXmppTrustStorage::removeKeysForPostponedTrustDecisions </td>
-          <td>(</td>
           <td class="paramtype">const QString &amp;&#160;</td>
-          <td class="paramname"><em>encryption</em> = <code>{}</code>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const QList&lt; QByteArray &gt; &amp;&#160;</td>
-          <td class="paramname"><em>senderKeyIds</em> = <code>{}</code>&#160;</td>
+          <td class="paramname"><em>keyOwnerJid</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -597,20 +552,19 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Removes keys for postponed authentication or distrusting by the trust message's sender's key ID.</p>
-<p>If senderKeyIds is empty, all keys for encryption are removed. If encryption is empty too, all keys are removed.</p>
+<p>Removes all keys of a key owner.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">encryption</td><td>encryption protocol namespace </td></tr>
-    <tr><td class="paramname">senderKeyIds</td><td>key IDs of the trust messages' senders </td></tr>
+    <tr><td class="paramname">keyOwnerJid</td><td>key owner's bare JID </td></tr>
   </table>
   </dd>
 </dl>
 
 </div>
 </div>
-<a id="a00cedbc015220a01764a903d743c9e5d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a00cedbc015220a01764a903d743c9e5d">&#9670;&nbsp;</a></span>removeOwnKey()</h2>
+<a id="a163f5a53086a02373a49d0589ee8ddad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a163f5a53086a02373a49d0589ee8ddad">&#9670;&nbsp;</a></span>resetAll()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -619,7 +573,7 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">QXmppTrustStorage::removeOwnKey </td>
+          <td class="memname">QXmppTrustStorage::resetAll </td>
           <td>(</td>
           <td class="paramtype">const QString &amp;&#160;</td>
           <td class="paramname"><em>encryption</em></td><td>)</td>
@@ -632,7 +586,73 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Removes an own key (i.e., the key used by this client instance).</p>
+<p>Resets all data for encryption.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">encryption</td><td>encryption protocol namespace </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af943c52af3119baa4f36605e16fa99ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af943c52af3119baa4f36605e16fa99ba">&#9670;&nbsp;</a></span>resetOwnKey()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QXmppTrustStorage::resetOwnKey </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>encryption</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Resets the own key (i.e., the key used by this client instance) for an encryption protocol.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">encryption</td><td>encryption protocol namespace </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a1f9e320dee19b97394492617c9392621"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1f9e320dee19b97394492617c9392621">&#9670;&nbsp;</a></span>resetSecurityPolicy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QXmppTrustStorage::resetSecurityPolicy </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>encryption</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Resets the security policy for an encryption protocol.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">encryption</td><td>encryption protocol namespace </td></tr>
@@ -676,8 +696,8 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ada7f6dd5c0c14a6f89829513ba9ee0eb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ada7f6dd5c0c14a6f89829513ba9ee0eb">&#9670;&nbsp;</a></span>setSecurityPolicies()</h2>
+<a id="aa9d4c46ca31e7fa4b3524b2f22fac0d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9d4c46ca31e7fa4b3524b2f22fac0d8">&#9670;&nbsp;</a></span>setOwnKey()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -686,16 +706,16 @@ Public Member Functions</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">QXmppTrustStorage::setSecurityPolicies </td>
+          <td class="memname">QXmppTrustStorage::setOwnKey </td>
           <td>(</td>
           <td class="paramtype">const QString &amp;&#160;</td>
-          <td class="paramname"><em>encryption</em> = <code>{}</code>, </td>
+          <td class="paramname"><em>encryption</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype"><a class="el" href="classQXmppTrustStorage.html#af1e9d660dfdb87cd51dc2da180994028">SecurityPolicy</a>&#160;</td>
-          <td class="paramname"><em>securityPolicy</em> = <code>SecurityPolicy::NoSecurityPolicy</code>&#160;</td>
+          <td class="paramtype">const QByteArray &amp;&#160;</td>
+          <td class="paramname"><em>keyId</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -709,8 +729,51 @@ Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Sets the security policy for an encryption protocol or resets the set security policies.</p>
-<p>If securityPolicy is not passed, the set security policy for encryption is reset. If also encryption is not passed, all set security policies are reset.</p>
+<p>Sets the own key (i.e., the key used by this client instance) for an encryption protocol.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">encryption</td><td>encryption protocol namespace </td></tr>
+    <tr><td class="paramname">keyId</td><td>ID of the key </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a89642f761e52e0288a276d5fc6603390"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a89642f761e52e0288a276d5fc6603390">&#9670;&nbsp;</a></span>setSecurityPolicy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QXmppTrustStorage::setSecurityPolicy </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>encryption</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classQXmppTrustStorage.html#af1e9d660dfdb87cd51dc2da180994028">SecurityPolicy</a>&#160;</td>
+          <td class="paramname"><em>securityPolicy</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Sets the security policy for an encryption protocol.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">encryption</td><td>encryption protocol namespace </td></tr>
@@ -865,7 +928,7 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Returns the trust level of a key.</p>
-<p>If the key is not stored, it is seen as automatically distrusted.</p>
+<p>If the key is not stored, the trust in that key is undecided.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">encryption</td><td>encryption protocol namespace </td></tr>
