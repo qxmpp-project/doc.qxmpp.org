@@ -1065,8 +1065,8 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 <p>Sends a packet and reports the result via QFuture.</p>
-<p>If stream management is enabled the future continues to be active until the server acknowledges the packet. On success <a class="el" href="structQXmpp_1_1SendSuccess.html">QXmpp::SendSuccess</a> with acknowledged == true is reported and the future finishes.</p>
-<p>If connection errors occur the packet is resent if possible. If reconnecting is not possible, an error is reported.</p>
+<p>If stream management is enabled, the future continues to be active until the server acknowledges the packet. On success, <a class="el" href="structQXmpp_1_1SendSuccess.html">QXmpp::SendSuccess</a> with acknowledged == true is reported and the future finishes.</p>
+<p>If connection errors occur, the packet is resent if possible. If reconnecting is not possible, an error is reported.</p>
 <dl class="section warning"><dt>Warning</dt><dd>THIS API IS NOT FINALIZED YET!</dd></dl>
 <dl class="section return"><dt>Returns</dt><dd>A QFuture that makes it possible to track the state of the packet. You can use QFutureWatcher in Qt 5 and QFuture::then() in Qt 6 to handle the results.</dd></dl>
 <dl class="section since"><dt>Since</dt><dd><a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.5 </dd></dl>
