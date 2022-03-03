@@ -1,3 +1,6 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classQXmppUploadService.html" title="QXmppUploadService represents an HTTP File Upload service." alt="" coords="5,5,169,32"/>
+<area shape="rect" id="node1" href="$classQXmppTrustStorage.html" title="The QXmppTrustStorage class stores trust data for end&#45;to&#45;end encryption." alt="" coords="5,31,156,57"/>
+<area shape="rect" id="node2" href="$classQXmppAtmTrustStorage.html" title="The QXmppAtmTrustStorage class stores trust data for XEP&#45;0450: Automatic Trust Management (ATM)." alt="" coords="217,5,396,32"/>
+<area shape="rect" id="node4" href="$classQXmppTrustMemoryStorage.html" title="The QXmppTrustMemoryStorage class stores trust data for end&#45;to&#45;end encryption in the memory." alt="" coords="204,56,409,83"/>
+<area shape="rect" id="node3" href="$classQXmppAtmTrustMemoryStorage.html" title="The QXmppAtmTrustMemoryStorage class stores trust data for XEP&#45;0450: Automatic Trust Management (ATM)..." alt="" coords="457,31,689,57"/>
 </map>

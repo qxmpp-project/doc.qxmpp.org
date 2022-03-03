@@ -68,6 +68,9 @@ $(function() {
 <li>saslAuthMechanism()
 : <a class="el" href="classQXmppConfiguration.html#a215633389b9dfd11b6523cbfc0a566ee">QXmppConfiguration</a>
 </li>
+<li>sceTimestamp()
+: <a class="el" href="classQXmppE2eeMetadata.html#a5380bfa94c9a6802c36951b2c666346d">QXmppE2eeMetadata</a>
+</li>
 <li>searchEnvelope()
 : <a class="el" href="classQXmppOmemoElement.html#a81d332a5f9930106e556c20f2ae99c6b">QXmppOmemoElement</a>
 </li>
@@ -97,10 +100,10 @@ $(function() {
 : <a class="el" href="classQXmppOmemoElement.html#a649422f599ccb351ce836463cd9c1d70">QXmppOmemoElement</a>
 </li>
 <li>senderKey()
-: <a class="el" href="classQXmppMessage.html#a7363c422774bd470a93fb8e2d4e8b585">QXmppMessage</a>
+: <a class="el" href="classQXmppE2eeMetadata.html#acf977becf834f50f774d83e135ac0e0b">QXmppE2eeMetadata</a>
 </li>
 <li>sendFile()
-: <a class="el" href="classQXmppTransferManager.html#a34228d973a450f716ad8216ce6347f67">QXmppTransferManager</a>
+: <a class="el" href="classQXmppTransferManager.html#a9e08182cdd6f2df3c2d3c19bb9660d24">QXmppTransferManager</a>
 </li>
 <li>sendGenericIq()
 : <a class="el" href="classQXmppClient.html#a4a7dc4e8ec8ee5bd8777e85ce7a9e315">QXmppClient</a>
@@ -434,6 +437,9 @@ $(function() {
 : <a class="el" href="classQXmppConfiguration.html#a716050cec0aa3fc11e6f4fbfb1e6d4a1">QXmppConfiguration</a>
 , <a class="el" href="classQXmppPasswordRequest.html#a576c39a66597ea614abbb1639b2f6c73">QXmppPasswordRequest</a>
 , <a class="el" href="classQXmppServer.html#aa0eeb8f1680923e70492596cb4f7e02a">QXmppServer</a>
+</li>
+<li>setE2eeMetadata()
+: <a class="el" href="classQXmppStanza.html#a6436763de82786852eab88364ea1716c">QXmppStanza</a>
 </li>
 <li>setEmail()
 : <a class="el" href="classQXmppRegisterIq.html#ac8090c4a546b8f352441f0e1dec5da3a">QXmppRegisterIq</a>
@@ -1034,6 +1040,9 @@ $(function() {
 <li>setSaslAuthMechanism()
 : <a class="el" href="classQXmppConfiguration.html#a3aec3c957fcb1f4f169499c31dc899d2">QXmppConfiguration</a>
 </li>
+<li>setSceTimestamp()
+: <a class="el" href="classQXmppE2eeMetadata.html#a0cf15905c44acc917cbfcd2527ba6d75">QXmppE2eeMetadata</a>
+</li>
 <li>setSecurityPolicy()
 : <a class="el" href="classQXmppTrustStorage.html#a89642f761e52e0288a276d5fc6603390">QXmppTrustStorage</a>
 </li>
@@ -1041,7 +1050,7 @@ $(function() {
 : <a class="el" href="classQXmppOmemoElement.html#a29c7d7821339fecc370e328776afbafc">QXmppOmemoElement</a>
 </li>
 <li>setSenderKey()
-: <a class="el" href="classQXmppMessage.html#a2f07b90fa58ca35742d7a588c11cca9b">QXmppMessage</a>
+: <a class="el" href="classQXmppE2eeMetadata.html#a3ccbf2adc2a6db29785f53ce6899e708">QXmppE2eeMetadata</a>
 </li>
 <li>setSessionMode()
 : <a class="el" href="classQXmppStreamFeatures.html#a11434bfeeb759953c06c425ff47e5139">QXmppStreamFeatures</a>
@@ -1188,7 +1197,7 @@ $(function() {
 : <a class="el" href="classQXmppTrustMessageKeyOwner.html#a1986071ddd00cc6c20ac03bbb6d0ad06">QXmppTrustMessageKeyOwner</a>
 </li>
 <li>setTrustLevel()
-: <a class="el" href="classQXmppTrustStorage.html#ae90a2722e04a6048a1b2c74b9323991e">QXmppTrustStorage</a>
+: <a class="el" href="classQXmppTrustStorage.html#a1c4aa869b59213af3d8d19ad71ba3bb6">QXmppTrustStorage</a>
 </li>
 <li>setTrustMessageElement()
 : <a class="el" href="classQXmppMessage.html#ae454b14a553d3d8d1a26ab5e628540e0">QXmppMessage</a>
@@ -1325,7 +1334,7 @@ $(function() {
 : <a class="el" href="classQXmppUploadService.html#ae2f76052a962e1635c40f3351bc1c783">QXmppUploadService</a>
 </li>
 <li>slashMeCommandText()
-: <a class="el" href="classQXmppMessage.html#ab78ed304645ad55d93f400b101f8e269">QXmppMessage</a>
+: <a class="el" href="classQXmppMessage.html#a3ea847511df051b442b156c9eaecf16b">QXmppMessage</a>
 </li>
 <li>slotReceived()
 : <a class="el" href="classQXmppUploadRequestManager.html#ab0ab1f62fb78309610e80a628878fed9">QXmppUploadRequestManager</a>
@@ -1390,24 +1399,23 @@ $(function() {
 <li>StartTls
 : <a class="el" href="classQXmppStartTlsPacket.html#adeb1fedba9c3d0dc109201fa4fa7cb59ace4f9c7a9b4ea2edc81f3e20eeca8408">QXmppStartTlsPacket</a>
 </li>
-<li>state
-: <a class="el" href="classQXmppCall.html#aa09971e040121ffef56577a537be35a1">QXmppCall</a>
-</li>
 <li>State
 : <a class="el" href="classQXmppCall.html#a90205b5034613127d2c4adc6a0252759">QXmppCall</a>
 </li>
 <li>state
-: <a class="el" href="classQXmppClient.html#ac4cbb2e04e5ca683fadbc79ef173f0a5">QXmppClient</a>
+: <a class="el" href="classQXmppCall.html#aa09971e040121ffef56577a537be35a1">QXmppCall</a>
+, <a class="el" href="classQXmppClient.html#ab57b4c97913d14fae3fafc78791c404c">QXmppClient</a>
 </li>
 <li>State
 : <a class="el" href="classQXmppClient.html#a5f4e70d508c08967f72fd41c5343ad2e">QXmppClient</a>
-, <a class="el" href="classQXmppMessage.html#aeaa3cc5ccb7d451067a80dd1f3c7099a">QXmppMessage</a>
 </li>
-<li>state()
-: <a class="el" href="classQXmppMessage.html#ac4180cdc43bfb13097543c2b51ee4114">QXmppMessage</a>
+<li>state
+: <a class="el" href="classQXmppClient.html#ac4cbb2e04e5ca683fadbc79ef173f0a5">QXmppClient</a>
+, <a class="el" href="classQXmppMessage.html#ac4180cdc43bfb13097543c2b51ee4114">QXmppMessage</a>
 </li>
 <li>State
-: <a class="el" href="classQXmppPubSubSubscription.html#aad82576dfb8c85c7b658958c65727cf9">QXmppPubSubSubscription</a>
+: <a class="el" href="classQXmppMessage.html#aeaa3cc5ccb7d451067a80dd1f3c7099a">QXmppMessage</a>
+, <a class="el" href="classQXmppPubSubSubscription.html#aad82576dfb8c85c7b658958c65727cf9">QXmppPubSubSubscription</a>
 </li>
 <li>state()
 : <a class="el" href="classQXmppPubSubSubscription.html#a5e5a6da964be5d7d4403d991de2274a4">QXmppPubSubSubscription</a>
@@ -1457,11 +1465,11 @@ $(function() {
 <li>streamManagementMode()
 : <a class="el" href="classQXmppStreamFeatures.html#a394aad0975d2e8647184d95814dcde39">QXmppStreamFeatures</a>
 </li>
-<li>StreamManagementState
-: <a class="el" href="classQXmppClient.html#aab5506ec0769f208e1ccd5d23c6aaea8">QXmppClient</a>
-</li>
 <li>streamManagementState()
 : <a class="el" href="classQXmppClient.html#a65b66e4c1e2259a256bd6bd57d61bd57">QXmppClient</a>
+</li>
+<li>StreamManagementState
+: <a class="el" href="classQXmppClient.html#aab5506ec0769f208e1ccd5d23c6aaea8">QXmppClient</a>
 </li>
 <li>streamSecurityMode()
 : <a class="el" href="classQXmppConfiguration.html#a3131853d2ee65c8eabc0cbdc7f7ad93b">QXmppConfiguration</a>
@@ -1481,7 +1489,7 @@ $(function() {
 <li>subject()
 : <a class="el" href="classQXmppArchiveChat.html#a24573d02a735db099a9aeb06dfd942ba">QXmppArchiveChat</a>
 , <a class="el" href="classQXmppMessage.html#a121ee2cf5f5a7590dd14d4b141040f13">QXmppMessage</a>
-, <a class="el" href="classQXmppMucRoom.html#a7f95cf9bbd6fa253ca68312bd97f93dd">QXmppMucRoom</a>
+, <a class="el" href="classQXmppMucRoom.html#ab7317ae2690851f5ce995b9069c7b0c9">QXmppMucRoom</a>
 </li>
 <li>SubjectAction
 : <a class="el" href="classQXmppMucRoom.html#acd3129293f69d7e7cdd91b65aae0606fa1b691dc1004e867aa844ba380bb383ad">QXmppMucRoom</a>
@@ -1533,14 +1541,14 @@ $(function() {
 <li>subscriptionStatus()
 : <a class="el" href="classQXmppRosterIq_1_1Item.html#aeddd7822c960b65bda9aafa62411f4ad">QXmppRosterIq::Item</a>
 </li>
-<li>subscriptionType()
-: <a class="el" href="classQXmppRosterIq_1_1Item.html#a03fdb953f1e12d90d94a80fe965df09d">QXmppRosterIq::Item</a>
-</li>
 <li>SubscriptionType
 : <a class="el" href="classQXmppRosterIq_1_1Item.html#a0133cf9262cec7e299c4db7c247c5514">QXmppRosterIq::Item</a>
 </li>
-<li>supportedByServer()
-: <a class="el" href="classQXmppRegistrationManager.html#a3141d15fa0225d1cf58676c933e07552">QXmppRegistrationManager</a>
+<li>subscriptionType()
+: <a class="el" href="classQXmppRosterIq_1_1Item.html#a03fdb953f1e12d90d94a80fe965df09d">QXmppRosterIq::Item</a>
+</li>
+<li>supportedByServer
+: <a class="el" href="classQXmppRegistrationManager.html#a10dda950fc89d5d0758f8f7975b458ac">QXmppRegistrationManager</a>
 </li>
 <li>supportedByServerChanged()
 : <a class="el" href="classQXmppRegistrationManager.html#ac9ebcce15041a231376a6af290f81c0b">QXmppRegistrationManager</a>
