@@ -75,8 +75,10 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:ad7ce3771667a266943d1917322261e95"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppUserTuneManager.html#ad7ce3771667a266943d1917322261e95">TuneResult</a> = std::variant&lt; <a class="el" href="classQXmppTuneItem.html">QXmppTuneItem</a>, <a class="el" href="classQXmppStanza_1_1Error.html">QXmppStanza::Error</a> &gt;</td></tr>
-<tr class="separator:ad7ce3771667a266943d1917322261e95"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae70eb13ff61f2bd83d72c74a46ec5779"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppUserTuneManager.html#ae70eb13ff61f2bd83d72c74a46ec5779">Item</a> = <a class="el" href="classQXmppTuneItem.html">QXmppTuneItem</a></td></tr>
+<tr class="separator:ae70eb13ff61f2bd83d72c74a46ec5779"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe0be351ec6632337af31dd411dc30db"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppUserTuneManager.html#afe0be351ec6632337af31dd411dc30db">GetResult</a> = std::variant&lt; <a class="el" href="classQXmppUserTuneManager.html#ae70eb13ff61f2bd83d72c74a46ec5779">Item</a>, <a class="el" href="classQXmppStanza_1_1Error.html">QXmppStanza::Error</a> &gt;</td></tr>
+<tr class="separator:afe0be351ec6632337af31dd411dc30db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5b84d48f32c4b101511eb31e9b3ee5fb"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppUserTuneManager.html#a5b84d48f32c4b101511eb31e9b3ee5fb">PublishResult</a> = std::variant&lt; QString, <a class="el" href="classQXmppStanza_1_1Error.html">QXmppStanza::Error</a> &gt;</td></tr>
 <tr class="separator:a5b84d48f32c4b101511eb31e9b3ee5fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -84,20 +86,50 @@ Public Types</h2></td></tr>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ad26b118b813c803377759753802fcd0c"><td class="memItemLeft" align="right" valign="top">QStringList&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppUserTuneManager.html#ad26b118b813c803377759753802fcd0c">discoveryFeatures</a> () const override</td></tr>
 <tr class="separator:ad26b118b813c803377759753802fcd0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afeb49667b1372a8ea4ccb1d08de42d96"><td class="memItemLeft" align="right" valign="top">QFuture&lt; <a class="el" href="classQXmppUserTuneManager.html#ad7ce3771667a266943d1917322261e95">TuneResult</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppUserTuneManager.html#afeb49667b1372a8ea4ccb1d08de42d96">request</a> (const QString &amp;jid)</td></tr>
-<tr class="separator:afeb49667b1372a8ea4ccb1d08de42d96"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9fc5424cd988dcc4e732d3e422d4c90e"><td class="memItemLeft" align="right" valign="top">QFuture&lt; <a class="el" href="classQXmppUserTuneManager.html#a5b84d48f32c4b101511eb31e9b3ee5fb">PublishResult</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppUserTuneManager.html#a9fc5424cd988dcc4e732d3e422d4c90e">publish</a> (const <a class="el" href="classQXmppTuneItem.html">QXmppTuneItem</a> &amp;)</td></tr>
-<tr class="separator:a9fc5424cd988dcc4e732d3e422d4c90e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a90224797c543f5dc59ac8ef0bf6faa1d"><td class="memItemLeft" align="right" valign="top">Q_SIGNAL void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppUserTuneManager.html#a90224797c543f5dc59ac8ef0bf6faa1d">userTuneChanged</a> (const QString &amp;jid, const <a class="el" href="classQXmppTuneItem.html">QXmppTuneItem</a> &amp;)</td></tr>
-<tr class="separator:a90224797c543f5dc59ac8ef0bf6faa1d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33610ba73ab8986fb744a7dabea8dab4"><td class="memItemLeft" align="right" valign="top">QFuture&lt; <a class="el" href="classQXmppUserTuneManager.html#afe0be351ec6632337af31dd411dc30db">GetResult</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppUserTuneManager.html#a33610ba73ab8986fb744a7dabea8dab4">request</a> (const QString &amp;jid)</td></tr>
+<tr class="separator:a33610ba73ab8986fb744a7dabea8dab4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33e2e34392c35805b17e9f59d0abf383"><td class="memItemLeft" align="right" valign="top">QFuture&lt; <a class="el" href="classQXmppUserTuneManager.html#a5b84d48f32c4b101511eb31e9b3ee5fb">PublishResult</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppUserTuneManager.html#a33e2e34392c35805b17e9f59d0abf383">publish</a> (const <a class="el" href="classQXmppTuneItem.html">QXmppTuneItem</a> &amp;)</td></tr>
+<tr class="separator:a33e2e34392c35805b17e9f59d0abf383"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adff36b26290203bbe0bec78d4603875d"><td class="memItemLeft" align="right" valign="top">Q_SIGNAL void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppUserTuneManager.html#adff36b26290203bbe0bec78d4603875d">itemReceived</a> (const QString &amp;jid, const <a class="el" href="classQXmppTuneItem.html">QXmppTuneItem</a> &amp;item)</td></tr>
+<tr class="separator:adff36b26290203bbe0bec78d4603875d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The <a class="el" href="classQXmppUserTuneManager.html">QXmppUserTuneManager</a> implements <a href="https://xmpp.org/extensions/xep-0118.html">XEP-0118: User Tune</a>. You'll receive tune updates from all presence subscriptions. You can publish tune information on the user's account (<a class="el" href="classQXmppUserTuneManager.html#a9fc5424cd988dcc4e732d3e422d4c90e">publish()</a>) and request tune information from specific accounts (<a class="el" href="classQXmppUserTuneManager.html#afeb49667b1372a8ea4ccb1d08de42d96">request()</a>).</p>
+<div class="textblock"><p>The <a class="el" href="classQXmppUserTuneManager.html">QXmppUserTuneManager</a> implements <a href="https://xmpp.org/extensions/xep-0118.html">XEP-0118: User Tune</a>. You'll receive tune updates from all presence subscriptions. You can publish tune information on the user's account (<a class="el" href="classQXmppUserTuneManager.html#a33e2e34392c35805b17e9f59d0abf383">publish()</a>) and request tune information from specific accounts (<a class="el" href="classQXmppUserTuneManager.html#a33610ba73ab8986fb744a7dabea8dab4">request()</a>).</p>
 <p>The manager needs to be added to the client first and also requires the <a class="el" href="classQXmppPubSubManager.html" title="The QXmppPubSubManager aims to provide publish-subscribe functionality as specified in XEP-0060: Publ...">QXmppPubSubManager</a>. </p><div class="fragment"><div class="line"><a class="code" href="classQXmppClient.html">QXmppClient</a> <a class="code" href="classQXmppClientExtension.html#a2476cb1a20963d15d45d39f24a0c1198">client</a>;</div>
 <div class="line"><span class="keyword">auto</span> *pubSubManager = <a class="code" href="classQXmppClientExtension.html#a2476cb1a20963d15d45d39f24a0c1198">client</a>.<a class="code" href="classQXmppClient.html#ab6df7c877500e1548ffb351c46ae48e4">addNewExtension</a>&lt;<a class="code" href="classQXmppPubSubManager.html">QXmppPubSubManager</a>&gt;();</div>
 <div class="line"><span class="keyword">auto</span> *tuneManager = <a class="code" href="classQXmppClientExtension.html#a2476cb1a20963d15d45d39f24a0c1198">client</a>.<a class="code" href="classQXmppClient.html#ab6df7c877500e1548ffb351c46ae48e4">addNewExtension</a>&lt;<a class="code" href="classQXmppUserTuneManager.html">QXmppUserTuneManager</a>&gt;();</div>
 </div><!-- fragment --><dl class="section since"><dt>Since</dt><dd><a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.5 </dd></dl>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="afe0be351ec6632337af31dd411dc30db"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe0be351ec6632337af31dd411dc30db">&#9670;&nbsp;</a></span>GetResult</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classQXmppUserTuneManager.html#afe0be351ec6632337af31dd411dc30db">QXmppUserTuneManager::GetResult</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Contains the User Tune information or an error. </p>
+
+</div>
+</div>
+<a id="ae70eb13ff61f2bd83d72c74a46ec5779"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae70eb13ff61f2bd83d72c74a46ec5779">&#9670;&nbsp;</a></span>Item</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classQXmppUserTuneManager.html#ae70eb13ff61f2bd83d72c74a46ec5779">QXmppUserTuneManager::Item</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Used pubsub item type. </p>
+
+</div>
+</div>
 <a id="a5b84d48f32c4b101511eb31e9b3ee5fb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5b84d48f32c4b101511eb31e9b3ee5fb">&#9670;&nbsp;</a></span>PublishResult</h2>
 
@@ -110,21 +142,6 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Contains the ID of the published item on success or a stanza error. </p>
-
-</div>
-</div>
-<a id="ad7ce3771667a266943d1917322261e95"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad7ce3771667a266943d1917322261e95">&#9670;&nbsp;</a></span>TuneResult</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classQXmppUserTuneManager.html#ad7ce3771667a266943d1917322261e95">QXmppUserTuneManager::TuneResult</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Contains the User Tune information or an error. </p>
 
 </div>
 </div>
@@ -157,14 +174,43 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a9fc5424cd988dcc4e732d3e422d4c90e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9fc5424cd988dcc4e732d3e422d4c90e">&#9670;&nbsp;</a></span>publish()</h2>
+<a id="adff36b26290203bbe0bec78d4603875d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adff36b26290203bbe0bec78d4603875d">&#9670;&nbsp;</a></span>itemReceived()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">QFuture&lt; <a class="el" href="classQXmppUserTuneManager.html#a5b84d48f32c4b101511eb31e9b3ee5fb">QXmppUserTuneManager::PublishResult</a> &gt; QXmppUserTuneManager::publish </td>
+          <td class="memname">QXmppUserTuneManager::itemReceived </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>jid</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classQXmppTuneItem.html">QXmppTuneItem</a> &amp;&#160;</td>
+          <td class="paramname"><em>item</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Emitted whenever a <a href="https://xmpp.org/extensions/xep-0118.html">XEP-0118: User Tune</a> items event arrives. </p>
+
+</div>
+</div>
+<a id="a33e2e34392c35805b17e9f59d0abf383"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33e2e34392c35805b17e9f59d0abf383">&#9670;&nbsp;</a></span>publish()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">auto QXmppUserTuneManager::publish </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="classQXmppTuneItem.html">QXmppTuneItem</a> &amp;&#160;</td>
           <td class="paramname"><em>item</em></td><td>)</td>
@@ -182,14 +228,14 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="afeb49667b1372a8ea4ccb1d08de42d96"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#afeb49667b1372a8ea4ccb1d08de42d96">&#9670;&nbsp;</a></span>request()</h2>
+<a id="a33610ba73ab8986fb744a7dabea8dab4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33610ba73ab8986fb744a7dabea8dab4">&#9670;&nbsp;</a></span>request()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">QFuture&lt; <a class="el" href="classQXmppUserTuneManager.html#ad7ce3771667a266943d1917322261e95">QXmppUserTuneManager::TuneResult</a> &gt; QXmppUserTuneManager::request </td>
+          <td class="memname">auto QXmppUserTuneManager::request </td>
           <td>(</td>
           <td class="paramtype">const QString &amp;&#160;</td>
           <td class="paramname"><em>jid</em></td><td>)</td>
@@ -204,35 +250,6 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<a id="a90224797c543f5dc59ac8ef0bf6faa1d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a90224797c543f5dc59ac8ef0bf6faa1d">&#9670;&nbsp;</a></span>userTuneChanged()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">QXmppUserTuneManager::userTuneChanged </td>
-          <td>(</td>
-          <td class="paramtype">const QString &amp;&#160;</td>
-          <td class="paramname"><em>jid</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const <a class="el" href="classQXmppTuneItem.html">QXmppTuneItem</a> &amp;&#160;</td>
-          <td class="paramname">&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Emitted whenever an <a href="https://xmpp.org/extensions/xep-0118.html">XEP-0118: User Tune</a> items event arrives. </p>
 
 </div>
 </div>

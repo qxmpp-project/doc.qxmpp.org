@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['action_2648',['Action',['../classQXmppJingleIq.html#accfb8d2dec7f9ee9a8de7bff4f1de1ec',1,'QXmppJingleIq::Action()'],['../classQXmppMucRoom.html#acd3129293f69d7e7cdd91b65aae0606f',1,'QXmppMucRoom::Action()']]],
-  ['affiliation_2649',['Affiliation',['../classQXmppMucItem.html#a3a0d58827ab4d535326fc6d3dbcbd417',1,'QXmppMucItem::Affiliation()'],['../classQXmppPubSubAffiliation.html#a87cbd228a4d3c451f4e21e260d46d842',1,'QXmppPubSubAffiliation::Affiliation()']]],
-  ['availablestatustype_2650',['AvailableStatusType',['../classQXmppPresence.html#ad56af0f57b732c09b080b9347c4dba94',1,'QXmppPresence']]]
+  ['action_2649',['Action',['../classQXmppJingleIq.html#accfb8d2dec7f9ee9a8de7bff4f1de1ec',1,'QXmppJingleIq::Action()'],['../classQXmppMucRoom.html#acd3129293f69d7e7cdd91b65aae0606f',1,'QXmppMucRoom::Action()']]],
+  ['affiliation_2650',['Affiliation',['../classQXmppMucItem.html#a3a0d58827ab4d535326fc6d3dbcbd417',1,'QXmppMucItem::Affiliation()'],['../classQXmppPubSubAffiliation.html#a87cbd228a4d3c451f4e21e260d46d842',1,'QXmppPubSubAffiliation::Affiliation()']]],
+  ['availablestatustype_2651',['AvailableStatusType',['../classQXmppPresence.html#ad56af0f57b732c09b080b9347c4dba94',1,'QXmppPresence']]]
 ];

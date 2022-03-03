@@ -1,4 +1,6 @@
 var searchData=
 [
-  ['result_2643',['Result',['../classQXmppPubSubManager.html#a9a8741a70d0839185e8e52072ea0ed53',1,'QXmppPubSubManager::Result()'],['../classQXmppRosterManager.html#a8340805e06ab6590b52327d2de2676d7',1,'QXmppRosterManager::Result()']]]
+  ['publishitemresult_2642',['PublishItemResult',['../classQXmppPubSubManager.html#a6a8b36519c98dae461f02751459c59db',1,'QXmppPubSubManager']]],
+  ['publishitemsresult_2643',['PublishItemsResult',['../classQXmppPubSubManager.html#a820d4c0fe31ca1e5df31fe7cff2fdcc8',1,'QXmppPubSubManager']]],
+  ['publishresult_2644',['PublishResult',['../classQXmppUserTuneManager.html#a5b84d48f32c4b101511eb31e9b3ee5fb',1,'QXmppUserTuneManager']]]
 ];

@@ -76,8 +76,9 @@ var searchData=
   ['item_1811',['Item',['../classQXmppDiscoveryIq_1_1Item.html#a0ed688c7aa15926fd994f50ecf503696',1,'QXmppDiscoveryIq::Item::Item()'],['../classQXmppRosterIq_1_1Item.html#a42077d1368696f98eb2e68abeac4ca37',1,'QXmppRosterIq::Item::Item()'],['../classQXmppRosterIq_1_1Item.html#ae8fe07b8c80d205a502ddf1245456540',1,'QXmppRosterIq::Item::Item(const Item &amp;other)']]],
   ['itemadded_1812',['itemAdded',['../classQXmppRosterManager.html#aa02bc7a630e38d0c3c1830b34381cdb0',1,'QXmppRosterManager']]],
   ['itemchanged_1813',['itemChanged',['../classQXmppRosterManager.html#a946fa5a6386ce44b898b70bdc0eca159',1,'QXmppRosterManager']]],
-  ['itemremoved_1814',['itemRemoved',['../classQXmppRosterManager.html#a676caab8bdf1feb4753c0285744e77c7',1,'QXmppRosterManager']]],
-  ['items_1815',['items',['../classQXmppDiscoveryIq.html#aab93b27e67ed55dfd574c6e848e5ecb2',1,'QXmppDiscoveryIq::items()'],['../classQXmppMucAdminIq.html#ade422ce0313459248657f721f3b9ef82',1,'QXmppMucAdminIq::items()'],['../classQXmppPubSubEvent.html#aabe07227e2f0ceed9cb1bae5ae3961ac',1,'QXmppPubSubEvent::items()'],['../classQXmppPubSubIq.html#a85a7e42138c66d5cf0fae1958d6840ac',1,'QXmppPubSubIq::items()'],['../classQXmppRosterIq.html#a56e73f9b42360a9681dffdb5bdcae166',1,'QXmppRosterIq::items()']]],
-  ['itemscontinuation_1816',['itemsContinuation',['../classQXmppPubSubIqBase.html#a4c4925413dcf81e9e7d6098600a0f6d4',1,'QXmppPubSubIqBase']]],
-  ['itemsreceived_1817',['itemsReceived',['../classQXmppDiscoveryManager.html#ad8f5b15247f0683caa6056e6006be2ae',1,'QXmppDiscoveryManager']]]
+  ['itemreceived_1814',['itemReceived',['../classQXmppUserTuneManager.html#adff36b26290203bbe0bec78d4603875d',1,'QXmppUserTuneManager']]],
+  ['itemremoved_1815',['itemRemoved',['../classQXmppRosterManager.html#a676caab8bdf1feb4753c0285744e77c7',1,'QXmppRosterManager']]],
+  ['items_1816',['items',['../classQXmppDiscoveryIq.html#aab93b27e67ed55dfd574c6e848e5ecb2',1,'QXmppDiscoveryIq::items()'],['../classQXmppMucAdminIq.html#ade422ce0313459248657f721f3b9ef82',1,'QXmppMucAdminIq::items()'],['../classQXmppPubSubEvent.html#aabe07227e2f0ceed9cb1bae5ae3961ac',1,'QXmppPubSubEvent::items()'],['../classQXmppPubSubIq.html#a85a7e42138c66d5cf0fae1958d6840ac',1,'QXmppPubSubIq::items()'],['../classQXmppRosterIq.html#a56e73f9b42360a9681dffdb5bdcae166',1,'QXmppRosterIq::items()']]],
+  ['itemscontinuation_1817',['itemsContinuation',['../classQXmppPubSubIqBase.html#a4c4925413dcf81e9e7d6098600a0f6d4',1,'QXmppPubSubIqBase']]],
+  ['itemsreceived_1818',['itemsReceived',['../classQXmppDiscoveryManager.html#ad8f5b15247f0683caa6056e6006be2ae',1,'QXmppDiscoveryManager']]]
 ];

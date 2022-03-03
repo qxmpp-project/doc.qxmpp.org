@@ -17,10 +17,11 @@ var searchData=
   ['getpassword_258',['getPassword',['../classQXmppPasswordChecker.html#a3ff9ec7d336a6702435badbfdd3c19b2',1,'QXmppPasswordChecker']]],
   ['getpresence_259',['getPresence',['../classQXmppRosterManager.html#a6cad7139b4825245e8d02e101e90e2d4',1,'QXmppRosterManager']]],
   ['getresources_260',['getResources',['../classQXmppRosterManager.html#ab81c8a97796f7fc757aad98b4559f881',1,'QXmppRosterManager']]],
-  ['getrosterbarejids_261',['getRosterBareJids',['../classQXmppRosterManager.html#a92b00f01745d0ed945a4a0873d09e7e0',1,'QXmppRosterManager']]],
-  ['getrosterentry_262',['getRosterEntry',['../classQXmppRosterManager.html#a4efc7ffc56879b679232b761a664ca8d',1,'QXmppRosterManager']]],
-  ['geturl_263',['getUrl',['../classQXmppHttpUploadSlotIq.html#a188213604e130821fb8843994b7eb2f6',1,'QXmppHttpUploadSlotIq']]],
-  ['gone_264',['Gone',['../classQXmppMessage.html#aeaa3cc5ccb7d451067a80dd1f3c7099aa82f224b6d9a97c9d40ecc8df80b22f61',1,'QXmppMessage::Gone()'],['../classQXmppStanza_1_1Error.html#abcf1cbbe7b15ec82f3ac34723b604852acec98c2a8e57409b992bf68fb801ee86',1,'QXmppStanza::Error::Gone()']]],
-  ['googleaccesstoken_265',['googleAccessToken',['../classQXmppConfiguration.html#acff448119d4c5c0a431f86aa73afa803',1,'QXmppConfiguration']]],
-  ['groups_266',['groups',['../classQXmppRosterIq_1_1Item.html#a7b762b8004f1caf4361da2f55881befe',1,'QXmppRosterIq::Item']]]
+  ['getresult_261',['GetResult',['../classQXmppUserTuneManager.html#afe0be351ec6632337af31dd411dc30db',1,'QXmppUserTuneManager']]],
+  ['getrosterbarejids_262',['getRosterBareJids',['../classQXmppRosterManager.html#a92b00f01745d0ed945a4a0873d09e7e0',1,'QXmppRosterManager']]],
+  ['getrosterentry_263',['getRosterEntry',['../classQXmppRosterManager.html#a4efc7ffc56879b679232b761a664ca8d',1,'QXmppRosterManager']]],
+  ['geturl_264',['getUrl',['../classQXmppHttpUploadSlotIq.html#a188213604e130821fb8843994b7eb2f6',1,'QXmppHttpUploadSlotIq']]],
+  ['gone_265',['Gone',['../classQXmppMessage.html#aeaa3cc5ccb7d451067a80dd1f3c7099aa82f224b6d9a97c9d40ecc8df80b22f61',1,'QXmppMessage::Gone()'],['../classQXmppStanza_1_1Error.html#abcf1cbbe7b15ec82f3ac34723b604852acec98c2a8e57409b992bf68fb801ee86',1,'QXmppStanza::Error::Gone()']]],
+  ['googleaccesstoken_266',['googleAccessToken',['../classQXmppConfiguration.html#acff448119d4c5c0a431f86aa73afa803',1,'QXmppConfiguration']]],
+  ['groups_267',['groups',['../classQXmppRosterIq_1_1Item.html#a7b762b8004f1caf4361da2f55881befe',1,'QXmppRosterIq::Item']]]
 ];
