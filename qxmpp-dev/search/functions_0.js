@@ -11,7 +11,7 @@ var searchData=
   ['addcacertificates_1509',['addCaCertificates',['../classQXmppServer.html#a96ac43ec46b09d23d60e5b874645d253',1,'QXmppServer::addCaCertificates()'],['../classQXmppSslServer.html#a16de688275b4967ce4aa688f5f8e5f75',1,'QXmppSslServer::addCaCertificates()']]],
   ['addcomponent_1510',['addComponent',['../classQXmppIceConnection.html#ac98283e6c42dd6318575c2880fd2edd8',1,'QXmppIceConnection']]],
   ['addcontent_1511',['addContent',['../classQXmppJingleIq.html#a229054fddf868666ff6c4848536d404c',1,'QXmppJingleIq']]],
-  ['addenvelope_1512',['addEnvelope',['../classQXmppOmemoElement.html#ab82e5332153bc239abbd2fbeea53a767',1,'QXmppOmemoElement']]],
+  ['addenvelope_1512',['addEnvelope',['../classQXmppOmemoElement.html#a05483210b644b42225e5462434a3f607',1,'QXmppOmemoElement']]],
   ['addextension_1513',['addExtension',['../classQXmppClient.html#a61ccf1c37ca3f26bfd14e65c8ecf1740',1,'QXmppClient::addExtension()'],['../classQXmppServer.html#af8faf560a73c3fbe4fad705753c09d40',1,'QXmppServer::addExtension()']]],
   ['addhint_1514',['addHint',['../classQXmppMessage.html#a31394f18bd084a5adaa0794aab2e4a24',1,'QXmppMessage']]],
   ['addincomingclient_1515',['addIncomingClient',['../classQXmppServer.html#adc4c461cb514b5c5aba2d5d320f1d09d',1,'QXmppServer']]],
