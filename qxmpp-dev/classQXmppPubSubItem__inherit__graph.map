@@ -1,4 +1,5 @@
 <map id="QXmppPubSubItem" name="QXmppPubSubItem">
-<area shape="rect" id="node1" title=" " alt="" coords="5,5,153,32"/>
-<area shape="rect" id="node2" href="$classQXmppTuneItem.html" title=" " alt="" coords="14,80,145,107"/>
+<area shape="rect" id="node1" title=" " alt="" coords="85,5,233,32"/>
+<area shape="rect" id="node2" href="$classQXmppGeolocItem.html" title=" " alt="" coords="5,80,151,107"/>
+<area shape="rect" id="node3" href="$classQXmppTuneItem.html" title=" " alt="" coords="175,80,306,107"/>
 </map>
