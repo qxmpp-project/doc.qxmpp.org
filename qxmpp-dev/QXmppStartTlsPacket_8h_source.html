@@ -85,35 +85,38 @@ $(function() {
 <div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="classQXmppStartTlsPacket.html#adeb1fedba9c3d0dc109201fa4fa7cb59">   20</a></span>&#160;    <span class="keyword">enum</span> <a class="code" href="classQXmppStartTlsPacket.html#adeb1fedba9c3d0dc109201fa4fa7cb59">Type</a> {</div>
 <div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="classQXmppStartTlsPacket.html#adeb1fedba9c3d0dc109201fa4fa7cb59ace4f9c7a9b4ea2edc81f3e20eeca8408">   21</a></span>&#160;        <a class="code" href="classQXmppStartTlsPacket.html#adeb1fedba9c3d0dc109201fa4fa7cb59ace4f9c7a9b4ea2edc81f3e20eeca8408">StartTls</a>,  </div>
 <div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="classQXmppStartTlsPacket.html#adeb1fedba9c3d0dc109201fa4fa7cb59a80866575589cc278a3b3c373c495c77e">   22</a></span>&#160;        <a class="code" href="classQXmppStartTlsPacket.html#adeb1fedba9c3d0dc109201fa4fa7cb59a80866575589cc278a3b3c373c495c77e">Proceed</a>,   </div>
-<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="classQXmppStartTlsPacket.html#adeb1fedba9c3d0dc109201fa4fa7cb59ab7230da583d29dd3f7f12a6c6d3c41ca">   23</a></span>&#160;        Failure    </div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    };</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <a class="code" href="classQXmppStartTlsPacket.html">QXmppStartTlsPacket</a>(Type type = StartTls);</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    ~<a class="code" href="classQXmppStartTlsPacket.html">QXmppStartTlsPacket</a>() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    Type type() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordtype">void</span> setType(Type type);</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classQXmppNonza.html#abc49e8874e808d39210b2be3abeba63a">parse</a>(<span class="keyword">const</span> QDomElement &amp;element) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classQXmppNonza.html#aff27abe8740fc054a67d55c239ff8cc3">toXml</a>(QXmlStreamWriter *writer) <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> isStartTlsPacket(<span class="keyword">const</span> QDomElement &amp;element);</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> isStartTlsPacket(<span class="keyword">const</span> QDomElement &amp;element, Type type);</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    Type m_type;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;};</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;Q_DECLARE_METATYPE(<a class="code" href="classQXmppStartTlsPacket.html#adeb1fedba9c3d0dc109201fa4fa7cb59">QXmppStartTlsPacket::Type</a>);</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="preprocessor">#endif  // QXMPPSTARTTLSPACKET_H</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno"><a class="line" href="classQXmppStartTlsPacket.html#adeb1fedba9c3d0dc109201fa4fa7cb59ab7230da583d29dd3f7f12a6c6d3c41ca">   23</a></span>&#160;        <a class="code" href="classQXmppStartTlsPacket.html#adeb1fedba9c3d0dc109201fa4fa7cb59ab7230da583d29dd3f7f12a6c6d3c41ca">Failure</a>,   </div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="classQXmppStartTlsPacket.html#adeb1fedba9c3d0dc109201fa4fa7cb59a9df0ccf8919bec331dc9aab7a9b26176">   24</a></span>&#160;        <a class="code" href="classQXmppStartTlsPacket.html#adeb1fedba9c3d0dc109201fa4fa7cb59a9df0ccf8919bec331dc9aab7a9b26176">Invalid</a>,   </div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    };</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <a class="code" href="classQXmppStartTlsPacket.html">QXmppStartTlsPacket</a>(Type type = StartTls);</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    ~<a class="code" href="classQXmppStartTlsPacket.html">QXmppStartTlsPacket</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    Type type() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordtype">void</span> setType(Type type);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classQXmppNonza.html#abc49e8874e808d39210b2be3abeba63a">parse</a>(<span class="keyword">const</span> QDomElement &amp;element) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classQXmppNonza.html#aff27abe8740fc054a67d55c239ff8cc3">toXml</a>(QXmlStreamWriter *writer) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> isStartTlsPacket(<span class="keyword">const</span> QDomElement &amp;element);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> isStartTlsPacket(<span class="keyword">const</span> QDomElement &amp;element, Type type);</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    Type m_type;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;};</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;Q_DECLARE_METATYPE(<a class="code" href="classQXmppStartTlsPacket.html#adeb1fedba9c3d0dc109201fa4fa7cb59">QXmppStartTlsPacket::Type</a>);</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="preprocessor">#endif  // QXMPPSTARTTLSPACKET_H</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aclassQXmppStartTlsPacket_html"><div class="ttname"><a href="classQXmppStartTlsPacket.html">QXmppStartTlsPacket</a></div><div class="ttdoc">The QXmppStartTlsPacket represents packets used for initiating STARTTLS negotiation when connecting.</div><div class="ttdef"><b>Definition:</b> QXmppStartTlsPacket.h:16</div></div>
 <div class="ttc" id="aclassQXmppStartTlsPacket_html_adeb1fedba9c3d0dc109201fa4fa7cb59ace4f9c7a9b4ea2edc81f3e20eeca8408"><div class="ttname"><a href="classQXmppStartTlsPacket.html#adeb1fedba9c3d0dc109201fa4fa7cb59ace4f9c7a9b4ea2edc81f3e20eeca8408">QXmppStartTlsPacket::StartTls</a></div><div class="ttdeci">@ StartTls</div><div class="ttdoc">Used by the client to initiate STARTTLS.</div><div class="ttdef"><b>Definition:</b> QXmppStartTlsPacket.h:21</div></div>
+<div class="ttc" id="aclassQXmppStartTlsPacket_html_adeb1fedba9c3d0dc109201fa4fa7cb59ab7230da583d29dd3f7f12a6c6d3c41ca"><div class="ttname"><a href="classQXmppStartTlsPacket.html#adeb1fedba9c3d0dc109201fa4fa7cb59ab7230da583d29dd3f7f12a6c6d3c41ca">QXmppStartTlsPacket::Failure</a></div><div class="ttdeci">@ Failure</div><div class="ttdoc">Used by the server to reject STARTTLS.</div><div class="ttdef"><b>Definition:</b> QXmppStartTlsPacket.h:23</div></div>
 <div class="ttc" id="aclassQXmppStartTlsPacket_html_adeb1fedba9c3d0dc109201fa4fa7cb59"><div class="ttname"><a href="classQXmppStartTlsPacket.html#adeb1fedba9c3d0dc109201fa4fa7cb59">QXmppStartTlsPacket::Type</a></div><div class="ttdeci">Type</div><div class="ttdoc">The type of the STARTTLS packet.</div><div class="ttdef"><b>Definition:</b> QXmppStartTlsPacket.h:20</div></div>
 <div class="ttc" id="aclassQXmppNonza_html_aff27abe8740fc054a67d55c239ff8cc3"><div class="ttname"><a href="classQXmppNonza.html#aff27abe8740fc054a67d55c239ff8cc3">QXmppNonza::toXml</a></div><div class="ttdeci">virtual void toXml(QXmlStreamWriter *writer) const =0</div></div>
 <div class="ttc" id="aclassQXmppNonza_html_abc49e8874e808d39210b2be3abeba63a"><div class="ttname"><a href="classQXmppNonza.html#abc49e8874e808d39210b2be3abeba63a">QXmppNonza::parse</a></div><div class="ttdeci">virtual void parse(const QDomElement &amp;)=0</div></div>
 <div class="ttc" id="aclassQXmppNonza_html"><div class="ttname"><a href="classQXmppNonza.html">QXmppNonza</a></div><div class="ttdef"><b>Definition:</b> QXmppNonza.h:13</div></div>
+<div class="ttc" id="aclassQXmppStartTlsPacket_html_adeb1fedba9c3d0dc109201fa4fa7cb59a9df0ccf8919bec331dc9aab7a9b26176"><div class="ttname"><a href="classQXmppStartTlsPacket.html#adeb1fedba9c3d0dc109201fa4fa7cb59a9df0ccf8919bec331dc9aab7a9b26176">QXmppStartTlsPacket::Invalid</a></div><div class="ttdeci">@ Invalid</div><div class="ttdoc">Invalid type.</div><div class="ttdef"><b>Definition:</b> QXmppStartTlsPacket.h:24</div></div>
 <div class="ttc" id="aclassQXmppStartTlsPacket_html_adeb1fedba9c3d0dc109201fa4fa7cb59a80866575589cc278a3b3c373c495c77e"><div class="ttname"><a href="classQXmppStartTlsPacket.html#adeb1fedba9c3d0dc109201fa4fa7cb59a80866575589cc278a3b3c373c495c77e">QXmppStartTlsPacket::Proceed</a></div><div class="ttdeci">@ Proceed</div><div class="ttdoc">Used by the server to accept STARTTLS.</div><div class="ttdef"><b>Definition:</b> QXmppStartTlsPacket.h:22</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

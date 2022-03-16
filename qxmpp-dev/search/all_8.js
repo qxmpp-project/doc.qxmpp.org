@@ -19,7 +19,7 @@ var searchData=
   ['instructions_300',['instructions',['../classQXmppDataForm.html#ad43ceef160ae87a09e397130415f050b',1,'QXmppDataForm::instructions()'],['../classQXmppRegisterIq.html#a99ac1b491e499642d21e3175cb849334',1,'QXmppRegisterIq::instructions()']]],
   ['interfaces_301',['interfaces',['../classQXmppInvokable.html#a897ac8cda090e678bc93502a4b4d70a9',1,'QXmppInvokable']]],
   ['internalservererror_302',['InternalServerError',['../classQXmppStanza_1_1Error.html#abcf1cbbe7b15ec82f3ac34723b604852ac7ad450bef9cc98b06f79d4d7af5563d',1,'QXmppStanza::Error']]],
-  ['invalid_303',['Invalid',['../classQXmppPubSubSubscription.html#aad82576dfb8c85c7b658958c65727cf9a45ad042c85c86faef2239de784d08e6a',1,'QXmppPubSubSubscription']]],
+  ['invalid_303',['Invalid',['../classQXmppPubSubSubscription.html#aad82576dfb8c85c7b658958c65727cf9a45ad042c85c86faef2239de784d08e6a',1,'QXmppPubSubSubscription::Invalid()'],['../classQXmppStartTlsPacket.html#adeb1fedba9c3d0dc109201fa4fa7cb59a9df0ccf8919bec331dc9aab7a9b26176',1,'QXmppStartTlsPacket::Invalid()']]],
   ['invisible_304',['Invisible',['../classQXmppPresence.html#ad56af0f57b732c09b080b9347c4dba94a00a1530c56b9457145d4770a58a5ce95',1,'QXmppPresence']]],
   ['invitationreceived_305',['invitationReceived',['../classQXmppMucManager.html#a8ad1ab6b9c8bf656bedbd8cd31a0076b',1,'QXmppMucManager']]],
   ['inviteejid_306',['inviteeJid',['../classQXmppMixInvitation.html#a8acdf117bfc537b7ae4de8c5574d0a70',1,'QXmppMixInvitation']]],
