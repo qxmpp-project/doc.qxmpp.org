@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['core_20classes_2876',['Core classes',['../group__Core.html',1,'']]]
+  ['core_20classes_2880',['Core classes',['../group__Core.html',1,'']]]
 ];

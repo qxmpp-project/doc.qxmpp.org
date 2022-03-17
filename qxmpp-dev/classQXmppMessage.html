@@ -169,6 +169,10 @@ QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
 <tr class="separator:a03ca378952b2324319afc379a66df5fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adfc1b70b910079c76c93ba472fc4e9e7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppMessage.html#adfc1b70b910079c76c93ba472fc4e9e7">setBody</a> (const QString &amp;)</td></tr>
 <tr class="separator:adfc1b70b910079c76c93ba472fc4e9e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e3263c36364b080e22852225ff0d981"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppMessage.html#a5e3263c36364b080e22852225ff0d981">e2eeFallbackBody</a> () const</td></tr>
+<tr class="separator:a5e3263c36364b080e22852225ff0d981"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afef640e9c7fb02d74ca31d93ccd66e3f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppMessage.html#afef640e9c7fb02d74ca31d93ccd66e3f">setE2eeFallbackBody</a> (const QString &amp;fallbackBody)</td></tr>
+<tr class="separator:afef640e9c7fb02d74ca31d93ccd66e3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a121ee2cf5f5a7590dd14d4b141040f13"><td class="memItemLeft" align="right" valign="top"><a id="a121ee2cf5f5a7590dd14d4b141040f13"></a>
 QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppMessage.html#a121ee2cf5f5a7590dd14d4b141040f13">subject</a> () const</td></tr>
 <tr class="memdesc:a121ee2cf5f5a7590dd14d4b141040f13"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the message's subject. <br /></td></tr>
@@ -618,6 +622,27 @@ Static Public Member Functions</h2></td></tr>
 <p>Returns a list of data attached using <a href="https://xmpp.org/extensions/xep-0231.html">XEP-0231</a>: Bits of Binary.</p>
 <p>This could be used to resolve <code>cid:</code> URIs found in the X-HTML body.</p>
 <dl class="section since"><dt>Since</dt><dd><a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.2 </dd></dl>
+
+</div>
+</div>
+<a id="a5e3263c36364b080e22852225ff0d981"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e3263c36364b080e22852225ff0d981">&#9670;&nbsp;</a></span>e2eeFallbackBody()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString QXmppMessage::e2eeFallbackBody </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns a body that is unlike the normal body not encrypted.</p>
+<p>It can be presented to users if the message could not be decrypted (e.g., because their clients do not support the used end-to-end encryption).</p>
+<dl class="section return"><dt>Returns</dt><dd>the end-to-end encryption fallback body</dd></dl>
+<dl class="section since"><dt>Since</dt><dd><a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.5 </dd></dl>
 
 </div>
 </div>
@@ -1407,6 +1432,33 @@ If this returns <a class="el" href="classQXmppMessage.html#a1526e753b5cfe7ed7787
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="afef640e9c7fb02d74ca31d93ccd66e3f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afef640e9c7fb02d74ca31d93ccd66e3f">&#9670;&nbsp;</a></span>setE2eeFallbackBody()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void QXmppMessage::setE2eeFallbackBody </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>fallbackBody</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Sets a body that is unlike the normal body not encrypted.</p>
+<p>It can be presented to users if the message could not be decrypted (e.g., because their clients do not support the used end-to-end encryption).</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fallbackBody</td><td>end-to-end encryption fallback body</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>Since</dt><dd><a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.5 </dd></dl>
 
 </div>
 </div>
