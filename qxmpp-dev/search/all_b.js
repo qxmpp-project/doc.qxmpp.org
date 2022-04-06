@@ -10,7 +10,7 @@ var searchData=
   ['latitude_408',['latitude',['../classQXmppGeolocItem.html#a8448e61628bae9261f5541e4000f9a12',1,'QXmppGeolocItem']]],
   ['leave_409',['leave',['../classQXmppMucRoom.html#aba377174fd4869c9d38952d71aa9297b',1,'QXmppMucRoom']]],
   ['left_410',['left',['../classQXmppMucRoom.html#a7c2f39104f9334ac0c6c188fe2f7afbb',1,'QXmppMucRoom']]],
-  ['legacyopenpgp_411',['LegacyOpenPGP',['../classQXmppMessage.html#a1526e753b5cfe7ed7787d035b72c3742acfc56c3efdc289bd41fa0584468f3a2d',1,'QXmppMessage']]],
+  ['legacyopenpgp_411',['LegacyOpenPgp',['../namespaceQXmpp.html#a144a88be891edf484a1fe97604fd81e3a18f21dcb88d8cff364d0b68f5e580607',1,'QXmpp::LegacyOpenPgp()'],['../namespaceQXmpp.html#a144a88be891edf484a1fe97604fd81e3a7a7c6956031203038f4fffb88f9feed6',1,'QXmpp::LegacyOpenPGP()']]],
   ['legacyssl_412',['LegacySSL',['../classQXmppConfiguration.html#a7c6e193a68beb792038c066cfc574a18abd514255916ad53a66078e6f7c644d4c',1,'QXmppConfiguration']]],
   ['length_413',['length',['../classQXmppTuneItem.html#aca36b5fa4f6b25bfe3b2211f1437ee1f',1,'QXmppTuneItem']]],
   ['lengthasduration_414',['lengthAsDuration',['../classQXmppTuneItem.html#a99237c34c79c52e1ce5a27941653e38f',1,'QXmppTuneItem']]],

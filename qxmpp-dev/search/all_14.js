@@ -6,7 +6,7 @@ var searchData=
   ['undefinedcondition_1296',['UndefinedCondition',['../classQXmppStanza_1_1Error.html#abcf1cbbe7b15ec82f3ac34723b604852a33a57062632042f76793d3c07741d10a',1,'QXmppStanza::Error']]],
   ['unexpectedrequest_1297',['UnexpectedRequest',['../classQXmppStanza_1_1Error.html#abcf1cbbe7b15ec82f3ac34723b604852ac71c1b7927a3f0bbc889807c343c45ab',1,'QXmppStanza::Error']]],
   ['unit_1298',['unit',['../classQXmppVCardOrganization.html#a321f3182bca5a4fdf8f65554275aa6b5',1,'QXmppVCardOrganization']]],
-  ['unknownencryption_1299',['UnknownEncryption',['../classQXmppMessage.html#a1526e753b5cfe7ed7787d035b72c3742a3d891bce95ec28f88345014011abbc5a',1,'QXmppMessage']]],
+  ['unknownencryption_1299',['UnknownEncryption',['../namespaceQXmpp.html#a144a88be891edf484a1fe97604fd81e3ac572e4cbf91be1d819ed3caf0631fe6e',1,'QXmpp']]],
   ['unknownfields_1300',['unknownFields',['../classQXmppExtensibleDataFormBase.html#adb80d5edcdcb9954844c0242090c3738',1,'QXmppExtensibleDataFormBase']]],
   ['unsubscribe_1301',['Unsubscribe',['../classQXmppPresence.html#a47ab8dd08436f9d7c90d2990678b5a6da20986f18e387f68a5fdfa0e67c44bc44',1,'QXmppPresence::Unsubscribe()'],['../classQXmppRosterManager.html#afd840ecd9179624db72c837ff948abf5',1,'QXmppRosterManager::unsubscribe()']]],
   ['unsubscribed_1302',['Unsubscribed',['../classQXmppPresence.html#a47ab8dd08436f9d7c90d2990678b5a6da63414092d2fc4b90987f56731c150623',1,'QXmppPresence']]],

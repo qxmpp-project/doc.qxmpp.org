@@ -82,6 +82,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a3dc2d15cb72b2232425c47b990597569"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adce6dd1c36f7af04cb0b278402d07ce5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classQXmppE2eeMetadata.html">QXmppE2eeMetadata</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppE2eeMetadata.html#adce6dd1c36f7af04cb0b278402d07ce5">operator=</a> (const <a class="el" href="classQXmppE2eeMetadata.html">QXmppE2eeMetadata</a> &amp;other)</td></tr>
 <tr class="separator:adce6dd1c36f7af04cb0b278402d07ce5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad27b18e4fb02e21698f4afe28414715a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceQXmpp.html#a144a88be891edf484a1fe97604fd81e3">QXmpp::Encryption</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppE2eeMetadata.html#ad27b18e4fb02e21698f4afe28414715a">encryption</a> () const</td></tr>
+<tr class="separator:ad27b18e4fb02e21698f4afe28414715a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a034199337ef849d509d5812f27e7313f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppE2eeMetadata.html#a034199337ef849d509d5812f27e7313f">setEncryption</a> (<a class="el" href="namespaceQXmpp.html#a144a88be891edf484a1fe97604fd81e3">QXmpp::Encryption</a> <a class="el" href="classQXmppE2eeMetadata.html#ad27b18e4fb02e21698f4afe28414715a">encryption</a>)</td></tr>
+<tr class="separator:a034199337ef849d509d5812f27e7313f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acf977becf834f50f774d83e135ac0e0b"><td class="memItemLeft" align="right" valign="top">QByteArray&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppE2eeMetadata.html#acf977becf834f50f774d83e135ac0e0b">senderKey</a> () const</td></tr>
 <tr class="separator:acf977becf834f50f774d83e135ac0e0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ccbf2adc2a6db29785f53ce6899e708"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppE2eeMetadata.html#a3ccbf2adc2a6db29785f53ce6899e708">setSenderKey</a> (const QByteArray &amp;keyId)</td></tr>
@@ -156,6 +160,25 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>QXmppStanzaPrivate</
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="ad27b18e4fb02e21698f4afe28414715a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad27b18e4fb02e21698f4afe28414715a">&#9670;&nbsp;</a></span>encryption()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespaceQXmpp.html#a144a88be891edf484a1fe97604fd81e3">QXmpp::Encryption</a> QXmppE2eeMetadata::encryption </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns the used encryption protocol.</p>
+<dl class="section return"><dt>Returns</dt><dd>the encryption protocol </dd></dl>
+
+</div>
+</div>
 <a id="adce6dd1c36f7af04cb0b278402d07ce5"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#adce6dd1c36f7af04cb0b278402d07ce5">&#9670;&nbsp;</a></span>operator=()</h2>
 
@@ -227,6 +250,31 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>QXmppStanzaPrivate</
 <p>The sender key ID is not part of a transmitted stanza and thus not de- / serialized. Instead, the key ID is set by an encryption protocol such as <a href="https://xmpp.org/extensions/xep-0384.html">XEP-0384: OMEMO Encryption</a> during decryption. It can be used by trust management protocols such as <a href="https://xmpp.org/extensions/xep-0450.html">XEP-0450: Automatic Trust Management (ATM)</a>.</p>
 <dl class="section return"><dt>Returns</dt><dd>the ID of the sender's key</dd></dl>
 <dl class="section since"><dt>Since</dt><dd><a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.5 </dd></dl>
+
+</div>
+</div>
+<a id="a034199337ef849d509d5812f27e7313f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a034199337ef849d509d5812f27e7313f">&#9670;&nbsp;</a></span>setEncryption()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void QXmppE2eeMetadata::setEncryption </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="namespaceQXmpp.html#a144a88be891edf484a1fe97604fd81e3">QXmpp::Encryption</a>&#160;</td>
+          <td class="paramname"><em>encryption</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Sets the used encryption protocol.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">encryption</td><td>encryption protocol </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
