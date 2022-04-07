@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['error_1369',['Error',['../classQXmppStanza_1_1Error.html',1,'QXmppStanza']]]
+  ['error_1339',['Error',['../classQXmppStanza_1_1Error.html',1,'QXmppStanza']]]
 ];
