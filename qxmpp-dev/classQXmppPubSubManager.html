@@ -232,9 +232,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a4579d4f33024b1ba243bd6bb273829b8"><td class="memTemplParams" colspan="2">template&lt;typename T  = QXmppPubSubItem&gt; </td></tr>
 <tr class="memitem:a4579d4f33024b1ba243bd6bb273829b8"><td class="memTemplItemLeft" align="right" valign="top">QFuture&lt; <a class="el" href="classQXmppPubSubManager.html#a4aa3799ba5cf9226556207d3c24db4f7">ItemResult</a>&lt; T &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classQXmppPubSubManager.html#a4579d4f33024b1ba243bd6bb273829b8">requestPepItem</a> (const QString &amp;nodeName, const QString &amp;itemId)</td></tr>
 <tr class="separator:a4579d4f33024b1ba243bd6bb273829b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0b9a7897c7e2e9f4ac010b972cdfa719"><td class="memTemplParams" colspan="2">template&lt;typename T  = QXmppPubSubItem&gt; </td></tr>
-<tr class="memitem:a0b9a7897c7e2e9f4ac010b972cdfa719"><td class="memTemplItemLeft" align="right" valign="top">QFuture&lt; <a class="el" href="classQXmppPubSubManager.html#a4aa3799ba5cf9226556207d3c24db4f7">ItemResult</a>&lt; T &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classQXmppPubSubManager.html#a0b9a7897c7e2e9f4ac010b972cdfa719">requestPepItem</a> (const QString &amp;nodeName, <a class="el" href="classQXmppPubSubManager.html#acdb38c05a8df3672ef35d4371f1a89af">StandardItemId</a> itemId=<a class="el" href="classQXmppPubSubManager.html#acdb38c05a8df3672ef35d4371f1a89afa4e5cdde784891a2cdf4b6f9ecce808fd">Current</a>)</td></tr>
-<tr class="separator:a0b9a7897c7e2e9f4ac010b972cdfa719"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac830711abf5a02369558cff0558cf9e2"><td class="memTemplParams" colspan="2">template&lt;typename T  = QXmppPubSubItem&gt; </td></tr>
+<tr class="memitem:ac830711abf5a02369558cff0558cf9e2"><td class="memTemplItemLeft" align="right" valign="top">QFuture&lt; <a class="el" href="classQXmppPubSubManager.html#a4aa3799ba5cf9226556207d3c24db4f7">ItemResult</a>&lt; T &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classQXmppPubSubManager.html#ac830711abf5a02369558cff0558cf9e2">requestPepItem</a> (const QString &amp;nodeName, <a class="el" href="classQXmppPubSubManager.html#acdb38c05a8df3672ef35d4371f1a89af">StandardItemId</a> itemId)</td></tr>
+<tr class="separator:ac830711abf5a02369558cff0558cf9e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acdc3ed9151e108d231be403bb1c2b2a4"><td class="memTemplParams" colspan="2">template&lt;typename T  = QXmppPubSubItem&gt; </td></tr>
 <tr class="memitem:acdc3ed9151e108d231be403bb1c2b2a4"><td class="memTemplItemLeft" align="right" valign="top">QFuture&lt; <a class="el" href="classQXmppPubSubManager.html#aa4719f742f0891e56d5241d5504f6019">ItemsResult</a>&lt; T &gt; &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classQXmppPubSubManager.html#acdc3ed9151e108d231be403bb1c2b2a4">requestPepItems</a> (const QString &amp;nodeName)</td></tr>
 <tr class="separator:acdc3ed9151e108d231be403bb1c2b2a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -571,7 +571,7 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 <p>Pre-defined ID of a PubSub item </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="acdb38c05a8df3672ef35d4371f1a89afa4e5cdde784891a2cdf4b6f9ecce808fd"></a>Current&#160;</td><td class="fielddoc"><p>Item of a singleton node. </p>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="acdb38c05a8df3672ef35d4371f1a89afa4e5cdde784891a2cdf4b6f9ecce808fd"></a>Current&#160;</td><td class="fielddoc"><p>Item of a singleton node (i.e., the node's single item) </p>
 </td></tr>
 </table>
 
@@ -1762,7 +1762,6 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 <p>Requests a specific item of an entity's node.</p>
-<p>The default value of itemId is used for singleton nodes (i.e., the node's single item is requested).</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">jid</td><td>Jabber ID of the entity hosting the pubsub service. For PEP this should be an account's bare JID </td></tr>
@@ -2052,8 +2051,8 @@ template&lt;typename T  = QXmppPubSubItem&gt; </div>
 
 </div>
 </div>
-<a id="a0b9a7897c7e2e9f4ac010b972cdfa719"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a0b9a7897c7e2e9f4ac010b972cdfa719">&#9670;&nbsp;</a></span>requestPepItem() <span class="overload">[2/2]</span></h2>
+<a id="ac830711abf5a02369558cff0558cf9e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac830711abf5a02369558cff0558cf9e2">&#9670;&nbsp;</a></span>requestPepItem() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2073,7 +2072,7 @@ template&lt;typename T  = QXmppPubSubItem&gt; </div>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="classQXmppPubSubManager.html#acdb38c05a8df3672ef35d4371f1a89af">StandardItemId</a>&#160;</td>
-          <td class="paramname"><em>itemId</em> = <code><a class="el" href="classQXmppPubSubManager.html#acdb38c05a8df3672ef35d4371f1a89afa4e5cdde784891a2cdf4b6f9ecce808fd">Current</a></code>&#160;</td>
+          <td class="paramname"><em>itemId</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -2088,7 +2087,6 @@ template&lt;typename T  = QXmppPubSubItem&gt; </div>
 </table>
 </div><div class="memdoc">
 <p>Requests a specific item of a PEP node.</p>
-<p>The default value of itemId is used for singleton nodes (i.e., the node's single item is requested).</p>
 <p>This is a convenience method equivalent to calling <a class="el" href="classQXmppPubSubManager.html#a807e630e7bbd301e758a729603da64e9">QXmppPubSubManager::requestItem</a> on the current account's bare JID.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -2428,7 +2426,6 @@ template&lt;typename T  = QXmppPubSubItem&gt; </div>
       </table>
 </div><div class="memdoc">
 <p>Deletes an item from a pubsub node.</p>
-<p>The default value of itemId is used for singleton nodes (i.e., the node's single item is deleted).</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">jid</td><td>Jabber ID of the entity hosting the pubsub service </td></tr>
@@ -2519,7 +2516,6 @@ template&lt;typename T  = QXmppPubSubItem&gt; </div>
 </table>
 </div><div class="memdoc">
 <p>Deletes an item from a PEP node.</p>
-<p>The default value of itemId is used for singleton nodes (i.e., the node's single item is deleted).</p>
 <p>This is a convenience method equivalent to calling <a class="el" href="classQXmppPubSubManager.html#af9d2214db5a632c3376f3ec851593839">QXmppPubSubManager::retractItem</a> on the current account's bare JID.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">

@@ -43,7 +43,7 @@ var searchData=
   ['requestnodeaffiliations_2090',['requestNodeAffiliations',['../classQXmppPubSubManager.html#a0151b1b31c8bd2749b69a8d60aac556b',1,'QXmppPubSubManager']]],
   ['requestnodeconfiguration_2091',['requestNodeConfiguration',['../classQXmppPubSubManager.html#a2f6ab9c2bb7747b9cfddf265af85cb3a',1,'QXmppPubSubManager']]],
   ['requestpepfeatures_2092',['requestPepFeatures',['../classQXmppPubSubManager.html#ad6c7c3be8c5816a78914600340c3b0d4',1,'QXmppPubSubManager']]],
-  ['requestpepitem_2093',['requestPepItem',['../classQXmppPubSubManager.html#a4579d4f33024b1ba243bd6bb273829b8',1,'QXmppPubSubManager::requestPepItem(const QString &amp;nodeName, const QString &amp;itemId)'],['../classQXmppPubSubManager.html#a0b9a7897c7e2e9f4ac010b972cdfa719',1,'QXmppPubSubManager::requestPepItem(const QString &amp;nodeName, StandardItemId itemId=Current)']]],
+  ['requestpepitem_2093',['requestPepItem',['../classQXmppPubSubManager.html#a4579d4f33024b1ba243bd6bb273829b8',1,'QXmppPubSubManager::requestPepItem(const QString &amp;nodeName, const QString &amp;itemId)'],['../classQXmppPubSubManager.html#ac830711abf5a02369558cff0558cf9e2',1,'QXmppPubSubManager::requestPepItem(const QString &amp;nodeName, StandardItemId itemId)']]],
   ['requestpepitemids_2094',['requestPepItemIds',['../classQXmppPubSubManager.html#a6e4f9d2ead3f6af299f18c3414df2a11',1,'QXmppPubSubManager']]],
   ['requestpepitems_2095',['requestPepItems',['../classQXmppPubSubManager.html#acdc3ed9151e108d231be403bb1c2b2a4',1,'QXmppPubSubManager']]],
   ['requestpepnodeconfiguration_2096',['requestPepNodeConfiguration',['../classQXmppPubSubManager.html#ac169d70e3ffda0c40b3bb2784cf667f1',1,'QXmppPubSubManager']]],
