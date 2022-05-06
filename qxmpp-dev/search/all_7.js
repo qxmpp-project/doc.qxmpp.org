@@ -9,7 +9,7 @@ var searchData=
   ['hash_279',['hash',['../classQXmppBitsOfBinaryContentId.html#af81c93d31948ce9a232bbc30c426fd07',1,'QXmppBitsOfBinaryContentId::hash()'],['../classQXmppTransferFileInfo.html#ac01fd5d1ecf05f7fc9dd422e9e90ee0c',1,'QXmppTransferFileInfo::hash()']]],
   ['hashint_280',['hasHint',['../classQXmppMessage.html#abb7021231758f151244cc33cda873bed',1,'QXmppMessage']]],
   ['hasiqid_281',['hasIqId',['../classQXmppStream.html#a1b3e769881b90d47f38d3f49d77dfea9',1,'QXmppStream']]],
-  ['haskey_282',['hasKey',['../classQXmppTrustStorage.html#aa65679ff79533a87b4e9ceab202def0d',1,'QXmppTrustStorage']]],
+  ['haskey_282',['hasKey',['../classQXmppTrustManager.html#a05463dd9d49c40bd797236df9725a04d',1,'QXmppTrustManager::hasKey()'],['../classQXmppTrustStorage.html#aa65679ff79533a87b4e9ceab202def0d',1,'QXmppTrustStorage::hasKey()']]],
   ['height_283',['height',['../classQXmppDataForm_1_1Media.html#ad8937beb7999cae942d76b5b49692c77',1,'QXmppDataForm::Media']]],
   ['hint_284',['Hint',['../classQXmppMessage.html#aea1a3c281a281bc3a4fbc9f48b554256',1,'QXmppMessage']]],
   ['host_285',['host',['../classQXmppByteStreamIq_1_1StreamHost.html#af8a4c4ac592b5820a43ee133eb4e6485',1,'QXmppByteStreamIq::StreamHost::host()'],['../classQXmppJingleCandidate.html#a7bd039198a8c4780cb92c43c6950cdfc',1,'QXmppJingleCandidate::host()'],['../classQXmppConfiguration.html#a0872d249e315a6392aaf1d112f8f369f',1,'QXmppConfiguration::host()']]],

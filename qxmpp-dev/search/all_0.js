@@ -22,7 +22,7 @@ var searchData=
   ['addinvokableinterface_19',['addInvokableInterface',['../classQXmppRpcManager.html#a015ec2d968d2b4460325531157e8b0bf',1,'QXmppRpcManager']]],
   ['additem_20',['addItem',['../classQXmppRosterIq.html#ab7c8d7ec0b185f48e175afb00b8f72d5',1,'QXmppRosterIq::addItem()'],['../classQXmppRosterManager.html#ab4d8814fb06d963745b928846f8e51c4',1,'QXmppRosterManager::addItem()']]],
   ['addkeyowner_21',['addKeyOwner',['../classQXmppTrustMessageElement.html#ad36682e2fe0b5857442dad5661f2573c',1,'QXmppTrustMessageElement']]],
-  ['addkeys_22',['addKeys',['../classQXmppTrustStorage.html#a0a6d0739502993bff1515f9c8b1b065f',1,'QXmppTrustStorage']]],
+  ['addkeys_22',['addKeys',['../classQXmppTrustManager.html#a713b799e84d608a1e2c3e0845d3533b4',1,'QXmppTrustManager::addKeys()'],['../classQXmppTrustStorage.html#a0a6d0739502993bff1515f9c8b1b065f',1,'QXmppTrustStorage::addKeys()']]],
   ['addkeysforpostponedtrustdecisions_23',['addKeysForPostponedTrustDecisions',['../classQXmppAtmTrustStorage.html#a42aaa6da619fa917c2b3a0fd27ee2469',1,'QXmppAtmTrustStorage']]],
   ['addnewextension_24',['addNewExtension',['../classQXmppClient.html#ab6df7c877500e1548ffb351c46ae48e4',1,'QXmppClient']]],
   ['addremotecandidate_25',['addRemoteCandidate',['../classQXmppIceConnection.html#a0a7f8f4176deddf2e2022f4634fbc08a',1,'QXmppIceConnection']]],

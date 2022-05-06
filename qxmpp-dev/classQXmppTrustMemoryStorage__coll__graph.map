@@ -1,4 +1,4 @@
 <map id="QXmppTrustMemoryStorage" name="QXmppTrustMemoryStorage">
 <area shape="rect" id="node1" title="The QXmppTrustMemoryStorage class stores trust data for end&#45;to&#45;end encryption in the memory." alt="" coords="5,80,211,107"/>
-<area shape="rect" id="node2" href="$classQXmppTrustStorage.html" title="The QXmppTrustStorage class stores trust data for end&#45;to&#45;end encryption." alt="" coords="33,5,183,32"/>
+<area shape="rect" id="node2" href="$classQXmppTrustStorage.html" title="The QXmppTrustStorage class stores end&#45;to&#45;end encryption trust data." alt="" coords="33,5,183,32"/>
 </map>

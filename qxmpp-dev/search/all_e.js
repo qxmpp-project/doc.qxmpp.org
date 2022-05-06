@@ -19,6 +19,6 @@ var searchData=
   ['outgoingdirection_526',['OutgoingDirection',['../classQXmppCall.html#a429a4f8065136068b6d936cb2c803175a4959a53587ff3fe714b0c619dd8ba47d',1,'QXmppCall::OutgoingDirection()'],['../classQXmppTransferJob.html#a9c95a89a01357588f699e7d80c3de0b6adbfcc81360e31c1ded162fa244132bb7',1,'QXmppTransferJob::OutgoingDirection()']]],
   ['outofbandurl_527',['outOfBandUrl',['../classQXmppMessage.html#a6a6b58f98ba934e429677f5033a23152',1,'QXmppMessage::outOfBandUrl()'],['../classQXmppRegisterIq.html#ad317032a2cfc30ee138e21b8530a42d4',1,'QXmppRegisterIq::outOfBandUrl()']]],
   ['owner_528',['Owner',['../classQXmppPubSubAffiliation.html#a87cbd228a4d3c451f4e21e260d46d842ae47f343fbc6c5788a65649241ae61bdb',1,'QXmppPubSubAffiliation']]],
-  ['ownkey_529',['ownKey',['../classQXmppTrustStorage.html#aa4d7836f88d792c316a2e659c0cf8310',1,'QXmppTrustStorage']]],
+  ['ownkey_529',['ownKey',['../classQXmppTrustManager.html#a2ea236a26277914dd8e75c6f4823365a',1,'QXmppTrustManager::ownKey()'],['../classQXmppTrustStorage.html#aa4d7836f88d792c316a2e659c0cf8310',1,'QXmppTrustStorage::ownKey()']]],
   ['ox_530',['OX',['../namespaceQXmpp.html#a144a88be891edf484a1fe97604fd81e3a6ae0c1c63f5527cb050e942a38f6c726',1,'QXmpp::OX()'],['../namespaceQXmpp.html#a144a88be891edf484a1fe97604fd81e3a4051b83a948e2a334e5b75f07557b77a',1,'QXmpp::Ox()']]]
 ];

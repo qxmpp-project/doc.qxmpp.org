@@ -1,0 +1,5 @@
+<map id="QXmppTrustManager" name="QXmppTrustManager">
+<area shape="rect" id="node1" title="The QXmppTrustManager manages end&#45;to&#45;end encryption trust decisions." alt="" coords="12,155,171,181"/>
+<area shape="rect" id="node2" href="$classQXmppClientExtension.html" title="The QXmppClientExtension class is the base class for QXmppClient extensions." alt="" coords="5,80,177,107"/>
+<area shape="rect" id="node3" href="$classQXmppLoggable.html" title="The QXmppLoggable class represents a source of logging messages." alt="" coords="27,5,156,32"/>
+</map>

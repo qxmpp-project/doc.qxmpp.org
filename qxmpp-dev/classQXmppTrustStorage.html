@@ -71,14 +71,14 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>The <a class="el" href="classQXmppTrustStorage.html" title="The QXmppTrustStorage class stores trust data for end-to-end encryption.">QXmppTrustStorage</a> class stores trust data for end-to-end encryption.  
+<p>The <a class="el" href="classQXmppTrustStorage.html" title="The QXmppTrustStorage class stores end-to-end encryption trust data.">QXmppTrustStorage</a> class stores end-to-end encryption trust data.  
  <a href="classQXmppTrustStorage.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for QXmppTrustStorage:</div>
 <div class="dyncontent">
 <div class="center"><img src="classQXmppTrustStorage__inherit__graph.png" border="0" usemap="#QXmppTrustStorage_inherit__map" alt="Inheritance graph"/></div>
 <map name="QXmppTrustStorage_inherit__map" id="QXmppTrustStorage_inherit__map">
-<area shape="rect" title="The QXmppTrustStorage class stores trust data for end&#45;to&#45;end encryption." alt="" coords="127,5,278,32"/>
+<area shape="rect" title="The QXmppTrustStorage class stores end&#45;to&#45;end encryption trust data." alt="" coords="127,5,278,32"/>
 <area shape="rect" href="classQXmppAtmTrustStorage.html" title="The QXmppAtmTrustStorage class stores trust data for XEP&#45;0450: Automatic Trust Management (ATM)." alt="" coords="5,80,184,107"/>
 <area shape="rect" href="classQXmppTrustMemoryStorage.html" title="The QXmppTrustMemoryStorage class stores trust data for end&#45;to&#45;end encryption in the memory." alt="" coords="208,80,413,107"/>
 <area shape="rect" href="classQXmppAtmTrustMemoryStorage.html" title="The QXmppAtmTrustMemoryStorage class stores trust data for XEP&#45;0450: Automatic Trust Management (ATM)..." alt="" coords="87,155,319,181"/>
@@ -131,9 +131,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a76b656a0d0232685894cfa0acc1dd521"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa65679ff79533a87b4e9ceab202def0d"><td class="memItemLeft" align="right" valign="top">virtual QFuture&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppTrustStorage.html#aa65679ff79533a87b4e9ceab202def0d">hasKey</a> (const QString &amp;encryption, const QString &amp;keyOwnerJid, TrustLevels trustLevels)=0</td></tr>
 <tr class="separator:aa65679ff79533a87b4e9ceab202def0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1c4aa869b59213af3d8d19ad71ba3bb6"><td class="memItemLeft" align="right" valign="top">virtual QFuture&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppTrustStorage.html#a1c4aa869b59213af3d8d19ad71ba3bb6">setTrustLevel</a> (const QString &amp;encryption, const QMultiHash&lt; QString, QByteArray &gt; &amp;keyIds, <a class="el" href="classQXmppTrustStorage.html#a20db8ebf03198cb8b163f1b73be188da">TrustLevel</a> <a class="el" href="classQXmppTrustStorage.html#a270caf1c48cc437aca6ab9ed6fb2b3d4">trustLevel</a>)=0</td></tr>
+<tr class="memitem:a1c4aa869b59213af3d8d19ad71ba3bb6"><td class="memItemLeft" align="right" valign="top">virtual QFuture&lt; QHash&lt; QString, QMultiHash&lt; QString, QByteArray &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppTrustStorage.html#a1c4aa869b59213af3d8d19ad71ba3bb6">setTrustLevel</a> (const QString &amp;encryption, const QMultiHash&lt; QString, QByteArray &gt; &amp;keyIds, <a class="el" href="classQXmppTrustStorage.html#a20db8ebf03198cb8b163f1b73be188da">TrustLevel</a> <a class="el" href="classQXmppTrustStorage.html#a270caf1c48cc437aca6ab9ed6fb2b3d4">trustLevel</a>)=0</td></tr>
 <tr class="separator:a1c4aa869b59213af3d8d19ad71ba3bb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae90a2722e04a6048a1b2c74b9323991e"><td class="memItemLeft" align="right" valign="top">virtual QFuture&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppTrustStorage.html#ae90a2722e04a6048a1b2c74b9323991e">setTrustLevel</a> (const QString &amp;encryption, const QList&lt; QString &gt; &amp;keyOwnerJids, <a class="el" href="classQXmppTrustStorage.html#a20db8ebf03198cb8b163f1b73be188da">TrustLevel</a> oldTrustLevel, <a class="el" href="classQXmppTrustStorage.html#a20db8ebf03198cb8b163f1b73be188da">TrustLevel</a> newTrustLevel)=0</td></tr>
+<tr class="memitem:ae90a2722e04a6048a1b2c74b9323991e"><td class="memItemLeft" align="right" valign="top">virtual QFuture&lt; QHash&lt; QString, QMultiHash&lt; QString, QByteArray &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppTrustStorage.html#ae90a2722e04a6048a1b2c74b9323991e">setTrustLevel</a> (const QString &amp;encryption, const QList&lt; QString &gt; &amp;keyOwnerJids, <a class="el" href="classQXmppTrustStorage.html#a20db8ebf03198cb8b163f1b73be188da">TrustLevel</a> oldTrustLevel, <a class="el" href="classQXmppTrustStorage.html#a20db8ebf03198cb8b163f1b73be188da">TrustLevel</a> newTrustLevel)=0</td></tr>
 <tr class="separator:ae90a2722e04a6048a1b2c74b9323991e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a270caf1c48cc437aca6ab9ed6fb2b3d4"><td class="memItemLeft" align="right" valign="top">virtual QFuture&lt; <a class="el" href="classQXmppTrustStorage.html#a20db8ebf03198cb8b163f1b73be188da">TrustLevel</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppTrustStorage.html#a270caf1c48cc437aca6ab9ed6fb2b3d4">trustLevel</a> (const QString &amp;encryption, const QString &amp;keyOwnerJid, const QByteArray &amp;keyId)=0</td></tr>
 <tr class="separator:a270caf1c48cc437aca6ab9ed6fb2b3d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -141,7 +141,7 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a163f5a53086a02373a49d0589ee8ddad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The <a class="el" href="classQXmppTrustStorage.html" title="The QXmppTrustStorage class stores trust data for end-to-end encryption.">QXmppTrustStorage</a> class stores trust data for end-to-end encryption. </p>
+<div class="textblock"><p>The <a class="el" href="classQXmppTrustStorage.html" title="The QXmppTrustStorage class stores end-to-end encryption trust data.">QXmppTrustStorage</a> class stores end-to-end encryption trust data. </p>
 <p>The term "key" is used for a public long-term key.</p>
 <dl class="section warning"><dt>Warning</dt><dd>THIS API IS NOT FINALIZED YET!</dd></dl>
 <dl class="section since"><dt>Since</dt><dd><a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.5 </dd></dl>
@@ -229,7 +229,7 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="classQXmppTrustStorage.html#a20db8ebf03198cb8b163f1b73be188da">QXmppTrustStorage::TrustLevel</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="classQXmppTrustStorage.html#a20db8ebf03198cb8b163f1b73be188da">QXmppTrustStorage::TrustLevel</a>&#160;</td>
           <td class="paramname"><em>trustLevel</em> = <code>TrustLevel::AutomaticallyDistrusted</code>&#160;</td>
         </tr>
         <tr>
@@ -835,10 +835,11 @@ Public Member Functions</h2></td></tr>
     <tr><td class="paramname">encryption</td><td>encryption protocol namespace </td></tr>
     <tr><td class="paramname">keyOwnerJids</td><td>key owners' bare JIDs </td></tr>
     <tr><td class="paramname">oldTrustLevel</td><td>trust level being changed </td></tr>
-    <tr><td class="paramname">newTrustLevel</td><td>trust level being set </td></tr>
+    <tr><td class="paramname">newTrustLevel</td><td>trust level being set</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>the key owner JIDs mapped to their modified keys for specific encryption protocols </dd></dl>
 
 </div>
 </div>
@@ -887,10 +888,11 @@ Public Member Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">encryption</td><td>encryption protocol namespace </td></tr>
     <tr><td class="paramname">keyIds</td><td>key owners' bare JIDs mapped to the IDs of their keys </td></tr>
-    <tr><td class="paramname">trustLevel</td><td>trust level being set </td></tr>
+    <tr><td class="paramname">trustLevel</td><td>trust level being set</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>the key owner JIDs mapped to their modified keys for specific encryption protocols </dd></dl>
 
 </div>
 </div>
