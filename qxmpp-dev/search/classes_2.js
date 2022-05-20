@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['identity_1362',['Identity',['../classQXmppDiscoveryIq_1_1Identity.html',1,'QXmppDiscoveryIq']]],
-  ['invalidservicetype_1363',['InvalidServiceType',['../structQXmppPubSubManager_1_1InvalidServiceType.html',1,'QXmppPubSubManager']]],
-  ['item_1364',['Item',['../classQXmppDiscoveryIq_1_1Item.html',1,'QXmppDiscoveryIq::Item'],['../classQXmppRosterIq_1_1Item.html',1,'QXmppRosterIq::Item']]],
-  ['items_3c_20t_20_3e_1365',['Items&lt; T &gt;',['../structQXmppPubSubManager_1_1Items_3_01T_01_4.html',1,'']]]
+  ['identity_1369',['Identity',['../classQXmppDiscoveryIq_1_1Identity.html',1,'QXmppDiscoveryIq']]],
+  ['invalidservicetype_1370',['InvalidServiceType',['../structQXmppPubSubManager_1_1InvalidServiceType.html',1,'QXmppPubSubManager']]],
+  ['item_1371',['Item',['../classQXmppDiscoveryIq_1_1Item.html',1,'QXmppDiscoveryIq::Item'],['../classQXmppRosterIq_1_1Item.html',1,'QXmppRosterIq::Item']]],
+  ['items_3c_20t_20_3e_1372',['Items&lt; T &gt;',['../structQXmppPubSubManager_1_1Items_3_01T_01_4.html',1,'']]]
 ];

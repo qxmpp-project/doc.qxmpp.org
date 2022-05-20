@@ -1,13 +1,13 @@
 var searchData=
 [
-  ['keepaliveerror_389',['KeepAliveError',['../classQXmppClient.html#a7c2851d07cc33119752abc6ec8ffc47aa9b8aabc7956d082a04b4d0ed879564aa',1,'QXmppClient']]],
-  ['keepaliveinterval_390',['keepAliveInterval',['../classQXmppConfiguration.html#a7f849e8404081cf60cac8675882f9d19',1,'QXmppConfiguration']]],
-  ['keepalivetimeout_391',['keepAliveTimeout',['../classQXmppConfiguration.html#a4cc94b11d34d89042e4734331d9c462e',1,'QXmppConfiguration']]],
-  ['key_392',['key',['../classQXmppDataForm_1_1Field.html#a0bee3cca377f4e24cee4b4fcd5d2e376',1,'QXmppDataForm::Field::key()'],['../classQXmppDialback.html#ade46741a075cc6fa4d53d7d85b47c095',1,'QXmppDialback::key()']]],
-  ['keyowners_393',['keyOwners',['../classQXmppTrustMessageElement.html#a6e4db0626bf8b6751f7cf78206ecb32f',1,'QXmppTrustMessageElement']]],
-  ['keys_394',['keys',['../classQXmppTrustManager.html#a822defe98ca9a3c6e7c9361a061cbde9',1,'QXmppTrustManager::keys(const QString &amp;encryption, QXmppTrustStorage::TrustLevels trustLevels={})'],['../classQXmppTrustManager.html#acc1e5e4fce0e9728c17dc4ea7c90540d',1,'QXmppTrustManager::keys(const QString &amp;encryption, const QList&lt; QString &gt; &amp;keyOwnerJids, QXmppTrustStorage::TrustLevels trustLevels={})'],['../classQXmppTrustStorage.html#a13a9964637506bc9f381d661892ab10f',1,'QXmppTrustStorage::keys(const QString &amp;encryption, TrustLevels trustLevels={})=0'],['../classQXmppTrustStorage.html#a76b656a0d0232685894cfa0acc1dd521',1,'QXmppTrustStorage::keys(const QString &amp;encryption, const QList&lt; QString &gt; &amp;keyOwnerJids, TrustLevels trustLevels={})=0'],['../classQXmppServerPlugin.html#ada6b803762e9d728f8966af7c9c2861a',1,'QXmppServerPlugin::keys()']]],
-  ['keysforpostponedtrustdecisions_395',['keysForPostponedTrustDecisions',['../classQXmppAtmTrustStorage.html#a94abae5f59c1ffff5d52b76423b03219',1,'QXmppAtmTrustStorage']]],
-  ['kick_396',['kick',['../classQXmppMucRoom.html#a434a767f9fdd176ea2f2c5effd40695f',1,'QXmppMucRoom']]],
-  ['kickaction_397',['KickAction',['../classQXmppMucRoom.html#acd3129293f69d7e7cdd91b65aae0606fa3d65a5019321c87100e1bd61881b8559',1,'QXmppMucRoom']]],
-  ['kicked_398',['kicked',['../classQXmppMucRoom.html#afc2ca70209ab1ab43f75c86221f34cdc',1,'QXmppMucRoom']]]
+  ['keepaliveerror_392',['KeepAliveError',['../classQXmppClient.html#a7c2851d07cc33119752abc6ec8ffc47aa9b8aabc7956d082a04b4d0ed879564aa',1,'QXmppClient']]],
+  ['keepaliveinterval_393',['keepAliveInterval',['../classQXmppConfiguration.html#a7f849e8404081cf60cac8675882f9d19',1,'QXmppConfiguration']]],
+  ['keepalivetimeout_394',['keepAliveTimeout',['../classQXmppConfiguration.html#a4cc94b11d34d89042e4734331d9c462e',1,'QXmppConfiguration']]],
+  ['key_395',['key',['../classQXmppDataForm_1_1Field.html#a0bee3cca377f4e24cee4b4fcd5d2e376',1,'QXmppDataForm::Field::key()'],['../classQXmppDialback.html#ade46741a075cc6fa4d53d7d85b47c095',1,'QXmppDialback::key()']]],
+  ['keyowners_396',['keyOwners',['../classQXmppTrustMessageElement.html#a6e4db0626bf8b6751f7cf78206ecb32f',1,'QXmppTrustMessageElement']]],
+  ['keys_397',['keys',['../classQXmppTrustManager.html#a822defe98ca9a3c6e7c9361a061cbde9',1,'QXmppTrustManager::keys(const QString &amp;encryption, QXmppTrustStorage::TrustLevels trustLevels={})'],['../classQXmppTrustManager.html#acc1e5e4fce0e9728c17dc4ea7c90540d',1,'QXmppTrustManager::keys(const QString &amp;encryption, const QList&lt; QString &gt; &amp;keyOwnerJids, QXmppTrustStorage::TrustLevels trustLevels={})'],['../classQXmppTrustStorage.html#a13a9964637506bc9f381d661892ab10f',1,'QXmppTrustStorage::keys(const QString &amp;encryption, TrustLevels trustLevels={})=0'],['../classQXmppTrustStorage.html#a76b656a0d0232685894cfa0acc1dd521',1,'QXmppTrustStorage::keys(const QString &amp;encryption, const QList&lt; QString &gt; &amp;keyOwnerJids, TrustLevels trustLevels={})=0'],['../classQXmppServerPlugin.html#ada6b803762e9d728f8966af7c9c2861a',1,'QXmppServerPlugin::keys()']]],
+  ['keysforpostponedtrustdecisions_398',['keysForPostponedTrustDecisions',['../classQXmppAtmTrustStorage.html#a94abae5f59c1ffff5d52b76423b03219',1,'QXmppAtmTrustStorage']]],
+  ['kick_399',['kick',['../classQXmppMucRoom.html#a434a767f9fdd176ea2f2c5effd40695f',1,'QXmppMucRoom']]],
+  ['kickaction_400',['KickAction',['../classQXmppMucRoom.html#acd3129293f69d7e7cdd91b65aae0606fa3d65a5019321c87100e1bd61881b8559',1,'QXmppMucRoom']]],
+  ['kicked_401',['kicked',['../classQXmppMucRoom.html#afc2ca70209ab1ab43f75c86221f34cdc',1,'QXmppMucRoom']]]
 ];

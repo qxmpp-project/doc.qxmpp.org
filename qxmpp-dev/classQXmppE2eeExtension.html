@@ -71,6 +71,8 @@ $(function() {
 <div class="title">QXmppE2eeExtension Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span></div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Inherits QXmppExtension.</p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
@@ -79,8 +81,8 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:acae3217a8bdf63353457c847c13bbc45"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppE2eeExtension.html#acae3217a8bdf63353457c847c13bbc45">EncryptMessageResult</a> = std::variant&lt; QByteArray, <a class="el" href="structQXmpp_1_1SendError.html">QXmpp::SendError</a> &gt;</td></tr>
-<tr class="separator:acae3217a8bdf63353457c847c13bbc45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae6c448a9a6306389f0f719c9efe571fe"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppE2eeExtension.html#ae6c448a9a6306389f0f719c9efe571fe">MessageEncryptResult</a> = std::variant&lt; QByteArray, <a class="el" href="structQXmpp_1_1SendError.html">QXmpp::SendError</a> &gt;</td></tr>
+<tr class="separator:ae6c448a9a6306389f0f719c9efe571fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8feb365f765111ec5d67cfc57b071de1"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppE2eeExtension.html#a8feb365f765111ec5d67cfc57b071de1">IqEncryptResult</a> = std::variant&lt; QByteArray, <a class="el" href="structQXmpp_1_1SendError.html">QXmpp::SendError</a> &gt;</td></tr>
 <tr class="separator:a8feb365f765111ec5d67cfc57b071de1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af6f5664c1e6868ddfed1aa977ec69c5e"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppE2eeExtension.html#af6f5664c1e6868ddfed1aa977ec69c5e">IqDecryptResult</a> = std::variant&lt; QDomElement, <a class="el" href="structQXmppE2eeExtension_1_1NotEncrypted.html">NotEncrypted</a>, <a class="el" href="structQXmpp_1_1SendError.html">QXmpp::SendError</a> &gt;</td></tr>
@@ -88,7 +90,7 @@ Public Types</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a9a6e1fa906013625eec9b9300017a803"><td class="memItemLeft" align="right" valign="top">virtual QFuture&lt; <a class="el" href="classQXmppE2eeExtension.html#acae3217a8bdf63353457c847c13bbc45">EncryptMessageResult</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppE2eeExtension.html#a9a6e1fa906013625eec9b9300017a803">encryptMessage</a> (<a class="el" href="classQXmppMessage.html">QXmppMessage</a> &amp;&amp;)=0</td></tr>
+<tr class="memitem:a9a6e1fa906013625eec9b9300017a803"><td class="memItemLeft" align="right" valign="top">virtual QFuture&lt; <a class="el" href="classQXmppE2eeExtension.html#ae6c448a9a6306389f0f719c9efe571fe">MessageEncryptResult</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppE2eeExtension.html#a9a6e1fa906013625eec9b9300017a803">encryptMessage</a> (<a class="el" href="classQXmppMessage.html">QXmppMessage</a> &amp;&amp;)=0</td></tr>
 <tr class="separator:a9a6e1fa906013625eec9b9300017a803"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2d20720aba7c2b09a71990d3b490c474"><td class="memItemLeft" align="right" valign="top">virtual QFuture&lt; <a class="el" href="classQXmppE2eeExtension.html#a8feb365f765111ec5d67cfc57b071de1">IqEncryptResult</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppE2eeExtension.html#a2d20720aba7c2b09a71990d3b490c474">encryptIq</a> (<a class="el" href="classQXmppIq.html">QXmppIq</a> &amp;&amp;)=0</td></tr>
 <tr class="separator:a2d20720aba7c2b09a71990d3b490c474"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -100,21 +102,6 @@ Public Member Functions</h2></td></tr>
 <dl class="section warning"><dt>Warning</dt><dd>THIS API IS NOT FINALIZED YET!</dd></dl>
 <dl class="section since"><dt>Since</dt><dd><a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.5 </dd></dl>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
-<a id="acae3217a8bdf63353457c847c13bbc45"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#acae3217a8bdf63353457c847c13bbc45">&#9670;&nbsp;</a></span>EncryptMessageResult</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classQXmppE2eeExtension.html#acae3217a8bdf63353457c847c13bbc45">QXmppE2eeExtension::EncryptMessageResult</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Contains the XML serialized message stanza with encrypted contents or a <a class="el" href="structQXmpp_1_1SendError.html">QXmpp::SendError</a> in case the message couldn't be encrypted. </p>
-
-</div>
-</div>
 <a id="af6f5664c1e6868ddfed1aa977ec69c5e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af6f5664c1e6868ddfed1aa977ec69c5e">&#9670;&nbsp;</a></span>IqDecryptResult</h2>
 
@@ -142,6 +129,21 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Contains the XML serialized IQ stanza with encrypted contents or a <a class="el" href="structQXmpp_1_1SendError.html">QXmpp::SendError</a> in case the IQ couldn't be encrypted. </p>
+
+</div>
+</div>
+<a id="ae6c448a9a6306389f0f719c9efe571fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6c448a9a6306389f0f719c9efe571fe">&#9670;&nbsp;</a></span>MessageEncryptResult</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classQXmppE2eeExtension.html#ae6c448a9a6306389f0f719c9efe571fe">QXmppE2eeExtension::MessageEncryptResult</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Contains the XML serialized message stanza with encrypted contents or a <a class="el" href="structQXmpp_1_1SendError.html">QXmpp::SendError</a> in case the message couldn't be encrypted. </p>
 
 </div>
 </div>

@@ -79,27 +79,29 @@ $(function() {
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="preprocessor">#define QXMPPMESSAGERECEIPTMANAGER_H</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160; </div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;QXmppClientExtension.h&quot;</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
-<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="classQXmppMessageReceiptManager.html">   17</a></span>&#160;<span class="keyword">class </span>QXMPP_EXPORT <a class="code" href="classQXmppMessageReceiptManager.html">QXmppMessageReceiptManager</a> : <span class="keyword">public</span> <a class="code" href="classQXmppClientExtension.html">QXmppClientExtension</a></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    Q_OBJECT</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <a class="code" href="classQXmppMessageReceiptManager.html">QXmppMessageReceiptManager</a>();</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    QStringList <a class="code" href="classQXmppClientExtension.html#a3ef15300fd584457adc40378a3103511">discoveryFeatures</a>() <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classQXmppClientExtension.html#af026d292204dc538249d16086e9e8108">handleStanza</a>(<span class="keyword">const</span> QDomElement &amp;stanza) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;Q_SIGNALS:</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordtype">void</span> messageDelivered(<span class="keyword">const</span> QString &amp;jid, <span class="keyword">const</span> QString &amp;<span class="keywordtype">id</span>);</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;};</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="preprocessor">#endif  // QXMPPMESSAGERECEIPTMANAGER_H</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;QXmppMessageHandler.h&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="classQXmppMessageReceiptManager.html">   19</a></span>&#160;<span class="keyword">class </span>QXMPP_EXPORT <a class="code" href="classQXmppMessageReceiptManager.html">QXmppMessageReceiptManager</a> : <span class="keyword">public</span> <a class="code" href="classQXmppClientExtension.html">QXmppClientExtension</a>, <span class="keyword">public</span> <a class="code" href="classQXmppMessageHandler.html">QXmppMessageHandler</a></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;{</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    Q_OBJECT</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <a class="code" href="classQXmppMessageReceiptManager.html">QXmppMessageReceiptManager</a>();</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    QStringList <a class="code" href="classQXmppClientExtension.html#a3ef15300fd584457adc40378a3103511">discoveryFeatures</a>() <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classQXmppMessageHandler.html#ab68b63baf0ca07ba717ba8455a129a6f">handleMessage</a>(<span class="keyword">const</span> <a class="code" href="classQXmppMessage.html">QXmppMessage</a> &amp;) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;Q_SIGNALS:</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">void</span> messageDelivered(<span class="keyword">const</span> QString &amp;jid, <span class="keyword">const</span> QString &amp;<span class="keywordtype">id</span>);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;};</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor">#endif  // QXMPPMESSAGERECEIPTMANAGER_H</span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aclassQXmppMessageReceiptManager_html"><div class="ttname"><a href="classQXmppMessageReceiptManager.html">QXmppMessageReceiptManager</a></div><div class="ttdoc">The QXmppMessageReceiptManager class makes it possible to send and receive message delivery receipts ...</div><div class="ttdef"><b>Definition:</b> QXmppMessageReceiptManager.h:17</div></div>
-<div class="ttc" id="aclassQXmppClientExtension_html"><div class="ttname"><a href="classQXmppClientExtension.html">QXmppClientExtension</a></div><div class="ttdoc">The QXmppClientExtension class is the base class for QXmppClient extensions.</div><div class="ttdef"><b>Definition:</b> QXmppClientExtension.h:27</div></div>
-<div class="ttc" id="aclassQXmppClientExtension_html_a3ef15300fd584457adc40378a3103511"><div class="ttname"><a href="classQXmppClientExtension.html#a3ef15300fd584457adc40378a3103511">QXmppClientExtension::discoveryFeatures</a></div><div class="ttdeci">virtual QStringList discoveryFeatures() const</div><div class="ttdef"><b>Definition:</b> QXmppClientExtension.cpp:35</div></div>
-<div class="ttc" id="aclassQXmppClientExtension_html_af026d292204dc538249d16086e9e8108"><div class="ttname"><a href="classQXmppClientExtension.html#af026d292204dc538249d16086e9e8108">QXmppClientExtension::handleStanza</a></div><div class="ttdeci">virtual bool handleStanza(const QDomElement &amp;stanza)=0</div><div class="ttdoc">You need to implement this method to process incoming XMPP stanzas.</div></div>
+<div class="ttc" id="aclassQXmppMessageHandler_html_ab68b63baf0ca07ba717ba8455a129a6f"><div class="ttname"><a href="classQXmppMessageHandler.html#ab68b63baf0ca07ba717ba8455a129a6f">QXmppMessageHandler::handleMessage</a></div><div class="ttdeci">virtual bool handleMessage(const QXmppMessage &amp;)=0</div></div>
+<div class="ttc" id="aclassQXmppMessageReceiptManager_html"><div class="ttname"><a href="classQXmppMessageReceiptManager.html">QXmppMessageReceiptManager</a></div><div class="ttdoc">The QXmppMessageReceiptManager class makes it possible to send and receive message delivery receipts ...</div><div class="ttdef"><b>Definition:</b> QXmppMessageReceiptManager.h:19</div></div>
+<div class="ttc" id="aclassQXmppClientExtension_html"><div class="ttname"><a href="classQXmppClientExtension.html">QXmppClientExtension</a></div><div class="ttdoc">The QXmppClientExtension class is the base class for QXmppClient extensions.</div><div class="ttdef"><b>Definition:</b> QXmppClientExtension.h:30</div></div>
+<div class="ttc" id="aclassQXmppClientExtension_html_a3ef15300fd584457adc40378a3103511"><div class="ttname"><a href="classQXmppClientExtension.html#a3ef15300fd584457adc40378a3103511">QXmppClientExtension::discoveryFeatures</a></div><div class="ttdeci">virtual QStringList discoveryFeatures() const</div><div class="ttdef"><b>Definition:</b> QXmppClientExtension.cpp:37</div></div>
+<div class="ttc" id="aclassQXmppMessageHandler_html"><div class="ttname"><a href="classQXmppMessageHandler.html">QXmppMessageHandler</a></div><div class="ttdef"><b>Definition:</b> QXmppMessageHandler.h:15</div></div>
+<div class="ttc" id="aclassQXmppMessage_html"><div class="ttname"><a href="classQXmppMessage.html">QXmppMessage</a></div><div class="ttdoc">The QXmppMessage class represents an XMPP message.</div><div class="ttdef"><b>Definition:</b> QXmppMessage.h:29</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

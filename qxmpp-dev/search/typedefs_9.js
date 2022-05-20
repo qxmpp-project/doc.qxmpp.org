@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['sendresult_2643',['SendResult',['../namespaceQXmpp.html#a4bfd35589dff85a6ae7026dca8f3d72d',1,'QXmpp']]],
-  ['slotresult_2644',['SlotResult',['../classQXmppUploadRequestManager.html#a95a7915e3756cfa3f3bde96344073697',1,'QXmppUploadRequestManager']]],
-  ['subscriptionsresult_2645',['SubscriptionsResult',['../classQXmppPubSubManager.html#a9e5e72cc2087c3f939509a01076bddee',1,'QXmppPubSubManager']]]
+  ['result_2656',['Result',['../classQXmppPubSubManager.html#a9a8741a70d0839185e8e52072ea0ed53',1,'QXmppPubSubManager::Result()'],['../classQXmppRosterManager.html#a8340805e06ab6590b52327d2de2676d7',1,'QXmppRosterManager::Result()']]]
 ];

@@ -249,6 +249,8 @@ QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
 <tr class="separator:a5d05513229a2b232bbc2181674653676"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aee47ef057dcb2eef36f5f96ef096d177"><td class="memItemLeft" align="right" valign="top">QFuture&lt; <a class="el" href="namespaceQXmpp.html#a4bfd35589dff85a6ae7026dca8f3d72d">QXmpp::SendResult</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppClient.html#aee47ef057dcb2eef36f5f96ef096d177">sendUnencrypted</a> (<a class="el" href="classQXmppStanza.html">QXmppStanza</a> &amp;&amp;)</td></tr>
 <tr class="separator:aee47ef057dcb2eef36f5f96ef096d177"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a293e4a6728b5c6d2299d710a2c67bc01"><td class="memItemLeft" align="right" valign="top">QFuture&lt; <a class="el" href="namespaceQXmpp.html#a4bfd35589dff85a6ae7026dca8f3d72d">QXmpp::SendResult</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppClient.html#a293e4a6728b5c6d2299d710a2c67bc01">reply</a> (<a class="el" href="classQXmppStanza.html">QXmppStanza</a> &amp;&amp;stanza, const std::optional&lt; <a class="el" href="classQXmppE2eeMetadata.html">QXmppE2eeMetadata</a> &gt; &amp;e2eeMetadata)</td></tr>
+<tr class="separator:a293e4a6728b5c6d2299d710a2c67bc01"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a63999c1ed2ff6f3bbdace3f02416416e"><td class="memItemLeft" align="right" valign="top">QFuture&lt; <a class="el" href="classQXmppClient.html#a5312db7ddd0aadacea286314154f8a6d">IqResult</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppClient.html#a63999c1ed2ff6f3bbdace3f02416416e">sendIq</a> (<a class="el" href="classQXmppIq.html">QXmppIq</a> &amp;&amp;)</td></tr>
 <tr class="separator:a63999c1ed2ff6f3bbdace3f02416416e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a50452bb5dbcc6e3879dff2112ce75cff"><td class="memItemLeft" align="right" valign="top">QFuture&lt; <a class="el" href="classQXmppClient.html#a5312db7ddd0aadacea286314154f8a6d">IqResult</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppClient.html#a50452bb5dbcc6e3879dff2112ce75cff">sendSensitiveIq</a> (<a class="el" href="classQXmppIq.html">QXmppIq</a> &amp;&amp;)</td></tr>
@@ -278,6 +280,9 @@ Properties</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="friends"></a>
 Friends</h2></td></tr>
+<tr class="memitem:a1d23bc82da95becae0654b5105b43834"><td class="memItemLeft" align="right" valign="top"><a id="a1d23bc82da95becae0654b5105b43834"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>QXmppClientExtension</b></td></tr>
+<tr class="separator:a1d23bc82da95becae0654b5105b43834"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a483d8a3be3f9c9a100e253c5d0e4dbaa"><td class="memItemLeft" align="right" valign="top"><a id="a483d8a3be3f9c9a100e253c5d0e4dbaa"></a>
 class&#160;</td><td class="memItemRight" valign="bottom"><b>QXmppInternalClientExtension</b></td></tr>
 <tr class="separator:a483d8a3be3f9c9a100e253c5d0e4dbaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1026,6 +1031,37 @@ template&lt;typename T &gt; </div>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a293e4a6728b5c6d2299d710a2c67bc01"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a293e4a6728b5c6d2299d710a2c67bc01">&#9670;&nbsp;</a></span>reply()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QFuture&lt; <a class="el" href="namespaceQXmpp.html#a4bfd35589dff85a6ae7026dca8f3d72d">QXmpp::SendResult</a> &gt; QXmppClient::reply </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classQXmppStanza.html">QXmppStanza</a> &amp;&amp;&#160;</td>
+          <td class="paramname"><em>stanza</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::optional&lt; <a class="el" href="classQXmppE2eeMetadata.html">QXmppE2eeMetadata</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>e2eeMetadata</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Sends the stanza with the same encryption as <code>e2eeMetadata</code>.</p>
+<p>When there is no e2eeMetadata given this always sends the stanza without end-to-end encryption. Intended to be used for replies to IQs and messages.</p>
+<dl class="section since"><dt>Since</dt><dd><a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.5 </dd></dl>
 
 </div>
 </div>
