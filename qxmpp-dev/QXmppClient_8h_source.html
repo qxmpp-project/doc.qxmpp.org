@@ -81,233 +81,234 @@ $(function() {
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;QXmppLogger.h&quot;</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;QXmppPresence.h&quot;</span></div>
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;QXmppSendResult.h&quot;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160; </div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;variant&gt;</span></div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;QAbstractSocket&gt;</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;QObject&gt;</span></div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &lt;QSslError&gt;</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">class </span>QFuture;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160; </div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">class </span><a class="code" href="classQXmppE2eeExtension.html">QXmppE2eeExtension</a>;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">class </span><a class="code" href="classQXmppClientExtension.html">QXmppClientExtension</a>;</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">class </span>QXmppClientPrivate;</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">class </span><a class="code" href="classQXmppPresence.html">QXmppPresence</a>;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">class </span><a class="code" href="classQXmppMessage.html">QXmppMessage</a>;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">class </span><a class="code" href="classQXmppIq.html">QXmppIq</a>;</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">class </span><a class="code" href="classQXmppStream.html">QXmppStream</a>;</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">class </span>QXmppInternalClientExtension;</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="comment">// managers</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">class </span><a class="code" href="classQXmppDiscoveryIq.html">QXmppDiscoveryIq</a>;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">class </span><a class="code" href="classQXmppRosterManager.html">QXmppRosterManager</a>;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">class </span><a class="code" href="classQXmppVCardManager.html">QXmppVCardManager</a>;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">class </span><a class="code" href="classQXmppVersionManager.html">QXmppVersionManager</a>;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="classQXmppClient.html">   81</a></span>&#160;<span class="keyword">class </span>QXMPP_EXPORT <a class="code" href="classQXmppClient.html">QXmppClient</a> : <span class="keyword">public</span> <a class="code" href="classQXmppLoggable.html">QXmppLoggable</a></div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;{</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    Q_OBJECT</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160; </div>
-<div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="classQXmppClient.html#ae5fca0867efe7e7fcae90cbbf10b8193">   86</a></span>&#160;    Q_PROPERTY(<a class="code" href="classQXmppLogger.html">QXmppLogger</a> *logger READ logger WRITE setLogger NOTIFY loggerChanged)</div>
-<div class="line"><a name="l00088"></a><span class="lineno"><a class="line" href="classQXmppClient.html#ac4cbb2e04e5ca683fadbc79ef173f0a5">   88</a></span>&#160;    Q_PROPERTY(<a class="code" href="classQXmppClient.html#a5f4e70d508c08967f72fd41c5343ad2e">State</a> state READ state NOTIFY stateChanged)</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;public:</div>
-<div class="line"><a name="l00091"></a><span class="lineno"><a class="line" href="classQXmppClient.html#a5312db7ddd0aadacea286314154f8a6d">   91</a></span>&#160;    using <a class="code" href="classQXmppClient.html#a5312db7ddd0aadacea286314154f8a6d">IqResult</a> = std::variant&lt;QDomElement, <a class="code" href="namespaceQXmpp.html">QXmpp</a>::SendError&gt;;</div>
-<div class="line"><a name="l00092"></a><span class="lineno"><a class="line" href="classQXmppClient.html#ad5004eda51b93744a8ad8259ee692a2a">   92</a></span>&#160;    using <a class="code" href="classQXmppClient.html#ad5004eda51b93744a8ad8259ee692a2a">EmptyResult</a> = std::variant&lt;<a class="code" href="namespaceQXmpp.html">QXmpp</a>::Success, <a class="code" href="classQXmppStanza.html">QXmppStanza</a>::<a class="code" href="classQXmppClient.html#a7c2851d07cc33119752abc6ec8ffc47a">Error</a>&gt;;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160; </div>
-<div class="line"><a name="l00096"></a><span class="lineno"><a class="line" href="classQXmppClient.html#a7c2851d07cc33119752abc6ec8ffc47a">   96</a></span>&#160;    enum <a class="code" href="classQXmppClient.html#a7c2851d07cc33119752abc6ec8ffc47a">Error</a> {</div>
-<div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="classQXmppClient.html#a7c2851d07cc33119752abc6ec8ffc47aa0432617a6e27c34202bdac7c5356299f">   97</a></span>&#160;        <a class="code" href="classQXmppClient.html#a7c2851d07cc33119752abc6ec8ffc47aa0432617a6e27c34202bdac7c5356299f">NoError</a>,          </div>
-<div class="line"><a name="l00098"></a><span class="lineno"><a class="line" href="classQXmppClient.html#a7c2851d07cc33119752abc6ec8ffc47aac48e9688ca9dce21676283ada1172863">   98</a></span>&#160;        <a class="code" href="classQXmppClient.html#a7c2851d07cc33119752abc6ec8ffc47aac48e9688ca9dce21676283ada1172863">SocketError</a>,      </div>
-<div class="line"><a name="l00099"></a><span class="lineno"><a class="line" href="classQXmppClient.html#a7c2851d07cc33119752abc6ec8ffc47aa9b8aabc7956d082a04b4d0ed879564aa">   99</a></span>&#160;        <a class="code" href="classQXmppClient.html#a7c2851d07cc33119752abc6ec8ffc47aa9b8aabc7956d082a04b4d0ed879564aa">KeepAliveError</a>,   </div>
-<div class="line"><a name="l00100"></a><span class="lineno"><a class="line" href="classQXmppClient.html#a7c2851d07cc33119752abc6ec8ffc47aa29f30662c97dc09858f1d7e80eb1825a">  100</a></span>&#160;        <a class="code" href="classQXmppClient.html#a7c2851d07cc33119752abc6ec8ffc47aa29f30662c97dc09858f1d7e80eb1825a">XmppStreamError</a>,  </div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    };</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    Q_ENUM(Error)</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    </div>
-<div class="line"><a name="l00105"></a><span class="lineno"><a class="line" href="classQXmppClient.html#a5f4e70d508c08967f72fd41c5343ad2e">  105</a></span>&#160;    enum <a class="code" href="classQXmppClient.html#a5f4e70d508c08967f72fd41c5343ad2e">State</a> {</div>
-<div class="line"><a name="l00106"></a><span class="lineno"><a class="line" href="classQXmppClient.html#a5f4e70d508c08967f72fd41c5343ad2ea6bd1662e23e948aa1cb83b628c8b472c">  106</a></span>&#160;        <a class="code" href="classQXmppClient.html#a5f4e70d508c08967f72fd41c5343ad2ea6bd1662e23e948aa1cb83b628c8b472c">DisconnectedState</a>,  </div>
-<div class="line"><a name="l00107"></a><span class="lineno"><a class="line" href="classQXmppClient.html#a5f4e70d508c08967f72fd41c5343ad2eac25719267a60fc7b0ef8ecc35fa439f7">  107</a></span>&#160;        <a class="code" href="classQXmppClient.html#a5f4e70d508c08967f72fd41c5343ad2eac25719267a60fc7b0ef8ecc35fa439f7">ConnectingState</a>,    </div>
-<div class="line"><a name="l00108"></a><span class="lineno"><a class="line" href="classQXmppClient.html#a5f4e70d508c08967f72fd41c5343ad2eae603afad2343f7682b39b90d3d845cf7">  108</a></span>&#160;        ConnectedState      </div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    };</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    Q_ENUM(State)</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160; </div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    </div>
-<div class="line"><a name="l00113"></a><span class="lineno"><a class="line" href="classQXmppClient.html#aab5506ec0769f208e1ccd5d23c6aaea8">  113</a></span>&#160;    enum <a class="code" href="classQXmppClient.html#aab5506ec0769f208e1ccd5d23c6aaea8">StreamManagementState</a> {</div>
-<div class="line"><a name="l00115"></a><span class="lineno"><a class="line" href="classQXmppClient.html#aab5506ec0769f208e1ccd5d23c6aaea8a2f2266e80f6675fce28888b4dde9acab">  115</a></span>&#160;        <a class="code" href="classQXmppClient.html#aab5506ec0769f208e1ccd5d23c6aaea8a2f2266e80f6675fce28888b4dde9acab">NoStreamManagement</a>,</div>
-<div class="line"><a name="l00117"></a><span class="lineno"><a class="line" href="classQXmppClient.html#aab5506ec0769f208e1ccd5d23c6aaea8acea8c2f8fb528ef8b02f55fbb4481795">  117</a></span>&#160;        <a class="code" href="classQXmppClient.html#aab5506ec0769f208e1ccd5d23c6aaea8acea8c2f8fb528ef8b02f55fbb4481795">NewStream</a>,</div>
-<div class="line"><a name="l00119"></a><span class="lineno"><a class="line" href="classQXmppClient.html#aab5506ec0769f208e1ccd5d23c6aaea8a219f7e0cb85cec5a017c21138c7ab4ac">  119</a></span>&#160;        ResumedStream</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    };</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160; </div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    <a class="code" href="classQXmppClient.html">QXmppClient</a>(QObject *parent = <span class="keyword">nullptr</span>);</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    ~<a class="code" href="classQXmppClient.html">QXmppClient</a>() <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160; </div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;    <span class="keywordtype">bool</span> addExtension(<a class="code" href="classQXmppClientExtension.html">QXmppClientExtension</a> *extension);</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span>... Args&gt;</div>
-<div class="line"><a name="l00127"></a><span class="lineno"><a class="line" href="classQXmppClient.html#ab6df7c877500e1548ffb351c46ae48e4">  127</a></span>&#160;    T *<a class="code" href="classQXmppClient.html#ab6df7c877500e1548ffb351c46ae48e4">addNewExtension</a>(Args... args)</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    {</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        <span class="comment">// it&#39;s impossible that addExtension() returns false: ext is a new object</span></div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        <span class="keyword">auto</span> *ext = <span class="keyword">new</span> T(args...);</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        addExtension(ext);</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        <span class="keywordflow">return</span> ext;</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    }</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    <span class="keywordtype">bool</span> insertExtension(<span class="keywordtype">int</span> index, <a class="code" href="classQXmppClientExtension.html">QXmppClientExtension</a> *extension);</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    <span class="keywordtype">bool</span> removeExtension(<a class="code" href="classQXmppClientExtension.html">QXmppClientExtension</a> *extension);</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    <a class="code" href="classQXmppE2eeExtension.html">QXmppE2eeExtension</a> *encryptionExtension() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    <span class="keywordtype">void</span> setEncryptionExtension(<a class="code" href="classQXmppE2eeExtension.html">QXmppE2eeExtension</a> *);</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160; </div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    QList&lt;QXmppClientExtension *&gt; extensions();</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160; </div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00155"></a><span class="lineno"><a class="line" href="classQXmppClient.html#a728fc96e0ca41b21d94e4686f8519c4d">  155</a></span>&#160;    T *<a class="code" href="classQXmppClient.html#a728fc96e0ca41b21d94e4686f8519c4d">findExtension</a>()</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    {</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        <span class="keyword">const</span> QList&lt;QXmppClientExtension *&gt; list = extensions();</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">auto</span> ext : list) {</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;            T *extension = qobject_cast&lt;T *&gt;(ext);</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;            <span class="keywordflow">if</span> (extension)</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;                <span class="keywordflow">return</span> extension;</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;        }</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    }</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160; </div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
-<div class="line"><a name="l00182"></a><span class="lineno"><a class="line" href="classQXmppClient.html#ae5ab7ea0835f978548009364a79e6a2d">  182</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classQXmppClient.html#ae5ab7ea0835f978548009364a79e6a2d">indexOfExtension</a>()</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;    {</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;        <span class="keyword">auto</span> list = extensions();</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; list.size(); ++i) {</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;            <span class="keywordflow">if</span> (qobject_cast&lt;T *&gt;(list.at(i)) != <span class="keyword">nullptr</span>)</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;                <span class="keywordflow">return</span> i;</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;        }</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;        <span class="keywordflow">return</span> -1;</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    }</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160; </div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    <span class="keywordtype">bool</span> isAuthenticated() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    <span class="keywordtype">bool</span> isConnected() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160; </div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    <span class="keywordtype">bool</span> isActive() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    <span class="keywordtype">void</span> setActive(<span class="keywordtype">bool</span> active);</div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160; </div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;    StreamManagementState streamManagementState() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160; </div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    <a class="code" href="classQXmppPresence.html">QXmppPresence</a> clientPresence() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    <span class="keywordtype">void</span> setClientPresence(<span class="keyword">const</span> <a class="code" href="classQXmppPresence.html">QXmppPresence</a> &amp;presence);</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160; </div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    <a class="code" href="classQXmppConfiguration.html">QXmppConfiguration</a> &amp;configuration();</div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160; </div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;    <span class="comment">// documentation needs to be here, see https://stackoverflow.com/questions/49192523/</span></div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;<span class="comment"></span>    <a class="code" href="classQXmppLogger.html">QXmppLogger</a> *logger() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    <span class="keywordtype">void</span> setLogger(<a class="code" href="classQXmppLogger.html">QXmppLogger</a> *logger);</div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160; </div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    QAbstractSocket::SocketError socketError();</div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;    QString socketErrorString() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160; </div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;    <span class="comment">// documentation needs to be here, see https://stackoverflow.com/questions/49192523/</span></div>
-<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;<span class="comment"></span>    State state() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;    <a class="code" href="classQXmppStanza_1_1Error.html#abcf1cbbe7b15ec82f3ac34723b604852">QXmppStanza::Error::Condition</a> xmppStreamError();</div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160; </div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;    QFuture&lt;QXmpp::SendResult&gt; send(<a class="code" href="classQXmppStanza.html">QXmppStanza</a> &amp;&amp;);</div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;    QFuture&lt;QXmpp::SendResult&gt; sendUnencrypted(<a class="code" href="classQXmppStanza.html">QXmppStanza</a> &amp;&amp;);</div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;    QFuture&lt;QXmpp::SendResult&gt; reply(<a class="code" href="classQXmppStanza.html">QXmppStanza</a> &amp;&amp;stanza, <span class="keyword">const</span> std::optional&lt;QXmppE2eeMetadata&gt; &amp;e2eeMetadata);</div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;    QFuture&lt;IqResult&gt; sendIq(<a class="code" href="classQXmppIq.html">QXmppIq</a> &amp;&amp;);</div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;    QFuture&lt;IqResult&gt; sendSensitiveIq(<a class="code" href="classQXmppIq.html">QXmppIq</a> &amp;&amp;);</div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;    QFuture&lt;EmptyResult&gt; sendGenericIq(<a class="code" href="classQXmppIq.html">QXmppIq</a> &amp;&amp;);</div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160; </div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;<span class="preprocessor">#if QXMPP_DEPRECATED_SINCE(1, 1)</span></div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;    QT_DEPRECATED_X(<span class="stringliteral">&quot;Use QXmppClient::findExtension&lt;QXmppRosterManager&gt;() instead&quot;</span>)</div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;    <a class="code" href="classQXmppRosterManager.html">QXmppRosterManager</a> &amp;rosterManager();</div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160; </div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;    QT_DEPRECATED_X(&quot;Use <a class="code" href="classQXmppClient.html">QXmppClient</a>::findExtension&lt;<a class="code" href="classQXmppVCardManager.html">QXmppVCardManager</a>&gt;() instead&quot;)</div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;    <a class="code" href="classQXmppVCardManager.html">QXmppVCardManager</a> &amp;vCardManager();</div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160; </div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;    QT_DEPRECATED_X(&quot;Use <a class="code" href="classQXmppClient.html">QXmppClient</a>::findExtension&lt;<a class="code" href="classQXmppVersionManager.html">QXmppVersionManager</a>&gt;() instead&quot;)</div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;    <a class="code" href="classQXmppVersionManager.html">QXmppVersionManager</a> &amp;versionManager();</div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;<span class="preprocessor">#endif</span></div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160; </div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;Q_SIGNALS:</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160; </div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;    <span class="keywordtype">void</span> connected();</div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160; </div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;    <span class="keywordtype">void</span> disconnected();</div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160; </div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;    <span class="keywordtype">void</span> error(<a class="code" href="classQXmppClient.html#a7c2851d07cc33119752abc6ec8ffc47a">QXmppClient::Error</a>);</div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160; </div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;    <span class="keywordtype">void</span> loggerChanged(<a class="code" href="classQXmppLogger.html">QXmppLogger</a> *logger);</div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160; </div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;    <span class="keywordtype">void</span> messageReceived(<span class="keyword">const</span> <a class="code" href="classQXmppMessage.html">QXmppMessage</a> &amp;message);</div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160; </div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;    <span class="keywordtype">void</span> presenceReceived(<span class="keyword">const</span> <a class="code" href="classQXmppPresence.html">QXmppPresence</a> &amp;presence);</div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160; </div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;    <span class="keywordtype">void</span> iqReceived(<span class="keyword">const</span> <a class="code" href="classQXmppIq.html">QXmppIq</a> &amp;iq);</div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160; </div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;    <span class="keywordtype">void</span> sslErrors(<span class="keyword">const</span> QList&lt;QSslError&gt; &amp;errors);</div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160; </div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;    <span class="keywordtype">void</span> stateChanged(<a class="code" href="classQXmppClient.html#a5f4e70d508c08967f72fd41c5343ad2e">QXmppClient::State</a> state);</div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160; </div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;<span class="keyword">public</span> Q_SLOTS:</div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;    <span class="keywordtype">void</span> connectToServer(<span class="keyword">const</span> <a class="code" href="classQXmppConfiguration.html">QXmppConfiguration</a> &amp;,</div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;                         <span class="keyword">const</span> <a class="code" href="classQXmppPresence.html">QXmppPresence</a> &amp;initialPresence =</div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;                             <a class="code" href="classQXmppPresence.html">QXmppPresence</a>());</div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;    <span class="keywordtype">void</span> connectToServer(<span class="keyword">const</span> QString &amp;jid,</div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;                         <span class="keyword">const</span> QString &amp;password);</div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;    <span class="keywordtype">void</span> disconnectFromServer();</div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;    <span class="keywordtype">bool</span> sendPacket(<span class="keyword">const</span> <a class="code" href="classQXmppNonza.html">QXmppNonza</a> &amp;);</div>
-<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;    <span class="keywordtype">void</span> sendMessage(<span class="keyword">const</span> QString &amp;bareJid, <span class="keyword">const</span> QString &amp;message);</div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160; </div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;    <span class="keywordtype">void</span> injectIq(<span class="keyword">const</span> QDomElement &amp;element, <span class="keyword">const</span> std::optional&lt;QXmppE2eeMetadata&gt; &amp;e2eeMetadata);</div>
-<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;    <span class="keywordtype">bool</span> injectMessage(<a class="code" href="classQXmppMessage.html">QXmppMessage</a> &amp;&amp;message);</div>
-<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160; </div>
-<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;<span class="keyword">private</span> Q_SLOTS:</div>
-<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;    <span class="keywordtype">void</span> _q_elementReceived(<span class="keyword">const</span> QDomElement &amp;element, <span class="keywordtype">bool</span> &amp;handled);</div>
-<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;    <span class="keywordtype">void</span> _q_reconnect();</div>
-<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;    <span class="keywordtype">void</span> _q_socketStateChanged(QAbstractSocket::SocketState state);</div>
-<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;    <span class="keywordtype">void</span> _q_streamConnected();</div>
-<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;    <span class="keywordtype">void</span> _q_streamDisconnected();</div>
-<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;    <span class="keywordtype">void</span> _q_streamError(<a class="code" href="classQXmppClient.html#a7c2851d07cc33119752abc6ec8ffc47a">QXmppClient::Error</a> error);</div>
-<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160; </div>
-<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;    QXmppClientPrivate *<span class="keyword">const</span> d;</div>
-<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160; </div>
-<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classQXmppClientExtension.html">QXmppClientExtension</a>;</div>
-<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;    <span class="keyword">friend</span> <span class="keyword">class </span>QXmppInternalClientExtension;</div>
-<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;    <span class="keyword">friend</span> <span class="keyword">class </span>TestClient;</div>
-<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;};</div>
-<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160; </div>
-<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;<span class="preprocessor">#endif  // QXMPPCLIENT_H</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;QXmppSendStanzaParams.h&quot;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;variant&gt;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;QAbstractSocket&gt;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &lt;QObject&gt;</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &lt;QSslError&gt;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">class </span>QFuture;</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">class </span><a class="code" href="classQXmppE2eeExtension.html">QXmppE2eeExtension</a>;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">class </span><a class="code" href="classQXmppClientExtension.html">QXmppClientExtension</a>;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">class </span>QXmppClientPrivate;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">class </span><a class="code" href="classQXmppPresence.html">QXmppPresence</a>;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">class </span><a class="code" href="classQXmppMessage.html">QXmppMessage</a>;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">class </span><a class="code" href="classQXmppIq.html">QXmppIq</a>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">class </span><a class="code" href="classQXmppStream.html">QXmppStream</a>;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">class </span>QXmppInternalClientExtension;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="comment">// managers</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">class </span><a class="code" href="classQXmppDiscoveryIq.html">QXmppDiscoveryIq</a>;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;<span class="keyword">class </span><a class="code" href="classQXmppRosterManager.html">QXmppRosterManager</a>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">class </span><a class="code" href="classQXmppVCardManager.html">QXmppVCardManager</a>;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="keyword">class </span><a class="code" href="classQXmppVersionManager.html">QXmppVersionManager</a>;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00082"></a><span class="lineno"><a class="line" href="classQXmppClient.html">   82</a></span>&#160;<span class="keyword">class </span>QXMPP_EXPORT <a class="code" href="classQXmppClient.html">QXmppClient</a> : <span class="keyword">public</span> <a class="code" href="classQXmppLoggable.html">QXmppLoggable</a></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;{</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    Q_OBJECT</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
+<div class="line"><a name="l00087"></a><span class="lineno"><a class="line" href="classQXmppClient.html#ae5fca0867efe7e7fcae90cbbf10b8193">   87</a></span>&#160;    Q_PROPERTY(<a class="code" href="classQXmppLogger.html">QXmppLogger</a> *logger READ logger WRITE setLogger NOTIFY loggerChanged)</div>
+<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="classQXmppClient.html#ac4cbb2e04e5ca683fadbc79ef173f0a5">   89</a></span>&#160;    Q_PROPERTY(<a class="code" href="classQXmppClient.html#a5f4e70d508c08967f72fd41c5343ad2e">State</a> state READ state NOTIFY stateChanged)</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;public:</div>
+<div class="line"><a name="l00092"></a><span class="lineno"><a class="line" href="classQXmppClient.html#a5312db7ddd0aadacea286314154f8a6d">   92</a></span>&#160;    using <a class="code" href="classQXmppClient.html#a5312db7ddd0aadacea286314154f8a6d">IqResult</a> = std::variant&lt;QDomElement, <a class="code" href="namespaceQXmpp.html">QXmpp</a>::SendError&gt;;</div>
+<div class="line"><a name="l00093"></a><span class="lineno"><a class="line" href="classQXmppClient.html#ad5004eda51b93744a8ad8259ee692a2a">   93</a></span>&#160;    using <a class="code" href="classQXmppClient.html#ad5004eda51b93744a8ad8259ee692a2a">EmptyResult</a> = std::variant&lt;<a class="code" href="namespaceQXmpp.html">QXmpp</a>::Success, <a class="code" href="classQXmppStanza.html">QXmppStanza</a>::<a class="code" href="classQXmppClient.html#a7c2851d07cc33119752abc6ec8ffc47a">Error</a>&gt;;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
+<div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="classQXmppClient.html#a7c2851d07cc33119752abc6ec8ffc47a">   97</a></span>&#160;    enum <a class="code" href="classQXmppClient.html#a7c2851d07cc33119752abc6ec8ffc47a">Error</a> {</div>
+<div class="line"><a name="l00098"></a><span class="lineno"><a class="line" href="classQXmppClient.html#a7c2851d07cc33119752abc6ec8ffc47aa0432617a6e27c34202bdac7c5356299f">   98</a></span>&#160;        <a class="code" href="classQXmppClient.html#a7c2851d07cc33119752abc6ec8ffc47aa0432617a6e27c34202bdac7c5356299f">NoError</a>,          </div>
+<div class="line"><a name="l00099"></a><span class="lineno"><a class="line" href="classQXmppClient.html#a7c2851d07cc33119752abc6ec8ffc47aac48e9688ca9dce21676283ada1172863">   99</a></span>&#160;        <a class="code" href="classQXmppClient.html#a7c2851d07cc33119752abc6ec8ffc47aac48e9688ca9dce21676283ada1172863">SocketError</a>,      </div>
+<div class="line"><a name="l00100"></a><span class="lineno"><a class="line" href="classQXmppClient.html#a7c2851d07cc33119752abc6ec8ffc47aa9b8aabc7956d082a04b4d0ed879564aa">  100</a></span>&#160;        <a class="code" href="classQXmppClient.html#a7c2851d07cc33119752abc6ec8ffc47aa9b8aabc7956d082a04b4d0ed879564aa">KeepAliveError</a>,   </div>
+<div class="line"><a name="l00101"></a><span class="lineno"><a class="line" href="classQXmppClient.html#a7c2851d07cc33119752abc6ec8ffc47aa29f30662c97dc09858f1d7e80eb1825a">  101</a></span>&#160;        <a class="code" href="classQXmppClient.html#a7c2851d07cc33119752abc6ec8ffc47aa29f30662c97dc09858f1d7e80eb1825a">XmppStreamError</a>,  </div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    };</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    Q_ENUM(Error)</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    </div>
+<div class="line"><a name="l00106"></a><span class="lineno"><a class="line" href="classQXmppClient.html#a5f4e70d508c08967f72fd41c5343ad2e">  106</a></span>&#160;    enum <a class="code" href="classQXmppClient.html#a5f4e70d508c08967f72fd41c5343ad2e">State</a> {</div>
+<div class="line"><a name="l00107"></a><span class="lineno"><a class="line" href="classQXmppClient.html#a5f4e70d508c08967f72fd41c5343ad2ea6bd1662e23e948aa1cb83b628c8b472c">  107</a></span>&#160;        <a class="code" href="classQXmppClient.html#a5f4e70d508c08967f72fd41c5343ad2ea6bd1662e23e948aa1cb83b628c8b472c">DisconnectedState</a>,  </div>
+<div class="line"><a name="l00108"></a><span class="lineno"><a class="line" href="classQXmppClient.html#a5f4e70d508c08967f72fd41c5343ad2eac25719267a60fc7b0ef8ecc35fa439f7">  108</a></span>&#160;        <a class="code" href="classQXmppClient.html#a5f4e70d508c08967f72fd41c5343ad2eac25719267a60fc7b0ef8ecc35fa439f7">ConnectingState</a>,    </div>
+<div class="line"><a name="l00109"></a><span class="lineno"><a class="line" href="classQXmppClient.html#a5f4e70d508c08967f72fd41c5343ad2eae603afad2343f7682b39b90d3d845cf7">  109</a></span>&#160;        ConnectedState      </div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    };</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    Q_ENUM(State)</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    </div>
+<div class="line"><a name="l00114"></a><span class="lineno"><a class="line" href="classQXmppClient.html#aab5506ec0769f208e1ccd5d23c6aaea8">  114</a></span>&#160;    enum <a class="code" href="classQXmppClient.html#aab5506ec0769f208e1ccd5d23c6aaea8">StreamManagementState</a> {</div>
+<div class="line"><a name="l00116"></a><span class="lineno"><a class="line" href="classQXmppClient.html#aab5506ec0769f208e1ccd5d23c6aaea8a2f2266e80f6675fce28888b4dde9acab">  116</a></span>&#160;        <a class="code" href="classQXmppClient.html#aab5506ec0769f208e1ccd5d23c6aaea8a2f2266e80f6675fce28888b4dde9acab">NoStreamManagement</a>,</div>
+<div class="line"><a name="l00118"></a><span class="lineno"><a class="line" href="classQXmppClient.html#aab5506ec0769f208e1ccd5d23c6aaea8acea8c2f8fb528ef8b02f55fbb4481795">  118</a></span>&#160;        <a class="code" href="classQXmppClient.html#aab5506ec0769f208e1ccd5d23c6aaea8acea8c2f8fb528ef8b02f55fbb4481795">NewStream</a>,</div>
+<div class="line"><a name="l00120"></a><span class="lineno"><a class="line" href="classQXmppClient.html#aab5506ec0769f208e1ccd5d23c6aaea8a219f7e0cb85cec5a017c21138c7ab4ac">  120</a></span>&#160;        ResumedStream</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;    };</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160; </div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <a class="code" href="classQXmppClient.html">QXmppClient</a>(QObject *parent = <span class="keyword">nullptr</span>);</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    ~<a class="code" href="classQXmppClient.html">QXmppClient</a>() <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160; </div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    <span class="keywordtype">bool</span> addExtension(<a class="code" href="classQXmppClientExtension.html">QXmppClientExtension</a> *extension);</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span>... Args&gt;</div>
+<div class="line"><a name="l00128"></a><span class="lineno"><a class="line" href="classQXmppClient.html#ab6df7c877500e1548ffb351c46ae48e4">  128</a></span>&#160;    T *<a class="code" href="classQXmppClient.html#ab6df7c877500e1548ffb351c46ae48e4">addNewExtension</a>(Args... args)</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;    {</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        <span class="comment">// it&#39;s impossible that addExtension() returns false: ext is a new object</span></div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        <span class="keyword">auto</span> *ext = <span class="keyword">new</span> T(args...);</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        addExtension(ext);</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;        <span class="keywordflow">return</span> ext;</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    }</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;    <span class="keywordtype">bool</span> insertExtension(<span class="keywordtype">int</span> index, <a class="code" href="classQXmppClientExtension.html">QXmppClientExtension</a> *extension);</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    <span class="keywordtype">bool</span> removeExtension(<a class="code" href="classQXmppClientExtension.html">QXmppClientExtension</a> *extension);</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;    <a class="code" href="classQXmppE2eeExtension.html">QXmppE2eeExtension</a> *encryptionExtension() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;    <span class="keywordtype">void</span> setEncryptionExtension(<a class="code" href="classQXmppE2eeExtension.html">QXmppE2eeExtension</a> *);</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160; </div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    QList&lt;QXmppClientExtension *&gt; extensions();</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160; </div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00156"></a><span class="lineno"><a class="line" href="classQXmppClient.html#a728fc96e0ca41b21d94e4686f8519c4d">  156</a></span>&#160;    T *<a class="code" href="classQXmppClient.html#a728fc96e0ca41b21d94e4686f8519c4d">findExtension</a>()</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    {</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        <span class="keyword">const</span> QList&lt;QXmppClientExtension *&gt; list = extensions();</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;        <span class="keywordflow">for</span> (<span class="keyword">auto</span> ext : list) {</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;            T *extension = qobject_cast&lt;T *&gt;(ext);</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;            <span class="keywordflow">if</span> (extension)</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;                <span class="keywordflow">return</span> extension;</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;        }</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;        <span class="keywordflow">return</span> <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    }</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160; </div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a name="l00183"></a><span class="lineno"><a class="line" href="classQXmppClient.html#ae5ab7ea0835f978548009364a79e6a2d">  183</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="classQXmppClient.html#ae5ab7ea0835f978548009364a79e6a2d">indexOfExtension</a>()</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;    {</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;        <span class="keyword">auto</span> list = extensions();</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;        <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; list.size(); ++i) {</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;            <span class="keywordflow">if</span> (qobject_cast&lt;T *&gt;(list.at(i)) != <span class="keyword">nullptr</span>)</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;                <span class="keywordflow">return</span> i;</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;        }</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;        <span class="keywordflow">return</span> -1;</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    }</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160; </div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;    <span class="keywordtype">bool</span> isAuthenticated() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    <span class="keywordtype">bool</span> isConnected() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160; </div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;    <span class="keywordtype">bool</span> isActive() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;    <span class="keywordtype">void</span> setActive(<span class="keywordtype">bool</span> active);</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160; </div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    StreamManagementState streamManagementState() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160; </div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;    <a class="code" href="classQXmppPresence.html">QXmppPresence</a> clientPresence() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    <span class="keywordtype">void</span> setClientPresence(<span class="keyword">const</span> <a class="code" href="classQXmppPresence.html">QXmppPresence</a> &amp;presence);</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160; </div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    <a class="code" href="classQXmppConfiguration.html">QXmppConfiguration</a> &amp;configuration();</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160; </div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;    <span class="comment">// documentation needs to be here, see https://stackoverflow.com/questions/49192523/</span></div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;<span class="comment"></span>    <a class="code" href="classQXmppLogger.html">QXmppLogger</a> *logger() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;    <span class="keywordtype">void</span> setLogger(<a class="code" href="classQXmppLogger.html">QXmppLogger</a> *logger);</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160; </div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;    QAbstractSocket::SocketError socketError();</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;    QString socketErrorString() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160; </div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;    <span class="comment">// documentation needs to be here, see https://stackoverflow.com/questions/49192523/</span></div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;<span class="comment"></span>    State state() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;    <a class="code" href="classQXmppStanza_1_1Error.html#abcf1cbbe7b15ec82f3ac34723b604852">QXmppStanza::Error::Condition</a> xmppStreamError();</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160; </div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;    QFuture&lt;QXmpp::SendResult&gt; send(<a class="code" href="classQXmppStanza.html">QXmppStanza</a> &amp;&amp;, <span class="keyword">const</span> std::optional&lt;QXmppSendStanzaParams&gt; &amp; = {});</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;    QFuture&lt;QXmpp::SendResult&gt; sendUnencrypted(<a class="code" href="classQXmppStanza.html">QXmppStanza</a> &amp;&amp;, <span class="keyword">const</span> std::optional&lt;QXmppSendStanzaParams&gt; &amp; = {});</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;    QFuture&lt;QXmpp::SendResult&gt; reply(<a class="code" href="classQXmppStanza.html">QXmppStanza</a> &amp;&amp;stanza, <span class="keyword">const</span> std::optional&lt;QXmppE2eeMetadata&gt; &amp;e2eeMetadata, <span class="keyword">const</span> std::optional&lt;QXmppSendStanzaParams&gt; &amp; = {});</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;    QFuture&lt;IqResult&gt; sendIq(<a class="code" href="classQXmppIq.html">QXmppIq</a> &amp;&amp;, <span class="keyword">const</span> std::optional&lt;QXmppSendStanzaParams&gt; &amp; = {});</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;    QFuture&lt;IqResult&gt; sendSensitiveIq(<a class="code" href="classQXmppIq.html">QXmppIq</a> &amp;&amp;, <span class="keyword">const</span> std::optional&lt;QXmppSendStanzaParams&gt; &amp; = {});</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;    QFuture&lt;EmptyResult&gt; sendGenericIq(<a class="code" href="classQXmppIq.html">QXmppIq</a> &amp;&amp;, <span class="keyword">const</span> std::optional&lt;QXmppSendStanzaParams&gt; &amp; = {});</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160; </div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;<span class="preprocessor">#if QXMPP_DEPRECATED_SINCE(1, 1)</span></div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;    QT_DEPRECATED_X(<span class="stringliteral">&quot;Use QXmppClient::findExtension&lt;QXmppRosterManager&gt;() instead&quot;</span>)</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    <a class="code" href="classQXmppRosterManager.html">QXmppRosterManager</a> &amp;rosterManager();</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160; </div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;    QT_DEPRECATED_X(&quot;Use <a class="code" href="classQXmppClient.html">QXmppClient</a>::findExtension&lt;<a class="code" href="classQXmppVCardManager.html">QXmppVCardManager</a>&gt;() instead&quot;)</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;    <a class="code" href="classQXmppVCardManager.html">QXmppVCardManager</a> &amp;vCardManager();</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160; </div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;    QT_DEPRECATED_X(&quot;Use <a class="code" href="classQXmppClient.html">QXmppClient</a>::findExtension&lt;<a class="code" href="classQXmppVersionManager.html">QXmppVersionManager</a>&gt;() instead&quot;)</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;    <a class="code" href="classQXmppVersionManager.html">QXmppVersionManager</a> &amp;versionManager();</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160; </div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;Q_SIGNALS:</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160; </div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    <span class="keywordtype">void</span> connected();</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160; </div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;    <span class="keywordtype">void</span> disconnected();</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160; </div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;    <span class="keywordtype">void</span> error(<a class="code" href="classQXmppClient.html#a7c2851d07cc33119752abc6ec8ffc47a">QXmppClient::Error</a>);</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160; </div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;    <span class="keywordtype">void</span> loggerChanged(<a class="code" href="classQXmppLogger.html">QXmppLogger</a> *logger);</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160; </div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;    <span class="keywordtype">void</span> messageReceived(<span class="keyword">const</span> <a class="code" href="classQXmppMessage.html">QXmppMessage</a> &amp;message);</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160; </div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;    <span class="keywordtype">void</span> presenceReceived(<span class="keyword">const</span> <a class="code" href="classQXmppPresence.html">QXmppPresence</a> &amp;presence);</div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160; </div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;    <span class="keywordtype">void</span> iqReceived(<span class="keyword">const</span> <a class="code" href="classQXmppIq.html">QXmppIq</a> &amp;iq);</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160; </div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;    <span class="keywordtype">void</span> sslErrors(<span class="keyword">const</span> QList&lt;QSslError&gt; &amp;errors);</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160; </div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;    <span class="keywordtype">void</span> stateChanged(<a class="code" href="classQXmppClient.html#a5f4e70d508c08967f72fd41c5343ad2e">QXmppClient::State</a> state);</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160; </div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;<span class="keyword">public</span> Q_SLOTS:</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;    <span class="keywordtype">void</span> connectToServer(<span class="keyword">const</span> <a class="code" href="classQXmppConfiguration.html">QXmppConfiguration</a> &amp;,</div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;                         <span class="keyword">const</span> <a class="code" href="classQXmppPresence.html">QXmppPresence</a> &amp;initialPresence =</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;                             <a class="code" href="classQXmppPresence.html">QXmppPresence</a>());</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;    <span class="keywordtype">void</span> connectToServer(<span class="keyword">const</span> QString &amp;jid,</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;                         <span class="keyword">const</span> QString &amp;password);</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;    <span class="keywordtype">void</span> disconnectFromServer();</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;    <span class="keywordtype">bool</span> sendPacket(<span class="keyword">const</span> <a class="code" href="classQXmppNonza.html">QXmppNonza</a> &amp;);</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;    <span class="keywordtype">void</span> sendMessage(<span class="keyword">const</span> QString &amp;bareJid, <span class="keyword">const</span> QString &amp;message);</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160; </div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;    <span class="keywordtype">void</span> injectIq(<span class="keyword">const</span> QDomElement &amp;element, <span class="keyword">const</span> std::optional&lt;QXmppE2eeMetadata&gt; &amp;e2eeMetadata);</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;    <span class="keywordtype">bool</span> injectMessage(<a class="code" href="classQXmppMessage.html">QXmppMessage</a> &amp;&amp;message);</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160; </div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;<span class="keyword">private</span> Q_SLOTS:</div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;    <span class="keywordtype">void</span> _q_elementReceived(<span class="keyword">const</span> QDomElement &amp;element, <span class="keywordtype">bool</span> &amp;handled);</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;    <span class="keywordtype">void</span> _q_reconnect();</div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;    <span class="keywordtype">void</span> _q_socketStateChanged(QAbstractSocket::SocketState state);</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;    <span class="keywordtype">void</span> _q_streamConnected();</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;    <span class="keywordtype">void</span> _q_streamDisconnected();</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;    <span class="keywordtype">void</span> _q_streamError(<a class="code" href="classQXmppClient.html#a7c2851d07cc33119752abc6ec8ffc47a">QXmppClient::Error</a> error);</div>
+<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160; </div>
+<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;    QXmppClientPrivate *<span class="keyword">const</span> d;</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160; </div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="classQXmppClientExtension.html">QXmppClientExtension</a>;</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;    <span class="keyword">friend</span> <span class="keyword">class </span>QXmppInternalClientExtension;</div>
+<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;    <span class="keyword">friend</span> <span class="keyword">class </span>TestClient;</div>
+<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;};</div>
+<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160; </div>
+<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;<span class="preprocessor">#endif  // QXMPPCLIENT_H</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="anamespaceQXmpp_html"><div class="ttname"><a href="namespaceQXmpp.html">QXmpp</a></div></div>
-<div class="ttc" id="aclassQXmppClient_html_ad5004eda51b93744a8ad8259ee692a2a"><div class="ttname"><a href="classQXmppClient.html#ad5004eda51b93744a8ad8259ee692a2a">QXmppClient::EmptyResult</a></div><div class="ttdeci">std::variant&lt; QXmpp::Success, QXmppStanza::Error &gt; EmptyResult</div><div class="ttdef"><b>Definition:</b> QXmppClient.h:92</div></div>
+<div class="ttc" id="aclassQXmppClient_html_ad5004eda51b93744a8ad8259ee692a2a"><div class="ttname"><a href="classQXmppClient.html#ad5004eda51b93744a8ad8259ee692a2a">QXmppClient::EmptyResult</a></div><div class="ttdeci">std::variant&lt; QXmpp::Success, QXmppStanza::Error &gt; EmptyResult</div><div class="ttdef"><b>Definition:</b> QXmppClient.h:93</div></div>
 <div class="ttc" id="aclassQXmppPresence_html"><div class="ttname"><a href="classQXmppPresence.html">QXmppPresence</a></div><div class="ttdoc">The QXmppPresence class represents an XMPP presence stanza.</div><div class="ttdef"><b>Definition:</b> QXmppPresence.h:16</div></div>
-<div class="ttc" id="aclassQXmppClient_html_ab6df7c877500e1548ffb351c46ae48e4"><div class="ttname"><a href="classQXmppClient.html#ab6df7c877500e1548ffb351c46ae48e4">QXmppClient::addNewExtension</a></div><div class="ttdeci">T * addNewExtension(Args... args)</div><div class="ttdef"><b>Definition:</b> QXmppClient.h:127</div></div>
-<div class="ttc" id="aclassQXmppClient_html_a7c2851d07cc33119752abc6ec8ffc47aa9b8aabc7956d082a04b4d0ed879564aa"><div class="ttname"><a href="classQXmppClient.html#a7c2851d07cc33119752abc6ec8ffc47aa9b8aabc7956d082a04b4d0ed879564aa">QXmppClient::KeepAliveError</a></div><div class="ttdeci">@ KeepAliveError</div><div class="ttdoc">Error due to no response to a keep alive.</div><div class="ttdef"><b>Definition:</b> QXmppClient.h:99</div></div>
-<div class="ttc" id="aclassQXmppClient_html_ae5ab7ea0835f978548009364a79e6a2d"><div class="ttname"><a href="classQXmppClient.html#ae5ab7ea0835f978548009364a79e6a2d">QXmppClient::indexOfExtension</a></div><div class="ttdeci">int indexOfExtension()</div><div class="ttdoc">Returns the index of an extension.</div><div class="ttdef"><b>Definition:</b> QXmppClient.h:182</div></div>
-<div class="ttc" id="aclassQXmppClient_html_aab5506ec0769f208e1ccd5d23c6aaea8"><div class="ttname"><a href="classQXmppClient.html#aab5506ec0769f208e1ccd5d23c6aaea8">QXmppClient::StreamManagementState</a></div><div class="ttdeci">StreamManagementState</div><div class="ttdoc">Describes the use of XEP-0198: Stream Management.</div><div class="ttdef"><b>Definition:</b> QXmppClient.h:113</div></div>
+<div class="ttc" id="aclassQXmppClient_html_ab6df7c877500e1548ffb351c46ae48e4"><div class="ttname"><a href="classQXmppClient.html#ab6df7c877500e1548ffb351c46ae48e4">QXmppClient::addNewExtension</a></div><div class="ttdeci">T * addNewExtension(Args... args)</div><div class="ttdef"><b>Definition:</b> QXmppClient.h:128</div></div>
+<div class="ttc" id="aclassQXmppClient_html_a7c2851d07cc33119752abc6ec8ffc47aa9b8aabc7956d082a04b4d0ed879564aa"><div class="ttname"><a href="classQXmppClient.html#a7c2851d07cc33119752abc6ec8ffc47aa9b8aabc7956d082a04b4d0ed879564aa">QXmppClient::KeepAliveError</a></div><div class="ttdeci">@ KeepAliveError</div><div class="ttdoc">Error due to no response to a keep alive.</div><div class="ttdef"><b>Definition:</b> QXmppClient.h:100</div></div>
+<div class="ttc" id="aclassQXmppClient_html_ae5ab7ea0835f978548009364a79e6a2d"><div class="ttname"><a href="classQXmppClient.html#ae5ab7ea0835f978548009364a79e6a2d">QXmppClient::indexOfExtension</a></div><div class="ttdeci">int indexOfExtension()</div><div class="ttdoc">Returns the index of an extension.</div><div class="ttdef"><b>Definition:</b> QXmppClient.h:183</div></div>
+<div class="ttc" id="aclassQXmppClient_html_aab5506ec0769f208e1ccd5d23c6aaea8"><div class="ttname"><a href="classQXmppClient.html#aab5506ec0769f208e1ccd5d23c6aaea8">QXmppClient::StreamManagementState</a></div><div class="ttdeci">StreamManagementState</div><div class="ttdoc">Describes the use of XEP-0198: Stream Management.</div><div class="ttdef"><b>Definition:</b> QXmppClient.h:114</div></div>
 <div class="ttc" id="aclassQXmppRosterManager_html"><div class="ttname"><a href="classQXmppRosterManager.html">QXmppRosterManager</a></div><div class="ttdoc">The QXmppRosterManager class provides access to a connected client's roster.</div><div class="ttdef"><b>Definition:</b> QXmppRosterManager.h:55</div></div>
-<div class="ttc" id="aclassQXmppClient_html_aab5506ec0769f208e1ccd5d23c6aaea8a2f2266e80f6675fce28888b4dde9acab"><div class="ttname"><a href="classQXmppClient.html#aab5506ec0769f208e1ccd5d23c6aaea8a2f2266e80f6675fce28888b4dde9acab">QXmppClient::NoStreamManagement</a></div><div class="ttdeci">@ NoStreamManagement</div><div class="ttdoc">Stream Management is not used.</div><div class="ttdef"><b>Definition:</b> QXmppClient.h:115</div></div>
-<div class="ttc" id="aclassQXmppClient_html_a5312db7ddd0aadacea286314154f8a6d"><div class="ttname"><a href="classQXmppClient.html#a5312db7ddd0aadacea286314154f8a6d">QXmppClient::IqResult</a></div><div class="ttdeci">std::variant&lt; QDomElement, QXmpp::SendError &gt; IqResult</div><div class="ttdef"><b>Definition:</b> QXmppClient.h:91</div></div>
+<div class="ttc" id="aclassQXmppClient_html_aab5506ec0769f208e1ccd5d23c6aaea8a2f2266e80f6675fce28888b4dde9acab"><div class="ttname"><a href="classQXmppClient.html#aab5506ec0769f208e1ccd5d23c6aaea8a2f2266e80f6675fce28888b4dde9acab">QXmppClient::NoStreamManagement</a></div><div class="ttdeci">@ NoStreamManagement</div><div class="ttdoc">Stream Management is not used.</div><div class="ttdef"><b>Definition:</b> QXmppClient.h:116</div></div>
+<div class="ttc" id="aclassQXmppClient_html_a5312db7ddd0aadacea286314154f8a6d"><div class="ttname"><a href="classQXmppClient.html#a5312db7ddd0aadacea286314154f8a6d">QXmppClient::IqResult</a></div><div class="ttdeci">std::variant&lt; QDomElement, QXmpp::SendError &gt; IqResult</div><div class="ttdef"><b>Definition:</b> QXmppClient.h:92</div></div>
 <div class="ttc" id="aclassQXmppVCardManager_html"><div class="ttname"><a href="classQXmppVCardManager.html">QXmppVCardManager</a></div><div class="ttdoc">The QXmppVCardManager class gets/sets XMPP vCards. It is an implementation of XEP-0054: vcard-temp.</div><div class="ttdef"><b>Definition:</b> QXmppVCardManager.h:37</div></div>
 <div class="ttc" id="aclassQXmppClientExtension_html"><div class="ttname"><a href="classQXmppClientExtension.html">QXmppClientExtension</a></div><div class="ttdoc">The QXmppClientExtension class is the base class for QXmppClient extensions.</div><div class="ttdef"><b>Definition:</b> QXmppClientExtension.h:30</div></div>
 <div class="ttc" id="aclassQXmppStanza_html"><div class="ttname"><a href="classQXmppStanza.html">QXmppStanza</a></div><div class="ttdoc">The QXmppStanza class is the base class for all XMPP stanzas.</div><div class="ttdef"><b>Definition:</b> QXmppStanza.h:114</div></div>
-<div class="ttc" id="aclassQXmppClient_html_a7c2851d07cc33119752abc6ec8ffc47aac48e9688ca9dce21676283ada1172863"><div class="ttname"><a href="classQXmppClient.html#a7c2851d07cc33119752abc6ec8ffc47aac48e9688ca9dce21676283ada1172863">QXmppClient::SocketError</a></div><div class="ttdeci">@ SocketError</div><div class="ttdoc">Error due to TCP socket.</div><div class="ttdef"><b>Definition:</b> QXmppClient.h:98</div></div>
-<div class="ttc" id="aclassQXmppClient_html_a728fc96e0ca41b21d94e4686f8519c4d"><div class="ttname"><a href="classQXmppClient.html#a728fc96e0ca41b21d94e4686f8519c4d">QXmppClient::findExtension</a></div><div class="ttdeci">T * findExtension()</div><div class="ttdoc">Returns the extension which can be cast into type T*, or 0 if there is no such extension.</div><div class="ttdef"><b>Definition:</b> QXmppClient.h:155</div></div>
-<div class="ttc" id="aclassQXmppClient_html_a7c2851d07cc33119752abc6ec8ffc47a"><div class="ttname"><a href="classQXmppClient.html#a7c2851d07cc33119752abc6ec8ffc47a">QXmppClient::Error</a></div><div class="ttdeci">Error</div><div class="ttdef"><b>Definition:</b> QXmppClient.h:96</div></div>
-<div class="ttc" id="aclassQXmppE2eeExtension_html"><div class="ttname"><a href="classQXmppE2eeExtension.html">QXmppE2eeExtension</a></div><div class="ttdef"><b>Definition:</b> QXmppE2eeExtension.h:17</div></div>
-<div class="ttc" id="aclassQXmppClient_html_a7c2851d07cc33119752abc6ec8ffc47aa0432617a6e27c34202bdac7c5356299f"><div class="ttname"><a href="classQXmppClient.html#a7c2851d07cc33119752abc6ec8ffc47aa0432617a6e27c34202bdac7c5356299f">QXmppClient::NoError</a></div><div class="ttdeci">@ NoError</div><div class="ttdoc">No error.</div><div class="ttdef"><b>Definition:</b> QXmppClient.h:97</div></div>
-<div class="ttc" id="aclassQXmppClient_html_a5f4e70d508c08967f72fd41c5343ad2e"><div class="ttname"><a href="classQXmppClient.html#a5f4e70d508c08967f72fd41c5343ad2e">QXmppClient::State</a></div><div class="ttdeci">State</div><div class="ttdoc">This enumeration describes a client state.</div><div class="ttdef"><b>Definition:</b> QXmppClient.h:105</div></div>
+<div class="ttc" id="aclassQXmppClient_html_a7c2851d07cc33119752abc6ec8ffc47aac48e9688ca9dce21676283ada1172863"><div class="ttname"><a href="classQXmppClient.html#a7c2851d07cc33119752abc6ec8ffc47aac48e9688ca9dce21676283ada1172863">QXmppClient::SocketError</a></div><div class="ttdeci">@ SocketError</div><div class="ttdoc">Error due to TCP socket.</div><div class="ttdef"><b>Definition:</b> QXmppClient.h:99</div></div>
+<div class="ttc" id="aclassQXmppClient_html_a728fc96e0ca41b21d94e4686f8519c4d"><div class="ttname"><a href="classQXmppClient.html#a728fc96e0ca41b21d94e4686f8519c4d">QXmppClient::findExtension</a></div><div class="ttdeci">T * findExtension()</div><div class="ttdoc">Returns the extension which can be cast into type T*, or 0 if there is no such extension.</div><div class="ttdef"><b>Definition:</b> QXmppClient.h:156</div></div>
+<div class="ttc" id="aclassQXmppClient_html_a7c2851d07cc33119752abc6ec8ffc47a"><div class="ttname"><a href="classQXmppClient.html#a7c2851d07cc33119752abc6ec8ffc47a">QXmppClient::Error</a></div><div class="ttdeci">Error</div><div class="ttdef"><b>Definition:</b> QXmppClient.h:97</div></div>
+<div class="ttc" id="aclassQXmppE2eeExtension_html"><div class="ttname"><a href="classQXmppE2eeExtension.html">QXmppE2eeExtension</a></div><div class="ttdef"><b>Definition:</b> QXmppE2eeExtension.h:20</div></div>
+<div class="ttc" id="aclassQXmppClient_html_a7c2851d07cc33119752abc6ec8ffc47aa0432617a6e27c34202bdac7c5356299f"><div class="ttname"><a href="classQXmppClient.html#a7c2851d07cc33119752abc6ec8ffc47aa0432617a6e27c34202bdac7c5356299f">QXmppClient::NoError</a></div><div class="ttdeci">@ NoError</div><div class="ttdoc">No error.</div><div class="ttdef"><b>Definition:</b> QXmppClient.h:98</div></div>
+<div class="ttc" id="aclassQXmppClient_html_a5f4e70d508c08967f72fd41c5343ad2e"><div class="ttname"><a href="classQXmppClient.html#a5f4e70d508c08967f72fd41c5343ad2e">QXmppClient::State</a></div><div class="ttdeci">State</div><div class="ttdoc">This enumeration describes a client state.</div><div class="ttdef"><b>Definition:</b> QXmppClient.h:106</div></div>
 <div class="ttc" id="aclassQXmppNonza_html"><div class="ttname"><a href="classQXmppNonza.html">QXmppNonza</a></div><div class="ttdef"><b>Definition:</b> QXmppNonza.h:13</div></div>
 <div class="ttc" id="aclassQXmppLogger_html"><div class="ttname"><a href="classQXmppLogger.html">QXmppLogger</a></div><div class="ttdoc">The QXmppLogger class represents a sink for logging messages.</div><div class="ttdef"><b>Definition:</b> QXmppLogger.h:26</div></div>
 <div class="ttc" id="aclassQXmppConfiguration_html"><div class="ttname"><a href="classQXmppConfiguration.html">QXmppConfiguration</a></div><div class="ttdoc">The QXmppConfiguration class holds configuration options.</div><div class="ttdef"><b>Definition:</b> QXmppConfiguration.h:28</div></div>
-<div class="ttc" id="aclassQXmppClient_html_a5f4e70d508c08967f72fd41c5343ad2ea6bd1662e23e948aa1cb83b628c8b472c"><div class="ttname"><a href="classQXmppClient.html#a5f4e70d508c08967f72fd41c5343ad2ea6bd1662e23e948aa1cb83b628c8b472c">QXmppClient::DisconnectedState</a></div><div class="ttdeci">@ DisconnectedState</div><div class="ttdoc">Disconnected from the server.</div><div class="ttdef"><b>Definition:</b> QXmppClient.h:106</div></div>
+<div class="ttc" id="aclassQXmppClient_html_a5f4e70d508c08967f72fd41c5343ad2ea6bd1662e23e948aa1cb83b628c8b472c"><div class="ttname"><a href="classQXmppClient.html#a5f4e70d508c08967f72fd41c5343ad2ea6bd1662e23e948aa1cb83b628c8b472c">QXmppClient::DisconnectedState</a></div><div class="ttdeci">@ DisconnectedState</div><div class="ttdoc">Disconnected from the server.</div><div class="ttdef"><b>Definition:</b> QXmppClient.h:107</div></div>
 <div class="ttc" id="aclassQXmppStream_html"><div class="ttname"><a href="classQXmppStream.html">QXmppStream</a></div><div class="ttdoc">The QXmppStream class is the base class for all XMPP streams.</div><div class="ttdef"><b>Definition:</b> QXmppStream.h:33</div></div>
 <div class="ttc" id="aclassQXmppStanza_1_1Error_html_abcf1cbbe7b15ec82f3ac34723b604852"><div class="ttname"><a href="classQXmppStanza_1_1Error.html#abcf1cbbe7b15ec82f3ac34723b604852">QXmppStanza::Error::Condition</a></div><div class="ttdeci">Condition</div><div class="ttdoc">A detailed condition of the error.</div><div class="ttdef"><b>Definition:</b> QXmppStanza.h:136</div></div>
-<div class="ttc" id="aclassQXmppClient_html_a5f4e70d508c08967f72fd41c5343ad2eac25719267a60fc7b0ef8ecc35fa439f7"><div class="ttname"><a href="classQXmppClient.html#a5f4e70d508c08967f72fd41c5343ad2eac25719267a60fc7b0ef8ecc35fa439f7">QXmppClient::ConnectingState</a></div><div class="ttdeci">@ ConnectingState</div><div class="ttdoc">Trying to connect to the server.</div><div class="ttdef"><b>Definition:</b> QXmppClient.h:107</div></div>
-<div class="ttc" id="aclassQXmppClient_html_aab5506ec0769f208e1ccd5d23c6aaea8acea8c2f8fb528ef8b02f55fbb4481795"><div class="ttname"><a href="classQXmppClient.html#aab5506ec0769f208e1ccd5d23c6aaea8acea8c2f8fb528ef8b02f55fbb4481795">QXmppClient::NewStream</a></div><div class="ttdeci">@ NewStream</div><div class="ttdoc">Stream Management is used and the previous stream has not been resumed.</div><div class="ttdef"><b>Definition:</b> QXmppClient.h:117</div></div>
-<div class="ttc" id="aclassQXmppClient_html_a7c2851d07cc33119752abc6ec8ffc47aa29f30662c97dc09858f1d7e80eb1825a"><div class="ttname"><a href="classQXmppClient.html#a7c2851d07cc33119752abc6ec8ffc47aa29f30662c97dc09858f1d7e80eb1825a">QXmppClient::XmppStreamError</a></div><div class="ttdeci">@ XmppStreamError</div><div class="ttdoc">Error due to XML stream.</div><div class="ttdef"><b>Definition:</b> QXmppClient.h:100</div></div>
+<div class="ttc" id="aclassQXmppClient_html_a5f4e70d508c08967f72fd41c5343ad2eac25719267a60fc7b0ef8ecc35fa439f7"><div class="ttname"><a href="classQXmppClient.html#a5f4e70d508c08967f72fd41c5343ad2eac25719267a60fc7b0ef8ecc35fa439f7">QXmppClient::ConnectingState</a></div><div class="ttdeci">@ ConnectingState</div><div class="ttdoc">Trying to connect to the server.</div><div class="ttdef"><b>Definition:</b> QXmppClient.h:108</div></div>
+<div class="ttc" id="aclassQXmppClient_html_aab5506ec0769f208e1ccd5d23c6aaea8acea8c2f8fb528ef8b02f55fbb4481795"><div class="ttname"><a href="classQXmppClient.html#aab5506ec0769f208e1ccd5d23c6aaea8acea8c2f8fb528ef8b02f55fbb4481795">QXmppClient::NewStream</a></div><div class="ttdeci">@ NewStream</div><div class="ttdoc">Stream Management is used and the previous stream has not been resumed.</div><div class="ttdef"><b>Definition:</b> QXmppClient.h:118</div></div>
+<div class="ttc" id="aclassQXmppClient_html_a7c2851d07cc33119752abc6ec8ffc47aa29f30662c97dc09858f1d7e80eb1825a"><div class="ttname"><a href="classQXmppClient.html#a7c2851d07cc33119752abc6ec8ffc47aa29f30662c97dc09858f1d7e80eb1825a">QXmppClient::XmppStreamError</a></div><div class="ttdeci">@ XmppStreamError</div><div class="ttdoc">Error due to XML stream.</div><div class="ttdef"><b>Definition:</b> QXmppClient.h:101</div></div>
 <div class="ttc" id="aclassQXmppIq_html"><div class="ttname"><a href="classQXmppIq.html">QXmppIq</a></div><div class="ttdoc">The QXmppIq class is the base class for all IQs.</div><div class="ttdef"><b>Definition:</b> QXmppIq.h:22</div></div>
-<div class="ttc" id="aclassQXmppClient_html"><div class="ttname"><a href="classQXmppClient.html">QXmppClient</a></div><div class="ttdoc">The QXmppClient class is the main class for using QXmpp.</div><div class="ttdef"><b>Definition:</b> QXmppClient.h:81</div></div>
+<div class="ttc" id="aclassQXmppClient_html"><div class="ttname"><a href="classQXmppClient.html">QXmppClient</a></div><div class="ttdoc">The QXmppClient class is the main class for using QXmpp.</div><div class="ttdef"><b>Definition:</b> QXmppClient.h:82</div></div>
 <div class="ttc" id="aclassQXmppLoggable_html"><div class="ttname"><a href="classQXmppLoggable.html">QXmppLoggable</a></div><div class="ttdoc">The QXmppLoggable class represents a source of logging messages.</div><div class="ttdef"><b>Definition:</b> QXmppLogger.h:104</div></div>
 <div class="ttc" id="aclassQXmppVersionManager_html"><div class="ttname"><a href="classQXmppVersionManager.html">QXmppVersionManager</a></div><div class="ttdoc">The QXmppVersionManager class makes it possible to request for the software version of an entity as d...</div><div class="ttdef"><b>Definition:</b> QXmppVersionManager.h:23</div></div>
 <div class="ttc" id="aclassQXmppDiscoveryIq_html"><div class="ttname"><a href="classQXmppDiscoveryIq.html">QXmppDiscoveryIq</a></div><div class="ttdef"><b>Definition:</b> QXmppDiscoveryIq.h:17</div></div>
