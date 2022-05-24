@@ -8,7 +8,7 @@ var searchData=
   ['unit_1298',['unit',['../classQXmppVCardOrganization.html#a321f3182bca5a4fdf8f65554275aa6b5',1,'QXmppVCardOrganization']]],
   ['unknownencryption_1299',['UnknownEncryption',['../namespaceQXmpp.html#a144a88be891edf484a1fe97604fd81e3ac572e4cbf91be1d819ed3caf0631fe6e',1,'QXmpp']]],
   ['unknownfields_1300',['unknownFields',['../classQXmppExtensibleDataFormBase.html#adb80d5edcdcb9954844c0242090c3738',1,'QXmppExtensibleDataFormBase']]],
-  ['unsubscribe_1301',['unsubscribe',['../classQXmppRosterManager.html#afd840ecd9179624db72c837ff948abf5',1,'QXmppRosterManager::unsubscribe()'],['../classQXmppPresence.html#a47ab8dd08436f9d7c90d2990678b5a6da20986f18e387f68a5fdfa0e67c44bc44',1,'QXmppPresence::Unsubscribe()']]],
+  ['unsubscribe_1301',['Unsubscribe',['../classQXmppPresence.html#a47ab8dd08436f9d7c90d2990678b5a6da20986f18e387f68a5fdfa0e67c44bc44',1,'QXmppPresence::Unsubscribe()'],['../classQXmppRosterManager.html#afd840ecd9179624db72c837ff948abf5',1,'QXmppRosterManager::unsubscribe()']]],
   ['unsubscribed_1302',['Unsubscribed',['../classQXmppPresence.html#a47ab8dd08436f9d7c90d2990678b5a6da63414092d2fc4b90987f56731c150623',1,'QXmppPresence']]],
   ['unsubscribefrom_1303',['unsubscribeFrom',['../classQXmppRosterManager.html#aeedb21c6b830439545941c71292db8df',1,'QXmppRosterManager']]],
   ['unsubscribefromnode_1304',['unsubscribeFromNode',['../classQXmppPubSubManager.html#ad0e1faaaa6a9c0410733c53f72367a5e',1,'QXmppPubSubManager']]],
