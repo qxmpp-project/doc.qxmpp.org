@@ -1,14 +1,14 @@
 <map id="QXmppLoggable" name="QXmppLoggable">
-<area shape="rect" id="node1" title="The QXmppLoggable class represents a source of logging messages." alt="" coords="5,613,135,640"/>
-<area shape="rect" id="node2" href="$classQXmppCall.html" title=" " alt="" coords="223,411,318,437"/>
-<area shape="rect" id="node3" href="$classQXmppClient.html" title="The QXmppClient class is the main class for using QXmpp." alt="" coords="217,461,325,488"/>
-<area shape="rect" id="node4" href="$classQXmppClientExtension.html" title="The QXmppClientExtension class is the base class for QXmppClient extensions." alt="" coords="185,512,357,539"/>
-<area shape="rect" id="node25" href="$classQXmppIceComponent.html" title="The QXmppIceComponent class represents a piece of a media stream requiring a single transport address..." alt="" coords="189,563,353,589"/>
-<area shape="rect" id="node26" href="$classQXmppIceConnection.html" title="The QXmppIceConnection class represents a set of UDP sockets capable of performing Interactive Connec..." alt="" coords="189,613,352,640"/>
-<area shape="rect" id="node27" href="$classQXmppServer.html" title="The QXmppServer class represents an XMPP server." alt="" coords="215,664,327,691"/>
-<area shape="rect" id="node28" href="$classQXmppServerExtension.html" title="The QXmppServerExtension class is the base class for QXmppServer extensions." alt="" coords="183,715,359,741"/>
-<area shape="rect" id="node29" href="$classQXmppStream.html" title="The QXmppStream class is the base class for all XMPP streams." alt="" coords="212,993,329,1020"/>
-<area shape="rect" id="node34" href="$classQXmppTransferJob.html" title=" " alt="" coords="199,1044,342,1071"/>
+<area shape="rect" id="node1" title="The QXmppLoggable class represents a source of logging messages." alt="" coords="5,664,135,691"/>
+<area shape="rect" id="node2" href="$classQXmppCall.html" title=" " alt="" coords="223,461,318,488"/>
+<area shape="rect" id="node3" href="$classQXmppClient.html" title="The QXmppClient class is the main class for using QXmpp." alt="" coords="217,512,325,539"/>
+<area shape="rect" id="node4" href="$classQXmppClientExtension.html" title="The QXmppClientExtension class is the base class for QXmppClient extensions." alt="" coords="185,563,357,589"/>
+<area shape="rect" id="node27" href="$classQXmppIceComponent.html" title="The QXmppIceComponent class represents a piece of a media stream requiring a single transport address..." alt="" coords="189,613,353,640"/>
+<area shape="rect" id="node28" href="$classQXmppIceConnection.html" title="The QXmppIceConnection class represents a set of UDP sockets capable of performing Interactive Connec..." alt="" coords="189,664,352,691"/>
+<area shape="rect" id="node29" href="$classQXmppServer.html" title="The QXmppServer class represents an XMPP server." alt="" coords="215,715,327,741"/>
+<area shape="rect" id="node30" href="$classQXmppServerExtension.html" title="The QXmppServerExtension class is the base class for QXmppServer extensions." alt="" coords="183,765,359,792"/>
+<area shape="rect" id="node31" href="$classQXmppStream.html" title="The QXmppStream class is the base class for all XMPP streams." alt="" coords="212,1095,329,1121"/>
+<area shape="rect" id="node36" href="$classQXmppTransferJob.html" title=" " alt="" coords="199,1145,342,1172"/>
 <area shape="rect" id="node5" href="$classQXmppArchiveManager.html" title="The QXmppArchiveManager class makes it possible to access message archives as defined by XEP&#45;0136: Me..." alt="" coords="436,5,612,32"/>
 <area shape="rect" id="node6" href="$classQXmppAttentionManager.html" title="The QXmppAttentionManager class manages attention requests as defined by XEP&#45;0224: Attention." alt="" coords="431,56,617,83"/>
 <area shape="rect" id="node7" href="$classQXmppBookmarkManager.html" title="The QXmppBookmarkManager class allows you to store and retrieve bookmarks as defined by XEP&#45;0048: Boo..." alt="" coords="427,107,621,133"/>
@@ -26,11 +26,13 @@
 <area shape="rect" id="node19" href="$classQXmppTransferManager.html" title=" " alt="" coords="435,715,613,741"/>
 <area shape="rect" id="node20" href="$classQXmppTrustManager.html" title="The QXmppTrustManager manages end&#45;to&#45;end encryption trust decisions." alt="" coords="445,765,603,792"/>
 <area shape="rect" id="node22" href="$classQXmppUploadRequestManager.html" title="The QXmppUploadRequestManager implements the core of XEP&#45;0369: HTTP File Upload." alt="" coords="411,816,637,843"/>
-<area shape="rect" id="node23" href="$classQXmppVCardManager.html" title="The QXmppVCardManager class gets/sets XMPP vCards. It is an implementation of XEP&#45;0054: vcard&#45;temp." alt="" coords="441,867,607,893"/>
-<area shape="rect" id="node24" href="$classQXmppVersionManager.html" title="The QXmppVersionManager class makes it possible to request for the software version of an entity as d..." alt="" coords="437,917,611,944"/>
+<area shape="rect" id="node23" href="$classQXmppUserLocationManager.html" title=" " alt="" coords="418,867,630,893"/>
+<area shape="rect" id="node24" href="$classQXmppUserTuneManager.html" title=" " alt="" coords="431,917,617,944"/>
+<area shape="rect" id="node25" href="$classQXmppVCardManager.html" title="The QXmppVCardManager class gets/sets XMPP vCards. It is an implementation of XEP&#45;0054: vcard&#45;temp." alt="" coords="441,968,607,995"/>
+<area shape="rect" id="node26" href="$classQXmppVersionManager.html" title="The QXmppVersionManager class makes it possible to request for the software version of an entity as d..." alt="" coords="437,1019,611,1045"/>
 <area shape="rect" id="node21" href="$classQXmppAtmManager.html" title="The QXmppAtmManager class represents a manager for XEP&#45;0450: Automatic Trust Management (ATM)." alt="" coords="689,765,844,792"/>
-<area shape="rect" id="node30" href="$classQXmppIncomingClient.html" title="Interface for password checkers." alt="" coords="440,968,608,995"/>
-<area shape="rect" id="node31" href="$classQXmppIncomingServer.html" title="The QXmppIncomingServer class represents an incoming XMPP stream from an XMPP server." alt="" coords="438,1019,610,1045"/>
-<area shape="rect" id="node32" href="$classQXmppOutgoingClient.html" title="The QXmppOutgoingClient class represents an outgoing XMPP stream to an XMPP server." alt="" coords="441,1069,607,1096"/>
-<area shape="rect" id="node33" href="$classQXmppOutgoingServer.html" title="The QXmppOutgoingServer class represents an outgoing XMPP stream to another XMPP server." alt="" coords="439,1120,609,1147"/>
+<area shape="rect" id="node32" href="$classQXmppIncomingClient.html" title="Interface for password checkers." alt="" coords="440,1069,608,1096"/>
+<area shape="rect" id="node33" href="$classQXmppIncomingServer.html" title="The QXmppIncomingServer class represents an incoming XMPP stream from an XMPP server." alt="" coords="438,1120,610,1147"/>
+<area shape="rect" id="node34" href="$classQXmppOutgoingClient.html" title="The QXmppOutgoingClient class represents an outgoing XMPP stream to an XMPP server." alt="" coords="441,1171,607,1197"/>
+<area shape="rect" id="node35" href="$classQXmppOutgoingServer.html" title="The QXmppOutgoingServer class represents an outgoing XMPP stream to another XMPP server." alt="" coords="439,1221,609,1248"/>
 </map>

@@ -1,7 +1,7 @@
 var searchData=
 [
   ['offerstate_515',['OfferState',['../classQXmppTransferJob.html#aab5bb06ca0d2c4f1fac33b7012d1c14fa0f5f5eec8a95f2faf27186dfd502f581',1,'QXmppTransferJob']]],
-  ['omemo_516',['Omemo',['../namespaceQXmpp.html#a144a88be891edf484a1fe97604fd81e3aca92dfb59ed0a220b9283a1655b373b3',1,'QXmpp::Omemo()'],['../namespaceQXmpp.html#a144a88be891edf484a1fe97604fd81e3a3bd98dcdc982bab762928a820ab82a17',1,'QXmpp::OMEMO()']]],
+  ['omemo_516',['OMEMO',['../namespaceQXmpp.html#a144a88be891edf484a1fe97604fd81e3a3bd98dcdc982bab762928a820ab82a17',1,'QXmpp::OMEMO()'],['../namespaceQXmpp.html#a144a88be891edf484a1fe97604fd81e3aca92dfb59ed0a220b9283a1655b373b3',1,'QXmpp::Omemo()']]],
   ['omemo1_517',['Omemo1',['../namespaceQXmpp.html#a144a88be891edf484a1fe97604fd81e3ac45344966c659a4f2bbd3e811612e28d',1,'QXmpp']]],
   ['omemo2_518',['Omemo2',['../namespaceQXmpp.html#a144a88be891edf484a1fe97604fd81e3a49de70140287dbda13aceab3b22b1078',1,'QXmpp']]],
   ['omemoelement_519',['omemoElement',['../classQXmppMessage.html#aef7dcbe787e52de46561a87ee236ac59',1,'QXmppMessage']]],
@@ -20,5 +20,5 @@ var searchData=
   ['outofbandurl_532',['outOfBandUrl',['../classQXmppMessage.html#a6a6b58f98ba934e429677f5033a23152',1,'QXmppMessage::outOfBandUrl()'],['../classQXmppRegisterIq.html#ad317032a2cfc30ee138e21b8530a42d4',1,'QXmppRegisterIq::outOfBandUrl()']]],
   ['owner_533',['Owner',['../classQXmppPubSubAffiliation.html#a87cbd228a4d3c451f4e21e260d46d842ae47f343fbc6c5788a65649241ae61bdb',1,'QXmppPubSubAffiliation']]],
   ['ownkey_534',['ownKey',['../classQXmppTrustManager.html#a2ea236a26277914dd8e75c6f4823365a',1,'QXmppTrustManager::ownKey()'],['../classQXmppTrustStorage.html#aa4d7836f88d792c316a2e659c0cf8310',1,'QXmppTrustStorage::ownKey()']]],
-  ['ox_535',['OX',['../namespaceQXmpp.html#a144a88be891edf484a1fe97604fd81e3a6ae0c1c63f5527cb050e942a38f6c726',1,'QXmpp::OX()'],['../namespaceQXmpp.html#a144a88be891edf484a1fe97604fd81e3a4051b83a948e2a334e5b75f07557b77a',1,'QXmpp::Ox()']]]
+  ['ox_535',['Ox',['../namespaceQXmpp.html#a144a88be891edf484a1fe97604fd81e3a4051b83a948e2a334e5b75f07557b77a',1,'QXmpp::Ox()'],['../namespaceQXmpp.html#a144a88be891edf484a1fe97604fd81e3a6ae0c1c63f5527cb050e942a38f6c726',1,'QXmpp::OX()']]]
 ];

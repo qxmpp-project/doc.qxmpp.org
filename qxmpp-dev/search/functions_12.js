@@ -386,7 +386,7 @@ var searchData=
   ['streammanagementstate_2537',['streamManagementState',['../classQXmppClient.html#a65b66e4c1e2259a256bd6bd57d61bd57',1,'QXmppClient']]],
   ['streamsecuritymode_2538',['streamSecurityMode',['../classQXmppConfiguration.html#a3131853d2ee65c8eabc0cbdc7f7ad93b',1,'QXmppConfiguration']]],
   ['street_2539',['street',['../classQXmppVCardAddress.html#aa3520b7f541df50c55d672c70299f791',1,'QXmppVCardAddress']]],
-  ['subid_2540',['subId',['../classQXmppPubSubSubscription.html#a51c6c90a8b6400d691ba5901a823bb29',1,'QXmppPubSubSubscription::subId()'],['../classQXmppPubSubSubAuthorization.html#acd8a1f5faef406648dcfc33f072c50a9',1,'QXmppPubSubSubAuthorization::subid()']]],
+  ['subid_2540',['subid',['../classQXmppPubSubSubAuthorization.html#acd8a1f5faef406648dcfc33f072c50a9',1,'QXmppPubSubSubAuthorization::subid()'],['../classQXmppPubSubSubscription.html#a51c6c90a8b6400d691ba5901a823bb29',1,'QXmppPubSubSubscription::subId()']]],
   ['subject_2541',['subject',['../classQXmppArchiveChat.html#a24573d02a735db099a9aeb06dfd942ba',1,'QXmppArchiveChat::subject()'],['../classQXmppMessage.html#a121ee2cf5f5a7590dd14d4b141040f13',1,'QXmppMessage::subject()'],['../classQXmppMucRoom.html#ab7317ae2690851f5ce995b9069c7b0c9',1,'QXmppMucRoom::subject()']]],
   ['subjectchanged_2542',['subjectChanged',['../classQXmppMucRoom.html#a3ebda02e7b225cf6bdc264290c40b5a7',1,'QXmppMucRoom']]],
   ['subscribe_2543',['subscribe',['../classQXmppRosterManager.html#a8bb83732b96ad9ab56deb8a0e3c42903',1,'QXmppRosterManager']]],
