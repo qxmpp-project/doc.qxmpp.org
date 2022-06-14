@@ -299,16 +299,17 @@ $(function() {
 <div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classQXmppNonza.html#aff27abe8740fc054a67d55c239ff8cc3">toXml</a>(QXmlStreamWriter *writer) <span class="keyword">const</span> <span class="keyword">override</span> <span class="keyword">final</span>;</div>
 <div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classQXmppNonza.html#aff27abe8740fc054a67d55c239ff8cc3">toXml</a>(QXmlStreamWriter *writer, <a class="code" href="namespaceQXmpp.html#abc6005b5a30290db2a9da3a9dde99a0d">QXmpp::SceMode</a>) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160; </div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> parseExtension(<span class="keyword">const</span> QDomElement &amp;element, <a class="code" href="namespaceQXmpp.html#abc6005b5a30290db2a9da3a9dde99a0d">QXmpp::SceMode</a>);</div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> serializeExtensions(QXmlStreamWriter *writer, <a class="code" href="namespaceQXmpp.html#abc6005b5a30290db2a9da3a9dde99a0d">QXmpp::SceMode</a>, <span class="keyword">const</span> QString &amp;baseNamespace = {}) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160; </div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    QSharedDataPointer&lt;QXmppMessagePrivate&gt; d;</div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;};</div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160; </div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;Q_DECLARE_METATYPE(<a class="code" href="classQXmppMessage.html">QXmppMessage</a>)</div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160; </div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;<span class="preprocessor">#endif  // QXMPPMESSAGE_H</span></div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;    <span class="keywordtype">void</span> parseExtensions(<span class="keyword">const</span> QDomElement &amp;element, <a class="code" href="namespaceQXmpp.html#abc6005b5a30290db2a9da3a9dde99a0d">QXmpp::SceMode</a> sceMode);</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> parseExtension(<span class="keyword">const</span> QDomElement &amp;element, <a class="code" href="namespaceQXmpp.html#abc6005b5a30290db2a9da3a9dde99a0d">QXmpp::SceMode</a>);</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">void</span> serializeExtensions(QXmlStreamWriter *writer, <a class="code" href="namespaceQXmpp.html#abc6005b5a30290db2a9da3a9dde99a0d">QXmpp::SceMode</a>, <span class="keyword">const</span> QString &amp;baseNamespace = {}) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160; </div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;    QSharedDataPointer&lt;QXmppMessagePrivate&gt; d;</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;};</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160; </div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;Q_DECLARE_METATYPE(<a class="code" href="classQXmppMessage.html">QXmppMessage</a>)</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160; </div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;<span class="preprocessor">#endif  // QXMPPMESSAGE_H</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aclassQXmppStanza_html_a767267784f17dadb5fcc63cbd79a6cf4"><div class="ttname"><a href="classQXmppStanza.html#a767267784f17dadb5fcc63cbd79a6cf4">QXmppStanza::operator=</a></div><div class="ttdeci">QXmppStanza &amp; operator=(const QXmppStanza &amp;other)</div><div class="ttdoc">Assigns other to this stanza.</div></div>
 <div class="ttc" id="aclassQXmppNonza_html_ae1c3b04b284c0f2b2f8ff6935bcc652a"><div class="ttname"><a href="classQXmppNonza.html#ae1c3b04b284c0f2b2f8ff6935bcc652a">QXmppNonza::isXmppStanza</a></div><div class="ttdeci">virtual bool isXmppStanza() const</div><div class="ttdef"><b>Definition:</b> QXmppNonza.h:19</div></div>

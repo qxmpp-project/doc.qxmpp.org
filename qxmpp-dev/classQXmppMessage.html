@@ -325,6 +325,8 @@ QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
 <tr class="separator:a018cf876c41c5b070261c51645610d33"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae454b14a553d3d8d1a26ab5e628540e0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppMessage.html#ae454b14a553d3d8d1a26ab5e628540e0">setTrustMessageElement</a> (const std::optional&lt; <a class="el" href="classQXmppTrustMessageElement.html">QXmppTrustMessageElement</a> &gt; &amp;<a class="el" href="classQXmppMessage.html#a018cf876c41c5b070261c51645610d33">trustMessageElement</a>)</td></tr>
 <tr class="separator:ae454b14a553d3d8d1a26ab5e628540e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49032407565f1d04ff656f3b0fba72d2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppMessage.html#a49032407565f1d04ff656f3b0fba72d2">parseExtensions</a> (const QDomElement &amp;element, <a class="el" href="namespaceQXmpp.html#abc6005b5a30290db2a9da3a9dde99a0d">QXmpp::SceMode</a> sceMode)</td></tr>
+<tr class="separator:a49032407565f1d04ff656f3b0fba72d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3a32f6da9f4136906339d3e408b1f81e"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppMessage.html#a3a32f6da9f4136906339d3e408b1f81e">parseExtension</a> (const QDomElement &amp;element, <a class="el" href="namespaceQXmpp.html#abc6005b5a30290db2a9da3a9dde99a0d">QXmpp::SceMode</a>)</td></tr>
 <tr class="separator:a3a32f6da9f4136906339d3e408b1f81e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aed8ea8cebe0afdb0574db80d2dc44f9d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppMessage.html#aed8ea8cebe0afdb0574db80d2dc44f9d">serializeExtensions</a> (QXmlStreamWriter *writer, <a class="el" href="namespaceQXmpp.html#abc6005b5a30290db2a9da3a9dde99a0d">QXmpp::SceMode</a>, const QString &amp;baseNamespace={}) const</td></tr>
@@ -1164,6 +1166,42 @@ If this returns QXmppMessage::UnknownEncryption, you can still get the namespace
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>True, if the element was successfully parsed.</dd></dl>
 <dl class="section since"><dt>Since</dt><dd><a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.5 </dd></dl>
+
+</div>
+</div>
+<a id="a49032407565f1d04ff656f3b0fba72d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49032407565f1d04ff656f3b0fba72d2">&#9670;&nbsp;</a></span>parseExtensions()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void QXmppMessage::parseExtensions </td>
+          <td>(</td>
+          <td class="paramtype">const QDomElement &amp;&#160;</td>
+          <td class="paramname"><em>element</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="namespaceQXmpp.html#abc6005b5a30290db2a9da3a9dde99a0d">QXmpp::SceMode</a>&#160;</td>
+          <td class="paramname"><em>sceMode</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Parses all child elements of a message stanza.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">element</td><td>message element or SCE content element </td></tr>
+    <tr><td class="paramname">sceMode</td><td>mode to decide which child elements of the message to parse </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
