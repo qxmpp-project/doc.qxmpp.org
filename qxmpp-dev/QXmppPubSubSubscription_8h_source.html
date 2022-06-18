@@ -113,45 +113,47 @@ $(function() {
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                            ConfigurationSupport configurationSupport = Unavailable,</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                            <span class="keyword">const</span> QDateTime &amp;expiry = {});</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <a class="code" href="classQXmppPubSubSubscription.html">QXmppPubSubSubscription</a>(<span class="keyword">const</span> <a class="code" href="classQXmppPubSubSubscription.html">QXmppPubSubSubscription</a> &amp;);</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    ~<a class="code" href="classQXmppPubSubSubscription.html">QXmppPubSubSubscription</a>();</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <a class="code" href="classQXmppPubSubSubscription.html">QXmppPubSubSubscription</a> &amp;operator=(<span class="keyword">const</span> <a class="code" href="classQXmppPubSubSubscription.html">QXmppPubSubSubscription</a> &amp;);</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    QString jid() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordtype">void</span> setJid(<span class="keyword">const</span> QString &amp;jid);</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    QString node() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordtype">void</span> setNode(<span class="keyword">const</span> QString &amp;node);</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    QString subId() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordtype">void</span> setSubId(<span class="keyword">const</span> QString &amp;subId);</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    QDateTime expiry() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordtype">void</span> setExpiry(<span class="keyword">const</span> QDateTime &amp;expiry);</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    State state() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    <span class="keywordtype">void</span> setState(State state);</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160; </div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    ConfigurationSupport configurationSupport() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordtype">void</span> setConfigurationSupport(ConfigurationSupport support);</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordtype">bool</span> isConfigurationSupported() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordtype">bool</span> isConfigurationRequired() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> isSubscription(<span class="keyword">const</span> QDomElement &amp;);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <a class="code" href="classQXmppPubSubSubscription.html">QXmppPubSubSubscription</a>(<a class="code" href="classQXmppPubSubSubscription.html">QXmppPubSubSubscription</a> &amp;&amp;);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    ~<a class="code" href="classQXmppPubSubSubscription.html">QXmppPubSubSubscription</a>();</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <a class="code" href="classQXmppPubSubSubscription.html">QXmppPubSubSubscription</a> &amp;operator=(<span class="keyword">const</span> <a class="code" href="classQXmppPubSubSubscription.html">QXmppPubSubSubscription</a> &amp;);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <a class="code" href="classQXmppPubSubSubscription.html">QXmppPubSubSubscription</a> &amp;operator=(<a class="code" href="classQXmppPubSubSubscription.html">QXmppPubSubSubscription</a> &amp;&amp;);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    QString jid() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordtype">void</span> setJid(<span class="keyword">const</span> QString &amp;jid);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    QString node() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordtype">void</span> setNode(<span class="keyword">const</span> QString &amp;node);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    QString subId() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordtype">void</span> setSubId(<span class="keyword">const</span> QString &amp;subId);</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160; </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    QDateTime expiry() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordtype">void</span> setExpiry(<span class="keyword">const</span> QDateTime &amp;expiry);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    State state() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <span class="keywordtype">void</span> setState(State state);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    ConfigurationSupport configurationSupport() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordtype">void</span> setConfigurationSupport(ConfigurationSupport support);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordtype">bool</span> isConfigurationSupported() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordtype">bool</span> isConfigurationRequired() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordtype">void</span> parse(<span class="keyword">const</span> QDomElement &amp;);</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <span class="keywordtype">void</span> toXml(QXmlStreamWriter *writer) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160; </div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    QSharedDataPointer&lt;QXmppPubSubSubscriptionPrivate&gt; d;</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;};</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160; </div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;Q_DECLARE_TYPEINFO(<a class="code" href="classQXmppPubSubSubscription.html">QXmppPubSubSubscription</a>, Q_MOVABLE_TYPE);</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;Q_DECLARE_METATYPE(<a class="code" href="classQXmppPubSubSubscription.html">QXmppPubSubSubscription</a>)</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;Q_DECLARE_METATYPE(<a class="code" href="classQXmppPubSubSubscription.html#aad82576dfb8c85c7b658958c65727cf9">QXmppPubSubSubscription::State</a>)</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;Q_DECLARE_METATYPE(<a class="code" href="classQXmppPubSubSubscription.html#ac2dc1757a5889b9daab32dc5b78106d3">QXmppPubSubSubscription::ConfigurationSupport</a>)</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="preprocessor">#endif  // QXMPPPUBSUBSUBSCRIPTION_H</span></div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> isSubscription(<span class="keyword">const</span> QDomElement &amp;);</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordtype">void</span> parse(<span class="keyword">const</span> QDomElement &amp;);</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordtype">void</span> toXml(QXmlStreamWriter *writer) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    QSharedDataPointer&lt;QXmppPubSubSubscriptionPrivate&gt; d;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;};</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;Q_DECLARE_TYPEINFO(<a class="code" href="classQXmppPubSubSubscription.html">QXmppPubSubSubscription</a>, Q_MOVABLE_TYPE);</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;Q_DECLARE_METATYPE(<a class="code" href="classQXmppPubSubSubscription.html">QXmppPubSubSubscription</a>)</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;Q_DECLARE_METATYPE(<a class="code" href="classQXmppPubSubSubscription.html#aad82576dfb8c85c7b658958c65727cf9">QXmppPubSubSubscription::State</a>)</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;Q_DECLARE_METATYPE(<a class="code" href="classQXmppPubSubSubscription.html#ac2dc1757a5889b9daab32dc5b78106d3">QXmppPubSubSubscription::ConfigurationSupport</a>)</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;<span class="preprocessor">#endif  // QXMPPPUBSUBSUBSCRIPTION_H</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aclassQXmppPubSubSubscription_html_aad82576dfb8c85c7b658958c65727cf9a223faf63ce143e4aee4863d9cc1ddba9"><div class="ttname"><a href="classQXmppPubSubSubscription.html#aad82576dfb8c85c7b658958c65727cf9a223faf63ce143e4aee4863d9cc1ddba9">QXmppPubSubSubscription::Subscribed</a></div><div class="ttdeci">@ Subscribed</div><div class="ttdoc">The user is subscribed to the node.</div><div class="ttdef"><b>Definition:</b> QXmppPubSubSubscription.h:32</div></div>
 <div class="ttc" id="aclassQXmppPubSubSubscription_html_ac2dc1757a5889b9daab32dc5b78106d3a78d69a5f23c6a5455e8d857dd6d9d813"><div class="ttname"><a href="classQXmppPubSubSubscription.html#ac2dc1757a5889b9daab32dc5b78106d3a78d69a5f23c6a5455e8d857dd6d9d813">QXmppPubSubSubscription::Available</a></div><div class="ttdeci">@ Available</div><div class="ttdoc">Configuration of the subscription is possible, but not required.</div><div class="ttdef"><b>Definition:</b> QXmppPubSubSubscription.h:48</div></div>

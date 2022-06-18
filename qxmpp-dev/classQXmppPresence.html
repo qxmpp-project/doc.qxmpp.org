@@ -137,16 +137,24 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ab3facb1c108a346c1866f11133592601"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74ef4824a0c7c70c095c9e783a3b55b4"><td class="memItemLeft" align="right" valign="top"><a id="a74ef4824a0c7c70c095c9e783a3b55b4"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppPresence.html#a74ef4824a0c7c70c095c9e783a3b55b4">QXmppPresence</a> (const <a class="el" href="classQXmppPresence.html">QXmppPresence</a> &amp;other)</td></tr>
-<tr class="memdesc:a74ef4824a0c7c70c095c9e783a3b55b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a copy of <em>other</em>. <br /></td></tr>
+<tr class="memdesc:a74ef4824a0c7c70c095c9e783a3b55b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Copy-constructor. <br /></td></tr>
 <tr class="separator:a74ef4824a0c7c70c095c9e783a3b55b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7934257e07cb7e8275ad6e53fc26e82e"><td class="memItemLeft" align="right" valign="top"><a id="a7934257e07cb7e8275ad6e53fc26e82e"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppPresence.html#a7934257e07cb7e8275ad6e53fc26e82e">QXmppPresence</a> (<a class="el" href="classQXmppPresence.html">QXmppPresence</a> &amp;&amp;)</td></tr>
+<tr class="memdesc:a7934257e07cb7e8275ad6e53fc26e82e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move-constructor. <br /></td></tr>
+<tr class="separator:a7934257e07cb7e8275ad6e53fc26e82e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abeedfecc394998b47815f5815cc6d98c"><td class="memItemLeft" align="right" valign="top"><a id="abeedfecc394998b47815f5815cc6d98c"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppPresence.html#abeedfecc394998b47815f5815cc6d98c">~QXmppPresence</a> () override</td></tr>
 <tr class="memdesc:abeedfecc394998b47815f5815cc6d98c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroys a <a class="el" href="classQXmppPresence.html" title="The QXmppPresence class represents an XMPP presence stanza.">QXmppPresence</a>. <br /></td></tr>
 <tr class="separator:abeedfecc394998b47815f5815cc6d98c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1141ade052875a709b7d6c8556fc1868"><td class="memItemLeft" align="right" valign="top"><a id="a1141ade052875a709b7d6c8556fc1868"></a>
 <a class="el" href="classQXmppPresence.html">QXmppPresence</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppPresence.html#a1141ade052875a709b7d6c8556fc1868">operator=</a> (const <a class="el" href="classQXmppPresence.html">QXmppPresence</a> &amp;other)</td></tr>
-<tr class="memdesc:a1141ade052875a709b7d6c8556fc1868"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assigns <em>other</em> to this presence. <br /></td></tr>
+<tr class="memdesc:a1141ade052875a709b7d6c8556fc1868"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assignemnt operator. <br /></td></tr>
 <tr class="separator:a1141ade052875a709b7d6c8556fc1868"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa058794d625db6d15e67f0bc3e734d0d"><td class="memItemLeft" align="right" valign="top"><a id="aa058794d625db6d15e67f0bc3e734d0d"></a>
+<a class="el" href="classQXmppPresence.html">QXmppPresence</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppPresence.html#aa058794d625db6d15e67f0bc3e734d0d">operator=</a> (<a class="el" href="classQXmppPresence.html">QXmppPresence</a> &amp;&amp;)</td></tr>
+<tr class="memdesc:aa058794d625db6d15e67f0bc3e734d0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move-assignemnt operator. <br /></td></tr>
+<tr class="separator:aa058794d625db6d15e67f0bc3e734d0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae70f2e504766679b1769ee06b91975a6"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppPresence.html#ae70f2e504766679b1769ee06b91975a6">isXmppStanza</a> () const override</td></tr>
 <tr class="separator:ae70f2e504766679b1769ee06b91975a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3e78927580ba9f5c538f0b2d451cfccf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classQXmppPresence.html#ad56af0f57b732c09b080b9347c4dba94">AvailableStatusType</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppPresence.html#a3e78927580ba9f5c538f0b2d451cfccf">availableStatusType</a> () const</td></tr>
@@ -256,6 +264,10 @@ QStringList&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hre
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppStanza.html#af8e4636d056c754347635ba26cd8d60c">QXmppStanza</a> (const <a class="el" href="classQXmppStanza.html">QXmppStanza</a> &amp;other)</td></tr>
 <tr class="memdesc:af8e4636d056c754347635ba26cd8d60c inherit pub_methods_classQXmppStanza"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a copy of <em>other</em>. <br /></td></tr>
 <tr class="separator:af8e4636d056c754347635ba26cd8d60c inherit pub_methods_classQXmppStanza"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2928c2ef79230049ba69f819afb157ae inherit pub_methods_classQXmppStanza"><td class="memItemLeft" align="right" valign="top"><a id="a2928c2ef79230049ba69f819afb157ae"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppStanza.html#a2928c2ef79230049ba69f819afb157ae">QXmppStanza</a> (<a class="el" href="classQXmppStanza.html">QXmppStanza</a> &amp;&amp;)</td></tr>
+<tr class="memdesc:a2928c2ef79230049ba69f819afb157ae inherit pub_methods_classQXmppStanza"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move constructor. <br /></td></tr>
+<tr class="separator:a2928c2ef79230049ba69f819afb157ae inherit pub_methods_classQXmppStanza"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa6d167337d24b0fdaae6ca48b69a45ca inherit pub_methods_classQXmppStanza"><td class="memItemLeft" align="right" valign="top"><a id="aa6d167337d24b0fdaae6ca48b69a45ca"></a>
 virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppStanza.html#aa6d167337d24b0fdaae6ca48b69a45ca">~QXmppStanza</a> ()</td></tr>
 <tr class="memdesc:aa6d167337d24b0fdaae6ca48b69a45ca inherit pub_methods_classQXmppStanza"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destroys a <a class="el" href="classQXmppStanza.html" title="The QXmppStanza class is the base class for all XMPP stanzas.">QXmppStanza</a>. <br /></td></tr>
@@ -264,6 +276,10 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
 <a class="el" href="classQXmppStanza.html">QXmppStanza</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppStanza.html#a767267784f17dadb5fcc63cbd79a6cf4">operator=</a> (const <a class="el" href="classQXmppStanza.html">QXmppStanza</a> &amp;other)</td></tr>
 <tr class="memdesc:a767267784f17dadb5fcc63cbd79a6cf4 inherit pub_methods_classQXmppStanza"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assigns <em>other</em> to this stanza. <br /></td></tr>
 <tr class="separator:a767267784f17dadb5fcc63cbd79a6cf4 inherit pub_methods_classQXmppStanza"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb53036f51950e9b9792f16dcce0f887 inherit pub_methods_classQXmppStanza"><td class="memItemLeft" align="right" valign="top"><a id="adb53036f51950e9b9792f16dcce0f887"></a>
+<a class="el" href="classQXmppStanza.html">QXmppStanza</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppStanza.html#adb53036f51950e9b9792f16dcce0f887">operator=</a> (<a class="el" href="classQXmppStanza.html">QXmppStanza</a> &amp;&amp;)</td></tr>
+<tr class="memdesc:adb53036f51950e9b9792f16dcce0f887 inherit pub_methods_classQXmppStanza"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move-assignment operator. <br /></td></tr>
+<tr class="separator:adb53036f51950e9b9792f16dcce0f887 inherit pub_methods_classQXmppStanza"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a67a02790fd35ee0efb7dc8fd50b4d2dd inherit pub_methods_classQXmppStanza"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppStanza.html#a67a02790fd35ee0efb7dc8fd50b4d2dd">to</a> () const</td></tr>
 <tr class="separator:a67a02790fd35ee0efb7dc8fd50b4d2dd inherit pub_methods_classQXmppStanza"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8296bac9c1821141bb67fae87910b8e0 inherit pub_methods_classQXmppStanza"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppStanza.html#a8296bac9c1821141bb67fae87910b8e0">setTo</a> (const QString &amp;)</td></tr>
@@ -411,13 +427,7 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Constructs a <a class="el" href="classQXmppPresence.html" title="The QXmppPresence class represents an XMPP presence stanza.">QXmppPresence</a>.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">type</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Constructs a <a class="el" href="classQXmppPresence.html" title="The QXmppPresence class represents an XMPP presence stanza.">QXmppPresence</a>. </p>
 
 </div>
 </div>

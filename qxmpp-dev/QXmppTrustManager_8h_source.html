@@ -78,60 +78,65 @@ $(function() {
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#define QXMPPTRUSTMANAGER_H</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;QXmppClientExtension.h&quot;</span></div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;QXmppTrustStorage.h&quot;</span></div>
-<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160; </div>
-<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="classQXmppTrustManager.html">   11</a></span>&#160;<span class="keyword">class </span>QXMPP_EXPORT <a class="code" href="classQXmppTrustManager.html">QXmppTrustManager</a> : <span class="keyword">public</span> <a class="code" href="classQXmppClientExtension.html">QXmppClientExtension</a></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;{</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    Q_OBJECT</div>
-<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160; </div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <a class="code" href="classQXmppTrustManager.html">QXmppTrustManager</a>(<a class="code" href="classQXmppTrustStorage.html">QXmppTrustStorage</a> *trustStorage);</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    ~<a class="code" href="classQXmppTrustManager.html">QXmppTrustManager</a>();</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160; </div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    QFuture&lt;void&gt; setSecurityPolicy(<span class="keyword">const</span> QString &amp;encryption, <a class="code" href="classQXmppTrustStorage.html#af1e9d660dfdb87cd51dc2da180994028">QXmppTrustStorage::SecurityPolicy</a> securityPolicy);</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    QFuture&lt;void&gt; resetSecurityPolicy(<span class="keyword">const</span> QString &amp;encryption);</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    QFuture&lt;QXmppTrustStorage::SecurityPolicy&gt; securityPolicy(<span class="keyword">const</span> QString &amp;encryption);</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160; </div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    QFuture&lt;void&gt; setOwnKey(<span class="keyword">const</span> QString &amp;encryption, <span class="keyword">const</span> QByteArray &amp;keyId);</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    QFuture&lt;void&gt; resetOwnKey(<span class="keyword">const</span> QString &amp;encryption);</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    QFuture&lt;QByteArray&gt; ownKey(<span class="keyword">const</span> QString &amp;encryption);</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    QFuture&lt;void&gt; addKeys(<span class="keyword">const</span> QString &amp;encryption, <span class="keyword">const</span> QString &amp;keyOwnerJid, <span class="keyword">const</span> QList&lt;QByteArray&gt; &amp;keyIds, <a class="code" href="classQXmppTrustStorage.html#a20db8ebf03198cb8b163f1b73be188da">QXmppTrustStorage::TrustLevel</a> trustLevel = <a class="code" href="classQXmppTrustStorage.html#a20db8ebf03198cb8b163f1b73be188daa9ca1631cafd86045c2edf17b0eee281d">QXmppTrustStorage::AutomaticallyDistrusted</a>);</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    QFuture&lt;void&gt; removeKeys(<span class="keyword">const</span> QString &amp;encryption, <span class="keyword">const</span> QList&lt;QByteArray&gt; &amp;keyIds);</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    QFuture&lt;void&gt; removeKeys(<span class="keyword">const</span> QString &amp;encryption, <span class="keyword">const</span> QString &amp;keyOwnerJid);</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    QFuture&lt;void&gt; removeKeys(<span class="keyword">const</span> QString &amp;encryption);</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    QFuture&lt;QHash&lt;QXmppTrustStorage::TrustLevel, QMultiHash&lt;QString, QByteArray&gt;&gt;&gt; keys(<span class="keyword">const</span> QString &amp;encryption, QXmppTrustStorage::TrustLevels trustLevels = {});</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    QFuture&lt;QHash&lt;QString, QHash&lt;QByteArray, QXmppTrustStorage::TrustLevel&gt;&gt;&gt; keys(<span class="keyword">const</span> QString &amp;encryption, <span class="keyword">const</span> QList&lt;QString&gt; &amp;keyOwnerJids, QXmppTrustStorage::TrustLevels trustLevels = {});</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    QFuture&lt;bool&gt; hasKey(<span class="keyword">const</span> QString &amp;encryption, <span class="keyword">const</span> QString &amp;keyOwnerJid, QXmppTrustStorage::TrustLevels trustLevels);</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    QFuture&lt;void&gt; setTrustLevel(<span class="keyword">const</span> QString &amp;encryption, <span class="keyword">const</span> QMultiHash&lt;QString, QByteArray&gt; &amp;keyIds, <a class="code" href="classQXmppTrustStorage.html#a20db8ebf03198cb8b163f1b73be188da">QXmppTrustStorage::TrustLevel</a> trustLevel);</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    QFuture&lt;void&gt; setTrustLevel(<span class="keyword">const</span> QString &amp;encryption, <span class="keyword">const</span> QList&lt;QString&gt; &amp;keyOwnerJids, <a class="code" href="classQXmppTrustStorage.html#a20db8ebf03198cb8b163f1b73be188da">QXmppTrustStorage::TrustLevel</a> oldTrustLevel, <a class="code" href="classQXmppTrustStorage.html#a20db8ebf03198cb8b163f1b73be188da">QXmppTrustStorage::TrustLevel</a> newTrustLevel);</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    QFuture&lt;QXmppTrustStorage::TrustLevel&gt; trustLevel(<span class="keyword">const</span> QString &amp;encryption, <span class="keyword">const</span> QString &amp;keyOwnerJid, <span class="keyword">const</span> QByteArray &amp;keyId);</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    QFuture&lt;void&gt; resetAll(<span class="keyword">const</span> QString &amp;encryption);</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classQXmppClientExtension.html#af836e49c31e96854b8d344f29f7e6b54">handleStanza</a>(<span class="keyword">const</span> QDomElement &amp;stanza) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    Q_SIGNAL <span class="keywordtype">void</span> trustLevelsChanged(<span class="keyword">const</span> QHash&lt;QString, QMultiHash&lt;QString, QByteArray&gt;&gt; &amp;modifiedKeys);</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keyword">inline</span> <a class="code" href="classQXmppTrustStorage.html">QXmppTrustStorage</a> *trustStorage()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keywordflow">return</span> m_trustStorage;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    }</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <a class="code" href="classQXmppTrustStorage.html">QXmppTrustStorage</a> *m_trustStorage;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;};</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">#endif  // QXMPPTRUSTMANAGER_H</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;QXmppTrustLevel.h&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#include &quot;QXmppTrustSecurityPolicy.h&quot;</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160; </div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;QFuture&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160; </div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">class </span><a class="code" href="classQXmppTrustStorage.html">QXmppTrustStorage</a>;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="classQXmppTrustManager.html">   16</a></span>&#160;<span class="keyword">class </span>QXMPP_EXPORT <a class="code" href="classQXmppTrustManager.html">QXmppTrustManager</a> : <span class="keyword">public</span> <a class="code" href="classQXmppClientExtension.html">QXmppClientExtension</a></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    Q_OBJECT</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <a class="code" href="classQXmppTrustManager.html">QXmppTrustManager</a>(<a class="code" href="classQXmppTrustStorage.html">QXmppTrustStorage</a> *trustStorage);</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    ~<a class="code" href="classQXmppTrustManager.html">QXmppTrustManager</a>();</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    QFuture&lt;void&gt; setSecurityPolicy(<span class="keyword">const</span> QString &amp;encryption, <a class="code" href="namespaceQXmpp.html#af6e4885b9b07444825d3bf59877a1f10">QXmpp::TrustSecurityPolicy</a> securityPolicy);</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    QFuture&lt;void&gt; resetSecurityPolicy(<span class="keyword">const</span> QString &amp;encryption);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    QFuture&lt;QXmpp::TrustSecurityPolicy&gt; securityPolicy(<span class="keyword">const</span> QString &amp;encryption);</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    QFuture&lt;void&gt; setOwnKey(<span class="keyword">const</span> QString &amp;encryption, <span class="keyword">const</span> QByteArray &amp;keyId);</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    QFuture&lt;void&gt; resetOwnKey(<span class="keyword">const</span> QString &amp;encryption);</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    QFuture&lt;QByteArray&gt; ownKey(<span class="keyword">const</span> QString &amp;encryption);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    QFuture&lt;void&gt; addKeys(<span class="keyword">const</span> QString &amp;encryption, <span class="keyword">const</span> QString &amp;keyOwnerJid, <span class="keyword">const</span> QList&lt;QByteArray&gt; &amp;keyIds, <a class="code" href="namespaceQXmpp.html#a71207ba76216075cc013b3fe8ed66b84">QXmpp::TrustLevel</a> trustLevel = <a class="code" href="namespaceQXmpp.html#a71207ba76216075cc013b3fe8ed66b84af474e5b54db6db3384b6c11fb7daccf8">QXmpp::TrustLevel::AutomaticallyDistrusted</a>);</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    QFuture&lt;void&gt; removeKeys(<span class="keyword">const</span> QString &amp;encryption, <span class="keyword">const</span> QList&lt;QByteArray&gt; &amp;keyIds);</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    QFuture&lt;void&gt; removeKeys(<span class="keyword">const</span> QString &amp;encryption, <span class="keyword">const</span> QString &amp;keyOwnerJid);</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    QFuture&lt;void&gt; removeKeys(<span class="keyword">const</span> QString &amp;encryption);</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    QFuture&lt;QHash&lt;QXmpp::TrustLevel, QMultiHash&lt;QString, QByteArray&gt;&gt;&gt; keys(<span class="keyword">const</span> QString &amp;encryption, QXmpp::TrustLevels trustLevels = {});</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    QFuture&lt;QHash&lt;QString, QHash&lt;QByteArray, QXmpp::TrustLevel&gt;&gt;&gt; keys(<span class="keyword">const</span> QString &amp;encryption, <span class="keyword">const</span> QList&lt;QString&gt; &amp;keyOwnerJids, QXmpp::TrustLevels trustLevels = {});</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    QFuture&lt;bool&gt; hasKey(<span class="keyword">const</span> QString &amp;encryption, <span class="keyword">const</span> QString &amp;keyOwnerJid, QXmpp::TrustLevels trustLevels);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    QFuture&lt;void&gt; setTrustLevel(<span class="keyword">const</span> QString &amp;encryption, <span class="keyword">const</span> QMultiHash&lt;QString, QByteArray&gt; &amp;keyIds, <a class="code" href="namespaceQXmpp.html#a71207ba76216075cc013b3fe8ed66b84">QXmpp::TrustLevel</a> trustLevel);</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    QFuture&lt;void&gt; setTrustLevel(<span class="keyword">const</span> QString &amp;encryption, <span class="keyword">const</span> QList&lt;QString&gt; &amp;keyOwnerJids, <a class="code" href="namespaceQXmpp.html#a71207ba76216075cc013b3fe8ed66b84">QXmpp::TrustLevel</a> oldTrustLevel, <a class="code" href="namespaceQXmpp.html#a71207ba76216075cc013b3fe8ed66b84">QXmpp::TrustLevel</a> newTrustLevel);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    QFuture&lt;QXmpp::TrustLevel&gt; trustLevel(<span class="keyword">const</span> QString &amp;encryption, <span class="keyword">const</span> QString &amp;keyOwnerJid, <span class="keyword">const</span> QByteArray &amp;keyId);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    QFuture&lt;void&gt; resetAll(<span class="keyword">const</span> QString &amp;encryption);</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classQXmppClientExtension.html#af836e49c31e96854b8d344f29f7e6b54">handleStanza</a>(<span class="keyword">const</span> QDomElement &amp;stanza) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    Q_SIGNAL <span class="keywordtype">void</span> trustLevelsChanged(<span class="keyword">const</span> QHash&lt;QString, QMultiHash&lt;QString, QByteArray&gt;&gt; &amp;modifiedKeys);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keyword">inline</span> <a class="code" href="classQXmppTrustStorage.html">QXmppTrustStorage</a> *trustStorage()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="keywordflow">return</span> m_trustStorage;</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    }</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <a class="code" href="classQXmppTrustStorage.html">QXmppTrustStorage</a> *m_trustStorage;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;};</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor">#endif  // QXMPPTRUSTMANAGER_H</span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aclassQXmppTrustStorage_html_a20db8ebf03198cb8b163f1b73be188daa9ca1631cafd86045c2edf17b0eee281d"><div class="ttname"><a href="classQXmppTrustStorage.html#a20db8ebf03198cb8b163f1b73be188daa9ca1631cafd86045c2edf17b0eee281d">QXmppTrustStorage::AutomaticallyDistrusted</a></div><div class="ttdeci">@ AutomaticallyDistrusted</div><div class="ttdoc">The key is automatically distrusted (e.g., by the security policy TOAKAFA).</div><div class="ttdef"><b>Definition:</b> QXmppTrustStorage.h:30</div></div>
-<div class="ttc" id="aclassQXmppTrustManager_html"><div class="ttname"><a href="classQXmppTrustManager.html">QXmppTrustManager</a></div><div class="ttdoc">The QXmppTrustManager manages end-to-end encryption trust decisions.</div><div class="ttdef"><b>Definition:</b> QXmppTrustManager.h:11</div></div>
+<div class="ttc" id="aclassQXmppTrustManager_html"><div class="ttname"><a href="classQXmppTrustManager.html">QXmppTrustManager</a></div><div class="ttdoc">The QXmppTrustManager manages end-to-end encryption trust decisions.</div><div class="ttdef"><b>Definition:</b> QXmppTrustManager.h:16</div></div>
 <div class="ttc" id="aclassQXmppClientExtension_html"><div class="ttname"><a href="classQXmppClientExtension.html">QXmppClientExtension</a></div><div class="ttdoc">The QXmppClientExtension class is the base class for QXmppClient extensions.</div><div class="ttdef"><b>Definition:</b> QXmppClientExtension.h:30</div></div>
-<div class="ttc" id="aclassQXmppTrustStorage_html_af1e9d660dfdb87cd51dc2da180994028"><div class="ttname"><a href="classQXmppTrustStorage.html#af1e9d660dfdb87cd51dc2da180994028">QXmppTrustStorage::SecurityPolicy</a></div><div class="ttdeci">SecurityPolicy</div><div class="ttdef"><b>Definition:</b> QXmppTrustStorage.h:19</div></div>
-<div class="ttc" id="aclassQXmppTrustStorage_html"><div class="ttname"><a href="classQXmppTrustStorage.html">QXmppTrustStorage</a></div><div class="ttdoc">The QXmppTrustStorage class stores end-to-end encryption trust data.</div><div class="ttdef"><b>Definition:</b> QXmppTrustStorage.h:12</div></div>
-<div class="ttc" id="aclassQXmppTrustStorage_html_a20db8ebf03198cb8b163f1b73be188da"><div class="ttname"><a href="classQXmppTrustStorage.html#a20db8ebf03198cb8b163f1b73be188da">QXmppTrustStorage::TrustLevel</a></div><div class="ttdeci">TrustLevel</div><div class="ttdef"><b>Definition:</b> QXmppTrustStorage.h:28</div></div>
+<div class="ttc" id="anamespaceQXmpp_html_a71207ba76216075cc013b3fe8ed66b84"><div class="ttname"><a href="namespaceQXmpp.html#a71207ba76216075cc013b3fe8ed66b84">QXmpp::TrustLevel</a></div><div class="ttdeci">TrustLevel</div><div class="ttdef"><b>Definition:</b> QXmppTrustLevel.h:19</div></div>
+<div class="ttc" id="anamespaceQXmpp_html_af6e4885b9b07444825d3bf59877a1f10"><div class="ttname"><a href="namespaceQXmpp.html#af6e4885b9b07444825d3bf59877a1f10">QXmpp::TrustSecurityPolicy</a></div><div class="ttdeci">TrustSecurityPolicy</div><div class="ttdef"><b>Definition:</b> QXmppTrustSecurityPolicy.h:18</div></div>
+<div class="ttc" id="aclassQXmppTrustStorage_html"><div class="ttname"><a href="classQXmppTrustStorage.html">QXmppTrustStorage</a></div><div class="ttdoc">The QXmppTrustStorage class stores end-to-end encryption trust data.</div><div class="ttdef"><b>Definition:</b> QXmppTrustStorage.h:14</div></div>
+<div class="ttc" id="anamespaceQXmpp_html_a71207ba76216075cc013b3fe8ed66b84af474e5b54db6db3384b6c11fb7daccf8"><div class="ttname"><a href="namespaceQXmpp.html#a71207ba76216075cc013b3fe8ed66b84af474e5b54db6db3384b6c11fb7daccf8">QXmpp::TrustLevel::AutomaticallyDistrusted</a></div><div class="ttdeci">@ AutomaticallyDistrusted</div></div>
 <div class="ttc" id="aclassQXmppClientExtension_html_af836e49c31e96854b8d344f29f7e6b54"><div class="ttname"><a href="classQXmppClientExtension.html#af836e49c31e96854b8d344f29f7e6b54">QXmppClientExtension::handleStanza</a></div><div class="ttdeci">virtual bool handleStanza(const QDomElement &amp;stanza)</div><div class="ttdoc">You need to implement this method to process incoming XMPP stanzas.</div><div class="ttdef"><b>Definition:</b> QXmppClientExtension.cpp:66</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

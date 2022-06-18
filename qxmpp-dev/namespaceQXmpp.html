@@ -111,6 +111,21 @@ Enumerations</h2></td></tr>
 <a class="el" href="namespaceQXmpp.html#abc6005b5a30290db2a9da3a9dde99a0da055a343bcd6d20ed9241ee74c10f70f3">SceSensitive</a>
  }</td></tr>
 <tr class="separator:abc6005b5a30290db2a9da3a9dde99a0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a71207ba76216075cc013b3fe8ed66b84"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceQXmpp.html#a71207ba76216075cc013b3fe8ed66b84">TrustLevel</a> { <br />
+&#160;&#160;<a class="el" href="namespaceQXmpp.html#a71207ba76216075cc013b3fe8ed66b84aef203c53904d46dbafaa94497dd5a0e2">TrustLevel::Undecided</a> = 1, 
+<a class="el" href="namespaceQXmpp.html#a71207ba76216075cc013b3fe8ed66b84af474e5b54db6db3384b6c11fb7daccf8">TrustLevel::AutomaticallyDistrusted</a> = 2, 
+<a class="el" href="namespaceQXmpp.html#a71207ba76216075cc013b3fe8ed66b84aaf4a056bb8eab754ce0b13e031e7038b">TrustLevel::ManuallyDistrusted</a> = 4, 
+<a class="el" href="namespaceQXmpp.html#a71207ba76216075cc013b3fe8ed66b84ae6183ae7627faf1013455f68e1009301">TrustLevel::AutomaticallyTrusted</a> = 8, 
+<br />
+&#160;&#160;<a class="el" href="namespaceQXmpp.html#a71207ba76216075cc013b3fe8ed66b84a7a2fdf3bc836f955b17d42d8d6b5e4b9">TrustLevel::ManuallyTrusted</a> = 16, 
+<a class="el" href="namespaceQXmpp.html#a71207ba76216075cc013b3fe8ed66b84aa927b3e1f83aa1b3c6feff945ca18f77">TrustLevel::Authenticated</a> = 32
+<br />
+ }</td></tr>
+<tr class="separator:a71207ba76216075cc013b3fe8ed66b84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6e4885b9b07444825d3bf59877a1f10"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceQXmpp.html#af6e4885b9b07444825d3bf59877a1f10">TrustSecurityPolicy</a> { <a class="el" href="namespaceQXmpp.html#af6e4885b9b07444825d3bf59877a1f10aff1f6d2391f8b1985cac285d7866291d">NoSecurityPolicy</a>, 
+<a class="el" href="namespaceQXmpp.html#af6e4885b9b07444825d3bf59877a1f10acce7e2a143630e788cf6c3d3e2bb4aa2">Toakafa</a>
+ }</td></tr>
+<tr class="separator:af6e4885b9b07444825d3bf59877a1f10"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -199,6 +214,66 @@ Functions</h2></td></tr>
 <tr><td class="fieldname"><a id="abc6005b5a30290db2a9da3a9dde99a0daf2c433f9e775df972b33f8bd9e420a74"></a>ScePublic&#160;</td><td class="fielddoc"><p>Only processes 'public' elements (e.g. needed for routing). </p>
 </td></tr>
 <tr><td class="fieldname"><a id="abc6005b5a30290db2a9da3a9dde99a0da055a343bcd6d20ed9241ee74c10f70f3"></a>SceSensitive&#160;</td><td class="fielddoc"><p>Only processes sensitive elements that should be encrypted. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="a71207ba76216075cc013b3fe8ed66b84"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a71207ba76216075cc013b3fe8ed66b84">&#9670;&nbsp;</a></span>TrustLevel</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespaceQXmpp.html#a71207ba76216075cc013b3fe8ed66b84">QXmpp::TrustLevel</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Trust level of public long-term keys used by end-to-end encryption protocols</p>
+<dl class="section since"><dt>Since</dt><dd><a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.5 </dd></dl>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a71207ba76216075cc013b3fe8ed66b84aef203c53904d46dbafaa94497dd5a0e2"></a>Undecided&#160;</td><td class="fielddoc"><p>The key's trust is not decided. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a71207ba76216075cc013b3fe8ed66b84af474e5b54db6db3384b6c11fb7daccf8"></a>AutomaticallyDistrusted&#160;</td><td class="fielddoc"><p>The key is automatically distrusted (e.g., by the security policy TOAKAFA). </p><dl class="section see"><dt>See also</dt><dd>SecurityPolicy </dd></dl>
+</td></tr>
+<tr><td class="fieldname"><a id="a71207ba76216075cc013b3fe8ed66b84aaf4a056bb8eab754ce0b13e031e7038b"></a>ManuallyDistrusted&#160;</td><td class="fielddoc"><p>The key is manually distrusted (e.g., by clicking a button or <a href="https://xmpp.org/extensions/xep-0450.html">XEP-0450: Automatic Trust Management (ATM)</a>). </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a71207ba76216075cc013b3fe8ed66b84ae6183ae7627faf1013455f68e1009301"></a>AutomaticallyTrusted&#160;</td><td class="fielddoc"><p>The key is automatically trusted (e.g., by the client for all keys of a bare JID until one of it is authenticated). </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a71207ba76216075cc013b3fe8ed66b84a7a2fdf3bc836f955b17d42d8d6b5e4b9"></a>ManuallyTrusted&#160;</td><td class="fielddoc"><p>The key is manually trusted (e.g., by clicking a button). </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a71207ba76216075cc013b3fe8ed66b84aa927b3e1f83aa1b3c6feff945ca18f77"></a>Authenticated&#160;</td><td class="fielddoc"><p>The key is authenticated (e.g., by QR code scanning or <a href="https://xmpp.org/extensions/xep-0450.html">XEP-0450: Automatic Trust Management (ATM)</a>). </p>
+</td></tr>
+</table>
+
+</div>
+</div>
+<a id="af6e4885b9b07444825d3bf59877a1f10"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6e4885b9b07444825d3bf59877a1f10">&#9670;&nbsp;</a></span>TrustSecurityPolicy</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="namespaceQXmpp.html#af6e4885b9b07444825d3bf59877a1f10">QXmpp::TrustSecurityPolicy</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Security policy to decide which public long-term keys are used for encryption because they are trusted</p>
+<dl class="section since"><dt>Since</dt><dd><a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.5 </dd></dl>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="af6e4885b9b07444825d3bf59877a1f10aff1f6d2391f8b1985cac285d7866291d"></a>NoSecurityPolicy&#160;</td><td class="fielddoc"><p>New keys must be trusted manually. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="af6e4885b9b07444825d3bf59877a1f10acce7e2a143630e788cf6c3d3e2bb4aa2"></a>Toakafa&#160;</td><td class="fielddoc"><p>New keys are trusted automatically until the first authentication but automatically distrusted afterwards. </p><dl class="section see"><dt>See also</dt><dd><a href="https://xmpp.org/extensions/xep-0450.html">XEP-0450: Automatic Trust Management (ATM)</a> </dd></dl>
 </td></tr>
 </table>
 
