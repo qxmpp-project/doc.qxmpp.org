@@ -94,12 +94,12 @@ $(function() {
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;Q_DECLARE_FLAGS(TrustLevels, <a class="code" href="namespaceQXmpp.html#a71207ba76216075cc013b3fe8ed66b84">TrustLevel</a>)</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;Q_DECLARE_OPERATORS_FOR_FLAGS(TrustLevels)</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;}</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;}  <span class="comment">// namespace QXmpp</span></div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="comment">// Scoped enums (enum class) are not implicitly converted to int</span></div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;<span class="keyword">inline</span> uint qHash(<a class="code" href="namespaceQXmpp.html#a71207ba76216075cc013b3fe8ed66b84">QXmpp::TrustLevel</a> key, uint seed) noexcept { <span class="keywordflow">return</span> qHash(std::underlying_type_t&lt;QXmpp::TrustLevel&gt;(key), seed); }</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">#endif // QXMPPTRUSTLEVEL_H</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="preprocessor">#endif  // QXMPPTRUSTLEVEL_H</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="anamespaceQXmpp_html"><div class="ttname"><a href="namespaceQXmpp.html">QXmpp</a></div></div>
 <div class="ttc" id="anamespaceQXmpp_html_a71207ba76216075cc013b3fe8ed66b84aa927b3e1f83aa1b3c6feff945ca18f77"><div class="ttname"><a href="namespaceQXmpp.html#a71207ba76216075cc013b3fe8ed66b84aa927b3e1f83aa1b3c6feff945ca18f77">QXmpp::TrustLevel::Authenticated</a></div><div class="ttdeci">@ Authenticated</div></div>
