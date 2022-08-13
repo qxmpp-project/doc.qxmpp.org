@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['text_2646',['text',['../structQXmpp_1_1SendError.html#a42afb54f540c37b7bab924e64f42c041',1,'QXmpp::SendError']]],
-  ['type_2647',['type',['../structQXmpp_1_1SendError.html#a93c3fe14831035fe26b7474d2fa9a424',1,'QXmpp::SendError']]]
+  ['creationdate_2745',['creationDate',['../structQXmppOmemoStorage_1_1SignedPreKeyPair.html#ac36131c70fced77cc5da2e28c305502f',1,'QXmppOmemoStorage::SignedPreKeyPair']]]
 ];

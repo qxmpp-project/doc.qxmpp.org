@@ -1,4 +1,5 @@
 <map id="QXmppMessageHandler" name="QXmppMessageHandler">
-<area shape="rect" id="node1" title=" " alt="" coords="33,5,212,32"/>
+<area shape="rect" id="node1" title=" " alt="" coords="148,5,327,32"/>
 <area shape="rect" id="node2" href="$classQXmppMessageReceiptManager.html" title="The QXmppMessageReceiptManager class makes it possible to send and receive message delivery receipts ..." alt="" coords="5,80,240,107"/>
+<area shape="rect" id="node3" href="$classQXmppOmemoManager.html" title=" " alt="" coords="264,80,443,107"/>
 </map>

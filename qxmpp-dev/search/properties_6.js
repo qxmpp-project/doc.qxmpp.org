@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['localfileurl_2869',['localFileUrl',['../classQXmppTransferJob.html#aba043a492dc36a027323afd921c1fa29',1,'QXmppTransferJob']]],
-  ['logfilepath_2870',['logFilePath',['../classQXmppLogger.html#a1be30b0f1390d14cb6d8535d4898a703',1,'QXmppLogger']]],
-  ['logger_2871',['logger',['../classQXmppClient.html#ae5fca0867efe7e7fcae90cbbf10b8193',1,'QXmppClient::logger()'],['../classQXmppServer.html#a0fa9d97d5be1f6429b35154c7621bd24',1,'QXmppServer::logger()']]],
-  ['loggingtype_2872',['loggingType',['../classQXmppLogger.html#a896f3347ee0c517db3404e07c6853187',1,'QXmppLogger']]]
+  ['localfileurl_2985',['localFileUrl',['../classQXmppTransferJob.html#aba043a492dc36a027323afd921c1fa29',1,'QXmppTransferJob']]],
+  ['logfilepath_2986',['logFilePath',['../classQXmppLogger.html#a1be30b0f1390d14cb6d8535d4898a703',1,'QXmppLogger']]],
+  ['logger_2987',['logger',['../classQXmppClient.html#ae5fca0867efe7e7fcae90cbbf10b8193',1,'QXmppClient::logger()'],['../classQXmppServer.html#a0fa9d97d5be1f6429b35154c7621bd24',1,'QXmppServer::logger()']]],
+  ['loggingtype_2988',['loggingType',['../classQXmppLogger.html#a896f3347ee0c517db3404e07c6853187',1,'QXmppLogger']]]
 ];

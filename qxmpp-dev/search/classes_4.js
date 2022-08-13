@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['notencrypted_1382',['NotEncrypted',['../structQXmppE2eeExtension_1_1NotEncrypted.html',1,'QXmppE2eeExtension']]]
+  ['media_1434',['Media',['../classQXmppDataForm_1_1Media.html',1,'QXmppDataForm']]],
+  ['mediasource_1435',['MediaSource',['../classQXmppDataForm_1_1MediaSource.html',1,'QXmppDataForm']]]
 ];

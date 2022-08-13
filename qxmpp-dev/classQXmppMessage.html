@@ -317,10 +317,6 @@ QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
 <tr class="separator:adf4affb65e41609e8aff859c2dbd9d75"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad0c1c13c3d6bc73443884f02ec42115f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppMessage.html#ad0c1c13c3d6bc73443884f02ec42115f">setSpoilerHint</a> (const QString &amp;)</td></tr>
 <tr class="separator:ad0c1c13c3d6bc73443884f02ec42115f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aef7dcbe787e52de46561a87ee236ac59"><td class="memItemLeft" align="right" valign="top">std::optional&lt; QXmppOmemoElement &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppMessage.html#aef7dcbe787e52de46561a87ee236ac59">omemoElement</a> () const</td></tr>
-<tr class="separator:aef7dcbe787e52de46561a87ee236ac59"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a21caabf183b11b6a795e3e9aac544f53"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppMessage.html#a21caabf183b11b6a795e3e9aac544f53">setOmemoElement</a> (const std::optional&lt; QXmppOmemoElement &gt; &amp;<a class="el" href="classQXmppMessage.html#aef7dcbe787e52de46561a87ee236ac59">omemoElement</a>)</td></tr>
-<tr class="separator:a21caabf183b11b6a795e3e9aac544f53"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4f05c5581bb15e599e5bc9124dcd41d4"><td class="memItemLeft" align="right" valign="top">std::optional&lt; <a class="el" href="classQXmppMixInvitation.html">QXmppMixInvitation</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppMessage.html#a4f05c5581bb15e599e5bc9124dcd41d4">mixInvitation</a> () const</td></tr>
 <tr class="separator:a4f05c5581bb15e599e5bc9124dcd41d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae372a4ea5ec560e89838d41eafeb543f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppMessage.html#ae372a4ea5ec560e89838d41eafeb543f">setMixInvitation</a> (const std::optional&lt; <a class="el" href="classQXmppMixInvitation.html">QXmppMixInvitation</a> &gt; &amp;<a class="el" href="classQXmppMessage.html#a4f05c5581bb15e599e5bc9124dcd41d4">mixInvitation</a>)</td></tr>
@@ -1061,25 +1057,6 @@ If this returns QXmppMessage::UnknownEncryption, you can still get the namespace
 
 </div>
 </div>
-<a id="aef7dcbe787e52de46561a87ee236ac59"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aef7dcbe787e52de46561a87ee236ac59">&#9670;&nbsp;</a></span>omemoElement()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::optional&lt; QXmppOmemoElement &gt; QXmppMessage::omemoElement </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Returns an included OMEMO element as defined by <a href="https://xmpp.org/extensions/xep-0384.html">XEP-0384: OMEMO Encryption</a>.</p>
-<dl class="section since"><dt>Since</dt><dd><a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.5 </dd></dl>
-
-</div>
-</div>
 <a id="aa3897a28dc06a8b93b221b5dc6bbfbbc"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa3897a28dc06a8b93b221b5dc6bbfbbc">&#9670;&nbsp;</a></span>originId()</h2>
 
@@ -1769,26 +1746,6 @@ If this returns QXmppMessage::UnknownEncryption, you can still get the namespace
 </div><div class="memdoc">
 <p>Sets the <em>reason</em> for a multi-user chat direct invitation as defined by <a href="https://xmpp.org/extensions/xep-0249.html">XEP-0249</a>: Direct MUC Invitations.</p>
 <dl class="section since"><dt>Since</dt><dd><a class="el" href="namespaceQXmpp.html">QXmpp</a> 0.7.4 </dd></dl>
-
-</div>
-</div>
-<a id="a21caabf183b11b6a795e3e9aac544f53"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a21caabf183b11b6a795e3e9aac544f53">&#9670;&nbsp;</a></span>setOmemoElement()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void QXmppMessage::setOmemoElement </td>
-          <td>(</td>
-          <td class="paramtype">const std::optional&lt; QXmppOmemoElement &gt; &amp;&#160;</td>
-          <td class="paramname"><em>omemoElement</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Sets an OMEMO element as defined by <a href="https://xmpp.org/extensions/xep-0384.html">XEP-0384: OMEMO Encryption</a>.</p>
-<dl class="section since"><dt>Since</dt><dd><a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.5 </dd></dl>
 
 </div>
 </div>
