@@ -114,62 +114,86 @@ Public Types</h2></td></tr>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a488753388ac6c9d726251bb7306b353d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppOmemoManager.html#a488753388ac6c9d726251bb7306b353d">QXmppOmemoManager</a> (<a class="el" href="classQXmppOmemoStorage.html">QXmppOmemoStorage</a> *omemoStorage)</td></tr>
 <tr class="separator:a488753388ac6c9d726251bb7306b353d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac8191e3760b3989b5e04f60bbd170cda"><td class="memItemLeft" align="right" valign="top">QFuture&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppOmemoManager.html#ac8191e3760b3989b5e04f60bbd170cda">load</a> ()</td></tr>
-<tr class="separator:ac8191e3760b3989b5e04f60bbd170cda"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a889fa65ec722a2a4b03a66aa6641cecc"><td class="memItemLeft" align="right" valign="top">QFuture&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppOmemoManager.html#a889fa65ec722a2a4b03a66aa6641cecc">setUp</a> ()</td></tr>
-<tr class="separator:a889fa65ec722a2a4b03a66aa6641cecc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa617ca0e2a4113944f7c80f0232ef866"><td class="memItemLeft" align="right" valign="top">QFuture&lt; QByteArray &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppOmemoManager.html#aa617ca0e2a4113944f7c80f0232ef866">ownKey</a> ()</td></tr>
-<tr class="separator:aa617ca0e2a4113944f7c80f0232ef866"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac3abe54a8424671ddd56d4bc7d80476b"><td class="memItemLeft" align="right" valign="top">QFuture&lt; QHash&lt; <a class="el" href="namespaceQXmpp.html#a71207ba76216075cc013b3fe8ed66b84">QXmpp::TrustLevel</a>, QMultiHash&lt; QString, QByteArray &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppOmemoManager.html#ac3abe54a8424671ddd56d4bc7d80476b">keys</a> (QXmpp::TrustLevels trustLevels={})</td></tr>
-<tr class="separator:ac3abe54a8424671ddd56d4bc7d80476b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad66c127f1fd7d28ed94b4f2185f5a716"><td class="memItemLeft" align="right" valign="top">QFuture&lt; QHash&lt; QString, QHash&lt; QByteArray, <a class="el" href="namespaceQXmpp.html#a71207ba76216075cc013b3fe8ed66b84">QXmpp::TrustLevel</a> &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppOmemoManager.html#ad66c127f1fd7d28ed94b4f2185f5a716">keys</a> (const QList&lt; QString &gt; &amp;jids, QXmpp::TrustLevels trustLevels={})</td></tr>
-<tr class="separator:ad66c127f1fd7d28ed94b4f2185f5a716"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7f9d7664b408ddaaf25aed867e24fd14"><td class="memItemLeft" align="right" valign="top">QFuture&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppOmemoManager.html#a7f9d7664b408ddaaf25aed867e24fd14">changeDeviceLabel</a> (const QString &amp;deviceLabel={})</td></tr>
-<tr class="separator:a7f9d7664b408ddaaf25aed867e24fd14"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a269e8c4a9eb375340d37e9356c1f5d1c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppOmemoManager.html#a269e8c4a9eb375340d37e9356c1f5d1c">maximumDevicesPerJid</a> () const</td></tr>
-<tr class="separator:a269e8c4a9eb375340d37e9356c1f5d1c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6b56c08e77f32db54f45891e24dd0c58"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppOmemoManager.html#a6b56c08e77f32db54f45891e24dd0c58">setMaximumDevicesPerJid</a> (int maximum)</td></tr>
-<tr class="separator:a6b56c08e77f32db54f45891e24dd0c58"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3874eae4016728252067b3e1386cd975"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppOmemoManager.html#a3874eae4016728252067b3e1386cd975">maximumDevicesPerStanza</a> () const</td></tr>
-<tr class="separator:a3874eae4016728252067b3e1386cd975"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3879a634e09fabf093e66198ed6bd57e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppOmemoManager.html#a3879a634e09fabf093e66198ed6bd57e">setMaximumDevicesPerStanza</a> (int maximum)</td></tr>
-<tr class="separator:a3879a634e09fabf093e66198ed6bd57e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aca6fb073a6ba7a15b821d08ac877ed8a"><td class="memItemLeft" align="right" valign="top">QFuture&lt; DevicesResult &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppOmemoManager.html#aca6fb073a6ba7a15b821d08ac877ed8a">requestDeviceLists</a> (const QList&lt; QString &gt; &amp;jids)</td></tr>
-<tr class="separator:aca6fb073a6ba7a15b821d08ac877ed8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5215b21d401498cc41300c13d46865a5"><td class="memItemLeft" align="right" valign="top">QFuture&lt; DevicesResult &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppOmemoManager.html#a5215b21d401498cc41300c13d46865a5">subscribeToDeviceLists</a> (const QList&lt; QString &gt; &amp;jids)</td></tr>
-<tr class="separator:a5215b21d401498cc41300c13d46865a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a15970b081e43c5aaceda148e439c951a"><td class="memItemLeft" align="right" valign="top">QFuture&lt; DevicesResult &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppOmemoManager.html#a15970b081e43c5aaceda148e439c951a">unsubscribeFromDeviceLists</a> ()</td></tr>
-<tr class="separator:a15970b081e43c5aaceda148e439c951a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3578384e9f6d434d0e97bd4fa851a349"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classQXmppOmemoOwnDevice.html">QXmppOmemoOwnDevice</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppOmemoManager.html#a3578384e9f6d434d0e97bd4fa851a349">ownDevice</a> ()</td></tr>
-<tr class="separator:a3578384e9f6d434d0e97bd4fa851a349"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9392539312496acf53ac9b736378c342"><td class="memItemLeft" align="right" valign="top">QFuture&lt; QVector&lt; <a class="el" href="classQXmppOmemoDevice.html">QXmppOmemoDevice</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppOmemoManager.html#a9392539312496acf53ac9b736378c342">devices</a> ()</td></tr>
-<tr class="separator:a9392539312496acf53ac9b736378c342"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1036dd5cdbcb7ff12d0c6cd74c6b9b56"><td class="memItemLeft" align="right" valign="top">QFuture&lt; QVector&lt; <a class="el" href="classQXmppOmemoDevice.html">QXmppOmemoDevice</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppOmemoManager.html#a1036dd5cdbcb7ff12d0c6cd74c6b9b56">devices</a> (const QList&lt; QString &gt; &amp;jids)</td></tr>
-<tr class="separator:a1036dd5cdbcb7ff12d0c6cd74c6b9b56"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae32d5eb3d25e6d1157035ecc398e1090"><td class="memItemLeft" align="right" valign="top">QFuture&lt; <a class="el" href="classQXmppPubSubManager.html#a9a8741a70d0839185e8e52072ea0ed53">QXmppPubSubManager::Result</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppOmemoManager.html#ae32d5eb3d25e6d1157035ecc398e1090">removeContactDevices</a> (const QString &amp;jid)</td></tr>
-<tr class="separator:ae32d5eb3d25e6d1157035ecc398e1090"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a538d845d3adde3651d731fe2fd5b39e2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppOmemoManager.html#a538d845d3adde3651d731fe2fd5b39e2">setAcceptedSessionBuildingTrustLevels</a> (QXmpp::TrustLevels trustLevels)</td></tr>
-<tr class="separator:a538d845d3adde3651d731fe2fd5b39e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ada890bf9cd92ea712a0b1cd2b1905a81"><td class="memItemLeft" align="right" valign="top">QXmpp::TrustLevels&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppOmemoManager.html#ada890bf9cd92ea712a0b1cd2b1905a81">acceptedSessionBuildingTrustLevels</a> ()</td></tr>
-<tr class="separator:ada890bf9cd92ea712a0b1cd2b1905a81"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab7f7e566408dee1f505a348eb7ddd3a8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppOmemoManager.html#ab7f7e566408dee1f505a348eb7ddd3a8">setNewDeviceAutoSessionBuildingEnabled</a> (bool <a class="el" href="classQXmppOmemoManager.html#a3eb44689522123bb87f149b23f3c6b36">isNewDeviceAutoSessionBuildingEnabled</a>)</td></tr>
-<tr class="separator:ab7f7e566408dee1f505a348eb7ddd3a8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3eb44689522123bb87f149b23f3c6b36"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppOmemoManager.html#a3eb44689522123bb87f149b23f3c6b36">isNewDeviceAutoSessionBuildingEnabled</a> ()</td></tr>
-<tr class="separator:a3eb44689522123bb87f149b23f3c6b36"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab051d1daf6fe0cbc5f56bb458160d47c"><td class="memItemLeft" align="right" valign="top">QFuture&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppOmemoManager.html#ab051d1daf6fe0cbc5f56bb458160d47c">buildMissingSessions</a> (const QList&lt; QString &gt; &amp;jids)</td></tr>
-<tr class="separator:ab051d1daf6fe0cbc5f56bb458160d47c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad0197e377a1f11fd5d9ac0cf535d8122"><td class="memItemLeft" align="right" valign="top">QFuture&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppOmemoManager.html#ad0197e377a1f11fd5d9ac0cf535d8122">resetOwnDevice</a> ()</td></tr>
-<tr class="separator:ad0197e377a1f11fd5d9ac0cf535d8122"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac930a0d9451bc3fd6cde1783ea83fb45"><td class="memItemLeft" align="right" valign="top">QFuture&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppOmemoManager.html#ac930a0d9451bc3fd6cde1783ea83fb45">resetAll</a> ()</td></tr>
-<tr class="separator:ac930a0d9451bc3fd6cde1783ea83fb45"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a39d75552f7b554384877d6854fbb1bd9"><td class="memItemLeft" align="right" valign="top">QFuture&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppOmemoManager.html#a39d75552f7b554384877d6854fbb1bd9">setSecurityPolicy</a> (<a class="el" href="namespaceQXmpp.html#af6e4885b9b07444825d3bf59877a1f10">QXmpp::TrustSecurityPolicy</a> <a class="el" href="classQXmppOmemoManager.html#a3f847e65726ce1b91ff7c1d44a972f38">securityPolicy</a>)</td></tr>
-<tr class="separator:a39d75552f7b554384877d6854fbb1bd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3f847e65726ce1b91ff7c1d44a972f38"><td class="memItemLeft" align="right" valign="top">QFuture&lt; <a class="el" href="namespaceQXmpp.html#af6e4885b9b07444825d3bf59877a1f10">QXmpp::TrustSecurityPolicy</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppOmemoManager.html#a3f847e65726ce1b91ff7c1d44a972f38">securityPolicy</a> ()</td></tr>
-<tr class="separator:a3f847e65726ce1b91ff7c1d44a972f38"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7448cd0c5901e17a69347a90aa5f09e6"><td class="memItemLeft" align="right" valign="top">QFuture&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppOmemoManager.html#a7448cd0c5901e17a69347a90aa5f09e6">setTrustLevel</a> (const QMultiHash&lt; QString, QByteArray &gt; &amp;keyIds, <a class="el" href="namespaceQXmpp.html#a71207ba76216075cc013b3fe8ed66b84">QXmpp::TrustLevel</a> <a class="el" href="classQXmppOmemoManager.html#abd0ddaf77e0ceeb8275a9fd76b98f49a">trustLevel</a>)</td></tr>
-<tr class="separator:a7448cd0c5901e17a69347a90aa5f09e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abd0ddaf77e0ceeb8275a9fd76b98f49a"><td class="memItemLeft" align="right" valign="top">QFuture&lt; <a class="el" href="namespaceQXmpp.html#a71207ba76216075cc013b3fe8ed66b84">QXmpp::TrustLevel</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppOmemoManager.html#abd0ddaf77e0ceeb8275a9fd76b98f49a">trustLevel</a> (const QString &amp;keyOwnerJid, const QByteArray &amp;keyId)</td></tr>
-<tr class="separator:abd0ddaf77e0ceeb8275a9fd76b98f49a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9d3b48bf61394cfc93d3845a9b4b2fd1"><td class="memItemLeft" align="right" valign="top"><a id="a9d3b48bf61394cfc93d3845a9b4b2fd1"></a>
+QFuture&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>load</b> ()</td></tr>
+<tr class="separator:a9d3b48bf61394cfc93d3845a9b4b2fd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adfc60cd95471bc05bc8d812aae974531"><td class="memItemLeft" align="right" valign="top"><a id="adfc60cd95471bc05bc8d812aae974531"></a>
+QFuture&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>setUp</b> ()</td></tr>
+<tr class="separator:adfc60cd95471bc05bc8d812aae974531"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac12d7c3d6850bec6474f03b73489849f"><td class="memItemLeft" align="right" valign="top"><a id="ac12d7c3d6850bec6474f03b73489849f"></a>
+QFuture&lt; QByteArray &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>ownKey</b> ()</td></tr>
+<tr class="separator:ac12d7c3d6850bec6474f03b73489849f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ebb539852a3b0ab6be7994c9b4d1b16"><td class="memItemLeft" align="right" valign="top"><a id="a1ebb539852a3b0ab6be7994c9b4d1b16"></a>
+QFuture&lt; QHash&lt; <a class="el" href="namespaceQXmpp.html#a71207ba76216075cc013b3fe8ed66b84">QXmpp::TrustLevel</a>, QMultiHash&lt; QString, QByteArray &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>keys</b> (QXmpp::TrustLevels trustLevels={})</td></tr>
+<tr class="separator:a1ebb539852a3b0ab6be7994c9b4d1b16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3701ff415094139e6ff8d1a01ac57b70"><td class="memItemLeft" align="right" valign="top"><a id="a3701ff415094139e6ff8d1a01ac57b70"></a>
+QFuture&lt; QHash&lt; QString, QHash&lt; QByteArray, <a class="el" href="namespaceQXmpp.html#a71207ba76216075cc013b3fe8ed66b84">QXmpp::TrustLevel</a> &gt; &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>keys</b> (const QList&lt; QString &gt; &amp;jids, QXmpp::TrustLevels trustLevels={})</td></tr>
+<tr class="separator:a3701ff415094139e6ff8d1a01ac57b70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a26747d82d53bbb6e239860b0db775194"><td class="memItemLeft" align="right" valign="top"><a id="a26747d82d53bbb6e239860b0db775194"></a>
+QFuture&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>changeDeviceLabel</b> (const QString &amp;deviceLabel={})</td></tr>
+<tr class="separator:a26747d82d53bbb6e239860b0db775194"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32d04605c0fe0c27c75f56d07f47478d"><td class="memItemLeft" align="right" valign="top"><a id="a32d04605c0fe0c27c75f56d07f47478d"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>maximumDevicesPerJid</b> () const</td></tr>
+<tr class="separator:a32d04605c0fe0c27c75f56d07f47478d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a657a5fccdaae87f5b841e44939c63168"><td class="memItemLeft" align="right" valign="top"><a id="a657a5fccdaae87f5b841e44939c63168"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setMaximumDevicesPerJid</b> (int maximum)</td></tr>
+<tr class="separator:a657a5fccdaae87f5b841e44939c63168"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a062ae4d5ae9c6b64bec01d22b9274a9d"><td class="memItemLeft" align="right" valign="top"><a id="a062ae4d5ae9c6b64bec01d22b9274a9d"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>maximumDevicesPerStanza</b> () const</td></tr>
+<tr class="separator:a062ae4d5ae9c6b64bec01d22b9274a9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a1db91c3f72f8ebd37b7dca3b67f76f"><td class="memItemLeft" align="right" valign="top"><a id="a4a1db91c3f72f8ebd37b7dca3b67f76f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setMaximumDevicesPerStanza</b> (int maximum)</td></tr>
+<tr class="separator:a4a1db91c3f72f8ebd37b7dca3b67f76f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61e96468512cfb7bf37be35bcb0869be"><td class="memItemLeft" align="right" valign="top"><a id="a61e96468512cfb7bf37be35bcb0869be"></a>
+QFuture&lt; DevicesResult &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>requestDeviceLists</b> (const QList&lt; QString &gt; &amp;jids)</td></tr>
+<tr class="separator:a61e96468512cfb7bf37be35bcb0869be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad57c3b9f5d3582ea62c6fac22789f34"><td class="memItemLeft" align="right" valign="top"><a id="aad57c3b9f5d3582ea62c6fac22789f34"></a>
+QFuture&lt; DevicesResult &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>subscribeToDeviceLists</b> (const QList&lt; QString &gt; &amp;jids)</td></tr>
+<tr class="separator:aad57c3b9f5d3582ea62c6fac22789f34"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25f66d92bf05e70de119d6cf21535a49"><td class="memItemLeft" align="right" valign="top"><a id="a25f66d92bf05e70de119d6cf21535a49"></a>
+QFuture&lt; DevicesResult &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>unsubscribeFromDeviceLists</b> ()</td></tr>
+<tr class="separator:a25f66d92bf05e70de119d6cf21535a49"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4aefd4097810a1b15ac3297bb8064979"><td class="memItemLeft" align="right" valign="top"><a id="a4aefd4097810a1b15ac3297bb8064979"></a>
+<a class="el" href="classQXmppOmemoOwnDevice.html">QXmppOmemoOwnDevice</a>&#160;</td><td class="memItemRight" valign="bottom"><b>ownDevice</b> ()</td></tr>
+<tr class="separator:a4aefd4097810a1b15ac3297bb8064979"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab46d0fcb470100ca8e80372ba41ea67c"><td class="memItemLeft" align="right" valign="top"><a id="ab46d0fcb470100ca8e80372ba41ea67c"></a>
+QFuture&lt; QVector&lt; <a class="el" href="classQXmppOmemoDevice.html">QXmppOmemoDevice</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>devices</b> ()</td></tr>
+<tr class="separator:ab46d0fcb470100ca8e80372ba41ea67c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad09275c2285ec2ab158e2049858ecaee"><td class="memItemLeft" align="right" valign="top"><a id="ad09275c2285ec2ab158e2049858ecaee"></a>
+QFuture&lt; QVector&lt; <a class="el" href="classQXmppOmemoDevice.html">QXmppOmemoDevice</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>devices</b> (const QList&lt; QString &gt; &amp;jids)</td></tr>
+<tr class="separator:ad09275c2285ec2ab158e2049858ecaee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73f195223dc3b4aa959c687c12464dc1"><td class="memItemLeft" align="right" valign="top"><a id="a73f195223dc3b4aa959c687c12464dc1"></a>
+QFuture&lt; <a class="el" href="classQXmppPubSubManager.html#a9a8741a70d0839185e8e52072ea0ed53">QXmppPubSubManager::Result</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>removeContactDevices</b> (const QString &amp;jid)</td></tr>
+<tr class="separator:a73f195223dc3b4aa959c687c12464dc1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8b4bfc4fbbed2955e4583ac8794fda45"><td class="memItemLeft" align="right" valign="top"><a id="a8b4bfc4fbbed2955e4583ac8794fda45"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setAcceptedSessionBuildingTrustLevels</b> (QXmpp::TrustLevels trustLevels)</td></tr>
+<tr class="separator:a8b4bfc4fbbed2955e4583ac8794fda45"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a2faea14ff1b5e0973b91a474d03b9b"><td class="memItemLeft" align="right" valign="top"><a id="a4a2faea14ff1b5e0973b91a474d03b9b"></a>
+QXmpp::TrustLevels&#160;</td><td class="memItemRight" valign="bottom"><b>acceptedSessionBuildingTrustLevels</b> ()</td></tr>
+<tr class="separator:a4a2faea14ff1b5e0973b91a474d03b9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad29577c076b44c6ecbd1fd8f9d4c0e01"><td class="memItemLeft" align="right" valign="top"><a id="ad29577c076b44c6ecbd1fd8f9d4c0e01"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setNewDeviceAutoSessionBuildingEnabled</b> (bool isNewDeviceAutoSessionBuildingEnabled)</td></tr>
+<tr class="separator:ad29577c076b44c6ecbd1fd8f9d4c0e01"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add412bf4982519bdd036aedc31e07457"><td class="memItemLeft" align="right" valign="top"><a id="add412bf4982519bdd036aedc31e07457"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>isNewDeviceAutoSessionBuildingEnabled</b> ()</td></tr>
+<tr class="separator:add412bf4982519bdd036aedc31e07457"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb010ab0772954293daf9f0a0e4e1cb2"><td class="memItemLeft" align="right" valign="top"><a id="adb010ab0772954293daf9f0a0e4e1cb2"></a>
+QFuture&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>buildMissingSessions</b> (const QList&lt; QString &gt; &amp;jids)</td></tr>
+<tr class="separator:adb010ab0772954293daf9f0a0e4e1cb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84285bd195fc5a323303490767c24a0b"><td class="memItemLeft" align="right" valign="top"><a id="a84285bd195fc5a323303490767c24a0b"></a>
+QFuture&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>resetOwnDevice</b> ()</td></tr>
+<tr class="separator:a84285bd195fc5a323303490767c24a0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2b0f43bb67454984be0bb65ba5d04d4"><td class="memItemLeft" align="right" valign="top"><a id="af2b0f43bb67454984be0bb65ba5d04d4"></a>
+QFuture&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>resetAll</b> ()</td></tr>
+<tr class="separator:af2b0f43bb67454984be0bb65ba5d04d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab300b8c1348dd784cbf4a43875392e65"><td class="memItemLeft" align="right" valign="top">QFuture&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppOmemoManager.html#ab300b8c1348dd784cbf4a43875392e65">setSecurityPolicy</a> (<a class="el" href="namespaceQXmpp.html#af6e4885b9b07444825d3bf59877a1f10">QXmpp::TrustSecurityPolicy</a> <a class="el" href="classQXmppOmemoManager.html#aa63e3fa6648ee885ac3228b3f63d888a">securityPolicy</a>)</td></tr>
+<tr class="separator:ab300b8c1348dd784cbf4a43875392e65"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa63e3fa6648ee885ac3228b3f63d888a"><td class="memItemLeft" align="right" valign="top">QFuture&lt; <a class="el" href="namespaceQXmpp.html#af6e4885b9b07444825d3bf59877a1f10">QXmpp::TrustSecurityPolicy</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppOmemoManager.html#aa63e3fa6648ee885ac3228b3f63d888a">securityPolicy</a> ()</td></tr>
+<tr class="separator:aa63e3fa6648ee885ac3228b3f63d888a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf2b5a7cc206d5539f46be01e8a1f29a"><td class="memItemLeft" align="right" valign="top">QFuture&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppOmemoManager.html#adf2b5a7cc206d5539f46be01e8a1f29a">setTrustLevel</a> (const QMultiHash&lt; QString, QByteArray &gt; &amp;keyIds, <a class="el" href="namespaceQXmpp.html#a71207ba76216075cc013b3fe8ed66b84">QXmpp::TrustLevel</a> <a class="el" href="classQXmppOmemoManager.html#aa681b85022c1994f933a67c2fe17c6f2">trustLevel</a>)</td></tr>
+<tr class="separator:adf2b5a7cc206d5539f46be01e8a1f29a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa681b85022c1994f933a67c2fe17c6f2"><td class="memItemLeft" align="right" valign="top">QFuture&lt; <a class="el" href="namespaceQXmpp.html#a71207ba76216075cc013b3fe8ed66b84">QXmpp::TrustLevel</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppOmemoManager.html#aa681b85022c1994f933a67c2fe17c6f2">trustLevel</a> (const QString &amp;keyOwnerJid, const QByteArray &amp;keyId)</td></tr>
+<tr class="separator:aa681b85022c1994f933a67c2fe17c6f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae1f56ecf062242bdf5b97d503cfb832a"><td class="memItemLeft" align="right" valign="top">Q_SIGNAL void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppOmemoManager.html#ae1f56ecf062242bdf5b97d503cfb832a">trustLevelsChanged</a> (const QMultiHash&lt; QString, QByteArray &gt; &amp;modifiedKeys)</td></tr>
 <tr class="separator:ae1f56ecf062242bdf5b97d503cfb832a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab676098d9f09c9cb942c4fc7ea65ecec"><td class="memItemLeft" align="right" valign="top">Q_SIGNAL void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppOmemoManager.html#ab676098d9f09c9cb942c4fc7ea65ecec">deviceAdded</a> (const QString &amp;jid, uint32_t deviceId)</td></tr>
@@ -269,7 +293,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <div class="line"><a class="code" href="classQXmppClientExtension.html#a2476cb1a20963d15d45d39f24a0c1198">client</a>-&gt;<a class="code" href="classQXmppClient.html#a61ccf1c37ca3f26bfd14e65c8ecf1740">addExtension</a>(trustManager);</div>
 </div><!-- fragment --><p>Afterwards, the OMEMO manager using its storage must be added to the client: </p><div class="fragment"><div class="line"><a class="code" href="classQXmppOmemoManager.html">QXmppOmemoManager</a> *manager = <span class="keyword">new</span> <a class="code" href="classQXmppOmemoManager.html#a488753388ac6c9d726251bb7306b353d">QXmppOmemoManager</a>(omemoStorage);</div>
 <div class="line"><a class="code" href="classQXmppClientExtension.html#a2476cb1a20963d15d45d39f24a0c1198">client</a>-&gt;<a class="code" href="classQXmppClient.html#a61ccf1c37ca3f26bfd14e65c8ecf1740">addExtension</a>(manager);</div>
-</div><!-- fragment --><p>You can set a security policy used by OMEMO. Is is recommended to apply TOAKAFA for good security and usability when using <a href="https://xmpp.org/extensions/xep-0450.html">XEP-0450: Automatic Trust Management (ATM)</a>: </p><div class="fragment"><div class="line">manager-&gt;<a class="code" href="classQXmppOmemoManager.html#a39d75552f7b554384877d6854fbb1bd9">setSecurityPolicy</a>(<a class="code" href="namespaceQXmpp.html#af6e4885b9b07444825d3bf59877a1f10acce7e2a143630e788cf6c3d3e2bb4aa2">QXmpp::Toakafa</a>);</div>
+</div><!-- fragment --><p>You can set a security policy used by OMEMO. Is is recommended to apply TOAKAFA for good security and usability when using <a href="https://xmpp.org/extensions/xep-0450.html">XEP-0450: Automatic Trust Management (ATM)</a>: </p><div class="fragment"><div class="line">manager-&gt;<a class="code" href="classQXmppOmemoManager.html#ab300b8c1348dd784cbf4a43875392e65">setSecurityPolicy</a>(<a class="code" href="namespaceQXmpp.html#af6e4885b9b07444825d3bf59877a1f10acce7e2a143630e788cf6c3d3e2bb4aa2">QXmpp::Toakafa</a>);</div>
 </div><!-- fragment --><p><a href="https://xmpp.org/extensions/xep-0280.html">XEP-0280: Message Carbons</a> should be used for delivering messages to all endpoints of a user: </p><div class="fragment"><div class="line"><a class="code" href="classQXmppCarbonManager.html">QXmppCarbonManager</a> *carbonManager = <span class="keyword">new</span> <a class="code" href="classQXmppCarbonManager.html">QXmppCarbonManager</a>;</div>
 <div class="line"><a class="code" href="classQXmppClientExtension.html#a2476cb1a20963d15d45d39f24a0c1198">client</a>-&gt;<a class="code" href="classQXmppClient.html#a61ccf1c37ca3f26bfd14e65c8ecf1740">addExtension</a>(carbonManager);</div>
 <div class="line">connect(<a class="code" href="classQXmppClientExtension.html#a2476cb1a20963d15d45d39f24a0c1198">client</a>, &amp;<a class="code" href="classQXmppClient.html#a46e84c5280564cdc2d60307309f97b92">QXmppClient::connected</a>, <span class="keyword">this</span>, [=]() {</div>
@@ -279,9 +303,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <div class="line">    &amp;<a class="code" href="classQXmppMessageHandler.html#ab68b63baf0ca07ba717ba8455a129a6f">QXmppOmemoManager::handleMessage</a>);</div>
 <div class="line">connect(carbonManager, &amp;<a class="code" href="classQXmppCarbonManager.html#a0dc1896be8941987a9128ea65bc15a4f">QXmppCarbonManager::messageReceived</a>, manager,</div>
 <div class="line">    &amp;<a class="code" href="classQXmppMessageHandler.html#ab68b63baf0ca07ba717ba8455a129a6f">QXmppOmemoManager::handleMessage</a>);</div>
-</div><!-- fragment --><p>The OMEMO data must be loaded before connecting to the server: </p><div class="fragment"><div class="line">    manager-&gt;<a class="code" href="classQXmppOmemoManager.html#ac8191e3760b3989b5e04f60bbd170cda">load</a>();</div>
+</div><!-- fragment --><p>The OMEMO data must be loaded before connecting to the server: </p><div class="fragment"><div class="line">    manager-&gt;load();</div>
 <div class="line">});</div>
-</div><!-- fragment --><p>If no OMEMO data could be loaded (i.e., the result of <code><a class="el" href="classQXmppOmemoManager.html#ac8191e3760b3989b5e04f60bbd170cda">load()</a></code> is "false"), it must be set up first. That can be done as soon as the user is logged in to the server: </p><div class="fragment"><div class="line">connect(<a class="code" href="classQXmppClientExtension.html#a2476cb1a20963d15d45d39f24a0c1198">client</a>, &amp;<a class="code" href="classQXmppClient.html#a46e84c5280564cdc2d60307309f97b92">QXmppClient::connected</a>, <span class="keyword">this</span>, [=]() {</div>
+</div><!-- fragment --><p>If no OMEMO data could be loaded (i.e., the result of <code>load()</code> is "false"), it must be set up first. That can be done as soon as the user is logged in to the server: </p><div class="fragment"><div class="line">connect(<a class="code" href="classQXmppClientExtension.html#a2476cb1a20963d15d45d39f24a0c1198">client</a>, &amp;<a class="code" href="classQXmppClient.html#a46e84c5280564cdc2d60307309f97b92">QXmppClient::connected</a>, <span class="keyword">this</span>, [=]() {</div>
 <div class="line">    <span class="keyword">auto</span> future = manager-&gt;start();</div>
 <div class="line">});</div>
 </div><!-- fragment --><p>Once the future is finished and the result is "true", the manager is ready for use. Otherwise, check the logging output for details.</p>
@@ -346,25 +370,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="ada890bf9cd92ea712a0b1cd2b1905a81"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ada890bf9cd92ea712a0b1cd2b1905a81">&#9670;&nbsp;</a></span>acceptedSessionBuildingTrustLevels()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">TrustLevels Manager::acceptedSessionBuildingTrustLevels </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Returns the trust levels keys must have in order to build sessions for their devices.</p>
-<dl class="section return"><dt>Returns</dt><dd>the trust levels of the keys used for building sessions </dd></dl>
-
-</div>
-</div>
 <a id="a4ba3b3d203b82343944bb300b4cb7529"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4ba3b3d203b82343944bb300b4cb7529">&#9670;&nbsp;</a></span>allDevicesRemoved()</h2>
 
@@ -380,61 +385,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
       </table>
 </div><div class="memdoc">
 <p>Emitted when all devices are removed. </p>
-
-</div>
-</div>
-<a id="ab051d1daf6fe0cbc5f56bb458160d47c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab051d1daf6fe0cbc5f56bb458160d47c">&#9670;&nbsp;</a></span>buildMissingSessions()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">QFuture&lt; void &gt; Manager::buildMissingSessions </td>
-          <td>(</td>
-          <td class="paramtype">const QList&lt; QString &gt; &amp;&#160;</td>
-          <td class="paramname"><em>jids</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Builds sessions manually with devices for whom no sessions are available.</p>
-<p>Usually, sessions are built during sending a first message to a device or after a first message is received from a device. This can be called in order to speed up the sending of a message. If this method is called before sending the first message, all sessions can be built and when the first message is sent, the message has only be encrypted. Especially chats with multiple devices, that can decrease the noticeable time a user has to wait for sending a message. Additionally, the keys are automatically retrieved from the server which is helpful in order to get them when calling <code><a class="el" href="classQXmppOmemoManager.html#a9392539312496acf53ac9b736378c342">QXmppOmemoManager::devices()</a></code>.</p>
-<p>The user must be logged in while calling this.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">jids</td><td>JIDs of the device owners for whom the sessions are built </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a7f9d7664b408ddaaf25aed867e24fd14"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7f9d7664b408ddaaf25aed867e24fd14">&#9670;&nbsp;</a></span>changeDeviceLabel()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">QFuture&lt; bool &gt; Manager::changeDeviceLabel </td>
-          <td>(</td>
-          <td class="paramtype">const QString &amp;&#160;</td>
-          <td class="paramname"><em>deviceLabel</em> = <code>{}</code></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Changes the label of the own (this client instance's current user's) device.</p>
-<p>The label is a human-readable string used to identify the device by users.</p>
-<p>If the OMEMO manager is not started yet, the device label is only changed locally in memory. It is stored persistently in the OMEMO storage and updated on the server if the OMEMO manager is already started or once it is.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">deviceLabel</td><td>own device's label</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>whether the action was successful </dd></dl>
 
 </div>
 </div>
@@ -546,53 +496,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 
 </div>
 </div>
-<a id="a9392539312496acf53ac9b736378c342"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9392539312496acf53ac9b736378c342">&#9670;&nbsp;</a></span>devices() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">QFuture&lt; QVector&lt; <a class="el" href="classQXmppOmemoDevice.html">QXmppOmemoDevice</a> &gt; &gt; Manager::devices </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Returns all locally stored devices except the own device.</p>
-<p>Only devices that have been received after subscribing the corresponding device lists on the server are stored locally. Thus, only those are returned. Call <code><a class="el" href="classQXmppOmemoManager.html#a5215b21d401498cc41300c13d46865a5">QXmppOmemoManager::subscribeToDeviceLists()</a></code> for contacts without presence subscription before.</p>
-<p>/</p><dl class="section return"><dt>Returns</dt><dd>all devices except the own device </dd></dl>
-
-</div>
-</div>
-<a id="a1036dd5cdbcb7ff12d0c6cd74c6b9b56"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1036dd5cdbcb7ff12d0c6cd74c6b9b56">&#9670;&nbsp;</a></span>devices() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">QFuture&lt; QVector&lt; <a class="el" href="classQXmppOmemoDevice.html">QXmppOmemoDevice</a> &gt; &gt; Manager::devices </td>
-          <td>(</td>
-          <td class="paramtype">const QList&lt; QString &gt; &amp;&#160;</td>
-          <td class="paramname"><em>jids</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Returns locally stored devices except the own device.</p>
-<p>Only devices that have been received after subscribing the corresponding device lists on the server are stored locally. Thus, only those are returned. Call <code><a class="el" href="classQXmppOmemoManager.html#a5215b21d401498cc41300c13d46865a5">QXmppOmemoManager::subscribeToDeviceLists()</a></code> for contacts without presence subscription before.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">jids</td><td>JIDs whose devices are being retrieved</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>all devices of the passed JIDs </dd></dl>
-
-</div>
-</div>
 <a id="a57268bfdd5b9eb619332cecdeac3c09b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a57268bfdd5b9eb619332cecdeac3c09b">&#9670;&nbsp;</a></span>devicesRemoved()</h2>
 
@@ -618,298 +521,14 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 
 </div>
 </div>
-<a id="a3eb44689522123bb87f149b23f3c6b36"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3eb44689522123bb87f149b23f3c6b36">&#9670;&nbsp;</a></span>isNewDeviceAutoSessionBuildingEnabled()</h2>
+<a id="aa63e3fa6648ee885ac3228b3f63d888a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa63e3fa6648ee885ac3228b3f63d888a">&#9670;&nbsp;</a></span>securityPolicy()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool Manager::isNewDeviceAutoSessionBuildingEnabled </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Returns whether sessions are built when new devices are received from the server.</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classQXmppOmemoManager.html#ab7f7e566408dee1f505a348eb7ddd3a8">QXmppOmemoManager::setNewDeviceAutoSessionBuildingEnabled</a></dd></dl>
-<dl class="section return"><dt>Returns</dt><dd>whether sessions are built for incoming devices </dd></dl>
-
-</div>
-</div>
-<a id="ad66c127f1fd7d28ed94b4f2185f5a716"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad66c127f1fd7d28ed94b4f2185f5a716">&#9670;&nbsp;</a></span>keys() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">QFuture&lt; QHash&lt; QString, QHash&lt; QByteArray, <a class="el" href="namespaceQXmpp.html#a71207ba76216075cc013b3fe8ed66b84">QXmpp::TrustLevel</a> &gt; &gt; &gt; Manager::keys </td>
-          <td>(</td>
-          <td class="paramtype">const QList&lt; QString &gt; &amp;&#160;</td>
-          <td class="paramname"><em>jids</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">QXmpp::TrustLevels&#160;</td>
-          <td class="paramname"><em>trustLevels</em> = <code>{}</code>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Returns the IDs of keys mapped to their trust levels for specific key owners.</p>
-<p>If no trust levels are passed, all keys for jids are returned.</p>
-<p>This should be called in order to get the stored keys which can be more than the stored devices because of trust decisions made without a published or received device.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">jids</td><td>key owners' bare JIDs </td></tr>
-    <tr><td class="paramname">trustLevels</td><td>trust levels of the keys</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>the key IDs mapped to their trust levels for specific key owners </dd></dl>
-
-</div>
-</div>
-<a id="ac3abe54a8424671ddd56d4bc7d80476b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac3abe54a8424671ddd56d4bc7d80476b">&#9670;&nbsp;</a></span>keys() <span class="overload">[2/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">QFuture&lt; QHash&lt; <a class="el" href="namespaceQXmpp.html#a71207ba76216075cc013b3fe8ed66b84">QXmpp::TrustLevel</a>, QMultiHash&lt; QString, QByteArray &gt; &gt; &gt; Manager::keys </td>
-          <td>(</td>
-          <td class="paramtype">QXmpp::TrustLevels&#160;</td>
-          <td class="paramname"><em>trustLevels</em> = <code>{}</code></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Returns the JIDs of all key owners mapped to the IDs of their keys with specific trust levels.</p>
-<p>If no trust levels are passed, all keys are returned.</p>
-<p>This should be called in order to get all stored keys which can be more than the stored devices because of trust decisions made without a published or received device.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">trustLevels</td><td>trust levels of the keys</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>the key owner JIDs mapped to their keys with specific trust levels </dd></dl>
-
-</div>
-</div>
-<a id="ac8191e3760b3989b5e04f60bbd170cda"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac8191e3760b3989b5e04f60bbd170cda">&#9670;&nbsp;</a></span>load()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">QFuture&lt; bool &gt; Manager::load </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Loads all locally stored OMEMO data.</p>
-<p>This should be called after starting the client and before the login. It must only be called after <code><a class="el" href="classQXmppOmemoManager.html#a889fa65ec722a2a4b03a66aa6641cecc">setUp()</a></code> has been called once for the user during one of the past login session. It does not need to be called if <a class="el" href="classQXmppOmemoManager.html#a889fa65ec722a2a4b03a66aa6641cecc">setUp()</a> has been called during the current login session.</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classQXmppOmemoManager.html#a889fa65ec722a2a4b03a66aa6641cecc">QXmppOmemoManager::setUp()</a></dd></dl>
-<dl class="section return"><dt>Returns</dt><dd>whether everything is loaded successfully </dd></dl>
-
-</div>
-</div>
-<a id="a269e8c4a9eb375340d37e9356c1f5d1c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a269e8c4a9eb375340d37e9356c1f5d1c">&#9670;&nbsp;</a></span>maximumDevicesPerJid()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int Manager::maximumDevicesPerJid </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Returns the maximum count of devices stored per JID.</p>
-<p>If more devices than that maximum are received for one JID from a server, they will not be stored locally and thus not used for encryption.</p>
-<dl class="section return"><dt>Returns</dt><dd>the maximum count of devices stored per JID </dd></dl>
-
-</div>
-</div>
-<a id="a3874eae4016728252067b3e1386cd975"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3874eae4016728252067b3e1386cd975">&#9670;&nbsp;</a></span>maximumDevicesPerStanza()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int Manager::maximumDevicesPerStanza </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Returns the maximum count of devices for whom a stanza is encrypted.</p>
-<p>If more devices than that maximum are stored for all addressed recipients of a stanza, the stanza will only be encrypted for first devices until the maximum is reached.</p>
-<dl class="section return"><dt>Returns</dt><dd>the maximum count of devices for whom a stanza is encrypted </dd></dl>
-
-</div>
-</div>
-<a id="a3578384e9f6d434d0e97bd4fa851a349"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3578384e9f6d434d0e97bd4fa851a349">&#9670;&nbsp;</a></span>ownDevice()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classQXmppOmemoOwnDevice.html">QXmppOmemoOwnDevice</a> Manager::ownDevice </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Returns the device of this client instance's current user.</p>
-<dl class="section return"><dt>Returns</dt><dd>the own device </dd></dl>
-
-</div>
-</div>
-<a id="aa617ca0e2a4113944f7c80f0232ef866"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa617ca0e2a4113944f7c80f0232ef866">&#9670;&nbsp;</a></span>ownKey()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">QFuture&lt; QByteArray &gt; Manager::ownKey </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Returns the key of this client instance.</p>
-<dl class="section return"><dt>Returns</dt><dd>the own key </dd></dl>
-
-</div>
-</div>
-<a id="ae32d5eb3d25e6d1157035ecc398e1090"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae32d5eb3d25e6d1157035ecc398e1090">&#9670;&nbsp;</a></span>removeContactDevices()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">QFuture&lt; <a class="el" href="classQXmppPubSubManager.html#a9a8741a70d0839185e8e52072ea0ed53">QXmppPubSubManager::Result</a> &gt; Manager::removeContactDevices </td>
-          <td>(</td>
-          <td class="paramtype">const QString &amp;&#160;</td>
-          <td class="paramname"><em>jid</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Removes all devices of a contact and the subscription to the contact's device list.</p>
-<p>This should be called after removing a contact. The JID of the current user must not be passed. Use <code><a class="el" href="classQXmppOmemoManager.html#ac930a0d9451bc3fd6cde1783ea83fb45">QXmppOmemoManager::resetAll()</a></code> in order to remove all devices of the user.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">jid</td><td>JID of the contact whose devices are being removed</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>the result of the contact device removals </dd></dl>
-
-</div>
-</div>
-<a id="aca6fb073a6ba7a15b821d08ac877ed8a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aca6fb073a6ba7a15b821d08ac877ed8a">&#9670;&nbsp;</a></span>requestDeviceLists()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">QFuture&lt; Manager::DevicesResult &gt; Manager::requestDeviceLists </td>
-          <td>(</td>
-          <td class="paramtype">const QList&lt; QString &gt; &amp;&#160;</td>
-          <td class="paramname"><em>jids</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Requests device lists from contacts and stores them locally.</p>
-<p>The user must be logged in while calling this. The JID of the current user must not be passed.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">jids</td><td>JIDs of the contacts whose device lists are being requested</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>the results of the requests for each JID </dd></dl>
-
-</div>
-</div>
-<a id="ac930a0d9451bc3fd6cde1783ea83fb45"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac930a0d9451bc3fd6cde1783ea83fb45">&#9670;&nbsp;</a></span>resetAll()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">QFuture&lt; bool &gt; Manager::resetAll </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Resets all OMEMO data for all own devices and the trust data used by OMEMO.</p>
-<p>ATTENTION: This should only be called if there is a certain reason for it since it deletes the data for this device and for other own devices from the server.</p>
-<p>Call <code><a class="el" href="classQXmppOmemoManager.html#ad0197e377a1f11fd5d9ac0cf535d8122">resetOwnDevice()</a></code> if you only want to delete the OMEMO data for this device.</p>
-<p>The user must be logged in while calling this.</p>
-<p>Call <code><a class="el" href="classQXmppOmemoManager.html#a889fa65ec722a2a4b03a66aa6641cecc">setUp()</a></code> once this method is finished if you want to set up everything again. Existing sessions are reset, which might lead to undecryptable incoming stanzas until everything is set up again. </p>
-
-</div>
-</div>
-<a id="ad0197e377a1f11fd5d9ac0cf535d8122"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad0197e377a1f11fd5d9ac0cf535d8122">&#9670;&nbsp;</a></span>resetOwnDevice()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">QFuture&lt; bool &gt; Manager::resetOwnDevice </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Resets all OMEMO data for this device and the trust data used by OMEMO.</p>
-<p>ATTENTION: This should only be called when an account is removed locally or if there are unrecoverable problems with the OMEMO setup of this device.</p>
-<p>The data on the server for other own devices is not removed. Call <code><a class="el" href="classQXmppOmemoManager.html#ac930a0d9451bc3fd6cde1783ea83fb45">resetAll()</a></code> for that purpose.</p>
-<p>The user must be logged in while calling this.</p>
-<p>Call <code><a class="el" href="classQXmppOmemoManager.html#a889fa65ec722a2a4b03a66aa6641cecc">setUp()</a></code> once this method is finished if you want to set up everything again for this device. Existing sessions are reset, which might lead to undecryptable incoming stanzas until everything is set up again. </p>
-
-</div>
-</div>
-<a id="a3f847e65726ce1b91ff7c1d44a972f38"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3f847e65726ce1b91ff7c1d44a972f38">&#9670;&nbsp;</a></span>securityPolicy()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">QFuture&lt; <a class="el" href="namespaceQXmpp.html#af6e4885b9b07444825d3bf59877a1f10">QXmpp::TrustSecurityPolicy</a> &gt; Manager::securityPolicy </td>
+          <td class="memname">QXmppOmemoManager::securityPolicy </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -921,118 +540,14 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 
 </div>
 </div>
-<a id="a538d845d3adde3651d731fe2fd5b39e2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a538d845d3adde3651d731fe2fd5b39e2">&#9670;&nbsp;</a></span>setAcceptedSessionBuildingTrustLevels()</h2>
+<a id="ab300b8c1348dd784cbf4a43875392e65"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab300b8c1348dd784cbf4a43875392e65">&#9670;&nbsp;</a></span>setSecurityPolicy()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void Manager::setAcceptedSessionBuildingTrustLevels </td>
-          <td>(</td>
-          <td class="paramtype">QXmpp::TrustLevels&#160;</td>
-          <td class="paramname"><em>trustLevels</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Sets the trust levels keys must have in order to build sessions for their devices.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">trustLevels</td><td>trust levels of the keys used for building sessions </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a6b56c08e77f32db54f45891e24dd0c58"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6b56c08e77f32db54f45891e24dd0c58">&#9670;&nbsp;</a></span>setMaximumDevicesPerJid()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Manager::setMaximumDevicesPerJid </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>maximum</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Sets the maximum count of devices stored per JID.</p>
-<p>If more devices than that maximum are received for one JID from a server, they will not be stored locally and thus not used for encryption.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">maximum</td><td>maximum count of devices stored per JID </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a3879a634e09fabf093e66198ed6bd57e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3879a634e09fabf093e66198ed6bd57e">&#9670;&nbsp;</a></span>setMaximumDevicesPerStanza()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Manager::setMaximumDevicesPerStanza </td>
-          <td>(</td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>maximum</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Sets the maximum count of devices for whom a stanza is encrypted.</p>
-<p>If more devices than that maximum are stored for all addressed recipients of a stanza, the stanza will only be encrypted for first devices until the maximum is reached.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">maximum</td><td>maximum count of devices for whom a stanza is encrypted </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="ab7f7e566408dee1f505a348eb7ddd3a8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab7f7e566408dee1f505a348eb7ddd3a8">&#9670;&nbsp;</a></span>setNewDeviceAutoSessionBuildingEnabled()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void Manager::setNewDeviceAutoSessionBuildingEnabled </td>
-          <td>(</td>
-          <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>isNewDeviceAutoSessionBuildingEnabled</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Sets whether sessions are built when new devices are received from the server.</p>
-<p>This can be used to not call <code><a class="el" href="classQXmppOmemoManager.html#ab051d1daf6fe0cbc5f56bb458160d47c">QXmppOmemoManager::buildMissingSessions</a></code> manually. But it should not be used before the initial setup and storing lots of devices locally. Otherwise, it could lead to a massive computation and network load when there are many devices for whom sessions are built.</p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classQXmppOmemoManager.html#ab051d1daf6fe0cbc5f56bb458160d47c">QXmppOmemoManager::buildMissingSessions</a></dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">isNewDeviceAutoSessionBuildingEnabled</td><td>whether sessions are built for incoming devices </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a39d75552f7b554384877d6854fbb1bd9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a39d75552f7b554384877d6854fbb1bd9">&#9670;&nbsp;</a></span>setSecurityPolicy()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">QFuture&lt; void &gt; Manager::setSecurityPolicy </td>
+          <td class="memname">QXmppOmemoManager::setSecurityPolicy </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="namespaceQXmpp.html#af6e4885b9b07444825d3bf59877a1f10">QXmpp::TrustSecurityPolicy</a>&#160;</td>
           <td class="paramname"><em>securityPolicy</em></td><td>)</td>
@@ -1050,14 +565,14 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 
 </div>
 </div>
-<a id="a7448cd0c5901e17a69347a90aa5f09e6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7448cd0c5901e17a69347a90aa5f09e6">&#9670;&nbsp;</a></span>setTrustLevel()</h2>
+<a id="adf2b5a7cc206d5539f46be01e8a1f29a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf2b5a7cc206d5539f46be01e8a1f29a">&#9670;&nbsp;</a></span>setTrustLevel()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">QFuture&lt; void &gt; Manager::setTrustLevel </td>
+          <td class="memname">QXmppOmemoManager::setTrustLevel </td>
           <td>(</td>
           <td class="paramtype">const QMultiHash&lt; QString, QByteArray &gt; &amp;&#160;</td>
           <td class="paramname"><em>keyIds</em>, </td>
@@ -1087,62 +602,14 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 
 </div>
 </div>
-<a id="a889fa65ec722a2a4b03a66aa6641cecc"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a889fa65ec722a2a4b03a66aa6641cecc">&#9670;&nbsp;</a></span>setUp()</h2>
+<a id="aa681b85022c1994f933a67c2fe17c6f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa681b85022c1994f933a67c2fe17c6f2">&#9670;&nbsp;</a></span>trustLevel()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">QFuture&lt; bool &gt; Manager::setUp </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Sets up all OMEMO data locally and on the server.</p>
-<p>The user must be logged in while calling this.</p>
-<dl class="section return"><dt>Returns</dt><dd>whether everything is set up successfully </dd></dl>
-
-</div>
-</div>
-<a id="a5215b21d401498cc41300c13d46865a5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5215b21d401498cc41300c13d46865a5">&#9670;&nbsp;</a></span>subscribeToDeviceLists()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">QFuture&lt; Manager::DevicesResult &gt; Manager::subscribeToDeviceLists </td>
-          <td>(</td>
-          <td class="paramtype">const QList&lt; QString &gt; &amp;&#160;</td>
-          <td class="paramname"><em>jids</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Subscribes the current user's resource to device lists manually.</p>
-<p>This should be called after each login and only for contacts without presence subscription because their device lists are not automatically subscribed. The user must be logged in while calling this.</p>
-<p>Call <code><a class="el" href="classQXmppOmemoManager.html#a15970b081e43c5aaceda148e439c951a">QXmppOmemoManager::unsubscribeFromDeviceLists()</a></code> before logout.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">jids</td><td>JIDs of the contacts whose device lists are being subscribed</td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>the results of the subscription for each JID </dd></dl>
-
-</div>
-</div>
-<a id="abd0ddaf77e0ceeb8275a9fd76b98f49a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abd0ddaf77e0ceeb8275a9fd76b98f49a">&#9670;&nbsp;</a></span>trustLevel()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">QFuture&lt; <a class="el" href="namespaceQXmpp.html#a71207ba76216075cc013b3fe8ed66b84">QXmpp::TrustLevel</a> &gt; Manager::trustLevel </td>
+          <td class="memname">QXmppOmemoManager::trustLevel </td>
           <td>(</td>
           <td class="paramtype">const QString &amp;&#160;</td>
           <td class="paramname"><em>keyOwnerJid</em>, </td>
@@ -1198,26 +665,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 
 </div>
 </div>
-<a id="a15970b081e43c5aaceda148e439c951a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a15970b081e43c5aaceda148e439c951a">&#9670;&nbsp;</a></span>unsubscribeFromDeviceLists()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">QFuture&lt; Manager::DevicesResult &gt; Manager::unsubscribeFromDeviceLists </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p>Unsubscribes the current user's resource from all device lists that were manually subscribed by <code>QXmppOmemoManager::subscribeToDeviceList()</code>.</p>
-<p>This should be called before each logout. The user must be logged in while calling this.</p>
-<dl class="section return"><dt>Returns</dt><dd>the results of the unsubscription for each JID </dd></dl>
-
-</div>
-</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="QXmppOmemoManager_8h_source.html">QXmppOmemoManager.h</a></li>
 <li>QXmppOmemoManager.cpp</li>
@@ -1233,22 +680,21 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <div class="ttc" id="aclassQXmppAtmManager_html"><div class="ttname"><a href="classQXmppAtmManager.html">QXmppAtmManager</a></div><div class="ttdoc">The QXmppAtmManager class represents a manager for XEP-0450: Automatic Trust Management (ATM).</div><div class="ttdef"><b>Definition:</b> QXmppAtmManager.h:15</div></div>
 <div class="ttc" id="aclassQXmppClientExtension_html_a2476cb1a20963d15d45d39f24a0c1198"><div class="ttname"><a href="classQXmppClientExtension.html#a2476cb1a20963d15d45d39f24a0c1198">QXmppClientExtension::client</a></div><div class="ttdeci">QXmppClient * client()</div><div class="ttdef"><b>Definition:</b> QXmppClientExtension.cpp:93</div></div>
 <div class="ttc" id="aclassQXmppTrustManager_html"><div class="ttname"><a href="classQXmppTrustManager.html">QXmppTrustManager</a></div><div class="ttdoc">The QXmppTrustManager manages end-to-end encryption trust decisions.</div><div class="ttdef"><b>Definition:</b> QXmppTrustManager.h:16</div></div>
-<div class="ttc" id="aclassQXmppOmemoManager_html_ac8191e3760b3989b5e04f60bbd170cda"><div class="ttname"><a href="classQXmppOmemoManager.html#ac8191e3760b3989b5e04f60bbd170cda">QXmppOmemoManager::load</a></div><div class="ttdeci">QFuture&lt; bool &gt; load()</div><div class="ttdef"><b>Definition:</b> QXmppOmemoManager.cpp:361</div></div>
 <div class="ttc" id="aclassQXmppTrustMemoryStorage_html"><div class="ttname"><a href="classQXmppTrustMemoryStorage.html">QXmppTrustMemoryStorage</a></div><div class="ttdoc">The QXmppTrustMemoryStorage class stores trust data for end-to-end encryption in the memory.</div><div class="ttdef"><b>Definition:</b> QXmppTrustMemoryStorage.h:14</div></div>
 <div class="ttc" id="aclassQXmppClient_html_a61ccf1c37ca3f26bfd14e65c8ecf1740"><div class="ttname"><a href="classQXmppClient.html#a61ccf1c37ca3f26bfd14e65c8ecf1740">QXmppClient::addExtension</a></div><div class="ttdeci">bool addExtension(QXmppClientExtension *extension)</div><div class="ttdef"><b>Definition:</b> QXmppClient.cpp:261</div></div>
 <div class="ttc" id="aclassQXmppSendStanzaParams_html_a1897b7d35258509c28055d2893329b64"><div class="ttname"><a href="classQXmppSendStanzaParams.html#a1897b7d35258509c28055d2893329b64">QXmppSendStanzaParams::setEncryptionJids</a></div><div class="ttdeci">void setEncryptionJids(QVector&lt; QString &gt;)</div><div class="ttdef"><b>Definition:</b> QXmppSendStanzaParams.cpp:58</div></div>
+<div class="ttc" id="aclassQXmppOmemoManager_html_ab300b8c1348dd784cbf4a43875392e65"><div class="ttname"><a href="classQXmppOmemoManager.html#ab300b8c1348dd784cbf4a43875392e65">QXmppOmemoManager::setSecurityPolicy</a></div><div class="ttdeci">QFuture&lt; void &gt; setSecurityPolicy(QXmpp::TrustSecurityPolicy securityPolicy)</div></div>
 <div class="ttc" id="aclassQXmppSendStanzaParams_html"><div class="ttname"><a href="classQXmppSendStanzaParams.html">QXmppSendStanzaParams</a></div><div class="ttdef"><b>Definition:</b> QXmppSendStanzaParams.h:17</div></div>
 <div class="ttc" id="aclassQXmppOmemoManager_html_a488753388ac6c9d726251bb7306b353d"><div class="ttname"><a href="classQXmppOmemoManager.html#a488753388ac6c9d726251bb7306b353d">QXmppOmemoManager::QXmppOmemoManager</a></div><div class="ttdeci">QXmppOmemoManager(QXmppOmemoStorage *omemoStorage)</div><div class="ttdef"><b>Definition:</b> QXmppOmemoManager.cpp:338</div></div>
 <div class="ttc" id="aclassQXmppClient_html_a46e84c5280564cdc2d60307309f97b92"><div class="ttname"><a href="classQXmppClient.html#a46e84c5280564cdc2d60307309f97b92">QXmppClient::connected</a></div><div class="ttdeci">void connected()</div></div>
 <div class="ttc" id="aclassQXmppCarbonManager_html_a0dc1896be8941987a9128ea65bc15a4f"><div class="ttname"><a href="classQXmppCarbonManager.html#a0dc1896be8941987a9128ea65bc15a4f">QXmppCarbonManager::messageReceived</a></div><div class="ttdeci">void messageReceived(const QXmppMessage &amp;)</div></div>
 <div class="ttc" id="aclassQXmppOmemoManager_html"><div class="ttname"><a href="classQXmppOmemoManager.html">QXmppOmemoManager</a></div><div class="ttdef"><b>Definition:</b> QXmppOmemoManager.h:69</div></div>
 <div class="ttc" id="aclassQXmppTrustStorage_html"><div class="ttname"><a href="classQXmppTrustStorage.html">QXmppTrustStorage</a></div><div class="ttdoc">The QXmppTrustStorage class stores end-to-end encryption trust data.</div><div class="ttdef"><b>Definition:</b> QXmppTrustStorage.h:14</div></div>
-<div class="ttc" id="aclassQXmppCarbonManager_html"><div class="ttname"><a href="classQXmppCarbonManager.html">QXmppCarbonManager</a></div><div class="ttdoc">The QXmppCarbonManager class handles message carbons as described in XEP-0280: Message Carbons.</div><div class="ttdef"><b>Definition:</b> QXmppCarbonManager.h:23</div></div>
+<div class="ttc" id="aclassQXmppCarbonManager_html"><div class="ttname"><a href="classQXmppCarbonManager.html">QXmppCarbonManager</a></div><div class="ttdoc">The QXmppCarbonManager class handles message carbons as described in XEP-0280: Message Carbons.</div><div class="ttdef"><b>Definition:</b> QXmppCarbonManager.h:25</div></div>
 <div class="ttc" id="aclassQXmppClient_html_a60ce6a360dc60912064ad5c49dcbf818"><div class="ttname"><a href="classQXmppClient.html#a60ce6a360dc60912064ad5c49dcbf818">QXmppClient::send</a></div><div class="ttdeci">QFuture&lt; QXmpp::SendResult &gt; send(QXmppStanza &amp;&amp;, const std::optional&lt; QXmppSendStanzaParams &gt; &amp;={})</div><div class="ttdef"><b>Definition:</b> QXmppClient.cpp:416</div></div>
 <div class="ttc" id="aclassQXmppOmemoStorage_html"><div class="ttname"><a href="classQXmppOmemoStorage.html">QXmppOmemoStorage</a></div><div class="ttdoc">The QXmppOmemoStorage class stores data used by XEP-0384: OMEMO Encryption.</div><div class="ttdef"><b>Definition:</b> QXmppOmemoStorage.h:15</div></div>
 <div class="ttc" id="anamespaceQXmpp_html_af6e4885b9b07444825d3bf59877a1f10acce7e2a143630e788cf6c3d3e2bb4aa2"><div class="ttname"><a href="namespaceQXmpp.html#af6e4885b9b07444825d3bf59877a1f10acce7e2a143630e788cf6c3d3e2bb4aa2">QXmpp::Toakafa</a></div><div class="ttdeci">@ Toakafa</div><div class="ttdef"><b>Definition:</b> QXmppTrustSecurityPolicy.h:23</div></div>
 <div class="ttc" id="anamespaceQXmpp_html_a71207ba76216075cc013b3fe8ed66b84ae6183ae7627faf1013455f68e1009301"><div class="ttname"><a href="namespaceQXmpp.html#a71207ba76216075cc013b3fe8ed66b84ae6183ae7627faf1013455f68e1009301">QXmpp::TrustLevel::AutomaticallyTrusted</a></div><div class="ttdeci">@ AutomaticallyTrusted</div></div>
-<div class="ttc" id="aclassQXmppOmemoManager_html_a39d75552f7b554384877d6854fbb1bd9"><div class="ttname"><a href="classQXmppOmemoManager.html#a39d75552f7b554384877d6854fbb1bd9">QXmppOmemoManager::setSecurityPolicy</a></div><div class="ttdeci">QFuture&lt; void &gt; setSecurityPolicy(QXmpp::TrustSecurityPolicy securityPolicy)</div><div class="ttdef"><b>Definition:</b> QXmppOmemoManager.cpp:949</div></div>
 <div class="ttc" id="aclassQXmppOmemoMemoryStorage_html"><div class="ttname"><a href="classQXmppOmemoMemoryStorage.html">QXmppOmemoMemoryStorage</a></div><div class="ttdoc">The QXmppOmemoMemoryStorage class stores data used by XEP-0384: OMEMO Encryption in the memory.</div><div class="ttdef"><b>Definition:</b> QXmppOmemoMemoryStorage.h:15</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

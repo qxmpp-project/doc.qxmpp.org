@@ -245,6 +245,10 @@ QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
 <tr class="separator:a0ee3e97e66dfd7257c9ecf46e6fa663d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5548fb3de42c656b19dc96eecf2d4271"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppMessage.html#a5548fb3de42c656b19dc96eecf2d4271">setPrivate</a> (const bool)</td></tr>
 <tr class="separator:a5548fb3de42c656b19dc96eecf2d4271"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ad0da511db2f2bf76a2532f5b946e21"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppMessage.html#a5ad0da511db2f2bf76a2532f5b946e21">isCarbonForwarded</a> () const</td></tr>
+<tr class="separator:a5ad0da511db2f2bf76a2532f5b946e21"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afca48b20121cdc95c216b380f3ef442c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppMessage.html#afca48b20121cdc95c216b380f3ef442c">setCarbonForwarded</a> (bool)</td></tr>
+<tr class="separator:afca48b20121cdc95c216b380f3ef442c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acaa775d993d17c8461da731108f1c2ce"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppMessage.html#acaa775d993d17c8461da731108f1c2ce">replaceId</a> () const</td></tr>
 <tr class="separator:acaa775d993d17c8461da731108f1c2ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6a3c4e9e30a2efff79d618eaf2c48fc4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppMessage.html#a6a3c4e9e30a2efff79d618eaf2c48fc4">setReplaceId</a> (const QString &amp;)</td></tr>
@@ -709,6 +713,25 @@ If this returns QXmppMessage::UnknownEncryption, you can still get the namespace
 </div><div class="memdoc">
 <p>Returns true if the user's attention is requested, as defined by <a href="https://xmpp.org/extensions/xep-0224.html">XEP-0224</a>: Attention.</p>
 <dl class="section since"><dt>Since</dt><dd><a class="el" href="namespaceQXmpp.html">QXmpp</a> 0.4 </dd></dl>
+
+</div>
+</div>
+<a id="a5ad0da511db2f2bf76a2532f5b946e21"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5ad0da511db2f2bf76a2532f5b946e21">&#9670;&nbsp;</a></span>isCarbonForwarded()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool QXmppMessage::isCarbonForwarded </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns whether this message has been forwarded using carbons.</p>
+<dl class="section since"><dt>Since</dt><dd><a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.5 </dd></dl>
 
 </div>
 </div>
@@ -1416,6 +1439,27 @@ If this returns QXmppMessage::UnknownEncryption, you can still get the namespace
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="afca48b20121cdc95c216b380f3ef442c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afca48b20121cdc95c216b380f3ef442c">&#9670;&nbsp;</a></span>setCarbonForwarded()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void QXmppMessage::setCarbonForwarded </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>forwarded</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Sets whether this message has been forwarded using carbons.</p>
+<p>Setting this to true has no effect, this is purely informational.</p>
+<dl class="section since"><dt>Since</dt><dd><a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.5 </dd></dl>
 
 </div>
 </div>

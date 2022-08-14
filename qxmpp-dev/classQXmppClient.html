@@ -809,7 +809,7 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p>Returns the extension which can be cast into type T*, or 0 if there is no such extension. </p>
-<p>Usage example: </p><div class="fragment"><div class="line"><a class="code" href="classQXmppDiscoveryManager.html">QXmppDiscoveryManager</a>* ext = client-&gt;findExtension&lt;<a class="code" href="classQXmppDiscoveryManager.html">QXmppDiscoveryManager</a>&gt;();</div>
+<p>Usage example: </p><div class="fragment"><div class="line"><a class="code" href="classQXmppDiscoveryManager.html">QXmppDiscoveryManager</a>* ext = client-&gt;<a class="code" href="classQXmppClient.html#a728fc96e0ca41b21d94e4686f8519c4d">findExtension</a>&lt;<a class="code" href="classQXmppDiscoveryManager.html">QXmppDiscoveryManager</a>&gt;();</div>
 <div class="line"><span class="keywordflow">if</span>(ext)</div>
 <div class="line">{</div>
 <div class="line">    <span class="comment">//extension found, do stuff...</span></div>
@@ -843,7 +843,7 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 
 <p>Returns the index of an extension. </p>
-<p>Usage example: </p><div class="fragment"><div class="line"><span class="keywordtype">int</span> index = client-&gt;indexOfExtension&lt;<a class="code" href="classQXmppDiscoveryManager.html">QXmppDiscoveryManager</a>&gt;();</div>
+<p>Usage example: </p><div class="fragment"><div class="line"><span class="keywordtype">int</span> index = client-&gt;<a class="code" href="classQXmppClient.html#ae5ab7ea0835f978548009364a79e6a2d">indexOfExtension</a>&lt;<a class="code" href="classQXmppDiscoveryManager.html">QXmppDiscoveryManager</a>&gt;();</div>
 <div class="line"><span class="keywordflow">if</span> (index &gt; 0) {</div>
 <div class="line">    <span class="comment">// extension found, do stuff...</span></div>
 <div class="line">} <span class="keywordflow">else</span> {</div>
@@ -1264,7 +1264,7 @@ template&lt;typename T &gt; </div>
 <p>This function does not end-to-end encrypt the packets.</p>
 <dl class="section return"><dt>Returns</dt><dd>Returns true if the packet was sent, false otherwise.</dd></dl>
 <p>Following code snippet illustrates how to send a message using this function: </p><div class="fragment"><div class="line"><a class="code" href="classQXmppMessage.html">QXmppMessage</a> message(from, to, message);</div>
-<div class="line">client.sendPacket(message);</div>
+<div class="line">client.<a class="code" href="classQXmppClient.html#a646e489c4e14dd5c76e6c06122bbf0d3">sendPacket</a>(message);</div>
 </div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">packet</td><td>A valid XMPP stanza. It can be an iq, a message or a presence stanza. </td></tr>
@@ -1520,7 +1520,10 @@ template&lt;typename T &gt; </div>
 <li>QXmppClient.cpp</li>
 </ul>
 </div><!-- contents -->
+<div class="ttc" id="aclassQXmppClient_html_a646e489c4e14dd5c76e6c06122bbf0d3"><div class="ttname"><a href="classQXmppClient.html#a646e489c4e14dd5c76e6c06122bbf0d3">QXmppClient::sendPacket</a></div><div class="ttdeci">bool sendPacket(const QXmppNonza &amp;)</div><div class="ttdef"><b>Definition:</b> QXmppClient.cpp:393</div></div>
+<div class="ttc" id="aclassQXmppClient_html_ae5ab7ea0835f978548009364a79e6a2d"><div class="ttname"><a href="classQXmppClient.html#ae5ab7ea0835f978548009364a79e6a2d">QXmppClient::indexOfExtension</a></div><div class="ttdeci">int indexOfExtension()</div><div class="ttdoc">Returns the index of an extension.</div><div class="ttdef"><b>Definition:</b> QXmppClient.h:183</div></div>
 <div class="ttc" id="aclassQXmppDiscoveryManager_html"><div class="ttname"><a href="classQXmppDiscoveryManager.html">QXmppDiscoveryManager</a></div><div class="ttdoc">The QXmppDiscoveryManager class makes it possible to discover information about other entities as def...</div><div class="ttdef"><b>Definition:</b> QXmppDiscoveryManager.h:23</div></div>
+<div class="ttc" id="aclassQXmppClient_html_a728fc96e0ca41b21d94e4686f8519c4d"><div class="ttname"><a href="classQXmppClient.html#a728fc96e0ca41b21d94e4686f8519c4d">QXmppClient::findExtension</a></div><div class="ttdeci">T * findExtension()</div><div class="ttdoc">Returns the extension which can be cast into type T*, or 0 if there is no such extension.</div><div class="ttdef"><b>Definition:</b> QXmppClient.h:156</div></div>
 <div class="ttc" id="aclassQXmppMessage_html"><div class="ttname"><a href="classQXmppMessage.html">QXmppMessage</a></div><div class="ttdoc">The QXmppMessage class represents an XMPP message.</div><div class="ttdef"><b>Definition:</b> QXmppMessage.h:31</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
