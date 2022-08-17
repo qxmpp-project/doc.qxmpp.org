@@ -7,7 +7,7 @@ var searchData=
   ['vcardupdatenone_1383',['VCardUpdateNone',['../classQXmppPresence.html#a642a378dd425bbbda1de4317e2dcd199ade94d49098994f9d9c63a2e3b26e85fe',1,'QXmppPresence']]],
   ['vcardupdatenophoto_1384',['VCardUpdateNoPhoto',['../classQXmppPresence.html#a642a378dd425bbbda1de4317e2dcd199a4d3c48d73da192a0054d24633622f564',1,'QXmppPresence']]],
   ['vcardupdatenotready_1385',['VCardUpdateNotReady',['../classQXmppPresence.html#a642a378dd425bbbda1de4317e2dcd199a628f45cf1da766418d773f83ba48af50',1,'QXmppPresence']]],
-  ['vcardupdatetype_1386',['vCardUpdateType',['../classQXmppPresence.html#ae2ccb0c09bda3a4d3d8182e12f4d6bf7',1,'QXmppPresence::vCardUpdateType() const'],['../classQXmppPresence.html#a642a378dd425bbbda1de4317e2dcd199',1,'QXmppPresence::VCardUpdateType()']]],
+  ['vcardupdatetype_1386',['VCardUpdateType',['../classQXmppPresence.html#a642a378dd425bbbda1de4317e2dcd199',1,'QXmppPresence::VCardUpdateType()'],['../classQXmppPresence.html#ae2ccb0c09bda3a4d3d8182e12f4d6bf7',1,'QXmppPresence::vCardUpdateType() const']]],
   ['vcardupdatevalidphoto_1387',['VCardUpdateValidPhoto',['../classQXmppPresence.html#a642a378dd425bbbda1de4317e2dcd199a77b3104e5b50933e952dd82740bbe703',1,'QXmppPresence']]],
   ['verificationstring_1388',['verificationString',['../classQXmppDiscoveryIq.html#a4df2efb22d8ca8e063177be85f1fd93f',1,'QXmppDiscoveryIq']]],
   ['verify_1389',['Verify',['../classQXmppDialback.html#a0448107c56f892056f359013b80798bcab04f60abfc5f6b6e0f3166e285dd78c6',1,'QXmppDialback']]],

@@ -10,7 +10,7 @@ var searchData=
   ['unknownfields_1358',['unknownFields',['../classQXmppExtensibleDataFormBase.html#adb80d5edcdcb9954844c0242090c3738',1,'QXmppExtensibleDataFormBase']]],
   ['unrespondedreceivedstanzascount_1359',['unrespondedReceivedStanzasCount',['../structQXmppOmemoStorage_1_1Device.html#a395867fc7d995a506cbaf72123e10fa2',1,'QXmppOmemoStorage::Device']]],
   ['unrespondedsentstanzascount_1360',['unrespondedSentStanzasCount',['../structQXmppOmemoStorage_1_1Device.html#a3655ffc955c3afe6db0b45b54da8aa5b',1,'QXmppOmemoStorage::Device']]],
-  ['unsubscribe_1361',['unsubscribe',['../classQXmppRosterManager.html#afd840ecd9179624db72c837ff948abf5',1,'QXmppRosterManager::unsubscribe()'],['../classQXmppPresence.html#a47ab8dd08436f9d7c90d2990678b5a6da20986f18e387f68a5fdfa0e67c44bc44',1,'QXmppPresence::Unsubscribe()']]],
+  ['unsubscribe_1361',['Unsubscribe',['../classQXmppPresence.html#a47ab8dd08436f9d7c90d2990678b5a6da20986f18e387f68a5fdfa0e67c44bc44',1,'QXmppPresence::Unsubscribe()'],['../classQXmppRosterManager.html#afd840ecd9179624db72c837ff948abf5',1,'QXmppRosterManager::unsubscribe()']]],
   ['unsubscribed_1362',['Unsubscribed',['../classQXmppPresence.html#a47ab8dd08436f9d7c90d2990678b5a6da63414092d2fc4b90987f56731c150623',1,'QXmppPresence']]],
   ['unsubscribefrom_1363',['unsubscribeFrom',['../classQXmppRosterManager.html#aeedb21c6b830439545941c71292db8df',1,'QXmppRosterManager']]],
   ['unsubscribefromdevicelists_1364',['unsubscribeFromDeviceLists',['../classQXmppOmemoManager.html#a15970b081e43c5aaceda148e439c951a',1,'QXmppOmemoManager']]],
