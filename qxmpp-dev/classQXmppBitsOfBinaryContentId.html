@@ -123,6 +123,15 @@ Static Public Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="classQXmppBitsOfBinaryContentId.html">QXmppBitsOfBinaryContentId</a> represents a link to or an identifier of <a href="https://xmpp.org/extensions/xep-0231.html">XEP-0231: Bits of Binary</a> data.</p>
+<p>Currently supported hash algorithms:</p><ul>
+<li>MD4</li>
+<li>MD5</li>
+<li>SHA-1</li>
+<li>SHA-2 (SHA-224, SHA-256, SHA-384, SHA-512)</li>
+<li>SHA-3 (SHA3-224, SHA3-256, SHA3-384, SHA3-512)</li>
+<li>BLAKE2 (BLAKE2b256, BLAKE2b512) (requires Qt 6, since <a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.5)</li>
+</ul>
+<dl class="section note"><dt>Note</dt><dd>Security notice: When using the content IDs to cache data between multiple entities it is important to avoid hash collisions. SHA-1 cannot fulfill this requirement. You SHOULD use another more secure hash algorithm if you do this.</dd></dl>
 <dl class="section since"><dt>Since</dt><dd><a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.2 </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ad56eae2542bcc731bce26e41a172f3dc"></a>
@@ -159,8 +168,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Returns the hash algorithm used to calculate the <code>hash</code> value</p>
-<p>The default value is <code>QCryptographicHash::Sha1</code>.</p>
-<p>This currently supports MD4, MD5, SHA-1, SHA-2 (SHA224 - SHA512) and SHA-3 (SHA3-224 - SHA3-512). </p>
+<p>The default value is <code>QCryptographicHash::Sha1</code>. </p>
 
 </div>
 </div>
@@ -342,8 +350,7 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Sets the hash algorithm used to calculate the <code>hash</code> value</p>
 <p>The default value is <code>QCryptographicHash::Sha1</code>.</p>
-<p>This currently supports MD4, MD5, SHA-1, SHA-2 (SHA224 - SHA512) and SHA-3 (SHA3-224 - SHA3-512).</p>
-<dl class="section note"><dt>Note</dt><dd>Only change this, if you know what you do. The XEP allows other hashing algorithms than SHA-1 to be used, but not all clients support this. Since in most cases the content id is not security relevant it is not a problem to continue using SHA-1. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Only change this, if you know what you do. The XEP allows other hashing algorithms than SHA-1 to be used, but not all clients support this. </dd></dl>
 
 </div>
 </div>
