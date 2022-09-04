@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['readme_776',['README',['../md__home_runner_work_qxmpp_qxmpp_src_omemo_README.html',1,'']]],
   ['rating_777',['rating',['../classQXmppTuneItem.html#a5fc6814711f3d0c04c5c9433187396bf',1,'QXmppTuneItem']]],
   ['reason_778',['reason',['../classQXmppJingleIq.html#a8fe7c62f476f4b136cfd0a75e1185b04',1,'QXmppJingleIq::reason()'],['../classQXmppMucItem.html#ab256c2fb8db63d0bb07e67a823eadbfe',1,'QXmppMucItem::reason()']]],
   ['receiptid_779',['receiptId',['../classQXmppMessage.html#a0323038ef0a0e9af8b620202fc7d53d8',1,'QXmppMessage']]],
