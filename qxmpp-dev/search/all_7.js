@@ -9,11 +9,12 @@ var searchData=
   ['hangup_295',['hangup',['../classQXmppCall.html#a36e4892d706ae7035d5973f6e3b6a7cb',1,'QXmppCall']]],
   ['hasgetpassword_296',['hasGetPassword',['../classQXmppPasswordChecker.html#a9bde785348b29053bd8734a8683c966d',1,'QXmppPasswordChecker']]],
   ['hash_297',['hash',['../classQXmppBitsOfBinaryContentId.html#af81c93d31948ce9a232bbc30c426fd07',1,'QXmppBitsOfBinaryContentId::hash()'],['../classQXmppTransferFileInfo.html#ac01fd5d1ecf05f7fc9dd422e9e90ee0c',1,'QXmppTransferFileInfo::hash()']]],
-  ['hashint_298',['hasHint',['../classQXmppMessage.html#abb7021231758f151244cc33cda873bed',1,'QXmppMessage']]],
-  ['hasiqid_299',['hasIqId',['../classQXmppStream.html#a1b3e769881b90d47f38d3f49d77dfea9',1,'QXmppStream']]],
-  ['haskey_300',['hasKey',['../classQXmppTrustManager.html#a70706bc29770976b135634b2081d7f2b',1,'QXmppTrustManager::hasKey()'],['../classQXmppTrustStorage.html#aacd5c89255f6d507391d064b4cd74596',1,'QXmppTrustStorage::hasKey()']]],
-  ['height_301',['height',['../classQXmppDataForm_1_1Media.html#ad8937beb7999cae942d76b5b49692c77',1,'QXmppDataForm::Media']]],
-  ['hint_302',['Hint',['../classQXmppMessage.html#aea1a3c281a281bc3a4fbc9f48b554256',1,'QXmppMessage']]],
-  ['host_303',['host',['../classQXmppByteStreamIq_1_1StreamHost.html#af8a4c4ac592b5820a43ee133eb4e6485',1,'QXmppByteStreamIq::StreamHost::host()'],['../classQXmppJingleCandidate.html#a7bd039198a8c4780cb92c43c6950cdfc',1,'QXmppJingleCandidate::host()'],['../classQXmppConfiguration.html#a0872d249e315a6392aaf1d112f8f369f',1,'QXmppConfiguration::host()']]],
-  ['hosttype_304',['HostType',['../classQXmppJingleCandidate.html#a6314b3ed7de59b68131db6ffab55fe7da65d68dede680215e9739c30ca79a1da5',1,'QXmppJingleCandidate']]]
+  ['hashalgorithm_298',['HashAlgorithm',['../namespaceQXmpp.html#af5aa49221acc9f0cc09a76c2bdfd92f2',1,'QXmpp']]],
+  ['hashint_299',['hasHint',['../classQXmppMessage.html#abb7021231758f151244cc33cda873bed',1,'QXmppMessage']]],
+  ['hasiqid_300',['hasIqId',['../classQXmppStream.html#a1b3e769881b90d47f38d3f49d77dfea9',1,'QXmppStream']]],
+  ['haskey_301',['hasKey',['../classQXmppTrustManager.html#a70706bc29770976b135634b2081d7f2b',1,'QXmppTrustManager::hasKey()'],['../classQXmppTrustStorage.html#aacd5c89255f6d507391d064b4cd74596',1,'QXmppTrustStorage::hasKey()']]],
+  ['height_302',['height',['../classQXmppDataForm_1_1Media.html#ad8937beb7999cae942d76b5b49692c77',1,'QXmppDataForm::Media']]],
+  ['hint_303',['Hint',['../classQXmppMessage.html#aea1a3c281a281bc3a4fbc9f48b554256',1,'QXmppMessage']]],
+  ['host_304',['host',['../classQXmppByteStreamIq_1_1StreamHost.html#af8a4c4ac592b5820a43ee133eb4e6485',1,'QXmppByteStreamIq::StreamHost::host()'],['../classQXmppJingleCandidate.html#a7bd039198a8c4780cb92c43c6950cdfc',1,'QXmppJingleCandidate::host()'],['../classQXmppConfiguration.html#a0872d249e315a6392aaf1d112f8f369f',1,'QXmppConfiguration::host()']]],
+  ['hosttype_305',['HostType',['../classQXmppJingleCandidate.html#a6314b3ed7de59b68131db6ffab55fe7da65d68dede680215e9739c30ca79a1da5',1,'QXmppJingleCandidate']]]
 ];
