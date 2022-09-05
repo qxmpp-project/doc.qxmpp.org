@@ -35,7 +35,7 @@ var searchData=
   ['affiliation_1616',['affiliation',['../classQXmppMucItem.html#a6cc7d705d6982070334a1962a3762d46',1,'QXmppMucItem']]],
   ['affiliations_1617',['affiliations',['../classQXmppPubSubIqBase.html#afd6912b0014e848c2aa857aebb681ffe',1,'QXmppPubSubIqBase']]],
   ['after_1618',['after',['../classQXmppResultSetQuery.html#a5586b012aa32e5530796b8b893df0a76',1,'QXmppResultSetQuery']]],
-  ['algorithm_1619',['algorithm',['../classQXmppBitsOfBinaryContentId.html#acde39463a40a1c377e5a455107adba7c',1,'QXmppBitsOfBinaryContentId']]],
+  ['algorithm_1619',['algorithm',['../classQXmppBitsOfBinaryContentId.html#acde39463a40a1c377e5a455107adba7c',1,'QXmppBitsOfBinaryContentId::algorithm()'],['../classQXmppHash.html#ae59aa7272689775a010e6ce2fa804a66',1,'QXmppHash::algorithm()'],['../classQXmppHashUsed.html#af2b2a46babcdb9a219cb85895fff4822',1,'QXmppHashUsed::algorithm()']]],
   ['alldata_1620',['allData',['../classQXmppOmemoStorage.html#a1208b4957c9c1b6c879cbe3454e19079',1,'QXmppOmemoStorage']]],
   ['alldevicesremoved_1621',['allDevicesRemoved',['../classQXmppOmemoManager.html#a4ba3b3d203b82343944bb300b4cb7529',1,'QXmppOmemoManager']]],
   ['allowedactions_1622',['allowedActions',['../classQXmppMucRoom.html#aab4b85581430951ae633e5030bace7e6',1,'QXmppMucRoom']]],

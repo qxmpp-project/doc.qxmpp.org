@@ -8,7 +8,7 @@ var searchData=
   ['handlestream_1832',['handleStream',['../classQXmppStream.html#adda64f130a59719e241eea89b31c27fe',1,'QXmppStream']]],
   ['hangup_1833',['hangup',['../classQXmppCall.html#a36e4892d706ae7035d5973f6e3b6a7cb',1,'QXmppCall']]],
   ['hasgetpassword_1834',['hasGetPassword',['../classQXmppPasswordChecker.html#a9bde785348b29053bd8734a8683c966d',1,'QXmppPasswordChecker']]],
-  ['hash_1835',['hash',['../classQXmppBitsOfBinaryContentId.html#af81c93d31948ce9a232bbc30c426fd07',1,'QXmppBitsOfBinaryContentId::hash()'],['../classQXmppTransferFileInfo.html#ac01fd5d1ecf05f7fc9dd422e9e90ee0c',1,'QXmppTransferFileInfo::hash()']]],
+  ['hash_1835',['hash',['../classQXmppBitsOfBinaryContentId.html#af81c93d31948ce9a232bbc30c426fd07',1,'QXmppBitsOfBinaryContentId::hash()'],['../classQXmppHash.html#ac3bd2af7576f667a29110cc4fd30b3ff',1,'QXmppHash::hash()'],['../classQXmppTransferFileInfo.html#ac01fd5d1ecf05f7fc9dd422e9e90ee0c',1,'QXmppTransferFileInfo::hash()']]],
   ['hashint_1836',['hasHint',['../classQXmppMessage.html#abb7021231758f151244cc33cda873bed',1,'QXmppMessage']]],
   ['hasiqid_1837',['hasIqId',['../classQXmppStream.html#a1b3e769881b90d47f38d3f49d77dfea9',1,'QXmppStream']]],
   ['haskey_1838',['hasKey',['../classQXmppTrustManager.html#a70706bc29770976b135634b2081d7f2b',1,'QXmppTrustManager::hasKey()'],['../classQXmppTrustStorage.html#aacd5c89255f6d507391d064b4cd74596',1,'QXmppTrustStorage::hasKey()']]],

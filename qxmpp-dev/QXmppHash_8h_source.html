@@ -113,29 +113,39 @@ $(function() {
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordtype">bool</span> parse(<span class="keyword">const</span> QDomElement &amp;el);</div>
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordtype">void</span> toXml(QXmlStreamWriter *writer) <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <a class="code" href="namespaceQXmpp.html#af5aa49221acc9f0cc09a76c2bdfd92f2">QXmpp::HashAlgorithm</a> m_algorithm = QXmpp::HashAlgorithm::Unknown;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    QByteArray m_hash;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;};</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="classQXmppHashUsed.html">   51</a></span>&#160;<span class="keyword">class </span>QXMPP_EXPORT <a class="code" href="classQXmppHashUsed.html">QXmppHashUsed</a></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;{</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <a class="code" href="classQXmppHashUsed.html">QXmppHashUsed</a>();</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">bool</span> parse(<span class="keyword">const</span> QDomElement &amp;el);</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">void</span> toXml(QXmlStreamWriter *writer) <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <a class="code" href="namespaceQXmpp.html#af5aa49221acc9f0cc09a76c2bdfd92f2">QXmpp::HashAlgorithm</a> m_algorithm = QXmpp::HashAlgorithm::Unknown;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;};</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">#endif  // QXMPPHASH_H</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <a class="code" href="namespaceQXmpp.html#af5aa49221acc9f0cc09a76c2bdfd92f2">QXmpp::HashAlgorithm</a> algorithm() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordtype">void</span> setAlgorithm(<a class="code" href="namespaceQXmpp.html#af5aa49221acc9f0cc09a76c2bdfd92f2">QXmpp::HashAlgorithm</a> algorithm);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    QByteArray hash() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordtype">void</span> setHash(<span class="keyword">const</span> QByteArray &amp;data);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <a class="code" href="namespaceQXmpp.html#af5aa49221acc9f0cc09a76c2bdfd92f2">QXmpp::HashAlgorithm</a> m_algorithm = QXmpp::HashAlgorithm::Unknown;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    QByteArray m_hash;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;};</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="classQXmppHashUsed.html">   57</a></span>&#160;<span class="keyword">class </span>QXMPP_EXPORT <a class="code" href="classQXmppHashUsed.html">QXmppHashUsed</a></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;{</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <a class="code" href="classQXmppHashUsed.html">QXmppHashUsed</a>();</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <a class="code" href="classQXmppHashUsed.html">QXmppHashUsed</a>(<a class="code" href="namespaceQXmpp.html#af5aa49221acc9f0cc09a76c2bdfd92f2">QXmpp::HashAlgorithm</a> algorithm);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keywordtype">bool</span> parse(<span class="keyword">const</span> QDomElement &amp;el);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordtype">void</span> toXml(QXmlStreamWriter *writer) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <a class="code" href="namespaceQXmpp.html#af5aa49221acc9f0cc09a76c2bdfd92f2">QXmpp::HashAlgorithm</a> algorithm() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordtype">void</span> setAlgorithm(<a class="code" href="namespaceQXmpp.html#af5aa49221acc9f0cc09a76c2bdfd92f2">QXmpp::HashAlgorithm</a> algorithm);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <a class="code" href="namespaceQXmpp.html#af5aa49221acc9f0cc09a76c2bdfd92f2">QXmpp::HashAlgorithm</a> m_algorithm = QXmpp::HashAlgorithm::Unknown;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;};</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor">#endif  // QXMPPHASH_H</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="anamespaceQXmpp_html"><div class="ttname"><a href="namespaceQXmpp.html">QXmpp</a></div></div>
 <div class="ttc" id="aclassQXmppHash_html"><div class="ttname"><a href="classQXmppHash.html">QXmppHash</a></div><div class="ttdef"><b>Definition:</b> QXmppHash.h:36</div></div>
 <div class="ttc" id="anamespaceQXmpp_html_af5aa49221acc9f0cc09a76c2bdfd92f2"><div class="ttname"><a href="namespaceQXmpp.html#af5aa49221acc9f0cc09a76c2bdfd92f2">QXmpp::HashAlgorithm</a></div><div class="ttdeci">HashAlgorithm</div><div class="ttdef"><b>Definition:</b> QXmppHash.h:17</div></div>
-<div class="ttc" id="aclassQXmppHashUsed_html"><div class="ttname"><a href="classQXmppHashUsed.html">QXmppHashUsed</a></div><div class="ttdef"><b>Definition:</b> QXmppHash.h:51</div></div>
+<div class="ttc" id="aclassQXmppHashUsed_html"><div class="ttname"><a href="classQXmppHashUsed.html">QXmppHashUsed</a></div><div class="ttdef"><b>Definition:</b> QXmppHash.h:57</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

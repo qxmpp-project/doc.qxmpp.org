@@ -40,7 +40,7 @@ var searchData=
   ['affiliations_37',['affiliations',['../classQXmppPubSubIqBase.html#afd6912b0014e848c2aa857aebb681ffe',1,'QXmppPubSubIqBase']]],
   ['affiliationsresult_38',['AffiliationsResult',['../classQXmppPubSubManager.html#a10649f3bd71dff052b6f44b1839c5dfd',1,'QXmppPubSubManager']]],
   ['after_39',['after',['../classQXmppResultSetQuery.html#a5586b012aa32e5530796b8b893df0a76',1,'QXmppResultSetQuery']]],
-  ['algorithm_40',['algorithm',['../classQXmppBitsOfBinaryContentId.html#acde39463a40a1c377e5a455107adba7c',1,'QXmppBitsOfBinaryContentId']]],
+  ['algorithm_40',['algorithm',['../classQXmppBitsOfBinaryContentId.html#acde39463a40a1c377e5a455107adba7c',1,'QXmppBitsOfBinaryContentId::algorithm()'],['../classQXmppHash.html#ae59aa7272689775a010e6ce2fa804a66',1,'QXmppHash::algorithm()'],['../classQXmppHashUsed.html#af2b2a46babcdb9a219cb85895fff4822',1,'QXmppHashUsed::algorithm()']]],
   ['alldata_41',['allData',['../classQXmppOmemoStorage.html#a1208b4957c9c1b6c879cbe3454e19079',1,'QXmppOmemoStorage']]],
   ['alldevicesremoved_42',['allDevicesRemoved',['../classQXmppOmemoManager.html#a4ba3b3d203b82343944bb300b4cb7529',1,'QXmppOmemoManager']]],
   ['allowedactions_43',['allowedActions',['../classQXmppMucRoom.html#a3b41defb3bcf48bf7ce51c8163aac803',1,'QXmppMucRoom::allowedActions()'],['../classQXmppMucRoom.html#aab4b85581430951ae633e5030bace7e6',1,'QXmppMucRoom::allowedActions() const']]],

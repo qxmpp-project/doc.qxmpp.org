@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['unrespondedreceivedstanzascount_2759',['unrespondedReceivedStanzasCount',['../structQXmppOmemoStorage_1_1Device.html#a395867fc7d995a506cbaf72123e10fa2',1,'QXmppOmemoStorage::Device']]],
-  ['unrespondedsentstanzascount_2760',['unrespondedSentStanzasCount',['../structQXmppOmemoStorage_1_1Device.html#a3655ffc955c3afe6db0b45b54da8aa5b',1,'QXmppOmemoStorage::Device']]]
+  ['unrespondedreceivedstanzascount_2760',['unrespondedReceivedStanzasCount',['../structQXmppOmemoStorage_1_1Device.html#a395867fc7d995a506cbaf72123e10fa2',1,'QXmppOmemoStorage::Device']]],
+  ['unrespondedsentstanzascount_2761',['unrespondedSentStanzasCount',['../structQXmppOmemoStorage_1_1Device.html#a3655ffc955c3afe6db0b45b54da8aa5b',1,'QXmppOmemoStorage::Device']]]
 ];
