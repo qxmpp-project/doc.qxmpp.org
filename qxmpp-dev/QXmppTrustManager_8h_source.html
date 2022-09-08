@@ -115,21 +115,19 @@ $(function() {
 <div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    QFuture&lt;void&gt; resetAll(<span class="keyword">const</span> QString &amp;encryption);</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classQXmppClientExtension.html#af836e49c31e96854b8d344f29f7e6b54">handleStanza</a>(<span class="keyword">const</span> QDomElement &amp;stanza) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    Q_SIGNAL <span class="keywordtype">void</span> trustLevelsChanged(<span class="keyword">const</span> QHash&lt;QString, QMultiHash&lt;QString, QByteArray&gt;&gt; &amp;modifiedKeys);</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keyword">inline</span> <a class="code" href="classQXmppTrustStorage.html">QXmppTrustStorage</a> *trustStorage()<span class="keyword"> const</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="keyword">    </span>{</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="keywordflow">return</span> m_trustStorage;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    }</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    Q_SIGNAL <span class="keywordtype">void</span> trustLevelsChanged(<span class="keyword">const</span> QHash&lt;QString, QMultiHash&lt;QString, QByteArray&gt;&gt; &amp;modifiedKeys);</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keyword">inline</span> <a class="code" href="classQXmppTrustStorage.html">QXmppTrustStorage</a> *trustStorage()<span class="keyword"> const</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;<span class="keyword">    </span>{</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="keywordflow">return</span> m_trustStorage;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    }</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <a class="code" href="classQXmppTrustStorage.html">QXmppTrustStorage</a> *m_trustStorage;</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;};</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <a class="code" href="classQXmppTrustStorage.html">QXmppTrustStorage</a> *m_trustStorage;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;};</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor">#endif  // QXMPPTRUSTMANAGER_H</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor">#endif  // QXMPPTRUSTMANAGER_H</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aclassQXmppTrustManager_html"><div class="ttname"><a href="classQXmppTrustManager.html">QXmppTrustManager</a></div><div class="ttdoc">The QXmppTrustManager manages end-to-end encryption trust decisions.</div><div class="ttdef"><b>Definition:</b> QXmppTrustManager.h:16</div></div>
 <div class="ttc" id="aclassQXmppClientExtension_html"><div class="ttname"><a href="classQXmppClientExtension.html">QXmppClientExtension</a></div><div class="ttdoc">The QXmppClientExtension class is the base class for QXmppClient extensions.</div><div class="ttdef"><b>Definition:</b> QXmppClientExtension.h:32</div></div>
@@ -137,7 +135,6 @@ $(function() {
 <div class="ttc" id="anamespaceQXmpp_html_af6e4885b9b07444825d3bf59877a1f10"><div class="ttname"><a href="namespaceQXmpp.html#af6e4885b9b07444825d3bf59877a1f10">QXmpp::TrustSecurityPolicy</a></div><div class="ttdeci">TrustSecurityPolicy</div><div class="ttdef"><b>Definition:</b> QXmppTrustSecurityPolicy.h:18</div></div>
 <div class="ttc" id="aclassQXmppTrustStorage_html"><div class="ttname"><a href="classQXmppTrustStorage.html">QXmppTrustStorage</a></div><div class="ttdoc">The QXmppTrustStorage class stores end-to-end encryption trust data.</div><div class="ttdef"><b>Definition:</b> QXmppTrustStorage.h:14</div></div>
 <div class="ttc" id="anamespaceQXmpp_html_a71207ba76216075cc013b3fe8ed66b84af474e5b54db6db3384b6c11fb7daccf8"><div class="ttname"><a href="namespaceQXmpp.html#a71207ba76216075cc013b3fe8ed66b84af474e5b54db6db3384b6c11fb7daccf8">QXmpp::TrustLevel::AutomaticallyDistrusted</a></div><div class="ttdeci">@ AutomaticallyDistrusted</div></div>
-<div class="ttc" id="aclassQXmppClientExtension_html_af836e49c31e96854b8d344f29f7e6b54"><div class="ttname"><a href="classQXmppClientExtension.html#af836e49c31e96854b8d344f29f7e6b54">QXmppClientExtension::handleStanza</a></div><div class="ttdeci">virtual bool handleStanza(const QDomElement &amp;stanza)</div><div class="ttdoc">You need to implement this method to process incoming XMPP stanzas.</div><div class="ttdef"><b>Definition:</b> QXmppClientExtension.cpp:60</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

@@ -141,6 +141,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:aec299452688f50431f1028668186e3ec inherit pub_methods_classQXmppClientExtension"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a71a4c2372fa29521c6d9dec1db43a9d4 inherit pub_methods_classQXmppClientExtension"><td class="memItemLeft" align="right" valign="top">virtual QList&lt; <a class="el" href="classQXmppDiscoveryIq_1_1Identity.html">QXmppDiscoveryIq::Identity</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppClientExtension.html#a71a4c2372fa29521c6d9dec1db43a9d4">discoveryIdentities</a> () const</td></tr>
 <tr class="separator:a71a4c2372fa29521c6d9dec1db43a9d4 inherit pub_methods_classQXmppClientExtension"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af836e49c31e96854b8d344f29f7e6b54 inherit pub_methods_classQXmppClientExtension"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppClientExtension.html#af836e49c31e96854b8d344f29f7e6b54">handleStanza</a> (const QDomElement &amp;stanza)</td></tr>
+<tr class="memdesc:af836e49c31e96854b8d344f29f7e6b54 inherit pub_methods_classQXmppClientExtension"><td class="mdescLeft">&#160;</td><td class="mdescRight">You need to implement this method to process incoming XMPP stanzas.  <a href="classQXmppClientExtension.html#af836e49c31e96854b8d344f29f7e6b54">More...</a><br /></td></tr>
+<tr class="separator:af836e49c31e96854b8d344f29f7e6b54 inherit pub_methods_classQXmppClientExtension"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a85897e9335e7d15cacbf974caa37459d inherit pub_methods_classQXmppClientExtension"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppClientExtension.html#a85897e9335e7d15cacbf974caa37459d">handleStanza</a> (const QDomElement &amp;stanza, const std::optional&lt; <a class="el" href="classQXmppE2eeMetadata.html">QXmppE2eeMetadata</a> &gt; &amp;e2eeMetadata)</td></tr>
 <tr class="memdesc:a85897e9335e7d15cacbf974caa37459d inherit pub_methods_classQXmppClientExtension"><td class="mdescLeft">&#160;</td><td class="mdescRight">You need to implement this method to process incoming XMPP stanzas.  <a href="classQXmppClientExtension.html#a85897e9335e7d15cacbf974caa37459d">More...</a><br /></td></tr>
 <tr class="separator:a85897e9335e7d15cacbf974caa37459d inherit pub_methods_classQXmppClientExtension"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -152,8 +155,6 @@ Public Member Functions</h2></td></tr>
 Protected Member Functions</h2></td></tr>
 <tr class="memitem:aba99c6c7fcda0c358c956999d28c2af3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppAttentionManager.html#aba99c6c7fcda0c358c956999d28c2af3">setClient</a> (<a class="el" href="classQXmppClient.html">QXmppClient</a> *<a class="el" href="classQXmppClientExtension.html#a2476cb1a20963d15d45d39f24a0c1198">client</a>) override</td></tr>
 <tr class="separator:aba99c6c7fcda0c358c956999d28c2af3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a240a2a202362b70adf5ae03a3ed799ec"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppAttentionManager.html#a240a2a202362b70adf5ae03a3ed799ec">handleStanza</a> (const QDomElement &amp;stanza) override</td></tr>
-<tr class="separator:a240a2a202362b70adf5ae03a3ed799ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_classQXmppClientExtension"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classQXmppClientExtension')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classQXmppClientExtension.html">QXmppClientExtension</a></td></tr>
 <tr class="memitem:a2476cb1a20963d15d45d39f24a0c1198 inherit pro_methods_classQXmppClientExtension"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classQXmppClient.html">QXmppClient</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppClientExtension.html#a2476cb1a20963d15d45d39f24a0c1198">client</a> ()</td></tr>
 <tr class="separator:a2476cb1a20963d15d45d39f24a0c1198 inherit pro_methods_classQXmppClientExtension"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -368,35 +369,6 @@ Protected Member Functions</h2></td></tr>
 <p>Returns the <a href="https://xmpp.org/extensions/xep-0224.html">XEP-0224</a>: Attention feature. </p>
 
 <p>Reimplemented from <a class="el" href="classQXmppClientExtension.html#a3ef15300fd584457adc40378a3103511">QXmppClientExtension</a>.</p>
-
-</div>
-</div>
-<a id="a240a2a202362b70adf5ae03a3ed799ec"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a240a2a202362b70adf5ae03a3ed799ec">&#9670;&nbsp;</a></span>handleStanza()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool QXmppAttentionManager::handleStanza </td>
-          <td>(</td>
-          <td class="paramtype">const QDomElement &amp;&#160;</td>
-          <td class="paramname"><em>stanza</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Empty reimplementation </p>
-
-<p>Reimplemented from <a class="el" href="classQXmppClientExtension.html#af836e49c31e96854b8d344f29f7e6b54">QXmppClientExtension</a>.</p>
 
 </div>
 </div>
