@@ -14,5 +14,7 @@ var searchData=
   ['bookmarksreceived_85',['bookmarksReceived',['../classQXmppBookmarkManager.html#a6b4c3ebab3bc03e313dc3b5392394a6c',1,'QXmppBookmarkManager']]],
   ['both_86',['Both',['../classQXmppRosterIq_1_1Item.html#a0133cf9262cec7e299c4db7c247c5514ad7dc2c24e3f207106bad568b6d705df7',1,'QXmppRosterIq::Item']]],
   ['buildmissingsessions_87',['buildMissingSessions',['../classQXmppOmemoManager.html#ab051d1daf6fe0cbc5f56bb458160d47c',1,'QXmppOmemoManager']]],
-  ['by_88',['by',['../classQXmppStanza_1_1Error.html#ab760c0d46bbd60c7492f7c48148f9996',1,'QXmppStanza::Error']]]
+  ['by_88',['by',['../classQXmppStanza_1_1Error.html#ab760c0d46bbd60c7492f7c48148f9996',1,'QXmppStanza::Error']]],
+  ['bytessent_89',['bytesSent',['../classQXmppHttpUpload.html#a9c59992ef7baa73f772c53071b39d53d',1,'QXmppHttpUpload']]],
+  ['bytestotal_90',['bytesTotal',['../classQXmppHttpUpload.html#a90cc4bb0cb6e12e0e98b271a6a587433',1,'QXmppHttpUpload']]]
 ];

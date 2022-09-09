@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['name_3011',['name',['../classQXmppMucRoom.html#a8cc33fb2f68adaf228a690e82705cf93',1,'QXmppMucRoom']]],
-  ['nickname_3012',['nickName',['../classQXmppMucRoom.html#a4206fcda2f174de64c6de1416ce516a9',1,'QXmppMucRoom']]]
+  ['messagetypes_3038',['messageTypes',['../classQXmppLogger.html#a556ae378cb65e19460436437fa155ef2',1,'QXmppLogger']]],
+  ['method_3039',['method',['../classQXmppTransferJob.html#ae32e312cab4321da1a55e6caec7630e2',1,'QXmppTransferJob']]]
 ];

@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['participants_3013',['participants',['../classQXmppMucRoom.html#a8ebbaed22c263503552704ce308d8c42',1,'QXmppMucRoom']]],
-  ['password_3014',['password',['../classQXmppMucRoom.html#a823200ee661315b757accce9da0313eb',1,'QXmppMucRoom']]],
-  ['proxy_3015',['proxy',['../classQXmppTransferManager.html#a36e5597ad06a669e4eb136862f142e7d',1,'QXmppTransferManager']]],
-  ['proxyonly_3016',['proxyOnly',['../classQXmppTransferManager.html#ad68788ad3eddce442b2b2e231021c24e',1,'QXmppTransferManager']]]
+  ['name_3040',['name',['../classQXmppMucRoom.html#a8cc33fb2f68adaf228a690e82705cf93',1,'QXmppMucRoom']]],
+  ['nickname_3041',['nickName',['../classQXmppMucRoom.html#a4206fcda2f174de64c6de1416ce516a9',1,'QXmppMucRoom']]]
 ];

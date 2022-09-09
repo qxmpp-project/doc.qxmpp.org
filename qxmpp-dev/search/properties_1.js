@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['direction_2999',['direction',['../classQXmppCall.html#a46873b89c65841319ed4a9ea9580df6e',1,'QXmppCall::direction()'],['../classQXmppTransferJob.html#ae38d5fe89922d7cdf702172f80d827e0',1,'QXmppTransferJob::direction()']]]
+  ['bytessent_3026',['bytesSent',['../classQXmppHttpUpload.html#a9c59992ef7baa73f772c53071b39d53d',1,'QXmppHttpUpload']]],
+  ['bytestotal_3027',['bytesTotal',['../classQXmppHttpUpload.html#a90cc4bb0cb6e12e0e98b271a6a587433',1,'QXmppHttpUpload']]]
 ];

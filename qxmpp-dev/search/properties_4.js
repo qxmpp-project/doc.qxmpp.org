@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['isjoined_3003',['isJoined',['../classQXmppMucRoom.html#ae2f74618afc16039b63da11b7eb91829',1,'QXmppMucRoom']]]
+  ['gatheringstate_3031',['gatheringState',['../classQXmppIceConnection.html#a6e655b651dbcb2fb0d3b6b4c693d15f3',1,'QXmppIceConnection']]]
 ];
