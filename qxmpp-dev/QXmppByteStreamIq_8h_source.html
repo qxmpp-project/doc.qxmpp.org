@@ -84,7 +84,7 @@ $(function() {
 <div class="line"><a name="l00012"></a><span class="lineno"><a class="line" href="classQXmppByteStreamIq.html">   12</a></span>&#160;<span class="keyword">class </span>QXMPP_EXPORT <a class="code" href="classQXmppByteStreamIq.html">QXmppByteStreamIq</a> : <span class="keyword">public</span> <a class="code" href="classQXmppIq.html">QXmppIq</a></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;{</div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;    <span class="keyword">enum</span> Mode {</div>
+<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="classQXmppByteStreamIq.html#a467cc71e3e719be13d642518801afb56">   15</a></span>&#160;    <span class="keyword">enum</span> <a class="code" href="classQXmppByteStreamIq.html#a467cc71e3e719be13d642518801afb56">Mode</a> {</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        None = 0,</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        Tcp,</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;        Udp</div>
@@ -112,8 +112,8 @@ $(function() {
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        QString m_zeroconf;</div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    };</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    QXmppByteStreamIq::Mode mode() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">void</span> setMode(QXmppByteStreamIq::Mode mode);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <a class="code" href="classQXmppByteStreamIq.html#a467cc71e3e719be13d642518801afb56">QXmppByteStreamIq::Mode</a> mode() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordtype">void</span> setMode(<a class="code" href="classQXmppByteStreamIq.html#a467cc71e3e719be13d642518801afb56">QXmppByteStreamIq::Mode</a> mode);</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    QString sid() <span class="keyword">const</span>;</div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordtype">void</span> setSid(<span class="keyword">const</span> QString &amp;sid);</div>
@@ -134,7 +134,7 @@ $(function() {
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordtype">void</span> toXmlElementFromChild(QXmlStreamWriter *writer) <span class="keyword">const override</span>;</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    Mode m_mode = None;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <a class="code" href="classQXmppByteStreamIq.html#a467cc71e3e719be13d642518801afb56">Mode</a> m_mode = None;</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    QString m_sid;</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    QString m_activate;</div>
@@ -144,6 +144,7 @@ $(function() {
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="aclassQXmppByteStreamIq_html_a467cc71e3e719be13d642518801afb56"><div class="ttname"><a href="classQXmppByteStreamIq.html#a467cc71e3e719be13d642518801afb56">QXmppByteStreamIq::Mode</a></div><div class="ttdeci">Mode</div><div class="ttdef"><b>Definition:</b> QXmppByteStreamIq.h:15</div></div>
 <div class="ttc" id="aclassQXmppByteStreamIq_1_1StreamHost_html"><div class="ttname"><a href="classQXmppByteStreamIq_1_1StreamHost.html">QXmppByteStreamIq::StreamHost</a></div><div class="ttdef"><b>Definition:</b> QXmppByteStreamIq.h:21</div></div>
 <div class="ttc" id="aclassQXmppByteStreamIq_html"><div class="ttname"><a href="classQXmppByteStreamIq.html">QXmppByteStreamIq</a></div><div class="ttdef"><b>Definition:</b> QXmppByteStreamIq.h:12</div></div>
 <div class="ttc" id="aclassQXmppIq_html"><div class="ttname"><a href="classQXmppIq.html">QXmppIq</a></div><div class="ttdoc">The QXmppIq class is the base class for all IQs.</div><div class="ttdef"><b>Definition:</b> QXmppIq.h:22</div></div>
