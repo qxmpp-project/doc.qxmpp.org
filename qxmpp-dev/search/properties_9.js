@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['name_3056',['name',['../classQXmppMucRoom.html#a8cc33fb2f68adaf228a690e82705cf93',1,'QXmppMucRoom']]],
-  ['nickname_3057',['nickName',['../classQXmppMucRoom.html#a4206fcda2f174de64c6de1416ce516a9',1,'QXmppMucRoom']]]
+  ['name_3058',['name',['../classQXmppMucRoom.html#a8cc33fb2f68adaf228a690e82705cf93',1,'QXmppMucRoom']]],
+  ['nickname_3059',['nickName',['../classQXmppMucRoom.html#a4206fcda2f174de64c6de1416ce516a9',1,'QXmppMucRoom']]]
 ];

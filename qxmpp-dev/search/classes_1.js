@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['error_1457',['Error',['../classQXmppStanza_1_1Error.html',1,'QXmppStanza']]]
+  ['device_1458',['Device',['../structQXmppOmemoStorage_1_1Device.html',1,'QXmppOmemoStorage']]]
 ];

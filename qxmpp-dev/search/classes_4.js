@@ -1,5 +1,7 @@
 var searchData=
 [
-  ['media_1463',['Media',['../classQXmppDataForm_1_1Media.html',1,'QXmppDataForm']]],
-  ['mediasource_1464',['MediaSource',['../classQXmppDataForm_1_1MediaSource.html',1,'QXmppDataForm']]]
+  ['identity_1461',['Identity',['../classQXmppDiscoveryIq_1_1Identity.html',1,'QXmppDiscoveryIq']]],
+  ['invalidservicetype_1462',['InvalidServiceType',['../structQXmppPubSubManager_1_1InvalidServiceType.html',1,'QXmppPubSubManager']]],
+  ['item_1463',['Item',['../classQXmppDiscoveryIq_1_1Item.html',1,'QXmppDiscoveryIq::Item'],['../classQXmppRosterIq_1_1Item.html',1,'QXmppRosterIq::Item']]],
+  ['items_3c_20t_20_3e_1464',['Items&lt; T &gt;',['../structQXmppPubSubManager_1_1Items_3_01T_01_4.html',1,'']]]
 ];
