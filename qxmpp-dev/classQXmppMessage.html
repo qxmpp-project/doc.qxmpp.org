@@ -333,6 +333,10 @@ QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
 <tr class="separator:a018cf876c41c5b070261c51645610d33"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae454b14a553d3d8d1a26ab5e628540e0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppMessage.html#ae454b14a553d3d8d1a26ab5e628540e0">setTrustMessageElement</a> (const std::optional&lt; <a class="el" href="classQXmppTrustMessageElement.html">QXmppTrustMessageElement</a> &gt; &amp;<a class="el" href="classQXmppMessage.html#a018cf876c41c5b070261c51645610d33">trustMessageElement</a>)</td></tr>
 <tr class="separator:ae454b14a553d3d8d1a26ab5e628540e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbf2c4378599a8731194b68b42234d25"><td class="memItemLeft" align="right" valign="top">const QVector&lt; QXmppFileShare &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppMessage.html#afbf2c4378599a8731194b68b42234d25">sharedFiles</a> () const</td></tr>
+<tr class="separator:afbf2c4378599a8731194b68b42234d25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74657f08fb8cd18f929fad99f44f0e12"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppMessage.html#a74657f08fb8cd18f929fad99f44f0e12">setSharedFiles</a> (const QVector&lt; QXmppFileShare &gt; &amp;<a class="el" href="classQXmppMessage.html#afbf2c4378599a8731194b68b42234d25">sharedFiles</a>)</td></tr>
+<tr class="separator:a74657f08fb8cd18f929fad99f44f0e12"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a49032407565f1d04ff656f3b0fba72d2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppMessage.html#a49032407565f1d04ff656f3b0fba72d2">parseExtensions</a> (const QDomElement &amp;element, <a class="el" href="namespaceQXmpp.html#abc6005b5a30290db2a9da3a9dde99a0d">QXmpp::SceMode</a> sceMode)</td></tr>
 <tr class="separator:a49032407565f1d04ff656f3b0fba72d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3a32f6da9f4136906339d3e408b1f81e"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppMessage.html#a3a32f6da9f4136906339d3e408b1f81e">parseExtension</a> (const QDomElement &amp;element, <a class="el" href="namespaceQXmpp.html#abc6005b5a30290db2a9da3a9dde99a0d">QXmpp::SceMode</a>)</td></tr>
@@ -1934,6 +1938,26 @@ If this returns QXmppMessage::UnknownEncryption, you can still get the namespace
 
 </div>
 </div>
+<a id="a74657f08fb8cd18f929fad99f44f0e12"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a74657f08fb8cd18f929fad99f44f0e12">&#9670;&nbsp;</a></span>setSharedFiles()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void QXmppMessage::setSharedFiles </td>
+          <td>(</td>
+          <td class="paramtype">const QVector&lt; QXmppFileShare &gt; &amp;&#160;</td>
+          <td class="paramname"><em>sharedFiles</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Sets the via <a href="https://xmpp.org/extensions/xep-0447.html">XEP-0447: Stateless file sharing</a> shared files attached to this message.</p>
+<dl class="section since"><dt>Since</dt><dd><a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.5 </dd></dl>
+
+</div>
+</div>
 <a id="ad0c1c13c3d6bc73443884f02ec42115f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad0c1c13c3d6bc73443884f02ec42115f">&#9670;&nbsp;</a></span>setSpoilerHint()</h2>
 
@@ -2149,6 +2173,25 @@ If this returns QXmppMessage::UnknownEncryption, you can still get the namespace
 </div><div class="memdoc">
 <p>Sets the message's XHTML body as defined by <a href="https://xmpp.org/extensions/xep-0071.html">XEP-0071</a>: XHTML-IM.</p>
 <dl class="section since"><dt>Since</dt><dd><a class="el" href="namespaceQXmpp.html">QXmpp</a> 0.6.2 </dd></dl>
+
+</div>
+</div>
+<a id="afbf2c4378599a8731194b68b42234d25"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afbf2c4378599a8731194b68b42234d25">&#9670;&nbsp;</a></span>sharedFiles()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const QVector&lt; QXmppFileShare &gt; &amp; QXmppMessage::sharedFiles </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns the via <a href="https://xmpp.org/extensions/xep-0447.html">XEP-0447: Stateless file sharing</a> shared files attached to this message.</p>
+<dl class="section since"><dt>Since</dt><dd><a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.5 </dd></dl>
 
 </div>
 </div>

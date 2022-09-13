@@ -10,7 +10,7 @@ var searchData=
   ['accountdeletionfailed_7',['accountDeletionFailed',['../classQXmppRegistrationManager.html#a84ed6adae4aea25bcf9ece962d5f7765',1,'QXmppRegistrationManager']]],
   ['accuracy_8',['accuracy',['../classQXmppGeolocItem.html#a5490a8e941d80108e9d00f912e8f2324',1,'QXmppGeolocItem']]],
   ['acknowledged_9',['acknowledged',['../structQXmpp_1_1SendSuccess.html#a006fb8f7ce4bcd5059031c7bbdc48c36',1,'QXmpp::SendSuccess']]],
-  ['action_10',['action',['../classQXmppJingleIq.html#a49345a778e6029be6e9e09b375b3d0d3',1,'QXmppJingleIq::action() const'],['../classQXmppJingleIq.html#accfb8d2dec7f9ee9a8de7bff4f1de1ec',1,'QXmppJingleIq::Action()'],['../classQXmppMucRoom.html#acd3129293f69d7e7cdd91b65aae0606f',1,'QXmppMucRoom::Action()']]],
+  ['action_10',['Action',['../classQXmppJingleIq.html#accfb8d2dec7f9ee9a8de7bff4f1de1ec',1,'QXmppJingleIq::Action()'],['../classQXmppMucRoom.html#acd3129293f69d7e7cdd91b65aae0606f',1,'QXmppMucRoom::Action()'],['../classQXmppJingleIq.html#a49345a778e6029be6e9e09b375b3d0d3',1,'QXmppJingleIq::action()']]],
   ['actiontype_11',['actionType',['../classQXmppMixIq.html#a5037a2e106272a7a3f751540c0efd33b',1,'QXmppMixIq']]],
   ['activate_12',['activate',['../classQXmppByteStreamIq.html#a8fe37004025269462761ed12419fed47',1,'QXmppByteStreamIq']]],
   ['active_13',['Active',['../classQXmppMessage.html#aeaa3cc5ccb7d451067a80dd1f3c7099aa2a197e88be8355a853534c2342e64c48',1,'QXmppMessage']]],
