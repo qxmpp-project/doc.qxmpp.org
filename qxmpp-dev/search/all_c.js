@@ -6,7 +6,7 @@ var searchData=
   ['manuallytrusted_477',['ManuallyTrusted',['../namespaceQXmpp.html#a71207ba76216075cc013b3fe8ed66b84a7a2fdf3bc836f955b17d42d8d6b5e4b9',1,'QXmpp']]],
   ['markedid_478',['markedId',['../classQXmppMessage.html#ab014941f4234640aac67b767f1183882',1,'QXmppMessage']]],
   ['markedthread_479',['markedThread',['../classQXmppMessage.html#a24ceb323b592d9b2effc27adcba12cd6',1,'QXmppMessage']]],
-  ['marker_480',['marker',['../classQXmppMessage.html#aeb6c92b4def46f7116af248cdb211361',1,'QXmppMessage::marker() const'],['../classQXmppMessage.html#ae9af426a9f7661b57cf654fa0fc7e313',1,'QXmppMessage::Marker()']]],
+  ['marker_480',['Marker',['../classQXmppMessage.html#ae9af426a9f7661b57cf654fa0fc7e313',1,'QXmppMessage::Marker()'],['../classQXmppMessage.html#aeb6c92b4def46f7116af248cdb211361',1,'QXmppMessage::marker() const']]],
   ['max_481',['max',['../classQXmppResultSetQuery.html#ab8f7078ab25a3d229121600a9334ffef',1,'QXmppResultSetQuery']]],
   ['maxage_482',['maxAge',['../classQXmppBitsOfBinaryData.html#a4853c64b86ce05d2f3d328ba1718e610',1,'QXmppBitsOfBinaryData']]],
   ['maxfilesize_483',['maxFileSize',['../classQXmppStanza_1_1Error.html#ae868dd0b6f1b287d4078e759cc108a1f',1,'QXmppStanza::Error']]],

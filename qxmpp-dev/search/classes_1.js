@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['device_1461',['Device',['../structQXmppOmemoStorage_1_1Device.html',1,'QXmppOmemoStorage']]]
+  ['device_1462',['Device',['../structQXmppOmemoStorage_1_1Device.html',1,'QXmppOmemoStorage']]]
 ];
