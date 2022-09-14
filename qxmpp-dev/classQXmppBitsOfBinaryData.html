@@ -125,6 +125,8 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a716a74aebc828dc8e9f7484afaf0e7a4"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classQXmppBitsOfBinaryData.html">QXmppBitsOfBinaryData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppBitsOfBinaryData.html#a716a74aebc828dc8e9f7484afaf0e7a4">fromByteArray</a> (QByteArray <a class="el" href="classQXmppBitsOfBinaryData.html#adeb011891a999ae222948c5bbc1084f9">data</a>)</td></tr>
+<tr class="separator:a716a74aebc828dc8e9f7484afaf0e7a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a17c091597d841c1394f3e63c3c64ca85"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppBitsOfBinaryData.html#a17c091597d841c1394f3e63c3c64ca85">isBitsOfBinaryData</a> (const QDomElement &amp;element)</td></tr>
 <tr class="separator:a17c091597d841c1394f3e63c3c64ca85"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
@@ -204,6 +206,36 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Returns the included data in binary form </p>
+
+</div>
+</div>
+<a id="a716a74aebc828dc8e9f7484afaf0e7a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a716a74aebc828dc8e9f7484afaf0e7a4">&#9670;&nbsp;</a></span>fromByteArray()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classQXmppBitsOfBinaryData.html">QXmppBitsOfBinaryData</a> QXmppBitsOfBinaryData::fromByteArray </td>
+          <td>(</td>
+          <td class="paramtype">QByteArray&#160;</td>
+          <td class="paramname"><em>data</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Creates bits of binary data from a QByteArray.</p>
+<p>This hashes the data to generate a content ID. The MIME type is not set.</p>
+<dl class="section note"><dt>Note</dt><dd>This blocks while hashing the data. You may want to run this via QtConcurrent or a QThreadPool to run this on for large amounts of data.</dd></dl>
+<dl class="section since"><dt>Since</dt><dd><a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.5 </dd></dl>
 
 </div>
 </div>

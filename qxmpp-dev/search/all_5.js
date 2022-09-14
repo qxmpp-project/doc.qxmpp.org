@@ -33,8 +33,9 @@ var searchData=
   ['formtype_263',['formType',['../classQXmppDataForm.html#ab4bf8c965a5fcfbda14783854f18d208',1,'QXmppDataForm::formType()'],['../classQXmppDataFormBase.html#a2ae5cb8eb2cfb81ab79dd6ed17b139ce',1,'QXmppDataFormBase::formType()'],['../classQXmppPubSubSubAuthorization.html#a74844168ba52370e6bf10f26216e7533',1,'QXmppPubSubSubAuthorization::formType()']]],
   ['foundation_264',['foundation',['../classQXmppJingleCandidate.html#acd1b02485658bb6469af182c5f4c4327',1,'QXmppJingleCandidate']]],
   ['from_265',['From',['../classQXmppRosterIq_1_1Item.html#a0133cf9262cec7e299c4db7c247c5514a05fc5ab28e5f745a116caf16dbb6b387',1,'QXmppRosterIq::Item::From()'],['../classQXmppStanza.html#a850ef9a2479cddcbd7657c65ca40b153',1,'QXmppStanza::from()']]],
-  ['fromcidurl_266',['fromCidUrl',['../classQXmppBitsOfBinaryContentId.html#a3ef8f24818dab7243a0b7f82ae7d5a58',1,'QXmppBitsOfBinaryContentId']]],
-  ['fromcontentid_267',['fromContentId',['../classQXmppBitsOfBinaryContentId.html#a28aee1dc5263cd863f8312d062553e7a',1,'QXmppBitsOfBinaryContentId']]],
-  ['fromdataform_268',['fromDataForm',['../classQXmppDataFormBase.html#a092696e88fd861a624ed902d498923bb',1,'QXmppDataFormBase::fromDataForm()'],['../classQXmppPubSubSubAuthorization.html#a6911006e7bed5a7d2a4e9b9d677011a3',1,'QXmppPubSubSubAuthorization::fromDataForm()']]],
-  ['fullname_269',['fullName',['../classQXmppVCardIq.html#a40cee2a7d8b353fff804cf582eda5684',1,'QXmppVCardIq']]]
+  ['frombytearray_266',['fromByteArray',['../classQXmppBitsOfBinaryData.html#a716a74aebc828dc8e9f7484afaf0e7a4',1,'QXmppBitsOfBinaryData']]],
+  ['fromcidurl_267',['fromCidUrl',['../classQXmppBitsOfBinaryContentId.html#a3ef8f24818dab7243a0b7f82ae7d5a58',1,'QXmppBitsOfBinaryContentId']]],
+  ['fromcontentid_268',['fromContentId',['../classQXmppBitsOfBinaryContentId.html#a28aee1dc5263cd863f8312d062553e7a',1,'QXmppBitsOfBinaryContentId']]],
+  ['fromdataform_269',['fromDataForm',['../classQXmppDataFormBase.html#a092696e88fd861a624ed902d498923bb',1,'QXmppDataFormBase::fromDataForm()'],['../classQXmppPubSubSubAuthorization.html#a6911006e7bed5a7d2a4e9b9d677011a3',1,'QXmppPubSubSubAuthorization::fromDataForm()']]],
+  ['fullname_270',['fullName',['../classQXmppVCardIq.html#a40cee2a7d8b353fff804cf582eda5684',1,'QXmppVCardIq']]]
 ];
