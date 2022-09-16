@@ -37,5 +37,6 @@ var searchData=
   ['fromcidurl_267',['fromCidUrl',['../classQXmppBitsOfBinaryContentId.html#a3ef8f24818dab7243a0b7f82ae7d5a58',1,'QXmppBitsOfBinaryContentId']]],
   ['fromcontentid_268',['fromContentId',['../classQXmppBitsOfBinaryContentId.html#a28aee1dc5263cd863f8312d062553e7a',1,'QXmppBitsOfBinaryContentId']]],
   ['fromdataform_269',['fromDataForm',['../classQXmppDataFormBase.html#a092696e88fd861a624ed902d498923bb',1,'QXmppDataFormBase::fromDataForm()'],['../classQXmppPubSubSubAuthorization.html#a6911006e7bed5a7d2a4e9b9d677011a3',1,'QXmppPubSubSubAuthorization::fromDataForm()']]],
-  ['fullname_270',['fullName',['../classQXmppVCardIq.html#a40cee2a7d8b353fff804cf582eda5684',1,'QXmppVCardIq']]]
+  ['fromiodevice_270',['fromIoDevice',['../structQXmppError.html#a4585954f194c27e4a425b0d3ca87ef18',1,'QXmppError']]],
+  ['fullname_271',['fullName',['../classQXmppVCardIq.html#a40cee2a7d8b353fff804cf582eda5684',1,'QXmppVCardIq']]]
 ];

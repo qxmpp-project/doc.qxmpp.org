@@ -64,6 +64,7 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="structQXmppError-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -89,6 +90,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a6d83cfc721844e40a464548565c7381a"><td class="memTemplItemLeft" align="right" valign="top">std::optional&lt; T &gt;&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="structQXmppError.html#a6d83cfc721844e40a464548565c7381a">takeValue</a> ()</td></tr>
 <tr class="separator:a6d83cfc721844e40a464548565c7381a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a4585954f194c27e4a425b0d3ca87ef18"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structQXmppError.html">QXmppError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structQXmppError.html#a4585954f194c27e4a425b0d3ca87ef18">fromIoDevice</a> (const QIODevice &amp;device)</td></tr>
+<tr class="separator:a4585954f194c27e4a425b0d3ca87ef18"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a21ebf80fda7bc2745f99b3aa2d915244"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structQXmppError.html#a21ebf80fda7bc2745f99b3aa2d915244">description</a></td></tr>
@@ -100,6 +106,34 @@ Public Attributes</h2></td></tr>
 <div class="textblock"><p>Generic error class holding a description and a more specific error object. The specific error usually is something like a <a class="el" href="classQXmppStanza_1_1Error.html" title="The Error class represents a stanza error.">QXmppStanza::Error</a> or an enum.</p>
 <dl class="section since"><dt>Since</dt><dd><a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.5 </dd></dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a4585954f194c27e4a425b0d3ca87ef18"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4585954f194c27e4a425b0d3ca87ef18">&#9670;&nbsp;</a></span>fromIoDevice()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structQXmppError.html">QXmppError</a> QXmppError::fromIoDevice </td>
+          <td>(</td>
+          <td class="paramtype">const QIODevice &amp;&#160;</td>
+          <td class="paramname"><em>device</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Constructs a <a class="el" href="structQXmppError.html">QXmppError</a> from an QIODevice</p>
+<p>It tries to cast the IO device to different known IO devices to get a useful more specific error, i.e. it returns a <a class="el" href="structQXmppError.html">QXmppError</a> with QFileDevice::FileError for QFileDevices. </p>
+
+</div>
+</div>
 <a id="af10b7498e2db35219a7136f4d83e5dd9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af10b7498e2db35219a7136f4d83e5dd9">&#9670;&nbsp;</a></span>holdsType()</h2>
 
