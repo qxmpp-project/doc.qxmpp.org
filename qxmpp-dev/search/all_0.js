@@ -37,7 +37,7 @@ var searchData=
   ['addrosteritem_34',['addRosterItem',['../classQXmppRosterManager.html#a2975bc1314d977e6d07bd0db42e4660e',1,'QXmppRosterManager']]],
   ['addsignedprekeypair_35',['addSignedPreKeyPair',['../classQXmppOmemoStorage.html#a6294b9c5002ea3ccd97c02eefe64c267',1,'QXmppOmemoStorage']]],
   ['addvideo_36',['addVideo',['../classQXmppCall.html#ac656e4c43a36c77d4f074ba8ecd85517',1,'QXmppCall']]],
-  ['affiliation_37',['Affiliation',['../classQXmppMucItem.html#a3a0d58827ab4d535326fc6d3dbcbd417',1,'QXmppMucItem::Affiliation()'],['../classQXmppPubSubAffiliation.html#a87cbd228a4d3c451f4e21e260d46d842',1,'QXmppPubSubAffiliation::Affiliation()'],['../classQXmppMucItem.html#a6cc7d705d6982070334a1962a3762d46',1,'QXmppMucItem::affiliation()']]],
+  ['affiliation_37',['affiliation',['../classQXmppMucItem.html#a6cc7d705d6982070334a1962a3762d46',1,'QXmppMucItem::affiliation() const'],['../classQXmppMucItem.html#a3a0d58827ab4d535326fc6d3dbcbd417',1,'QXmppMucItem::Affiliation()'],['../classQXmppPubSubAffiliation.html#a87cbd228a4d3c451f4e21e260d46d842',1,'QXmppPubSubAffiliation::Affiliation()']]],
   ['affiliations_38',['affiliations',['../classQXmppPubSubIqBase.html#afd6912b0014e848c2aa857aebb681ffe',1,'QXmppPubSubIqBase']]],
   ['affiliationsresult_39',['AffiliationsResult',['../classQXmppPubSubManager.html#a10649f3bd71dff052b6f44b1839c5dfd',1,'QXmppPubSubManager']]],
   ['after_40',['after',['../classQXmppResultSetQuery.html#a5586b012aa32e5530796b8b893df0a76',1,'QXmppResultSetQuery']]],
