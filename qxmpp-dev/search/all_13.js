@@ -13,7 +13,7 @@ var searchData=
   ['tlsenabled_1384',['TLSEnabled',['../classQXmppConfiguration.html#a7c6e193a68beb792038c066cfc574a18aaf3bb1e91fd95070ad94a10371b32771',1,'QXmppConfiguration']]],
   ['tlsmode_1385',['tlsMode',['../classQXmppStreamFeatures.html#a7cce7547750e17c569f02fb45d66a5e6',1,'QXmppStreamFeatures']]],
   ['tlsrequired_1386',['TLSRequired',['../classQXmppConfiguration.html#a7c6e193a68beb792038c066cfc574a18a3cb02f5970640730f94f516ae3924d47',1,'QXmppConfiguration']]],
-  ['to_1387',['to',['../classQXmppStanza.html#a67a02790fd35ee0efb7dc8fd50b4d2dd',1,'QXmppStanza::to()'],['../classQXmppRosterIq_1_1Item.html#a0133cf9262cec7e299c4db7c247c5514af442c4841857e10e47b49915d4e19a2f',1,'QXmppRosterIq::Item::To()']]],
+  ['to_1387',['To',['../classQXmppRosterIq_1_1Item.html#a0133cf9262cec7e299c4db7c247c5514af442c4841857e10e47b49915d4e19a2f',1,'QXmppRosterIq::Item::To()'],['../classQXmppStanza.html#a67a02790fd35ee0efb7dc8fd50b4d2dd',1,'QXmppStanza::to()']]],
   ['toakafa_1388',['Toakafa',['../namespaceQXmpp.html#af6e4885b9b07444825d3bf59877a1f10acce7e2a143630e788cf6c3d3e2bb4aa2',1,'QXmpp']]],
   ['tocidurl_1389',['toCidUrl',['../classQXmppBitsOfBinaryContentId.html#a2fbba5fd94e5a527e8c1160106317a81',1,'QXmppBitsOfBinaryContentId']]],
   ['tocontentid_1390',['toContentId',['../classQXmppBitsOfBinaryContentId.html#a6cd665fd78738eb5adbb7a320b74daa4',1,'QXmppBitsOfBinaryContentId']]],
