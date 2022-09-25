@@ -194,6 +194,10 @@ QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
 <tr class="separator:a79f1085ad82b1cdf4dbb44af814874bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a129f1b4d2bc61b88ac8f96bf2085cf3f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppJingleIq.html#a129f1b4d2bc61b88ac8f96bf2085cf3f">setSid</a> (const QString &amp;<a class="el" href="classQXmppJingleIq.html#a79f1085ad82b1cdf4dbb44af814874bc">sid</a>)</td></tr>
 <tr class="separator:a129f1b4d2bc61b88ac8f96bf2085cf3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3f8a3f23e0b564289d52c121fa24023"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppJingleIq.html#aa3f8a3f23e0b564289d52c121fa24023">mujiGroupChatJid</a> () const</td></tr>
+<tr class="separator:aa3f8a3f23e0b564289d52c121fa24023"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee6689bf18e43b46a043f338cae34025"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppJingleIq.html#aee6689bf18e43b46a043f338cae34025">setMujiGroupChatJid</a> (const QString &amp;<a class="el" href="classQXmppJingleIq.html#aa3f8a3f23e0b564289d52c121fa24023">mujiGroupChatJid</a>)</td></tr>
+<tr class="separator:aee6689bf18e43b46a043f338cae34025"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classQXmppIq"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classQXmppIq')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classQXmppIq.html">QXmppIq</a></td></tr>
 <tr class="memitem:a16db985e7cbf842dbca1cb94ec57c64f inherit pub_methods_classQXmppIq"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppIq.html#a16db985e7cbf842dbca1cb94ec57c64f">QXmppIq</a> (<a class="el" href="classQXmppIq.html#a6bc7a0505a3be7309051ae2432a3d826">QXmppIq::Type</a> <a class="el" href="classQXmppIq.html#aeec9bc83e6c869cd52bf11917d0186b2">type</a>=<a class="el" href="classQXmppIq.html#a6bc7a0505a3be7309051ae2432a3d826a78ce31809da9bddb4ab04ad512293eb1">QXmppIq::Get</a>)</td></tr>
 <tr class="separator:a16db985e7cbf842dbca1cb94ec57c64f inherit pub_methods_classQXmppIq"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -340,6 +344,26 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
 
 </div>
 </div>
+<a id="aa3f8a3f23e0b564289d52c121fa24023"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3f8a3f23e0b564289d52c121fa24023">&#9670;&nbsp;</a></span>mujiGroupChatJid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString QXmppJingleIq::mujiGroupChatJid </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns the JID of the <a href="https://xmpp.org/extensions/xep-0272.html">XEP-0272: Multiparty Jingle (Muji)</a> group chat.</p>
+<dl class="section return"><dt>Returns</dt><dd>the Muji group chat JID</dd></dl>
+<dl class="section since"><dt>Since</dt><dd><a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.5 </dd></dl>
+
+</div>
+</div>
 <a id="a8fe7c62f476f4b136cfd0a75e1185b04"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8fe7c62f476f4b136cfd0a75e1185b04">&#9670;&nbsp;</a></span>reason()</h2>
 
@@ -427,6 +451,32 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="aee6689bf18e43b46a043f338cae34025"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee6689bf18e43b46a043f338cae34025">&#9670;&nbsp;</a></span>setMujiGroupChatJid()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void QXmppJingleIq::setMujiGroupChatJid </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>mujiGroupChatJid</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Sets the JID of the <a href="https://xmpp.org/extensions/xep-0272.html">XEP-0272: Multiparty Jingle (Muji)</a> group chat.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mujiGroupChatJid</td><td>Muji group chat JID</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>Since</dt><dd><a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.5 </dd></dl>
 
 </div>
 </div>

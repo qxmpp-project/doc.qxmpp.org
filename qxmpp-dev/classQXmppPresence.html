@@ -245,6 +245,14 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 QStringList&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppPresence.html#acec042db3b00748a82d2e6ededbbbd15">capabilityExt</a> () const</td></tr>
 <tr class="memdesc:acec042db3b00748a82d2e6ededbbbd15"><td class="mdescLeft">&#160;</td><td class="mdescRight">Legacy <a href="https://xmpp.org/extensions/xep-0115.html">XEP-0115</a>: Entity Capabilities. <br /></td></tr>
 <tr class="separator:acec042db3b00748a82d2e6ededbbbd15"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a11d1556fe78073829d358b1e8dbf3c71"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppPresence.html#a11d1556fe78073829d358b1e8dbf3c71">isPreparingMujiSession</a> () const</td></tr>
+<tr class="separator:a11d1556fe78073829d358b1e8dbf3c71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8afb8d3ae775e286076811277e232ad5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppPresence.html#a8afb8d3ae775e286076811277e232ad5">setIsPreparingMujiSession</a> (bool <a class="el" href="classQXmppPresence.html#a11d1556fe78073829d358b1e8dbf3c71">isPreparingMujiSession</a>)</td></tr>
+<tr class="separator:a8afb8d3ae775e286076811277e232ad5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf954018413fd1d2c66344c4d91ecd35"><td class="memItemLeft" align="right" valign="top">QVector&lt; QXmppJingleIq::Content &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppPresence.html#adf954018413fd1d2c66344c4d91ecd35">mujiContents</a> () const</td></tr>
+<tr class="separator:adf954018413fd1d2c66344c4d91ecd35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78efb13ca8ff61e5e186c58fbd9702d2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppPresence.html#a78efb13ca8ff61e5e186c58fbd9702d2">setMujiContents</a> (const QVector&lt; QXmppJingleIq::Content &gt; &amp;<a class="el" href="classQXmppPresence.html#adf954018413fd1d2c66344c4d91ecd35">mujiContents</a>)</td></tr>
+<tr class="separator:a78efb13ca8ff61e5e186c58fbd9702d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa30c0b12635cfd8bbfe9d1dfb9d8e520"><td class="memItemLeft" align="right" valign="top">QDateTime&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppPresence.html#aa30c0b12635cfd8bbfe9d1dfb9d8e520">lastUserInteraction</a> () const</td></tr>
 <tr class="separator:aa30c0b12635cfd8bbfe9d1dfb9d8e520"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a71a33676f46b2c364fa7acc8ab32ccfe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppPresence.html#a71a33676f46b2c364fa7acc8ab32ccfe">setLastUserInteraction</a> (const QDateTime &amp;)</td></tr>
@@ -451,6 +459,26 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
 
 </div>
 </div>
+<a id="a11d1556fe78073829d358b1e8dbf3c71"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11d1556fe78073829d358b1e8dbf3c71">&#9670;&nbsp;</a></span>isPreparingMujiSession()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool QXmppPresence::isPreparingMujiSession </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns whether a <a href="https://xmpp.org/extensions/xep-0272.html">XEP-0272: Multiparty Jingle (Muji)</a> session is being prepared.</p>
+<dl class="section return"><dt>Returns</dt><dd>whether a Muji session is being prepared</dd></dl>
+<dl class="section since"><dt>Since</dt><dd><a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.5 </dd></dl>
+
+</div>
+</div>
 <a id="ae70f2e504766679b1769ee06b91975a6"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae70f2e504766679b1769ee06b91975a6">&#9670;&nbsp;</a></span>isXmppStanza()</h2>
 
@@ -537,6 +565,26 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
 
 </div>
 </div>
+<a id="adf954018413fd1d2c66344c4d91ecd35"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf954018413fd1d2c66344c4d91ecd35">&#9670;&nbsp;</a></span>mujiContents()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QVector&lt; QXmppJingleIq::Content &gt; QXmppPresence::mujiContents </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns <a href="https://xmpp.org/extensions/xep-0272.html">XEP-0272: Multiparty Jingle (Muji)</a> contents.</p>
+<dl class="section return"><dt>Returns</dt><dd>Muji contents</dd></dl>
+<dl class="section since"><dt>Since</dt><dd><a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.5 </dd></dl>
+
+</div>
+</div>
 <a id="a54e3570200e165893376821eb4b661ec"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a54e3570200e165893376821eb4b661ec">&#9670;&nbsp;</a></span>photoHash()</h2>
 
@@ -553,6 +601,32 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
 </div><div class="memdoc">
 <p>Returns the photo-hash of the VCardUpdate.</p>
 <dl class="section return"><dt>Returns</dt><dd>QByteArray </dd></dl>
+
+</div>
+</div>
+<a id="a8afb8d3ae775e286076811277e232ad5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8afb8d3ae775e286076811277e232ad5">&#9670;&nbsp;</a></span>setIsPreparingMujiSession()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void QXmppPresence::setIsPreparingMujiSession </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>isPreparingMujiSession</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Sets whether a <a href="https://xmpp.org/extensions/xep-0272.html">XEP-0272: Multiparty Jingle (Muji)</a> session is being prepared.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">isPreparingMujiSession</td><td>whether a Muji session is being prepared</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>Since</dt><dd><a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.5 </dd></dl>
 
 </div>
 </div>
@@ -663,6 +737,32 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a78efb13ca8ff61e5e186c58fbd9702d2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a78efb13ca8ff61e5e186c58fbd9702d2">&#9670;&nbsp;</a></span>setMujiContents()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void QXmppPresence::setMujiContents </td>
+          <td>(</td>
+          <td class="paramtype">const QVector&lt; QXmppJingleIq::Content &gt; &amp;&#160;</td>
+          <td class="paramname"><em>mujiContents</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Sets <a href="https://xmpp.org/extensions/xep-0272.html">XEP-0272: Multiparty Jingle (Muji)</a> contents.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mujiContents</td><td>Muji contents</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>Since</dt><dd><a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.5 </dd></dl>
 
 </div>
 </div>
