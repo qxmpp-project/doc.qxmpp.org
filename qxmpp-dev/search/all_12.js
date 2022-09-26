@@ -355,7 +355,7 @@ var searchData=
   ['settagname_1264',['setTagName',['../classQXmppElement.html#ae05e708d65aa58cb36abc2595bd16e7f',1,'QXmppElement']]],
   ['settext_1265',['setText',['../classQXmppStanza_1_1Error.html#a8f0ee373705919b79b5265f53d280e2c',1,'QXmppStanza::Error']]],
   ['setthread_1266',['setThread',['../classQXmppArchiveChat.html#a75ab3d8e36075ff65d5d81618aa1f7bf',1,'QXmppArchiveChat::setThread()'],['../classQXmppMessage.html#a36ed8d1190f50b78af05ce806c1e90a6',1,'QXmppMessage::setThread()']]],
-  ['setthumbnail_1267',['setThumbnail',['../classQXmppFileMetadata.html#aa7aefdc3e9b6ce1bd70a2c97fb76c672',1,'QXmppFileMetadata']]],
+  ['setthumbnails_1267',['setThumbnails',['../classQXmppFileMetadata.html#a01a1cdaf9fb53c97b17e7a14ac7702d9',1,'QXmppFileMetadata']]],
   ['settitle_1268',['setTitle',['../classQXmppDataForm.html#afa08e0e1f30260375d1d846bcf20bc20',1,'QXmppDataForm::setTitle()'],['../classQXmppTuneItem.html#a58afbd404130a3ec63ddada172a5f30f',1,'QXmppTuneItem::setTitle()'],['../classQXmppVCardOrganization.html#a41fe4d97f83f627223baeb074340cea5',1,'QXmppVCardOrganization::setTitle()']]],
   ['settlsmode_1269',['setTlsMode',['../classQXmppStreamFeatures.html#a44aaf876a7a50c74f2fe7ca612b9b086',1,'QXmppStreamFeatures']]],
   ['setto_1270',['setTo',['../classQXmppStanza.html#a8296bac9c1821141bb67fae87910b8e0',1,'QXmppStanza']]],

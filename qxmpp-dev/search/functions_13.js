@@ -4,7 +4,7 @@ var searchData=
   ['takevalue_2776',['takeValue',['../structQXmppError.html#a6d83cfc721844e40a464548565c7381a',1,'QXmppError']]],
   ['text_2777',['text',['../classQXmppStanza_1_1Error.html#a03162076348bc12bcc7e5871c9d72d5e',1,'QXmppStanza::Error']]],
   ['thread_2778',['thread',['../classQXmppArchiveChat.html#a2718ee6be228820305b8ffa1029db8a3',1,'QXmppArchiveChat::thread()'],['../classQXmppMessage.html#a16da35513b76500e12a797b50b35da84',1,'QXmppMessage::thread()']]],
-  ['thumbnail_2779',['thumbnail',['../classQXmppFileMetadata.html#a447bb5acfb6455370e333f0968fd7e61',1,'QXmppFileMetadata']]],
+  ['thumbnails_2779',['thumbnails',['../classQXmppFileMetadata.html#a92e35e348ffb032d2b68ec015841ccd9',1,'QXmppFileMetadata']]],
   ['timereceived_2780',['timeReceived',['../classQXmppEntityTimeManager.html#a43bf87be2b6c3291980779148f10ef25',1,'QXmppEntityTimeManager']]],
   ['timezoneoffsetfromstring_2781',['timezoneOffsetFromString',['../classQXmppUtils.html#affdf229e846c999ea8d3f464d8e154a9',1,'QXmppUtils']]],
   ['timezoneoffsettostring_2782',['timezoneOffsetToString',['../classQXmppUtils.html#ad44b0a2537afd21c426483e3daeca5d8',1,'QXmppUtils']]],
