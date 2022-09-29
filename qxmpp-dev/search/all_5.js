@@ -37,7 +37,8 @@ var searchData=
   ['fromcidurl_269',['fromCidUrl',['../classQXmppBitsOfBinaryContentId.html#a3ef8f24818dab7243a0b7f82ae7d5a58',1,'QXmppBitsOfBinaryContentId']]],
   ['fromcontentid_270',['fromContentId',['../classQXmppBitsOfBinaryContentId.html#a28aee1dc5263cd863f8312d062553e7a',1,'QXmppBitsOfBinaryContentId']]],
   ['fromdataform_271',['fromDataForm',['../classQXmppDataFormBase.html#a092696e88fd861a624ed902d498923bb',1,'QXmppDataFormBase::fromDataForm()'],['../classQXmppPubSubSubAuthorization.html#a6911006e7bed5a7d2a4e9b9d677011a3',1,'QXmppPubSubSubAuthorization::fromDataForm()']]],
-  ['fromiodevice_272',['fromIoDevice',['../structQXmppError.html#a4585954f194c27e4a425b0d3ca87ef18',1,'QXmppError']]],
-  ['fromnetworkreply_273',['fromNetworkReply',['../structQXmppError.html#add10f045ebd08754ed0783e1242d2840',1,'QXmppError']]],
-  ['fullname_274',['fullName',['../classQXmppVCardIq.html#a40cee2a7d8b353fff804cf582eda5684',1,'QXmppVCardIq']]]
+  ['fromfileinfo_272',['fromFileInfo',['../classQXmppFileMetadata.html#a2dadfe3a893104deed661001792d6588',1,'QXmppFileMetadata']]],
+  ['fromiodevice_273',['fromIoDevice',['../structQXmppError.html#a4585954f194c27e4a425b0d3ca87ef18',1,'QXmppError']]],
+  ['fromnetworkreply_274',['fromNetworkReply',['../structQXmppError.html#add10f045ebd08754ed0783e1242d2840',1,'QXmppError']]],
+  ['fullname_275',['fullName',['../classQXmppVCardIq.html#a40cee2a7d8b353fff804cf582eda5684',1,'QXmppVCardIq']]]
 ];

@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['wait_3097',['Wait',['../classQXmppStanza_1_1Error.html#a8a7b0e1c203bce100dff524e1ca444afa85c91e87f226714c7b9b20455391593d',1,'QXmppStanza::Error']]],
-  ['warningmessage_3098',['WarningMessage',['../classQXmppLogger.html#a932dbbd4f70a1e9c0ff8f452e61fc9b8adb2cbaa9ae0daa021fa4feddf085910a',1,'QXmppLogger']]]
+  ['wait_3099',['Wait',['../classQXmppStanza_1_1Error.html#a8a7b0e1c203bce100dff524e1ca444afa85c91e87f226714c7b9b20455391593d',1,'QXmppStanza::Error']]],
+  ['warningmessage_3100',['WarningMessage',['../classQXmppLogger.html#a932dbbd4f70a1e9c0ff8f452e61fc9b8adb2cbaa9ae0daa021fa4feddf085910a',1,'QXmppLogger']]]
 ];
