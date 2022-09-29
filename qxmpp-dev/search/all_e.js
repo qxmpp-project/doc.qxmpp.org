@@ -1,10 +1,10 @@
 var searchData=
 [
   ['offerstate_566',['OfferState',['../classQXmppTransferJob.html#aab5bb06ca0d2c4f1fac33b7012d1c14fa0f5f5eec8a95f2faf27186dfd502f581',1,'QXmppTransferJob']]],
-  ['omemo_567',['OMEMO',['../namespaceQXmpp.html#a144a88be891edf484a1fe97604fd81e3a3bd98dcdc982bab762928a820ab82a17',1,'QXmpp']]],
-  ['omemo0_568',['Omemo0',['../namespaceQXmpp.html#a144a88be891edf484a1fe97604fd81e3a3dc65fecff6d7bda071abed886b37593',1,'QXmpp']]],
-  ['omemo1_569',['Omemo1',['../namespaceQXmpp.html#a144a88be891edf484a1fe97604fd81e3ac45344966c659a4f2bbd3e811612e28d',1,'QXmpp']]],
-  ['omemo2_570',['Omemo2',['../namespaceQXmpp.html#a144a88be891edf484a1fe97604fd81e3a49de70140287dbda13aceab3b22b1078',1,'QXmpp']]],
+  ['omemo_567',['OMEMO',['../namespaceQXmpp.html#adbe84fa39564cc52d80d015448a56dd6a3bd98dcdc982bab762928a820ab82a17',1,'QXmpp']]],
+  ['omemo0_568',['Omemo0',['../namespaceQXmpp.html#adbe84fa39564cc52d80d015448a56dd6a3dc65fecff6d7bda071abed886b37593',1,'QXmpp']]],
+  ['omemo1_569',['Omemo1',['../namespaceQXmpp.html#adbe84fa39564cc52d80d015448a56dd6ac45344966c659a4f2bbd3e811612e28d',1,'QXmpp']]],
+  ['omemo2_570',['Omemo2',['../namespaceQXmpp.html#adbe84fa39564cc52d80d015448a56dd6a49de70140287dbda13aceab3b22b1078',1,'QXmpp']]],
   ['omemodata_571',['OmemoData',['../structQXmppOmemoStorage_1_1OmemoData.html',1,'QXmppOmemoStorage']]],
   ['online_572',['Online',['../classQXmppPresence.html#ad56af0f57b732c09b080b9347c4dba94a1285bac9669e2b48502a464f97dd85ee',1,'QXmppPresence']]],
   ['operator_26_573',['operator&amp;',['../namespaceQXmpp.html#aa99256168d2956f77c1a06952d955e64',1,'QXmpp']]],
@@ -15,7 +15,7 @@ var searchData=
   ['organization_578',['organization',['../classQXmppVCardOrganization.html#a884ffc619af8aacb7bc775bd0d396149',1,'QXmppVCardOrganization::organization()'],['../classQXmppVCardIq.html#a5c70ea311aeedf6070cf0f939befb6bf',1,'QXmppVCardIq::organization()']]],
   ['originid_579',['originId',['../classQXmppMessage.html#aa3897a28dc06a8b93b221b5dc6bbfbbc',1,'QXmppMessage']]],
   ['os_580',['os',['../classQXmppVersionIq.html#a03b2362a5633b956921cf752939d6d12',1,'QXmppVersionIq']]],
-  ['otr_581',['Otr',['../namespaceQXmpp.html#a144a88be891edf484a1fe97604fd81e3a5feaaf54325266b531d04cce6aa05969',1,'QXmpp::Otr()'],['../namespaceQXmpp.html#a144a88be891edf484a1fe97604fd81e3a4d9c0c170e88e7bc30af6f98505049df',1,'QXmpp::OTR()']]],
+  ['otr_581',['Otr',['../namespaceQXmpp.html#adbe84fa39564cc52d80d015448a56dd6a5feaaf54325266b531d04cce6aa05969',1,'QXmpp::Otr()'],['../namespaceQXmpp.html#adbe84fa39564cc52d80d015448a56dd6a4d9c0c170e88e7bc30af6f98505049df',1,'QXmpp::OTR()']]],
   ['outcast_582',['Outcast',['../classQXmppPubSubAffiliation.html#a87cbd228a4d3c451f4e21e260d46d842a652b608e8f25870f9cbe0a779980f687',1,'QXmppPubSubAffiliation']]],
   ['outgoingdirection_583',['OutgoingDirection',['../classQXmppCall.html#a429a4f8065136068b6d936cb2c803175a4959a53587ff3fe714b0c619dd8ba47d',1,'QXmppCall::OutgoingDirection()'],['../classQXmppTransferJob.html#a9c95a89a01357588f699e7d80c3de0b6adbfcc81360e31c1ded162fa244132bb7',1,'QXmppTransferJob::OutgoingDirection()']]],
   ['outofbandurl_584',['outOfBandUrl',['../classQXmppMessage.html#a6a6b58f98ba934e429677f5033a23152',1,'QXmppMessage::outOfBandUrl()'],['../classQXmppRegisterIq.html#ad317032a2cfc30ee138e21b8530a42d4',1,'QXmppRegisterIq::outOfBandUrl()']]],
@@ -23,5 +23,5 @@ var searchData=
   ['owndevice_586',['OwnDevice',['../structQXmppOmemoStorage_1_1OwnDevice.html',1,'QXmppOmemoStorage::OwnDevice'],['../structQXmppOmemoStorage_1_1OmemoData.html#aaa70d535c2f85416c6f64fc17264f9cc',1,'QXmppOmemoStorage::OmemoData::ownDevice()'],['../classQXmppOmemoManager.html#a3578384e9f6d434d0e97bd4fa851a349',1,'QXmppOmemoManager::ownDevice()']]],
   ['owner_587',['Owner',['../classQXmppPubSubAffiliation.html#a87cbd228a4d3c451f4e21e260d46d842ae47f343fbc6c5788a65649241ae61bdb',1,'QXmppPubSubAffiliation']]],
   ['ownkey_588',['ownKey',['../classQXmppTrustManager.html#a2ea236a26277914dd8e75c6f4823365a',1,'QXmppTrustManager::ownKey()'],['../classQXmppTrustStorage.html#aa4d7836f88d792c316a2e659c0cf8310',1,'QXmppTrustStorage::ownKey()'],['../classQXmppOmemoManager.html#aa617ca0e2a4113944f7c80f0232ef866',1,'QXmppOmemoManager::ownKey()']]],
-  ['ox_589',['OX',['../namespaceQXmpp.html#a144a88be891edf484a1fe97604fd81e3a6ae0c1c63f5527cb050e942a38f6c726',1,'QXmpp::OX()'],['../namespaceQXmpp.html#a144a88be891edf484a1fe97604fd81e3a4051b83a948e2a334e5b75f07557b77a',1,'QXmpp::Ox()']]]
+  ['ox_589',['OX',['../namespaceQXmpp.html#adbe84fa39564cc52d80d015448a56dd6a6ae0c1c63f5527cb050e942a38f6c726',1,'QXmpp::OX()'],['../namespaceQXmpp.html#adbe84fa39564cc52d80d015448a56dd6a4051b83a948e2a334e5b75f07557b77a',1,'QXmpp::Ox()']]]
 ];
