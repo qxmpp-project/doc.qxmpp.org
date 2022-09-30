@@ -96,8 +96,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a4807af239d24d05ef7f6e81ac5bb92fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a752200dffac1f124dbd8411cc72fa38f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppHttpUploadManager.html#a752200dffac1f124dbd8411cc72fa38f">QXmppHttpUploadManager</a> (QNetworkAccessManager *netManager)</td></tr>
 <tr class="separator:a752200dffac1f124dbd8411cc72fa38f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3bc4ec67198d08428ba30a78689dc4b2"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classQXmppHttpUpload.html">QXmppHttpUpload</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppHttpUploadManager.html#a3bc4ec67198d08428ba30a78689dc4b2">uploadFile</a> (QIODevice *data, const QString &amp;filename, const QMimeType &amp;mimeType, qint64 fileSize=-1, const QString &amp;uploadServiceJid={})</td></tr>
-<tr class="separator:a3bc4ec67198d08428ba30a78689dc4b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad5ae939a903d2725cdc88b69e062c5fd"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classQXmppHttpUpload.html">QXmppHttpUpload</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppHttpUploadManager.html#ad5ae939a903d2725cdc88b69e062c5fd">uploadFile</a> (std::unique_ptr&lt; QIODevice &gt; data, const QString &amp;filename, const QMimeType &amp;mimeType, qint64 fileSize=-1, const QString &amp;uploadServiceJid={})</td></tr>
+<tr class="separator:ad5ae939a903d2725cdc88b69e062c5fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6a18037332b20dac8921204f7ef64c2d"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classQXmppHttpUpload.html">QXmppHttpUpload</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppHttpUploadManager.html#a6a18037332b20dac8921204f7ef64c2d">uploadFile</a> (const QFileInfo &amp;fileInfo, const QString &amp;filename={}, const QString &amp;uploadServiceJid={})</td></tr>
 <tr class="separator:a6a18037332b20dac8921204f7ef64c2d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classQXmppClientExtension"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classQXmppClientExtension')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classQXmppClientExtension.html">QXmppClientExtension</a></td></tr>
@@ -263,8 +263,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 
 </div>
 </div>
-<a id="a3bc4ec67198d08428ba30a78689dc4b2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3bc4ec67198d08428ba30a78689dc4b2">&#9670;&nbsp;</a></span>uploadFile() <span class="overload">[2/2]</span></h2>
+<a id="ad5ae939a903d2725cdc88b69e062c5fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad5ae939a903d2725cdc88b69e062c5fd">&#9670;&nbsp;</a></span>uploadFile() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -272,7 +272,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
         <tr>
           <td class="memname">std::shared_ptr&lt; <a class="el" href="classQXmppHttpUpload.html">QXmppHttpUpload</a> &gt; QXmppHttpUploadManager::uploadFile </td>
           <td>(</td>
-          <td class="paramtype">QIODevice *&#160;</td>
+          <td class="paramtype">std::unique_ptr&lt; QIODevice &gt;&#160;</td>
           <td class="paramname"><em>data</em>, </td>
         </tr>
         <tr>
