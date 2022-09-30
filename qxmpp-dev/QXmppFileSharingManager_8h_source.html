@@ -95,60 +95,61 @@ $(function() {
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160; </div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">class </span>QIODevice;</div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="keyword">class </span><a class="code" href="classQXmppFileMetadata.html">QXmppFileMetadata</a>;</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00027"></a><span class="lineno"><a class="line" href="classQXmppFileSharingManager.html">   27</a></span>&#160;<span class="keyword">class </span>QXMPP_EXPORT <a class="code" href="classQXmppFileSharingManager.html">QXmppFileSharingManager</a> : <span class="keyword">public</span> <a class="code" href="classQXmppClientExtension.html">QXmppClientExtension</a></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;{</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keyword">struct </span>MetadataThumbnail</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    {</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;        uint32_t width;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        uint32_t height;</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        QByteArray data;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        QMimeType mimeType;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    };</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keyword">struct </span>MetadataGeneratorResult</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    {</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        std::optional&lt;QSize&gt; dimensions;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        std::optional&lt;uint32_t&gt; length;</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        QVector&lt;MetadataThumbnail&gt; thumbnails;</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        std::unique_ptr&lt;QIODevice&gt; dataDevice;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    };</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="classQXmppFileSharingManager.html#a80debd3162143ea3fcae5a1b32110acf">   46</a></span>&#160;    <span class="keyword">using</span> <a class="code" href="classQXmppFileSharingManager.html#a80debd3162143ea3fcae5a1b32110acf">MetadataGenerator</a> = std::function&lt;QFuture&lt;std::shared_ptr&lt;MetadataGeneratorResult&gt;&gt;(std::unique_ptr&lt;QIODevice&gt;)&gt;;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <a class="code" href="classQXmppFileSharingManager.html">QXmppFileSharingManager</a>();</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <span class="keywordtype">void</span> setMetadataGenerator(<a class="code" href="classQXmppFileSharingManager.html#a80debd3162143ea3fcae5a1b32110acf">MetadataGenerator</a> &amp;&amp;generator);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="keyword">class </span>QXmppFileSharingManagerPrivate;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="classQXmppFileSharingManager.html">   28</a></span>&#160;<span class="keyword">class </span>QXMPP_EXPORT <a class="code" href="classQXmppFileSharingManager.html">QXmppFileSharingManager</a> : <span class="keyword">public</span> <a class="code" href="classQXmppClientExtension.html">QXmppClientExtension</a></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;{</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keyword">struct </span>MetadataThumbnail</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    {</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;        uint32_t width;</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        uint32_t height;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        QByteArray data;</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        QMimeType mimeType;</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    };</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keyword">struct </span>MetadataGeneratorResult</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    {</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        std::optional&lt;QSize&gt; dimensions;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        std::optional&lt;uint32_t&gt; length;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        QVector&lt;MetadataThumbnail&gt; thumbnails;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        std::unique_ptr&lt;QIODevice&gt; dataDevice;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    };</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="classQXmppFileSharingManager.html#a80debd3162143ea3fcae5a1b32110acf">   47</a></span>&#160;    <span class="keyword">using</span> <a class="code" href="classQXmppFileSharingManager.html#a80debd3162143ea3fcae5a1b32110acf">MetadataGenerator</a> = std::function&lt;QFuture&lt;std::shared_ptr&lt;MetadataGeneratorResult&gt;&gt;(std::unique_ptr&lt;QIODevice&gt;)&gt;;</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <a class="code" href="classQXmppFileSharingManager.html">QXmppFileSharingManager</a>();</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    ~<a class="code" href="classQXmppFileSharingManager.html">QXmppFileSharingManager</a>();</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> Prov<span class="keywordtype">id</span>erType&gt;</div>
-<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="classQXmppFileSharingManager.html#acf770d6c6121c7ed7265bb555c9c7faa">   58</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classQXmppFileSharingManager.html#acf770d6c6121c7ed7265bb555c9c7faa">registerProvider</a>(std::shared_ptr&lt;ProviderType&gt; manager)</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    {</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        std::type_index index(<span class="keyword">typeid</span>(<span class="keyword">typename</span> ProviderType::SourceType));</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        internalRegisterProvider(index, manager);</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    }</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    std::shared_ptr&lt;QXmppUpload&gt; sendFile(std::shared_ptr&lt;QXmppFileSharingProvider&gt; provider,</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                                          <span class="keyword">const</span> QString &amp;filePath,</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                                          <span class="keyword">const</span> std::optional&lt;QString&gt; &amp;description = {});</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    std::shared_ptr&lt;QXmppDownload&gt; downloadFile(<span class="keyword">const</span> <a class="code" href="classQXmppFileShare.html">QXmppFileShare</a> &amp;fileShare,</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                                                std::unique_ptr&lt;QIODevice&gt; &amp;&amp;output);</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordtype">void</span> internalRegisterProvider(std::type_index, std::shared_ptr&lt;QXmppFileSharingProvider&gt; provider);</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    MetadataGenerator m_metadataGenerator;</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    std::unordered_map&lt;std::type_index, std::shared_ptr&lt;QXmppFileSharingProvider&gt;&gt; m_providers;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;};</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="preprocessor">#endif  // QXMPPFILESHARINGMANAGER_H</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordtype">void</span> setMetadataGenerator(<a class="code" href="classQXmppFileSharingManager.html#a80debd3162143ea3fcae5a1b32110acf">MetadataGenerator</a> &amp;&amp;generator);</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> Prov<span class="keywordtype">id</span>erType&gt;</div>
+<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="classQXmppFileSharingManager.html#acf770d6c6121c7ed7265bb555c9c7faa">   60</a></span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classQXmppFileSharingManager.html#acf770d6c6121c7ed7265bb555c9c7faa">registerProvider</a>(std::shared_ptr&lt;ProviderType&gt; manager)</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    {</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        std::type_index index(<span class="keyword">typeid</span>(<span class="keyword">typename</span> ProviderType::SourceType));</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        internalRegisterProvider(index, manager);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    }</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    std::shared_ptr&lt;QXmppUpload&gt; sendFile(std::shared_ptr&lt;QXmppFileSharingProvider&gt; provider,</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                                          <span class="keyword">const</span> QString &amp;filePath,</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                                          <span class="keyword">const</span> std::optional&lt;QString&gt; &amp;description = {});</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    std::shared_ptr&lt;QXmppDownload&gt; downloadFile(<span class="keyword">const</span> <a class="code" href="classQXmppFileShare.html">QXmppFileShare</a> &amp;fileShare,</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                                                std::unique_ptr&lt;QIODevice&gt; &amp;&amp;output);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordtype">void</span> internalRegisterProvider(std::type_index, std::shared_ptr&lt;QXmppFileSharingProvider&gt; provider);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    std::unique_ptr&lt;QXmppFileSharingManagerPrivate&gt; d;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;};</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor">#endif  // QXMPPFILESHARINGMANAGER_H</span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aclassQXmppFileSharingManager_html"><div class="ttname"><a href="classQXmppFileSharingManager.html">QXmppFileSharingManager</a></div><div class="ttdef"><b>Definition:</b> QXmppFileSharingManager.h:27</div></div>
+<div class="ttc" id="aclassQXmppFileSharingManager_html"><div class="ttname"><a href="classQXmppFileSharingManager.html">QXmppFileSharingManager</a></div><div class="ttdef"><b>Definition:</b> QXmppFileSharingManager.h:28</div></div>
 <div class="ttc" id="aclassQXmppClientExtension_html"><div class="ttname"><a href="classQXmppClientExtension.html">QXmppClientExtension</a></div><div class="ttdoc">The QXmppClientExtension class is the base class for QXmppClient extensions.</div><div class="ttdef"><b>Definition:</b> QXmppClientExtension.h:32</div></div>
 <div class="ttc" id="aclassQXmppFileMetadata_html"><div class="ttname"><a href="classQXmppFileMetadata.html">QXmppFileMetadata</a></div><div class="ttdef"><b>Definition:</b> QXmppFileMetadata.h:23</div></div>
-<div class="ttc" id="aclassQXmppFileSharingManager_html_a80debd3162143ea3fcae5a1b32110acf"><div class="ttname"><a href="classQXmppFileSharingManager.html#a80debd3162143ea3fcae5a1b32110acf">QXmppFileSharingManager::MetadataGenerator</a></div><div class="ttdeci">std::function&lt; QFuture&lt; std::shared_ptr&lt; MetadataGeneratorResult &gt; &gt;(std::unique_ptr&lt; QIODevice &gt;)&gt; MetadataGenerator</div><div class="ttdef"><b>Definition:</b> QXmppFileSharingManager.h:46</div></div>
-<div class="ttc" id="aclassQXmppFileSharingManager_html_acf770d6c6121c7ed7265bb555c9c7faa"><div class="ttname"><a href="classQXmppFileSharingManager.html#acf770d6c6121c7ed7265bb555c9c7faa">QXmppFileSharingManager::registerProvider</a></div><div class="ttdeci">void registerProvider(std::shared_ptr&lt; ProviderType &gt; manager)</div><div class="ttdoc">Register a provider for automatic downloads.</div><div class="ttdef"><b>Definition:</b> QXmppFileSharingManager.h:58</div></div>
+<div class="ttc" id="aclassQXmppFileSharingManager_html_a80debd3162143ea3fcae5a1b32110acf"><div class="ttname"><a href="classQXmppFileSharingManager.html#a80debd3162143ea3fcae5a1b32110acf">QXmppFileSharingManager::MetadataGenerator</a></div><div class="ttdeci">std::function&lt; QFuture&lt; std::shared_ptr&lt; MetadataGeneratorResult &gt; &gt;(std::unique_ptr&lt; QIODevice &gt;)&gt; MetadataGenerator</div><div class="ttdef"><b>Definition:</b> QXmppFileSharingManager.h:47</div></div>
+<div class="ttc" id="aclassQXmppFileSharingManager_html_acf770d6c6121c7ed7265bb555c9c7faa"><div class="ttname"><a href="classQXmppFileSharingManager.html#acf770d6c6121c7ed7265bb555c9c7faa">QXmppFileSharingManager::registerProvider</a></div><div class="ttdeci">void registerProvider(std::shared_ptr&lt; ProviderType &gt; manager)</div><div class="ttdoc">Register a provider for automatic downloads.</div><div class="ttdef"><b>Definition:</b> QXmppFileSharingManager.h:60</div></div>
 <div class="ttc" id="aclassQXmppFileShare_html"><div class="ttname"><a href="classQXmppFileShare.html">QXmppFileShare</a></div><div class="ttdef"><b>Definition:</b> QXmppFileShare.h:23</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
