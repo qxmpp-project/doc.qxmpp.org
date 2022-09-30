@@ -13,7 +13,7 @@ var searchData=
   ['region_845',['region',['../classQXmppVCardAddress.html#a3d7876e965ea814922278868f0d26e2d',1,'QXmppVCardAddress']]],
   ['registermode_846',['registerMode',['../classQXmppStreamFeatures.html#ad232afac4d59f48cae987d29bbc24748',1,'QXmppStreamFeatures']]],
   ['registeronconnectenabled_847',['registerOnConnectEnabled',['../classQXmppRegistrationManager.html#aafa81ff385f2383a0975108f74071264',1,'QXmppRegistrationManager']]],
-  ['registerproivder_848',['registerProivder',['../classQXmppFileSharingManager.html#a774e4094ca3e4b67c50484ecf3bb2ef2',1,'QXmppFileSharingManager']]],
+  ['registerprovider_848',['registerProvider',['../classQXmppFileSharingManager.html#acf770d6c6121c7ed7265bb555c9c7faa',1,'QXmppFileSharingManager']]],
   ['registrationfailed_849',['registrationFailed',['../classQXmppRegistrationManager.html#a80016ce4e57c11d53b26f01a12b97570',1,'QXmppRegistrationManager']]],
   ['registrationformreceived_850',['registrationFormReceived',['../classQXmppRegistrationManager.html#a2ca2b1b6dad251bdca16f65b9b613518',1,'QXmppRegistrationManager']]],
   ['registrationrequired_851',['RegistrationRequired',['../classQXmppStanza_1_1Error.html#abcf1cbbe7b15ec82f3ac34723b604852a48d519d211db84bf2013b48e1f1367e1',1,'QXmppStanza::Error']]],

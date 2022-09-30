@@ -101,10 +101,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a04fcd69b58fd95c14a14e05ab97ecfb5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppFileSharingManager.html#a04fcd69b58fd95c14a14e05ab97ecfb5">setMetadataGenerator</a> (<a class="el" href="classQXmppFileSharingManager.html#a80debd3162143ea3fcae5a1b32110acf">MetadataGenerator</a> &amp;&amp;generator)</td></tr>
 <tr class="memdesc:a04fcd69b58fd95c14a14e05ab97ecfb5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a function that is called when metadata needs to be gererated for a file.  <a href="classQXmppFileSharingManager.html#a04fcd69b58fd95c14a14e05ab97ecfb5">More...</a><br /></td></tr>
 <tr class="separator:a04fcd69b58fd95c14a14e05ab97ecfb5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a774e4094ca3e4b67c50484ecf3bb2ef2"><td class="memTemplParams" colspan="2">template&lt;typename ProviderType &gt; </td></tr>
-<tr class="memitem:a774e4094ca3e4b67c50484ecf3bb2ef2"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classQXmppFileSharingManager.html#a774e4094ca3e4b67c50484ecf3bb2ef2">registerProivder</a> (std::shared_ptr&lt; ProviderType &gt; manager)</td></tr>
-<tr class="memdesc:a774e4094ca3e4b67c50484ecf3bb2ef2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a provider for automatic downloads.  <a href="classQXmppFileSharingManager.html#a774e4094ca3e4b67c50484ecf3bb2ef2">More...</a><br /></td></tr>
-<tr class="separator:a774e4094ca3e4b67c50484ecf3bb2ef2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf770d6c6121c7ed7265bb555c9c7faa"><td class="memTemplParams" colspan="2">template&lt;typename ProviderType &gt; </td></tr>
+<tr class="memitem:acf770d6c6121c7ed7265bb555c9c7faa"><td class="memTemplItemLeft" align="right" valign="top">void&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="classQXmppFileSharingManager.html#acf770d6c6121c7ed7265bb555c9c7faa">registerProvider</a> (std::shared_ptr&lt; ProviderType &gt; manager)</td></tr>
+<tr class="memdesc:acf770d6c6121c7ed7265bb555c9c7faa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Register a provider for automatic downloads.  <a href="classQXmppFileSharingManager.html#acf770d6c6121c7ed7265bb555c9c7faa">More...</a><br /></td></tr>
+<tr class="separator:acf770d6c6121c7ed7265bb555c9c7faa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a10f15f2a8f5d845aa5e168be1c4ac285"><td class="memItemLeft" align="right" valign="top">std::shared_ptr&lt; <a class="el" href="classQXmppUpload.html">QXmppUpload</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppFileSharingManager.html#a10f15f2a8f5d845aa5e168be1c4ac285">sendFile</a> (std::shared_ptr&lt; <a class="el" href="classQXmppFileSharingProvider.html">QXmppFileSharingProvider</a> &gt; provider, const QString &amp;filePath, const std::optional&lt; QString &gt; &amp;description={})</td></tr>
 <tr class="memdesc:a10f15f2a8f5d845aa5e168be1c4ac285"><td class="mdescLeft">&#160;</td><td class="mdescRight">Upload a file in a way that it can be attached to a message.  <a href="classQXmppFileSharingManager.html#a10f15f2a8f5d845aa5e168be1c4ac285">More...</a><br /></td></tr>
 <tr class="separator:a10f15f2a8f5d845aa5e168be1c4ac285"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -224,8 +224,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 
 </div>
 </div>
-<a id="a774e4094ca3e4b67c50484ecf3bb2ef2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a774e4094ca3e4b67c50484ecf3bb2ef2">&#9670;&nbsp;</a></span>registerProivder()</h2>
+<a id="acf770d6c6121c7ed7265bb555c9c7faa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf770d6c6121c7ed7265bb555c9c7faa">&#9670;&nbsp;</a></span>registerProvider()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -236,7 +236,7 @@ template&lt;typename ProviderType &gt; </div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void QXmppFileSharingManager::registerProivder </td>
+          <td class="memname">void QXmppFileSharingManager::registerProvider </td>
           <td>(</td>
           <td class="paramtype">std::shared_ptr&lt; ProviderType &gt;&#160;</td>
           <td class="paramname"><em>manager</em></td><td>)</td>
@@ -253,7 +253,7 @@ template&lt;typename ProviderType &gt; </div>
 <p>Register a provider for automatic downloads. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">manager</td><td>A shared_ptr to a <a class="el" href="classQXmppFileSharingProvider.html" title="The interface of a provider for the FileSharingManager.">QXmppFileSharingProvider</a> subclass </td></tr>
+    <tr><td class="paramname">manager</td><td>A shared_ptr to a <a class="el" href="classQXmppFileSharingProvider.html" title="The interface of a provider for the FileSharingManager.">QXmppFileSharingProvider</a> subclass The provider must define SourceType to the type of the accepted file source. </td></tr>
   </table>
   </dd>
 </dl>
