@@ -1,0 +1,4 @@
+<map id="QXmppDownload" name="QXmppDownload">
+<area shape="rect" id="node1" title="Provides progress of stateless file sharing uploads." alt="" coords="11,80,145,107"/>
+<area shape="rect" id="node2" href="$classQXmppFileTransfer.html" title="Provides progress information about ongoing file uploads and downloads." alt="" coords="5,5,151,32"/>
+</map>

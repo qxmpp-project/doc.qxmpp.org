@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['cancelled_1499',['Cancelled',['../structQXmpp_1_1Cancelled.html',1,'QXmpp']]]
+  ['cancelled_1514',['Cancelled',['../structQXmpp_1_1Cancelled.html',1,'QXmpp']]]
 ];

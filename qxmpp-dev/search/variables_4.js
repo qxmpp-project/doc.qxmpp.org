@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['id_2901',['id',['../structQXmppOmemoStorage_1_1OwnDevice.html#a981d67db63a14d5e33d891be59c32a88',1,'QXmppOmemoStorage::OwnDevice']]]
+  ['fileshare_2932',['fileShare',['../structQXmppUpload_1_1FileResult.html#aae46bb5229f608f2373d812ae0b9c915',1,'QXmppUpload::FileResult']]]
 ];

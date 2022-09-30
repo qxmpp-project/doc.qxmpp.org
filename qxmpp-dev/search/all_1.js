@@ -16,5 +16,6 @@ var searchData=
   ['buildmissingsessions_88',['buildMissingSessions',['../classQXmppOmemoManager.html#ab051d1daf6fe0cbc5f56bb458160d47c',1,'QXmppOmemoManager']]],
   ['by_89',['by',['../classQXmppStanza_1_1Error.html#ab760c0d46bbd60c7492f7c48148f9996',1,'QXmppStanza::Error']]],
   ['bytessent_90',['bytesSent',['../classQXmppHttpUpload.html#a9c59992ef7baa73f772c53071b39d53d',1,'QXmppHttpUpload']]],
-  ['bytestotal_91',['bytesTotal',['../classQXmppHttpUpload.html#a90cc4bb0cb6e12e0e98b271a6a587433',1,'QXmppHttpUpload']]]
+  ['bytestotal_91',['bytesTotal',['../classQXmppHttpUpload.html#a90cc4bb0cb6e12e0e98b271a6a587433',1,'QXmppHttpUpload::bytesTotal()'],['../classQXmppFileTransfer.html#a69f0c34be88bfc2aefb1faa08b589087',1,'QXmppFileTransfer::bytesTotal()']]],
+  ['bytestransferred_92',['bytesTransferred',['../classQXmppFileTransfer.html#a2fcd242aa5e71a2eba94dbf14bd98476',1,'QXmppFileTransfer']]]
 ];
