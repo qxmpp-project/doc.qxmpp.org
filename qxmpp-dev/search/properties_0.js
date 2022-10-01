@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['allowedactions_3167',['allowedActions',['../classQXmppMucRoom.html#a3b41defb3bcf48bf7ce51c8163aac803',1,'QXmppMucRoom']]]
+  ['allowedactions_3189',['allowedActions',['../classQXmppMucRoom.html#a3b41defb3bcf48bf7ce51c8163aac803',1,'QXmppMucRoom']]]
 ];

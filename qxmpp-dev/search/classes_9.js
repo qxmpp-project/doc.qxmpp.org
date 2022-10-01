@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['senderror_1687',['SendError',['../structQXmpp_1_1SendError.html',1,'QXmpp']]],
-  ['sendsuccess_1688',['SendSuccess',['../structQXmpp_1_1SendSuccess.html',1,'QXmpp']]],
-  ['signedprekeypair_1689',['SignedPreKeyPair',['../structQXmppOmemoStorage_1_1SignedPreKeyPair.html',1,'QXmppOmemoStorage']]],
-  ['streamhost_1690',['StreamHost',['../classQXmppByteStreamIq_1_1StreamHost.html',1,'QXmppByteStreamIq']]],
-  ['success_1691',['Success',['../structQXmpp_1_1Success.html',1,'QXmpp']]]
+  ['rtpsessionstateactive_1695',['RtpSessionStateActive',['../structQXmppJingleIq_1_1RtpSessionStateActive.html',1,'QXmppJingleIq']]],
+  ['rtpsessionstatehold_1696',['RtpSessionStateHold',['../structQXmppJingleIq_1_1RtpSessionStateHold.html',1,'QXmppJingleIq']]],
+  ['rtpsessionstatemuting_1697',['RtpSessionStateMuting',['../structQXmppJingleIq_1_1RtpSessionStateMuting.html',1,'QXmppJingleIq']]],
+  ['rtpsessionstateringing_1698',['RtpSessionStateRinging',['../structQXmppJingleIq_1_1RtpSessionStateRinging.html',1,'QXmppJingleIq']]],
+  ['rtpsessionstateunhold_1699',['RtpSessionStateUnhold',['../structQXmppJingleIq_1_1RtpSessionStateUnhold.html',1,'QXmppJingleIq']]]
 ];
