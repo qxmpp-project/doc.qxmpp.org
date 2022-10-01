@@ -35,7 +35,7 @@ var searchData=
   ['discoveryidentities_205',['discoveryIdentities',['../classQXmppClientExtension.html#a71a4c2372fa29521c6d9dec1db43a9d4',1,'QXmppClientExtension']]],
   ['discoveryitems_206',['discoveryItems',['../classQXmppServerExtension.html#a9ae2b530e0bc3a405dcde9d418ae95af',1,'QXmppServerExtension']]],
   ['dispatch_207',['dispatch',['../classQXmppInvokable.html#aa7dc5639264fa76249d20a770219f5fb',1,'QXmppInvokable']]],
-  ['disposition_208',['Disposition',['../classQXmppFileShare.html#a870c1e4d33ebabf528c0f76b148760f5',1,'QXmppFileShare::Disposition()'],['../classQXmppFileShare.html#a5e390ffd893fffde4d983a3906df226c',1,'QXmppFileShare::disposition() const']]],
+  ['disposition_208',['disposition',['../classQXmppFileShare.html#a5e390ffd893fffde4d983a3906df226c',1,'QXmppFileShare::disposition() const'],['../classQXmppFileShare.html#a870c1e4d33ebabf528c0f76b148760f5',1,'QXmppFileShare::Disposition()']]],
   ['distrustedkeys_209',['distrustedKeys',['../classQXmppTrustMessageKeyOwner.html#a1e059fe70446a38d93c29368d6a7a72d',1,'QXmppTrustMessageKeyOwner']]],
   ['dnd_210',['DND',['../classQXmppPresence.html#ad56af0f57b732c09b080b9347c4dba94a665a0346b1da2e5ddc521b47456ce729',1,'QXmppPresence']]],
   ['domain_211',['domain',['../classQXmppConfiguration.html#a16774799eae5b20c2887e4e4c84911d1',1,'QXmppConfiguration::domain()'],['../classQXmppPasswordRequest.html#a6861f017e0f8a0b620ab0ed2eb644535',1,'QXmppPasswordRequest::domain()'],['../classQXmppServer.html#ad4700e50a344d27ea1fc27966062d47a',1,'QXmppServer::domain()']]],
