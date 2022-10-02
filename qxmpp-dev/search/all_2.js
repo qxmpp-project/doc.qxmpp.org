@@ -55,7 +55,7 @@ var searchData=
   ['configurationaction_145',['ConfigurationAction',['../classQXmppMucRoom.html#acd3129293f69d7e7cdd91b65aae0606fa4c1b38531dcf4fa97e1441e8334c9d13',1,'QXmppMucRoom']]],
   ['configurationform_146',['configurationForm',['../classQXmppPubSubEventBase.html#a7c4deca988238294c566819e093fd487',1,'QXmppPubSubEventBase']]],
   ['configurationreceived_147',['configurationReceived',['../classQXmppMucRoom.html#a18623535386c94ab211e6868ed5c34f4',1,'QXmppMucRoom']]],
-  ['configurationsupport_148',['ConfigurationSupport',['../classQXmppPubSubSubscription.html#ac2dc1757a5889b9daab32dc5b78106d3',1,'QXmppPubSubSubscription::ConfigurationSupport()'],['../classQXmppPubSubSubscription.html#a4ec8a3cb3eb49c0710d3e9c55a2d7e58',1,'QXmppPubSubSubscription::configurationSupport() const']]],
+  ['configurationsupport_148',['configurationSupport',['../classQXmppPubSubSubscription.html#a4ec8a3cb3eb49c0710d3e9c55a2d7e58',1,'QXmppPubSubSubscription::configurationSupport() const'],['../classQXmppPubSubSubscription.html#ac2dc1757a5889b9daab32dc5b78106d3',1,'QXmppPubSubSubscription::ConfigurationSupport()']]],
   ['configurenode_149',['configureNode',['../classQXmppPubSubManager.html#ac03a3fd09cedb18841a9180cccc17f68',1,'QXmppPubSubManager']]],
   ['configurepepnode_150',['configurePepNode',['../classQXmppPubSubManager.html#a5d0d6105e93392a44c9af076c72d6965',1,'QXmppPubSubManager']]],
   ['conflict_151',['Conflict',['../classQXmppStanza_1_1Error.html#abcf1cbbe7b15ec82f3ac34723b604852ac6057089fa13c0066fec1527cbb8fb22',1,'QXmppStanza::Error']]],
