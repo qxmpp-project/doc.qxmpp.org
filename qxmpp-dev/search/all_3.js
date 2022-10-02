@@ -1,7 +1,7 @@
 var searchData=
 [
   ['data_173',['data',['../structQXmppOmemoStorage_1_1SignedPreKeyPair.html#a446291c1c29d1ee3e4052321c876fafc',1,'QXmppOmemoStorage::SignedPreKeyPair::data()'],['../classQXmppBitsOfBinaryData.html#adeb011891a999ae222948c5bbc1084f9',1,'QXmppBitsOfBinaryData::data()']]],
-  ['datablobs_174',['dataBlobs',['../structQXmppUpload_1_1FileResult.html#a252b6c8a6143ff8a8422d5471b129552',1,'QXmppUpload::FileResult']]],
+  ['datablobs_174',['dataBlobs',['../structQXmppFileUpload_1_1FileResult.html#a437e4d33b18910ed0287808b0906b0b9',1,'QXmppFileUpload::FileResult']]],
   ['dataform_175',['dataForm',['../classQXmppPubSubIqBase.html#ab5726863f5344d5a79c2ec9fc4176741',1,'QXmppPubSubIqBase::dataForm()'],['../classQXmppPushEnableIq.html#a09088ee612d0c32ea45ae15dcb55826f',1,'QXmppPushEnableIq::dataForm()']]],
   ['datagramreceived_176',['datagramReceived',['../classQXmppIceComponent.html#a7c153ade85120e66964e0eada8513842',1,'QXmppIceComponent']]],
   ['date_177',['date',['../classQXmppArchiveMessage.html#afd1cd49dd5941f6d6d4606962966ae8d',1,'QXmppArchiveMessage::date()'],['../classQXmppTransferFileInfo.html#a140fe88046877ccba9998352592bacc7',1,'QXmppTransferFileInfo::date()']]],
@@ -39,5 +39,8 @@ var searchData=
   ['distrustedkeys_209',['distrustedKeys',['../classQXmppTrustMessageKeyOwner.html#a1e059fe70446a38d93c29368d6a7a72d',1,'QXmppTrustMessageKeyOwner']]],
   ['dnd_210',['DND',['../classQXmppPresence.html#ad56af0f57b732c09b080b9347c4dba94a665a0346b1da2e5ddc521b47456ce729',1,'QXmppPresence']]],
   ['domain_211',['domain',['../classQXmppConfiguration.html#a16774799eae5b20c2887e4e4c84911d1',1,'QXmppConfiguration::domain()'],['../classQXmppPasswordRequest.html#a6861f017e0f8a0b620ab0ed2eb644535',1,'QXmppPasswordRequest::domain()'],['../classQXmppServer.html#ad4700e50a344d27ea1fc27966062d47a',1,'QXmppServer::domain()']]],
-  ['downloadfile_212',['downloadFile',['../classQXmppEncryptedHttpFileSharingProvider.html#a04cd09ecea066a9b84c89923e7feebe8',1,'QXmppEncryptedHttpFileSharingProvider::downloadFile()'],['../classQXmppFileSharingManager.html#a3a8fd4776b09b4447c34ad553073d2cb',1,'QXmppFileSharingManager::downloadFile()'],['../classQXmppFileSharingProvider.html#a6ac85aa20877f0df071cabcac9492c0f',1,'QXmppFileSharingProvider::downloadFile()'],['../classQXmppHttpFileSharingProvider.html#ab9d232fe7fbefb0fdbc46e38e8cf5742',1,'QXmppHttpFileSharingProvider::downloadFile()']]]
+  ['download_212',['Download',['../classQXmppFileSharingProvider_1_1Download.html',1,'QXmppFileSharingProvider']]],
+  ['downloaded_213',['Downloaded',['../structQXmppFileDownload_1_1Downloaded.html',1,'QXmppFileDownload']]],
+  ['downloadfile_214',['downloadFile',['../classQXmppEncryptedFileSharingProvider.html#a1a8a75401d8aded4ed203d5fe38b741c',1,'QXmppEncryptedFileSharingProvider::downloadFile()'],['../classQXmppFileSharingManager.html#aa10d247d1108dd15a6bddc78c3f2416c',1,'QXmppFileSharingManager::downloadFile()'],['../classQXmppFileSharingProvider.html#a417ed6477b7706e33a987deab00ce95d',1,'QXmppFileSharingProvider::downloadFile()'],['../classQXmppHttpFileSharingProvider.html#a2fb8a36f7a24a3510ce78312c363a5c3',1,'QXmppHttpFileSharingProvider::downloadFile()']]],
+  ['downloadresult_215',['DownloadResult',['../classQXmppFileSharingProvider.html#aadc278a79bde95e32658eb7cc81eabd1',1,'QXmppFileSharingProvider']]]
 ];

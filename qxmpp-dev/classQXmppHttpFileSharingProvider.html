@@ -75,7 +75,7 @@ Inheritance diagram for QXmppHttpFileSharingProvider:</div>
 <div class="center"><img src="classQXmppHttpFileSharingProvider__inherit__graph.png" border="0" usemap="#QXmppHttpFileSharingProvider_inherit__map" alt="Inheritance graph"/></div>
 <map name="QXmppHttpFileSharingProvider_inherit__map" id="QXmppHttpFileSharingProvider_inherit__map">
 <area shape="rect" title=" " alt="" coords="5,80,229,107"/>
-<area shape="rect" href="classQXmppFileSharingProvider.html" title="The interface of a provider for the FileSharingManager." alt="" coords="19,5,215,32"/>
+<area shape="rect" href="classQXmppFileSharingProvider.html" title="The interface of a provider for the QXmppFileSharingManager." alt="" coords="19,5,215,32"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <div class="dynheader">
@@ -84,28 +84,36 @@ Collaboration diagram for QXmppHttpFileSharingProvider:</div>
 <div class="center"><img src="classQXmppHttpFileSharingProvider__coll__graph.png" border="0" usemap="#QXmppHttpFileSharingProvider_coll__map" alt="Collaboration graph"/></div>
 <map name="QXmppHttpFileSharingProvider_coll__map" id="QXmppHttpFileSharingProvider_coll__map">
 <area shape="rect" title=" " alt="" coords="5,80,229,107"/>
-<area shape="rect" href="classQXmppFileSharingProvider.html" title="The interface of a provider for the FileSharingManager." alt="" coords="19,5,215,32"/>
+<area shape="rect" href="classQXmppFileSharingProvider.html" title="The interface of a provider for the QXmppFileSharingManager." alt="" coords="19,5,215,32"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a53aba2dea5f3d3cdf7a08c724bae9995"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppHttpFileSharingProvider.html#a53aba2dea5f3d3cdf7a08c724bae9995">QXmppHttpFileSharingProvider</a> (<a class="el" href="classQXmppClient.html">QXmppClient</a> *client, QNetworkAccessManager *netManager)</td></tr>
-<tr class="memdesc:a53aba2dea5f3d3cdf7a08c724bae9995"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a <a class="el" href="classQXmppHttpFileSharingProvider.html">QXmppHttpFileSharingProvider</a>.  <a href="classQXmppHttpFileSharingProvider.html#a53aba2dea5f3d3cdf7a08c724bae9995">More...</a><br /></td></tr>
-<tr class="separator:a53aba2dea5f3d3cdf7a08c724bae9995"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab9d232fe7fbefb0fdbc46e38e8cf5742"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppHttpFileSharingProvider.html#ab9d232fe7fbefb0fdbc46e38e8cf5742">downloadFile</a> (const std::any &amp;source, std::unique_ptr&lt; QIODevice &gt; &amp;&amp;target) -&gt; std::shared_ptr&lt; <a class="el" href="classQXmppDownload.html">QXmppDownload</a> &gt; override</td></tr>
-<tr class="memdesc:ab9d232fe7fbefb0fdbc46e38e8cf5742"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles the download of files for this provider.  <a href="classQXmppHttpFileSharingProvider.html#ab9d232fe7fbefb0fdbc46e38e8cf5742">More...</a><br /></td></tr>
-<tr class="separator:ab9d232fe7fbefb0fdbc46e38e8cf5742"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa162f4b51c0ddc8d95581a4fe95b756e"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppHttpFileSharingProvider.html#aa162f4b51c0ddc8d95581a4fe95b756e">uploadFile</a> (std::unique_ptr&lt; QIODevice &gt; data, const <a class="el" href="classQXmppFileMetadata.html">QXmppFileMetadata</a> &amp;info) -&gt; std::shared_ptr&lt; <a class="el" href="classQXmppUpload.html">QXmppUpload</a> &gt; override</td></tr>
-<tr class="memdesc:aa162f4b51c0ddc8d95581a4fe95b756e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles the upload of a file for this provider.  <a href="classQXmppHttpFileSharingProvider.html#aa162f4b51c0ddc8d95581a4fe95b756e">More...</a><br /></td></tr>
-<tr class="separator:aa162f4b51c0ddc8d95581a4fe95b756e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6e8bcad3a6cf5ef9d5985aea5f027b3f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppHttpFileSharingProvider.html#a6e8bcad3a6cf5ef9d5985aea5f027b3f">QXmppHttpFileSharingProvider</a> (<a class="el" href="classQXmppHttpUploadManager.html">QXmppHttpUploadManager</a> *manager, QNetworkAccessManager *netManager)</td></tr>
+<tr class="memdesc:a6e8bcad3a6cf5ef9d5985aea5f027b3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a <a class="el" href="classQXmppHttpFileSharingProvider.html">QXmppHttpFileSharingProvider</a>.  <a href="classQXmppHttpFileSharingProvider.html#a6e8bcad3a6cf5ef9d5985aea5f027b3f">More...</a><br /></td></tr>
+<tr class="separator:a6e8bcad3a6cf5ef9d5985aea5f027b3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2fb8a36f7a24a3510ce78312c363a5c3"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppHttpFileSharingProvider.html#a2fb8a36f7a24a3510ce78312c363a5c3">downloadFile</a> (const std::any &amp;source, std::unique_ptr&lt; QIODevice &gt; target, std::function&lt; void(quint64, quint64)&gt; reportProgress, std::function&lt; void(<a class="el" href="classQXmppFileSharingProvider.html#aadc278a79bde95e32658eb7cc81eabd1">DownloadResult</a>)&gt; reportFinished) -&gt; std::shared_ptr&lt; <a class="el" href="classQXmppFileSharingProvider_1_1Download.html">Download</a> &gt; override</td></tr>
+<tr class="memdesc:a2fb8a36f7a24a3510ce78312c363a5c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles the download of files for this provider.  <a href="classQXmppHttpFileSharingProvider.html#a2fb8a36f7a24a3510ce78312c363a5c3">More...</a><br /></td></tr>
+<tr class="separator:a2fb8a36f7a24a3510ce78312c363a5c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18a3b196e9441962d7ced3a4fc4a6a55"><td class="memItemLeft" align="right" valign="top">auto&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppHttpFileSharingProvider.html#a18a3b196e9441962d7ced3a4fc4a6a55">uploadFile</a> (std::unique_ptr&lt; QIODevice &gt; source, const <a class="el" href="classQXmppFileMetadata.html">QXmppFileMetadata</a> &amp;info, std::function&lt; void(quint64, quint64)&gt; reportProgress, std::function&lt; void(<a class="el" href="classQXmppFileSharingProvider.html#ac2919ea0d864af975f50fbb4f4bbfeb8">UploadResult</a>)&gt; reportFinished) -&gt; std::shared_ptr&lt; <a class="el" href="classQXmppFileSharingProvider_1_1Upload.html">Upload</a> &gt; override</td></tr>
+<tr class="memdesc:a18a3b196e9441962d7ced3a4fc4a6a55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles the upload of a file for this provider.  <a href="classQXmppHttpFileSharingProvider.html#a18a3b196e9441962d7ced3a4fc4a6a55">More...</a><br /></td></tr>
+<tr class="separator:a18a3b196e9441962d7ced3a4fc4a6a55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
+<tr class="inherit_header pub_types_classQXmppFileSharingProvider"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classQXmppFileSharingProvider')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classQXmppFileSharingProvider.html">QXmppFileSharingProvider</a></td></tr>
+<tr class="memitem:aadc278a79bde95e32658eb7cc81eabd1 inherit pub_types_classQXmppFileSharingProvider"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppFileSharingProvider.html#aadc278a79bde95e32658eb7cc81eabd1">DownloadResult</a> = std::variant&lt; <a class="el" href="structQXmpp_1_1Success.html">QXmpp::Success</a>, <a class="el" href="structQXmpp_1_1Cancelled.html">QXmpp::Cancelled</a>, <a class="el" href="structQXmppError.html">QXmppError</a> &gt;</td></tr>
+<tr class="separator:aadc278a79bde95e32658eb7cc81eabd1 inherit pub_types_classQXmppFileSharingProvider"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac2919ea0d864af975f50fbb4f4bbfeb8 inherit pub_types_classQXmppFileSharingProvider"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppFileSharingProvider.html#ac2919ea0d864af975f50fbb4f4bbfeb8">UploadResult</a> = std::variant&lt; std::any, <a class="el" href="structQXmpp_1_1Cancelled.html">QXmpp::Cancelled</a>, <a class="el" href="structQXmppError.html">QXmppError</a> &gt;</td></tr>
+<tr class="separator:ac2919ea0d864af975f50fbb4f4bbfeb8 inherit pub_types_classQXmppFileSharingProvider"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A file sharing provider that uses HTTP File Upload to upload the file.</p>
+<div class="textblock"><p>A file sharing provider that uses HTTP File Upload to upload and download files.</p>
 <dl class="section since"><dt>Since</dt><dd><a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.5 </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a53aba2dea5f3d3cdf7a08c724bae9995"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a53aba2dea5f3d3cdf7a08c724bae9995">&#9670;&nbsp;</a></span>QXmppHttpFileSharingProvider()</h2>
+<a id="a6e8bcad3a6cf5ef9d5985aea5f027b3f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6e8bcad3a6cf5ef9d5985aea5f027b3f">&#9670;&nbsp;</a></span>QXmppHttpFileSharingProvider()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -113,8 +121,8 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">QXmppHttpFileSharingProvider::QXmppHttpFileSharingProvider </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="classQXmppClient.html">QXmppClient</a> *&#160;</td>
-          <td class="paramname"><em>client</em>, </td>
+          <td class="paramtype"><a class="el" href="classQXmppHttpUploadManager.html">QXmppHttpUploadManager</a> *&#160;</td>
+          <td class="paramname"><em>manager</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -133,7 +141,7 @@ Public Member Functions</h2></td></tr>
 <p>Create a <a class="el" href="classQXmppHttpFileSharingProvider.html">QXmppHttpFileSharingProvider</a>. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">client</td><td></td></tr>
+    <tr><td class="paramname">manager</td><td></td></tr>
     <tr><td class="paramname">netManager</td><td>QNetworkAccessManager that can be reused all over your application. </td></tr>
   </table>
   </dd>
@@ -142,8 +150,8 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="ab9d232fe7fbefb0fdbc46e38e8cf5742"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab9d232fe7fbefb0fdbc46e38e8cf5742">&#9670;&nbsp;</a></span>downloadFile()</h2>
+<a id="a2fb8a36f7a24a3510ce78312c363a5c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2fb8a36f7a24a3510ce78312c363a5c3">&#9670;&nbsp;</a></span>downloadFile()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -160,13 +168,25 @@ Public Member Functions</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::unique_ptr&lt; QIODevice &gt; &amp;&amp;&#160;</td>
-          <td class="paramname"><em>target</em>&#160;</td>
+          <td class="paramtype">std::unique_ptr&lt; QIODevice &gt;&#160;</td>
+          <td class="paramname"><em>target</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::function&lt; void(quint64, quint64)&gt;&#160;</td>
+          <td class="paramname"><em>reportProgress</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::function&lt; void(<a class="el" href="classQXmppFileSharingProvider.html#aadc278a79bde95e32658eb7cc81eabd1">DownloadResult</a>)&gt;&#160;</td>
+          <td class="paramname"><em>reportFinished</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> -&gt;  std::shared_ptr&lt; <a class="el" href="classQXmppDownload.html">QXmppDownload</a> &gt;</td>
+          <td></td><td> -&gt;  std::shared_ptr&lt; <a class="el" href="classQXmppFileSharingProvider_1_1Download.html">Download</a> &gt;</td>
         </tr>
       </table>
   </td>
@@ -179,19 +199,20 @@ Public Member Functions</h2></td></tr>
 <p>Handles the download of files for this provider. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">source</td><td>A type-erased source object. The provider will only ever have to handle its own sources, so this can be safely casted to a concrete type. </td></tr>
+    <tr><td class="paramname">source</td><td>A type-erased source object. The provider will only ever have to handle its own sources, so this can safely be casted to the defined source type. </td></tr>
     <tr><td class="paramname">target</td><td>QIODevice into which the received data should be written </td></tr>
+    <tr><td class="paramname">reportProgress</td><td>Can be called to report received bytes and total bytes </td></tr>
+    <tr><td class="paramname">reportFinished</td><td>Finalizes the download, no more progress must be reported after this </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A subclass of <a class="el" href="classQXmppDownload.html" title="Provides progress of stateless file sharing uploads.">QXmppDownload</a> </dd></dl>
 
-<p>Implements <a class="el" href="classQXmppFileSharingProvider.html#a6ac85aa20877f0df071cabcac9492c0f">QXmppFileSharingProvider</a>.</p>
+<p>Implements <a class="el" href="classQXmppFileSharingProvider.html#a417ed6477b7706e33a987deab00ce95d">QXmppFileSharingProvider</a>.</p>
 
 </div>
 </div>
-<a id="aa162f4b51c0ddc8d95581a4fe95b756e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa162f4b51c0ddc8d95581a4fe95b756e">&#9670;&nbsp;</a></span>uploadFile()</h2>
+<a id="a18a3b196e9441962d7ced3a4fc4a6a55"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18a3b196e9441962d7ced3a4fc4a6a55">&#9670;&nbsp;</a></span>uploadFile()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -209,12 +230,24 @@ Public Member Functions</h2></td></tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">const <a class="el" href="classQXmppFileMetadata.html">QXmppFileMetadata</a> &amp;&#160;</td>
-          <td class="paramname"><em>info</em>&#160;</td>
+          <td class="paramname"><em>info</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::function&lt; void(quint64, quint64)&gt;&#160;</td>
+          <td class="paramname"><em>reportProgress</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::function&lt; void(<a class="el" href="classQXmppFileSharingProvider.html#ac2919ea0d864af975f50fbb4f4bbfeb8">UploadResult</a>)&gt;&#160;</td>
+          <td class="paramname"><em>reportFinished</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
           <td>)</td>
-          <td></td><td> -&gt;  std::shared_ptr&lt; <a class="el" href="classQXmppUpload.html">QXmppUpload</a> &gt;</td>
+          <td></td><td> -&gt;  std::shared_ptr&lt; <a class="el" href="classQXmppFileSharingProvider_1_1Upload.html">Upload</a> &gt;</td>
         </tr>
       </table>
   </td>
@@ -229,12 +262,13 @@ Public Member Functions</h2></td></tr>
   <table class="params">
     <tr><td class="paramname">source</td><td>A QIODevice from which data for uploading should be read. </td></tr>
     <tr><td class="paramname">info</td><td>Metadata of the file </td></tr>
+    <tr><td class="paramname">reportProgress</td><td>Can be called to report sent bytes and total bytes </td></tr>
+    <tr><td class="paramname">reportFinished</td><td>Finalizes the upload, no more progress must be reported after this </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>A subclass of <a class="el" href="classQXmppUpload.html" title="Provides progress of stateless file sharing uploads.">QXmppUpload</a> </dd></dl>
 
-<p>Implements <a class="el" href="classQXmppFileSharingProvider.html#a74ee2186fc4cfadd565602006a9e14e9">QXmppFileSharingProvider</a>.</p>
+<p>Implements <a class="el" href="classQXmppFileSharingProvider.html#a1768189b0377b3c767360b4a705bc836">QXmppFileSharingProvider</a>.</p>
 
 </div>
 </div>

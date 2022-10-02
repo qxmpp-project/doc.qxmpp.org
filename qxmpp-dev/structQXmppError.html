@@ -97,6 +97,9 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:add10f045ebd08754ed0783e1242d2840"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structQXmppError.html">QXmppError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structQXmppError.html#add10f045ebd08754ed0783e1242d2840">fromNetworkReply</a> (const QNetworkReply &amp;reply)</td></tr>
 <tr class="memdesc:add10f045ebd08754ed0783e1242d2840"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a <a class="el" href="structQXmppError.html">QXmppError</a> from a QNetworkReply.  <a href="structQXmppError.html#add10f045ebd08754ed0783e1242d2840">More...</a><br /></td></tr>
 <tr class="separator:add10f045ebd08754ed0783e1242d2840"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35b49156697a479c1a0b8f533910370d"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="structQXmppError.html">QXmppError</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structQXmppError.html#a35b49156697a479c1a0b8f533910370d">fromFileDevice</a> (const QFileDevice &amp;file)</td></tr>
+<tr class="memdesc:a35b49156697a479c1a0b8f533910370d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a <a class="el" href="structQXmppError.html">QXmppError</a> from a QFileDevice.  <a href="structQXmppError.html#a35b49156697a479c1a0b8f533910370d">More...</a><br /></td></tr>
+<tr class="separator:a35b49156697a479c1a0b8f533910370d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -109,6 +112,35 @@ Public Attributes</h2></td></tr>
 <div class="textblock"><p>Generic error class holding a description and a more specific error object. The specific error usually is something like a <a class="el" href="classQXmppStanza_1_1Error.html" title="The Error class represents a stanza error.">QXmppStanza::Error</a> or an enum.</p>
 <dl class="section since"><dt>Since</dt><dd><a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.5 </dd></dl>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a35b49156697a479c1a0b8f533910370d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35b49156697a479c1a0b8f533910370d">&#9670;&nbsp;</a></span>fromFileDevice()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="structQXmppError.html">QXmppError</a> QXmppError::fromFileDevice </td>
+          <td>(</td>
+          <td class="paramtype">const QFileDevice &amp;&#160;</td>
+          <td class="paramname"><em>file</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructs a <a class="el" href="structQXmppError.html">QXmppError</a> from a QFileDevice. </p>
+<p>It creates a <a class="el" href="structQXmppError.html">QXmppError</a> with the error string and a QFileDevice::FileError. </p>
+
+</div>
+</div>
 <a id="a4585954f194c27e4a425b0d3ca87ef18"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4585954f194c27e4a425b0d3ca87ef18">&#9670;&nbsp;</a></span>fromIoDevice()</h2>
 
