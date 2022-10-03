@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['vcardupdatetype_3054',['VCardUpdateType',['../classQXmppPresence.html#a642a378dd425bbbda1de4317e2dcd199',1,'QXmppPresence']]]
+  ['vcardupdatetype_3084',['VCardUpdateType',['../classQXmppPresence.html#a642a378dd425bbbda1de4317e2dcd199',1,'QXmppPresence']]]
 ];
