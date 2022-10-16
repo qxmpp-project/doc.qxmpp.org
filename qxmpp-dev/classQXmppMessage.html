@@ -337,6 +337,10 @@ QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
 <tr class="separator:a018cf876c41c5b070261c51645610d33"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae454b14a553d3d8d1a26ab5e628540e0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppMessage.html#ae454b14a553d3d8d1a26ab5e628540e0">setTrustMessageElement</a> (const std::optional&lt; <a class="el" href="classQXmppTrustMessageElement.html">QXmppTrustMessageElement</a> &gt; &amp;<a class="el" href="classQXmppMessage.html#a018cf876c41c5b070261c51645610d33">trustMessageElement</a>)</td></tr>
 <tr class="separator:ae454b14a553d3d8d1a26ab5e628540e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63565448c305091b1946b62ef3a927aa"><td class="memItemLeft" align="right" valign="top">std::optional&lt; <a class="el" href="classQXmppMessageReaction.html">QXmppMessageReaction</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppMessage.html#a63565448c305091b1946b62ef3a927aa">reaction</a> () const</td></tr>
+<tr class="separator:a63565448c305091b1946b62ef3a927aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2cb6b21093828d9ce73aa33eed81d1aa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppMessage.html#a2cb6b21093828d9ce73aa33eed81d1aa">setReaction</a> (const std::optional&lt; <a class="el" href="classQXmppMessageReaction.html">QXmppMessageReaction</a> &gt; &amp;<a class="el" href="classQXmppMessage.html#a63565448c305091b1946b62ef3a927aa">reaction</a>)</td></tr>
+<tr class="separator:a2cb6b21093828d9ce73aa33eed81d1aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afbf2c4378599a8731194b68b42234d25"><td class="memItemLeft" align="right" valign="top">const QVector&lt; <a class="el" href="classQXmppFileShare.html">QXmppFileShare</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppMessage.html#afbf2c4378599a8731194b68b42234d25">sharedFiles</a> () const</td></tr>
 <tr class="separator:afbf2c4378599a8731194b68b42234d25"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74657f08fb8cd18f929fad99f44f0e12"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppMessage.html#a74657f08fb8cd18f929fad99f44f0e12">setSharedFiles</a> (const QVector&lt; <a class="el" href="classQXmppFileShare.html">QXmppFileShare</a> &gt; &amp;<a class="el" href="classQXmppMessage.html#afbf2c4378599a8731194b68b42234d25">sharedFiles</a>)</td></tr>
@@ -1248,6 +1252,25 @@ If this returns QXmppMessage::UnknownEncryption, you can still get the namespace
 
 </div>
 </div>
+<a id="a63565448c305091b1946b62ef3a927aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63565448c305091b1946b62ef3a927aa">&#9670;&nbsp;</a></span>reaction()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::optional&lt; <a class="el" href="classQXmppMessageReaction.html">QXmppMessageReaction</a> &gt; QXmppMessage::reaction </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns a reaction to a message as defined by <a href="https://xmpp.org/extensions/xep-0444.html">XEP-0444: Message Reactions</a>.</p>
+<dl class="section since"><dt>Since</dt><dd><a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.5 </dd></dl>
+
+</div>
+</div>
 <a id="a0323038ef0a0e9af8b620202fc7d53d8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0323038ef0a0e9af8b620202fc7d53d8">&#9670;&nbsp;</a></span>receiptId()</h2>
 
@@ -1922,6 +1945,28 @@ If this returns QXmppMessage::UnknownEncryption, you can still get the namespace
 
 </div>
 </div>
+<a id="a2cb6b21093828d9ce73aa33eed81d1aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2cb6b21093828d9ce73aa33eed81d1aa">&#9670;&nbsp;</a></span>setReaction()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void QXmppMessage::setReaction </td>
+          <td>(</td>
+          <td class="paramtype">const std::optional&lt; <a class="el" href="classQXmppMessageReaction.html">QXmppMessageReaction</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>reaction</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Sets a reaction to a message as defined by <a href="https://xmpp.org/extensions/xep-0444.html">XEP-0444: Message Reactions</a>.</p>
+<p>The corresponding hint must be set manually: </p><div class="fragment"><div class="line"><a class="code" href="classQXmppMessage.html">QXmppMessage</a> message;</div>
+<div class="line">message.<a class="code" href="classQXmppMessage.html#a31394f18bd084a5adaa0794aab2e4a24">addHint</a>(<a class="code" href="classQXmppMessage.html#aea1a3c281a281bc3a4fbc9f48b554256a32bacb2cf0afce2b83ef293d10a7db17">QXmppMessage::Store</a>);</div>
+</div><!-- fragment --><dl class="section since"><dt>Since</dt><dd><a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.5 </dd></dl>
+
+</div>
+</div>
 <a id="a104137c6a141edae8da9678fb07429eb"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a104137c6a141edae8da9678fb07429eb">&#9670;&nbsp;</a></span>setReceiptId()</h2>
 
@@ -2429,6 +2474,9 @@ If this returns QXmppMessage::UnknownEncryption, you can still get the namespace
 <li>QXmppMessage.cpp</li>
 </ul>
 </div><!-- contents -->
+<div class="ttc" id="aclassQXmppMessage_html_aea1a3c281a281bc3a4fbc9f48b554256a32bacb2cf0afce2b83ef293d10a7db17"><div class="ttname"><a href="classQXmppMessage.html#aea1a3c281a281bc3a4fbc9f48b554256a32bacb2cf0afce2b83ef293d10a7db17">QXmppMessage::Store</a></div><div class="ttdeci">@ Store</div><div class="ttdoc">Do store the message.</div><div class="ttdef"><b>Definition:</b> QXmppMessage.h:95</div></div>
+<div class="ttc" id="aclassQXmppMessage_html_a31394f18bd084a5adaa0794aab2e4a24"><div class="ttname"><a href="classQXmppMessage.html#a31394f18bd084a5adaa0794aab2e4a24">QXmppMessage::addHint</a></div><div class="ttdeci">void addHint(const Hint hint)</div><div class="ttdef"><b>Definition:</b> QXmppMessage.cpp:847</div></div>
+<div class="ttc" id="aclassQXmppMessage_html"><div class="ttname"><a href="classQXmppMessage.html">QXmppMessage</a></div><div class="ttdoc">The QXmppMessage class represents an XMPP message.</div><div class="ttdef"><b>Definition:</b> QXmppMessage.h:34</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">
