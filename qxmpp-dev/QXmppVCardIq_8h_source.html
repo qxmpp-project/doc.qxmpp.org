@@ -306,19 +306,20 @@ $(function() {
 <div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;    <span class="keywordtype">void</span> setOrganization(<span class="keyword">const</span> <a class="code" href="classQXmppVCardOrganization.html">QXmppVCardOrganization</a> &amp;);</div>
 <div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160; </div>
 <div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> isVCard(<span class="keyword">const</span> QDomElement &amp;element);</div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160; </div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;    <span class="keywordtype">void</span> parseElementFromChild(<span class="keyword">const</span> QDomElement &amp;) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;    <span class="keywordtype">void</span> toXmlElementFromChild(QXmlStreamWriter *writer) <span class="keyword">const override</span>;</div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160; </div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;    QSharedDataPointer&lt;QXmppVCardIqPrivate&gt; d;</div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;};</div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160; </div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;QXMPP_EXPORT <span class="keywordtype">bool</span> operator==(<span class="keyword">const</span> <a class="code" href="classQXmppVCardIq.html">QXmppVCardIq</a> &amp;, <span class="keyword">const</span> <a class="code" href="classQXmppVCardIq.html">QXmppVCardIq</a> &amp;);</div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;QXMPP_EXPORT <span class="keywordtype">bool</span> operator!=(<span class="keyword">const</span> <a class="code" href="classQXmppVCardIq.html">QXmppVCardIq</a> &amp;, <span class="keyword">const</span> <a class="code" href="classQXmppVCardIq.html">QXmppVCardIq</a> &amp;);</div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160; </div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;<span class="preprocessor">#endif  // QXMPPVCARDIQ_H</span></div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;    <span class="keyword">static</span> <span class="keywordtype">bool</span> checkIqType(<span class="keyword">const</span> QString &amp;tagName, <span class="keyword">const</span> QString &amp;xmlNamespace);</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160; </div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;    <span class="keywordtype">void</span> parseElementFromChild(<span class="keyword">const</span> QDomElement &amp;) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;    <span class="keywordtype">void</span> toXmlElementFromChild(QXmlStreamWriter *writer) <span class="keyword">const override</span>;</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160; </div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;    QSharedDataPointer&lt;QXmppVCardIqPrivate&gt; d;</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;};</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160; </div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;QXMPP_EXPORT <span class="keywordtype">bool</span> operator==(<span class="keyword">const</span> <a class="code" href="classQXmppVCardIq.html">QXmppVCardIq</a> &amp;, <span class="keyword">const</span> <a class="code" href="classQXmppVCardIq.html">QXmppVCardIq</a> &amp;);</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;QXMPP_EXPORT <span class="keywordtype">bool</span> operator!=(<span class="keyword">const</span> <a class="code" href="classQXmppVCardIq.html">QXmppVCardIq</a> &amp;, <span class="keyword">const</span> <a class="code" href="classQXmppVCardIq.html">QXmppVCardIq</a> &amp;);</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160; </div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;<span class="preprocessor">#endif  // QXMPPVCARDIQ_H</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aclassQXmppVCardPhone_html"><div class="ttname"><a href="classQXmppVCardPhone.html">QXmppVCardPhone</a></div><div class="ttdoc">Represents a vCard phone number.</div><div class="ttdef"><b>Definition:</b> QXmppVCardIq.h:115</div></div>
 <div class="ttc" id="aclassQXmppVCardOrganization_html"><div class="ttname"><a href="classQXmppVCardOrganization.html">QXmppVCardOrganization</a></div><div class="ttdoc">Represents organization information in XMPP vCards.</div><div class="ttdef"><b>Definition:</b> QXmppVCardIq.h:166</div></div>

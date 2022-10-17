@@ -97,12 +97,13 @@ $(function() {
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    QStringList <a class="code" href="classQXmppClientExtension.html#a3ef15300fd584457adc40378a3103511">discoveryFeatures</a>() <span class="keyword">const override</span>;</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keywordtype">bool</span> <a class="code" href="classQXmppClientExtension.html#af836e49c31e96854b8d344f29f7e6b54">handleStanza</a>(<span class="keyword">const</span> QDomElement &amp;element) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;Q_SIGNALS:</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordtype">void</span> timeReceived(<span class="keyword">const</span> <a class="code" href="classQXmppEntityTimeIq.html">QXmppEntityTimeIq</a> &amp;);</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;};</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#endif  // QXMPPENTITYTIMEMANAGER_H</span></div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    std::variant&lt;QXmppEntityTimeIq, QXmppStanza::Error&gt; handleIq(<a class="code" href="classQXmppEntityTimeIq.html">QXmppEntityTimeIq</a> iq);</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;Q_SIGNALS:</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordtype">void</span> timeReceived(<span class="keyword">const</span> <a class="code" href="classQXmppEntityTimeIq.html">QXmppEntityTimeIq</a> &amp;);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;};</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;<span class="preprocessor">#endif  // QXMPPENTITYTIMEMANAGER_H</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aclassQXmppClientExtension_html"><div class="ttname"><a href="classQXmppClientExtension.html">QXmppClientExtension</a></div><div class="ttdoc">The QXmppClientExtension class is the base class for QXmppClient extensions.</div><div class="ttdef"><b>Definition:</b> QXmppClientExtension.h:32</div></div>
 <div class="ttc" id="aclassQXmppEntityTimeManager_html_ae0fd9dc33d198bebd10ba46241755b0f"><div class="ttname"><a href="classQXmppEntityTimeManager.html#ae0fd9dc33d198bebd10ba46241755b0f">QXmppEntityTimeManager::EntityTimeResult</a></div><div class="ttdeci">std::variant&lt; QXmppEntityTimeIq, QXmppStanza::Error &gt; EntityTimeResult</div><div class="ttdef"><b>Definition:</b> QXmppEntityTimeManager.h:29</div></div>

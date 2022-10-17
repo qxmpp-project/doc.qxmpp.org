@@ -159,6 +159,12 @@ Enumerations</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:aa99256168d2956f77c1a06952d955e64"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceQXmpp.html#aa99256168d2956f77c1a06952d955e64">operator&amp;</a> (<a class="el" href="namespaceQXmpp.html#abc6005b5a30290db2a9da3a9dde99a0d">SceMode</a> mode1, <a class="el" href="namespaceQXmpp.html#abc6005b5a30290db2a9da3a9dde99a0d">SceMode</a> mode2)</td></tr>
 <tr class="separator:aa99256168d2956f77c1a06952d955e64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2044b316b259e1ee80ba4d8c4c5012c9"><td class="memTemplParams" colspan="2">template&lt;typename... IqTypes, typename Handler &gt; </td></tr>
+<tr class="memitem:a2044b316b259e1ee80ba4d8c4c5012c9"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceQXmpp.html#a2044b316b259e1ee80ba4d8c4c5012c9">handleIqRequests</a> (const QDomElement &amp;element, const std::optional&lt; <a class="el" href="classQXmppE2eeMetadata.html">QXmppE2eeMetadata</a> &gt; &amp;e2eeMetadata, <a class="el" href="classQXmppClient.html">QXmppClient</a> *client, Handler handler)</td></tr>
+<tr class="separator:a2044b316b259e1ee80ba4d8c4c5012c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a69df6dc17e4db475cdfe721ae9a0b701"><td class="memTemplParams" colspan="2">template&lt;typename... IqTypes, typename Handler &gt; </td></tr>
+<tr class="memitem:a69df6dc17e4db475cdfe721ae9a0b701"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceQXmpp.html#a69df6dc17e4db475cdfe721ae9a0b701">handleIqRequests</a> (const QDomElement &amp;element, <a class="el" href="classQXmppClient.html">QXmppClient</a> *client, Handler handler)</td></tr>
+<tr class="separator:a69df6dc17e4db475cdfe721ae9a0b701"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Contains global functions and enumerations.</p>
@@ -348,6 +354,192 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="a2044b316b259e1ee80ba4d8c4c5012c9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2044b316b259e1ee80ba4d8c4c5012c9">&#9670;&nbsp;</a></span>handleIqRequests() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename... IqTypes, typename Handler &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">bool QXmpp::handleIqRequests </td>
+          <td>(</td>
+          <td class="paramtype">const QDomElement &amp;&#160;</td>
+          <td class="paramname"><em>element</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::optional&lt; <a class="el" href="classQXmppE2eeMetadata.html">QXmppE2eeMetadata</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>e2eeMetadata</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classQXmppClient.html">QXmppClient</a> *&#160;</td>
+          <td class="paramname"><em>client</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Handler&#160;</td>
+          <td class="paramname"><em>handler</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Parses IQ requests, calls a handler and sends an IQ result or error.</p>
+<p>It is the easiest to explain this function with a few examples.</p>
+<div class="fragment"><div class="line"><span class="keyword">auto</span> handled = QXmpp::handleIqElements&lt;QXmppVersionIq&gt;(element, e2eeMetadata, client, [](<a class="code" href="classQXmppVersionIq.html">QXmppVersionIq</a> iq) -&gt; std::variant&lt;QXmppVersionIq, QXmppStanza::Error&gt; {</div>
+<div class="line">    <span class="keywordflow">if</span> (iq.<a class="code" href="classQXmppIq.html#aeec9bc83e6c869cd52bf11917d0186b2">type</a>() == <a class="code" href="classQXmppIq.html#a6bc7a0505a3be7309051ae2432a3d826a78ce31809da9bddb4ab04ad512293eb1">QXmppIq::Get</a>) {</div>
+<div class="line">        QXmppVersionIq response;</div>
+<div class="line">        response.setName(<span class="stringliteral">&quot;MyApp&quot;</span>);</div>
+<div class="line">        response.setVersion(<span class="stringliteral">&quot;1.0&quot;</span>);</div>
+<div class="line">        <span class="comment">// id, to and type of the IQ are set automatically.</span></div>
+<div class="line">        return response;</div>
+<div class="line">    } <span class="keywordflow">else</span> if (iq.<a class="code" href="classQXmppIq.html#aeec9bc83e6c869cd52bf11917d0186b2">type</a>() == <a class="code" href="classQXmppIq.html#a6bc7a0505a3be7309051ae2432a3d826a3dc74d347c7b00a2a1cd3b02b4cfd7b0">QXmppIq::Set</a>) {</div>
+<div class="line">        return QXmppStanza::Error(QXmppStanza::Error::Cancel, QXmppStanza::Error::BadRequest, <span class="stringliteral">&quot;IQ must be of type &#39;get&#39;.&quot;</span>);</div>
+<div class="line">    }</div>
+<div class="line">});</div>
+</div><!-- fragment --><p>It is also possible to handle multiple IQ types. </p><div class="fragment"><div class="line"><span class="keyword">auto</span> handled = QXmpp::handleIqElements&lt;QXmppVersionIq, QXmppVCardIq&gt;(</div>
+<div class="line">    element, e2eeMetadata, client, [](std::variant&lt;QXmppVersionIq, QXmppVCardIq&gt; iqVariant) {</div>
+<div class="line">    <span class="comment">// ...</span></div>
+<div class="line">});</div>
+</div><!-- fragment --><p>It doesn't need to be a std::variant, it's only important that the object is callable with all the IQ types. You can for example use different lambdas per type using this 'overloaded' helper. </p><div class="fragment"><div class="line"><span class="keyword">template</span>&lt;<span class="keyword">class</span>... Ts&gt;</div>
+<div class="line"><span class="keyword">struct </span>overloaded : Ts... {</div>
+<div class="line">    <span class="keyword">using</span> Ts::operator()...;</div>
+<div class="line">};</div>
+<div class="line"><span class="comment">// explicit deduction guide (not needed as of C++20)</span></div>
+<div class="line"><span class="keyword">template</span>&lt;<span class="keyword">class</span>... Ts&gt;</div>
+<div class="line">overloaded(Ts...) -&gt; overloaded&lt;Ts...&gt;;</div>
+<div class="line"> </div>
+<div class="line"><span class="keyword">auto</span> handled = QXmpp::handleIqElements&lt;QXmppVersionIq, QXmppVCardIq&gt;(</div>
+<div class="line">    element, e2eeMetadata, client, overloaded {</div>
+<div class="line">        [](<a class="code" href="classQXmppVersionIq.html">QXmppVersionIq</a> iq) {</div>
+<div class="line">            <span class="comment">// ...</span></div>
+<div class="line">        },</div>
+<div class="line">        [](<a class="code" href="classQXmppVCardIq.html">QXmppVCardIq</a> iq) {</div>
+<div class="line">            <span class="comment">// ...</span></div>
+<div class="line">        }</div>
+<div class="line">    });</div>
+</div><!-- fragment --><p>And another option is to an object with <code>handleIq()</code> functions. </p><div class="fragment"><div class="line"><span class="keyword">auto</span> handled = QXmpp::handleIqElements&lt;QXmppVersionIq, QXmppVCardIq&gt;(element, e2eeMetadata, client, <span class="keyword">this</span>);</div>
+<div class="line"><span class="comment">// will call this-&gt;handleIq(QXmppVersionIq) or this-&gt;handleIq(QXmppVCardIq)</span></div>
+</div><!-- fragment --><p>The return type of the handler function can be:</p><ol type="1">
+<li>an <a class="el" href="classQXmppIq.html" title="The QXmppIq class is the base class for all IQs.">QXmppIq</a> based type</li>
+<li>a std::variant of <a class="el" href="classQXmppIq.html" title="The QXmppIq class is the base class for all IQs.">QXmppIq</a> based types (multiple are possible) and optionally also <a class="el" href="classQXmppStanza_1_1Error.html" title="The Error class represents a stanza error.">QXmppStanza::Error</a></li>
+<li>a QFuture of 1. or 2.</li>
+</ol>
+<p>You don't need to set the values for id or the to address on the IQ result because that's done automatically. Unless you want to return an error IQ you also don't need to set the IQ type.</p>
+<p>If you return an <a class="el" href="classQXmppStanza_1_1Error.html" title="The Error class represents a stanza error.">QXmppStanza::Error</a>, a normal <a class="el" href="classQXmppIq.html" title="The QXmppIq class is the base class for all IQs.">QXmppIq</a> with the error will be sent.</p>
+<p>The provided optional <a class="el" href="classQXmppE2eeMetadata.html" title="The QXmppE2eeMetadata class contains data used for end-to-end encryption purposes.">QXmppE2eeMetadata</a> is set on the parsed IQ and used to correctly encrypt the IQ response using <a class="el" href="classQXmppClient.html#ae14afa4bb1bd184587e1f4833617a757">QXmppClient::reply()</a>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">element</td><td>The DOM element that might contain an IQ. </td></tr>
+    <tr><td class="paramname">e2eeMetadata</td><td>The end-to-end encryption metadata that is used to encrypt the response correctly and to be set on the parsed IQ. </td></tr>
+    <tr><td class="paramname">client</td><td>The client that should be used to send the response. </td></tr>
+    <tr><td class="paramname">handler</td><td>Function that can handle the IQ types from the template parameter or an object that has handleIq() functions for each of the IQ types. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Whether the IQ could be parsed, handled and a response was or will be sent. </dd></dl>
+<dl class="section since"><dt>Since</dt><dd><a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.5 </dd></dl>
+
+</div>
+</div>
+<a id="a69df6dc17e4db475cdfe721ae9a0b701"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69df6dc17e4db475cdfe721ae9a0b701">&#9670;&nbsp;</a></span>handleIqRequests() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename... IqTypes, typename Handler &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">bool QXmpp::handleIqRequests </td>
+          <td>(</td>
+          <td class="paramtype">const QDomElement &amp;&#160;</td>
+          <td class="paramname"><em>element</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classQXmppClient.html">QXmppClient</a> *&#160;</td>
+          <td class="paramname"><em>client</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Handler&#160;</td>
+          <td class="paramname"><em>handler</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Parses IQ requests, calls a handler and sends an IQ result or error.</p>
+<p>It is the easiest to explain this function with a few examples.</p>
+<div class="fragment"><div class="line"><span class="keyword">auto</span> handled = QXmpp::handleIqElements&lt;QXmppVersionIq&gt;(element, client, [](<a class="code" href="classQXmppVersionIq.html">QXmppVersionIq</a> iq) -&gt; std::variant&lt;QXmppVersionIq, QXmppStanza::Error&gt; {</div>
+<div class="line">    <span class="keywordflow">if</span> (iq.<a class="code" href="classQXmppIq.html#aeec9bc83e6c869cd52bf11917d0186b2">type</a>() == <a class="code" href="classQXmppIq.html#a6bc7a0505a3be7309051ae2432a3d826a78ce31809da9bddb4ab04ad512293eb1">QXmppIq::Get</a>) {</div>
+<div class="line">        QXmppVersionIq response;</div>
+<div class="line">        response.setName(<span class="stringliteral">&quot;MyApp&quot;</span>);</div>
+<div class="line">        response.setVersion(<span class="stringliteral">&quot;1.0&quot;</span>);</div>
+<div class="line">        <span class="comment">// id, to and type of the IQ are set automatically.</span></div>
+<div class="line">        return response;</div>
+<div class="line">    } <span class="keywordflow">else</span> if (iq.<a class="code" href="classQXmppIq.html#aeec9bc83e6c869cd52bf11917d0186b2">type</a>() == <a class="code" href="classQXmppIq.html#a6bc7a0505a3be7309051ae2432a3d826a3dc74d347c7b00a2a1cd3b02b4cfd7b0">QXmppIq::Set</a>) {</div>
+<div class="line">        return QXmppStanza::Error(QXmppStanza::Error::Cancel, QXmppStanza::Error::BadRequest, <span class="stringliteral">&quot;IQ must be of type &#39;get&#39;.&quot;</span>);</div>
+<div class="line">    }</div>
+<div class="line">});</div>
+</div><!-- fragment --><p>It is also possible to handle multiple IQ types. </p><div class="fragment"><div class="line"><span class="keyword">auto</span> handled = QXmpp::handleIqElements&lt;QXmppVersionIq, QXmppVCardIq&gt;(</div>
+<div class="line">    element, client, [](std::variant&lt;QXmppVersionIq, QXmppVCardIq&gt; iqVariant) {</div>
+<div class="line">    <span class="comment">// ...</span></div>
+<div class="line">});</div>
+</div><!-- fragment --><p>It doesn't need to be a std::variant, it's only important that the object is callable with all the IQ types. You can for example use different lambdas per type using this 'overloaded' helper. </p><div class="fragment"><div class="line"><span class="keyword">template</span>&lt;<span class="keyword">class</span>... Ts&gt;</div>
+<div class="line"><span class="keyword">struct </span>overloaded : Ts... {</div>
+<div class="line">    <span class="keyword">using</span> Ts::operator()...;</div>
+<div class="line">};</div>
+<div class="line"><span class="comment">// explicit deduction guide (not needed as of C++20)</span></div>
+<div class="line"><span class="keyword">template</span>&lt;<span class="keyword">class</span>... Ts&gt;</div>
+<div class="line">overloaded(Ts...) -&gt; overloaded&lt;Ts...&gt;;</div>
+<div class="line"> </div>
+<div class="line"><span class="keyword">auto</span> handled = QXmpp::handleIqElements&lt;QXmppVersionIq, QXmppVCardIq&gt;(</div>
+<div class="line">    element, client, overloaded {</div>
+<div class="line">        [](<a class="code" href="classQXmppVersionIq.html">QXmppVersionIq</a> iq) {</div>
+<div class="line">            <span class="comment">// ...</span></div>
+<div class="line">        },</div>
+<div class="line">        [](<a class="code" href="classQXmppVCardIq.html">QXmppVCardIq</a> iq) {</div>
+<div class="line">            <span class="comment">// ...</span></div>
+<div class="line">        }</div>
+<div class="line">    });</div>
+</div><!-- fragment --><p>And another option is to an object with <code>handleIq()</code> functions. </p><div class="fragment"><div class="line"><span class="keyword">auto</span> handled = QXmpp::handleIqElements&lt;QXmppVersionIq, QXmppVCardIq&gt;(element, client, <span class="keyword">this</span>);</div>
+<div class="line"><span class="comment">// will call this-&gt;handleIq(QXmppVersionIq) or this-&gt;handleIq(QXmppVCardIq)</span></div>
+</div><!-- fragment --><p>The return type of the handler function can be:</p><ol type="1">
+<li>an <a class="el" href="classQXmppIq.html" title="The QXmppIq class is the base class for all IQs.">QXmppIq</a> based type</li>
+<li>a std::variant of <a class="el" href="classQXmppIq.html" title="The QXmppIq class is the base class for all IQs.">QXmppIq</a> based types (multiple are possible) and optionally also <a class="el" href="classQXmppStanza_1_1Error.html" title="The Error class represents a stanza error.">QXmppStanza::Error</a></li>
+<li>a QFuture of 1. or 2.</li>
+</ol>
+<p>You don't need to set the values for id or the to address on the IQ result because that's done automatically. Unless you want to return an error IQ you also don't need to set the IQ type.</p>
+<p>If you return an <a class="el" href="classQXmppStanza_1_1Error.html" title="The Error class represents a stanza error.">QXmppStanza::Error</a>, a normal <a class="el" href="classQXmppIq.html" title="The QXmppIq class is the base class for all IQs.">QXmppIq</a> with the error will be sent.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">element</td><td>The DOM element that might contain an IQ. </td></tr>
+    <tr><td class="paramname">client</td><td>The client that should be used to send the response. </td></tr>
+    <tr><td class="paramname">handler</td><td>Function that can handle the IQ types from the template parameter or an object that has handleIq() functions for each of the IQ types. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Whether the IQ could be parsed, handled and a response was or will be sent. </dd></dl>
+<dl class="section since"><dt>Since</dt><dd><a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.5 </dd></dl>
+
+</div>
+</div>
 <a id="aa99256168d2956f77c1a06952d955e64"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa99256168d2956f77c1a06952d955e64">&#9670;&nbsp;</a></span>operator&amp;()</h2>
 
@@ -388,6 +580,11 @@ Functions</h2></td></tr>
 </div>
 </div>
 </div><!-- contents -->
+<div class="ttc" id="aclassQXmppVersionIq_html"><div class="ttname"><a href="classQXmppVersionIq.html">QXmppVersionIq</a></div><div class="ttdoc">The QXmppVersionIq class represents an IQ for conveying a software version as defined by XEP-0092: So...</div><div class="ttdef"><b>Definition:</b> QXmppVersionIq.h:15</div></div>
+<div class="ttc" id="aclassQXmppIq_html_aeec9bc83e6c869cd52bf11917d0186b2"><div class="ttname"><a href="classQXmppIq.html#aeec9bc83e6c869cd52bf11917d0186b2">QXmppIq::type</a></div><div class="ttdeci">QXmppIq::Type type() const</div><div class="ttdef"><b>Definition:</b> QXmppIq.cpp:51</div></div>
+<div class="ttc" id="aclassQXmppIq_html_a6bc7a0505a3be7309051ae2432a3d826a3dc74d347c7b00a2a1cd3b02b4cfd7b0"><div class="ttname"><a href="classQXmppIq.html#a6bc7a0505a3be7309051ae2432a3d826a3dc74d347c7b00a2a1cd3b02b4cfd7b0">QXmppIq::Set</a></div><div class="ttdeci">@ Set</div><div class="ttdoc">Set request.</div><div class="ttdef"><b>Definition:</b> QXmppIq.h:29</div></div>
+<div class="ttc" id="aclassQXmppVCardIq_html"><div class="ttname"><a href="classQXmppVCardIq.html">QXmppVCardIq</a></div><div class="ttdoc">Represents the XMPP vCard.</div><div class="ttdef"><b>Definition:</b> QXmppVCardIq.h:209</div></div>
+<div class="ttc" id="aclassQXmppIq_html_a6bc7a0505a3be7309051ae2432a3d826a78ce31809da9bddb4ab04ad512293eb1"><div class="ttname"><a href="classQXmppIq.html#a6bc7a0505a3be7309051ae2432a3d826a78ce31809da9bddb4ab04ad512293eb1">QXmppIq::Get</a></div><div class="ttdeci">@ Get</div><div class="ttdoc">Get request.</div><div class="ttdef"><b>Definition:</b> QXmppIq.h:28</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">
