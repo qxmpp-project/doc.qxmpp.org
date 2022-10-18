@@ -90,6 +90,8 @@ Classes</h2></td></tr>
 Public Types</h2></td></tr>
 <tr class="memitem:ae6c448a9a6306389f0f719c9efe571fe"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppE2eeExtension.html#ae6c448a9a6306389f0f719c9efe571fe">MessageEncryptResult</a> = std::variant&lt; QByteArray, <a class="el" href="structQXmpp_1_1SendError.html">QXmpp::SendError</a> &gt;</td></tr>
 <tr class="separator:ae6c448a9a6306389f0f719c9efe571fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a321313d4c63fbf495033523503ed1da6"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppE2eeExtension.html#a321313d4c63fbf495033523503ed1da6">MessageDecryptResult</a> = std::variant&lt; <a class="el" href="classQXmppMessage.html">QXmppMessage</a>, <a class="el" href="structQXmppE2eeExtension_1_1NotEncrypted.html">NotEncrypted</a>, <a class="el" href="structQXmppError.html">QXmppError</a> &gt;</td></tr>
+<tr class="separator:a321313d4c63fbf495033523503ed1da6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8feb365f765111ec5d67cfc57b071de1"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppE2eeExtension.html#a8feb365f765111ec5d67cfc57b071de1">IqEncryptResult</a> = std::variant&lt; QByteArray, <a class="el" href="structQXmpp_1_1SendError.html">QXmpp::SendError</a> &gt;</td></tr>
 <tr class="separator:a8feb365f765111ec5d67cfc57b071de1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af6f5664c1e6868ddfed1aa977ec69c5e"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppE2eeExtension.html#af6f5664c1e6868ddfed1aa977ec69c5e">IqDecryptResult</a> = std::variant&lt; QDomElement, <a class="el" href="structQXmppE2eeExtension_1_1NotEncrypted.html">NotEncrypted</a>, <a class="el" href="structQXmpp_1_1SendError.html">QXmpp::SendError</a> &gt;</td></tr>
@@ -99,10 +101,16 @@ Public Types</h2></td></tr>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:aea9d8ac0aa936b55ce7cff850b8dc469"><td class="memItemLeft" align="right" valign="top">virtual QFuture&lt; <a class="el" href="classQXmppE2eeExtension.html#ae6c448a9a6306389f0f719c9efe571fe">MessageEncryptResult</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppE2eeExtension.html#aea9d8ac0aa936b55ce7cff850b8dc469">encryptMessage</a> (<a class="el" href="classQXmppMessage.html">QXmppMessage</a> &amp;&amp;, const std::optional&lt; <a class="el" href="classQXmppSendStanzaParams.html">QXmppSendStanzaParams</a> &gt; &amp;)=0</td></tr>
 <tr class="separator:aea9d8ac0aa936b55ce7cff850b8dc469"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad60b9f968ea4cab3e5380f24cc757a5b"><td class="memItemLeft" align="right" valign="top">virtual QFuture&lt; <a class="el" href="classQXmppE2eeExtension.html#a321313d4c63fbf495033523503ed1da6">MessageDecryptResult</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppE2eeExtension.html#ad60b9f968ea4cab3e5380f24cc757a5b">decryptMessage</a> (<a class="el" href="classQXmppMessage.html">QXmppMessage</a> &amp;&amp;)=0</td></tr>
+<tr class="separator:ad60b9f968ea4cab3e5380f24cc757a5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2b55f9024eb98116ba4a9b496dcc86eb"><td class="memItemLeft" align="right" valign="top">virtual QFuture&lt; <a class="el" href="classQXmppE2eeExtension.html#a8feb365f765111ec5d67cfc57b071de1">IqEncryptResult</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppE2eeExtension.html#a2b55f9024eb98116ba4a9b496dcc86eb">encryptIq</a> (<a class="el" href="classQXmppIq.html">QXmppIq</a> &amp;&amp;, const std::optional&lt; <a class="el" href="classQXmppSendStanzaParams.html">QXmppSendStanzaParams</a> &gt; &amp;)=0</td></tr>
 <tr class="separator:a2b55f9024eb98116ba4a9b496dcc86eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a70a465444f8032d736a5f44625689355"><td class="memItemLeft" align="right" valign="top">virtual QFuture&lt; <a class="el" href="classQXmppE2eeExtension.html#af6f5664c1e6868ddfed1aa977ec69c5e">IqDecryptResult</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppE2eeExtension.html#a70a465444f8032d736a5f44625689355">decryptIq</a> (const QDomElement &amp;)=0</td></tr>
 <tr class="separator:a70a465444f8032d736a5f44625689355"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e212fd95da5865f857f82d6f7cbc849"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppE2eeExtension.html#a3e212fd95da5865f857f82d6f7cbc849">isEncrypted</a> (const QDomElement &amp;)=0</td></tr>
+<tr class="separator:a3e212fd95da5865f857f82d6f7cbc849"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07b714d9f508758ef985dcd64d62a309"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppE2eeExtension.html#a07b714d9f508758ef985dcd64d62a309">isEncrypted</a> (const <a class="el" href="classQXmppMessage.html">QXmppMessage</a> &amp;)=0</td></tr>
+<tr class="separator:a07b714d9f508758ef985dcd64d62a309"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Abstract client extension for end-to-end-encryption protocols.</p>
@@ -136,6 +144,21 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Contains the XML serialized IQ stanza with encrypted contents or a <a class="el" href="structQXmpp_1_1SendError.html">QXmpp::SendError</a> in case the IQ couldn't be encrypted. </p>
+
+</div>
+</div>
+<a id="a321313d4c63fbf495033523503ed1da6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a321313d4c63fbf495033523503ed1da6">&#9670;&nbsp;</a></span>MessageDecryptResult</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classQXmppE2eeExtension.html#a321313d4c63fbf495033523503ed1da6">QXmppE2eeExtension::MessageDecryptResult</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Contains the decrypted <a class="el" href="classQXmppMessage.html" title="The QXmppMessage class represents an XMPP message.">QXmppMessage</a>, <a class="el" href="structQXmppE2eeExtension_1_1NotEncrypted.html">NotEncrypted</a> or an <a class="el" href="structQXmppError.html">QXmppError</a>. </p>
 
 </div>
 </div>
@@ -179,6 +202,33 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Decrypts an IQ from a DOM element and returns a fully decrypted IQ as a DOM element via QFuture. If the input was not encrypted, <a class="el" href="structQXmppE2eeExtension_1_1NotEncrypted.html">QXmppE2eeExtension::NotEncrypted</a> should be returned. </p>
+
+</div>
+</div>
+<a id="ad60b9f968ea4cab3e5380f24cc757a5b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad60b9f968ea4cab3e5380f24cc757a5b">&#9670;&nbsp;</a></span>decryptMessage()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QXmppE2eeExtension::decryptMessage </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classQXmppMessage.html">QXmppMessage</a> &amp;&amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Decrypts a <a class="el" href="classQXmppMessage.html" title="The QXmppMessage class represents an XMPP message.">QXmppMessage</a> and returns the decrypted <a class="el" href="classQXmppMessage.html" title="The QXmppMessage class represents an XMPP message.">QXmppMessage</a>. In case the message was not encrypted, <a class="el" href="structQXmppE2eeExtension_1_1NotEncrypted.html">QXmppE2eeExtension::NotEncrypted</a> should be returned. </p>
 
 </div>
 </div>
@@ -255,6 +305,60 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Encrypts a <a class="el" href="classQXmppMessage.html" title="The QXmppMessage class represents an XMPP message.">QXmppMessage</a> and returns the serialized XML stanza with encrypted contents via QFuture.</p>
 <p>If the message cannot be encrypted for whatever reason, you can either serialize the message unencrypted and return that or return a SendError with an error message. </p>
+
+</div>
+</div>
+<a id="a3e212fd95da5865f857f82d6f7cbc849"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e212fd95da5865f857f82d6f7cbc849">&#9670;&nbsp;</a></span>isEncrypted() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QXmppE2eeExtension::isEncrypted </td>
+          <td>(</td>
+          <td class="paramtype">const QDomElement &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns whether the DOM element of an IQ or message stanza is encrypted with this encryption. </p>
+
+</div>
+</div>
+<a id="a07b714d9f508758ef985dcd64d62a309"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07b714d9f508758ef985dcd64d62a309">&#9670;&nbsp;</a></span>isEncrypted() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QXmppE2eeExtension::isEncrypted </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classQXmppMessage.html">QXmppMessage</a> &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Returns whether the message is encrypted with this encryption. </p>
 
 </div>
 </div>

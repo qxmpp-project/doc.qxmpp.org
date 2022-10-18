@@ -63,6 +63,8 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#signals">Signals</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="classQXmppMamManager-members.html">List of all members</a>  </div>
@@ -96,6 +98,17 @@ Collaboration diagram for QXmppMamManager:</div>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structQXmppMamManager_1_1RetrievedMessages.html">RetrievedMessages</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains all retrieved messages and the result IQ that can be used for pagination.  <a href="structQXmppMamManager_1_1RetrievedMessages.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:a19f0bac4ede6ba123b654fa3b3eec87f"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppMamManager.html#a19f0bac4ede6ba123b654fa3b3eec87f">RetrieveResult</a> = std::variant&lt; <a class="el" href="structQXmppMamManager_1_1RetrievedMessages.html">RetrievedMessages</a>, <a class="el" href="structQXmppError.html">QXmppError</a> &gt;</td></tr>
+<tr class="separator:a19f0bac4ede6ba123b654fa3b3eec87f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="signals"></a>
 Signals</h2></td></tr>
 <tr class="memitem:aa2a24051cf7e4bb0b736dd5e6f8c3231"><td class="memItemLeft" align="right" valign="top"><a id="aa2a24051cf7e4bb0b736dd5e6f8c3231"></a>
@@ -124,6 +137,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a5ee5204f58924922d0a41a4e7c7b6499"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppMamManager.html#a5ee5204f58924922d0a41a4e7c7b6499">retrieveArchivedMessages</a> (const QString &amp;to=QString(), const QString &amp;node=QString(), const QString &amp;jid=QString(), const QDateTime &amp;start=QDateTime(), const QDateTime &amp;end=QDateTime(), const <a class="el" href="classQXmppResultSetQuery.html">QXmppResultSetQuery</a> &amp;resultSetQuery=<a class="el" href="classQXmppResultSetQuery.html">QXmppResultSetQuery</a>())</td></tr>
 <tr class="separator:a5ee5204f58924922d0a41a4e7c7b6499"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a58e2a9a4041739537855e9e588cb5a04"><td class="memItemLeft" align="right" valign="top">QFuture&lt; <a class="el" href="classQXmppMamManager.html#a19f0bac4ede6ba123b654fa3b3eec87f">RetrieveResult</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppMamManager.html#a58e2a9a4041739537855e9e588cb5a04">retrieveMessages</a> (const QString &amp;to=QString(), const QString &amp;node=QString(), const QString &amp;jid=QString(), const QDateTime &amp;start=QDateTime(), const QDateTime &amp;end=QDateTime(), const <a class="el" href="classQXmppResultSetQuery.html">QXmppResultSetQuery</a> &amp;resultSetQuery=<a class="el" href="classQXmppResultSetQuery.html">QXmppResultSetQuery</a>())</td></tr>
+<tr class="separator:a58e2a9a4041739537855e9e588cb5a04"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classQXmppClientExtension"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classQXmppClientExtension')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classQXmppClientExtension.html">QXmppClientExtension</a></td></tr>
 <tr class="memitem:aec299452688f50431f1028668186e3ec inherit pub_methods_classQXmppClientExtension"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppClientExtension.html#aec299452688f50431f1028668186e3ec">QXmppClientExtension</a> ()</td></tr>
 <tr class="separator:aec299452688f50431f1028668186e3ec inherit pub_methods_classQXmppClientExtension"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -170,7 +185,24 @@ Additional Inherited Members</h2></td></tr>
 <div class="fragment"><div class="line"><a class="code" href="classQXmppMamManager.html">QXmppMamManager</a> *manager = <span class="keyword">new</span> <a class="code" href="classQXmppMamManager.html">QXmppMamManager</a>;</div>
 <div class="line"><a class="code" href="classQXmppClientExtension.html#a2476cb1a20963d15d45d39f24a0c1198">client</a>-&gt;<a class="code" href="classQXmppClient.html#a61ccf1c37ca3f26bfd14e65c8ecf1740">addExtension</a>(manager);</div>
 </div><!-- fragment --><dl class="section since"><dt>Since</dt><dd><a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.0 </dd></dl>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="a19f0bac4ede6ba123b654fa3b3eec87f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19f0bac4ede6ba123b654fa3b3eec87f">&#9670;&nbsp;</a></span>RetrieveResult</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classQXmppMamManager.html#a19f0bac4ede6ba123b654fa3b3eec87f">QXmppMamManager::RetrieveResult</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Contains <a class="el" href="structQXmppMamManager_1_1RetrievedMessages.html" title="Contains all retrieved messages and the result IQ that can be used for pagination.">RetrievedMessages</a> or an <a class="el" href="structQXmppError.html">QXmppError</a>.</p>
+<dl class="section since"><dt>Since</dt><dd><a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.5 </dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a id="a5ee5204f58924922d0a41a4e7c7b6499"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5ee5204f58924922d0a41a4e7c7b6499">&#9670;&nbsp;</a></span>retrieveArchivedMessages()</h2>
 
@@ -221,6 +253,7 @@ Additional Inherited Members</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Retrieves archived messages. For each received message, the archiveMessageReceived() signal is emitted. Once all messages are received, the <a class="el" href="classQXmppMamManager.html#a1041721ce79d420da6e67e5f1ca64cc4" title="This signal is emitted when all results for a request have been received.">resultsRecieved()</a> signal is emitted. It returns a result set that can be used to page through the results. The number of results may be limited by the server.</p>
+<dl class="section warning"><dt>Warning</dt><dd>This API does not work with end-to-end encrypted messages. You can use the new QFuture-based API (<a class="el" href="classQXmppMamManager.html#a58e2a9a4041739537855e9e588cb5a04">retrieveMessages()</a>) for that.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">to</td><td>Optional entity that should be queried. Leave this empty to query the local archive. </td></tr>
@@ -236,6 +269,74 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="a58e2a9a4041739537855e9e588cb5a04"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a58e2a9a4041739537855e9e588cb5a04">&#9670;&nbsp;</a></span>retrieveMessages()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QFuture&lt; <a class="el" href="classQXmppMamManager.html#a19f0bac4ede6ba123b654fa3b3eec87f">QXmppMamManager::RetrieveResult</a> &gt; QXmppMamManager::retrieveMessages </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>to</em> = <code>QString()</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>node</em> = <code>QString()</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>jid</em> = <code>QString()</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QDateTime &amp;&#160;</td>
+          <td class="paramname"><em>start</em> = <code>QDateTime()</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QDateTime &amp;&#160;</td>
+          <td class="paramname"><em>end</em> = <code>QDateTime()</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classQXmppResultSetQuery.html">QXmppResultSetQuery</a> &amp;&#160;</td>
+          <td class="paramname"><em>resultSetQuery</em> = <code><a class="el" href="classQXmppResultSetQuery.html">QXmppResultSetQuery</a>()</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Retrieves archived messages and reports all messages at once via a QFuture.</p>
+<p>This function tries to decrypt encrypted messages.</p>
+<p>The number of results may be limited by the server.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">to</td><td>Optional entity that should be queried. Leave this empty to query the local archive. </td></tr>
+    <tr><td class="paramname">node</td><td>Optional node that should be queried. This is used when querying a pubsub node. </td></tr>
+    <tr><td class="paramname">jid</td><td>Optional JID to filter the results. </td></tr>
+    <tr><td class="paramname">start</td><td>Optional start time to filter the results. </td></tr>
+    <tr><td class="paramname">end</td><td>Optional end time to filter the results. </td></tr>
+    <tr><td class="paramname">resultSetQuery</td><td>Optional Result Set Management query. This can be used to limit the number of results and to page through the archive. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>query id of the request. This can be used to associate the corresponding resultsRecieved signal.</dd></dl>
+<dl class="section since"><dt>Since</dt><dd><a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.5 </dd></dl>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="QXmppMamManager_8h_source.html">QXmppMamManager.h</a></li>
 <li>QXmppMamManager.cpp</li>
@@ -243,7 +344,7 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- contents -->
 <div class="ttc" id="aclassQXmppClientExtension_html_a2476cb1a20963d15d45d39f24a0c1198"><div class="ttname"><a href="classQXmppClientExtension.html#a2476cb1a20963d15d45d39f24a0c1198">QXmppClientExtension::client</a></div><div class="ttdeci">QXmppClient * client()</div><div class="ttdef"><b>Definition:</b> QXmppClientExtension.cpp:87</div></div>
 <div class="ttc" id="aclassQXmppClient_html_a61ccf1c37ca3f26bfd14e65c8ecf1740"><div class="ttname"><a href="classQXmppClient.html#a61ccf1c37ca3f26bfd14e65c8ecf1740">QXmppClient::addExtension</a></div><div class="ttdeci">bool addExtension(QXmppClientExtension *extension)</div><div class="ttdef"><b>Definition:</b> QXmppClient.cpp:258</div></div>
-<div class="ttc" id="aclassQXmppMamManager_html"><div class="ttname"><a href="classQXmppMamManager.html">QXmppMamManager</a></div><div class="ttdoc">The QXmppMamManager class makes it possible to access message archives as defined by XEP-0313: Messag...</div><div class="ttdef"><b>Definition:</b> QXmppMamManager.h:31</div></div>
+<div class="ttc" id="aclassQXmppMamManager_html"><div class="ttname"><a href="classQXmppMamManager.html">QXmppMamManager</a></div><div class="ttdoc">The QXmppMamManager class makes it possible to access message archives as defined by XEP-0313: Messag...</div><div class="ttdef"><b>Definition:</b> QXmppMamManager.h:38</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

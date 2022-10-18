@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['name_3025',['name',['../structQXmppJingleIq_1_1RtpSessionStateMuting.html#aa04b267432b13b3d9b519c0e9280f5be',1,'QXmppJingleIq::RtpSessionStateMuting']]]
+  ['messages_3035',['messages',['../structQXmppMamManager_1_1RetrievedMessages.html#a0bd0bb9e7717be5e51a901a141e89fd6',1,'QXmppMamManager::RetrievedMessages']]]
 ];

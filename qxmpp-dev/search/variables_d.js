@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['session_3031',['session',['../structQXmppOmemoStorage_1_1Device.html#ac5d7fcf9f5a19371ed8a06726c501569',1,'QXmppOmemoStorage::Device']]],
-  ['signedprekeypairs_3032',['signedPreKeyPairs',['../structQXmppOmemoStorage_1_1OmemoData.html#ac740e0c1af219ee657d8efba9dc5236d',1,'QXmppOmemoStorage::OmemoData']]]
+  ['removalfromdevicelistdate_3041',['removalFromDeviceListDate',['../structQXmppOmemoStorage_1_1Device.html#aedfad4c251e7c30efe3a70d1f5cd570e',1,'QXmppOmemoStorage::Device']]],
+  ['result_3042',['result',['../structQXmppMamManager_1_1RetrievedMessages.html#acb76d079348dc04e57ef790d82abc61e',1,'QXmppMamManager::RetrievedMessages']]]
 ];
