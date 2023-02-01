@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['rooms_3301',['rooms',['../classQXmppMucManager.html#a574bd5b755a4463895f5376977d6a0a7',1,'QXmppMucManager']]]
+  ['rooms_0',['rooms',['../classQXmppMucManager.html#a0a417673094c3aa2f7b528b2153836de',1,'QXmppMucManager']]]
 ];

@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['messagetypes_3292',['messageTypes',['../classQXmppLogger.html#a556ae378cb65e19460436437fa155ef2',1,'QXmppLogger']]],
-  ['method_3293',['method',['../classQXmppTransferJob.html#ae32e312cab4321da1a55e6caec7630e2',1,'QXmppTransferJob']]]
+  ['messagetypes_0',['messageTypes',['../classQXmppLogger.html#a556ae378cb65e19460436437fa155ef2',1,'QXmppLogger']]],
+  ['method_1',['method',['../classQXmppTransferJob.html#a626274d94307933af8d338fa8b82b1ed',1,'QXmppTransferJob']]]
 ];
