@@ -1,0 +1,6 @@
+<map id="QXmppHttpUploadRequestIq" name="QXmppHttpUploadRequestIq">
+<area shape="rect" id="node1" title="Represents an HTTP File Upload IQ for requesting an upload slot as defined by XEP&#45;0363: HTTP File Upl..." alt="" coords="5,229,215,256"/>
+<area shape="rect" id="node2" href="$classQXmppIq.html" title="The QXmppIq class is the base class for all IQs." alt="" coords="69,155,151,181"/>
+<area shape="rect" id="node3" href="$classQXmppStanza.html" title="The QXmppStanza class is the base class for all XMPP stanzas." alt="" coords="53,80,167,107"/>
+<area shape="rect" id="node4" href="$classQXmppNonza.html" title=" " alt="" coords="55,5,165,32"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="QXmppArchiveChatIq" name="QXmppArchiveChatIq">
+<area shape="rect" id="node1" title="Represents an archive chat as defined by XEP&#45;0136: Message Archiving." alt="" coords="5,229,167,256"/>
+<area shape="rect" id="node2" href="$classQXmppIq.html" title="The QXmppIq class is the base class for all IQs." alt="" coords="45,155,127,181"/>
+<area shape="rect" id="node3" href="$classQXmppStanza.html" title="The QXmppStanza class is the base class for all XMPP stanzas." alt="" coords="29,80,143,107"/>
+<area shape="rect" id="node4" href="$classQXmppNonza.html" title=" " alt="" coords="31,5,141,32"/>
+</map>

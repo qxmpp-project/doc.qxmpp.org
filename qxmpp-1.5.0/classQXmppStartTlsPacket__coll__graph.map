@@ -1,0 +1,4 @@
+<map id="QXmppStartTlsPacket" name="QXmppStartTlsPacket">
+<area shape="rect" id="node1" title="The QXmppStartTlsPacket represents packets used for initiating STARTTLS negotiation when connecting." alt="" coords="5,80,168,107"/>
+<area shape="rect" id="node2" href="$classQXmppNonza.html" title=" " alt="" coords="31,5,142,32"/>
+</map>

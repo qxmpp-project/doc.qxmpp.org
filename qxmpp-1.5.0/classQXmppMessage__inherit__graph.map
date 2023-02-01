@@ -1,0 +1,7 @@
+<map id="QXmppMessage" name="QXmppMessage">
+<area shape="rect" id="node1" title="The QXmppMessage class represents an XMPP message." alt="" coords="38,155,166,181"/>
+<area shape="rect" id="node4" href="$classQXmppPubSubEventBase.html" title=" " alt="" coords="9,229,195,256"/>
+<area shape="rect" id="node2" href="$classQXmppStanza.html" title="The QXmppStanza class is the base class for all XMPP stanzas." alt="" coords="45,80,159,107"/>
+<area shape="rect" id="node3" href="$classQXmppNonza.html" title=" " alt="" coords="47,5,157,32"/>
+<area shape="rect" id="node5" href="$classQXmppPubSubEvent.html" title="The QXmppPubSubEvent class represents a PubSub event notification as defined by XEP&#45;0060: Publish&#45;Sub..." alt="" coords="5,304,199,331"/>
+</map>

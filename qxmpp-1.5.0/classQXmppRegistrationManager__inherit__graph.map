@@ -1,0 +1,5 @@
+<map id="QXmppRegistrationManager" name="QXmppRegistrationManager">
+<area shape="rect" id="node1" title="The QXmppRegistrationManager class manages in&#45;band registration and account management tasks like cha..." alt="" coords="5,155,212,181"/>
+<area shape="rect" id="node2" href="$classQXmppClientExtension.html" title="The QXmppClientExtension class is the base class for QXmppClient extensions." alt="" coords="23,80,195,107"/>
+<area shape="rect" id="node3" href="$classQXmppLoggable.html" title="The QXmppLoggable class represents a source of logging messages." alt="" coords="44,5,173,32"/>
+</map>

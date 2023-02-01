@@ -1,0 +1,5 @@
+<map id="QXmppDiscoveryManager" name="QXmppDiscoveryManager">
+<area shape="rect" id="node1" title="The QXmppDiscoveryManager class makes it possible to discover information about other entities as def..." alt="" coords="5,155,197,181"/>
+<area shape="rect" id="node2" href="$classQXmppClientExtension.html" title="The QXmppClientExtension class is the base class for QXmppClient extensions." alt="" coords="15,80,187,107"/>
+<area shape="rect" id="node3" href="$classQXmppLoggable.html" title="The QXmppLoggable class represents a source of logging messages." alt="" coords="37,5,166,32"/>
+</map>

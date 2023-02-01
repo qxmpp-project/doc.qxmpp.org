@@ -1,0 +1,5 @@
+<map id="QXmppFileSharingProvider" name="QXmppFileSharingProvider">
+<area shape="rect" id="node1" title="The interface of a provider for the QXmppFileSharingManager." alt="" coords="131,5,327,32"/>
+<area shape="rect" id="node2" href="$classQXmppEncryptedFileSharingProvider.html" title=" " alt="" coords="5,80,212,121"/>
+<area shape="rect" id="node3" href="$classQXmppHttpFileSharingProvider.html" title=" " alt="" coords="237,87,461,114"/>
+</map>

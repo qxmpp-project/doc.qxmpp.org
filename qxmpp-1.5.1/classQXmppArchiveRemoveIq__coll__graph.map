@@ -1,0 +1,6 @@
+<map id="QXmppArchiveRemoveIq" name="QXmppArchiveRemoveIq">
+<area shape="rect" id="node1" title="Represents an archive remove IQ as defined by XEP&#45;0136: Message Archiving." alt="" coords="5,229,191,256"/>
+<area shape="rect" id="node2" href="$classQXmppIq.html" title="The QXmppIq class is the base class for all IQs." alt="" coords="57,155,139,181"/>
+<area shape="rect" id="node3" href="$classQXmppStanza.html" title="The QXmppStanza class is the base class for all XMPP stanzas." alt="" coords="41,80,155,107"/>
+<area shape="rect" id="node4" href="$classQXmppNonza.html" title=" " alt="" coords="43,5,153,32"/>
+</map>

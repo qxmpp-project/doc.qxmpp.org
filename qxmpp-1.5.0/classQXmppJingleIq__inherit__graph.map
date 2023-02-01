@@ -1,0 +1,6 @@
+<map id="QXmppJingleIq" name="QXmppJingleIq">
+<area shape="rect" id="node1" title="The QXmppJingleIq class represents an IQ used for initiating media sessions as specified by XEP&#45;0166:..." alt="" coords="5,229,124,256"/>
+<area shape="rect" id="node2" href="$classQXmppIq.html" title="The QXmppIq class is the base class for all IQs." alt="" coords="23,155,106,181"/>
+<area shape="rect" id="node3" href="$classQXmppStanza.html" title="The QXmppStanza class is the base class for all XMPP stanzas." alt="" coords="7,80,122,107"/>
+<area shape="rect" id="node4" href="$classQXmppNonza.html" title=" " alt="" coords="9,5,120,32"/>
+</map>
