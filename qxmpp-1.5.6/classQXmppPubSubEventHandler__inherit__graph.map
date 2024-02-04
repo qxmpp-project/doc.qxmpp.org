@@ -1,0 +1,9 @@
+<map id="QXmppPubSubEventHandler" name="QXmppPubSubEventHandler">
+<area shape="rect" id="Node000001" title=" " alt="" coords="211,5,418,31"/>
+<area shape="rect" id="Node000002" href="$classQXmppOmemoManager.html" title=" " alt="" coords="5,79,184,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="267,37,131,81,129,76,265,32"/>
+<area shape="rect" id="Node000003" href="$classQXmppUserLocationManager.html" title=" " alt="" coords="209,79,421,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="317,44,317,79,312,79,312,44"/>
+<area shape="rect" id="Node000004" href="$classQXmppUserTuneManager.html" title=" " alt="" coords="445,79,632,104"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="364,32,503,76,502,81,363,37"/>
+</map>

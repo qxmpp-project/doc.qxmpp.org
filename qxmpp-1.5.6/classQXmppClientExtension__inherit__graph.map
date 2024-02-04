@@ -1,0 +1,57 @@
+<map id="QXmppClientExtension" name="QXmppClientExtension">
+<area shape="rect" id="Node000001" title="The QXmppClientExtension class is the base class for QXmppClient extensions." alt="" coords="183,597,355,623"/>
+<area shape="rect" id="Node000003" href="$classQXmppArchiveManager.html" title="The QXmppArchiveManager class makes it possible to access message archives as defined by XEP&#45;0136: Me..." alt="" coords="432,5,608,31"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="270,583,283,467,309,304,326,220,348,144,372,82,386,58,401,40,431,22,433,27,404,44,390,61,377,85,353,146,332,221,314,304,288,468,275,584"/>
+<area shape="rect" id="Node000004" href="$classQXmppAttentionManager.html" title="The QXmppAttentionManager class manages attention requests as defined by XEP&#45;0224: Attention." alt="" coords="427,55,613,80"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="270,583,285,476,312,327,330,252,351,183,374,127,401,89,425,74,428,78,405,93,379,130,356,185,335,253,317,328,291,477,276,584"/>
+<area shape="rect" id="Node000005" href="$classQXmppBookmarkManager.html" title="The QXmppBookmarkManager class allows you to store and retrieve bookmarks as defined by XEP&#45;0048: Boo..." alt="" coords="423,104,617,129"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="271,583,288,485,316,351,333,284,354,223,376,173,401,139,421,125,424,130,405,143,381,175,359,225,339,285,321,353,293,486,276,584"/>
+<area shape="rect" id="Node000006" href="$classQXmppCallManager.html" title="The QXmppCallManager class provides support for making and receiving voice calls." alt="" coords="444,153,596,179"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="267,583,272,505,278,454,290,398,306,341,330,285,361,233,401,188,421,175,443,167,445,172,423,180,404,192,365,236,334,287,311,343,295,399,284,455,277,506,272,583"/>
+<area shape="rect" id="Node000007" href="$classQXmppCarbonManager.html" title="The QXmppCarbonManager class handles message carbons as described in XEP&#45;0280: Message Carbons." alt="" coords="433,203,607,228"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="268,583,276,514,296,420,313,370,336,321,365,276,401,237,432,220,434,225,404,241,369,279,340,324,318,372,301,421,281,514,274,584"/>
+<area shape="rect" id="Node000008" href="$classQXmppCarbonManagerV2.html" title="The QXmppCarbonManagerV2 class handles message carbons as described in XEP&#45;0280: Message Carbons." alt="" coords="425,252,615,277"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="270,583,280,522,303,441,320,399,341,358,368,319,401,287,423,273,426,278,404,291,372,323,346,360,325,401,308,443,286,523,275,584"/>
+<area shape="rect" id="Node000009" href="$classQXmppDiscoveryManager.html" title="The QXmppDiscoveryManager class makes it possible to discover information about other entities as def..." alt="" coords="424,301,616,327"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="272,584,285,531,310,463,327,428,347,394,372,363,401,336,422,324,425,328,404,340,376,366,352,397,331,431,315,466,291,532,277,585"/>
+<area shape="rect" id="Node000010" href="$classQXmppEntityTimeManager.html" title="The QXmppEntityTimeManager class provided the functionality to get the local time of an entity as def..." alt="" coords="421,351,619,376"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="275,583,292,540,318,486,354,432,376,408,401,386,425,374,428,378,404,391,380,411,358,435,322,489,297,542,280,585"/>
+<area shape="rect" id="Node000011" href="$classQXmppFileSharingManager.html" title=" " alt="" coords="421,400,619,425"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="280,583,299,550,326,509,360,469,401,436,428,423,430,428,404,440,364,473,330,513,303,552,284,586"/>
+<area shape="rect" id="Node000012" href="$classQXmppHttpUploadManager.html" title=" " alt="" coords="419,449,621,475"/>
+<area shape="poly" id="edge11_Node000001_Node000012" title=" " alt="" coords="286,585,335,534,366,507,401,485,433,472,435,477,404,490,370,512,338,538,290,589"/>
+<area shape="rect" id="Node000013" href="$classQXmppMamManager.html" title="The QXmppMamManager class makes it possible to access message archives as defined by XEP&#45;0313: Messag..." alt="" coords="440,499,600,524"/>
+<area shape="poly" id="edge12_Node000001_Node000013" title=" " alt="" coords="299,588,346,560,402,534,444,522,445,527,404,539,349,565,302,592"/>
+<area shape="rect" id="Node000014" href="$classQXmppMessageReceiptManager.html" title="The QXmppMessageReceiptManager class makes it possible to send and receive message delivery receipts ..." alt="" coords="403,548,637,573"/>
+<area shape="poly" id="edge13_Node000001_Node000014" title=" " alt="" coords="347,592,454,571,455,576,348,597"/>
+<area shape="rect" id="Node000015" href="$classQXmppMucManager.html" title="The QXmppMucManager class makes it possible to interact with multi&#45;user chat rooms as defined by XEP&#45;..." alt="" coords="443,597,597,623"/>
+<area shape="poly" id="edge14_Node000001_Node000015" title=" " alt="" coords="368,607,443,607,443,613,368,613"/>
+<area shape="rect" id="Node000016" href="$classQXmppOmemoManager.html" title=" " alt="" coords="431,647,609,672"/>
+<area shape="poly" id="edge15_Node000001_Node000016" title=" " alt="" coords="348,623,455,644,454,649,347,628"/>
+<area shape="rect" id="Node000017" href="$classQXmppPubSubManager.html" title="The QXmppPubSubManager aims to provide publish&#45;subscribe functionality as specified in XEP&#45;0060: Publ..." alt="" coords="433,696,607,721"/>
+<area shape="poly" id="edge16_Node000001_Node000017" title=" " alt="" coords="301,628,348,656,404,682,441,693,440,698,402,687,346,661,298,633"/>
+<area shape="rect" id="Node000018" href="$classQXmppRegistrationManager.html" title="The QXmppRegistrationManager class manages in&#45;band registration and account management tasks like cha..." alt="" coords="417,745,623,771"/>
+<area shape="poly" id="edge17_Node000001_Node000018" title=" " alt="" coords="290,632,338,683,369,710,404,732,432,743,430,748,401,736,366,714,334,687,286,635"/>
+<area shape="rect" id="Node000019" href="$classQXmppRosterManager.html" title="The QXmppRosterManager class provides access to a connected client&#39;s roster." alt="" coords="435,795,605,820"/>
+<area shape="poly" id="edge18_Node000001_Node000019" title=" " alt="" coords="284,634,303,668,330,708,364,748,404,781,436,795,434,800,401,786,360,752,325,711,298,671,279,636"/>
+<area shape="rect" id="Node000020" href="$classQXmppRpcManager.html" title="The QXmppRpcManager class make it possible to invoke remote methods and to expose local interfaces fo..." alt="" coords="445,844,595,869"/>
+<area shape="poly" id="edge19_Node000001_Node000020" title=" " alt="" coords="280,635,296,679,322,732,358,786,380,810,404,830,424,841,445,848,443,853,421,846,401,835,376,814,354,789,317,735,291,681,275,637"/>
+<area shape="rect" id="Node000021" href="$classQXmppTransferManager.html" title=" " alt="" coords="431,893,609,919"/>
+<area shape="poly" id="edge20_Node000001_Node000021" title=" " alt="" coords="277,635,291,688,315,754,331,789,352,823,376,854,404,880,432,895,429,899,401,884,372,857,347,826,327,792,310,757,285,689,272,636"/>
+<area shape="rect" id="Node000022" href="$classQXmppTrustManager.html" title="The QXmppTrustManager manages end&#45;to&#45;end encryption trust decisions." alt="" coords="441,943,599,968"/>
+<area shape="poly" id="edge21_Node000001_Node000022" title=" " alt="" coords="275,636,286,697,308,777,325,819,346,860,372,897,404,929,422,940,441,947,439,952,419,945,401,933,368,901,341,862,320,821,303,779,280,698,270,637"/>
+<area shape="rect" id="Node000024" href="$classQXmppUploadRequestManager.html" title="The QXmppUploadRequestManager implements the core of XEP&#45;0369: HTTP File Upload." alt="" coords="407,992,633,1017"/>
+<area shape="poly" id="edge23_Node000001_Node000024" title=" " alt="" coords="274,636,281,706,301,799,318,848,340,896,369,941,404,979,421,990,418,994,401,983,365,944,336,899,313,850,296,800,276,706,268,637"/>
+<area shape="rect" id="Node000025" href="$classQXmppUserLocationManager.html" title=" " alt="" coords="414,1041,626,1067"/>
+<area shape="poly" id="edge24_Node000001_Node000025" title=" " alt="" coords="272,637,277,714,284,765,295,821,311,877,334,933,365,984,404,1028,420,1039,417,1043,401,1032,361,987,330,935,306,879,290,822,278,766,272,715,267,637"/>
+<area shape="rect" id="Node000026" href="$classQXmppUserTuneManager.html" title=" " alt="" coords="427,1091,613,1116"/>
+<area shape="poly" id="edge25_Node000001_Node000026" title=" " alt="" coords="276,636,293,734,321,867,339,935,359,995,381,1045,404,1077,428,1092,425,1097,401,1081,376,1047,354,997,333,936,316,869,288,735,271,637"/>
+<area shape="rect" id="Node000027" href="$classQXmppVCardManager.html" title="The QXmppVCardManager class gets/sets XMPP vCards. It is an implementation of XEP&#45;0054: vcard&#45;temp." alt="" coords="437,1140,603,1165"/>
+<area shape="poly" id="edge26_Node000001_Node000027" title=" " alt="" coords="276,636,291,743,317,892,335,967,356,1035,379,1090,405,1127,420,1138,437,1145,435,1150,417,1142,401,1131,374,1093,351,1037,330,968,312,893,285,744,270,637"/>
+<area shape="rect" id="Node000028" href="$classQXmppVersionManager.html" title="The QXmppVersionManager class makes it possible to request for the software version of an entity as d..." alt="" coords="433,1189,607,1215"/>
+<area shape="poly" id="edge27_Node000001_Node000028" title=" " alt="" coords="275,636,288,752,314,916,332,999,353,1074,377,1135,390,1159,405,1176,418,1186,434,1193,431,1198,415,1191,401,1180,386,1162,372,1138,348,1076,326,1000,309,916,283,753,270,637"/>
+<area shape="rect" id="Node000002" href="$classQXmppLoggable.html" title="The QXmppLoggable class represents a source of logging messages." alt="" coords="5,597,135,623"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="148,607,183,607,183,613,148,613"/>
+<area shape="rect" id="Node000023" href="$classQXmppAtmManager.html" title="The QXmppAtmManager class represents a manager for XEP&#45;0450: Automatic Trust Management (ATM)." alt="" coords="685,943,840,968"/>
+<area shape="poly" id="edge22_Node000022_Node000023" title=" " alt="" coords="614,953,685,953,685,958,614,958"/>
+</map>

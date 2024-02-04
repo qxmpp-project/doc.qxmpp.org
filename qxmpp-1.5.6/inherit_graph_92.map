@@ -1,0 +1,10 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" href="$classQXmppTrustStorage.html" title="The QXmppTrustStorage class stores end&#45;to&#45;end encryption trust data." alt="" coords="5,31,156,56"/>
+<area shape="rect" id="Node000001" href="$classQXmppAtmTrustStorage.html" title="The QXmppAtmTrustStorage class stores trust data for XEP&#45;0450: Automatic Trust Management (ATM)." alt="" coords="217,5,396,31"/>
+<area shape="poly" id="edge94_Node000000_Node000001" title=" " alt="" coords="169,31,217,25,217,31,170,36"/>
+<area shape="rect" id="Node000003" href="$classQXmppTrustMemoryStorage.html" title="The QXmppTrustMemoryStorage class stores trust data for end&#45;to&#45;end encryption in the memory." alt="" coords="204,55,409,80"/>
+<area shape="poly" id="edge96_Node000000_Node000003" title=" " alt="" coords="170,50,204,54,204,59,170,55"/>
+<area shape="rect" id="Node000002" href="$classQXmppAtmTrustMemoryStorage.html" title="The QXmppAtmTrustMemoryStorage class stores trust data for XEP&#45;0450: Automatic Trust Management (ATM)..." alt="" coords="457,31,689,56"/>
+<area shape="poly" id="edge95_Node000001_Node000002" title=" " alt="" coords="410,25,457,30,457,35,409,30"/>
+<area shape="poly" id="edge97_Node000003_Node000002" title=" " alt="" coords="423,54,457,51,457,56,424,60"/>
+</map>

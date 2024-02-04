@@ -1,0 +1,11 @@
+<map id="QXmppPubSubBaseItem" name="QXmppPubSubBaseItem">
+<area shape="rect" id="Node000001" title=" " alt="" coords="257,5,437,31"/>
+<area shape="rect" id="Node000002" href="$classQXmppGeolocItem.html" title=" " alt="" coords="5,79,151,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="292,37,122,81,121,76,290,32"/>
+<area shape="rect" id="Node000003" href="$classQXmppMixInfoItem.html" title="The QXmppMixInfoItem class represents a PubSub item of a MIX channel containing channel information a..." alt="" coords="175,79,325,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="322,41,267,81,264,76,319,37"/>
+<area shape="rect" id="Node000004" href="$classQXmppMixParticipantItem.html" title=" " alt="" coords="349,79,543,104"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="376,36,431,76,428,81,372,41"/>
+<area shape="rect" id="Node000005" href="$classQXmppTuneItem.html" title=" " alt="" coords="567,79,698,104"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="407,31,587,76,586,81,406,37"/>
+</map>
