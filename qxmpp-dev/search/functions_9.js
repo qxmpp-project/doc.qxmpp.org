@@ -6,8 +6,11 @@ var searchData=
   ['jidtodomain_3',['jidToDomain',['../classQXmppUtils.html#a8723c0bee318896100ab2f41ae4cd73e',1,'QXmppUtils']]],
   ['jidtoresource_4',['jidToResource',['../classQXmppUtils.html#a5248b98f6df1ba1aae3f416092819443',1,'QXmppUtils']]],
   ['jidtouser_5',['jidToUser',['../classQXmppUtils.html#a0df11be63c49dc312e417cddca3fa3e5',1,'QXmppUtils']]],
-  ['jobfinished_6',['jobFinished',['../classQXmppTransferManager.html#af2dcae40840d04530e5aef97a6586188',1,'QXmppTransferManager']]],
-  ['jobstarted_7',['jobStarted',['../classQXmppTransferManager.html#a2a19e77348fe9df618d7e289bbe84f21',1,'QXmppTransferManager']]],
-  ['join_8',['join',['../classQXmppMucRoom.html#afd01483eb367ecfa4f1fc2828919b4c1',1,'QXmppMucRoom']]],
-  ['joined_9',['joined',['../classQXmppMucRoom.html#ab01ece57f344187b5fca066051fedb81',1,'QXmppMucRoom']]]
+  ['jingle_6',['jingle',['../classQXmppCallInviteElement.html#a1c3c2b1e3c5839837ea4052a2dfb758e',1,'QXmppCallInviteElement']]],
+  ['jinglemessageinitiationelement_7',['jingleMessageInitiationElement',['../classQXmppMessage.html#a21ffeb39b2696abe9f27f09b5ef1dd00',1,'QXmppMessage']]],
+  ['jmielementtypetostring_8',['jmiElementTypeToString',['../classQXmppJingleMessageInitiationElement.html#ab87d5562b0aa423c513abe6fcdc7ebb8',1,'QXmppJingleMessageInitiationElement']]],
+  ['jobfinished_9',['jobFinished',['../classQXmppTransferManager.html#af2dcae40840d04530e5aef97a6586188',1,'QXmppTransferManager']]],
+  ['jobstarted_10',['jobStarted',['../classQXmppTransferManager.html#a2a19e77348fe9df618d7e289bbe84f21',1,'QXmppTransferManager']]],
+  ['join_11',['join',['../classQXmppMucRoom.html#afd01483eb367ecfa4f1fc2828919b4c1',1,'QXmppMucRoom']]],
+  ['joined_12',['joined',['../classQXmppMucRoom.html#ab01ece57f344187b5fca066051fedb81',1,'QXmppMucRoom']]]
 ];

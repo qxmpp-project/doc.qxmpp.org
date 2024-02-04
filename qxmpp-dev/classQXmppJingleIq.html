@@ -74,7 +74,7 @@ $(function() {
 <p>The <a class="el" href="classQXmppJingleIq.html" title="The QXmppJingleIq class represents an IQ used for initiating media sessions as specified by XEP-0166:...">QXmppJingleIq</a> class represents an IQ used for initiating media sessions as specified by <a href="https://xmpp.org/extensions/xep-0166.html">XEP-0166</a>: Jingle.  
  <a href="classQXmppJingleIq.html#details">More...</a></p>
 
-<p><code>#include &lt;<a class="el" href="QXmppJingleIq_8h_source.html">QXmppJingleIq.h</a>&gt;</code></p>
+<p><code>#include &lt;<a class="el" href="QXmppJingleData_8h_source.html">QXmppJingleData.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for QXmppJingleIq:</div>
 <div class="dyncontent">
@@ -142,6 +142,10 @@ Public Types</h2></td></tr>
 <tr class="separator:ad12f4f05c042a65237a05ab82fb1ebf3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aefa88c861bdbcdc8ed581d5f1da10602"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppJingleIq.html#aefa88c861bdbcdc8ed581d5f1da10602">RtpSessionState</a> = std::variant&lt; <a class="el" href="structQXmppJingleIq_1_1RtpSessionStateActive.html">RtpSessionStateActive</a>, <a class="el" href="structQXmppJingleIq_1_1RtpSessionStateHold.html">RtpSessionStateHold</a>, <a class="el" href="structQXmppJingleIq_1_1RtpSessionStateUnhold.html">RtpSessionStateUnhold</a>, <a class="el" href="structQXmppJingleIq_1_1RtpSessionStateMuting.html">RtpSessionStateMuting</a>, <a class="el" href="structQXmppJingleIq_1_1RtpSessionStateRinging.html">RtpSessionStateRinging</a> &gt;</td></tr>
 <tr class="separator:aefa88c861bdbcdc8ed581d5f1da10602"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc683542ad618d7d38996d6d3b779ba8"><td class="memItemLeft" align="right" valign="top"><a id="adc683542ad618d7d38996d6d3b779ba8" name="adc683542ad618d7d38996d6d3b779ba8"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>Reason</b> = <a class="el" href="classQXmppJingleReason.html">QXmppJingleReason</a></td></tr>
+<tr class="memdesc:adc683542ad618d7d38996d6d3b779ba8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Alias to <a class="el" href="classQXmppJingleReason.html">QXmppJingleReason</a> for compatibility. <br /></td></tr>
+<tr class="separator:adc683542ad618d7d38996d6d3b779ba8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_types_classQXmppIq"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classQXmppIq')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classQXmppIq.html">QXmppIq</a></td></tr>
 <tr class="memitem:a6bc7a0505a3be7309051ae2432a3d826 inherit pub_types_classQXmppIq"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppIq.html#a6bc7a0505a3be7309051ae2432a3d826">Type</a> { <a class="el" href="classQXmppIq.html#a6bc7a0505a3be7309051ae2432a3d826a3777dc62b2a51edfceed871ba68f438d">Error</a> = 0
 , <a class="el" href="classQXmppIq.html#a6bc7a0505a3be7309051ae2432a3d826a78ce31809da9bddb4ab04ad512293eb1">Get</a>
@@ -189,14 +193,14 @@ QString&#160;</td><td class="memItemRight" valign="bottom"><b>initiator</b> () c
 <tr class="separator:adbe25834149977708a4cf628dd4c42e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae2ff3ea68609d6bcd79c41e0e6351730"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppJingleIq.html#ae2ff3ea68609d6bcd79c41e0e6351730">setInitiator</a> (const QString &amp;<a class="el" href="classQXmppJingleIq.html#adbe25834149977708a4cf628dd4c42e8">initiator</a>)</td></tr>
 <tr class="separator:ae2ff3ea68609d6bcd79c41e0e6351730"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0467bf0a9f570394076caaa25b00097d"><td class="memItemLeft" align="right" valign="top"><a id="a0467bf0a9f570394076caaa25b00097d" name="a0467bf0a9f570394076caaa25b00097d"></a>
-Reason &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>reason</b> ()</td></tr>
-<tr class="memdesc:a0467bf0a9f570394076caaa25b00097d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a reference to the IQ's reason element. <br /></td></tr>
-<tr class="separator:a0467bf0a9f570394076caaa25b00097d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7df75230bb0ca644567dc7806b4b4ee7"><td class="memItemLeft" align="right" valign="top"><a id="a7df75230bb0ca644567dc7806b4b4ee7" name="a7df75230bb0ca644567dc7806b4b4ee7"></a>
-const Reason &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>reason</b> () const</td></tr>
-<tr class="memdesc:a7df75230bb0ca644567dc7806b4b4ee7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a const reference to the IQ's reason element. <br /></td></tr>
-<tr class="separator:a7df75230bb0ca644567dc7806b4b4ee7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6f1260f0b6570d13a3ef06ddfa5644a"><td class="memItemLeft" align="right" valign="top"><a id="af6f1260f0b6570d13a3ef06ddfa5644a" name="af6f1260f0b6570d13a3ef06ddfa5644a"></a>
+<a class="el" href="classQXmppJingleReason.html">QXmppJingleReason</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>reason</b> ()</td></tr>
+<tr class="memdesc:af6f1260f0b6570d13a3ef06ddfa5644a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a reference to the IQ's reason element. <br /></td></tr>
+<tr class="separator:af6f1260f0b6570d13a3ef06ddfa5644a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a332efc024578161b40e514137b052b2b"><td class="memItemLeft" align="right" valign="top"><a id="a332efc024578161b40e514137b052b2b" name="a332efc024578161b40e514137b052b2b"></a>
+const <a class="el" href="classQXmppJingleReason.html">QXmppJingleReason</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>reason</b> () const</td></tr>
+<tr class="memdesc:a332efc024578161b40e514137b052b2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a const reference to the IQ's reason element. <br /></td></tr>
+<tr class="separator:a332efc024578161b40e514137b052b2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0741419a3fd8b4005582365f336a93d8"><td class="memItemLeft" align="right" valign="top"><a id="a0741419a3fd8b4005582365f336a93d8" name="a0741419a3fd8b4005582365f336a93d8"></a>
 QString&#160;</td><td class="memItemRight" valign="bottom"><b>responder</b> () const</td></tr>
 <tr class="memdesc:a0741419a3fd8b4005582365f336a93d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the session responder. <br /></td></tr>
@@ -448,7 +452,7 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~QXmppStanza</b> (
       </table>
 </div><div class="memdoc">
 <p >Returns true if the call is ringing.</p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000018">Deprecated:</a></b></dt><dd>This method is deprecated since <a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.5. Use <code><a class="el" href="classQXmppJingleIq.html#a8ca26334df670ecd4dbf3d883950b901">QXmppJingleIq::rtpSessionState()</a></code> instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000025">Deprecated:</a></b></dt><dd>This method is deprecated since <a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.5. Use <code><a class="el" href="classQXmppJingleIq.html#a8ca26334df670ecd4dbf3d883950b901">QXmppJingleIq::rtpSessionState()</a></code> instead. </dd></dl>
 
 </div>
 </div>
@@ -615,7 +619,7 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~QXmppStanza</b> (
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000019">Deprecated:</a></b></dt><dd>This method is deprecated since <a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.5. Use <code><a class="el" href="classQXmppJingleIq.html#af08c2324be419b07e6baf4aaf4aab13e">QXmppJingleIq::setRtpSessionState()</a></code> instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000026">Deprecated:</a></b></dt><dd>This method is deprecated since <a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.5. Use <code><a class="el" href="classQXmppJingleIq.html#af08c2324be419b07e6baf4aaf4aab13e">QXmppJingleIq::setRtpSessionState()</a></code> instead. </dd></dl>
 
 </div>
 </div>
@@ -672,8 +676,8 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><b>~QXmppStanza</b> (
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li><a class="el" href="QXmppJingleIq_8h_source.html">QXmppJingleIq.h</a></li>
-<li>QXmppJingleIq.cpp</li>
+<li><a class="el" href="QXmppJingleData_8h_source.html">QXmppJingleData.h</a></li>
+<li>QXmppJingleData.cpp</li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

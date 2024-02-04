@@ -151,8 +151,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:ada1bc580a93c3ed9e70bb1776ec2b882"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a804dda42ca43cb467ee2f9e9bc813f58"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classQXmppTask.html">QXmppTask</a>&lt; <a class="el" href="namespaceQXmpp.html#a8450fdd55dbc654e0220eafe35d922fc">QXmpp::SendResult</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppStream.html#a804dda42ca43cb467ee2f9e9bc813f58">send</a> (QXmppPacket &amp;&amp;)</td></tr>
 <tr class="separator:a804dda42ca43cb467ee2f9e9bc813f58"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a67fa0c5f168529be04c441ad2272e426"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classQXmppTask.html">QXmppTask</a>&lt; <a class="el" href="classQXmppStream.html#a56c75865a7951824d1f61e465b49a1f1">IqResult</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppStream.html#a67fa0c5f168529be04c441ad2272e426">sendIq</a> (<a class="el" href="classQXmppIq.html">QXmppIq</a> &amp;&amp;)</td></tr>
-<tr class="separator:a67fa0c5f168529be04c441ad2272e426"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8a21a173ad1da83e2b4ae39a381e78ba"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classQXmppTask.html">QXmppTask</a>&lt; <a class="el" href="classQXmppStream.html#a56c75865a7951824d1f61e465b49a1f1">IqResult</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppStream.html#a8a21a173ad1da83e2b4ae39a381e78ba">sendIq</a> (<a class="el" href="classQXmppIq.html">QXmppIq</a> &amp;&amp;, const QString &amp;to)</td></tr>
+<tr class="separator:a8a21a173ad1da83e2b4ae39a381e78ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a004b7990d50ffe75dd1495b0d654a138"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classQXmppTask.html">QXmppTask</a>&lt; <a class="el" href="classQXmppStream.html#a56c75865a7951824d1f61e465b49a1f1">IqResult</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppStream.html#a004b7990d50ffe75dd1495b0d654a138">sendIq</a> (QXmppPacket &amp;&amp;, const QString &amp;id, const QString &amp;to)</td></tr>
 <tr class="separator:a004b7990d50ffe75dd1495b0d654a138"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3f4d077fa3d125d846779debce6e1987"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppStream.html#a3f4d077fa3d125d846779debce6e1987">cancelOngoingIqs</a> ()</td></tr>
@@ -620,8 +620,8 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>TestClient</b></td><
 
 </div>
 </div>
-<a id="a67fa0c5f168529be04c441ad2272e426" name="a67fa0c5f168529be04c441ad2272e426"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a67fa0c5f168529be04c441ad2272e426">&#9670;&nbsp;</a></span>sendIq() <span class="overload">[1/2]</span></h2>
+<a id="a8a21a173ad1da83e2b4ae39a381e78ba" name="a8a21a173ad1da83e2b4ae39a381e78ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a21a173ad1da83e2b4ae39a381e78ba">&#9670;&nbsp;</a></span>sendIq() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -630,8 +630,18 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>TestClient</b></td><
           <td class="memname"><a class="el" href="classQXmppTask.html">QXmppTask</a>&lt; <a class="el" href="classQXmppStream.html#a56c75865a7951824d1f61e465b49a1f1">QXmppStream::IqResult</a> &gt; QXmppStream::sendIq </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classQXmppIq.html">QXmppIq</a> &amp;&amp;&#160;</td>
-          <td class="paramname"><em>iq</em></td><td>)</td>
+          <td class="paramname"><em>iq</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>to</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">

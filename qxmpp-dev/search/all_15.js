@@ -15,5 +15,6 @@ var searchData=
   ['version_12',['version',['../classQXmppArchiveChat.html#a202a10542687442d098d8fa6385a035b',1,'QXmppArchiveChat::version()'],['../classQXmppRosterIq.html#a58afdab0cdf7695bfb0c59e9ec9a1812',1,'QXmppRosterIq::version()'],['../classQXmppVersionIq.html#a26898e37f57c1fb470f5fb605e97d8b8',1,'QXmppVersionIq::version()']]],
   ['versionmanager_13',['versionManager',['../classQXmppClient.html#a1ffcc6b023c8e067b2aec67a9255f1a2',1,'QXmppClient']]],
   ['versionreceived_14',['versionReceived',['../classQXmppVersionManager.html#a064202b4b525902fc76dc45f39a9cd8d',1,'QXmppVersionManager']]],
-  ['videostream_15',['videoStream',['../classQXmppCall.html#abfbc101911ceefe10a4630719d8aee0c',1,'QXmppCall']]]
+  ['video_15',['video',['../classQXmppCallInviteElement.html#acebd689d78d6f5c41a2ec74875332e16',1,'QXmppCallInviteElement']]],
+  ['videostream_16',['videoStream',['../classQXmppCall.html#abfbc101911ceefe10a4630719d8aee0c',1,'QXmppCall']]]
 ];

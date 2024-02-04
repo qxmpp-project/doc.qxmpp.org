@@ -95,6 +95,7 @@ var menudata={children:[
 {text:"Variables",url:"functions_vars.html"},
 {text:"Typedefs",url:"functions_type.html",children:[
 {text:"a",url:"functions_type.html#index_a"},
+{text:"b",url:"functions_type.html#index_b"},
 {text:"d",url:"functions_type.html#index_d"},
 {text:"e",url:"functions_type.html#index_e"},
 {text:"f",url:"functions_type.html#index_f"},
@@ -114,6 +115,7 @@ var menudata={children:[
 {text:"e",url:"functions_enum.html#index_e"},
 {text:"g",url:"functions_enum.html#index_g"},
 {text:"h",url:"functions_enum.html#index_h"},
+{text:"i",url:"functions_enum.html#index_i"},
 {text:"l",url:"functions_enum.html#index_l"},
 {text:"m",url:"functions_enum.html#index_m"},
 {text:"n",url:"functions_enum.html#index_n"},

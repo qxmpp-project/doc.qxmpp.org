@@ -100,7 +100,7 @@ $(function() {
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="preprocessor">#ifdef QXMPP_DOC</span></div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno"><a class="line" href="classQXmppPromise.html#a34bf4cb774aad9894a7260708ab4748e">   46</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classQXmppPromise.html#a34bf4cb774aad9894a7260708ab4748e">reportFinished</a>(T &amp;&amp;value)</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="preprocessor">#else</span></div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> U, std::enable_if_t&lt;!std::is_<span class="keywordtype">void</span>_v&lt;T&gt; &amp;&amp; std::is_same_v&lt;T, U&gt;&gt; * = <span class="keywordtype">nullptr</span>&gt;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> U, <span class="keyword">typename</span> TT = T, std::enable_if_t&lt;!std::is_<span class="keywordtype">void</span>_v&lt;TT&gt; &amp;&amp; std::is_same_v&lt;TT, U&gt;&gt; * = <span class="keywordtype">nullptr</span>&gt;</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="keywordtype">void</span> finish(U &amp;&amp;value)</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="preprocessor">#endif</span></div>
 <div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    {</div>
@@ -115,7 +115,7 @@ $(function() {
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        }</div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    }</div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> U, std::enable_if_t&lt;!std::is_<span class="keywordtype">void</span>_v&lt;T&gt; &amp;&amp; std::is_constructible_v&lt;T, U&gt; &amp;&amp; !std::is_same_v&lt;T, U&gt;&gt; * = <span class="keywordtype">nullptr</span>&gt;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> U, <span class="keyword">typename</span> TT = T, std::enable_if_t&lt;!std::is_<span class="keywordtype">void</span>_v&lt;TT&gt; &amp;&amp; std::is_constructible_v&lt;TT, U&gt; &amp;&amp; !std::is_same_v&lt;TT, U&gt;&gt; * = <span class="keywordtype">nullptr</span>&gt;</div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <span class="keywordtype">void</span> finish(U &amp;&amp;value)</div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    {</div>
 <div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        Q_ASSERT(!d.isFinished());</div>

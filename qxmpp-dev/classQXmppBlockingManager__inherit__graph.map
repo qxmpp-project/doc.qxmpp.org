@@ -1,0 +1,5 @@
+<map id="QXmppBlockingManager" name="QXmppBlockingManager">
+<area shape="rect" id="node1" title="Uses XEP&#45;0191: Blocking Command to manage blocked accounts and services." alt="" coords="5,155,188,181"/>
+<area shape="rect" id="node2" href="$classQXmppClientExtension.html" title="The QXmppClientExtension class is the base class for QXmppClient extensions." alt="" coords="11,80,183,107"/>
+<area shape="rect" id="node3" href="$classQXmppLoggable.html" title="The QXmppLoggable class represents a source of logging messages." alt="" coords="32,5,161,32"/>
+</map>

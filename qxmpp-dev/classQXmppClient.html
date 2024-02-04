@@ -117,6 +117,10 @@ Public Types</h2></td></tr>
  }</td></tr>
 <tr class="memdesc:aab5506ec0769f208e1ccd5d23c6aaea8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Describes the use of <a href="https://xmpp.org/extensions/xep-0198.html">XEP-0198</a>: Stream Management.  <a href="classQXmppClient.html#aab5506ec0769f208e1ccd5d23c6aaea8">More...</a><br /></td></tr>
 <tr class="separator:aab5506ec0769f208e1ccd5d23c6aaea8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59b0756a199c964db53791643cec8546"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppClient.html#a59b0756a199c964db53791643cec8546">InitialExtensions</a> { <a class="el" href="classQXmppClient.html#a59b0756a199c964db53791643cec8546af5da960e805cfe55844b7634ff38234e">NoExtensions</a>
+, <a class="el" href="classQXmppClient.html#a59b0756a199c964db53791643cec8546a0dfc2d84a6c1c5b20880f4af76794741">BasicExtensions</a>
+ }</td></tr>
+<tr class="separator:a59b0756a199c964db53791643cec8546"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5312db7ddd0aadacea286314154f8a6d"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppClient.html#a5312db7ddd0aadacea286314154f8a6d">IqResult</a> = std::variant&lt; QDomElement, <a class="el" href="structQXmppError.html">QXmppError</a> &gt;</td></tr>
 <tr class="separator:a5312db7ddd0aadacea286314154f8a6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad5004eda51b93744a8ad8259ee692a2a"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppClient.html#ad5004eda51b93744a8ad8259ee692a2a">EmptyResult</a> = std::variant&lt; <a class="el" href="structQXmpp_1_1Success.html">QXmpp::Success</a>, <a class="el" href="structQXmppError.html">QXmppError</a> &gt;</td></tr>
@@ -177,6 +181,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>updateCounter</b> (co
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:aba09cbf93e0f13534175a038a0fc29b2"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppClient.html#aba09cbf93e0f13534175a038a0fc29b2">QXmppClient</a> (<a class="el" href="classQXmppClient.html#a59b0756a199c964db53791643cec8546">InitialExtensions</a>, QObject *parent=nullptr)</td></tr>
+<tr class="separator:aba09cbf93e0f13534175a038a0fc29b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a043546d276debb522e60f0b77e137ce6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppClient.html#a043546d276debb522e60f0b77e137ce6">QXmppClient</a> (QObject *parent=nullptr)</td></tr>
 <tr class="separator:a043546d276debb522e60f0b77e137ce6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a61ccf1c37ca3f26bfd14e65c8ecf1740"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppClient.html#a61ccf1c37ca3f26bfd14e65c8ecf1740">addExtension</a> (<a class="el" href="classQXmppClientExtension.html">QXmppClientExtension</a> *extension)</td></tr>
@@ -373,6 +379,27 @@ Additional Inherited Members</h2></td></tr>
 
 </div>
 </div>
+<a id="a59b0756a199c964db53791643cec8546" name="a59b0756a199c964db53791643cec8546"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a59b0756a199c964db53791643cec8546">&#9670;&nbsp;</a></span>InitialExtensions</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum <a class="el" href="classQXmppClient.html#a59b0756a199c964db53791643cec8546">QXmppClient::InitialExtensions</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Used to decide which extensions should be added by default. </p><dl class="section since"><dt>Since</dt><dd><a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.6 </dd></dl>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a59b0756a199c964db53791643cec8546af5da960e805cfe55844b7634ff38234e" name="a59b0756a199c964db53791643cec8546af5da960e805cfe55844b7634ff38234e"></a>NoExtensions&#160;</td><td class="fielddoc"><p >Creates a client without any extensions. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a59b0756a199c964db53791643cec8546a0dfc2d84a6c1c5b20880f4af76794741" name="a59b0756a199c964db53791643cec8546a0dfc2d84a6c1c5b20880f4af76794741"></a>BasicExtensions&#160;</td><td class="fielddoc"><p >Creates a client with the default set of extensions. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
 <a id="a5f4e70d508c08967f72fd41c5343ad2e" name="a5f4e70d508c08967f72fd41c5343ad2e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5f4e70d508c08967f72fd41c5343ad2e">&#9670;&nbsp;</a></span>State</h2>
 
@@ -422,8 +449,45 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="aba09cbf93e0f13534175a038a0fc29b2" name="aba09cbf93e0f13534175a038a0fc29b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba09cbf93e0f13534175a038a0fc29b2">&#9670;&nbsp;</a></span>QXmppClient() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QXmppClient::QXmppClient </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classQXmppClient.html#a59b0756a199c964db53791643cec8546">InitialExtensions</a>&#160;</td>
+          <td class="paramname"><em>initialExtensions</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QObject *&#160;</td>
+          <td class="paramname"><em>parent</em> = <code>nullptr</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Creates a <a class="el" href="classQXmppClient.html" title="The QXmppClient class is the main class for using QXmpp.">QXmppClient</a> object.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">initialExtensions</td><td>can be used to set the initial set of extensions. </td></tr>
+    <tr><td class="paramname">parent</td><td>is passed to the QObject's constructor. The default value is 0.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>Since</dt><dd><a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.6 </dd></dl>
+
+</div>
+</div>
 <a id="a043546d276debb522e60f0b77e137ce6" name="a043546d276debb522e60f0b77e137ce6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a043546d276debb522e60f0b77e137ce6">&#9670;&nbsp;</a></span>QXmppClient()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#a043546d276debb522e60f0b77e137ce6">&#9670;&nbsp;</a></span>QXmppClient() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -439,7 +503,7 @@ Additional Inherited Members</h2></td></tr>
 </div><div class="memdoc">
 <p >Creates a <a class="el" href="classQXmppClient.html" title="The QXmppClient class is the main class for using QXmpp.">QXmppClient</a> object. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">parent</td><td>is passed to the QObject's constructor. The default value is 0. </td></tr>
+    <tr><td class="paramname">parent</td><td>is passed to the QObject's constructor. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1059,7 +1123,7 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 <p >Returns the reference to <a class="el" href="classQXmppRosterManager.html" title="The QXmppRosterManager class provides access to a connected client&#39;s roster.">QXmppRosterManager</a> object of the client.</p>
 <dl class="section return"><dt>Returns</dt><dd>Reference to the roster object of the connected client. Use this to get the list of friends in the roster and their presence information.</dd></dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000021">Deprecated:</a></b></dt><dd>This method is deprecated since <a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.1. Use <code><a class="el" href="classQXmppClient.html#aba54c2cb6b1f12305cd2db5795a88994" title="Returns the extension which can be cast into type T*, or 0 if there is no such extension.">QXmppClient::findExtension&lt;QXmppRosterManager&gt;()</a></code> instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000028">Deprecated:</a></b></dt><dd>This method is deprecated since <a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.1. Use <code><a class="el" href="classQXmppClient.html#aba54c2cb6b1f12305cd2db5795a88994" title="Returns the extension which can be cast into type T*, or 0 if there is no such extension.">QXmppClient::findExtension&lt;QXmppRosterManager&gt;()</a></code> instead. </dd></dl>
 
 </div>
 </div>
@@ -1236,7 +1300,7 @@ template&lt;typename T &gt; </div>
 <dl class="section return"><dt>Returns</dt><dd>Returns true if the packet was sent, false otherwise.</dd></dl>
 <p>Following code snippet illustrates how to send a message using this function: </p><div class="fragment"><div class="line"><a class="code hl_class" href="classQXmppMessage.html">QXmppMessage</a> message(from, to, message);</div>
 <div class="line">client.sendPacket(message);</div>
-<div class="ttc" id="aclassQXmppMessage_html"><div class="ttname"><a href="classQXmppMessage.html">QXmppMessage</a></div><div class="ttdoc">The QXmppMessage class represents an XMPP message.</div><div class="ttdef"><b>Definition:</b> QXmppMessage.h:35</div></div>
+<div class="ttc" id="aclassQXmppMessage_html"><div class="ttname"><a href="classQXmppMessage.html">QXmppMessage</a></div><div class="ttdoc">The QXmppMessage class represents an XMPP message.</div><div class="ttdef"><b>Definition:</b> QXmppMessage.h:38</div></div>
 </div><!-- fragment --><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">packet</td><td>A valid XMPP stanza. It can be an iq, a message or a presence stanza. </td></tr>
@@ -1465,7 +1529,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 <p >Returns the reference to <a class="el" href="classQXmppVCardManager.html" title="The QXmppVCardManager class gets/sets XMPP vCards. It is an implementation of XEP-0054: vcard-temp.">QXmppVCardManager</a>, implementation of <a href="https://xmpp.org/extensions/xep-0054.html">XEP-0054</a>. <a href="http://xmpp.org/extensions/xep-0054.html">http://xmpp.org/extensions/xep-0054.html</a></p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000022">Deprecated:</a></b></dt><dd>This method is deprecated since <a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.1. Use <code><a class="el" href="classQXmppClient.html#aba54c2cb6b1f12305cd2db5795a88994" title="Returns the extension which can be cast into type T*, or 0 if there is no such extension.">QXmppClient::findExtension&lt;QXmppVCardManager&gt;()</a></code> instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000029">Deprecated:</a></b></dt><dd>This method is deprecated since <a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.1. Use <code><a class="el" href="classQXmppClient.html#aba54c2cb6b1f12305cd2db5795a88994" title="Returns the extension which can be cast into type T*, or 0 if there is no such extension.">QXmppClient::findExtension&lt;QXmppVCardManager&gt;()</a></code> instead. </dd></dl>
 
 </div>
 </div>
@@ -1484,7 +1548,7 @@ template&lt;typename T &gt; </div>
       </table>
 </div><div class="memdoc">
 <p >Returns the reference to <a class="el" href="classQXmppVersionManager.html" title="The QXmppVersionManager class makes it possible to request for the software version of an entity as d...">QXmppVersionManager</a>, implementation of <a href="https://xmpp.org/extensions/xep-0092.html">XEP-0092</a>. <a href="http://xmpp.org/extensions/xep-0092.html">http://xmpp.org/extensions/xep-0092.html</a></p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000023">Deprecated:</a></b></dt><dd>This method is deprecated since <a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.1. Use <code><a class="el" href="classQXmppClient.html#aba54c2cb6b1f12305cd2db5795a88994" title="Returns the extension which can be cast into type T*, or 0 if there is no such extension.">QXmppClient::findExtension&lt;QXmppVersionManager&gt;()</a></code> instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000030">Deprecated:</a></b></dt><dd>This method is deprecated since <a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.1. Use <code><a class="el" href="classQXmppClient.html#aba54c2cb6b1f12305cd2db5795a88994" title="Returns the extension which can be cast into type T*, or 0 if there is no such extension.">QXmppClient::findExtension&lt;QXmppVersionManager&gt;()</a></code> instead. </dd></dl>
 
 </div>
 </div>

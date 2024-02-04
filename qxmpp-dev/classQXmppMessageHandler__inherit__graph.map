@@ -1,5 +1,7 @@
 <map id="QXmppMessageHandler" name="QXmppMessageHandler">
-<area shape="rect" id="node1" title=" " alt="" coords="148,5,327,32"/>
-<area shape="rect" id="node2" href="$classQXmppMessageReceiptManager.html" title="The QXmppMessageReceiptManager class makes it possible to send and receive message delivery receipts ..." alt="" coords="5,80,240,107"/>
-<area shape="rect" id="node3" href="$classQXmppOmemoManager.html" title=" " alt="" coords="264,80,443,107"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,93,184,120"/>
+<area shape="rect" id="node2" href="$classQXmppCallInviteManager.html" title="The QXmppCallInviteManager class makes it possible to retrieve Call Invite elements as defined by XEP..." alt="" coords="255,5,444,32"/>
+<area shape="rect" id="node3" href="$classQXmppJingleMessageInitiationManager.html" title="The QXmppJingleMessageInitiationManager class makes it possible to retrieve Jingle Message Initiation..." alt="" coords="238,57,461,98"/>
+<area shape="rect" id="node4" href="$classQXmppMessageReceiptManager.html" title="The QXmppMessageReceiptManager class makes it possible to send and receive message delivery receipts ..." alt="" coords="232,123,467,149"/>
+<area shape="rect" id="node5" href="$classQXmppOmemoManager.html" title=" " alt="" coords="260,173,439,200"/>
 </map>

@@ -1,0 +1,6 @@
+<map id="QXmppJingleMessageInitiationManager" name="QXmppJingleMessageInitiationManager">
+<area shape="rect" id="node1" title="The QXmppJingleMessageInitiationManager class makes it possible to retrieve Jingle Message Initiation..." alt="" coords="80,155,303,196"/>
+<area shape="rect" id="node2" href="$classQXmppClientExtension.html" title="The QXmppClientExtension class is the base class for QXmppClient extensions." alt="" coords="5,80,177,107"/>
+<area shape="rect" id="node3" href="$classQXmppLoggable.html" title="The QXmppLoggable class represents a source of logging messages." alt="" coords="27,5,156,32"/>
+<area shape="rect" id="node4" href="$classQXmppMessageHandler.html" title=" " alt="" coords="202,80,381,107"/>
+</map>

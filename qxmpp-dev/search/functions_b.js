@@ -9,7 +9,7 @@ var searchData=
   ['lastname_6',['lastName',['../classQXmppVCardIq.html#a1966a72fc433a38bc6bf0a54033ae8e5',1,'QXmppVCardIq']]],
   ['lastuserinteraction_7',['lastUserInteraction',['../classQXmppPresence.html#aa30c0b12635cfd8bbfe9d1dfb9d8e520',1,'QXmppPresence']]],
   ['latitude_8',['latitude',['../classQXmppGeolocItem.html#a8448e61628bae9261f5541e4000f9a12',1,'QXmppGeolocItem']]],
-  ['leave_9',['leave',['../classQXmppMucRoom.html#aba377174fd4869c9d38952d71aa9297b',1,'QXmppMucRoom']]],
+  ['leave_9',['leave',['../classQXmppCallInvite.html#a3837b2787091b26788de7ce0934baa38',1,'QXmppCallInvite::leave()'],['../classQXmppMucRoom.html#aba377174fd4869c9d38952d71aa9297b',1,'QXmppMucRoom::leave(const QString &amp;message=QString())']]],
   ['left_10',['left',['../classQXmppMucRoom.html#a7c2f39104f9334ac0c6c188fe2f7afbb',1,'QXmppMucRoom']]],
   ['length_11',['length',['../classQXmppFileMetadata.html#ad13c545c6139e54681ea8b61b18f426b',1,'QXmppFileMetadata::length()'],['../classQXmppTuneItem.html#aca36b5fa4f6b25bfe3b2211f1437ee1f',1,'QXmppTuneItem::length() const']]],
   ['lengthasduration_12',['lengthAsDuration',['../classQXmppTuneItem.html#a99237c34c79c52e1ce5a27941653e38f',1,'QXmppTuneItem']]],

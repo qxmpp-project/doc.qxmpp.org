@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['nodeconfigresult_0',['NodeConfigResult',['../classQXmppPubSubManager.html#a44847a8625c35223c78b2445b8589259',1,'QXmppPubSubManager']]],
-  ['nodesresult_1',['NodesResult',['../classQXmppPubSubManager.html#ac6f8b54eca37a8bf19a8dedb1217ca27',1,'QXmppPubSubManager']]]
+  ['messagedecryptresult_0',['MessageDecryptResult',['../classQXmppE2eeExtension.html#a321313d4c63fbf495033523503ed1da6',1,'QXmppE2eeExtension']]],
+  ['messageencryptresult_1',['MessageEncryptResult',['../classQXmppE2eeExtension.html#ae6c448a9a6306389f0f719c9efe571fe',1,'QXmppE2eeExtension']]],
+  ['metadatagenerator_2',['MetadataGenerator',['../classQXmppFileSharingManager.html#a80debd3162143ea3fcae5a1b32110acf',1,'QXmppFileSharingManager']]]
 ];

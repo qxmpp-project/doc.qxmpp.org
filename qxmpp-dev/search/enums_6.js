@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['loggingtype_0',['LoggingType',['../classQXmppLogger.html#a9a52fe426322ef8e10e05b7092be6c20',1,'QXmppLogger']]]
+  ['initialextensions_0',['InitialExtensions',['../classQXmppClient.html#a59b0756a199c964db53791643cec8546',1,'QXmppClient']]]
 ];
