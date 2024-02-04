@@ -348,7 +348,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p >Result of an IQ request, either contains the QDomElement of the IQ answer (with type 'error' or 'result') or it contains the packet error, if the request couldn't be sent.</p>
+<p >Result of an IQ request, either contains the QDomElement of the IQ reponse (in case of an 'result' IQ type) or it contains an <a class="el" href="structQXmppError.html">QXmppError</a> with a <a class="el" href="classQXmppStanza_1_1Error.html" title="The Error class represents a stanza error.">QXmppStanza::Error</a> (on type 'error') or a <a class="el" href="namespaceQXmpp.html#aeb1549ae4b8a94d697bdc458517bc7cf">QXmpp::SendError</a>.</p>
 <dl class="section since"><dt>Since</dt><dd><a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.5 </dd></dl>
 
 </div>
@@ -1220,6 +1220,7 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 <p >Sends an IQ packet and returns the response asynchronously.</p>
 <p >This is useful for further processing and parsing of the returned QDomElement. If you don't expect a special response, you may want use <a class="el" href="classQXmppClient.html#a86e6ac63e9b0346fdd8c45024f8e8d9b">sendGenericIq()</a>.</p>
+<p >IQs of type 'error' are parsed automatically and returned as <a class="el" href="structQXmppError.html">QXmppError</a> with a contained <a class="el" href="classQXmppStanza_1_1Error.html" title="The Error class represents a stanza error.">QXmppStanza::Error</a>.</p>
 <p >This does not do any end-to-encryption on the IQ.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classQXmppClient.html#a97fc5f9d9e2361cf7df0e9d470cb3af6">sendSensitiveIq()</a></dd></dl>
 <dl class="section warning"><dt>Warning</dt><dd>THIS API IS NOT FINALIZED YET!</dd></dl>
@@ -1371,6 +1372,7 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 <p >Tries to encrypt and send an IQ packet and returns the response asynchronously.</p>
 <p >This can be used for sensitive IQ requests performed from client to client. Most IQ requests like service discovery requests cannot be end-to-end encrypted or it only makes little sense to do so. This is why the default <a class="el" href="classQXmppClient.html#aaa453ee1e8c19d7b375e42b5beea0015">sendIq()</a> does not do any additional end-to-end encryption.</p>
+<p >IQs of type 'error' are parsed automatically and returned as <a class="el" href="structQXmppError.html">QXmppError</a> with a contained <a class="el" href="classQXmppStanza_1_1Error.html" title="The Error class represents a stanza error.">QXmppStanza::Error</a>.</p>
 <dl class="section warning"><dt>Warning</dt><dd>THIS API IS NOT FINALIZED YET!</dd></dl>
 <dl class="section since"><dt>Since</dt><dd><a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.5 </dd></dl>
 
