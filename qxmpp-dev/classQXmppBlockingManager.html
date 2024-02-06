@@ -350,7 +350,7 @@ Setup</h2>
 </div><div class="memdoc">
 
 <p>Fetches the list of blocked JIDs and subscribes to blocklist updates. </p>
-<p >The manager will cache the blocklist and keep track of updates for the rest of the session. Later calls of this function will report the cached result immediately. </p>
+<p >The manager will cache the blocklist and keep track of updates for the rest of the session. Later calls of this function will report the cached result immediately. Even calling this function multiple times before the first request has finished, will not trigger more than one IQ request being sent. </p>
 
 </div>
 </div>
