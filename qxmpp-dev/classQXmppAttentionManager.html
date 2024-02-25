@@ -154,8 +154,10 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:aba99c6c7fcda0c358c956999d28c2af3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppAttentionManager.html#aba99c6c7fcda0c358c956999d28c2af3">setClient</a> (<a class="el" href="classQXmppClient.html">QXmppClient</a> *<a class="el" href="classQXmppClientExtension.html#a2476cb1a20963d15d45d39f24a0c1198">client</a>) override</td></tr>
-<tr class="separator:aba99c6c7fcda0c358c956999d28c2af3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a949a5e3c11b95bdbc2d75df8463dd5f2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppAttentionManager.html#a949a5e3c11b95bdbc2d75df8463dd5f2">onRegistered</a> (<a class="el" href="classQXmppClient.html">QXmppClient</a> *<a class="el" href="classQXmppClientExtension.html#a2476cb1a20963d15d45d39f24a0c1198">client</a>) override</td></tr>
+<tr class="separator:a949a5e3c11b95bdbc2d75df8463dd5f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1704bc2a0bfa0ef3486326ffd845689"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppAttentionManager.html#aa1704bc2a0bfa0ef3486326ffd845689">onUnregistered</a> (<a class="el" href="classQXmppClient.html">QXmppClient</a> *<a class="el" href="classQXmppClientExtension.html#a2476cb1a20963d15d45d39f24a0c1198">client</a>) override</td></tr>
+<tr class="separator:aa1704bc2a0bfa0ef3486326ffd845689"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_classQXmppClientExtension"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classQXmppClientExtension')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classQXmppClientExtension.html">QXmppClientExtension</a></td></tr>
 <tr class="memitem:a2476cb1a20963d15d45d39f24a0c1198 inherit pro_methods_classQXmppClientExtension"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classQXmppClient.html">QXmppClient</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppClientExtension.html#a2476cb1a20963d15d45d39f24a0c1198">client</a> ()</td></tr>
 <tr class="separator:a2476cb1a20963d15d45d39f24a0c1198 inherit pro_methods_classQXmppClientExtension"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -382,6 +384,76 @@ Protected Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a id="a949a5e3c11b95bdbc2d75df8463dd5f2" name="a949a5e3c11b95bdbc2d75df8463dd5f2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a949a5e3c11b95bdbc2d75df8463dd5f2">&#9670;&nbsp;</a></span>onRegistered()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void QXmppAttentionManager::onRegistered </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classQXmppClient.html">QXmppClient</a> *&#160;</td>
+          <td class="paramname"><em>client</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >Called after the extension has been added to a <a class="el" href="classQXmppClient.html" title="The QXmppClient class is the main class for using QXmpp.">QXmppClient</a>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">client</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Reimplemented from <a class="el" href="classQXmppClientExtension.html#a6daab3c506be17d1f8dc571d213dae23">QXmppClientExtension</a>.</p>
+
+</div>
+</div>
+<a id="aa1704bc2a0bfa0ef3486326ffd845689" name="aa1704bc2a0bfa0ef3486326ffd845689"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa1704bc2a0bfa0ef3486326ffd845689">&#9670;&nbsp;</a></span>onUnregistered()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void QXmppAttentionManager::onUnregistered </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classQXmppClient.html">QXmppClient</a> *&#160;</td>
+          <td class="paramname"><em>client</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >Called after the extension has been removed from a <a class="el" href="classQXmppClient.html" title="The QXmppClient class is the main class for using QXmpp.">QXmppClient</a>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">client</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Reimplemented from <a class="el" href="classQXmppClientExtension.html#a6c8f2e1238405019c49a65ee9774dd23">QXmppClientExtension</a>.</p>
+
+</div>
+</div>
 <a id="ae86580c3843e5fc1285ce534a51c734e" name="ae86580c3843e5fc1285ce534a51c734e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae86580c3843e5fc1285ce534a51c734e">&#9670;&nbsp;</a></span>requestAttention</h2>
 
@@ -473,41 +545,6 @@ Protected Member Functions</h2></td></tr>
 <a class="el" href="classQXmppAttentionManager.html#a8bd30505ae1f6a08e4adab68f751f5ba">allowedAttempts()</a> </dd>
 <dd>
 <a class="el" href="classQXmppAttentionManager.html#a32704944f1661427547709c21bcf0806">setAllowedAttempts()</a> </dd></dl>
-
-</div>
-</div>
-<a id="aba99c6c7fcda0c358c956999d28c2af3" name="aba99c6c7fcda0c358c956999d28c2af3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aba99c6c7fcda0c358c956999d28c2af3">&#9670;&nbsp;</a></span>setClient()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void QXmppAttentionManager::setClient </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classQXmppClient.html">QXmppClient</a> *&#160;</td>
-          <td class="paramname"><em>client</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p >Sets the client which loaded this extension.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">client</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Reimplemented from <a class="el" href="classQXmppClientExtension.html#a166f42a22447341abb26bd9c44c97590">QXmppClientExtension</a>.</p>
 
 </div>
 </div>
