@@ -25,6 +25,6 @@ var searchData=
   ['owndevice_22',['OwnDevice',['../structQXmppOmemoStorage_1_1OwnDevice.html',1,'QXmppOmemoStorage']]],
   ['owner_23',['Owner',['../classQXmppPubSubAffiliation.html#a87cbd228a4d3c451f4e21e260d46d842ae47f343fbc6c5788a65649241ae61bdb',1,'QXmppPubSubAffiliation']]],
   ['ownkey_24',['ownKey',['../classQXmppOmemoManager.html#addeed4a751909098a1df9b643b72e61d',1,'QXmppOmemoManager::ownKey()'],['../classQXmppTrustStorage.html#aa4d7836f88d792c316a2e659c0cf8310',1,'QXmppTrustStorage::ownKey()'],['../classQXmppTrustManager.html#a6d299ee985aed0cea64cb03256efcd0c',1,'QXmppTrustManager::ownKey()']]],
-  ['ox_25',['Ox',['../namespaceQXmpp.html#adbe84fa39564cc52d80d015448a56dd6a4051b83a948e2a334e5b75f07557b77a',1,'QXmpp']]],
-  ['ox_26',['OX',['../namespaceQXmpp.html#adbe84fa39564cc52d80d015448a56dd6a6ae0c1c63f5527cb050e942a38f6c726',1,'QXmpp']]]
+  ['ox_25',['OX',['../namespaceQXmpp.html#adbe84fa39564cc52d80d015448a56dd6a6ae0c1c63f5527cb050e942a38f6c726',1,'QXmpp']]],
+  ['ox_26',['Ox',['../namespaceQXmpp.html#adbe84fa39564cc52d80d015448a56dd6a4051b83a948e2a334e5b75f07557b77a',1,'QXmpp']]]
 ];
