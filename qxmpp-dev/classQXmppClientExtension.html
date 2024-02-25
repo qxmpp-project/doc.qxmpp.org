@@ -147,6 +147,10 @@ Protected Member Functions</h2></td></tr>
 <tr class="separator:a2476cb1a20963d15d45d39f24a0c1198"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a166f42a22447341abb26bd9c44c97590"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppClientExtension.html#a166f42a22447341abb26bd9c44c97590">setClient</a> (<a class="el" href="classQXmppClient.html">QXmppClient</a> *<a class="el" href="classQXmppClientExtension.html#a2476cb1a20963d15d45d39f24a0c1198">client</a>)</td></tr>
 <tr class="separator:a166f42a22447341abb26bd9c44c97590"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6daab3c506be17d1f8dc571d213dae23"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppClientExtension.html#a6daab3c506be17d1f8dc571d213dae23">onRegistered</a> (<a class="el" href="classQXmppClient.html">QXmppClient</a> *<a class="el" href="classQXmppClientExtension.html#a2476cb1a20963d15d45d39f24a0c1198">client</a>)</td></tr>
+<tr class="separator:a6daab3c506be17d1f8dc571d213dae23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c8f2e1238405019c49a65ee9774dd23"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppClientExtension.html#a6c8f2e1238405019c49a65ee9774dd23">onUnregistered</a> (<a class="el" href="classQXmppClient.html">QXmppClient</a> *<a class="el" href="classQXmppClientExtension.html#a2476cb1a20963d15d45d39f24a0c1198">client</a>)</td></tr>
+<tr class="separator:a6c8f2e1238405019c49a65ee9774dd23"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a93b0da72a5437f933d633ba797e58d7c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppClientExtension.html#a93b0da72a5437f933d633ba797e58d7c">injectIq</a> (const QDomElement &amp;element, const std::optional&lt; <a class="el" href="classQXmppE2eeMetadata.html">QXmppE2eeMetadata</a> &gt; &amp;e2eeMetadata)</td></tr>
 <tr class="separator:a93b0da72a5437f933d633ba797e58d7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae8e0d6429cd1b9bbb24be7debf3263af"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppClientExtension.html#ae8e0d6429cd1b9bbb24be7debf3263af">injectMessage</a> (<a class="el" href="classQXmppMessage.html">QXmppMessage</a> &amp;&amp;message)</td></tr>
@@ -443,6 +447,72 @@ const std::optional&lt;QXmppE2eeMetadata&gt; &amp;e2eeMetadata)</a>. Currently b
 <p >Injects a message stanza into the client.</p>
 <p >The stanza is processed by the client with all extensions implementing MessageHandler.</p>
 <dl class="section since"><dt>Since</dt><dd><a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.5 </dd></dl>
+
+</div>
+</div>
+<a id="a6daab3c506be17d1f8dc571d213dae23" name="a6daab3c506be17d1f8dc571d213dae23"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6daab3c506be17d1f8dc571d213dae23">&#9670;&nbsp;</a></span>onRegistered()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void QXmppClientExtension::onRegistered </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classQXmppClient.html">QXmppClient</a> *&#160;</td>
+          <td class="paramname"><em>client</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >Called after the extension has been added to a <a class="el" href="classQXmppClient.html" title="The QXmppClient class is the main class for using QXmpp.">QXmppClient</a>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">client</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a6c8f2e1238405019c49a65ee9774dd23" name="a6c8f2e1238405019c49a65ee9774dd23"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c8f2e1238405019c49a65ee9774dd23">&#9670;&nbsp;</a></span>onUnregistered()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void QXmppClientExtension::onUnregistered </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classQXmppClient.html">QXmppClient</a> *&#160;</td>
+          <td class="paramname"><em>client</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >Called after the extension has been removed from a <a class="el" href="classQXmppClient.html" title="The QXmppClient class is the main class for using QXmpp.">QXmppClient</a>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">client</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
