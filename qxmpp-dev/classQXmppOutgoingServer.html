@@ -100,7 +100,9 @@ Collaboration diagram for QXmppOutgoingServer:</div>
 Public Slots</h2></td></tr>
 <tr class="memitem:a0d24f0f0a5b9cb363658c91644977cd7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppOutgoingServer.html#a0d24f0f0a5b9cb363658c91644977cd7">connectToHost</a> (const QString &amp;domain)</td></tr>
 <tr class="separator:a0d24f0f0a5b9cb363658c91644977cd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeaab8b4ce42db69ab9cea8ace67a1265"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppOutgoingServer.html#aeaab8b4ce42db69ab9cea8ace67a1265">queueData</a> (const QByteArray &amp;data)</td></tr>
+<tr class="memitem:aeaab8b4ce42db69ab9cea8ace67a1265"><td class="memItemLeft" align="right" valign="top"><a id="aeaab8b4ce42db69ab9cea8ace67a1265" name="aeaab8b4ce42db69ab9cea8ace67a1265"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>queueData</b> (const QByteArray &amp;data)</td></tr>
+<tr class="memdesc:aeaab8b4ce42db69ab9cea8ace67a1265"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends or queues data until connected. <br /></td></tr>
 <tr class="separator:aeaab8b4ce42db69ab9cea8ace67a1265"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_slots_classQXmppStream"><td colspan="2" onclick="javascript:toggleInherit('pub_slots_classQXmppStream')"><img src="closed.png" alt="-"/>&#160;Public Slots inherited from <a class="el" href="classQXmppStream.html">QXmppStream</a></td></tr>
 <tr class="memitem:a8608905c2f2cc146567c85756832acb5 inherit pub_slots_classQXmppStream"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppStream.html#a8608905c2f2cc146567c85756832acb5">disconnectFromHost</a> ()</td></tr>
@@ -144,14 +146,19 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a69e094a815a4a7097b8763a05a46043b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppOutgoingServer.html#a69e094a815a4a7097b8763a05a46043b">~QXmppOutgoingServer</a> () override</td></tr>
 <tr class="separator:a69e094a815a4a7097b8763a05a46043b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aceb48fb7201b950a90a00f6d4685e291"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppOutgoingServer.html#aceb48fb7201b950a90a00f6d4685e291">isConnected</a> () const override</td></tr>
+<tr class="memdesc:aceb48fb7201b950a90a00f6d4685e291"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the socket is connected and authentication succeeded.  <a href="classQXmppOutgoingServer.html#aceb48fb7201b950a90a00f6d4685e291">More...</a><br /></td></tr>
 <tr class="separator:aceb48fb7201b950a90a00f6d4685e291"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac805151497749aeb26aa27c69cb00c7c"><td class="memItemLeft" align="right" valign="top"><a id="ac805151497749aeb26aa27c69cb00c7c" name="ac805151497749aeb26aa27c69cb00c7c"></a>
 QString&#160;</td><td class="memItemRight" valign="bottom"><b>localStreamKey</b> () const</td></tr>
 <tr class="memdesc:ac805151497749aeb26aa27c69cb00c7c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the stream's local dialback key. <br /></td></tr>
 <tr class="separator:ac805151497749aeb26aa27c69cb00c7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a04c2358e7fb7e1ce716b37ae52364586"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppOutgoingServer.html#a04c2358e7fb7e1ce716b37ae52364586">setLocalStreamKey</a> (const QString &amp;key)</td></tr>
+<tr class="memitem:a04c2358e7fb7e1ce716b37ae52364586"><td class="memItemLeft" align="right" valign="top"><a id="a04c2358e7fb7e1ce716b37ae52364586" name="a04c2358e7fb7e1ce716b37ae52364586"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setLocalStreamKey</b> (const QString &amp;key)</td></tr>
+<tr class="memdesc:a04c2358e7fb7e1ce716b37ae52364586"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the stream's local dialback key. <br /></td></tr>
 <tr class="separator:a04c2358e7fb7e1ce716b37ae52364586"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab46469ded7de73e98e205625dcfe05a5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppOutgoingServer.html#ab46469ded7de73e98e205625dcfe05a5">setVerify</a> (const QString &amp;id, const QString &amp;key)</td></tr>
+<tr class="memitem:ab46469ded7de73e98e205625dcfe05a5"><td class="memItemLeft" align="right" valign="top"><a id="ab46469ded7de73e98e205625dcfe05a5" name="ab46469ded7de73e98e205625dcfe05a5"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setVerify</b> (const QString &amp;id, const QString &amp;key)</td></tr>
+<tr class="memdesc:ab46469ded7de73e98e205625dcfe05a5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the stream's verification information. <br /></td></tr>
 <tr class="separator:ab46469ded7de73e98e205625dcfe05a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a52cd5e1bda541dab8b8fd7f81fd7ca66"><td class="memItemLeft" align="right" valign="top"><a id="a52cd5e1bda541dab8b8fd7f81fd7ca66" name="a52cd5e1bda541dab8b8fd7f81fd7ca66"></a>
 QString&#160;</td><td class="memItemRight" valign="bottom"><b>remoteDomain</b> () const</td></tr>
@@ -339,103 +346,10 @@ Additional Inherited Members</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p >Returns true if the socket is connected and authentication succeeded. </p>
+
+<p>Returns true if the socket is connected and authentication succeeded. </p>
 
 <p>Reimplemented from <a class="el" href="classQXmppStream.html#aca1925ef047a64a8eb862d125a528aba">QXmppStream</a>.</p>
-
-</div>
-</div>
-<a id="aeaab8b4ce42db69ab9cea8ace67a1265" name="aeaab8b4ce42db69ab9cea8ace67a1265"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aeaab8b4ce42db69ab9cea8ace67a1265">&#9670;&nbsp;</a></span>queueData</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void QXmppOutgoingServer::queueData </td>
-          <td>(</td>
-          <td class="paramtype">const QByteArray &amp;&#160;</td>
-          <td class="paramname"><em>data</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p >Sends or queues data until connected.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">data</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a04c2358e7fb7e1ce716b37ae52364586" name="a04c2358e7fb7e1ce716b37ae52364586"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a04c2358e7fb7e1ce716b37ae52364586">&#9670;&nbsp;</a></span>setLocalStreamKey()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void QXmppOutgoingServer::setLocalStreamKey </td>
-          <td>(</td>
-          <td class="paramtype">const QString &amp;&#160;</td>
-          <td class="paramname"><em>key</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Sets the stream's local dialback key.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">key</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="ab46469ded7de73e98e205625dcfe05a5" name="ab46469ded7de73e98e205625dcfe05a5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab46469ded7de73e98e205625dcfe05a5">&#9670;&nbsp;</a></span>setVerify()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void QXmppOutgoingServer::setVerify </td>
-          <td>(</td>
-          <td class="paramtype">const QString &amp;&#160;</td>
-          <td class="paramname"><em>id</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const QString &amp;&#160;</td>
-          <td class="paramname"><em>key</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Sets the stream's verification information.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">id</td><td></td></tr>
-    <tr><td class="paramname">key</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>

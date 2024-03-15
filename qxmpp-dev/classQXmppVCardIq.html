@@ -98,7 +98,9 @@ Collaboration diagram for QXmppVCardIq:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a661553fef688e1533f502ea233a3cd80"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppVCardIq.html#a661553fef688e1533f502ea233a3cd80">QXmppVCardIq</a> (const QString &amp;bareJid=QString())</td></tr>
+<tr class="memitem:a661553fef688e1533f502ea233a3cd80"><td class="memItemLeft" align="right" valign="top"><a id="a661553fef688e1533f502ea233a3cd80" name="a661553fef688e1533f502ea233a3cd80"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>QXmppVCardIq</b> (const QString &amp;bareJid=QString())</td></tr>
+<tr class="memdesc:a661553fef688e1533f502ea233a3cd80"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs a <a class="el" href="classQXmppVCardIq.html" title="Represents the XMPP vCard.">QXmppVCardIq</a> for the specified recipient. <br /></td></tr>
 <tr class="separator:a661553fef688e1533f502ea233a3cd80"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7e09646833b005171d2f3564cb446e91"><td class="memItemLeft" align="right" valign="top"><a id="a7e09646833b005171d2f3564cb446e91" name="a7e09646833b005171d2f3564cb446e91"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>QXmppVCardIq</b> (const <a class="el" href="classQXmppVCardIq.html">QXmppVCardIq</a> &amp;other)</td></tr>
@@ -108,9 +110,13 @@ Public Member Functions</h2></td></tr>
 <a class="el" href="classQXmppVCardIq.html">QXmppVCardIq</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="classQXmppVCardIq.html">QXmppVCardIq</a> &amp;other)</td></tr>
 <tr class="memdesc:a15ffae99786fbe0f56e3bd4f3b0255bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Assigns <em>other</em> to this vCard IQ. <br /></td></tr>
 <tr class="separator:a15ffae99786fbe0f56e3bd4f3b0255bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1aa3513fbaaf9945346a045bad940481"><td class="memItemLeft" align="right" valign="top">QDate&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppVCardIq.html#a1aa3513fbaaf9945346a045bad940481">birthday</a> () const</td></tr>
+<tr class="memitem:a1aa3513fbaaf9945346a045bad940481"><td class="memItemLeft" align="right" valign="top"><a id="a1aa3513fbaaf9945346a045bad940481" name="a1aa3513fbaaf9945346a045bad940481"></a>
+QDate&#160;</td><td class="memItemRight" valign="bottom"><b>birthday</b> () const</td></tr>
+<tr class="memdesc:a1aa3513fbaaf9945346a045bad940481"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the date of birth of the individual associated with the vCard. <br /></td></tr>
 <tr class="separator:a1aa3513fbaaf9945346a045bad940481"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac7e4d0035d340b433af3bf4a84b81d04"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppVCardIq.html#ac7e4d0035d340b433af3bf4a84b81d04">setBirthday</a> (const QDate &amp;<a class="el" href="classQXmppVCardIq.html#a1aa3513fbaaf9945346a045bad940481">birthday</a>)</td></tr>
+<tr class="memitem:ac7e4d0035d340b433af3bf4a84b81d04"><td class="memItemLeft" align="right" valign="top"><a id="ac7e4d0035d340b433af3bf4a84b81d04" name="ac7e4d0035d340b433af3bf4a84b81d04"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setBirthday</b> (const QDate &amp;<a class="el" href="classQXmppVCardIq.html#a1aa3513fbaaf9945346a045bad940481">birthday</a>)</td></tr>
+<tr class="memdesc:ac7e4d0035d340b433af3bf4a84b81d04"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the date of birth of the individual associated with the vCard. <br /></td></tr>
 <tr class="separator:ac7e4d0035d340b433af3bf4a84b81d04"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae0c910ee83114017a6efa34ce581cd6d"><td class="memItemLeft" align="right" valign="top"><a id="ae0c910ee83114017a6efa34ce581cd6d" name="ae0c910ee83114017a6efa34ce581cd6d"></a>
 QString&#160;</td><td class="memItemRight" valign="bottom"><b>description</b> () const</td></tr>
@@ -120,29 +126,53 @@ QString&#160;</td><td class="memItemRight" valign="bottom"><b>description</b> ()
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setDescription</b> (const QString &amp;<a class="el" href="classQXmppVCardIq.html#ae0c910ee83114017a6efa34ce581cd6d">description</a>)</td></tr>
 <tr class="memdesc:aa0f96a1f59c31cf067852854c8275d1e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the free-form descriptive text. <br /></td></tr>
 <tr class="separator:aa0f96a1f59c31cf067852854c8275d1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1da51096d5e36f049501a482f11dbe36"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppVCardIq.html#a1da51096d5e36f049501a482f11dbe36">email</a> () const</td></tr>
+<tr class="memitem:a1da51096d5e36f049501a482f11dbe36"><td class="memItemLeft" align="right" valign="top"><a id="a1da51096d5e36f049501a482f11dbe36" name="a1da51096d5e36f049501a482f11dbe36"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>email</b> () const</td></tr>
+<tr class="memdesc:a1da51096d5e36f049501a482f11dbe36"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the email address. <br /></td></tr>
 <tr class="separator:a1da51096d5e36f049501a482f11dbe36"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abc7c73030e09607ce9cae339ceef73d0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppVCardIq.html#abc7c73030e09607ce9cae339ceef73d0">setEmail</a> (const QString &amp;)</td></tr>
+<tr class="memitem:abc7c73030e09607ce9cae339ceef73d0"><td class="memItemLeft" align="right" valign="top"><a id="abc7c73030e09607ce9cae339ceef73d0" name="abc7c73030e09607ce9cae339ceef73d0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setEmail</b> (const QString &amp;)</td></tr>
+<tr class="memdesc:abc7c73030e09607ce9cae339ceef73d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the email address. <br /></td></tr>
 <tr class="separator:abc7c73030e09607ce9cae339ceef73d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4149f81ad4a2bf62d89e1ea1a46d171d"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppVCardIq.html#a4149f81ad4a2bf62d89e1ea1a46d171d">firstName</a> () const</td></tr>
+<tr class="memitem:a4149f81ad4a2bf62d89e1ea1a46d171d"><td class="memItemLeft" align="right" valign="top"><a id="a4149f81ad4a2bf62d89e1ea1a46d171d" name="a4149f81ad4a2bf62d89e1ea1a46d171d"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>firstName</b> () const</td></tr>
+<tr class="memdesc:a4149f81ad4a2bf62d89e1ea1a46d171d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the first name. <br /></td></tr>
 <tr class="separator:a4149f81ad4a2bf62d89e1ea1a46d171d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a98b1ee2bf954f929777928791f7a53fe"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppVCardIq.html#a98b1ee2bf954f929777928791f7a53fe">setFirstName</a> (const QString &amp;)</td></tr>
+<tr class="memitem:a98b1ee2bf954f929777928791f7a53fe"><td class="memItemLeft" align="right" valign="top"><a id="a98b1ee2bf954f929777928791f7a53fe" name="a98b1ee2bf954f929777928791f7a53fe"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setFirstName</b> (const QString &amp;)</td></tr>
+<tr class="memdesc:a98b1ee2bf954f929777928791f7a53fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the first name. <br /></td></tr>
 <tr class="separator:a98b1ee2bf954f929777928791f7a53fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a40cee2a7d8b353fff804cf582eda5684"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppVCardIq.html#a40cee2a7d8b353fff804cf582eda5684">fullName</a> () const</td></tr>
+<tr class="memitem:a40cee2a7d8b353fff804cf582eda5684"><td class="memItemLeft" align="right" valign="top"><a id="a40cee2a7d8b353fff804cf582eda5684" name="a40cee2a7d8b353fff804cf582eda5684"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>fullName</b> () const</td></tr>
+<tr class="memdesc:a40cee2a7d8b353fff804cf582eda5684"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the full name. <br /></td></tr>
 <tr class="separator:a40cee2a7d8b353fff804cf582eda5684"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3f72cb68b4c2dc1120a3803d75b01b62"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppVCardIq.html#a3f72cb68b4c2dc1120a3803d75b01b62">setFullName</a> (const QString &amp;)</td></tr>
+<tr class="memitem:a3f72cb68b4c2dc1120a3803d75b01b62"><td class="memItemLeft" align="right" valign="top"><a id="a3f72cb68b4c2dc1120a3803d75b01b62" name="a3f72cb68b4c2dc1120a3803d75b01b62"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setFullName</b> (const QString &amp;)</td></tr>
+<tr class="memdesc:a3f72cb68b4c2dc1120a3803d75b01b62"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the full name. <br /></td></tr>
 <tr class="separator:a3f72cb68b4c2dc1120a3803d75b01b62"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1966a72fc433a38bc6bf0a54033ae8e5"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppVCardIq.html#a1966a72fc433a38bc6bf0a54033ae8e5">lastName</a> () const</td></tr>
+<tr class="memitem:a1966a72fc433a38bc6bf0a54033ae8e5"><td class="memItemLeft" align="right" valign="top"><a id="a1966a72fc433a38bc6bf0a54033ae8e5" name="a1966a72fc433a38bc6bf0a54033ae8e5"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>lastName</b> () const</td></tr>
+<tr class="memdesc:a1966a72fc433a38bc6bf0a54033ae8e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the last name. <br /></td></tr>
 <tr class="separator:a1966a72fc433a38bc6bf0a54033ae8e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae3e28bae362398ad657dfc53a4b04c47"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppVCardIq.html#ae3e28bae362398ad657dfc53a4b04c47">setLastName</a> (const QString &amp;)</td></tr>
+<tr class="memitem:ae3e28bae362398ad657dfc53a4b04c47"><td class="memItemLeft" align="right" valign="top"><a id="ae3e28bae362398ad657dfc53a4b04c47" name="ae3e28bae362398ad657dfc53a4b04c47"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setLastName</b> (const QString &amp;)</td></tr>
+<tr class="memdesc:ae3e28bae362398ad657dfc53a4b04c47"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the last name. <br /></td></tr>
 <tr class="separator:ae3e28bae362398ad657dfc53a4b04c47"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4d3505f65b438a00a752e86049f8fd4a"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppVCardIq.html#a4d3505f65b438a00a752e86049f8fd4a">middleName</a> () const</td></tr>
+<tr class="memitem:a4d3505f65b438a00a752e86049f8fd4a"><td class="memItemLeft" align="right" valign="top"><a id="a4d3505f65b438a00a752e86049f8fd4a" name="a4d3505f65b438a00a752e86049f8fd4a"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>middleName</b> () const</td></tr>
+<tr class="memdesc:a4d3505f65b438a00a752e86049f8fd4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the middle name. <br /></td></tr>
 <tr class="separator:a4d3505f65b438a00a752e86049f8fd4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aba227d72ed8301ffbe1c7e9a64e068db"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppVCardIq.html#aba227d72ed8301ffbe1c7e9a64e068db">setMiddleName</a> (const QString &amp;)</td></tr>
+<tr class="memitem:aba227d72ed8301ffbe1c7e9a64e068db"><td class="memItemLeft" align="right" valign="top"><a id="aba227d72ed8301ffbe1c7e9a64e068db" name="aba227d72ed8301ffbe1c7e9a64e068db"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setMiddleName</b> (const QString &amp;)</td></tr>
+<tr class="memdesc:aba227d72ed8301ffbe1c7e9a64e068db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the middle name. <br /></td></tr>
 <tr class="separator:aba227d72ed8301ffbe1c7e9a64e068db"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1978628f5ad08d9147c654023a7f5dd3"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppVCardIq.html#a1978628f5ad08d9147c654023a7f5dd3">nickName</a> () const</td></tr>
+<tr class="memitem:a1978628f5ad08d9147c654023a7f5dd3"><td class="memItemLeft" align="right" valign="top"><a id="a1978628f5ad08d9147c654023a7f5dd3" name="a1978628f5ad08d9147c654023a7f5dd3"></a>
+QString&#160;</td><td class="memItemRight" valign="bottom"><b>nickName</b> () const</td></tr>
+<tr class="memdesc:a1978628f5ad08d9147c654023a7f5dd3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the nickname. <br /></td></tr>
 <tr class="separator:a1978628f5ad08d9147c654023a7f5dd3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa450262ecf9fd3d196464484add3069f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppVCardIq.html#aa450262ecf9fd3d196464484add3069f">setNickName</a> (const QString &amp;)</td></tr>
+<tr class="memitem:aa450262ecf9fd3d196464484add3069f"><td class="memItemLeft" align="right" valign="top"><a id="aa450262ecf9fd3d196464484add3069f" name="aa450262ecf9fd3d196464484add3069f"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setNickName</b> (const QString &amp;)</td></tr>
+<tr class="memdesc:aa450262ecf9fd3d196464484add3069f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the nickname. <br /></td></tr>
 <tr class="separator:aa450262ecf9fd3d196464484add3069f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a16498835d92e5078df64408e4bb49baa"><td class="memItemLeft" align="right" valign="top">QByteArray&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppVCardIq.html#a16498835d92e5078df64408e4bb49baa">photo</a> () const</td></tr>
 <tr class="separator:a16498835d92e5078df64408e4bb49baa"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -301,159 +331,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="textblock"><p >Represents the XMPP vCard. </p>
 <p >The functions names are self explanatory. Look at <a class="el" href="classQXmppVCardManager.html" title="The QXmppVCardManager class gets/sets XMPP vCards. It is an implementation of XEP-0054: vcard-temp.">QXmppVCardManager</a> and <a href="https://xmpp.org/extensions/xep-0054.html">XEP-0054</a>: vcard-temp for more details.</p>
 <p >There are many field of XMPP vCard which are not present in this class. File a issue for the same. We will add the requested field to this class. </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a661553fef688e1533f502ea233a3cd80" name="a661553fef688e1533f502ea233a3cd80"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a661553fef688e1533f502ea233a3cd80">&#9670;&nbsp;</a></span>QXmppVCardIq()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">QXmppVCardIq::QXmppVCardIq </td>
-          <td>(</td>
-          <td class="paramtype">const QString &amp;&#160;</td>
-          <td class="paramname"><em>jid</em> = <code>QString()</code></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Constructs a <a class="el" href="classQXmppVCardIq.html" title="Represents the XMPP vCard.">QXmppVCardIq</a> for the specified recipient.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">jid</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
-<a id="a1aa3513fbaaf9945346a045bad940481" name="a1aa3513fbaaf9945346a045bad940481"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1aa3513fbaaf9945346a045bad940481">&#9670;&nbsp;</a></span>birthday()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">QDate QXmppVCardIq::birthday </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Returns the date of birth of the individual associated with the vCard. </p>
-
-</div>
-</div>
-<a id="a1da51096d5e36f049501a482f11dbe36" name="a1da51096d5e36f049501a482f11dbe36"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1da51096d5e36f049501a482f11dbe36">&#9670;&nbsp;</a></span>email()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">QString QXmppVCardIq::email </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Returns the email address. </p>
-
-</div>
-</div>
-<a id="a4149f81ad4a2bf62d89e1ea1a46d171d" name="a4149f81ad4a2bf62d89e1ea1a46d171d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4149f81ad4a2bf62d89e1ea1a46d171d">&#9670;&nbsp;</a></span>firstName()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">QString QXmppVCardIq::firstName </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Returns the first name. </p>
-
-</div>
-</div>
-<a id="a40cee2a7d8b353fff804cf582eda5684" name="a40cee2a7d8b353fff804cf582eda5684"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a40cee2a7d8b353fff804cf582eda5684">&#9670;&nbsp;</a></span>fullName()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">QString QXmppVCardIq::fullName </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Returns the full name. </p>
-
-</div>
-</div>
-<a id="a1966a72fc433a38bc6bf0a54033ae8e5" name="a1966a72fc433a38bc6bf0a54033ae8e5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1966a72fc433a38bc6bf0a54033ae8e5">&#9670;&nbsp;</a></span>lastName()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">QString QXmppVCardIq::lastName </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Returns the last name. </p>
-
-</div>
-</div>
-<a id="a4d3505f65b438a00a752e86049f8fd4a" name="a4d3505f65b438a00a752e86049f8fd4a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4d3505f65b438a00a752e86049f8fd4a">&#9670;&nbsp;</a></span>middleName()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">QString QXmppVCardIq::middleName </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Returns the middle name. </p>
-
-</div>
-</div>
-<a id="a1978628f5ad08d9147c654023a7f5dd3" name="a1978628f5ad08d9147c654023a7f5dd3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1978628f5ad08d9147c654023a7f5dd3">&#9670;&nbsp;</a></span>nickName()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">QString QXmppVCardIq::nickName </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Returns the nickname. </p>
-
-</div>
-</div>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a16498835d92e5078df64408e4bb49baa" name="a16498835d92e5078df64408e4bb49baa"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a16498835d92e5078df64408e4bb49baa">&#9670;&nbsp;</a></span>photo()</h2>
 
@@ -478,181 +356,6 @@ Additional Inherited Members</h2></td></tr>
 </div><!-- fragment --> 
 </div>
 </div>
-<a id="ac7e4d0035d340b433af3bf4a84b81d04" name="ac7e4d0035d340b433af3bf4a84b81d04"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac7e4d0035d340b433af3bf4a84b81d04">&#9670;&nbsp;</a></span>setBirthday()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void QXmppVCardIq::setBirthday </td>
-          <td>(</td>
-          <td class="paramtype">const QDate &amp;&#160;</td>
-          <td class="paramname"><em>birthday</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Sets the date of birth of the individual associated with the vCard.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">birthday</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="abc7c73030e09607ce9cae339ceef73d0" name="abc7c73030e09607ce9cae339ceef73d0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abc7c73030e09607ce9cae339ceef73d0">&#9670;&nbsp;</a></span>setEmail()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void QXmppVCardIq::setEmail </td>
-          <td>(</td>
-          <td class="paramtype">const QString &amp;&#160;</td>
-          <td class="paramname"><em>email</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Sets the email address.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">email</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a98b1ee2bf954f929777928791f7a53fe" name="a98b1ee2bf954f929777928791f7a53fe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a98b1ee2bf954f929777928791f7a53fe">&#9670;&nbsp;</a></span>setFirstName()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void QXmppVCardIq::setFirstName </td>
-          <td>(</td>
-          <td class="paramtype">const QString &amp;&#160;</td>
-          <td class="paramname"><em>firstName</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Sets the first name.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">firstName</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="a3f72cb68b4c2dc1120a3803d75b01b62" name="a3f72cb68b4c2dc1120a3803d75b01b62"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3f72cb68b4c2dc1120a3803d75b01b62">&#9670;&nbsp;</a></span>setFullName()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void QXmppVCardIq::setFullName </td>
-          <td>(</td>
-          <td class="paramtype">const QString &amp;&#160;</td>
-          <td class="paramname"><em>fullName</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Sets the full name.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">fullName</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="ae3e28bae362398ad657dfc53a4b04c47" name="ae3e28bae362398ad657dfc53a4b04c47"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae3e28bae362398ad657dfc53a4b04c47">&#9670;&nbsp;</a></span>setLastName()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void QXmppVCardIq::setLastName </td>
-          <td>(</td>
-          <td class="paramtype">const QString &amp;&#160;</td>
-          <td class="paramname"><em>lastName</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Sets the last name.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">lastName</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="aba227d72ed8301ffbe1c7e9a64e068db" name="aba227d72ed8301ffbe1c7e9a64e068db"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aba227d72ed8301ffbe1c7e9a64e068db">&#9670;&nbsp;</a></span>setMiddleName()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void QXmppVCardIq::setMiddleName </td>
-          <td>(</td>
-          <td class="paramtype">const QString &amp;&#160;</td>
-          <td class="paramname"><em>middleName</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Sets the middle name.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">middleName</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<a id="aa450262ecf9fd3d196464484add3069f" name="aa450262ecf9fd3d196464484add3069f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa450262ecf9fd3d196464484add3069f">&#9670;&nbsp;</a></span>setNickName()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void QXmppVCardIq::setNickName </td>
-          <td>(</td>
-          <td class="paramtype">const QString &amp;&#160;</td>
-          <td class="paramname"><em>nickName</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Sets the nickname.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">nickName</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a id="a5036f61a15796c6cc6ba172c210b7c09" name="a5036f61a15796c6cc6ba172c210b7c09"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5036f61a15796c6cc6ba172c210b7c09">&#9670;&nbsp;</a></span>setUrl()</h2>
 
@@ -668,13 +371,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p >Sets the URL associated with the vCard. It can represent the user's homepage or a location at which you can find real-time information about the vCard.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">url</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
+<p >Sets the URL associated with the vCard. It can represent the user's homepage or a location at which you can find real-time information about the vCard. </p>
 
 </div>
 </div>
