@@ -142,7 +142,7 @@ $(function() {
 <div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span> </div>
 <div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>    <a class="code hl_class" href="classQXmppCall.html">QXmppCall</a>(<span class="keyword">const</span> QString &amp;jid, <a class="code hl_enumeration" href="classQXmppCall.html#a429a4f8065136068b6d936cb2c803175">QXmppCall::Direction</a> direction, <a class="code hl_class" href="classQXmppCallManager.html">QXmppCallManager</a> *parent);</div>
 <div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span> </div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    QXmppCallPrivate *d;</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    <span class="keyword">const</span> std::unique_ptr&lt;QXmppCallPrivate&gt; d;</div>
 <div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code hl_class" href="classQXmppCallManager.html">QXmppCallManager</a>;</div>
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    <span class="keyword">friend</span> <span class="keyword">class </span>QXmppCallManagerPrivate;</div>
 <div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    <span class="keyword">friend</span> <span class="keyword">class </span>QXmppCallPrivate;</div>
@@ -162,7 +162,7 @@ $(function() {
 <div class="ttc" id="aclassQXmppCall_html_a90205b5034613127d2c4adc6a0252759"><div class="ttname"><a href="classQXmppCall.html#a90205b5034613127d2c4adc6a0252759">QXmppCall::State</a></div><div class="ttdeci">State</div><div class="ttdoc">This enum is used to describe the state of a call.</div><div class="ttdef"><b>Definition:</b> QXmppCall.h:39</div></div>
 <div class="ttc" id="aclassQXmppCall_html_a9e009969342529b6b586e528ab9a237b"><div class="ttname"><a href="classQXmppCall.html#a9e009969342529b6b586e528ab9a237b">QXmppCall::connected</a></div><div class="ttdeci">Q_SIGNAL void connected()</div><div class="ttdoc">This signal is emitted when a call is connected.</div></div>
 <div class="ttc" id="aclassQXmppCall_html_aac40af3b2de02570748eda7fed668b1b"><div class="ttname"><a href="classQXmppCall.html#aac40af3b2de02570748eda7fed668b1b">QXmppCall::stateChanged</a></div><div class="ttdeci">Q_SIGNAL void stateChanged(QXmppCall::State state)</div><div class="ttdoc">This signal is emitted when the call state changes.</div></div>
-<div class="ttc" id="aclassQXmppLoggable_html"><div class="ttname"><a href="classQXmppLoggable.html">QXmppLoggable</a></div><div class="ttdoc">The QXmppLoggable class represents a source of logging messages.</div><div class="ttdef"><b>Definition:</b> QXmppLogger.h:105</div></div>
+<div class="ttc" id="aclassQXmppLoggable_html"><div class="ttname"><a href="classQXmppLoggable.html">QXmppLoggable</a></div><div class="ttdoc">The QXmppLoggable class represents a source of logging messages.</div><div class="ttdef"><b>Definition:</b> QXmppLogger.h:107</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

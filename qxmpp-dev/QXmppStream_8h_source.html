@@ -163,12 +163,12 @@ $(function() {
 <div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    <span class="keywordtype">void</span> processData(<span class="keyword">const</span> QString &amp;data);</div>
 <div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    <span class="keywordtype">bool</span> handleIqResponse(<span class="keyword">const</span> QDomElement &amp;);</div>
 <div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span> </div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    QXmppStreamPrivate *<span class="keyword">const</span> d;</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    <span class="keyword">const</span> std::unique_ptr&lt;QXmppStreamPrivate&gt; d;</div>
 <div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>};</div>
 <div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span> </div>
 <div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span><span class="preprocessor">#endif  </span><span class="comment">// QXMPPSTREAM_H</span></div>
 <div class="ttc" id="aclassQXmppIq_html"><div class="ttname"><a href="classQXmppIq.html">QXmppIq</a></div><div class="ttdoc">The QXmppIq class is the base class for all IQs.</div><div class="ttdef"><b>Definition:</b> QXmppIq.h:23</div></div>
-<div class="ttc" id="aclassQXmppLoggable_html"><div class="ttname"><a href="classQXmppLoggable.html">QXmppLoggable</a></div><div class="ttdoc">The QXmppLoggable class represents a source of logging messages.</div><div class="ttdef"><b>Definition:</b> QXmppLogger.h:105</div></div>
+<div class="ttc" id="aclassQXmppLoggable_html"><div class="ttname"><a href="classQXmppLoggable.html">QXmppLoggable</a></div><div class="ttdoc">The QXmppLoggable class represents a source of logging messages.</div><div class="ttdef"><b>Definition:</b> QXmppLogger.h:107</div></div>
 <div class="ttc" id="aclassQXmppNonza_html"><div class="ttname"><a href="classQXmppNonza.html">QXmppNonza</a></div><div class="ttdef"><b>Definition:</b> QXmppNonza.h:14</div></div>
 <div class="ttc" id="aclassQXmppStanza_html"><div class="ttname"><a href="classQXmppStanza.html">QXmppStanza</a></div><div class="ttdoc">The QXmppStanza class is the base class for all XMPP stanzas.</div><div class="ttdef"><b>Definition:</b> QXmppStanza.h:88</div></div>
 <div class="ttc" id="aclassQXmppStream_html"><div class="ttname"><a href="classQXmppStream.html">QXmppStream</a></div><div class="ttdoc">The QXmppStream class is the base class for all XMPP streams.</div><div class="ttdef"><b>Definition:</b> QXmppStream.h:36</div></div>

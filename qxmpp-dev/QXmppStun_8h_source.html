@@ -244,7 +244,7 @@ $(function() {
 <div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span><span class="keyword">private</span>:</div>
 <div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>    <a class="code hl_class" href="classQXmppIceComponent.html">QXmppIceComponent</a>(<span class="keywordtype">int</span> component, QXmppIcePrivate *config, QObject *parent = <span class="keyword">nullptr</span>);</div>
 <div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span> </div>
-<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>    QXmppIceComponentPrivate *d;</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>    <span class="keyword">const</span> std::unique_ptr&lt;QXmppIceComponentPrivate&gt; d;</div>
 <div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>    <span class="keyword">friend</span> <span class="keyword">class </span>QXmppIceComponentPrivate;</div>
 <div class="line"><a id="l00192" name="l00192"></a><span class="lineno"><a class="line" href="classQXmppIceConnection.html#a6e655b651dbcb2fb0d3b6b4c693d15f3">  192</a></span>    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code hl_class" href="classQXmppIceConnection.html">QXmppIceConnection</a>;</div>
 <div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>};</div>
@@ -309,7 +309,7 @@ $(function() {
 <div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span>    <span class="keywordtype">void</span> slotTimeout();</div>
 <div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span> </div>
 <div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span>    QXmppIceConnectionPrivate *d;</div>
+<div class="line"><a id="l00307" name="l00307"></a><span class="lineno">  307</span>    <span class="keyword">const</span> std::unique_ptr&lt;QXmppIceConnectionPrivate&gt; d;</div>
 <div class="line"><a id="l00308" name="l00308"></a><span class="lineno">  308</span>};</div>
 <div class="line"><a id="l00309" name="l00309"></a><span class="lineno">  309</span> </div>
 <div class="line"><a id="l00310" name="l00310"></a><span class="lineno">  310</span><span class="preprocessor">#endif</span></div>
@@ -325,7 +325,7 @@ $(function() {
 <div class="ttc" id="aclassQXmppIceConnection_html_ae6aa4cce6395cbac3af9ad8f62d92384"><div class="ttname"><a href="classQXmppIceConnection.html#ae6aa4cce6395cbac3af9ad8f62d92384">QXmppIceConnection::connected</a></div><div class="ttdeci">void connected()</div><div class="ttdoc">This signal is emitted once ICE negotiation succeeds.</div></div>
 <div class="ttc" id="aclassQXmppIceConnection_html_afa611e20d4575f1e7e295e3f67d4dca9"><div class="ttname"><a href="classQXmppIceConnection.html#afa611e20d4575f1e7e295e3f67d4dca9">QXmppIceConnection::GatheringState</a></div><div class="ttdeci">GatheringState</div><div class="ttdef"><b>Definition:</b> QXmppStun.h:240</div></div>
 <div class="ttc" id="aclassQXmppJingleCandidate_html"><div class="ttname"><a href="classQXmppJingleCandidate.html">QXmppJingleCandidate</a></div><div class="ttdoc">The QXmppJingleCandidate class represents a transport candidate as specified by XEP-0176: Jingle ICE-...</div><div class="ttdef"><b>Definition:</b> QXmppJingleData.h:278</div></div>
-<div class="ttc" id="aclassQXmppLoggable_html"><div class="ttname"><a href="classQXmppLoggable.html">QXmppLoggable</a></div><div class="ttdoc">The QXmppLoggable class represents a source of logging messages.</div><div class="ttdef"><b>Definition:</b> QXmppLogger.h:105</div></div>
+<div class="ttc" id="aclassQXmppLoggable_html"><div class="ttname"><a href="classQXmppLoggable.html">QXmppLoggable</a></div><div class="ttdoc">The QXmppLoggable class represents a source of logging messages.</div><div class="ttdef"><b>Definition:</b> QXmppLogger.h:107</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

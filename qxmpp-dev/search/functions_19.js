@@ -8,13 +8,8 @@ var searchData=
   ['_7eqxmppcallmanager_5',['~QXmppCallManager',['../classQXmppCallManager.html#ac4fdcd1083db02f65b8fb66f6333e114',1,'QXmppCallManager']]],
   ['_7eqxmppdataform_6',['~QXmppDataForm',['../classQXmppDataForm.html#ad9dfe6f5def82059d3e1e1d1d33a3009',1,'QXmppDataForm']]],
   ['_7eqxmppicecomponent_7',['~QXmppIceComponent',['../classQXmppIceComponent.html#a7af09b6adf608932df27a8e3d022dd7f',1,'QXmppIceComponent']]],
-  ['_7eqxmppincomingclient_8',['~QXmppIncomingClient',['../classQXmppIncomingClient.html#a18347c5e1097090a98cfea581fe2cc0c',1,'QXmppIncomingClient']]],
-  ['_7eqxmppincomingserver_9',['~QXmppIncomingServer',['../classQXmppIncomingServer.html#a3be6a1009ff37bfecd64ec5413a4e1e0',1,'QXmppIncomingServer']]],
-  ['_7eqxmppoutgoingserver_10',['~QXmppOutgoingServer',['../classQXmppOutgoingServer.html#a69e094a815a4a7097b8763a05a46043b',1,'QXmppOutgoingServer']]],
-  ['_7eqxmpppresence_11',['~QXmppPresence',['../classQXmppPresence.html#abeedfecc394998b47815f5815cc6d98c',1,'QXmppPresence']]],
-  ['_7eqxmpppubsubmanager_12',['~QXmppPubSubManager',['../classQXmppPubSubManager.html#a1cc69190a37bc9c73cab61ef3f356cd0',1,'QXmppPubSubManager']]],
-  ['_7eqxmppserver_13',['~QXmppServer',['../classQXmppServer.html#ae84e525bc2f9f23733883279af8602fc',1,'QXmppServer']]],
-  ['_7eqxmppsslserver_14',['~QXmppSslServer',['../classQXmppSslServer.html#ac52cbba0c90922fa7961d7b4ab6145fb',1,'QXmppSslServer']]],
-  ['_7eqxmppstanza_15',['~QXmppStanza',['../classQXmppStanza.html#aa6d167337d24b0fdaae6ca48b69a45ca',1,'QXmppStanza']]],
-  ['_7eqxmppstream_16',['~QXmppStream',['../classQXmppStream.html#ab3caacdb0d2359e0f20d31b3ff211106',1,'QXmppStream']]]
+  ['_7eqxmpppresence_8',['~QXmppPresence',['../classQXmppPresence.html#abeedfecc394998b47815f5815cc6d98c',1,'QXmppPresence']]],
+  ['_7eqxmpppubsubmanager_9',['~QXmppPubSubManager',['../classQXmppPubSubManager.html#a1cc69190a37bc9c73cab61ef3f356cd0',1,'QXmppPubSubManager']]],
+  ['_7eqxmppstanza_10',['~QXmppStanza',['../classQXmppStanza.html#aa6d167337d24b0fdaae6ca48b69a45ca',1,'QXmppStanza']]],
+  ['_7eqxmppstream_11',['~QXmppStream',['../classQXmppStream.html#ab3caacdb0d2359e0f20d31b3ff211106',1,'QXmppStream']]]
 ];
