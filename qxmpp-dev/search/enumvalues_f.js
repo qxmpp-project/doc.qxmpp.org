@@ -8,9 +8,10 @@ var searchData=
   ['policyviolation_5',['PolicyViolation',['../classQXmppStanza_1_1Error.html#abcf1cbbe7b15ec82f3ac34723b604852a79dcf639eb1a853e3648fea27f0b339f',1,'QXmppStanza::Error']]],
   ['probe_6',['Probe',['../classQXmppPresence.html#a47ab8dd08436f9d7c90d2990678b5a6da78bd49bb7dff200e67b1584aee994cd8',1,'QXmppPresence']]],
   ['proceed_7',['Proceed',['../classQXmppStartTlsPacket.html#adeb1fedba9c3d0dc109201fa4fa7cb59a80866575589cc278a3b3c373c495c77e',1,'QXmppStartTlsPacket']]],
-  ['protocolerror_8',['ProtocolError',['../classQXmppTransferJob.html#abacb5103efd8148e13b9c616113366bdaa807924ebe3990ef06e567113ded0c4d',1,'QXmppTransferJob']]],
-  ['publisher_9',['Publisher',['../classQXmppPubSubAffiliation.html#a87cbd228a4d3c451f4e21e260d46d842a3a7be742d4f82af14b265451146ee0b9',1,'QXmppPubSubAffiliation']]],
-  ['publishonly_10',['PublishOnly',['../classQXmppPubSubAffiliation.html#a87cbd228a4d3c451f4e21e260d46d842af1f4f430b82dabb5ff93b8f9b97df711',1,'QXmppPubSubAffiliation']]],
-  ['pubsub_11',['PubSub',['../classQXmppPubSubManager.html#a1b258a52c00af118e382c4f6b65b1abea942f274b1f932e8e2709610e5d8af774',1,'QXmppPubSubManager']]],
-  ['pubsuborpep_12',['PubSubOrPep',['../classQXmppPubSubManager.html#a1b258a52c00af118e382c4f6b65b1abea0aee28322daefc3059e75ce7487d9ec2',1,'QXmppPubSubManager']]]
+  ['processingerror_8',['ProcessingError',['../structQXmpp_1_1AuthenticationError.html#ac274fcc2c091f8a921276a45e59b53faaa96d137fd5eaced6903fade28c650a01',1,'QXmpp::AuthenticationError']]],
+  ['protocolerror_9',['ProtocolError',['../classQXmppTransferJob.html#abacb5103efd8148e13b9c616113366bdaa807924ebe3990ef06e567113ded0c4d',1,'QXmppTransferJob']]],
+  ['publisher_10',['Publisher',['../classQXmppPubSubAffiliation.html#a87cbd228a4d3c451f4e21e260d46d842a3a7be742d4f82af14b265451146ee0b9',1,'QXmppPubSubAffiliation']]],
+  ['publishonly_11',['PublishOnly',['../classQXmppPubSubAffiliation.html#a87cbd228a4d3c451f4e21e260d46d842af1f4f430b82dabb5ff93b8f9b97df711',1,'QXmppPubSubAffiliation']]],
+  ['pubsub_12',['PubSub',['../classQXmppPubSubManager.html#a1b258a52c00af118e382c4f6b65b1abea942f274b1f932e8e2709610e5d8af774',1,'QXmppPubSubManager']]],
+  ['pubsuborpep_13',['PubSubOrPep',['../classQXmppPubSubManager.html#a1b258a52c00af118e382c4f6b65b1abea0aee28322daefc3059e75ce7487d9ec2',1,'QXmppPubSubManager']]]
 ];

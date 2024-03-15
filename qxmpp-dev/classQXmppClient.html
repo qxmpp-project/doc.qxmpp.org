@@ -149,6 +149,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>disconnected</b> ()</
 <tr class="separator:ad0451ed72955dba436c7b97ad2c9ac82"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2bac100e40a909c860a3397643349937"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppClient.html#a2bac100e40a909c860a3397643349937">error</a> (<a class="el" href="classQXmppClient.html#a7c2851d07cc33119752abc6ec8ffc47a">QXmppClient::Error</a>)</td></tr>
 <tr class="separator:a2bac100e40a909c860a3397643349937"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6b2f98c95158e9eb5596642c673ab2fa"><td class="memItemLeft" align="right" valign="top">Q_SIGNAL void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppClient.html#a6b2f98c95158e9eb5596642c673ab2fa">errorOccurred</a> (const <a class="el" href="structQXmppError.html">QXmppError</a> &amp;<a class="el" href="classQXmppClient.html#a2bac100e40a909c860a3397643349937">error</a>)</td></tr>
+<tr class="separator:a6b2f98c95158e9eb5596642c673ab2fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74a8754f3e14945e597d964442281e70"><td class="memItemLeft" align="right" valign="top"><a id="a74a8754f3e14945e597d964442281e70" name="a74a8754f3e14945e597d964442281e70"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>loggerChanged</b> (<a class="el" href="classQXmppLogger.html">QXmppLogger</a> *<a class="el" href="classQXmppClient.html#ae5fca0867efe7e7fcae90cbbf10b8193">logger</a>)</td></tr>
 <tr class="memdesc:a74a8754f3e14945e597d964442281e70"><td class="mdescLeft">&#160;</td><td class="mdescRight">This signal is emitted when the logger changes. <br /></td></tr>
@@ -246,7 +248,9 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>isConnected</b> () co
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setLogger</b> (<a class="el" href="classQXmppLogger.html">QXmppLogger</a> *<a class="el" href="classQXmppClient.html#ae5fca0867efe7e7fcae90cbbf10b8193">logger</a>)</td></tr>
 <tr class="memdesc:aa799549089f2ecbe9796f53d0f7be6d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the <a class="el" href="classQXmppLogger.html" title="The QXmppLogger class represents a sink for logging messages.">QXmppLogger</a> associated with the current <a class="el" href="classQXmppClient.html" title="The QXmppClient class is the main class for using QXmpp.">QXmppClient</a>. <br /></td></tr>
 <tr class="separator:aa799549089f2ecbe9796f53d0f7be6d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2b044b37ce88a2f2e65833b3d6e57a9f"><td class="memItemLeft" align="right" valign="top">QAbstractSocket::SocketError&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppClient.html#a2b044b37ce88a2f2e65833b3d6e57a9f">socketError</a> ()</td></tr>
+<tr class="memitem:a2b044b37ce88a2f2e65833b3d6e57a9f"><td class="memItemLeft" align="right" valign="top"><a id="a2b044b37ce88a2f2e65833b3d6e57a9f" name="a2b044b37ce88a2f2e65833b3d6e57a9f"></a>
+QAbstractSocket::SocketError&#160;</td><td class="memItemRight" valign="bottom"><b>socketError</b> ()</td></tr>
+<tr class="memdesc:a2b044b37ce88a2f2e65833b3d6e57a9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the socket error if <a class="el" href="classQXmppClient.html#a2bac100e40a909c860a3397643349937">error()</a> is <a class="el" href="classQXmppClient.html#a7c2851d07cc33119752abc6ec8ffc47aac48e9688ca9dce21676283ada1172863" title="Error due to TCP socket.">QXmppClient::SocketError</a>. <br /></td></tr>
 <tr class="separator:a2b044b37ce88a2f2e65833b3d6e57a9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa1550c4c8937019c2eee1eb3c5a73171"><td class="memItemLeft" align="right" valign="top"><a id="aa1550c4c8937019c2eee1eb3c5a73171" name="aa1550c4c8937019c2eee1eb3c5a73171"></a>
 QString&#160;</td><td class="memItemRight" valign="bottom"><b>socketErrorString</b> () const</td></tr>
@@ -748,6 +752,47 @@ template&lt;typename T , typename... Args&gt; </div>
 </table>
 </div><div class="memdoc">
 <p >This signal is emitted when the XMPP connection encounters any error. The <a class="el" href="classQXmppClient.html#a7c2851d07cc33119752abc6ec8ffc47a">QXmppClient::Error</a> parameter specifies the type of error occurred. It could be due to TCP socket or the xml stream or the stanza. Depending upon the type of error occurred use the respective get function to know the error. </p>
+
+</div>
+</div>
+<a id="a6b2f98c95158e9eb5596642c673ab2fa" name="a6b2f98c95158e9eb5596642c673ab2fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6b2f98c95158e9eb5596642c673ab2fa">&#9670;&nbsp;</a></span>errorOccurred</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Q_SIGNAL void QXmppClient::errorOccurred </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="structQXmppError.html">QXmppError</a> &amp;&#160;</td>
+          <td class="paramname"><em>error</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >This signal is emitted when the XMPP connection encounters any fatal error.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">error</td><td>Detailed error object with a description. It may contain<ul>
+<li>QAbstractSocket::SocketError</li>
+<li><a class="el" href="structQXmpp_1_1TimeoutError.html">QXmpp::TimeoutError</a></li>
+<li><a class="el" href="namespaceQXmpp.html#a28f2266918f7f3959f8b3abad534d967">QXmpp::StreamError</a></li>
+<li><a class="el" href="structQXmpp_1_1AuthenticationError.html">QXmpp::AuthenticationError</a></li>
+<li><a class="el" href="structQXmpp_1_1BindError.html">QXmpp::BindError</a></li>
+</ul>
+</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>Since</dt><dd><a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.7 </dd></dl>
 
 </div>
 </div>
@@ -1324,24 +1369,6 @@ template&lt;typename T &gt; </div>
 
 </div>
 </div>
-<a id="a2b044b37ce88a2f2e65833b3d6e57a9f" name="a2b044b37ce88a2f2e65833b3d6e57a9f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a2b044b37ce88a2f2e65833b3d6e57a9f">&#9670;&nbsp;</a></span>socketError()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">QAbstractSocket::SocketError QXmppClient::socketError </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Returns the socket error if <a class="el" href="classQXmppClient.html#a2bac100e40a909c860a3397643349937">error()</a> is <a class="el" href="classQXmppClient.html#a7c2851d07cc33119752abc6ec8ffc47aac48e9688ca9dce21676283ada1172863" title="Error due to TCP socket.">QXmppClient::SocketError</a>. </p>
-
-</div>
-</div>
 <a id="a808da4eec6b0578c257b43cfb0e7ffee" name="a808da4eec6b0578c257b43cfb0e7ffee"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a808da4eec6b0578c257b43cfb0e7ffee">&#9670;&nbsp;</a></span>sslErrors</h2>
 
@@ -1429,7 +1456,7 @@ template&lt;typename T &gt; </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="QXmppClient_8h_source.html">QXmppClient.h</a></li>
-<li>removed_api.cpp</li>
+<li>client/compat/removed_api.cpp</li>
 <li>QXmppClient.cpp</li>
 </ul>
 </div><!-- contents -->

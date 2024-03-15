@@ -16,13 +16,12 @@ var searchData=
   ['hashverificationresult_13',['HashVerificationResult',['../classQXmppFileDownload.html#a994988d1dbcf8c08d02982f3d1706a3f',1,'QXmppFileDownload']]],
   ['hashverificationresult_14',['hashVerificationResult',['../structQXmppFileDownload_1_1Downloaded.html#afbd2340b25a4577695d35774a2140e88',1,'QXmppFileDownload::Downloaded']]],
   ['hashverified_15',['HashVerified',['../classQXmppFileDownload.html#a994988d1dbcf8c08d02982f3d1706a3fa60814ef2734121436797a4313d50f499',1,'QXmppFileDownload']]],
-  ['hasiqid_16',['hasIqId',['../classQXmppStream.html#a1b3e769881b90d47f38d3f49d77dfea9',1,'QXmppStream']]],
-  ['haskey_17',['hasKey',['../classQXmppTrustStorage.html#aacd5c89255f6d507391d064b4cd74596',1,'QXmppTrustStorage::hasKey()'],['../classQXmppTrustManager.html#a2341d19cf5bea72e85b4146c7318cf04',1,'QXmppTrustManager::hasKey()']]],
-  ['hasresult_18',['hasResult',['../classQXmppTask.html#a309380ae6b7cfe6bb4493434f2db30d7',1,'QXmppTask']]],
-  ['height_19',['height',['../classQXmppFileMetadata.html#a0205b9919d705d38bf5a21f31d458d73',1,'QXmppFileMetadata::height()'],['../classQXmppThumbnail.html#a89ae8f0f9bddc82b802022b5dcd922a4',1,'QXmppThumbnail::height()'],['../classQXmppDataForm_1_1Media.html#ad8937beb7999cae942d76b5b49692c77',1,'QXmppDataForm::Media::height()']]],
-  ['hint_20',['Hint',['../classQXmppMessage.html#aea1a3c281a281bc3a4fbc9f48b554256',1,'QXmppMessage']]],
-  ['holdstype_21',['holdsType',['../structQXmppError.html#af10b7498e2db35219a7136f4d83e5dd9',1,'QXmppError']]],
-  ['host_22',['host',['../classQXmppByteStreamIq_1_1StreamHost.html#af8a4c4ac592b5820a43ee133eb4e6485',1,'QXmppByteStreamIq::StreamHost::host()'],['../classQXmppExternalService.html#a1ba722df7627b76faa180162ba7ea884',1,'QXmppExternalService::host()'],['../classQXmppJingleCandidate.html#a7bd039198a8c4780cb92c43c6950cdfc',1,'QXmppJingleCandidate::host()'],['../classQXmppConfiguration.html#a0872d249e315a6392aaf1d112f8f369f',1,'QXmppConfiguration::host()']]],
-  ['hosttype_23',['HostType',['../classQXmppJingleCandidate.html#a6314b3ed7de59b68131db6ffab55fe7da65d68dede680215e9739c30ca79a1da5',1,'QXmppJingleCandidate']]],
-  ['httpsources_24',['httpSources',['../classQXmppEncryptedFileSource.html#ace4ade5c729745c23854efe10c8f8a3d',1,'QXmppEncryptedFileSource::httpSources()'],['../classQXmppFileShare.html#a2162fb42b2f01f552556f6941bc626b0',1,'QXmppFileShare::httpSources()']]]
+  ['haskey_16',['hasKey',['../classQXmppTrustStorage.html#aacd5c89255f6d507391d064b4cd74596',1,'QXmppTrustStorage::hasKey()'],['../classQXmppTrustManager.html#a2341d19cf5bea72e85b4146c7318cf04',1,'QXmppTrustManager::hasKey()']]],
+  ['hasresult_17',['hasResult',['../classQXmppTask.html#a309380ae6b7cfe6bb4493434f2db30d7',1,'QXmppTask']]],
+  ['height_18',['height',['../classQXmppThumbnail.html#a89ae8f0f9bddc82b802022b5dcd922a4',1,'QXmppThumbnail::height()'],['../classQXmppFileMetadata.html#a0205b9919d705d38bf5a21f31d458d73',1,'QXmppFileMetadata::height()'],['../classQXmppDataForm_1_1Media.html#ad8937beb7999cae942d76b5b49692c77',1,'QXmppDataForm::Media::height()']]],
+  ['hint_19',['Hint',['../classQXmppMessage.html#aea1a3c281a281bc3a4fbc9f48b554256',1,'QXmppMessage']]],
+  ['holdstype_20',['holdsType',['../structQXmppError.html#af10b7498e2db35219a7136f4d83e5dd9',1,'QXmppError']]],
+  ['host_21',['host',['../classQXmppByteStreamIq_1_1StreamHost.html#af8a4c4ac592b5820a43ee133eb4e6485',1,'QXmppByteStreamIq::StreamHost::host()'],['../classQXmppExternalService.html#a1ba722df7627b76faa180162ba7ea884',1,'QXmppExternalService::host()'],['../classQXmppJingleCandidate.html#a7bd039198a8c4780cb92c43c6950cdfc',1,'QXmppJingleCandidate::host()'],['../classQXmppConfiguration.html#a0872d249e315a6392aaf1d112f8f369f',1,'QXmppConfiguration::host()']]],
+  ['hosttype_22',['HostType',['../classQXmppJingleCandidate.html#a6314b3ed7de59b68131db6ffab55fe7da65d68dede680215e9739c30ca79a1da5',1,'QXmppJingleCandidate']]],
+  ['httpsources_23',['httpSources',['../classQXmppEncryptedFileSource.html#ace4ade5c729745c23854efe10c8f8a3d',1,'QXmppEncryptedFileSource::httpSources()'],['../classQXmppFileShare.html#a2162fb42b2f01f552556f6941bc626b0',1,'QXmppFileShare::httpSources()']]]
 ];

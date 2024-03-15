@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['field_0',['Field',['../classQXmppDataForm_1_1Field.html',1,'QXmppDataForm']]],
-  ['fileresult_1',['FileResult',['../structQXmppFileUpload_1_1FileResult.html',1,'QXmppFileUpload']]]
+  ['device_0',['Device',['../structQXmppOmemoStorage_1_1Device.html',1,'QXmppOmemoStorage']]],
+  ['download_1',['Download',['../classQXmppFileSharingProvider_1_1Download.html',1,'QXmppFileSharingProvider']]],
+  ['downloaded_2',['Downloaded',['../structQXmppFileDownload_1_1Downloaded.html',1,'QXmppFileDownload']]]
 ];

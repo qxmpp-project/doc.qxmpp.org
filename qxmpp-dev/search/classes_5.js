@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['media_0',['Media',['../classQXmppDataForm_1_1Media.html',1,'QXmppDataForm']]],
-  ['mediasource_1',['MediaSource',['../classQXmppDataForm_1_1MediaSource.html',1,'QXmppDataForm']]]
+  ['field_0',['Field',['../classQXmppDataForm_1_1Field.html',1,'QXmppDataForm']]],
+  ['fileresult_1',['FileResult',['../structQXmppFileUpload_1_1FileResult.html',1,'QXmppFileUpload']]]
 ];

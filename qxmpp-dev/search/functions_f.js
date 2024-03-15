@@ -33,7 +33,7 @@ var searchData=
   ['postcode_30',['postcode',['../classQXmppVCardAddress.html#ad73f39a74a707b0258d7e1f6781a831d',1,'QXmppVCardAddress']]],
   ['preapprovedsubscriptionssupported_31',['preApprovedSubscriptionsSupported',['../classQXmppStreamFeatures.html#a216e096dde988fcf31788f0e4d401224',1,'QXmppStreamFeatures']]],
   ['presencechanged_32',['presenceChanged',['../classQXmppRosterManager.html#ac95dd87aaa2c4cb61aa6ead2a17bc56e',1,'QXmppRosterManager']]],
-  ['presencereceived_33',['presenceReceived',['../classQXmppClient.html#a10499b67cd25eed16f83118837fc5c29',1,'QXmppClient::presenceReceived()'],['../classQXmppOutgoingClient.html#a242817c83ce02d6f3c1956bfd15c3b15',1,'QXmppOutgoingClient::presenceReceived()']]],
+  ['presencereceived_33',['presenceReceived',['../classQXmppClient.html#a10499b67cd25eed16f83118837fc5c29',1,'QXmppClient']]],
   ['presencesubscribers_34',['presenceSubscribers',['../classQXmppServerExtension.html#a942c0a8411cabb7b4e13760e01e1ab70',1,'QXmppServerExtension']]],
   ['presencesubscriptions_35',['presenceSubscriptions',['../classQXmppServerExtension.html#a7340a5b3458e991b47dbd413ccaf13c4',1,'QXmppServerExtension']]],
   ['priority_36',['priority',['../classQXmppJingleCandidate.html#a3098ee886f9d14ff4bea7f2ddcf33303',1,'QXmppJingleCandidate::priority()'],['../classQXmppPresence.html#a108556a9146d5aadb1a9054f80d3d165',1,'QXmppPresence::priority()']]],

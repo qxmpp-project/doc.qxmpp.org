@@ -73,11 +73,17 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structQXmpp_1_1AuthenticationError.html">AuthenticationError</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structQXmpp_1_1BindError.html">BindError</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structQXmpp_1_1Cancelled.html">Cancelled</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structQXmpp_1_1SendSuccess.html">SendSuccess</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structQXmpp_1_1Success.html">Success</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structQXmpp_1_1TimeoutError.html">TimeoutError</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
@@ -141,6 +147,39 @@ Enumerations</h2></td></tr>
 , <a class="el" href="namespaceQXmpp.html#aeb1549ae4b8a94d697bdc458517bc7cfaa60f5f435911b9c2c34094c8621a2b48">EncryptionError</a>
  }</td></tr>
 <tr class="separator:aeb1549ae4b8a94d697bdc458517bc7cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28f2266918f7f3959f8b3abad534d967"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceQXmpp.html#a28f2266918f7f3959f8b3abad534d967">StreamError</a> { <br />
+&#160;&#160;<b>BadFormat</b>
+, <b>BadNamespacePrefix</b>
+, <b>Conflict</b>
+, <b>ConnectionTimeout</b>
+, <br />
+&#160;&#160;<b>HostGone</b>
+, <b>HostUnknown</b>
+, <b>ImproperAddressing</b>
+, <b>InternalServerError</b>
+, <br />
+&#160;&#160;<b>InvalidFrom</b>
+, <b>InvalidNamespace</b>
+, <b>InvalidXml</b>
+, <b>NotAuthorized</b>
+, <br />
+&#160;&#160;<b>NotWellFormed</b>
+, <b>PolicyViolation</b>
+, <b>RemoteConnectionFailed</b>
+, <b>Reset</b>
+, <br />
+&#160;&#160;<b>ResourceConstraint</b>
+, <b>RestrictedXml</b>
+, <b>SystemShutdown</b>
+, <b>UndefinedCondition</b>
+, <br />
+&#160;&#160;<b>UnsupportedEncoding</b>
+, <b>UnsupportedFeature</b>
+, <b>UnsupportedStanzaType</b>
+, <b>UnsupportedVersion</b>
+<br />
+ }</td></tr>
+<tr class="separator:a28f2266918f7f3959f8b3abad534d967"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a71207ba76216075cc013b3fe8ed66b84"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceQXmpp.html#a71207ba76216075cc013b3fe8ed66b84">TrustLevel</a> { <br />
 &#160;&#160;<a class="el" href="namespaceQXmpp.html#a71207ba76216075cc013b3fe8ed66b84aef203c53904d46dbafaa94497dd5a0e2">Undecided</a> = 1
 , <a class="el" href="namespaceQXmpp.html#a71207ba76216075cc013b3fe8ed66b84af474e5b54db6db3384b6c11fb7daccf8">AutomaticallyDistrusted</a> = 2
@@ -325,6 +364,30 @@ Functions</h2></td></tr>
 <tr><td class="fieldname"><a id="aeb1549ae4b8a94d697bdc458517bc7cfaa60f5f435911b9c2c34094c8621a2b48" name="aeb1549ae4b8a94d697bdc458517bc7cfaa60f5f435911b9c2c34094c8621a2b48"></a>EncryptionError&#160;</td><td class="fielddoc"><p >The packet couldn't be sent because prior encryption failed. </p>
 </td></tr>
 </table>
+
+</div>
+</div>
+<a id="a28f2266918f7f3959f8b3abad534d967" name="a28f2266918f7f3959f8b3abad534d967"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a28f2266918f7f3959f8b3abad534d967">&#9670;&nbsp;</a></span>StreamError</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="namespaceQXmpp.html#a28f2266918f7f3959f8b3abad534d967">QXmpp::StreamError</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >All XMPP top-level stream errors</p>
+<dl class="section since"><dt>Since</dt><dd><a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.7 </dd></dl>
 
 </div>
 </div>
