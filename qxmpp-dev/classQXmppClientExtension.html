@@ -319,7 +319,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>updateCounter</b> (co
 <p>You need to implement this method to process incoming XMPP stanzas. </p>
 <p >You should return true if the stanza was handled and no further processing should occur, or false to let other extensions process the stanza.</p>
 <p >End-to-end encrypted stanzas are not passed to this overload, for that purpose use the new overload instead.</p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000028">Deprecated:</a></b></dt><dd>This is deprecated since <a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.5. Please use <a class="el" href="classQXmppClientExtension.html#a85897e9335e7d15cacbf974caa37459d" title="You need to implement this method to process incoming XMPP stanzas.">QXmppClientExtension::handleStanza(const QDomElement &amp;stanza,
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000030">Deprecated:</a></b></dt><dd>This is deprecated since <a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.5. Please use <a class="el" href="classQXmppClientExtension.html#a85897e9335e7d15cacbf974caa37459d" title="You need to implement this method to process incoming XMPP stanzas.">QXmppClientExtension::handleStanza(const QDomElement &amp;stanza,
 const std::optional&lt;QXmppE2eeMetadata&gt; &amp;e2eeMetadata)</a>. Currently both methods are called by the client, so only implement one! </dd></dl>
 
 <p>Reimplemented in <a class="el" href="classQXmppUploadRequestManager.html#a500070fed0033999030f568037bdc58e">QXmppUploadRequestManager</a>.</p>

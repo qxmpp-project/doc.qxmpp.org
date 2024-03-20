@@ -81,7 +81,7 @@ var searchData=
   ['automaticallytrusted_78',['AutomaticallyTrusted',['../namespaceQXmpp.html#a71207ba76216075cc013b3fe8ed66b84ae6183ae7627faf1013455f68e1009301',1,'QXmpp']]],
   ['autoreconnectionenabled_79',['autoReconnectionEnabled',['../classQXmppConfiguration.html#a3920e8d50577c351bdb4a518fa5048d2',1,'QXmppConfiguration']]],
   ['available_80',['Available',['../classQXmppPresence.html#a47ab8dd08436f9d7c90d2990678b5a6daee4c403679460358c9002562794059d3',1,'QXmppPresence::Available()'],['../classQXmppPubSubSubscription.html#ac2dc1757a5889b9daab32dc5b78106d3a78d69a5f23c6a5455e8d857dd6d9d813',1,'QXmppPubSubSubscription::Available()']]],
-  ['availablestatustype_81',['AvailableStatusType',['../classQXmppPresence.html#ad56af0f57b732c09b080b9347c4dba94',1,'QXmppPresence']]],
-  ['availablestatustype_82',['availableStatusType',['../classQXmppPresence.html#a3e78927580ba9f5c538f0b2d451cfccf',1,'QXmppPresence']]],
+  ['availablestatustype_81',['availableStatusType',['../classQXmppPresence.html#a3e78927580ba9f5c538f0b2d451cfccf',1,'QXmppPresence']]],
+  ['availablestatustype_82',['AvailableStatusType',['../classQXmppPresence.html#ad56af0f57b732c09b080b9347c4dba94',1,'QXmppPresence']]],
   ['away_83',['Away',['../classQXmppPresence.html#ad56af0f57b732c09b080b9347c4dba94acebcb202966ea59ea213459d36e2d949',1,'QXmppPresence']]]
 ];
