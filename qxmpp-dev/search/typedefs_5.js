@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['getresult_0',['GetResult',['../classQXmppUserLocationManager.html#a9a0674113ec60c89b9c81b200ddae61d',1,'QXmppUserLocationManager::GetResult()'],['../classQXmppUserTuneManager.html#afe0be351ec6632337af31dd411dc30db',1,'QXmppUserTuneManager::GetResult()']]]
+  ['featuresresult_0',['FeaturesResult',['../classQXmppPubSubManager.html#a08b33cb75b5922690b3280a01a96eaf5',1,'QXmppPubSubManager']]]
 ];

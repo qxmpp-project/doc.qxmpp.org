@@ -7,5 +7,6 @@ var searchData=
   ['unexpectedrequest_4',['UnexpectedRequest',['../classQXmppStanza_1_1Error.html#abcf1cbbe7b15ec82f3ac34723b604852ac71c1b7927a3f0bbc889807c343c45ab',1,'QXmppStanza::Error']]],
   ['unknownencryption_5',['UnknownEncryption',['../namespaceQXmpp.html#adbe84fa39564cc52d80d015448a56dd6ac572e4cbf91be1d819ed3caf0631fe6e',1,'QXmpp']]],
   ['unsubscribe_6',['Unsubscribe',['../classQXmppPresence.html#a47ab8dd08436f9d7c90d2990678b5a6da20986f18e387f68a5fdfa0e67c44bc44',1,'QXmppPresence']]],
-  ['unsubscribed_7',['Unsubscribed',['../classQXmppPresence.html#a47ab8dd08436f9d7c90d2990678b5a6da63414092d2fc4b90987f56731c150623',1,'QXmppPresence']]]
+  ['unsubscribed_7',['Unsubscribed',['../classQXmppPresence.html#a47ab8dd08436f9d7c90d2990678b5a6da63414092d2fc4b90987f56731c150623',1,'QXmppPresence']]],
+  ['updatesubscription_8',['UpdateSubscription',['../classQXmppMixIq.html#a3c4a45c33d47a53738331e727f275957a8a84863a60d9ed4ccc65134e4948ddc1',1,'QXmppMixIq']]]
 ];

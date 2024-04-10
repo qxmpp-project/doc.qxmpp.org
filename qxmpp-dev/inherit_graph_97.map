@@ -1,3 +1,8 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classQXmppRosterIq_1_1Item.html" title="The QXmppRosterIq::Item class represents a roster entry." alt="" coords="5,5,168,32"/>
+<area shape="rect" id="node1" href="$classQXmppPubSubBaseItem.html" title=" " alt="" coords="5,107,185,133"/>
+<area shape="rect" id="node2" href="$classQXmppGeolocItem.html" title=" " alt="" coords="257,5,403,32"/>
+<area shape="rect" id="node3" href="$classQXmppMixConfigItem.html" title="The QXmppMixConfigItem class represents a PubSub item of a MIX channel containing its configuration a..." alt="" coords="247,56,413,83"/>
+<area shape="rect" id="node4" href="$classQXmppMixInfoItem.html" title="The QXmppMixInfoItem class represents a PubSub item of a MIX channel containing channel information a..." alt="" coords="255,107,405,133"/>
+<area shape="rect" id="node5" href="$classQXmppMixParticipantItem.html" title=" " alt="" coords="233,157,427,184"/>
+<area shape="rect" id="node6" href="$classQXmppTuneItem.html" title=" " alt="" coords="265,208,395,235"/>
 </map>

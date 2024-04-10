@@ -305,6 +305,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>setType</b> (<a class
 <tr class="separator:a407e65a3dfcb997134d70188fc8fa165"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afb039bc68e903948baabee70bde53350"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppMessage.html#afb039bc68e903948baabee70bde53350">setAttachId</a> (const QString &amp;)</td></tr>
 <tr class="separator:afb039bc68e903948baabee70bde53350"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a558368e5de9c45647ab3c2554c5e697c"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppMessage.html#a558368e5de9c45647ab3c2554c5e697c">mixParticipantId</a> () const</td></tr>
+<tr class="separator:a558368e5de9c45647ab3c2554c5e697c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6e7f76ab685253ba0305aeca813eaa50"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppMessage.html#a6e7f76ab685253ba0305aeca813eaa50">mixUserJid</a> () const</td></tr>
 <tr class="separator:a6e7f76ab685253ba0305aeca813eaa50"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a405c01b2c39931a155849626ab973445"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppMessage.html#a405c01b2c39931a155849626ab973445">setMixUserJid</a> (const QString &amp;)</td></tr>
@@ -333,9 +335,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>setType</b> (<a class
 <tr class="separator:adf4affb65e41609e8aff859c2dbd9d75"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad0c1c13c3d6bc73443884f02ec42115f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppMessage.html#ad0c1c13c3d6bc73443884f02ec42115f">setSpoilerHint</a> (const QString &amp;)</td></tr>
 <tr class="separator:ad0c1c13c3d6bc73443884f02ec42115f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4f05c5581bb15e599e5bc9124dcd41d4"><td class="memItemLeft" align="right" valign="top">std::optional&lt; <a class="el" href="classQXmppMixInvitation.html">QXmppMixInvitation</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppMessage.html#a4f05c5581bb15e599e5bc9124dcd41d4">mixInvitation</a> () const</td></tr>
+<tr class="memitem:a4f05c5581bb15e599e5bc9124dcd41d4"><td class="memItemLeft" align="right" valign="top">std::optional&lt; QXmppMixInvitation &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppMessage.html#a4f05c5581bb15e599e5bc9124dcd41d4">mixInvitation</a> () const</td></tr>
 <tr class="separator:a4f05c5581bb15e599e5bc9124dcd41d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae372a4ea5ec560e89838d41eafeb543f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppMessage.html#ae372a4ea5ec560e89838d41eafeb543f">setMixInvitation</a> (const std::optional&lt; <a class="el" href="classQXmppMixInvitation.html">QXmppMixInvitation</a> &gt; &amp;<a class="el" href="classQXmppMessage.html#a4f05c5581bb15e599e5bc9124dcd41d4">mixInvitation</a>)</td></tr>
+<tr class="memitem:ae372a4ea5ec560e89838d41eafeb543f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppMessage.html#ae372a4ea5ec560e89838d41eafeb543f">setMixInvitation</a> (const std::optional&lt; QXmppMixInvitation &gt; &amp;<a class="el" href="classQXmppMessage.html#a4f05c5581bb15e599e5bc9124dcd41d4">mixInvitation</a>)</td></tr>
 <tr class="separator:ae372a4ea5ec560e89838d41eafeb543f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2c34168117737a0fed09724c9400529a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppMessage.html#a2c34168117737a0fed09724c9400529a">isFallback</a> () const</td></tr>
 <tr class="separator:a2c34168117737a0fed09724c9400529a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -1080,15 +1082,34 @@ If this returns QXmppMessage::UnknownEncryption, you can still get the namespace
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::optional&lt; <a class="el" href="classQXmppMixInvitation.html">QXmppMixInvitation</a> &gt; QXmppMessage::mixInvitation </td>
+          <td class="memname">std::optional&lt; QXmppMixInvitation &gt; QXmppMessage::mixInvitation </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p >Returns an included <a href="https://xmpp.org/extensions/xep-0369.html">XEP-0369</a>: Mediated Information eXchange (MIX) invitation as defined by <a href="https://xmpp.org/extensions/xep-0407.html">XEP-0407</a>: Mediated Information eXchange (MIX): Miscellaneous Capabilities.</p>
+<p >Returns an included <a href="https://xmpp.org/extensions/xep-0369.html">XEP-0369: Mediated Information eXchange (MIX)</a> invitation as defined by <a href="https://xmpp.org/extensions/xep-0407.html">XEP-0407: Mediated Information eXchange (MIX): Miscellaneous Capabilities</a>.</p>
 <dl class="section since"><dt>Since</dt><dd><a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.4 </dd></dl>
+
+</div>
+</div>
+<a id="a558368e5de9c45647ab3c2554c5e697c" name="a558368e5de9c45647ab3c2554c5e697c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a558368e5de9c45647ab3c2554c5e697c">&#9670;&nbsp;</a></span>mixParticipantId()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString QXmppMessage::mixParticipantId </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Returns the participant ID of the sender if the message is received from a MIX channel as specified in <a href="https://xmpp.org/extensions/xep-0369.html">XEP-0369: Mediated Information eXchange (MIX)</a>.</p>
+<dl class="section since"><dt>Since</dt><dd><a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.7 </dd></dl>
 
 </div>
 </div>
@@ -1886,13 +1907,13 @@ If this returns QXmppMessage::UnknownEncryption, you can still get the namespace
         <tr>
           <td class="memname">void QXmppMessage::setMixInvitation </td>
           <td>(</td>
-          <td class="paramtype">const std::optional&lt; <a class="el" href="classQXmppMixInvitation.html">QXmppMixInvitation</a> &gt; &amp;&#160;</td>
+          <td class="paramtype">const std::optional&lt; QXmppMixInvitation &gt; &amp;&#160;</td>
           <td class="paramname"><em>mixInvitation</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p >Sets a <a href="https://xmpp.org/extensions/xep-0369.html">XEP-0369</a>: Mediated Information eXchange (MIX) invitation as defined by <a href="https://xmpp.org/extensions/xep-0407.html">XEP-0407</a>: Mediated Information eXchange (MIX): Miscellaneous Capabilities.</p>
+<p >Sets a <a href="https://xmpp.org/extensions/xep-0369.html">XEP-0369: Mediated Information eXchange (MIX)</a> invitation as defined by <a href="https://xmpp.org/extensions/xep-0407.html">XEP-0407: Mediated Information eXchange (MIX): Miscellaneous Capabilities</a>.</p>
 <dl class="section since"><dt>Since</dt><dd><a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.4 </dd></dl>
 
 </div>

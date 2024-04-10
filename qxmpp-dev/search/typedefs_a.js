@@ -1,7 +1,7 @@
 var searchData=
 [
-  ['proposeresult_0',['ProposeResult',['../classQXmppCallInviteManager.html#a3960126e6744bf34aeb224bc4d2053ac',1,'QXmppCallInviteManager::ProposeResult()'],['../classQXmppJingleMessageInitiationManager.html#a68d89a147cc379b79a18286d94bc78b1',1,'QXmppJingleMessageInitiationManager::ProposeResult()']]],
-  ['publishitemresult_1',['PublishItemResult',['../classQXmppPubSubManager.html#a6a8b36519c98dae461f02751459c59db',1,'QXmppPubSubManager']]],
-  ['publishitemsresult_2',['PublishItemsResult',['../classQXmppPubSubManager.html#a820d4c0fe31ca1e5df31fe7cff2fdcc8',1,'QXmppPubSubManager']]],
-  ['publishresult_3',['PublishResult',['../classQXmppUserLocationManager.html#a59f0949dd1ccbefc1eb680c9513ef7ac',1,'QXmppUserLocationManager::PublishResult()'],['../classQXmppUserTuneManager.html#a5b84d48f32c4b101511eb31e9b3ee5fb',1,'QXmppUserTuneManager::PublishResult()']]]
+  ['nickname_0',['Nickname',['../classQXmppMixManager.html#a373993027cbc5c9524aa76c48fe6ba7a',1,'QXmppMixManager']]],
+  ['nicknameresult_1',['NicknameResult',['../classQXmppMixManager.html#a4fa4754c9459fb070227b3b28a4aa048',1,'QXmppMixManager']]],
+  ['nodeconfigresult_2',['NodeConfigResult',['../classQXmppPubSubManager.html#a44847a8625c35223c78b2445b8589259',1,'QXmppPubSubManager']]],
+  ['nodesresult_3',['NodesResult',['../classQXmppPubSubManager.html#ac6f8b54eca37a8bf19a8dedb1217ca27',1,'QXmppPubSubManager']]]
 ];

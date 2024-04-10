@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['range_0',['range',['../structQXmppFallback_1_1Reference.html#a6b1bb77d4c41a311589c79c7a625996a',1,'QXmppFallback::Reference']]],
-  ['removalfromdevicelistdate_1',['removalFromDeviceListDate',['../structQXmppOmemoStorage_1_1Device.html#aedfad4c251e7c30efe3a70d1f5cd570e',1,'QXmppOmemoStorage::Device']]],
-  ['result_2',['result',['../structQXmppMamManager_1_1RetrievedMessages.html#acb76d079348dc04e57ef790d82abc61e',1,'QXmppMamManager::RetrievedMessages']]]
+  ['participantid_0',['participantId',['../structQXmppMixManager_1_1Participation.html#a2e31cce20cc86ff1cc39b25d0d3fdc63',1,'QXmppMixManager::Participation']]],
+  ['prekeypairs_1',['preKeyPairs',['../structQXmppOmemoStorage_1_1OmemoData.html#a2a1b4356a92b838baab4d9c0772d2753',1,'QXmppOmemoStorage::OmemoData']]],
+  ['privateidentitykey_2',['privateIdentityKey',['../structQXmppOmemoStorage_1_1OwnDevice.html#ad15c77c565e5ed0787e7a337f9f04b66',1,'QXmppOmemoStorage::OwnDevice']]],
+  ['publicidentitykey_3',['publicIdentityKey',['../structQXmppOmemoStorage_1_1OwnDevice.html#adac2d7471d7406d93027e5f0ba710a4c',1,'QXmppOmemoStorage::OwnDevice']]]
 ];

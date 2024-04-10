@@ -93,7 +93,7 @@ $(function() {
 <div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="keyword">class </span><a class="code hl_class" href="classQXmppFallback.html">QXmppFallback</a>;</div>
 <div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="keyword">class </span><a class="code hl_class" href="classQXmppJingleMessageInitiationElement.html">QXmppJingleMessageInitiationElement</a>;</div>
 <div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keyword">class </span><a class="code hl_class" href="classQXmppMessageReaction.html">QXmppMessageReaction</a>;</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="keyword">class </span><a class="code hl_class" href="classQXmppMixInvitation.html">QXmppMixInvitation</a>;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="keyword">class </span>QXmppMixInvitation;</div>
 <div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#ifdef BUILD_OMEMO</span></div>
 <div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="keyword">class </span>QXmppOmemoElement;</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#endif</span></div>
@@ -275,78 +275,80 @@ $(function() {
 <div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span>    <span class="keywordtype">void</span> setAttachId(<span class="keyword">const</span> QString &amp;);</div>
 <div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span> </div>
 <div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>    <span class="comment">// XEP-0369: Mediated Information eXchange (MIX)</span></div>
-<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>    QString mixUserJid() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>    <span class="keywordtype">void</span> setMixUserJid(<span class="keyword">const</span> QString &amp;);</div>
-<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span> </div>
-<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>    QString mixUserNick() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>    <span class="keywordtype">void</span> setMixUserNick(<span class="keyword">const</span> QString &amp;);</div>
-<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span> </div>
-<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>    <span class="comment">// XEP-0380: Explicit Message Encryption</span></div>
-<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>    <a class="code hl_enumeration" href="namespaceQXmpp.html#adbe84fa39564cc52d80d015448a56dd6">QXmpp::EncryptionMethod</a> encryptionMethod() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>    <span class="keywordtype">void</span> setEncryptionMethod(<a class="code hl_enumeration" href="namespaceQXmpp.html#adbe84fa39564cc52d80d015448a56dd6">QXmpp::EncryptionMethod</a>);</div>
-<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>    QString encryptionMethodNs() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>    <span class="keywordtype">void</span> setEncryptionMethodNs(<span class="keyword">const</span> QString &amp;);</div>
-<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span> </div>
-<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>    QString encryptionName() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>    <span class="keywordtype">void</span> setEncryptionName(<span class="keyword">const</span> QString &amp;);</div>
-<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span> </div>
-<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>    <span class="comment">// XEP-0382: Spoiler messages</span></div>
-<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>    <span class="keywordtype">bool</span> isSpoiler() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>    <span class="keywordtype">void</span> setIsSpoiler(<span class="keywordtype">bool</span>);</div>
-<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span> </div>
-<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>    QString spoilerHint() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>    <span class="keywordtype">void</span> setSpoilerHint(<span class="keyword">const</span> QString &amp;);</div>
-<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span> </div>
-<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>    <span class="comment">// XEP-0407: Mediated Information eXchange (MIX): Miscellaneous Capabilities</span></div>
-<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>    std::optional&lt;QXmppMixInvitation&gt; mixInvitation() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>    <span class="keywordtype">void</span> setMixInvitation(<span class="keyword">const</span> std::optional&lt;QXmppMixInvitation&gt; &amp;mixInvitation);</div>
-<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span> </div>
-<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>    <span class="comment">// XEP-0428: Fallback Indication</span></div>
-<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span><span class="preprocessor">#if QXMPP_DEPRECATED_SINCE(1, 7)</span></div>
-<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>    [[deprecated(<span class="stringliteral">&quot;Use fallbackMarkers()&quot;</span>)]] <span class="keywordtype">bool</span> isFallback() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>    [[deprecated(<span class="stringliteral">&quot;Use setFallbackMarkers()&quot;</span>)]] <span class="keywordtype">void</span> setIsFallback(<span class="keywordtype">bool</span> isFallback);</div>
-<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>    <span class="keyword">const</span> QVector&lt;QXmppFallback&gt; &amp;fallbackMarkers() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span>    <span class="keywordtype">void</span> setFallbackMarkers(<span class="keyword">const</span> QVector&lt;QXmppFallback&gt; &amp;);</div>
-<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span> </div>
-<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>    <span class="comment">// XEP-0434: Trust Messages (TM)</span></div>
-<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span>    std::optional&lt;QXmppTrustMessageElement&gt; trustMessageElement() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>    <span class="keywordtype">void</span> setTrustMessageElement(<span class="keyword">const</span> std::optional&lt;QXmppTrustMessageElement&gt; &amp;trustMessageElement);</div>
-<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span> </div>
-<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>    <span class="comment">// XEP-0444: Message Reactions</span></div>
-<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span>    std::optional&lt;QXmppMessageReaction&gt; reaction() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>    <span class="keywordtype">void</span> setReaction(<span class="keyword">const</span> std::optional&lt;QXmppMessageReaction&gt; &amp;reaction);</div>
-<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span> </div>
-<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>    <span class="comment">// XEP-0447: Stateless file sharing</span></div>
-<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span>    <span class="keyword">const</span> QVector&lt;QXmppFileShare&gt; &amp;sharedFiles() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>    <span class="keywordtype">void</span> setSharedFiles(<span class="keyword">const</span> QVector&lt;QXmppFileShare&gt; &amp;sharedFiles);</div>
-<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span> </div>
-<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>    <span class="comment">// XEP-0482: Call Invites</span></div>
-<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span>    std::optional&lt;QXmppCallInviteElement&gt; callInviteElement() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>    <span class="keywordtype">void</span> setCallInviteElement(std::optional&lt;QXmppCallInviteElement&gt; callInviteElement);</div>
-<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span> </div>
-<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span><span class="preprocessor">#ifdef BUILD_OMEMO</span></div>
-<div class="line"><a id="l00283" name="l00283"></a><span class="lineno">  283</span>    <span class="comment">// XEP-0384: OMEMO Encryption</span></div>
-<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>    std::optional&lt;QXmppOmemoElement&gt; omemoElement() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span>    <span class="keywordtype">void</span> setOmemoElement(<span class="keyword">const</span> std::optional&lt;QXmppOmemoElement&gt; &amp;omemoElement);</div>
-<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span> </div>
-<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classQXmppNonza.html#abc49e8874e808d39210b2be3abeba63a">parse</a>(<span class="keyword">const</span> QDomElement &amp;element) <span class="keyword">override</span> <span class="keyword">final</span>;</div>
-<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classQXmppNonza.html#abc49e8874e808d39210b2be3abeba63a">parse</a>(<span class="keyword">const</span> QDomElement &amp;element, <a class="code hl_enumeration" href="namespaceQXmpp.html#abc6005b5a30290db2a9da3a9dde99a0d">QXmpp::SceMode</a>);</div>
-<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classQXmppNonza.html#aff27abe8740fc054a67d55c239ff8cc3">toXml</a>(QXmlStreamWriter *writer) <span class="keyword">const</span> <span class="keyword">override</span> <span class="keyword">final</span>;</div>
-<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classQXmppNonza.html#aff27abe8740fc054a67d55c239ff8cc3">toXml</a>(QXmlStreamWriter *writer, <a class="code hl_enumeration" href="namespaceQXmpp.html#abc6005b5a30290db2a9da3a9dde99a0d">QXmpp::SceMode</a>) <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span> </div>
-<div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>    <span class="keywordtype">void</span> parseExtensions(<span class="keyword">const</span> QDomElement &amp;element, <a class="code hl_enumeration" href="namespaceQXmpp.html#abc6005b5a30290db2a9da3a9dde99a0d">QXmpp::SceMode</a> sceMode);</div>
-<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span>    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> parseExtension(<span class="keyword">const</span> QDomElement &amp;element, <a class="code hl_enumeration" href="namespaceQXmpp.html#abc6005b5a30290db2a9da3a9dde99a0d">QXmpp::SceMode</a>);</div>
-<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> serializeExtensions(QXmlStreamWriter *writer, <a class="code hl_enumeration" href="namespaceQXmpp.html#abc6005b5a30290db2a9da3a9dde99a0d">QXmpp::SceMode</a>, <span class="keyword">const</span> QString &amp;baseNamespace = {}) <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span> </div>
-<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span>    QSharedDataPointer&lt;QXmppMessagePrivate&gt; d;</div>
-<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span>};</div>
-<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span> </div>
-<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span>Q_DECLARE_METATYPE(<a class="code hl_class" href="classQXmppMessage.html">QXmppMessage</a>)</div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>    QString mixParticipantId() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span> </div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>    QString mixUserJid() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>    <span class="keywordtype">void</span> setMixUserJid(<span class="keyword">const</span> QString &amp;);</div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span> </div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>    QString mixUserNick() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>    <span class="keywordtype">void</span> setMixUserNick(<span class="keyword">const</span> QString &amp;);</div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span> </div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>    <span class="comment">// XEP-0380: Explicit Message Encryption</span></div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>    <a class="code hl_enumeration" href="namespaceQXmpp.html#adbe84fa39564cc52d80d015448a56dd6">QXmpp::EncryptionMethod</a> encryptionMethod() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>    <span class="keywordtype">void</span> setEncryptionMethod(<a class="code hl_enumeration" href="namespaceQXmpp.html#adbe84fa39564cc52d80d015448a56dd6">QXmpp::EncryptionMethod</a>);</div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>    QString encryptionMethodNs() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>    <span class="keywordtype">void</span> setEncryptionMethodNs(<span class="keyword">const</span> QString &amp;);</div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span> </div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>    QString encryptionName() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>    <span class="keywordtype">void</span> setEncryptionName(<span class="keyword">const</span> QString &amp;);</div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span> </div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>    <span class="comment">// XEP-0382: Spoiler messages</span></div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span>    <span class="keywordtype">bool</span> isSpoiler() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>    <span class="keywordtype">void</span> setIsSpoiler(<span class="keywordtype">bool</span>);</div>
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span> </div>
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>    QString spoilerHint() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>    <span class="keywordtype">void</span> setSpoilerHint(<span class="keyword">const</span> QString &amp;);</div>
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span> </div>
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>    <span class="comment">// XEP-0407: Mediated Information eXchange (MIX): Miscellaneous Capabilities</span></div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span>    std::optional&lt;QXmppMixInvitation&gt; mixInvitation() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>    <span class="keywordtype">void</span> setMixInvitation(<span class="keyword">const</span> std::optional&lt;QXmppMixInvitation&gt; &amp;mixInvitation);</div>
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span> </div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>    <span class="comment">// XEP-0428: Fallback Indication</span></div>
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span><span class="preprocessor">#if QXMPP_DEPRECATED_SINCE(1, 7)</span></div>
+<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span>    [[deprecated(<span class="stringliteral">&quot;Use fallbackMarkers()&quot;</span>)]] <span class="keywordtype">bool</span> isFallback() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00262" name="l00262"></a><span class="lineno">  262</span>    [[deprecated(<span class="stringliteral">&quot;Use setFallbackMarkers()&quot;</span>)]] <span class="keywordtype">void</span> setIsFallback(<span class="keywordtype">bool</span> isFallback);</div>
+<div class="line"><a id="l00263" name="l00263"></a><span class="lineno">  263</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00264" name="l00264"></a><span class="lineno">  264</span>    <span class="keyword">const</span> QVector&lt;QXmppFallback&gt; &amp;fallbackMarkers() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00265" name="l00265"></a><span class="lineno">  265</span>    <span class="keywordtype">void</span> setFallbackMarkers(<span class="keyword">const</span> QVector&lt;QXmppFallback&gt; &amp;);</div>
+<div class="line"><a id="l00266" name="l00266"></a><span class="lineno">  266</span> </div>
+<div class="line"><a id="l00267" name="l00267"></a><span class="lineno">  267</span>    <span class="comment">// XEP-0434: Trust Messages (TM)</span></div>
+<div class="line"><a id="l00268" name="l00268"></a><span class="lineno">  268</span>    std::optional&lt;QXmppTrustMessageElement&gt; trustMessageElement() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00269" name="l00269"></a><span class="lineno">  269</span>    <span class="keywordtype">void</span> setTrustMessageElement(<span class="keyword">const</span> std::optional&lt;QXmppTrustMessageElement&gt; &amp;trustMessageElement);</div>
+<div class="line"><a id="l00270" name="l00270"></a><span class="lineno">  270</span> </div>
+<div class="line"><a id="l00271" name="l00271"></a><span class="lineno">  271</span>    <span class="comment">// XEP-0444: Message Reactions</span></div>
+<div class="line"><a id="l00272" name="l00272"></a><span class="lineno">  272</span>    std::optional&lt;QXmppMessageReaction&gt; reaction() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00273" name="l00273"></a><span class="lineno">  273</span>    <span class="keywordtype">void</span> setReaction(<span class="keyword">const</span> std::optional&lt;QXmppMessageReaction&gt; &amp;reaction);</div>
+<div class="line"><a id="l00274" name="l00274"></a><span class="lineno">  274</span> </div>
+<div class="line"><a id="l00275" name="l00275"></a><span class="lineno">  275</span>    <span class="comment">// XEP-0447: Stateless file sharing</span></div>
+<div class="line"><a id="l00276" name="l00276"></a><span class="lineno">  276</span>    <span class="keyword">const</span> QVector&lt;QXmppFileShare&gt; &amp;sharedFiles() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00277" name="l00277"></a><span class="lineno">  277</span>    <span class="keywordtype">void</span> setSharedFiles(<span class="keyword">const</span> QVector&lt;QXmppFileShare&gt; &amp;sharedFiles);</div>
+<div class="line"><a id="l00278" name="l00278"></a><span class="lineno">  278</span> </div>
+<div class="line"><a id="l00279" name="l00279"></a><span class="lineno">  279</span>    <span class="comment">// XEP-0482: Call Invites</span></div>
+<div class="line"><a id="l00280" name="l00280"></a><span class="lineno">  280</span>    std::optional&lt;QXmppCallInviteElement&gt; callInviteElement() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00281" name="l00281"></a><span class="lineno">  281</span>    <span class="keywordtype">void</span> setCallInviteElement(std::optional&lt;QXmppCallInviteElement&gt; callInviteElement);</div>
+<div class="line"><a id="l00282" name="l00282"></a><span class="lineno">  282</span> </div>
+<div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span><span class="preprocessor">#ifdef BUILD_OMEMO</span></div>
+<div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span>    <span class="comment">// XEP-0384: OMEMO Encryption</span></div>
+<div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span>    std::optional&lt;QXmppOmemoElement&gt; omemoElement() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>    <span class="keywordtype">void</span> setOmemoElement(<span class="keyword">const</span> std::optional&lt;QXmppOmemoElement&gt; &amp;omemoElement);</div>
+<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span> </div>
+<div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classQXmppNonza.html#abc49e8874e808d39210b2be3abeba63a">parse</a>(<span class="keyword">const</span> QDomElement &amp;element) <span class="keyword">override</span> <span class="keyword">final</span>;</div>
+<div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classQXmppNonza.html#abc49e8874e808d39210b2be3abeba63a">parse</a>(<span class="keyword">const</span> QDomElement &amp;element, <a class="code hl_enumeration" href="namespaceQXmpp.html#abc6005b5a30290db2a9da3a9dde99a0d">QXmpp::SceMode</a>);</div>
+<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classQXmppNonza.html#aff27abe8740fc054a67d55c239ff8cc3">toXml</a>(QXmlStreamWriter *writer) <span class="keyword">const</span> <span class="keyword">override</span> <span class="keyword">final</span>;</div>
+<div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classQXmppNonza.html#aff27abe8740fc054a67d55c239ff8cc3">toXml</a>(QXmlStreamWriter *writer, <a class="code hl_enumeration" href="namespaceQXmpp.html#abc6005b5a30290db2a9da3a9dde99a0d">QXmpp::SceMode</a>) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span> </div>
+<div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span>    <span class="keywordtype">void</span> parseExtensions(<span class="keyword">const</span> QDomElement &amp;element, <a class="code hl_enumeration" href="namespaceQXmpp.html#abc6005b5a30290db2a9da3a9dde99a0d">QXmpp::SceMode</a> sceMode);</div>
+<div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span>    <span class="keyword">virtual</span> <span class="keywordtype">bool</span> parseExtension(<span class="keyword">const</span> QDomElement &amp;element, <a class="code hl_enumeration" href="namespaceQXmpp.html#abc6005b5a30290db2a9da3a9dde99a0d">QXmpp::SceMode</a>);</div>
+<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span>    <span class="keyword">virtual</span> <span class="keywordtype">void</span> serializeExtensions(QXmlStreamWriter *writer, <a class="code hl_enumeration" href="namespaceQXmpp.html#abc6005b5a30290db2a9da3a9dde99a0d">QXmpp::SceMode</a>, <span class="keyword">const</span> QString &amp;baseNamespace = {}) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span> </div>
+<div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span>    QSharedDataPointer&lt;QXmppMessagePrivate&gt; d;</div>
+<div class="line"><a id="l00302" name="l00302"></a><span class="lineno">  302</span>};</div>
 <div class="line"><a id="l00303" name="l00303"></a><span class="lineno">  303</span> </div>
-<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span><span class="preprocessor">#endif  </span><span class="comment">// QXMPPMESSAGE_H</span></div>
+<div class="line"><a id="l00304" name="l00304"></a><span class="lineno">  304</span>Q_DECLARE_METATYPE(<a class="code hl_class" href="classQXmppMessage.html">QXmppMessage</a>)</div>
+<div class="line"><a id="l00305" name="l00305"></a><span class="lineno">  305</span> </div>
+<div class="line"><a id="l00306" name="l00306"></a><span class="lineno">  306</span><span class="preprocessor">#endif  </span><span class="comment">// QXMPPMESSAGE_H</span></div>
 <div class="ttc" id="aclassQXmppBitsOfBinaryDataList_html"><div class="ttname"><a href="classQXmppBitsOfBinaryDataList.html">QXmppBitsOfBinaryDataList</a></div><div class="ttdef"><b>Definition:</b> QXmppBitsOfBinaryDataList.h:16</div></div>
 <div class="ttc" id="aclassQXmppCallInviteElement_html"><div class="ttname"><a href="classQXmppCallInviteElement.html">QXmppCallInviteElement</a></div><div class="ttdoc">The QXmppCallInviteElement class represents a Call Invite element as specified by XEP-0482: Call Invi...</div><div class="ttdef"><b>Definition:</b> QXmppJingleData.h:649</div></div>
 <div class="ttc" id="aclassQXmppFallback_html"><div class="ttname"><a href="classQXmppFallback.html">QXmppFallback</a></div><div class="ttdef"><b>Definition:</b> QXmppFallback.h:20</div></div>
@@ -365,7 +367,6 @@ $(function() {
 <div class="ttc" id="aclassQXmppMessage_html_aeaa3cc5ccb7d451067a80dd1f3c7099aa7804ac6c0c6848221acb67b9de0371d3"><div class="ttname"><a href="classQXmppMessage.html#aeaa3cc5ccb7d451067a80dd1f3c7099aa7804ac6c0c6848221acb67b9de0371d3">QXmppMessage::Composing</a></div><div class="ttdeci">@ Composing</div><div class="ttdoc">User is composing a message.</div><div class="ttdef"><b>Definition:</b> QXmppMessage.h:74</div></div>
 <div class="ttc" id="aclassQXmppMessage_html_aeaa3cc5ccb7d451067a80dd1f3c7099aa82f224b6d9a97c9d40ecc8df80b22f61"><div class="ttname"><a href="classQXmppMessage.html#aeaa3cc5ccb7d451067a80dd1f3c7099aa82f224b6d9a97c9d40ecc8df80b22f61">QXmppMessage::Gone</a></div><div class="ttdeci">@ Gone</div><div class="ttdoc">User has effectively ended their participation in the chat session.</div><div class="ttdef"><b>Definition:</b> QXmppMessage.h:73</div></div>
 <div class="ttc" id="aclassQXmppMessage_html_af73b605ad48ee6ecc111975f774c6edd"><div class="ttname"><a href="classQXmppMessage.html#af73b605ad48ee6ecc111975f774c6edd">QXmppMessage::QXmppMessage</a></div><div class="ttdeci">QXmppMessage(const QXmppMessage &amp;other)</div><div class="ttdoc">Constructs a copy of other.</div></div>
-<div class="ttc" id="aclassQXmppMixInvitation_html"><div class="ttname"><a href="classQXmppMixInvitation.html">QXmppMixInvitation</a></div><div class="ttdoc">The QXmppMixInvitation class is used to invite a user to a XEP-0369: Mediated Information eXchange (M...</div><div class="ttdef"><b>Definition:</b> QXmppMixInvitation.h:24</div></div>
 <div class="ttc" id="aclassQXmppNonza_html_abc49e8874e808d39210b2be3abeba63a"><div class="ttname"><a href="classQXmppNonza.html#abc49e8874e808d39210b2be3abeba63a">QXmppNonza::parse</a></div><div class="ttdeci">virtual void parse(const QDomElement &amp;)=0</div></div>
 <div class="ttc" id="aclassQXmppNonza_html_ae1c3b04b284c0f2b2f8ff6935bcc652a"><div class="ttname"><a href="classQXmppNonza.html#ae1c3b04b284c0f2b2f8ff6935bcc652a">QXmppNonza::isXmppStanza</a></div><div class="ttdeci">virtual bool isXmppStanza() const</div><div class="ttdef"><b>Definition:</b> QXmppNonza.h:19</div></div>
 <div class="ttc" id="aclassQXmppNonza_html_aff27abe8740fc054a67d55c239ff8cc3"><div class="ttname"><a href="classQXmppNonza.html#aff27abe8740fc054a67d55c239ff8cc3">QXmppNonza::toXml</a></div><div class="ttdeci">virtual void toXml(QXmlStreamWriter *writer) const =0</div></div>

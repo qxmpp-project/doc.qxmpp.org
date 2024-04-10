@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['upload_0',['Upload',['../classQXmppFileSharingProvider_1_1Upload.html',1,'QXmppFileSharingProvider']]]
+  ['timeouterror_0',['TimeoutError',['../structQXmpp_1_1TimeoutError.html',1,'QXmpp']]]
 ];

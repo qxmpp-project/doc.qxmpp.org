@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['keyid_0',['keyId',['../structQXmppOmemoStorage_1_1Device.html#a1bb263b88050ea9f1e5dd6f996abe732',1,'QXmppOmemoStorage::Device']]]
+  ['jid_0',['jid',['../structQXmppMixManager_1_1Service.html#a589b51f9b62f02ad11e0f970a1f4637a',1,'QXmppMixManager::Service']]]
 ];

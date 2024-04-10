@@ -24,7 +24,7 @@
 <area shape="rect" id="node19" href="$classQXmppIbbOpenIq.html" title=" " alt="" coords="653,664,789,691"/>
 <area shape="rect" id="node20" href="$classQXmppJingleIq.html" title="The QXmppJingleIq class represents an IQ used for initiating media sessions as specified by XEP&#45;0166:..." alt="" coords="661,715,780,741"/>
 <area shape="rect" id="node21" href="$classQXmppMamQueryIq.html" title=" " alt="" coords="643,765,798,792"/>
-<area shape="rect" id="node22" href="$classQXmppMixIq.html" title="The QXmppMixIq class represents an IQ used to do actions on a MIX channel as defined by XEP&#45;0369: Med..." alt="" coords="667,816,774,843"/>
+<area shape="rect" id="node22" href="$classQXmppMixIq.html" title=" " alt="" coords="667,816,774,843"/>
 <area shape="rect" id="node23" href="$classQXmppMucAdminIq.html" title="The QXmppMucAdminIq class represents a chat room administration IQ as defined by XEP&#45;0045: Multi&#45;User..." alt="" coords="645,867,796,893"/>
 <area shape="rect" id="node24" href="$classQXmppMucOwnerIq.html" title="The QXmppMucOwnerIq class represents a chat room configuration IQ as defined by XEP&#45;0045: Multi&#45;User ..." alt="" coords="645,917,796,944"/>
 <area shape="rect" id="node25" href="$classQXmppNonSASLAuthIq.html" title=" " alt="" coords="635,968,807,995"/>
