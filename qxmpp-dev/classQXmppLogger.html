@@ -138,10 +138,14 @@ Public Member Functions</h2></td></tr>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setLoggingType</b> (<a class="el" href="classQXmppLogger.html#a9a52fe426322ef8e10e05b7092be6c20">QXmppLogger::LoggingType</a> type)</td></tr>
 <tr class="memdesc:a0b60be94fa2f768d3eabcdba8357f15b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the handler for logging messages. <br /></td></tr>
 <tr class="separator:a0b60be94fa2f768d3eabcdba8357f15b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a648aa85ccce2a24c2590eb35550ef8f5"><td class="memItemLeft" align="right" valign="top">Q_SIGNAL void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppLogger.html#a648aa85ccce2a24c2590eb35550ef8f5">loggingTypeChanged</a> ()</td></tr>
+<tr class="separator:a648aa85ccce2a24c2590eb35550ef8f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9414c4b97563091020646741fe75ee7c"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppLogger.html#a9414c4b97563091020646741fe75ee7c">logFilePath</a> ()</td></tr>
 <tr class="separator:a9414c4b97563091020646741fe75ee7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3a67ae630d032b8bdac039fe0567e178"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppLogger.html#a3a67ae630d032b8bdac039fe0567e178">setLogFilePath</a> (const QString &amp;path)</td></tr>
 <tr class="separator:a3a67ae630d032b8bdac039fe0567e178"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acf6132c73a54fa5dca189c7e9e1e4e87"><td class="memItemLeft" align="right" valign="top">Q_SIGNAL void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppLogger.html#acf6132c73a54fa5dca189c7e9e1e4e87">logFilePathChanged</a> ()</td></tr>
+<tr class="separator:acf6132c73a54fa5dca189c7e9e1e4e87"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac6adc60f22ad6593d4176d67c2a0ef7b"><td class="memItemLeft" align="right" valign="top"><a id="ac6adc60f22ad6593d4176d67c2a0ef7b" name="ac6adc60f22ad6593d4176d67c2a0ef7b"></a>
 QXmppLogger::MessageTypes&#160;</td><td class="memItemRight" valign="bottom"><b>messageTypes</b> ()</td></tr>
 <tr class="memdesc:ac6adc60f22ad6593d4176d67c2a0ef7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the types of messages to log. <br /></td></tr>
@@ -150,6 +154,8 @@ QXmppLogger::MessageTypes&#160;</td><td class="memItemRight" valign="bottom"><b>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setMessageTypes</b> (QXmppLogger::MessageTypes types)</td></tr>
 <tr class="memdesc:a8be64f1219d725ba66a60c8970e53bb7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the types of messages to log. <br /></td></tr>
 <tr class="separator:a8be64f1219d725ba66a60c8970e53bb7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a179c17f34eeed3e2d62f48d82bc52598"><td class="memItemLeft" align="right" valign="top">Q_SIGNAL void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppLogger.html#a179c17f34eeed3e2d62f48d82bc52598">messageTypesChanged</a> ()</td></tr>
+<tr class="separator:a179c17f34eeed3e2d62f48d82bc52598"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -301,6 +307,63 @@ MessageTypes&#160;</td><td class="memItemRight" valign="bottom"><b>messageTypes<
 </div><div class="memdoc">
 <p >Returns the path to which logging messages should be written.</p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classQXmppLogger.html#a896f3347ee0c517db3404e07c6853187" title="The handler for logging messages.">loggingType()</a> </dd></dl>
+
+</div>
+</div>
+<a id="acf6132c73a54fa5dca189c7e9e1e4e87" name="acf6132c73a54fa5dca189c7e9e1e4e87"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acf6132c73a54fa5dca189c7e9e1e4e87">&#9670;&nbsp;</a></span>logFilePathChanged()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QXmppLogger::logFilePathChanged </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Emitted when the log file path has been changed.</p>
+<dl class="section since"><dt>Since</dt><dd><a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.7 </dd></dl>
+
+</div>
+</div>
+<a id="a648aa85ccce2a24c2590eb35550ef8f5" name="a648aa85ccce2a24c2590eb35550ef8f5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a648aa85ccce2a24c2590eb35550ef8f5">&#9670;&nbsp;</a></span>loggingTypeChanged()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QXmppLogger::loggingTypeChanged </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Emitted when the logging type has been changed.</p>
+<dl class="section since"><dt>Since</dt><dd><a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.7 </dd></dl>
+
+</div>
+</div>
+<a id="a179c17f34eeed3e2d62f48d82bc52598" name="a179c17f34eeed3e2d62f48d82bc52598"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a179c17f34eeed3e2d62f48d82bc52598">&#9670;&nbsp;</a></span>messageTypesChanged()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QXmppLogger::messageTypesChanged </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Emitted when the message types have been changed.</p>
+<dl class="section since"><dt>Since</dt><dd><a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.7 </dd></dl>
 
 </div>
 </div>
