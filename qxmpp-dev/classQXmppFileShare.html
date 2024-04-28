@@ -92,6 +92,10 @@ Public Member Functions</h2></td></tr>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setDisposition</b> (<a class="el" href="classQXmppFileShare.html#a870c1e4d33ebabf528c0f76b148760f5">Disposition</a>)</td></tr>
 <tr class="memdesc:a7143f1196d1bb2450aa9711a6aab6357"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the disposition setting for this file. <br /></td></tr>
 <tr class="separator:a7143f1196d1bb2450aa9711a6aab6357"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1923995978faf19dcb9c94fd002bc6e0"><td class="memItemLeft" align="right" valign="top">const QString &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppFileShare.html#a1923995978faf19dcb9c94fd002bc6e0">id</a> () const</td></tr>
+<tr class="separator:a1923995978faf19dcb9c94fd002bc6e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84ce45ce6ccd8233346f272b4000a503"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppFileShare.html#a84ce45ce6ccd8233346f272b4000a503">setId</a> (const QString &amp;)</td></tr>
+<tr class="separator:a84ce45ce6ccd8233346f272b4000a503"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7992f35347715e159b90d8cf00a308fd"><td class="memItemLeft" align="right" valign="top"><a id="a7992f35347715e159b90d8cf00a308fd" name="a7992f35347715e159b90d8cf00a308fd"></a>
 const <a class="el" href="classQXmppFileMetadata.html">QXmppFileMetadata</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>metadata</b> () const</td></tr>
 <tr class="memdesc:a7992f35347715e159b90d8cf00a308fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the metadata of the shared file. <br /></td></tr>
@@ -100,28 +104,136 @@ const <a class="el" href="classQXmppFileMetadata.html">QXmppFileMetadata</a> &am
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setMetadata</b> (const <a class="el" href="classQXmppFileMetadata.html">QXmppFileMetadata</a> &amp;)</td></tr>
 <tr class="memdesc:ace8b09fcd9a506744334a05af6ef738e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the metadata of the shared file. <br /></td></tr>
 <tr class="separator:ace8b09fcd9a506744334a05af6ef738e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2162fb42b2f01f552556f6941bc626b0"><td class="memItemLeft" align="right" valign="top"><a id="a2162fb42b2f01f552556f6941bc626b0" name="a2162fb42b2f01f552556f6941bc626b0"></a>
-const QVector&lt; <a class="el" href="classQXmppHttpFileSource.html">QXmppHttpFileSource</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>httpSources</b> () const</td></tr>
-<tr class="memdesc:a2162fb42b2f01f552556f6941bc626b0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the HTTP sources for this file. <br /></td></tr>
+<tr class="memitem:a2162fb42b2f01f552556f6941bc626b0"><td class="memItemLeft" align="right" valign="top">const QVector&lt; <a class="el" href="classQXmppHttpFileSource.html">QXmppHttpFileSource</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppFileShare.html#a2162fb42b2f01f552556f6941bc626b0">httpSources</a> () const</td></tr>
 <tr class="separator:a2162fb42b2f01f552556f6941bc626b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3cb4000860cf2228e0c32ef78e912d72"><td class="memItemLeft" align="right" valign="top"><a id="a3cb4000860cf2228e0c32ef78e912d72" name="a3cb4000860cf2228e0c32ef78e912d72"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setHttpSources</b> (const QVector&lt; <a class="el" href="classQXmppHttpFileSource.html">QXmppHttpFileSource</a> &gt; &amp;newHttpSources)</td></tr>
-<tr class="memdesc:a3cb4000860cf2228e0c32ef78e912d72"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the HTTP sources for this file. <br /></td></tr>
+<tr class="memitem:a3cb4000860cf2228e0c32ef78e912d72"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppFileShare.html#a3cb4000860cf2228e0c32ef78e912d72">setHttpSources</a> (const QVector&lt; <a class="el" href="classQXmppHttpFileSource.html">QXmppHttpFileSource</a> &gt; &amp;newHttpSources)</td></tr>
 <tr class="separator:a3cb4000860cf2228e0c32ef78e912d72"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6eff0422f661d40691f293d5f40b8638"><td class="memItemLeft" align="right" valign="top"><a id="a6eff0422f661d40691f293d5f40b8638" name="a6eff0422f661d40691f293d5f40b8638"></a>
-const QVector&lt; <a class="el" href="classQXmppEncryptedFileSource.html">QXmppEncryptedFileSource</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>encryptedSources</b> () const</td></tr>
-<tr class="memdesc:a6eff0422f661d40691f293d5f40b8638"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the encrypted sources for this file. <br /></td></tr>
+<tr class="memitem:a6eff0422f661d40691f293d5f40b8638"><td class="memItemLeft" align="right" valign="top">const QVector&lt; <a class="el" href="classQXmppEncryptedFileSource.html">QXmppEncryptedFileSource</a> &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppFileShare.html#a6eff0422f661d40691f293d5f40b8638">encryptedSources</a> () const</td></tr>
 <tr class="separator:a6eff0422f661d40691f293d5f40b8638"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae5adf6d66c644756b8ab22970e3e80bb"><td class="memItemLeft" align="right" valign="top"><a id="ae5adf6d66c644756b8ab22970e3e80bb" name="ae5adf6d66c644756b8ab22970e3e80bb"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setEncryptedSourecs</b> (const QVector&lt; <a class="el" href="classQXmppEncryptedFileSource.html">QXmppEncryptedFileSource</a> &gt; &amp;newEncryptedSources)</td></tr>
-<tr class="memdesc:ae5adf6d66c644756b8ab22970e3e80bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the encrypted sources for this file. <br /></td></tr>
+<tr class="memitem:ae5adf6d66c644756b8ab22970e3e80bb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppFileShare.html#ae5adf6d66c644756b8ab22970e3e80bb">setEncryptedSourecs</a> (const QVector&lt; <a class="el" href="classQXmppEncryptedFileSource.html">QXmppEncryptedFileSource</a> &gt; &amp;newEncryptedSources)</td></tr>
 <tr class="separator:ae5adf6d66c644756b8ab22970e3e80bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >File sharing element from <a href="https://xmpp.org/extensions/xep-0447.html">XEP-0447: Stateless file sharing</a>. Contains metadata and source URLs.</p>
 <dl class="section note"><dt>Note</dt><dd>jinglepub references are currently missing</dd></dl>
 <dl class="section since"><dt>Since</dt><dd><a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.5 </dd></dl>
-</div><hr/>The documentation for this class was generated from the following files:<ul>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="a6eff0422f661d40691f293d5f40b8638" name="a6eff0422f661d40691f293d5f40b8638"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6eff0422f661d40691f293d5f40b8638">&#9670;&nbsp;</a></span>encryptedSources()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const QVector&lt; <a class="el" href="classQXmppEncryptedFileSource.html">QXmppEncryptedFileSource</a> &gt; &amp; QXmppFileShare::encryptedSources </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Returns the encrypted sources for this file. </p>
+
+</div>
+</div>
+<a id="a2162fb42b2f01f552556f6941bc626b0" name="a2162fb42b2f01f552556f6941bc626b0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2162fb42b2f01f552556f6941bc626b0">&#9670;&nbsp;</a></span>httpSources()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const QVector&lt; <a class="el" href="classQXmppHttpFileSource.html">QXmppHttpFileSource</a> &gt; &amp; QXmppFileShare::httpSources </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Returns the HTTP sources for this file. </p>
+
+</div>
+</div>
+<a id="a1923995978faf19dcb9c94fd002bc6e0" name="a1923995978faf19dcb9c94fd002bc6e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1923995978faf19dcb9c94fd002bc6e0">&#9670;&nbsp;</a></span>id()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const QString &amp; QXmppFileShare::id </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Returns the ID of this file element.</p>
+<p >This is useful for attaching sources to one of multiple files in a message.</p>
+<dl class="section since"><dt>Since</dt><dd><a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.7 </dd></dl>
+
+</div>
+</div>
+<a id="ae5adf6d66c644756b8ab22970e3e80bb" name="ae5adf6d66c644756b8ab22970e3e80bb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5adf6d66c644756b8ab22970e3e80bb">&#9670;&nbsp;</a></span>setEncryptedSourecs()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void QXmppFileShare::setEncryptedSourecs </td>
+          <td>(</td>
+          <td class="paramtype">const QVector&lt; <a class="el" href="classQXmppEncryptedFileSource.html">QXmppEncryptedFileSource</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>newEncryptedSources</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Sets the encrypted sources for this file. </p>
+
+</div>
+</div>
+<a id="a3cb4000860cf2228e0c32ef78e912d72" name="a3cb4000860cf2228e0c32ef78e912d72"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3cb4000860cf2228e0c32ef78e912d72">&#9670;&nbsp;</a></span>setHttpSources()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void QXmppFileShare::setHttpSources </td>
+          <td>(</td>
+          <td class="paramtype">const QVector&lt; <a class="el" href="classQXmppHttpFileSource.html">QXmppHttpFileSource</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>newHttpSources</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Sets the HTTP sources for this file. </p>
+
+</div>
+</div>
+<a id="a84ce45ce6ccd8233346f272b4000a503" name="a84ce45ce6ccd8233346f272b4000a503"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84ce45ce6ccd8233346f272b4000a503">&#9670;&nbsp;</a></span>setId()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void QXmppFileShare::setId </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>id</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Sets the ID of this file element.</p>
+<p >This is useful for attaching sources to one of multiple files in a message.</p>
+<dl class="section since"><dt>Since</dt><dd><a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.7 </dd></dl>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
 <li><a class="el" href="QXmppFileShare_8h_source.html">QXmppFileShare.h</a></li>
 <li>QXmppFileShare.cpp</li>
 </ul>
