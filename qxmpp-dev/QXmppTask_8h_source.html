@@ -102,7 +102,7 @@ $(function() {
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    <span class="keywordtype">bool</span> isFinished() <span class="keyword">const</span>;</div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="keywordtype">void</span> setFinished(<span class="keywordtype">bool</span>);</div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    <span class="keywordtype">bool</span> isContextAlive();</div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keywordtype">void</span> setContext(QObject *);</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <span class="keywordtype">void</span> setContext(<span class="keyword">const</span> QObject *);</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <span class="keywordtype">void</span> *result() <span class="keyword">const</span>;</div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="keywordtype">void</span> setResult(<span class="keywordtype">void</span> *);</div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    <span class="keywordtype">void</span> resetResult() { setResult(<span class="keyword">nullptr</span>); }</div>
@@ -125,7 +125,7 @@ $(function() {
 <div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span><span class="preprocessor">#ifndef QXMPP_DOC</span></div>
 <div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> Continuation&gt;</div>
 <div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno"><a class="line" href="classQXmppTask.html#a01da3917bed9a6c6a187ffcabdc71982">  101</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classQXmppTask.html#a01da3917bed9a6c6a187ffcabdc71982">then</a>(QObject *context, Continuation continuation)</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno"><a class="line" href="classQXmppTask.html#af38d3dc03ddd9741b6992f91d762ad9b">  101</a></span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classQXmppTask.html#af38d3dc03ddd9741b6992f91d762ad9b">then</a>(<span class="keyword">const</span> QObject *context, Continuation continuation)</div>
 <div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>    {</div>
 <div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>        <span class="keywordflow">if</span> <span class="keyword">constexpr</span> (!std::is_void_v&lt;T&gt;) {</div>
 <div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>            <span class="keyword">static_assert</span>(std::is_invocable_v&lt;Continuation, T &amp;&amp;&gt;, <span class="stringliteral">&quot;Function needs to be invocable with T &amp;&amp;.&quot;</span>);</div>
@@ -197,7 +197,7 @@ $(function() {
 <div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>        <span class="keywordflow">return</span> result;</div>
 <div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>    }</div>
 <div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span> </div>
-<div class="line"><a id="l00195" name="l00195"></a><span class="lineno"><a class="line" href="classQXmppTask.html#a135541d985c084257914733b7f82c7e8">  195</a></span>    QFuture&lt;T&gt; <a class="code hl_function" href="classQXmppTask.html#a135541d985c084257914733b7f82c7e8">toFuture</a>(QObject *context)</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno"><a class="line" href="classQXmppTask.html#a75e517190dd76882d7d28faa74b5a3c2">  195</a></span>    QFuture&lt;T&gt; <a class="code hl_function" href="classQXmppTask.html#a75e517190dd76882d7d28faa74b5a3c2">toFuture</a>(<span class="keyword">const</span> QObject *context)</div>
 <div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>    {</div>
 <div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>        QFutureInterface&lt;T&gt; interface;</div>
 <div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span> </div>
@@ -229,12 +229,12 @@ $(function() {
 <div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span><span class="preprocessor">#endif  </span><span class="comment">// QXMPPTASK_H</span></div>
 <div class="ttc" id="aclassQXmppPromise_html"><div class="ttname"><a href="classQXmppPromise.html">QXmppPromise</a></div><div class="ttdoc">Create and update QXmppTask objects to communicate results of asynchronous operations.</div><div class="ttdef"><b>Definition:</b> QXmppPromise.h:23</div></div>
 <div class="ttc" id="aclassQXmppTask_html"><div class="ttname"><a href="classQXmppTask.html">QXmppTask</a></div><div class="ttdef"><b>Definition:</b> QXmppTask.h:62</div></div>
-<div class="ttc" id="aclassQXmppTask_html_a01da3917bed9a6c6a187ffcabdc71982"><div class="ttname"><a href="classQXmppTask.html#a01da3917bed9a6c6a187ffcabdc71982">QXmppTask::then</a></div><div class="ttdeci">void then(QObject *context, Continuation continuation)</div><div class="ttdef"><b>Definition:</b> QXmppTask.h:101</div></div>
-<div class="ttc" id="aclassQXmppTask_html_a135541d985c084257914733b7f82c7e8"><div class="ttname"><a href="classQXmppTask.html#a135541d985c084257914733b7f82c7e8">QXmppTask::toFuture</a></div><div class="ttdeci">QFuture&lt; T &gt; toFuture(QObject *context)</div><div class="ttdef"><b>Definition:</b> QXmppTask.h:195</div></div>
 <div class="ttc" id="aclassQXmppTask_html_a309380ae6b7cfe6bb4493434f2db30d7"><div class="ttname"><a href="classQXmppTask.html#a309380ae6b7cfe6bb4493434f2db30d7">QXmppTask::hasResult</a></div><div class="ttdeci">bool hasResult() const</div><div class="ttdef"><b>Definition:</b> QXmppTask.h:151</div></div>
 <div class="ttc" id="aclassQXmppTask_html_a481464af077b3d476af13f5c655c3c5b"><div class="ttname"><a href="classQXmppTask.html#a481464af077b3d476af13f5c655c3c5b">QXmppTask::result</a></div><div class="ttdeci">const T &amp; result() const</div><div class="ttdef"><b>Definition:</b> QXmppTask.h:162</div></div>
+<div class="ttc" id="aclassQXmppTask_html_a75e517190dd76882d7d28faa74b5a3c2"><div class="ttname"><a href="classQXmppTask.html#a75e517190dd76882d7d28faa74b5a3c2">QXmppTask::toFuture</a></div><div class="ttdeci">QFuture&lt; T &gt; toFuture(const QObject *context)</div><div class="ttdef"><b>Definition:</b> QXmppTask.h:195</div></div>
 <div class="ttc" id="aclassQXmppTask_html_aaf3efb2e13920178011a0746acff5a4f"><div class="ttname"><a href="classQXmppTask.html#aaf3efb2e13920178011a0746acff5a4f">QXmppTask::isFinished</a></div><div class="ttdeci">bool isFinished() const</div><div class="ttdef"><b>Definition:</b> QXmppTask.h:143</div></div>
 <div class="ttc" id="aclassQXmppTask_html_ac888d492e5366cc451b1d226a2797c61"><div class="ttname"><a href="classQXmppTask.html#ac888d492e5366cc451b1d226a2797c61">QXmppTask::takeResult</a></div><div class="ttdeci">T takeResult()</div><div class="ttdef"><b>Definition:</b> QXmppTask.h:179</div></div>
+<div class="ttc" id="aclassQXmppTask_html_af38d3dc03ddd9741b6992f91d762ad9b"><div class="ttname"><a href="classQXmppTask.html#af38d3dc03ddd9741b6992f91d762ad9b">QXmppTask::then</a></div><div class="ttdeci">void then(const QObject *context, Continuation continuation)</div><div class="ttdef"><b>Definition:</b> QXmppTask.h:101</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

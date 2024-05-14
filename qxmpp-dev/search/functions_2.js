@@ -31,7 +31,7 @@ var searchData=
   ['checkpassword_28',['checkPassword',['../classQXmppPasswordChecker.html#a62ba10636417e503f936560f4f2910a8',1,'QXmppPasswordChecker']]],
   ['cid_29',['cid',['../classQXmppBitsOfBinaryData.html#a0fb43db94eced171d20c962d11e5f478',1,'QXmppBitsOfBinaryData']]],
   ['cipher_30',['cipher',['../classQXmppEncryptedFileSource.html#a106aba82399e6029c438204e7d914e59',1,'QXmppEncryptedFileSource']]],
-  ['client_31',['client',['../classQXmppClientExtension.html#a2476cb1a20963d15d45d39f24a0c1198',1,'QXmppClientExtension']]],
+  ['client_31',['client',['../classQXmppClientExtension.html#a893a3e1acaee65bd1bbd781e4e387646',1,'QXmppClientExtension']]],
   ['clientcapabilitiesnode_32',['clientCapabilitiesNode',['../classQXmppDiscoveryManager.html#a06e5342778601024bb73df19efaf8e88',1,'QXmppDiscoveryManager']]],
   ['clientcategory_33',['clientCategory',['../classQXmppDiscoveryManager.html#a5f061b948d234f1157925e0f74c96be2',1,'QXmppDiscoveryManager']]],
   ['clientconnected_34',['clientConnected',['../classQXmppServer.html#a8bfdd55f8e3769caf65b458d36467a99',1,'QXmppServer']]],

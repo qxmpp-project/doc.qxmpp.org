@@ -529,7 +529,7 @@ template&lt;typename... IqTypes, typename Handler &gt; </div>
 <div class="line">            <span class="comment">// ...</span></div>
 <div class="line">        }</div>
 <div class="line">    });</div>
-<div class="ttc" id="aclassQXmppVCardIq_html"><div class="ttname"><a href="classQXmppVCardIq.html">QXmppVCardIq</a></div><div class="ttdoc">Represents the XMPP vCard.</div><div class="ttdef"><b>Definition:</b> QXmppVCardIq.h:210</div></div>
+<div class="ttc" id="aclassQXmppVCardIq_html"><div class="ttname"><a href="classQXmppVCardIq.html">QXmppVCardIq</a></div><div class="ttdoc">Represents the XMPP vCard.</div><div class="ttdef"><b>Definition:</b> QXmppVCardIq.h:214</div></div>
 </div><!-- fragment --><p >And another option is to an object with <code>handleIq()</code> functions. </p><div class="fragment"><div class="line"><span class="keyword">auto</span> handled = QXmpp::handleIqElements&lt;QXmppVersionIq, QXmppVCardIq&gt;(element, e2eeMetadata, client, <span class="keyword">this</span>);</div>
 <div class="line"><span class="comment">// will call this-&gt;handleIq(QXmppVersionIq) or this-&gt;handleIq(QXmppVCardIq)</span></div>
 </div><!-- fragment --><p >The return type of the handler function can be:</p><ol type="1">

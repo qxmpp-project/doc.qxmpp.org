@@ -63,8 +63,10 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#pub-types">Public Types</a> &#124;
 <a href="#signals">Signals</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="classQXmppVCardManager-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">QXmppVCardManager Class Reference<div class="ingroups"><a class="el" href="group__Managers.html">Managers</a></div></div></div>
 </div><!--header-->
@@ -95,6 +97,17 @@ Collaboration diagram for QXmppVCardManager:</div>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
+Public Types</h2></td></tr>
+<tr class="memitem:ac9cc152fcae08120553fde4f741d14d5"><td class="memItemLeft" align="right" valign="top"><a id="ac9cc152fcae08120553fde4f741d14d5" name="ac9cc152fcae08120553fde4f741d14d5"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>Result</b> = std::variant&lt; <a class="el" href="structQXmpp_1_1Success.html">QXmpp::Success</a>, <a class="el" href="structQXmppError.html">QXmppError</a> &gt;</td></tr>
+<tr class="memdesc:ac9cc152fcae08120553fde4f741d14d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Success or <a class="el" href="structQXmppError.html">QXmppError</a>. <br /></td></tr>
+<tr class="separator:ac9cc152fcae08120553fde4f741d14d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a685fb5c27e06d3beb3595ff423d1dbaf"><td class="memItemLeft" align="right" valign="top"><a id="a685fb5c27e06d3beb3595ff423d1dbaf" name="a685fb5c27e06d3beb3595ff423d1dbaf"></a>
+using&#160;</td><td class="memItemRight" valign="bottom"><b>VCardIqResult</b> = std::variant&lt; <a class="el" href="classQXmppVCardIq.html">QXmppVCardIq</a>, <a class="el" href="structQXmppError.html">QXmppError</a> &gt;</td></tr>
+<tr class="memdesc:a685fb5c27e06d3beb3595ff423d1dbaf"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classQXmppVCardIq.html" title="Represents the XMPP vCard.">QXmppVCardIq</a> or <a class="el" href="structQXmppError.html">QXmppError</a>. <br /></td></tr>
+<tr class="separator:a685fb5c27e06d3beb3595ff423d1dbaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="signals" name="signals"></a>
 Signals</h2></td></tr>
 <tr class="memitem:a6c67da960890760e54fec8f7c675af55"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppVCardManager.html#a6c67da960890760e54fec8f7c675af55">vCardReceived</a> (const <a class="el" href="classQXmppVCardIq.html">QXmppVCardIq</a> &amp;)</td></tr>
@@ -117,6 +130,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>updateCounter</b> (co
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:aa3745fc36aefb7f1fada37ae333b5e14"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classQXmppTask.html">QXmppTask</a>&lt; <a class="el" href="classQXmppVCardManager.html#a685fb5c27e06d3beb3595ff423d1dbaf">VCardIqResult</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppVCardManager.html#aa3745fc36aefb7f1fada37ae333b5e14">fetchVCard</a> (const QString &amp;bareJid)</td></tr>
+<tr class="separator:aa3745fc36aefb7f1fada37ae333b5e14"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a25225725431456c6e63b832b5a8fa8eb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classQXmppTask.html">QXmppTask</a>&lt; <a class="el" href="classQXmppVCardManager.html#ac9cc152fcae08120553fde4f741d14d5">Result</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppVCardManager.html#a25225725431456c6e63b832b5a8fa8eb">setVCard</a> (const <a class="el" href="classQXmppVCardIq.html">QXmppVCardIq</a> &amp;)</td></tr>
+<tr class="separator:a25225725431456c6e63b832b5a8fa8eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abe8d67065ef2dbf7c7a8df7ffb129ba1"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppVCardManager.html#abe8d67065ef2dbf7c7a8df7ffb129ba1">requestVCard</a> (const QString &amp;bareJid=QString())</td></tr>
 <tr class="separator:abe8d67065ef2dbf7c7a8df7ffb129ba1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3bd3acbeeb0785e0dd9c18f9dba8c283"><td class="memItemLeft" align="right" valign="top"><a id="a3bd3acbeeb0785e0dd9c18f9dba8c283" name="a3bd3acbeeb0785e0dd9c18f9dba8c283"></a>
@@ -150,16 +167,20 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>isClientVCardReceived
 <tr class="memitem:ab900d699019726ee43285dc7072a600b inherit pub_methods_classQXmppLoggable"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppLoggable.html#ab900d699019726ee43285dc7072a600b">QXmppLoggable</a> (QObject *parent=nullptr)</td></tr>
 <tr class="separator:ab900d699019726ee43285dc7072a600b inherit pub_methods_classQXmppLoggable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
-Additional Inherited Members</h2></td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:acd8de5d67a8e4f9b392c2dcd04c93df5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppVCardManager.html#acd8de5d67a8e4f9b392c2dcd04c93df5">onRegistered</a> (<a class="el" href="classQXmppClient.html">QXmppClient</a> *<a class="el" href="classQXmppClientExtension.html#a893a3e1acaee65bd1bbd781e4e387646">client</a>) override</td></tr>
+<tr class="separator:acd8de5d67a8e4f9b392c2dcd04c93df5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a83c21740b249409da7111a96e4727294"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppVCardManager.html#a83c21740b249409da7111a96e4727294">onUnregistered</a> (<a class="el" href="classQXmppClient.html">QXmppClient</a> *<a class="el" href="classQXmppClientExtension.html#a893a3e1acaee65bd1bbd781e4e387646">client</a>) override</td></tr>
+<tr class="separator:a83c21740b249409da7111a96e4727294"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_classQXmppClientExtension"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_classQXmppClientExtension')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="classQXmppClientExtension.html">QXmppClientExtension</a></td></tr>
-<tr class="memitem:a2476cb1a20963d15d45d39f24a0c1198 inherit pro_methods_classQXmppClientExtension"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classQXmppClient.html">QXmppClient</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppClientExtension.html#a2476cb1a20963d15d45d39f24a0c1198">client</a> ()</td></tr>
-<tr class="separator:a2476cb1a20963d15d45d39f24a0c1198 inherit pro_methods_classQXmppClientExtension"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a166f42a22447341abb26bd9c44c97590 inherit pro_methods_classQXmppClientExtension"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppClientExtension.html#a166f42a22447341abb26bd9c44c97590">setClient</a> (<a class="el" href="classQXmppClient.html">QXmppClient</a> *<a class="el" href="classQXmppClientExtension.html#a2476cb1a20963d15d45d39f24a0c1198">client</a>)</td></tr>
+<tr class="memitem:a893a3e1acaee65bd1bbd781e4e387646 inherit pro_methods_classQXmppClientExtension"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classQXmppClient.html">QXmppClient</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppClientExtension.html#a893a3e1acaee65bd1bbd781e4e387646">client</a> () const</td></tr>
+<tr class="separator:a893a3e1acaee65bd1bbd781e4e387646 inherit pro_methods_classQXmppClientExtension"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a166f42a22447341abb26bd9c44c97590 inherit pro_methods_classQXmppClientExtension"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppClientExtension.html#a166f42a22447341abb26bd9c44c97590">setClient</a> (<a class="el" href="classQXmppClient.html">QXmppClient</a> *<a class="el" href="classQXmppClientExtension.html#a893a3e1acaee65bd1bbd781e4e387646">client</a>)</td></tr>
 <tr class="separator:a166f42a22447341abb26bd9c44c97590 inherit pro_methods_classQXmppClientExtension"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6daab3c506be17d1f8dc571d213dae23 inherit pro_methods_classQXmppClientExtension"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppClientExtension.html#a6daab3c506be17d1f8dc571d213dae23">onRegistered</a> (<a class="el" href="classQXmppClient.html">QXmppClient</a> *<a class="el" href="classQXmppClientExtension.html#a2476cb1a20963d15d45d39f24a0c1198">client</a>)</td></tr>
+<tr class="memitem:a6daab3c506be17d1f8dc571d213dae23 inherit pro_methods_classQXmppClientExtension"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppClientExtension.html#a6daab3c506be17d1f8dc571d213dae23">onRegistered</a> (<a class="el" href="classQXmppClient.html">QXmppClient</a> *<a class="el" href="classQXmppClientExtension.html#a893a3e1acaee65bd1bbd781e4e387646">client</a>)</td></tr>
 <tr class="separator:a6daab3c506be17d1f8dc571d213dae23 inherit pro_methods_classQXmppClientExtension"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6c8f2e1238405019c49a65ee9774dd23 inherit pro_methods_classQXmppClientExtension"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppClientExtension.html#a6c8f2e1238405019c49a65ee9774dd23">onUnregistered</a> (<a class="el" href="classQXmppClient.html">QXmppClient</a> *<a class="el" href="classQXmppClientExtension.html#a2476cb1a20963d15d45d39f24a0c1198">client</a>)</td></tr>
+<tr class="memitem:a6c8f2e1238405019c49a65ee9774dd23 inherit pro_methods_classQXmppClientExtension"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppClientExtension.html#a6c8f2e1238405019c49a65ee9774dd23">onUnregistered</a> (<a class="el" href="classQXmppClient.html">QXmppClient</a> *<a class="el" href="classQXmppClientExtension.html#a893a3e1acaee65bd1bbd781e4e387646">client</a>)</td></tr>
 <tr class="separator:a6c8f2e1238405019c49a65ee9774dd23 inherit pro_methods_classQXmppClientExtension"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a93b0da72a5437f933d633ba797e58d7c inherit pro_methods_classQXmppClientExtension"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppClientExtension.html#a93b0da72a5437f933d633ba797e58d7c">injectIq</a> (const QDomElement &amp;element, const std::optional&lt; <a class="el" href="classQXmppE2eeMetadata.html">QXmppE2eeMetadata</a> &gt; &amp;e2eeMetadata)</td></tr>
 <tr class="separator:a93b0da72a5437f933d633ba797e58d7c inherit pro_methods_classQXmppClientExtension"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -179,7 +200,7 @@ Additional Inherited Members</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >The <a class="el" href="classQXmppVCardManager.html" title="The QXmppVCardManager class gets/sets XMPP vCards. It is an implementation of XEP-0054: vcard-temp.">QXmppVCardManager</a> class gets/sets XMPP vCards. It is an implementation of <a href="https://xmpp.org/extensions/xep-0054.html">XEP-0054</a>: vcard-temp. </p>
-<dl class="section note"><dt>Note</dt><dd>Its object should not be created using its constructor. Instead <code><a class="el" href="classQXmppClient.html#aba54c2cb6b1f12305cd2db5795a88994" title="Returns the extension which can be cast into type T*, or 0 if there is no such extension.">QXmppClient::findExtension&lt;QXmppVCardManager&gt;()</a></code> should be used to get the instantiated object of this class.</dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Its object should not be created using its constructor. Instead <code><a class="el" href="classQXmppClient.html#a4dfee37254d3e33d54882afa16ae2548" title="Returns the extension which can be cast into type T*, or 0 if there is no such extension.">QXmppClient::findExtension&lt;QXmppVCardManager&gt;()</a></code> should be used to get the instantiated object of this class.</dd></dl>
 <p><b>Getting vCards of entries in Roster:</b><br  />
  It doesn't store vCards of the JIDs in the roster of connected user. Instead client has to request for a particular vCard using <a class="el" href="classQXmppVCardManager.html#abe8d67065ef2dbf7c7a8df7ffb129ba1">requestVCard()</a>. And connect to the signal <a class="el" href="classQXmppVCardManager.html#a6c67da960890760e54fec8f7c675af55">vCardReceived()</a> to get the requested vCard.</p>
 <p ><b>Getting vCard of the connected client:</b><br  />
@@ -211,6 +232,96 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p >This signal is emitted when the client's vCard is received after calling the <a class="el" href="classQXmppVCardManager.html#a3f049d6356f93f5f8fa81a1c30ea5ba9">requestClientVCard()</a> function. </p>
+
+</div>
+</div>
+<a id="aa3745fc36aefb7f1fada37ae333b5e14" name="aa3745fc36aefb7f1fada37ae333b5e14"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa3745fc36aefb7f1fada37ae333b5e14">&#9670;&nbsp;</a></span>fetchVCard()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classQXmppTask.html">QXmppTask</a>&lt; <a class="el" href="classQXmppVCardManager.html#a685fb5c27e06d3beb3595ff423d1dbaf">QXmppVCardManager::VCardIqResult</a> &gt; QXmppVCardManager::fetchVCard </td>
+          <td>(</td>
+          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramname"><em>bareJid</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Fetches the VCard of a bare JID.</p>
+<dl class="section since"><dt>Since</dt><dd><a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.8 </dd></dl>
+
+</div>
+</div>
+<a id="acd8de5d67a8e4f9b392c2dcd04c93df5" name="acd8de5d67a8e4f9b392c2dcd04c93df5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd8de5d67a8e4f9b392c2dcd04c93df5">&#9670;&nbsp;</a></span>onRegistered()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void QXmppVCardManager::onRegistered </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classQXmppClient.html">QXmppClient</a> *&#160;</td>
+          <td class="paramname"><em>client</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >Called after the extension has been added to a <a class="el" href="classQXmppClient.html" title="The QXmppClient class is the main class for using QXmpp.">QXmppClient</a>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">client</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Reimplemented from <a class="el" href="classQXmppClientExtension.html#a6daab3c506be17d1f8dc571d213dae23">QXmppClientExtension</a>.</p>
+
+</div>
+</div>
+<a id="a83c21740b249409da7111a96e4727294" name="a83c21740b249409da7111a96e4727294"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a83c21740b249409da7111a96e4727294">&#9670;&nbsp;</a></span>onUnregistered()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void QXmppVCardManager::onUnregistered </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classQXmppClient.html">QXmppClient</a> *&#160;</td>
+          <td class="paramname"><em>client</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >Called after the extension has been removed from a <a class="el" href="classQXmppClient.html" title="The QXmppClient class is the main class for using QXmpp.">QXmppClient</a>.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">client</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Reimplemented from <a class="el" href="classQXmppClientExtension.html#a6c8f2e1238405019c49a65ee9774dd23">QXmppClientExtension</a>.</p>
 
 </div>
 </div>
@@ -254,6 +365,26 @@ Additional Inherited Members</h2></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a25225725431456c6e63b832b5a8fa8eb" name="a25225725431456c6e63b832b5a8fa8eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25225725431456c6e63b832b5a8fa8eb">&#9670;&nbsp;</a></span>setVCard()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classQXmppTask.html">QXmppTask</a>&lt; <a class="el" href="classQXmppVCardManager.html#ac9cc152fcae08120553fde4f741d14d5">QXmppVCardManager::Result</a> &gt; QXmppVCardManager::setVCard </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classQXmppVCardIq.html">QXmppVCardIq</a> &amp;&#160;</td>
+          <td class="paramname"><em>vCard</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Sets the VCard of the currently connected account.</p>
+<dl class="section since"><dt>Since</dt><dd><a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.8 </dd></dl>
 
 </div>
 </div>

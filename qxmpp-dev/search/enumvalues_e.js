@@ -11,6 +11,6 @@ var searchData=
   ['outcast_8',['Outcast',['../classQXmppPubSubAffiliation.html#a87cbd228a4d3c451f4e21e260d46d842a652b608e8f25870f9cbe0a779980f687',1,'QXmppPubSubAffiliation']]],
   ['outgoingdirection_9',['OutgoingDirection',['../classQXmppCall.html#a429a4f8065136068b6d936cb2c803175a4959a53587ff3fe714b0c619dd8ba47d',1,'QXmppCall::OutgoingDirection()'],['../classQXmppTransferJob.html#a9c95a89a01357588f699e7d80c3de0b6adbfcc81360e31c1ded162fa244132bb7',1,'QXmppTransferJob::OutgoingDirection()']]],
   ['owner_10',['Owner',['../classQXmppPubSubAffiliation.html#a87cbd228a4d3c451f4e21e260d46d842ae47f343fbc6c5788a65649241ae61bdb',1,'QXmppPubSubAffiliation::Owner()'],['../classQXmppMixConfigItem.html#a0e03bdcc235f9e47f3d91ade4d265f1dab6f4a2ec6356bbd56d49f2096bf9d3d3',1,'QXmppMixConfigItem::Owner()']]],
-  ['ox_11',['Ox',['../namespaceQXmpp.html#adbe84fa39564cc52d80d015448a56dd6a4051b83a948e2a334e5b75f07557b77a',1,'QXmpp']]],
-  ['ox_12',['OX',['../namespaceQXmpp.html#adbe84fa39564cc52d80d015448a56dd6a6ae0c1c63f5527cb050e942a38f6c726',1,'QXmpp']]]
+  ['ox_11',['OX',['../namespaceQXmpp.html#adbe84fa39564cc52d80d015448a56dd6a6ae0c1c63f5527cb050e942a38f6c726',1,'QXmpp']]],
+  ['ox_12',['Ox',['../namespaceQXmpp.html#adbe84fa39564cc52d80d015448a56dd6a4051b83a948e2a334e5b75f07557b77a',1,'QXmpp']]]
 ];
