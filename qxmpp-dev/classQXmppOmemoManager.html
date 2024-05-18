@@ -900,7 +900,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>updateCounter</b> (co
 <p >ATTENTION: This should only be called if there is a certain reason for it since it deletes the data for this device and for other own devices from the server.</p>
 <p >Call <code><a class="el" href="classQXmppOmemoManager.html#a2ae362ec4344a90ceb0b369200fe6f3e">resetOwnDevice()</a></code> if you only want to delete the OMEMO data for this device.</p>
 <p >The user must be logged in while calling this.</p>
-<p >Call <code><a class="el" href="classQXmppOmemoManager.html#a5ad05f9fd9e40b2bcdb9611b4982f680">setUp()</a></code> once this method is finished if you want to set up everything again. Existing sessions are reset, which might lead to undecryptable incoming stanzas until everything is set up again. </p>
+<p >Call <code><a class="el" href="classQXmppOmemoManager.html#a5ad05f9fd9e40b2bcdb9611b4982f680">setUp()</a></code> once this method is finished if you want to set up everything again. Existing sessions are reset, which might lead to undecryptable incoming stanzas until everything is set up again.</p>
+<dl class="section return"><dt>Returns</dt><dd>whether the action was successful </dd></dl>
 
 </div>
 </div>
@@ -922,7 +923,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>updateCounter</b> (co
 <p >ATTENTION: This should only be called when an account is removed locally or if there are unrecoverable problems with the OMEMO setup of this device.</p>
 <p >The data on the server for other own devices is not removed. Call <code><a class="el" href="classQXmppOmemoManager.html#a9d57d9ebf26874f8ccb303ae787355b6">resetAll()</a></code> for that purpose.</p>
 <p >The user must be logged in while calling this.</p>
-<p >Call <code><a class="el" href="classQXmppOmemoManager.html#a5ad05f9fd9e40b2bcdb9611b4982f680">setUp()</a></code> once this method is finished if you want to set up everything again for this device. Existing sessions are reset, which might lead to undecryptable incoming stanzas until everything is set up again. </p>
+<p >Call <code><a class="el" href="classQXmppOmemoManager.html#a5ad05f9fd9e40b2bcdb9611b4982f680">setUp()</a></code> once this method is finished if you want to set up everything again for this device. Existing sessions are reset, which might lead to undecryptable incoming stanzas until everything is set up again.</p>
+<dl class="section return"><dt>Returns</dt><dd>whether the action was successful </dd></dl>
 
 </div>
 </div>
