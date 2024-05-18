@@ -128,7 +128,7 @@ var searchData=
   ['qxmpppromise_3c_20optionsresult_20_3e_125',['QXmppPromise&lt; OptionsResult &gt;',['../classQXmppPromise.html',1,'']]],
   ['qxmpppromise_3c_20qxmpp_3a_3asendresult_20_3e_126',['QXmppPromise&lt; QXmpp::SendResult &gt;',['../classQXmppPromise.html',1,'']]],
   ['qxmpppromise_3c_20qxmppmammanager_3a_3aretrieveresult_20_3e_127',['QXmppPromise&lt; QXmppMamManager::RetrieveResult &gt;',['../classQXmppPromise.html',1,'']]],
-  ['qxmpppromise_3c_20result_20_3e_128',['QXmppPromise&lt; Result &gt;',['../classQXmppPromise.html',1,'']]],
+  ['qxmpppromise_3c_20void_20_3e_128',['QXmppPromise&lt; void &gt;',['../classQXmppPromise.html',1,'']]],
   ['qxmpppubsubaffiliation_129',['QXmppPubSubAffiliation',['../classQXmppPubSubAffiliation.html',1,'']]],
   ['qxmpppubsubbaseitem_130',['QXmppPubSubBaseItem',['../classQXmppPubSubBaseItem.html',1,'']]],
   ['qxmpppubsubevent_131',['QXmppPubSubEvent',['../classQXmppPubSubEvent.html',1,'']]],

@@ -20,8 +20,8 @@ var searchData=
   ['jmielementtypetostring_17',['jmiElementTypeToString',['../classQXmppJingleMessageInitiationElement.html#ab87d5562b0aa423c513abe6fcdc7ebb8',1,'QXmppJingleMessageInitiationElement']]],
   ['jobfinished_18',['jobFinished',['../classQXmppTransferManager.html#af2dcae40840d04530e5aef97a6586188',1,'QXmppTransferManager']]],
   ['jobstarted_19',['jobStarted',['../classQXmppTransferManager.html#a2a19e77348fe9df618d7e289bbe84f21',1,'QXmppTransferManager']]],
-  ['join_20',['Join',['../classQXmppMixIq.html#a3c4a45c33d47a53738331e727f275957a7cc96909d8069961cca8b8106494c329',1,'QXmppMixIq']]],
-  ['join_21',['join',['../classQXmppMucRoom.html#afd01483eb367ecfa4f1fc2828919b4c1',1,'QXmppMucRoom']]],
+  ['join_20',['join',['../classQXmppMucRoom.html#afd01483eb367ecfa4f1fc2828919b4c1',1,'QXmppMucRoom']]],
+  ['join_21',['Join',['../classQXmppMixIq.html#a3c4a45c33d47a53738331e727f275957a7cc96909d8069961cca8b8106494c329',1,'QXmppMixIq']]],
   ['joinchannel_22',['joinChannel',['../classQXmppMixManager.html#a57f880920940f81f8c465a8ed4c8011c',1,'QXmppMixManager::joinChannel(const QString &amp;channelJid, const QString &amp;nickname={}, QXmppMixConfigItem::Nodes nodes=~QXmppMixConfigItem::Nodes())'],['../classQXmppMixManager.html#ab4b2708f837d7348b3349447ae274ed8',1,'QXmppMixManager::joinChannel(const QXmppMixInvitation &amp;invitation, const QString &amp;nickname={}, QXmppMixConfigItem::Nodes nodes=~QXmppMixConfigItem::Nodes())']]],
   ['joined_23',['joined',['../classQXmppMucRoom.html#ab01ece57f344187b5fca066051fedb81',1,'QXmppMucRoom']]],
   ['joiningresult_24',['JoiningResult',['../classQXmppMixManager.html#a286f0d4de6d8dda65cb101bf80b8e088',1,'QXmppMixManager']]]
