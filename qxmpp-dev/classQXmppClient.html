@@ -305,6 +305,9 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>QXmppClientExtension
 <tr class="memitem:a483d8a3be3f9c9a100e253c5d0e4dbaa"><td class="memItemLeft" align="right" valign="top"><a id="a483d8a3be3f9c9a100e253c5d0e4dbaa" name="a483d8a3be3f9c9a100e253c5d0e4dbaa"></a>
 class&#160;</td><td class="memItemRight" valign="bottom"><b>QXmppInternalClientExtension</b></td></tr>
 <tr class="separator:a483d8a3be3f9c9a100e253c5d0e4dbaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af4055a5b7e9e04f9607b31a94aba9445"><td class="memItemLeft" align="right" valign="top"><a id="af4055a5b7e9e04f9607b31a94aba9445" name="af4055a5b7e9e04f9607b31a94aba9445"></a>
+class&#160;</td><td class="memItemRight" valign="bottom"><b>QXmppCarbonManagerV2</b></td></tr>
+<tr class="separator:af4055a5b7e9e04f9607b31a94aba9445"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afef98f68d34033cefe0371fcfcc8f8e7"><td class="memItemLeft" align="right" valign="top"><a id="afef98f68d34033cefe0371fcfcc8f8e7" name="afef98f68d34033cefe0371fcfcc8f8e7"></a>
 class&#160;</td><td class="memItemRight" valign="bottom"><b>TestClient</b></td></tr>
 <tr class="separator:afef98f68d34033cefe0371fcfcc8f8e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -909,8 +912,7 @@ template&lt;typename T &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p >Returns true if the current client state is "active", false if it is "inactive". See <a href="https://xmpp.org/extensions/xep-0352.html">XEP-0352</a>: Client State Indication for details.</p>
-<p >On connect this is always reset to true.</p>
+<p >Returns true if the current client state is "active", false if it is "inactive". See <a href="https://xmpp.org/extensions/xep-0352.html">XEP-0352: Client State Indication</a> for details.</p>
 <dl class="section since"><dt>Since</dt><dd><a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.0 </dd></dl>
 
 </div>
@@ -1311,8 +1313,8 @@ template&lt;typename T &gt; </div>
         </tr>
       </table>
 </div><div class="memdoc">
-<p >Sets the client state as described in <a href="https://xmpp.org/extensions/xep-0352.html">XEP-0352</a>: Client State Indication.</p>
-<p >On connect this is always reset to true.</p>
+<p >Sets the client state as described in <a href="https://xmpp.org/extensions/xep-0352.html">XEP-0352: Client State Indication</a>.</p>
+<p >Since <a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.8, the state is restored across reconnects. <a class="el" href="namespaceQXmpp.html">QXmpp</a> will re-send the state of 'inactive' on connection if that was set before. Stream resumptions are also handled.</p>
 <dl class="section since"><dt>Since</dt><dd><a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.0 </dd></dl>
 
 </div>
