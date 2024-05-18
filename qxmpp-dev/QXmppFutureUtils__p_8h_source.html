@@ -215,11 +215,11 @@ $(function() {
 <div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>                              iq.parse(element);</div>
 <div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>                              <span class="keywordflow">return</span> convert(std::move(iq));</div>
 <div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>                          },</div>
-<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>                          [](<a class="code hl_struct" href="structQXmppError.html">QXmppError</a> error) -&gt; Result {</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>                          [](<a class="code hl_struct" href="structQXmppError.html">QXmppError</a> &amp;&amp;error) -&gt; Result {</div>
 <div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>                              <span class="keywordflow">return</span> error;</div>
 <div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>                          },</div>
 <div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>                      },</div>
-<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>                      sendResult);</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>                      std::move(sendResult));</div>
 <div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>}</div>
 <div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span> </div>
 <div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> IqType, <span class="keyword">typename</span> Result, <span class="keyword">typename</span> Input&gt;</div>
