@@ -9,5 +9,6 @@ var searchData=
   ['streamerror_6',['StreamError',['../namespaceQXmpp.html#a28f2266918f7f3959f8b3abad534d967',1,'QXmpp']]],
   ['streammanagementstate_7',['StreamManagementState',['../classQXmppClient.html#aab5506ec0769f208e1ccd5d23c6aaea8',1,'QXmppClient']]],
   ['streamsecuritymode_8',['StreamSecurityMode',['../classQXmppConfiguration.html#a7c6e193a68beb792038c066cfc574a18',1,'QXmppConfiguration']]],
-  ['subscriptiontype_9',['SubscriptionType',['../classQXmppRosterIq_1_1Item.html#a0133cf9262cec7e299c4db7c247c5514',1,'QXmppRosterIq::Item']]]
+  ['subscriptiontype_9',['SubscriptionType',['../classQXmppRosterIq_1_1Item.html#a0133cf9262cec7e299c4db7c247c5514',1,'QXmppRosterIq::Item']]],
+  ['support_10',['Support',['../classQXmppMixManager.html#a6f86fc70a3919811935481d3936d83c5',1,'QXmppMixManager']]]
 ];

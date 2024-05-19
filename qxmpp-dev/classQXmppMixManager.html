@@ -106,6 +106,11 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
+<tr class="memitem:a6f86fc70a3919811935481d3936d83c5"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppMixManager.html#a6f86fc70a3919811935481d3936d83c5">Support</a> { <a class="el" href="classQXmppMixManager.html#a6f86fc70a3919811935481d3936d83c5a88183b946cc5f0e8c96b2e66e1c74a7e">Unknown</a>
+, <a class="el" href="classQXmppMixManager.html#a6f86fc70a3919811935481d3936d83c5ab4080bdf74febf04d578ff105cce9d3f">Unsupported</a>
+, <a class="el" href="classQXmppMixManager.html#a6f86fc70a3919811935481d3936d83c5aeaa4dc5078017a5c5bebf383ab6f5124">Supported</a>
+ }</td></tr>
+<tr class="separator:a6f86fc70a3919811935481d3936d83c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a862a9ce0aab7d5ca4041afe8c49ca145"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppMixManager.html#a862a9ce0aab7d5ca4041afe8c49ca145">Jid</a> = QString</td></tr>
 <tr class="separator:a862a9ce0aab7d5ca4041afe8c49ca145"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae104c6554af6e6e2f6b9559a2e221476"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppMixManager.html#ae104c6554af6e6e2f6b9559a2e221476">ChannelJid</a> = QString</td></tr>
@@ -141,14 +146,14 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a525f1ce92862ab7799eee0429f79c3a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1ff5be20db0c225e19aa6446da266d58"><td class="memItemLeft" align="right" valign="top">QStringList&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppMixManager.html#a1ff5be20db0c225e19aa6446da266d58">discoveryFeatures</a> () const override</td></tr>
 <tr class="separator:a1ff5be20db0c225e19aa6446da266d58"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac3b8d157630af4b89a07738633c70aa8"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppMixManager.html#ac3b8d157630af4b89a07738633c70aa8">supportedByServer</a> () const</td></tr>
-<tr class="separator:ac3b8d157630af4b89a07738633c70aa8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a19875ec74fbeb8a2ad9ba83923ea6e37"><td class="memItemLeft" align="right" valign="top">Q_SIGNAL void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppMixManager.html#a19875ec74fbeb8a2ad9ba83923ea6e37">supportedByServerChanged</a> ()</td></tr>
-<tr class="separator:a19875ec74fbeb8a2ad9ba83923ea6e37"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae9a7ea4e63a3402222f3375bcd120e47"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppMixManager.html#ae9a7ea4e63a3402222f3375bcd120e47">archivingSupportedByServer</a> () const</td></tr>
-<tr class="separator:ae9a7ea4e63a3402222f3375bcd120e47"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a780ef62d1685b57b7c616a2b71904ea6"><td class="memItemLeft" align="right" valign="top">Q_SIGNAL void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppMixManager.html#a780ef62d1685b57b7c616a2b71904ea6">archivingSupportedByServerChanged</a> ()</td></tr>
-<tr class="separator:a780ef62d1685b57b7c616a2b71904ea6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7135d1c6953c98a7d695949b55d2b15c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classQXmppMixManager.html#a6f86fc70a3919811935481d3936d83c5">Support</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppMixManager.html#a7135d1c6953c98a7d695949b55d2b15c">participantSupport</a> () const</td></tr>
+<tr class="separator:a7135d1c6953c98a7d695949b55d2b15c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1d05cb2b30ac3f672b62313a5366385f"><td class="memItemLeft" align="right" valign="top">Q_SIGNAL void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppMixManager.html#a1d05cb2b30ac3f672b62313a5366385f">participantSupportChanged</a> ()</td></tr>
+<tr class="separator:a1d05cb2b30ac3f672b62313a5366385f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a640ffeeebce31b9735b99384f22017d5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classQXmppMixManager.html#a6f86fc70a3919811935481d3936d83c5">Support</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppMixManager.html#a640ffeeebce31b9735b99384f22017d5">messageArchivingSupport</a> () const</td></tr>
+<tr class="separator:a640ffeeebce31b9735b99384f22017d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf844e06c3c73e59183365e38bf4fa6a"><td class="memItemLeft" align="right" valign="top">Q_SIGNAL void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppMixManager.html#adf844e06c3c73e59183365e38bf4fa6a">messageArchivingSupportChanged</a> ()</td></tr>
+<tr class="separator:adf844e06c3c73e59183365e38bf4fa6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a460950ec3fd66a9ce26154cc18a08f7c"><td class="memItemLeft" align="right" valign="top">QList&lt; <a class="el" href="structQXmppMixManager_1_1Service.html">Service</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppMixManager.html#a460950ec3fd66a9ce26154cc18a08f7c">services</a> () const</td></tr>
 <tr class="separator:a460950ec3fd66a9ce26154cc18a08f7c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5569153aa13c4ce3d43e75594ef9dbb8"><td class="memItemLeft" align="right" valign="top">Q_SIGNAL void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppMixManager.html#a5569153aa13c4ce3d43e75594ef9dbb8">servicesChanged</a> ()</td></tr>
@@ -245,10 +250,10 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="properties" name="properties"></a>
 Properties</h2></td></tr>
-<tr class="memitem:a177b28cb4fbe772f0a7f56c5bbb4cafb"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppMixManager.html#a177b28cb4fbe772f0a7f56c5bbb4cafb">supportedByServer</a></td></tr>
-<tr class="separator:a177b28cb4fbe772f0a7f56c5bbb4cafb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a667974d8d245cdb17f4b3663c9a6170b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppMixManager.html#a667974d8d245cdb17f4b3663c9a6170b">archivingSupportedByServer</a></td></tr>
-<tr class="separator:a667974d8d245cdb17f4b3663c9a6170b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99d7e92fa2297b2bbae62665235800f1"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classQXmppMixManager.html#a6f86fc70a3919811935481d3936d83c5">Support</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppMixManager.html#a99d7e92fa2297b2bbae62665235800f1">participantSupport</a></td></tr>
+<tr class="separator:a99d7e92fa2297b2bbae62665235800f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae85c772ebb21973e2ed0bfad56c4e954"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classQXmppMixManager.html#a6f86fc70a3919811935481d3936d83c5">Support</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppMixManager.html#ae85c772ebb21973e2ed0bfad56c4e954">messageArchivingSupport</a></td></tr>
+<tr class="separator:ae85c772ebb21973e2ed0bfad56c4e954"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaf5df8c5c92850c7688655125aa6d4e7"><td class="memItemLeft" align="right" valign="top">QList&lt; <a class="el" href="structQXmppMixManager_1_1Service.html">Service</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppMixManager.html#aaf5df8c5c92850c7688655125aa6d4e7">services</a></td></tr>
 <tr class="separator:aaf5df8c5c92850c7688655125aa6d4e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -374,7 +379,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>updateCounter</b> (co
 <div class="line">        <span class="comment">// Create and send the invitation.</span></div>
 <div class="line">    }</div>
 <div class="line">});</div>
-<div class="ttc" id="aclassQXmppMixManager_html_a1aaee53ada1515316b9aa7baee0fe92e"><div class="ttname"><a href="classQXmppMixManager.html#a1aaee53ada1515316b9aa7baee0fe92e">QXmppMixManager::InvitationResult</a></div><div class="ttdeci">std::variant&lt; QXmppMixInvitation, QXmppError &gt; InvitationResult</div><div class="ttdef"><b>Definition:</b> QXmppMixManager.h:59</div></div>
+<div class="ttc" id="aclassQXmppMixManager_html_a1aaee53ada1515316b9aa7baee0fe92e"><div class="ttname"><a href="classQXmppMixManager.html#a1aaee53ada1515316b9aa7baee0fe92e">QXmppMixManager::InvitationResult</a></div><div class="ttdeci">std::variant&lt; QXmppMixInvitation, QXmppError &gt; InvitationResult</div><div class="ttdef"><b>Definition:</b> QXmppMixManager.h:65</div></div>
 </div><!-- fragment --><dl class="section since"><dt>Since</dt><dd><a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.7 </dd></dl>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="ae104c6554af6e6e2f6b9559a2e221476" name="ae104c6554af6e6e2f6b9559a2e221476"></a>
@@ -588,6 +593,39 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>updateCounter</b> (co
 
 </div>
 </div>
+<h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="a6f86fc70a3919811935481d3936d83c5" name="a6f86fc70a3919811935481d3936d83c5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6f86fc70a3919811935481d3936d83c5">&#9670;&nbsp;</a></span>Support</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">enum class <a class="el" href="classQXmppMixManager.html#a6f86fc70a3919811935481d3936d83c5">QXmppMixManager::Support</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >Server support for a feature. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a6f86fc70a3919811935481d3936d83c5a88183b946cc5f0e8c96b2e66e1c74a7e" name="a6f86fc70a3919811935481d3936d83c5a88183b946cc5f0e8c96b2e66e1c74a7e"></a>Unknown&#160;</td><td class="fielddoc"><p >Whether the server supports the feature is not known.</p>
+<p >That means, there is no corresponding information from the server (yet). That is, for example, the case if the client is not connected or connected but has not received the information yet. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6f86fc70a3919811935481d3936d83c5ab4080bdf74febf04d578ff105cce9d3f" name="a6f86fc70a3919811935481d3936d83c5ab4080bdf74febf04d578ff105cce9d3f"></a>Unsupported&#160;</td><td class="fielddoc"><p >The server does not support the feature. </p>
+</td></tr>
+<tr><td class="fieldname"><a id="a6f86fc70a3919811935481d3936d83c5aeaa4dc5078017a5c5bebf383ab6f5124" name="a6f86fc70a3919811935481d3936d83c5aeaa4dc5078017a5c5bebf383ab6f5124"></a>Supported&#160;</td><td class="fielddoc"><p >The server supports the feature. </p>
+</td></tr>
+</table>
+
+</div>
+</div>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a525f1ce92862ab7799eee0429f79c3a2" name="a525f1ce92862ab7799eee0429f79c3a2"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a525f1ce92862ab7799eee0429f79c3a2">&#9670;&nbsp;</a></span>QXmppMixManager()</h2>
@@ -722,43 +760,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>updateCounter</b> (co
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>the result of the action </dd></dl>
-
-</div>
-</div>
-<a id="ae9a7ea4e63a3402222f3375bcd120e47" name="ae9a7ea4e63a3402222f3375bcd120e47"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae9a7ea4e63a3402222f3375bcd120e47">&#9670;&nbsp;</a></span>archivingSupportedByServer()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool QXmppMixManager::archivingSupportedByServer </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Returns whether the own server supports archiving messages via <a href="https://xmpp.org/extensions/xep-0313.html">XEP-0313: Message Archive Management</a> of MIX channels the user participates in.</p>
-<dl class="section return"><dt>Returns</dt><dd>whether MIX messages are archived </dd></dl>
-
-</div>
-</div>
-<a id="a780ef62d1685b57b7c616a2b71904ea6" name="a780ef62d1685b57b7c616a2b71904ea6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a780ef62d1685b57b7c616a2b71904ea6">&#9670;&nbsp;</a></span>archivingSupportedByServerChanged()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">QXmppMixManager::archivingSupportedByServerChanged </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Emitted when the server enabled or disabled supporting archiving for MIX. </p>
 
 </div>
 </div>
@@ -1318,6 +1319,43 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>updateCounter</b> (co
 
 </div>
 </div>
+<a id="a640ffeeebce31b9735b99384f22017d5" name="a640ffeeebce31b9735b99384f22017d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a640ffeeebce31b9735b99384f22017d5">&#9670;&nbsp;</a></span>messageArchivingSupport()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classQXmppMixManager.html#a6f86fc70a3919811935481d3936d83c5">QXmppMixManager::Support</a> QXmppMixManager::messageArchivingSupport </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Returns the server's support for archiving messages via <a href="https://xmpp.org/extensions/xep-0313.html">XEP-0313: Message Archive Management</a> of MIX channels the user participates in as specified in <a href="https://xmpp.org/extensions/xep-0405.html">XEP-0405: Mediated Information eXchange (MIX): Participant Server Requirements</a>.</p>
+<dl class="section return"><dt>Returns</dt><dd>the server support for archiving MIX messages </dd></dl>
+
+</div>
+</div>
+<a id="adf844e06c3c73e59183365e38bf4fa6a" name="adf844e06c3c73e59183365e38bf4fa6a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf844e06c3c73e59183365e38bf4fa6a">&#9670;&nbsp;</a></span>messageArchivingSupportChanged()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QXmppMixManager::messageArchivingSupportChanged </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Emitted when the server's support for archiving MIX messages changed. </p>
+
+</div>
+</div>
 <a id="a38a0d77641ca973442c594936be0c887" name="a38a0d77641ca973442c594936be0c887"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a38a0d77641ca973442c594936be0c887">&#9670;&nbsp;</a></span>participantLeft()</h2>
 
@@ -1387,6 +1425,44 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>updateCounter</b> (co
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a7135d1c6953c98a7d695949b55d2b15c" name="a7135d1c6953c98a7d695949b55d2b15c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7135d1c6953c98a7d695949b55d2b15c">&#9670;&nbsp;</a></span>participantSupport()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classQXmppMixManager.html#a6f86fc70a3919811935481d3936d83c5">QXmppMixManager::Support</a> QXmppMixManager::participantSupport </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Returns the server's support for MIX channel participants as specified in <a href="https://xmpp.org/extensions/xep-0405.html">XEP-0405: Mediated Information eXchange (MIX): Participant Server Requirements</a>.</p>
+<p >If the server supports it, the server interacts between a client and a MIX channel that the user participates in. E.g., the server adds the MIX channel to the user's roster after joining it.</p>
+<dl class="section return"><dt>Returns</dt><dd>the server support for MIX channel participants </dd></dl>
+
+</div>
+</div>
+<a id="a1d05cb2b30ac3f672b62313a5366385f" name="a1d05cb2b30ac3f672b62313a5366385f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1d05cb2b30ac3f672b62313a5366385f">&#9670;&nbsp;</a></span>participantSupportChanged()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QXmppMixManager::participantSupportChanged </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Emitted when the server's support for MIX channel participants changed. </p>
 
 </div>
 </div>
@@ -1655,44 +1731,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>updateCounter</b> (co
 
 </div>
 </div>
-<a id="ac3b8d157630af4b89a07738633c70aa8" name="ac3b8d157630af4b89a07738633c70aa8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac3b8d157630af4b89a07738633c70aa8">&#9670;&nbsp;</a></span>supportedByServer()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool QXmppMixManager::supportedByServer </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Returns whether the own server supports MIX clients.</p>
-<p >In that case, the server interacts between a client and a MIX service. E.g., the server adds a MIX service to the client's roster after joining it and archives the messages sent through the channel while the client is offline.</p>
-<dl class="section return"><dt>Returns</dt><dd>whether MIX clients are supported </dd></dl>
-
-</div>
-</div>
-<a id="a19875ec74fbeb8a2ad9ba83923ea6e37" name="a19875ec74fbeb8a2ad9ba83923ea6e37"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a19875ec74fbeb8a2ad9ba83923ea6e37">&#9670;&nbsp;</a></span>supportedByServerChanged()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">QXmppMixManager::supportedByServerChanged </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Emitted when the server enabled or disabled supporting MIX clients. </p>
-
-</div>
-</div>
 <a id="af5561255de39fa63e07f16d293a66978" name="af5561255de39fa63e07f16d293a66978"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af5561255de39fa63e07f16d293a66978">&#9670;&nbsp;</a></span>unbanAllJids()</h2>
 
@@ -1915,8 +1953,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>updateCounter</b> (co
 </div>
 </div>
 <h2 class="groupheader">Property Documentation</h2>
-<a id="a667974d8d245cdb17f4b3663c9a6170b" name="a667974d8d245cdb17f4b3663c9a6170b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a667974d8d245cdb17f4b3663c9a6170b">&#9670;&nbsp;</a></span>archivingSupportedByServer</h2>
+<a id="ae85c772ebb21973e2ed0bfad56c4e954" name="ae85c772ebb21973e2ed0bfad56c4e954"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae85c772ebb21973e2ed0bfad56c4e954">&#9670;&nbsp;</a></span>messageArchivingSupport</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1925,7 +1963,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>updateCounter</b> (co
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">QXmppMixManager::archivingSupportedByServer</td>
+          <td class="memname">QXmppMixManager::messageArchivingSupport</td>
         </tr>
       </table>
   </td>
@@ -1934,7 +1972,30 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>updateCounter</b> (co
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classQXmppMixManager.html#a667974d8d245cdb17f4b3663c9a6170b">QXmppMixManager::archivingSupportedByServer()</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classQXmppMixManager.html#ae85c772ebb21973e2ed0bfad56c4e954">QXmppMixManager::messageArchivingSupport()</a> </dd></dl>
+
+</div>
+</div>
+<a id="a99d7e92fa2297b2bbae62665235800f1" name="a99d7e92fa2297b2bbae62665235800f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a99d7e92fa2297b2bbae62665235800f1">&#9670;&nbsp;</a></span>participantSupport</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QXmppMixManager::participantSupport</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="section see"><dt>See also</dt><dd><a class="el" href="classQXmppMixManager.html#a99d7e92fa2297b2bbae62665235800f1">QXmppMixManager::participantSupport()</a> </dd></dl>
 
 </div>
 </div>
@@ -1958,29 +2019,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>updateCounter</b> (co
 </table>
 </div><div class="memdoc">
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="classQXmppMixManager.html#aaf5df8c5c92850c7688655125aa6d4e7">QXmppMixManager::services()</a> </dd></dl>
-
-</div>
-</div>
-<a id="a177b28cb4fbe772f0a7f56c5bbb4cafb" name="a177b28cb4fbe772f0a7f56c5bbb4cafb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a177b28cb4fbe772f0a7f56c5bbb4cafb">&#9670;&nbsp;</a></span>supportedByServer</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">QXmppMixManager::supportedByServer</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">read</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classQXmppMixManager.html#a177b28cb4fbe772f0a7f56c5bbb4cafb">QXmppMixManager::supportedByServer()</a> </dd></dl>
 
 </div>
 </div>

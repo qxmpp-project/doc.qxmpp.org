@@ -20,5 +20,6 @@ var searchData=
   ['submit_17',['Submit',['../classQXmppDataForm.html#adab12c436b8c450e2b4f59da1aecadeeae6ab517a99b8c387056bd5d341de4082',1,'QXmppDataForm']]],
   ['subscribe_18',['Subscribe',['../classQXmppPresence.html#a47ab8dd08436f9d7c90d2990678b5a6da27a106dd1fc50ecdba0ad9b95307ce62',1,'QXmppPresence']]],
   ['subscribed_19',['Subscribed',['../classQXmppPresence.html#a47ab8dd08436f9d7c90d2990678b5a6da59304e64fb15ce69c9395f6d217dcb6b',1,'QXmppPresence::Subscribed()'],['../classQXmppPubSubSubscription.html#aad82576dfb8c85c7b658958c65727cf9a223faf63ce143e4aee4863d9cc1ddba9',1,'QXmppPubSubSubscription::Subscribed()']]],
-  ['subscriptionrequired_20',['SubscriptionRequired',['../classQXmppStanza_1_1Error.html#abcf1cbbe7b15ec82f3ac34723b604852acf4f5e2e8bbdb4268fa3d27a031ea4e3',1,'QXmppStanza::Error']]]
+  ['subscriptionrequired_20',['SubscriptionRequired',['../classQXmppStanza_1_1Error.html#abcf1cbbe7b15ec82f3ac34723b604852acf4f5e2e8bbdb4268fa3d27a031ea4e3',1,'QXmppStanza::Error']]],
+  ['supported_21',['Supported',['../classQXmppMixManager.html#a6f86fc70a3919811935481d3936d83c5aeaa4dc5078017a5c5bebf383ab6f5124',1,'QXmppMixManager']]]
 ];
