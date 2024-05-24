@@ -687,7 +687,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>updateCounter</b> (co
         </tr>
       </table>
 </div><div class="memdoc">
-<p >Returns the IDs of keys mapped to their trust levels for specific key owners.</p>
+<p >Returns the IDs of keys mapped to their trust levels for specific key owners except for the own key.</p>
 <p >If no trust levels are passed, all keys for jids are returned.</p>
 <p >This should be called in order to get the stored keys which can be more than the stored devices because of trust decisions made without a published or received device.</p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -697,7 +697,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>updateCounter</b> (co
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>the key IDs mapped to their trust levels for specific key owners </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>the key IDs mapped to their trust levels for specific key owners except for the own key </dd></dl>
 
 </div>
 </div>
@@ -716,7 +716,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>updateCounter</b> (co
         </tr>
       </table>
 </div><div class="memdoc">
-<p >Returns the JIDs of all key owners mapped to the IDs of their keys with specific trust levels.</p>
+<p >Returns the JIDs of all key owners mapped to the IDs of their keys with specific trust levels except for the own key.</p>
 <p >If no trust levels are passed, all keys are returned.</p>
 <p >This should be called in order to get all stored keys which can be more than the stored devices because of trust decisions made without a published or received device.</p>
 <dl class="params"><dt>Parameters</dt><dd>
@@ -725,7 +725,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>updateCounter</b> (co
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>the key owner JIDs mapped to their keys with specific trust levels </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>the key owner JIDs mapped to their keys with specific trust levels except for the own key </dd></dl>
 
 </div>
 </div>
