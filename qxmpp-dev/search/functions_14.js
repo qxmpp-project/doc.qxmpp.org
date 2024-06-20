@@ -23,10 +23,11 @@ var searchData=
   ['url_20',['url',['../classQXmppVCardIq.html#a86115fa4f4dd703e3d5f12a14b01935b',1,'QXmppVCardIq::url()'],['../classQXmppOutOfBandUrl.html#ae29785fb0c132bf897af0f6e1b586437',1,'QXmppOutOfBandUrl::url()'],['../classQXmppHttpFileSource.html#a4f832feea36072b4b6bb7886f7562dc3',1,'QXmppHttpFileSource::url()'],['../classQXmppBookmarkUrl.html#adbfb202539225d57839b566acc79ebe2',1,'QXmppBookmarkUrl::url()']]],
   ['urls_21',['urls',['../classQXmppBookmarkSet.html#ab56aef5b2e13abd597374f8eb91e27df',1,'QXmppBookmarkSet']]],
   ['usage_22',['usage',['../classQXmppTrustMessageElement.html#a339610fb224511aeb61fd929ab731ab7',1,'QXmppTrustMessageElement']]],
-  ['usenonsaslauthentication_23',['useNonSASLAuthentication',['../classQXmppConfiguration.html#a9fba501e792288605ff7189ede887534',1,'QXmppConfiguration']]],
-  ['user_24',['user',['../classQXmppConfiguration.html#a66bde580f9525a5da6e133197b490d3c',1,'QXmppConfiguration']]],
-  ['username_25',['username',['../classQXmppExternalService.html#a687c011d9ff5ad9f9653052116138976',1,'QXmppExternalService::username()'],['../classQXmppNonSASLAuthIq.html#ae62c37b6f40e5d11220d616069b77f1e',1,'QXmppNonSASLAuthIq::username()'],['../classQXmppRegisterIq.html#a10d44cb4316a1b49d1dc9e5c570972d1',1,'QXmppRegisterIq::username()'],['../classQXmppPasswordRequest.html#a7224887f9c13971c96b8e6ae73fd0a24',1,'QXmppPasswordRequest::username()']]],
-  ['usesasl2authentication_26',['useSasl2Authentication',['../classQXmppConfiguration.html#a3d78dc14c0193ac2cecf3961a6af2dc6',1,'QXmppConfiguration']]],
-  ['usesaslauthentication_27',['useSASLAuthentication',['../classQXmppConfiguration.html#a1f5cc8a3019cfed63e85ac7087a53603',1,'QXmppConfiguration']]],
-  ['utc_28',['utc',['../classQXmppEntityTimeIq.html#a6a2c7da5bd7663523ab6cb080669b74f',1,'QXmppEntityTimeIq']]]
+  ['usefasttokenauthentication_23',['useFastTokenAuthentication',['../classQXmppConfiguration.html#a98332104886b0d7feaa5da0b6313466e',1,'QXmppConfiguration']]],
+  ['usenonsaslauthentication_24',['useNonSASLAuthentication',['../classQXmppConfiguration.html#a9fba501e792288605ff7189ede887534',1,'QXmppConfiguration']]],
+  ['user_25',['user',['../classQXmppConfiguration.html#a66bde580f9525a5da6e133197b490d3c',1,'QXmppConfiguration']]],
+  ['username_26',['username',['../classQXmppExternalService.html#a687c011d9ff5ad9f9653052116138976',1,'QXmppExternalService::username()'],['../classQXmppNonSASLAuthIq.html#ae62c37b6f40e5d11220d616069b77f1e',1,'QXmppNonSASLAuthIq::username()'],['../classQXmppRegisterIq.html#a10d44cb4316a1b49d1dc9e5c570972d1',1,'QXmppRegisterIq::username()'],['../classQXmppPasswordRequest.html#a7224887f9c13971c96b8e6ae73fd0a24',1,'QXmppPasswordRequest::username()']]],
+  ['usesasl2authentication_27',['useSasl2Authentication',['../classQXmppConfiguration.html#a3d78dc14c0193ac2cecf3961a6af2dc6',1,'QXmppConfiguration']]],
+  ['usesaslauthentication_28',['useSASLAuthentication',['../classQXmppConfiguration.html#a1f5cc8a3019cfed63e85ac7087a53603',1,'QXmppConfiguration']]],
+  ['utc_29',['utc',['../classQXmppEntityTimeIq.html#a6a2c7da5bd7663523ab6cb080669b74f',1,'QXmppEntityTimeIq']]]
 ];

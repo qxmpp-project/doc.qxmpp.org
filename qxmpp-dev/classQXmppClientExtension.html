@@ -71,7 +71,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>The <a class="el" href="classQXmppClientExtension.html" title="The QXmppClientExtension class is the base class for QXmppClient extensions.">QXmppClientExtension</a> class is the base class for <a class="el" href="classQXmppClient.html" title="The QXmppClient class is the main class for using QXmpp.">QXmppClient</a> extensions.  
+<p>The <a class="el" href="classQXmppClientExtension.html" title="The QXmppClientExtension class is the base class for QXmppClient extensions.">QXmppClientExtension</a> class is the base class for <a class="el" href="classQXmppClient.html" title="Main class for starting and managing connections to XMPP servers.">QXmppClient</a> extensions.  
  <a href="classQXmppClientExtension.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="QXmppClientExtension_8h_source.html">QXmppClientExtension.h</a>&gt;</code></p>
@@ -192,8 +192,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>updateCounter</b> (co
 <tr class="separator:aa309eaea9699e7fe652a400cef346ae2 inherit signals_classQXmppLoggable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p >The <a class="el" href="classQXmppClientExtension.html" title="The QXmppClientExtension class is the base class for QXmppClient extensions.">QXmppClientExtension</a> class is the base class for <a class="el" href="classQXmppClient.html" title="The QXmppClient class is the main class for using QXmpp.">QXmppClient</a> extensions. </p>
-<p >If you want to extend <a class="el" href="classQXmppClient.html" title="The QXmppClient class is the main class for using QXmpp.">QXmppClient</a>, for instance to support an IQ type which is not natively supported, you can subclass <a class="el" href="classQXmppClientExtension.html" title="The QXmppClientExtension class is the base class for QXmppClient extensions.">QXmppClientExtension</a> and implement <a class="el" href="classQXmppClientExtension.html#af836e49c31e96854b8d344f29f7e6b54" title="You need to implement this method to process incoming XMPP stanzas.">handleStanza()</a>. You can then add your extension to the client instance using <a class="el" href="classQXmppClient.html#a61ccf1c37ca3f26bfd14e65c8ecf1740" title="Registers a new extension with the client.">QXmppClient::addExtension()</a>. </p>
+<div class="textblock"><p >The <a class="el" href="classQXmppClientExtension.html" title="The QXmppClientExtension class is the base class for QXmppClient extensions.">QXmppClientExtension</a> class is the base class for <a class="el" href="classQXmppClient.html" title="Main class for starting and managing connections to XMPP servers.">QXmppClient</a> extensions. </p>
+<p >If you want to extend <a class="el" href="classQXmppClient.html" title="Main class for starting and managing connections to XMPP servers.">QXmppClient</a>, for instance to support an IQ type which is not natively supported, you can subclass <a class="el" href="classQXmppClientExtension.html" title="The QXmppClientExtension class is the base class for QXmppClient extensions.">QXmppClientExtension</a> and implement <a class="el" href="classQXmppClientExtension.html#af836e49c31e96854b8d344f29f7e6b54" title="You need to implement this method to process incoming XMPP stanzas.">handleStanza()</a>. You can then add your extension to the client instance using <a class="el" href="classQXmppClient.html#a61ccf1c37ca3f26bfd14e65c8ecf1740" title="Registers a new extension with the client.">QXmppClient::addExtension()</a>. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aec299452688f50431f1028668186e3ec" name="aec299452688f50431f1028668186e3ec"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aec299452688f50431f1028668186e3ec">&#9670;&nbsp;</a></span>QXmppClientExtension()</h2>
@@ -209,7 +209,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>updateCounter</b> (co
         </tr>
       </table>
 </div><div class="memdoc">
-<p >Constructs a <a class="el" href="classQXmppClient.html" title="The QXmppClient class is the main class for using QXmpp.">QXmppClient</a> extension. </p>
+<p >Constructs a <a class="el" href="classQXmppClient.html" title="Main class for starting and managing connections to XMPP servers.">QXmppClient</a> extension. </p>
 
 </div>
 </div>
@@ -475,7 +475,7 @@ const std::optional&lt;QXmppE2eeMetadata&gt; &amp;e2eeMetadata)</a>. Currently b
   </tr>
 </table>
 </div><div class="memdoc">
-<p >Called after the extension has been added to a <a class="el" href="classQXmppClient.html" title="The QXmppClient class is the main class for using QXmpp.">QXmppClient</a>.</p>
+<p >Called after the extension has been added to a <a class="el" href="classQXmppClient.html" title="Main class for starting and managing connections to XMPP servers.">QXmppClient</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">client</td><td></td></tr>
@@ -510,7 +510,7 @@ const std::optional&lt;QXmppE2eeMetadata&gt; &amp;e2eeMetadata)</a>. Currently b
   </tr>
 </table>
 </div><div class="memdoc">
-<p >Called after the extension has been removed from a <a class="el" href="classQXmppClient.html" title="The QXmppClient class is the main class for using QXmpp.">QXmppClient</a>.</p>
+<p >Called after the extension has been removed from a <a class="el" href="classQXmppClient.html" title="Main class for starting and managing connections to XMPP servers.">QXmppClient</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">client</td><td></td></tr>

@@ -74,16 +74,14 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>The <a class="el" href="classQXmppClient.html" title="The QXmppClient class is the main class for using QXmpp.">QXmppClient</a> class is the main class for using <a class="el" href="namespaceQXmpp.html">QXmpp</a>.  
+<p>Main class for starting and managing connections to XMPP servers.  
  <a href="classQXmppClient.html#details">More...</a></p>
-
-<p><code>#include &lt;<a class="el" href="QXmppClient_8h_source.html">QXmppClient.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for QXmppClient:</div>
 <div class="dyncontent">
 <div class="center"><img src="classQXmppClient__inherit__graph.png" border="0" usemap="#aQXmppClient_inherit__map" alt="Inheritance graph"/></div>
 <map name="aQXmppClient_inherit__map" id="aQXmppClient_inherit__map">
-<area shape="rect" title="The QXmppClient class is the main class for using QXmpp." alt="" coords="16,80,124,107"/>
+<area shape="rect" title="Main class for starting and managing connections to XMPP servers." alt="" coords="16,80,124,107"/>
 <area shape="rect" href="classQXmppLoggable.html" title="The QXmppLoggable class represents a source of logging messages." alt="" coords="5,5,135,32"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
@@ -92,7 +90,7 @@ Collaboration diagram for QXmppClient:</div>
 <div class="dyncontent">
 <div class="center"><img src="classQXmppClient__coll__graph.png" border="0" usemap="#aQXmppClient_coll__map" alt="Collaboration graph"/></div>
 <map name="aQXmppClient_coll__map" id="aQXmppClient_coll__map">
-<area shape="rect" title="The QXmppClient class is the main class for using QXmpp." alt="" coords="16,80,124,107"/>
+<area shape="rect" title="Main class for starting and managing connections to XMPP servers." alt="" coords="16,80,124,107"/>
 <area shape="rect" href="classQXmppLoggable.html" title="The QXmppLoggable class represents a source of logging messages." alt="" coords="5,5,135,32"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
@@ -167,6 +165,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>loggerChanged</b> (<a
 void&#160;</td><td class="memItemRight" valign="bottom"><b>stateChanged</b> (<a class="el" href="classQXmppClient.html#a5f4e70d508c08967f72fd41c5343ad2e">QXmppClient::State</a> <a class="el" href="classQXmppClient.html#a8f6f467d62058016691e07f8da712002">state</a>)</td></tr>
 <tr class="memdesc:a8bd2617265568c9769a8ba608a4ff05d"><td class="mdescLeft">&#160;</td><td class="mdescRight">This signal is emitted when the client state changes. <br /></td></tr>
 <tr class="separator:a8bd2617265568c9769a8ba608a4ff05d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a20fad97c01e8e8ca0df4597f6e88f646"><td class="memItemLeft" align="right" valign="top">Q_SIGNAL void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppClient.html#a20fad97c01e8e8ca0df4597f6e88f646">credentialsChanged</a> ()</td></tr>
+<tr class="separator:a20fad97c01e8e8ca0df4597f6e88f646"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header signals_classQXmppLoggable"><td colspan="2" onclick="javascript:toggleInherit('signals_classQXmppLoggable')"><img src="closed.png" alt="-"/>&#160;Signals inherited from <a class="el" href="classQXmppLoggable.html">QXmppLoggable</a></td></tr>
 <tr class="memitem:abed04f600f4625f0d4a32f214c718865 inherit signals_classQXmppLoggable"><td class="memItemLeft" align="right" valign="top"><a id="abed04f600f4625f0d4a32f214c718865" name="abed04f600f4625f0d4a32f214c718865"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setGauge</b> (const QString &amp;gauge, double value)</td></tr>
@@ -238,15 +238,15 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>isConnected</b> () co
 <tr class="separator:ad47d8d9bd5e44dd2566ff0d726b1e71b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1cd44e6c54b54be4bf50cf3559786476"><td class="memItemLeft" align="right" valign="top"><a id="a1cd44e6c54b54be4bf50cf3559786476" name="a1cd44e6c54b54be4bf50cf3559786476"></a>
 <a class="el" href="classQXmppConfiguration.html">QXmppConfiguration</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>configuration</b> ()</td></tr>
-<tr class="memdesc:a1cd44e6c54b54be4bf50cf3559786476"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a modifiable reference to the current configuration of <a class="el" href="classQXmppClient.html" title="The QXmppClient class is the main class for using QXmpp.">QXmppClient</a>. <br /></td></tr>
+<tr class="memdesc:a1cd44e6c54b54be4bf50cf3559786476"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a modifiable reference to the current configuration of <a class="el" href="classQXmppClient.html" title="Main class for starting and managing connections to XMPP servers.">QXmppClient</a>. <br /></td></tr>
 <tr class="separator:a1cd44e6c54b54be4bf50cf3559786476"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4da08b7465b0aee53f5da92fd697a1fa"><td class="memItemLeft" align="right" valign="top"><a id="a4da08b7465b0aee53f5da92fd697a1fa" name="a4da08b7465b0aee53f5da92fd697a1fa"></a>
 <a class="el" href="classQXmppLogger.html">QXmppLogger</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>logger</b> () const</td></tr>
-<tr class="memdesc:a4da08b7465b0aee53f5da92fd697a1fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the <a class="el" href="classQXmppLogger.html" title="The QXmppLogger class represents a sink for logging messages.">QXmppLogger</a> associated with the current <a class="el" href="classQXmppClient.html" title="The QXmppClient class is the main class for using QXmpp.">QXmppClient</a>. <br /></td></tr>
+<tr class="memdesc:a4da08b7465b0aee53f5da92fd697a1fa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the <a class="el" href="classQXmppLogger.html" title="The QXmppLogger class represents a sink for logging messages.">QXmppLogger</a> associated with the current <a class="el" href="classQXmppClient.html" title="Main class for starting and managing connections to XMPP servers.">QXmppClient</a>. <br /></td></tr>
 <tr class="separator:a4da08b7465b0aee53f5da92fd697a1fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa799549089f2ecbe9796f53d0f7be6d2"><td class="memItemLeft" align="right" valign="top"><a id="aa799549089f2ecbe9796f53d0f7be6d2" name="aa799549089f2ecbe9796f53d0f7be6d2"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setLogger</b> (<a class="el" href="classQXmppLogger.html">QXmppLogger</a> *<a class="el" href="classQXmppClient.html#ae5fca0867efe7e7fcae90cbbf10b8193">logger</a>)</td></tr>
-<tr class="memdesc:aa799549089f2ecbe9796f53d0f7be6d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the <a class="el" href="classQXmppLogger.html" title="The QXmppLogger class represents a sink for logging messages.">QXmppLogger</a> associated with the current <a class="el" href="classQXmppClient.html" title="The QXmppClient class is the main class for using QXmpp.">QXmppClient</a>. <br /></td></tr>
+<tr class="memdesc:aa799549089f2ecbe9796f53d0f7be6d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the <a class="el" href="classQXmppLogger.html" title="The QXmppLogger class represents a sink for logging messages.">QXmppLogger</a> associated with the current <a class="el" href="classQXmppClient.html" title="Main class for starting and managing connections to XMPP servers.">QXmppClient</a>. <br /></td></tr>
 <tr class="separator:aa799549089f2ecbe9796f53d0f7be6d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2b044b37ce88a2f2e65833b3d6e57a9f"><td class="memItemLeft" align="right" valign="top"><a id="a2b044b37ce88a2f2e65833b3d6e57a9f" name="a2b044b37ce88a2f2e65833b3d6e57a9f"></a>
 QAbstractSocket::SocketError&#160;</td><td class="memItemRight" valign="bottom"><b>socketError</b> ()</td></tr>
@@ -290,7 +290,7 @@ QString&#160;</td><td class="memItemRight" valign="bottom"><b>socketErrorString<
 Properties</h2></td></tr>
 <tr class="memitem:ae5fca0867efe7e7fcae90cbbf10b8193"><td class="memItemLeft" align="right" valign="top"><a id="ae5fca0867efe7e7fcae90cbbf10b8193" name="ae5fca0867efe7e7fcae90cbbf10b8193"></a>
 <a class="el" href="classQXmppLogger.html">QXmppLogger</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>logger</b></td></tr>
-<tr class="memdesc:ae5fca0867efe7e7fcae90cbbf10b8193"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="classQXmppLogger.html" title="The QXmppLogger class represents a sink for logging messages.">QXmppLogger</a> associated with the current <a class="el" href="classQXmppClient.html" title="The QXmppClient class is the main class for using QXmpp.">QXmppClient</a>. <br /></td></tr>
+<tr class="memdesc:ae5fca0867efe7e7fcae90cbbf10b8193"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="classQXmppLogger.html" title="The QXmppLogger class represents a sink for logging messages.">QXmppLogger</a> associated with the current <a class="el" href="classQXmppClient.html" title="Main class for starting and managing connections to XMPP servers.">QXmppClient</a>. <br /></td></tr>
 <tr class="separator:ae5fca0867efe7e7fcae90cbbf10b8193"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8f6f467d62058016691e07f8da712002"><td class="memItemLeft" align="right" valign="top"><a id="a8f6f467d62058016691e07f8da712002" name="a8f6f467d62058016691e07f8da712002"></a>
 <a class="el" href="classQXmppClient.html#a5f4e70d508c08967f72fd41c5343ad2e">State</a>&#160;</td><td class="memItemRight" valign="bottom"><b>state</b></td></tr>
@@ -327,7 +327,7 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a50feb6fc691e90ba6b2e69c2a9aea794 inherit pro_methods_classQXmppLoggable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p >The <a class="el" href="classQXmppClient.html" title="The QXmppClient class is the main class for using QXmpp.">QXmppClient</a> class is the main class for using <a class="el" href="namespaceQXmpp.html">QXmpp</a>. </p>
+<div class="textblock"><p >Main class for starting and managing connections to XMPP servers. </p>
 <p >It provides the user all the required functionality to connect to the server and perform operations afterwards.</p>
 <p >This class will provide the handle/reference to <a class="el" href="classQXmppRosterManager.html" title="The QXmppRosterManager class provides access to a connected client&#39;s roster.">QXmppRosterManager</a> (roster management), <a class="el" href="classQXmppVCardManager.html" title="The QXmppVCardManager class gets/sets XMPP vCards. It is an implementation of XEP-0054: vcard-temp.">QXmppVCardManager</a> (vCard manager), and <a class="el" href="classQXmppVersionManager.html" title="The QXmppVersionManager class makes it possible to request for the software version of an entity as d...">QXmppVersionManager</a> (software version information).</p>
 <p >By default, the client will automatically try reconnecting to the server. You can change that behaviour using <a class="el" href="classQXmppConfiguration.html#af1b4829231216e457803e46e784c25ba">QXmppConfiguration::setAutoReconnectionEnabled()</a>.</p>
@@ -337,8 +337,13 @@ Additional Inherited Members</h2></td></tr>
 <li><a class="el" href="classQXmppVCardManager.html" title="The QXmppVCardManager class gets/sets XMPP vCards. It is an implementation of XEP-0054: vcard-temp.">QXmppVCardManager</a></li>
 <li><a class="el" href="classQXmppVersionManager.html" title="The QXmppVersionManager class makes it possible to request for the software version of an entity as d...">QXmppVersionManager</a></li>
 <li><a class="el" href="classQXmppDiscoveryManager.html" title="The QXmppDiscoveryManager class makes it possible to discover information about other entities as def...">QXmppDiscoveryManager</a></li>
-<li><a class="el" href="classQXmppEntityTimeManager.html" title="The QXmppEntityTimeManager class provided the functionality to get the local time of an entity as def...">QXmppEntityTimeManager</a> </li>
+<li><a class="el" href="classQXmppEntityTimeManager.html" title="The QXmppEntityTimeManager class provided the functionality to get the local time of an entity as def...">QXmppEntityTimeManager</a></li>
 </ul>
+<h2><a class="anchor" id="autotoc_md6"></a>
+Usage of FAST token-based authentication</h2>
+<p ><a class="el" href="namespaceQXmpp.html">QXmpp</a> uses <a href="https://xmpp.org/extensions/xep-0484.html">XEP-0484: Fast Authentication Streamlining Tokens</a> if enabled and supported by the server. FAST tokens can be requested after a first time authentication using a password or another strong authentication mechanism. The tokens can then be used to log in, without a password. The tokens are linked to a specific device ID (set via the SASL 2 user agent) and only this device can use the token. Tokens also expire and are rotated by the server.</p>
+<p >The advantage of this mechanism is that a client does not necessarily need to store the password of an account and in the future clients that are logged in could be listed and logged out manually. FAST also allows for performance improvements as it only requires one round trip for authentication (and may be included in TLS 0-RTT data although that is not implemented in <a class="el" href="namespaceQXmpp.html">QXmpp</a>) while other mechanisms like SCRAM need multiple round trips.</p>
+<p >FAST itself is enabled by default (see <a class="el" href="classQXmppConfiguration.html#a98332104886b0d7feaa5da0b6313466e">QXmppConfiguration::useFastTokenAuthentication()</a>), but you also need to set a SASL user agent with a stable device ID, so FAST can be used. After that you can login and use <a class="el" href="classQXmppCredentials.html" title="Stores different kinds of credentials used for authentication.">QXmppCredentials</a> to serialize the token data and store it permanently. Note that the token may change over time, though. </p>
 </div><h2 class="groupheader">Member Typedef Documentation</h2>
 <a id="ad5004eda51b93744a8ad8259ee692a2a" name="ad5004eda51b93744a8ad8259ee692a2a"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad5004eda51b93744a8ad8259ee692a2a">&#9670;&nbsp;</a></span>EmptyResult</h2>
@@ -493,7 +498,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p >Creates a <a class="el" href="classQXmppClient.html" title="The QXmppClient class is the main class for using QXmpp.">QXmppClient</a> object.</p>
+<p >Creates a <a class="el" href="classQXmppClient.html" title="Main class for starting and managing connections to XMPP servers.">QXmppClient</a> object.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">initialExtensions</td><td>can be used to set the initial set of extensions. </td></tr>
@@ -520,7 +525,7 @@ Additional Inherited Members</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p >Creates a <a class="el" href="classQXmppClient.html" title="The QXmppClient class is the main class for using QXmpp.">QXmppClient</a> object. </p><dl class="params"><dt>Parameters</dt><dd>
+<p >Creates a <a class="el" href="classQXmppClient.html" title="Main class for starting and managing connections to XMPP servers.">QXmppClient</a> object. </p><dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">parent</td><td>is passed to the QObject's constructor. </td></tr>
   </table>
@@ -682,6 +687,34 @@ template&lt;typename T , typename... Args&gt; </div>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a20fad97c01e8e8ca0df4597f6e88f646" name="a20fad97c01e8e8ca0df4597f6e88f646"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a20fad97c01e8e8ca0df4597f6e88f646">&#9670;&nbsp;</a></span>credentialsChanged</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Q_SIGNAL void QXmppClient::credentialsChanged </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p >Emitted when the credentials, e.g. tokens have changed.</p>
+<p >This means that the <a class="el" href="classQXmppCredentials.html" title="Stores different kinds of credentials used for authentication.">QXmppCredentials</a> in the <a class="el" href="classQXmppConfiguration.html" title="The QXmppConfiguration class holds configuration options.">QXmppConfiguration</a> of this client has changed.</p>
+<dl class="section since"><dt>Since</dt><dd><a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.8 </dd></dl>
 
 </div>
 </div>

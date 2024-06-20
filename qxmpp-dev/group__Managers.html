@@ -152,7 +152,7 @@ Functions</h2></td></tr>
 <tr class="separator:ga93cb3910b8076f60c4981e06d1d8a3d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<p >Managers are used to extend the basic <a class="el" href="classQXmppClient.html" title="The QXmppClient class is the main class for using QXmpp.">QXmppClient</a>. Some of them are loaded by default, others need to be added to the client using <a class="el" href="classQXmppClient.html#a61ccf1c37ca3f26bfd14e65c8ecf1740" title="Registers a new extension with the client.">QXmppClient::addExtension()</a>. </p>
+<p >Managers are used to extend the basic <a class="el" href="classQXmppClient.html" title="Main class for starting and managing connections to XMPP servers.">QXmppClient</a>. Some of them are loaded by default, others need to be added to the client using <a class="el" href="classQXmppClient.html#a61ccf1c37ca3f26bfd14e65c8ecf1740" title="Registers a new extension with the client.">QXmppClient::addExtension()</a>. </p>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="ga93cb3910b8076f60c4981e06d1d8a3d9" name="ga93cb3910b8076f60c4981e06d1d8a3d9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ga93cb3910b8076f60c4981e06d1d8a3d9">&#9670;&nbsp;</a></span>QXmppExternalServiceDiscoveryManager()</h2>
@@ -170,10 +170,10 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>The QXmppExternalServiceDiscoveryManager class makes it possible to discover information about external services from providers as defined by <a href="https://xmpp.org/extensions/xep-0215.html">XEP-0215: External Service Discovery</a>. </p>
-<p >To make use of this manager, you need to instantiate it and load it into the <a class="el" href="classQXmppClient.html" title="The QXmppClient class is the main class for using QXmpp.">QXmppClient</a> instance as follows:</p>
+<p >To make use of this manager, you need to instantiate it and load it into the <a class="el" href="classQXmppClient.html" title="Main class for starting and managing connections to XMPP servers.">QXmppClient</a> instance as follows:</p>
 <div class="fragment"><div class="line"><span class="keyword">auto</span> *manager = <a class="code hl_function" href="classQXmppClientExtension.html#a893a3e1acaee65bd1bbd781e4e387646">client</a>-&gt;<a class="code hl_function" href="classQXmppClient.html#ab6df7c877500e1548ffb351c46ae48e4">addNewExtension</a>&lt;QXmppExternalServiceDiscoveryManager&gt;();</div>
 <div class="ttc" id="aclassQXmppClientExtension_html_a893a3e1acaee65bd1bbd781e4e387646"><div class="ttname"><a href="classQXmppClientExtension.html#a893a3e1acaee65bd1bbd781e4e387646">QXmppClientExtension::client</a></div><div class="ttdeci">QXmppClient * client() const</div><div class="ttdef"><b>Definition:</b> QXmppClientExtension.cpp:57</div></div>
-<div class="ttc" id="aclassQXmppClient_html_ab6df7c877500e1548ffb351c46ae48e4"><div class="ttname"><a href="classQXmppClient.html#ab6df7c877500e1548ffb351c46ae48e4">QXmppClient::addNewExtension</a></div><div class="ttdeci">T * addNewExtension(Args... args)</div><div class="ttdef"><b>Definition:</b> QXmppClient.h:140</div></div>
+<div class="ttc" id="aclassQXmppClient_html_ab6df7c877500e1548ffb351c46ae48e4"><div class="ttname"><a href="classQXmppClient.html#ab6df7c877500e1548ffb351c46ae48e4">QXmppClient::addNewExtension</a></div><div class="ttdeci">T * addNewExtension(Args... args)</div><div class="ttdef"><b>Definition:</b> QXmppClient.h:116</div></div>
 </div><!-- fragment --><dl class="section since"><dt>Since</dt><dd><a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.6 </dd></dl>
 
 </div>

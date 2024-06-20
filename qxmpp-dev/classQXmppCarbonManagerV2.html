@@ -164,14 +164,14 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>updateCounter</b> (co
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >The <a class="el" href="classQXmppCarbonManagerV2.html" title="The QXmppCarbonManagerV2 class handles message carbons as described in XEP-0280: Message Carbons.">QXmppCarbonManagerV2</a> class handles message carbons as described in <a href="https://xmpp.org/extensions/xep-0280.html">XEP-0280: Message Carbons</a>. </p>
-<p >The manager automatically enables carbons when a connection is established. Either by using <a href="https://xmpp.org/extensions/xep-0386.html">XEP-0386: Bind 2</a> if available or by sending a normal IQ request on connection. Carbon copied messages from other devices of the same account and carbon copied messages from other accounts are injected into the <a class="el" href="classQXmppClient.html" title="The QXmppClient class is the main class for using QXmpp.">QXmppClient</a>. This way you can handle them like any other incoming message by implementing <a class="el" href="classQXmppMessageHandler.html">QXmppMessageHandler</a> or using <a class="el" href="classQXmppClient.html#aa3023a1ba0628cff1032f86df93d7bc3">QXmppClient::messageReceived()</a>.</p>
+<p >The manager automatically enables carbons when a connection is established. Either by using <a href="https://xmpp.org/extensions/xep-0386.html">XEP-0386: Bind 2</a> if available or by sending a normal IQ request on connection. Carbon copied messages from other devices of the same account and carbon copied messages from other accounts are injected into the <a class="el" href="classQXmppClient.html" title="Main class for starting and managing connections to XMPP servers.">QXmppClient</a>. This way you can handle them like any other incoming message by implementing <a class="el" href="classQXmppMessageHandler.html">QXmppMessageHandler</a> or using <a class="el" href="classQXmppClient.html#aa3023a1ba0628cff1032f86df93d7bc3">QXmppClient::messageReceived()</a>.</p>
 <p >Checks are done to ensure that the entity sending the carbon copy is allowed to send the forwarded message.</p>
 <p >You don't need to do anything other than adding the extension to the client to use it. </p><div class="fragment"><div class="line"><a class="code hl_class" href="classQXmppClient.html">QXmppClient</a> <a class="code hl_function" href="classQXmppClientExtension.html#a893a3e1acaee65bd1bbd781e4e387646">client</a>;</div>
 <div class="line"><a class="code hl_function" href="classQXmppClientExtension.html#a893a3e1acaee65bd1bbd781e4e387646">client</a>.<a class="code hl_function" href="classQXmppClient.html#ab6df7c877500e1548ffb351c46ae48e4">addNewExtension</a>&lt;<a class="code hl_class" href="classQXmppCarbonManagerV2.html">QXmppCarbonManagerV2</a>&gt;();</div>
 <div class="ttc" id="aclassQXmppCarbonManagerV2_html"><div class="ttname"><a href="classQXmppCarbonManagerV2.html">QXmppCarbonManagerV2</a></div><div class="ttdoc">The QXmppCarbonManagerV2 class handles message carbons as described in XEP-0280: Message Carbons.</div><div class="ttdef"><b>Definition:</b> QXmppCarbonManagerV2.h:11</div></div>
 <div class="ttc" id="aclassQXmppClientExtension_html_a893a3e1acaee65bd1bbd781e4e387646"><div class="ttname"><a href="classQXmppClientExtension.html#a893a3e1acaee65bd1bbd781e4e387646">QXmppClientExtension::client</a></div><div class="ttdeci">QXmppClient * client() const</div><div class="ttdef"><b>Definition:</b> QXmppClientExtension.cpp:57</div></div>
-<div class="ttc" id="aclassQXmppClient_html"><div class="ttname"><a href="classQXmppClient.html">QXmppClient</a></div><div class="ttdoc">The QXmppClient class is the main class for using QXmpp.</div><div class="ttdef"><b>Definition:</b> QXmppClient.h:85</div></div>
-<div class="ttc" id="aclassQXmppClient_html_ab6df7c877500e1548ffb351c46ae48e4"><div class="ttname"><a href="classQXmppClient.html#ab6df7c877500e1548ffb351c46ae48e4">QXmppClient::addNewExtension</a></div><div class="ttdeci">T * addNewExtension(Args... args)</div><div class="ttdef"><b>Definition:</b> QXmppClient.h:140</div></div>
+<div class="ttc" id="aclassQXmppClient_html"><div class="ttname"><a href="classQXmppClient.html">QXmppClient</a></div><div class="ttdoc">Main class for starting and managing connections to XMPP servers.</div><div class="ttdef"><b>Definition:</b> QXmppClient.h:61</div></div>
+<div class="ttc" id="aclassQXmppClient_html_ab6df7c877500e1548ffb351c46ae48e4"><div class="ttname"><a href="classQXmppClient.html#ab6df7c877500e1548ffb351c46ae48e4">QXmppClient::addNewExtension</a></div><div class="ttdeci">T * addNewExtension(Args... args)</div><div class="ttdef"><b>Definition:</b> QXmppClient.h:116</div></div>
 </div><!-- fragment --><p >To distinguish carbon messages, you can use QXmppMessage::isCarbonMessage().</p>
 <dl class="section note"><dt>Note</dt><dd>Enabling via Bind 2 has been added in <a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.8.</dd></dl>
 <dl class="section since"><dt>Since</dt><dd><a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.5 </dd></dl>
@@ -248,7 +248,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>updateCounter</b> (co
   </tr>
 </table>
 </div><div class="memdoc">
-<p >Called after the extension has been added to a <a class="el" href="classQXmppClient.html" title="The QXmppClient class is the main class for using QXmpp.">QXmppClient</a>.</p>
+<p >Called after the extension has been added to a <a class="el" href="classQXmppClient.html" title="Main class for starting and managing connections to XMPP servers.">QXmppClient</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">client</td><td></td></tr>
@@ -283,7 +283,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>updateCounter</b> (co
   </tr>
 </table>
 </div><div class="memdoc">
-<p >Called after the extension has been removed from a <a class="el" href="classQXmppClient.html" title="The QXmppClient class is the main class for using QXmpp.">QXmppClient</a>.</p>
+<p >Called after the extension has been removed from a <a class="el" href="classQXmppClient.html" title="Main class for starting and managing connections to XMPP servers.">QXmppClient</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">client</td><td></td></tr>

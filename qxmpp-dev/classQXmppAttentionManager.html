@@ -187,12 +187,12 @@ Protected Member Functions</h2></td></tr>
 <div class="textblock"><p >The <a class="el" href="classQXmppAttentionManager.html" title="The QXmppAttentionManager class manages attention requests as defined by XEP-0224: Attention.">QXmppAttentionManager</a> class manages attention requests as defined by <a href="https://xmpp.org/extensions/xep-0224.html">XEP-0224</a>: Attention. </p>
 <p >The manager also does some checks, including rate limiting and checking whether the senders are trusted (aka. in the roster).</p>
 <p >Rate limited messages are not emitted on the normal <a class="el" href="classQXmppAttentionManager.html#a54c464d9793ac0f7d0ef5590221d7c91">attentionRequested()</a> signal and are sent on the <a class="el" href="classQXmppAttentionManager.html#a9e7ede2e55b936601884e939df017a5e">attentionRequestRateLimited()</a> signal instead.</p>
-<p >To use this manager you still need to instantiate it and register it with the <a class="el" href="classQXmppClient.html" title="The QXmppClient class is the main class for using QXmpp.">QXmppClient</a>:</p>
+<p >To use this manager you still need to instantiate it and register it with the <a class="el" href="classQXmppClient.html" title="Main class for starting and managing connections to XMPP servers.">QXmppClient</a>:</p>
 <div class="fragment"><div class="line"><span class="keyword">auto</span> *attentionManager = <span class="keyword">new</span> <a class="code hl_function" href="classQXmppAttentionManager.html#a8201f5b807074563108c55ae7c10c23b">QXmppAttentionManager</a>();</div>
 <div class="line"><a class="code hl_function" href="classQXmppClientExtension.html#a893a3e1acaee65bd1bbd781e4e387646">client</a>-&gt;<a class="code hl_function" href="classQXmppClient.html#a61ccf1c37ca3f26bfd14e65c8ecf1740">addExtension</a>(attentionManager);</div>
 <div class="ttc" id="aclassQXmppAttentionManager_html_a8201f5b807074563108c55ae7c10c23b"><div class="ttname"><a href="classQXmppAttentionManager.html#a8201f5b807074563108c55ae7c10c23b">QXmppAttentionManager::QXmppAttentionManager</a></div><div class="ttdeci">QXmppAttentionManager(quint8 allowedAttempts=3, QTime timeFrame=QTime(0, 15, 0))</div><div class="ttdoc">QXmppAttentionManager::QXmppAttentionManager.</div><div class="ttdef"><b>Definition:</b> QXmppAttentionManager.cpp:86</div></div>
 <div class="ttc" id="aclassQXmppClientExtension_html_a893a3e1acaee65bd1bbd781e4e387646"><div class="ttname"><a href="classQXmppClientExtension.html#a893a3e1acaee65bd1bbd781e4e387646">QXmppClientExtension::client</a></div><div class="ttdeci">QXmppClient * client() const</div><div class="ttdef"><b>Definition:</b> QXmppClientExtension.cpp:57</div></div>
-<div class="ttc" id="aclassQXmppClient_html_a61ccf1c37ca3f26bfd14e65c8ecf1740"><div class="ttname"><a href="classQXmppClient.html#a61ccf1c37ca3f26bfd14e65c8ecf1740">QXmppClient::addExtension</a></div><div class="ttdeci">bool addExtension(QXmppClientExtension *extension)</div><div class="ttdoc">Registers a new extension with the client.</div><div class="ttdef"><b>Definition:</b> QXmppClient.cpp:306</div></div>
+<div class="ttc" id="aclassQXmppClient_html_a61ccf1c37ca3f26bfd14e65c8ecf1740"><div class="ttname"><a href="classQXmppClient.html#a61ccf1c37ca3f26bfd14e65c8ecf1740">QXmppClient::addExtension</a></div><div class="ttdeci">bool addExtension(QXmppClientExtension *extension)</div><div class="ttdoc">Registers a new extension with the client.</div><div class="ttdef"><b>Definition:</b> QXmppClient.cpp:356</div></div>
 </div><!-- fragment --><dl class="section since"><dt>Since</dt><dd><a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.4 </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a8201f5b807074563108c55ae7c10c23b" name="a8201f5b807074563108c55ae7c10c23b"></a>
@@ -407,7 +407,7 @@ Protected Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p >Called after the extension has been added to a <a class="el" href="classQXmppClient.html" title="The QXmppClient class is the main class for using QXmpp.">QXmppClient</a>.</p>
+<p >Called after the extension has been added to a <a class="el" href="classQXmppClient.html" title="Main class for starting and managing connections to XMPP servers.">QXmppClient</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">client</td><td></td></tr>
@@ -442,7 +442,7 @@ Protected Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<p >Called after the extension has been removed from a <a class="el" href="classQXmppClient.html" title="The QXmppClient class is the main class for using QXmpp.">QXmppClient</a>.</p>
+<p >Called after the extension has been removed from a <a class="el" href="classQXmppClient.html" title="Main class for starting and managing connections to XMPP servers.">QXmppClient</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">client</td><td></td></tr>

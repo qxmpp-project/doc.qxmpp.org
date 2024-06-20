@@ -76,8 +76,8 @@ $(function() {
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a9ce223b82721daee833cff35e8b09464"><td class="memItemLeft" align="right" valign="top">static QDateTime&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppUtils.html#a9ce223b82721daee833cff35e8b09464">datetimeFromString</a> (const QString &amp;str)</td></tr>
-<tr class="separator:a9ce223b82721daee833cff35e8b09464"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af84fc69045b0c088482a2eb92ccb954e"><td class="memItemLeft" align="right" valign="top">static QDateTime&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppUtils.html#af84fc69045b0c088482a2eb92ccb954e">datetimeFromString</a> (QStringView str)</td></tr>
+<tr class="separator:af84fc69045b0c088482a2eb92ccb954e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ab27007d02693dfe26be892dd48f45c"><td class="memItemLeft" align="right" valign="top">static QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppUtils.html#a3ab27007d02693dfe26be892dd48f45c">datetimeToString</a> (const QDateTime &amp;dt)</td></tr>
 <tr class="separator:a3ab27007d02693dfe26be892dd48f45c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:affdf229e846c999ea8d3f464d8e154a9"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppUtils.html#affdf229e846c999ea8d3f464d8e154a9">timezoneOffsetFromString</a> (const QString &amp;str)</td></tr>
@@ -124,8 +124,8 @@ static QByteArray&#160;</td><td class="memItemRight" valign="bottom"><b>generate
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >The <a class="el" href="classQXmppUtils.html" title="The QXmppUtils class contains static utility functions.">QXmppUtils</a> class contains static utility functions. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a9ce223b82721daee833cff35e8b09464" name="a9ce223b82721daee833cff35e8b09464"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9ce223b82721daee833cff35e8b09464">&#9670;&nbsp;</a></span>datetimeFromString()</h2>
+<a id="af84fc69045b0c088482a2eb92ccb954e" name="af84fc69045b0c088482a2eb92ccb954e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af84fc69045b0c088482a2eb92ccb954e">&#9670;&nbsp;</a></span>datetimeFromString()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -136,7 +136,7 @@ static QByteArray&#160;</td><td class="memItemRight" valign="bottom"><b>generate
         <tr>
           <td class="memname">QDateTime QXmppUtils::datetimeFromString </td>
           <td>(</td>
-          <td class="paramtype">const QString &amp;&#160;</td>
+          <td class="paramtype">QStringView&#160;</td>
           <td class="paramname"><em>str</em></td><td>)</td>
           <td></td>
         </tr>
@@ -147,7 +147,8 @@ static QByteArray&#160;</td><td class="memItemRight" valign="bottom"><b>generate
   </tr>
 </table>
 </div><div class="memdoc">
-<p >Parses a date-time from a string according to <a href="https://xmpp.org/extensions/xep-0082.html">XEP-0082</a>: XMPP Date and Time Profiles. </p>
+<p >Parses a date-time from a string according to <a href="https://xmpp.org/extensions/xep-0082.html">XEP-0082: XMPP Date and Time Profiles</a>.</p>
+<p >Takes QStringView since <a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.8. </p>
 
 </div>
 </div>

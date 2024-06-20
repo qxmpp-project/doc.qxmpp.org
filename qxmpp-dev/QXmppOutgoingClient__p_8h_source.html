@@ -262,27 +262,29 @@ $(function() {
 <div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>    <span class="keywordtype">bool</span> isAuthenticated = <span class="keyword">false</span>;</div>
 <div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>    <span class="keywordtype">bool</span> bindModeAvailable = <span class="keyword">false</span>;</div>
 <div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>    <span class="keywordtype">bool</span> sessionStarted = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>    std::optional&lt;Bind2Bound&gt; bind2Bound;</div>
-<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span> </div>
-<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>    std::variant&lt;QXmppOutgoingClient *, StarttlsManager, NonSaslAuthManager, SaslManager, Sasl2Manager, C2sStreamManager *, BindManager&gt; listener;</div>
-<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>    C2sStreamManager c2sStreamManager;</div>
-<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>    CarbonManager carbonManager;</div>
-<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>    CsiManager csiManager;</div>
-<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>    PingManager pingManager;</div>
-<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span> </div>
-<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span>... Args&gt;</div>
-<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>    T &amp;setListener(Args... args)</div>
-<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>    {</div>
-<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>        listener = T { args... };</div>
-<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>        <span class="keywordflow">return</span> std::get&lt;T&gt;(listener);</div>
-<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>    }</div>
-<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span> </div>
-<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span>    QXmppOutgoingClient *q;</div>
-<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>};</div>
-<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span> </div>
-<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span><span class="preprocessor">#endif  </span><span class="comment">// QXMPPOUTGOINGCLIENT_P_H</span></div>
-<div class="ttc" id="aclassQXmppConfiguration_html"><div class="ttname"><a href="classQXmppConfiguration.html">QXmppConfiguration</a></div><div class="ttdoc">The QXmppConfiguration class holds configuration options.</div><div class="ttdef"><b>Definition:</b> QXmppConfiguration.h:32</div></div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>    AuthenticationMethod authenticationMethod = AuthenticationMethod::Sasl;</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>    std::optional&lt;Bind2Bound&gt; bind2Bound;</div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span> </div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>    std::variant&lt;QXmppOutgoingClient *, StarttlsManager, NonSaslAuthManager, SaslManager, Sasl2Manager, C2sStreamManager *, BindManager&gt; listener;</div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>    FastTokenManager fastTokenManager;</div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>    C2sStreamManager c2sStreamManager;</div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>    CarbonManager carbonManager;</div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>    CsiManager csiManager;</div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>    PingManager pingManager;</div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span> </div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span>    <span class="keyword">template</span>&lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span>... Args&gt;</div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span>    T &amp;setListener(Args... args)</div>
+<div class="line"><a id="l00206" name="l00206"></a><span class="lineno">  206</span>    {</div>
+<div class="line"><a id="l00207" name="l00207"></a><span class="lineno">  207</span>        listener = T { args... };</div>
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno">  208</span>        <span class="keywordflow">return</span> std::get&lt;T&gt;(listener);</div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>    }</div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span> </div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>    QXmppOutgoingClient *q;</div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span>};</div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span> </div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span><span class="preprocessor">#endif  </span><span class="comment">// QXMPPOUTGOINGCLIENT_P_H</span></div>
+<div class="ttc" id="aclassQXmppConfiguration_html"><div class="ttname"><a href="classQXmppConfiguration.html">QXmppConfiguration</a></div><div class="ttdoc">The QXmppConfiguration class holds configuration options.</div><div class="ttdef"><b>Definition:</b> QXmppConfiguration.h:37</div></div>
 <div class="ttc" id="aclassQXmppIq_html"><div class="ttname"><a href="classQXmppIq.html">QXmppIq</a></div><div class="ttdoc">The QXmppIq class is the base class for all IQs.</div><div class="ttdef"><b>Definition:</b> QXmppIq.h:23</div></div>
 <div class="ttc" id="aclassQXmppLoggable_html"><div class="ttname"><a href="classQXmppLoggable.html">QXmppLoggable</a></div><div class="ttdoc">The QXmppLoggable class represents a source of logging messages.</div><div class="ttdef"><b>Definition:</b> QXmppLogger.h:110</div></div>
 <div class="ttc" id="aclassQXmppPromise_html"><div class="ttname"><a href="classQXmppPromise.html">QXmppPromise&lt; void &gt;</a></div></div>
