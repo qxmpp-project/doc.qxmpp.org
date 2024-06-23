@@ -1,6 +1,8 @@
 var searchData=
 [
-  ['element_0',['element',['../structQXmppFallback_1_1Reference.html#a48c0899f41f6764e737093635e0a2a76',1,'QXmppFallback::Reference']]],
-  ['end_1',['end',['../structQXmppFallback_1_1Range.html#aa6a96effd52120dee99bff8bab20d31c',1,'QXmppFallback::Range']]],
-  ['error_2',['error',['../structQXmppError.html#a000f37b07278e33f1f8339e34ff0f8f2',1,'QXmppError']]]
+  ['data_0',['data',['../structQXmppOmemoStorage_1_1SignedPreKeyPair.html#a446291c1c29d1ee3e4052321c876fafc',1,'QXmppOmemoStorage::SignedPreKeyPair']]],
+  ['datablobs_1',['dataBlobs',['../structQXmppFileUpload_1_1FileResult.html#a437e4d33b18910ed0287808b0906b0b9',1,'QXmppFileUpload::FileResult']]],
+  ['description_2',['description',['../structQXmppError.html#a21ebf80fda7bc2745f99b3aa2d915244',1,'QXmppError']]],
+  ['details_3',['details',['../structQXmpp_1_1AuthenticationError.html#a162ae0bb9f5bb529c75d5531463ba66f',1,'QXmpp::AuthenticationError']]],
+  ['devices_4',['devices',['../structQXmppOmemoStorage_1_1OmemoData.html#ae82633cc4d328f96d45a447964801507',1,'QXmppOmemoStorage::OmemoData']]]
 ];
