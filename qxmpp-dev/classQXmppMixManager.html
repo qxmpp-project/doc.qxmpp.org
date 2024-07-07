@@ -318,7 +318,19 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>updateCounter</b> (co
 <div class="ttc" id="aclassQXmppPubSubManager_html"><div class="ttname"><a href="classQXmppPubSubManager.html">QXmppPubSubManager</a></div><div class="ttdoc">The QXmppPubSubManager aims to provide publish-subscribe functionality as specified in XEP-0060: Publ...</div><div class="ttdef"><b>Definition:</b> QXmppPubSubManager.h:21</div></div>
 </div><!-- fragment --><p >Afterwards, you need to add this manager to the client: </p><div class="fragment"><div class="line"><span class="keyword">auto</span> *manager = <a class="code hl_function" href="classQXmppClientExtension.html#a893a3e1acaee65bd1bbd781e4e387646">client</a>-&gt;<a class="code hl_function" href="classQXmppClient.html#ab6df7c877500e1548ffb351c46ae48e4">addNewExtension</a>&lt;<a class="code hl_class" href="classQXmppMixManager.html">QXmppMixManager</a>&gt;();</div>
 <div class="ttc" id="aclassQXmppMixManager_html"><div class="ttname"><a href="classQXmppMixManager.html">QXmppMixManager</a></div><div class="ttdef"><b>Definition:</b> QXmppMixManager.h:20</div></div>
-</div><!-- fragment --><p >If you want to be informed about updates of the channel (e.g., its configuration or allowed JIDs), make sure to subscribe to the corresponding nodes.</p>
+</div><!-- fragment --><p >Before calling one of the following methods, you need to request the information once per connection:</p><ul>
+<li><a class="el" href="classQXmppMixManager.html#a99d7e92fa2297b2bbae62665235800f1">participantSupport()</a></li>
+<li><a class="el" href="classQXmppMixManager.html#ae85c772ebb21973e2ed0bfad56c4e954">messageArchivingSupport()</a> That is done via <a class="el" href="classQXmppDiscoveryManager.html#a6b6d270ebdc7569417482a3aeb0fb441">QXmppDiscoveryManager::requestInfo()</a>: <div class="fragment"><div class="line"><a class="code hl_function" href="classQXmppClientExtension.html#a893a3e1acaee65bd1bbd781e4e387646">client</a>-&gt;<a class="code hl_function" href="classQXmppClient.html#a4dfee37254d3e33d54882afa16ae2548">findExtension</a>&lt;<a class="code hl_class" href="classQXmppDiscoveryManager.html">QXmppDiscoveryManager</a>&gt;()-&gt;requestInfo(<a class="code hl_function" href="classQXmppClientExtension.html#a893a3e1acaee65bd1bbd781e4e387646">client</a>-&gt;<a class="code hl_function" href="classQXmppClient.html#a1cd44e6c54b54be4bf50cf3559786476">configuration</a>().<a class="code hl_function" href="classQXmppConfiguration.html#a16774799eae5b20c2887e4e4c84911d1">domain</a>());</div>
+<div class="ttc" id="aclassQXmppClient_html_a1cd44e6c54b54be4bf50cf3559786476"><div class="ttname"><a href="classQXmppClient.html#a1cd44e6c54b54be4bf50cf3559786476">QXmppClient::configuration</a></div><div class="ttdeci">QXmppConfiguration &amp; configuration()</div><div class="ttdoc">Returns a modifiable reference to the current configuration of QXmppClient.</div><div class="ttdef"><b>Definition:</b> QXmppClient.cpp:419</div></div>
+<div class="ttc" id="aclassQXmppClient_html_a4dfee37254d3e33d54882afa16ae2548"><div class="ttname"><a href="classQXmppClient.html#a4dfee37254d3e33d54882afa16ae2548">QXmppClient::findExtension</a></div><div class="ttdeci">T * findExtension() const</div><div class="ttdoc">Returns the extension which can be cast into type T*, or 0 if there is no such extension.</div><div class="ttdef"><b>Definition:</b> QXmppClient.h:144</div></div>
+<div class="ttc" id="aclassQXmppConfiguration_html_a16774799eae5b20c2887e4e4c84911d1"><div class="ttname"><a href="classQXmppConfiguration.html#a16774799eae5b20c2887e4e4c84911d1">QXmppConfiguration::domain</a></div><div class="ttdeci">QString domain() const</div><div class="ttdoc">Returns the domain part of the JID.</div><div class="ttdef"><b>Definition:</b> QXmppConfiguration.cpp:255</div></div>
+</div><!-- fragment --></li>
+</ul>
+<p >Before calling one of the following methods, you need to request the information once per connection:</p><ul>
+<li><a class="el" href="classQXmppMixManager.html#aaf5df8c5c92850c7688655125aa6d4e7">services()</a> That is done via <a class="el" href="classQXmppDiscoveryManager.html#a3d28798296277e6f1a098b1e2ab786d7">QXmppDiscoveryManager::requestItems()</a>: <div class="fragment"><div class="line"><a class="code hl_function" href="classQXmppClientExtension.html#a893a3e1acaee65bd1bbd781e4e387646">client</a>-&gt;<a class="code hl_function" href="classQXmppClient.html#a4dfee37254d3e33d54882afa16ae2548">findExtension</a>&lt;<a class="code hl_class" href="classQXmppDiscoveryManager.html">QXmppDiscoveryManager</a>&gt;()-&gt;requestItems(<a class="code hl_function" href="classQXmppClientExtension.html#a893a3e1acaee65bd1bbd781e4e387646">client</a>-&gt;<a class="code hl_function" href="classQXmppClient.html#a1cd44e6c54b54be4bf50cf3559786476">configuration</a>().<a class="code hl_function" href="classQXmppConfiguration.html#a16774799eae5b20c2887e4e4c84911d1">domain</a>());</div>
+</div><!-- fragment --></li>
+</ul>
+<p >If you want to be informed about updates of the channel (e.g., its configuration or allowed JIDs), make sure to subscribe to the corresponding nodes.</p>
 <p >In order to send a message to a MIX channel, you have to set the type QXmppMessage::GroupChat.</p>
 <p >Example for an unencrypted message: </p><div class="fragment"><div class="line">message-&gt;setType(QXmppMessage::GroupChat);</div>
 <div class="line">message-&gt;setTo(<span class="stringliteral">&quot;group@mix.example.org&quot;</span>)</div>
@@ -362,7 +374,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>updateCounter</b> (co
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line"><a class="code hl_function" href="classQXmppClientExtension.html#a893a3e1acaee65bd1bbd781e4e387646">client</a>()-&gt;<a class="code hl_function" href="classQXmppClient.html#a73dbdf7d9f60c1f897a4b269af08ab82">sendSensitive</a>(std::move(message));</div>
-<div class="ttc" id="aclassQXmppClient_html_a1cd44e6c54b54be4bf50cf3559786476"><div class="ttname"><a href="classQXmppClient.html#a1cd44e6c54b54be4bf50cf3559786476">QXmppClient::configuration</a></div><div class="ttdeci">QXmppConfiguration &amp; configuration()</div><div class="ttdoc">Returns a modifiable reference to the current configuration of QXmppClient.</div><div class="ttdef"><b>Definition:</b> QXmppClient.cpp:419</div></div>
 <div class="ttc" id="aclassQXmppConfiguration_html_a9056a406269fb7dcccb79df3262a6c26"><div class="ttname"><a href="classQXmppConfiguration.html#a9056a406269fb7dcccb79df3262a6c26">QXmppConfiguration::jidBare</a></div><div class="ttdeci">QString jidBare() const</div><div class="ttdef"><b>Definition:</b> QXmppConfiguration.cpp:305</div></div>
 <div class="ttc" id="aclassQXmppMessage_html"><div class="ttname"><a href="classQXmppMessage.html">QXmppMessage</a></div><div class="ttdoc">The QXmppMessage class represents an XMPP message.</div><div class="ttdef"><b>Definition:</b> QXmppMessage.h:46</div></div>
 <div class="ttc" id="aclassQXmppMessage_html_a31394f18bd084a5adaa0794aab2e4a24"><div class="ttname"><a href="classQXmppMessage.html#a31394f18bd084a5adaa0794aab2e4a24">QXmppMessage::addHint</a></div><div class="ttdeci">void addHint(const Hint hint)</div><div class="ttdef"><b>Definition:</b> QXmppMessage.cpp:840</div></div>
@@ -613,10 +624,11 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>updateCounter</b> (co
   </tr>
 </table>
 </div><div class="memdoc">
-<p >Server support for a feature. </p>
+<p >Server support for a feature.</p>
+<p >The information is cached until a new connection is established. That makes it possible to retrieve the latest state even while the client is disconnected. </p>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a6f86fc70a3919811935481d3936d83c5a88183b946cc5f0e8c96b2e66e1c74a7e" name="a6f86fc70a3919811935481d3936d83c5a88183b946cc5f0e8c96b2e66e1c74a7e"></a>Unknown&#160;</td><td class="fielddoc"><p >Whether the server supports the feature is not known.</p>
-<p >That means, there is no corresponding information from the server (yet). That is, for example, the case if the client is not connected or connected but has not received the information yet. </p>
+<p >That means, there is no corresponding information from the server (yet). </p>
 </td></tr>
 <tr><td class="fieldname"><a id="a6f86fc70a3919811935481d3936d83c5ab4080bdf74febf04d578ff105cce9d3f" name="a6f86fc70a3919811935481d3936d83c5ab4080bdf74febf04d578ff105cce9d3f"></a>Unsupported&#160;</td><td class="fielddoc"><p >The server does not support the feature. </p>
 </td></tr>
@@ -750,7 +762,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>updateCounter</b> (co
       </table>
 </div><div class="memdoc">
 <p >Allows a JID to participate in a MIX channel.</p>
-<p >The JID can specify a user (e.g., "alice@example.org") or groups of users (e.g., "example.org") to let all users join which have a JID containing the specified domain.</p>
+<p >The JID can specify a user (e.g., "alice@example.org") or a group of users (e.g., "example.org") for allowing all users to participate that have a JID containing the specified domain.</p>
 <p >Allowing a JID is only needed if the channel does not allow anyone to participate. That is the case when <a class="el" href="classQXmppMixConfigItem.html#a47fbc0f6eb1fab32c9fed4d84c8e9e84af88492d3e4aefc2f913c7c2c0623936b">QXmppMixConfigItem::Node::AllowedJids</a> exists for the channel. Use <a class="el" href="classQXmppMixManager.html#a355eed1f7b32edb64d456e71af139019">requestChannelConfiguration()</a> and <a class="el" href="classQXmppMixConfigItem.html#a4c2eecc054c7be31433c3562b1c5549f">QXmppMixConfigItem::nodes()</a> to determine that. Call <a class="el" href="classQXmppMixManager.html#ab526aefd2fdf942370de32631218e2e5">updateChannelConfiguration()</a> and <a class="el" href="classQXmppMixConfigItem.html#ae3b1b23a3d0f4e7d6876837842a0aad7">QXmppMixConfigItem::setNodes()</a> to update it accordingly. In order to allow all JIDs to participate in a channel, you need to remove <a class="el" href="classQXmppMixConfigItem.html#a47fbc0f6eb1fab32c9fed4d84c8e9e84af88492d3e4aefc2f913c7c2c0623936b">QXmppMixConfigItem::Node::AllowedJids</a> from the channel's nodes.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -789,7 +801,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>updateCounter</b> (co
       </table>
 </div><div class="memdoc">
 <p >Bans a JID from participating in a MIX channel.</p>
-<p >The JID can specify a user (e.g., "alice@example.org") or groups of users (e.g., "example.org") to ban all users which have a JID containing the specified domain.</p>
+<p >The JID can specify a user (e.g., "alice@example.org") or a group of users (e.g., "example.org") for banning all users that have a JID containing the specified domain.</p>
 <p >Before calling this, make sure that <a class="el" href="classQXmppMixConfigItem.html#a47fbc0f6eb1fab32c9fed4d84c8e9e84a762f4c31754be2c9dcb3c5f7cf6e7ee7">QXmppMixConfigItem::Node::BannedJids</a> exists for the channel. Use <a class="el" href="classQXmppMixManager.html#a355eed1f7b32edb64d456e71af139019">requestChannelConfiguration()</a> and <a class="el" href="classQXmppMixConfigItem.html#a4c2eecc054c7be31433c3562b1c5549f">QXmppMixConfigItem::nodes()</a> to determine that. Call <a class="el" href="classQXmppMixManager.html#ab526aefd2fdf942370de32631218e2e5">updateChannelConfiguration()</a> and <a class="el" href="classQXmppMixConfigItem.html#ae3b1b23a3d0f4e7d6876837842a0aad7">QXmppMixConfigItem::setNodes()</a> to update it accordingly.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -1482,7 +1494,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>updateCounter</b> (co
       </table>
 </div><div class="memdoc">
 <p >Requests all JIDs which are allowed to participate in a MIX channel.</p>
-<p >The JIDs can specify users (e.g., "alice@example.org") or groups of users (e.g., "example.org") to let all users join which have a JID containing the specified domain. This is only relevant/used for private channels having a user-specified JID.</p>
+<p >The JIDs can specify users (e.g., "alice@example.org") or groups of users (e.g., "example.org") for allowing all users to participate that have a JID containing the specified domain.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">channelJid</td><td>JID of the channel</td></tr>
