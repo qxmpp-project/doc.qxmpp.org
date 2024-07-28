@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['notencrypted_0',['NotEncrypted',['../structQXmppE2eeExtension_1_1NotEncrypted.html',1,'QXmppE2eeExtension']]]
+  ['login_0',['Login',['../structQXmpp_1_1Uri_1_1Login.html',1,'QXmpp::Uri']]]
 ];

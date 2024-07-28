@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['omemodata_0',['OmemoData',['../structQXmppOmemoStorage_1_1OmemoData.html',1,'QXmppOmemoStorage']]],
-  ['owndevice_1',['OwnDevice',['../structQXmppOmemoStorage_1_1OwnDevice.html',1,'QXmppOmemoStorage']]]
+  ['media_0',['Media',['../classQXmppDataForm_1_1Media.html',1,'QXmppDataForm']]],
+  ['mediasource_1',['MediaSource',['../classQXmppDataForm_1_1MediaSource.html',1,'QXmppDataForm']]],
+  ['message_2',['Message',['../structQXmpp_1_1Uri_1_1Message.html',1,'QXmpp::Uri']]]
 ];

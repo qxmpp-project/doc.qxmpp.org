@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['participation_0',['Participation',['../structQXmppMixManager_1_1Participation.html',1,'QXmppMixManager']]]
+  ['notencrypted_0',['NotEncrypted',['../structQXmppE2eeExtension_1_1NotEncrypted.html',1,'QXmppE2eeExtension']]]
 ];

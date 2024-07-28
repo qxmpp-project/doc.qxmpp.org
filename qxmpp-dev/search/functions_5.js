@@ -11,8 +11,8 @@ var searchData=
   ['field_8',['Field',['../classQXmppDataForm_1_1Field.html#ad3754bbd4e40581adb775a459ed6ef44',1,'QXmppDataForm::Field::Field(Type type=TextSingleField, const QString &amp;key={}, const QVariant &amp;value={}, bool isRequired=false, const QString &amp;label={}, const QString &amp;description={}, const QList&lt; QPair&lt; QString, QString &gt; &gt; &amp;options={})'],['../classQXmppDataForm_1_1Field.html#a4ba316346501ec1599804b13bf7754bf',1,'QXmppDataForm::Field::Field(const QXmppDataForm::Field &amp;other)'],['../classQXmppDataForm_1_1Field.html#a251c90ecedc22037f46bbcce7bff80bd',1,'QXmppDataForm::Field::Field(QXmppDataForm::Field &amp;&amp;)']]],
   ['fields_9',['fields',['../classQXmppDataForm.html#a3ac876cdc1c854574a7b832d3a43bf0e',1,'QXmppDataForm::fields() const'],['../classQXmppDataForm.html#afea9fd5c21af8685841a6b9bd51b31c6',1,'QXmppDataForm::fields()']]],
   ['fileinfo_10',['fileInfo',['../classQXmppTransferJob.html#a8fd201ea745ca304c145771f8c17650b',1,'QXmppTransferJob']]],
-  ['filename_11',['filename',['../classQXmppFileMetadata.html#ae7d98536bd7572e6617185407e3efa1a',1,'QXmppFileMetadata']]],
-  ['filename_12',['fileName',['../classQXmppHttpUploadRequestIq.html#a8bcf28497518400949ec3fabe48239dc',1,'QXmppHttpUploadRequestIq']]],
+  ['filename_11',['fileName',['../classQXmppHttpUploadRequestIq.html#a8bcf28497518400949ec3fabe48239dc',1,'QXmppHttpUploadRequestIq']]],
+  ['filename_12',['filename',['../classQXmppFileMetadata.html#ae7d98536bd7572e6617185407e3efa1a',1,'QXmppFileMetadata']]],
   ['filereceived_13',['fileReceived',['../classQXmppTransferManager.html#a12349ea192bdd58e61621dd2ac818ce5',1,'QXmppTransferManager']]],
   ['filesourcesattachments_14',['fileSourcesAttachments',['../classQXmppMessage.html#ad1e8add27a4d0c4d0dc5e918969fb9f0',1,'QXmppMessage']]],
   ['filetoolarge_15',['fileTooLarge',['../classQXmppStanza_1_1Error.html#a3d7093ac99d18a0428ac416b1322c055',1,'QXmppStanza::Error']]],
@@ -37,6 +37,7 @@ var searchData=
   ['fromfileinfo_34',['fromFileInfo',['../classQXmppFileMetadata.html#a2dadfe3a893104deed661001792d6588',1,'QXmppFileMetadata']]],
   ['fromiodevice_35',['fromIoDevice',['../structQXmppError.html#a4585954f194c27e4a425b0d3ca87ef18',1,'QXmppError']]],
   ['fromnetworkreply_36',['fromNetworkReply',['../structQXmppError.html#add10f045ebd08754ed0783e1242d2840',1,'QXmppError']]],
-  ['fromxml_37',['fromXml',['../classQXmppCredentials.html#a56f8049c53295cfaa2285b023caafbda',1,'QXmppCredentials']]],
-  ['fullname_38',['fullName',['../classQXmppVCardIq.html#a40cee2a7d8b353fff804cf582eda5684',1,'QXmppVCardIq']]]
+  ['fromstring_37',['fromString',['../classQXmppUri.html#a3769064e4418e6e38e4a967431126887',1,'QXmppUri']]],
+  ['fromxml_38',['fromXml',['../classQXmppCredentials.html#a56f8049c53295cfaa2285b023caafbda',1,'QXmppCredentials']]],
+  ['fullname_39',['fullName',['../classQXmppVCardIq.html#a40cee2a7d8b353fff804cf582eda5684',1,'QXmppVCardIq']]]
 ];
