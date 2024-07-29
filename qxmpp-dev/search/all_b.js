@@ -39,13 +39,12 @@ var searchData=
   ['logfilepathchanged_36',['logFilePathChanged',['../classQXmppLogger.html#acf6132c73a54fa5dca189c7e9e1e4e87',1,'QXmppLogger']]],
   ['logger_37',['logger',['../classQXmppClient.html#ae5fca0867efe7e7fcae90cbbf10b8193',1,'QXmppClient::logger()'],['../classQXmppServer.html#a0fa9d97d5be1f6429b35154c7621bd24',1,'QXmppServer::logger()'],['../classQXmppClient.html#a4da08b7465b0aee53f5da92fd697a1fa',1,'QXmppClient::logger()'],['../classQXmppServer.html#a289bef14c92ff46f8ceb5b12a904d8be',1,'QXmppServer::logger()']]],
   ['loggerchanged_38',['loggerChanged',['../classQXmppClient.html#a74a8754f3e14945e597d964442281e70',1,'QXmppClient::loggerChanged()'],['../classQXmppServer.html#af49a15f76003d1e3b2ff280f55e1ca54',1,'QXmppServer::loggerChanged()']]],
-  ['loggingtype_39',['loggingType',['../classQXmppLogger.html#a896f3347ee0c517db3404e07c6853187',1,'QXmppLogger']]],
-  ['loggingtype_40',['LoggingType',['../classQXmppLogger.html#a9a52fe426322ef8e10e05b7092be6c20',1,'QXmppLogger']]],
-  ['loggingtype_41',['loggingType',['../classQXmppLogger.html#a2dfda8cd9f90f398e600d059ed19815a',1,'QXmppLogger']]],
-  ['loggingtypechanged_42',['loggingTypeChanged',['../classQXmppLogger.html#a648aa85ccce2a24c2590eb35550ef8f5',1,'QXmppLogger']]],
-  ['login_43',['Login',['../structQXmpp_1_1Uri_1_1Login.html',1,'QXmpp::Uri']]],
-  ['logmessage_44',['logMessage',['../classQXmppLoggable.html#a403fa46ba15c65da706e8188d4312a05',1,'QXmppLoggable']]],
-  ['logreceived_45',['logReceived',['../classQXmppLoggable.html#afcb384597aa4cdee1dad7d2ec50871f4',1,'QXmppLoggable']]],
-  ['logsent_46',['logSent',['../classQXmppLoggable.html#a50feb6fc691e90ba6b2e69c2a9aea794',1,'QXmppLoggable']]],
-  ['longitude_47',['longitude',['../classQXmppGeolocItem.html#aa4e177b7a24e84eb03a9fcf480ecf8a3',1,'QXmppGeolocItem']]]
+  ['loggingtype_39',['LoggingType',['../classQXmppLogger.html#a9a52fe426322ef8e10e05b7092be6c20',1,'QXmppLogger']]],
+  ['loggingtype_40',['loggingType',['../classQXmppLogger.html#a2dfda8cd9f90f398e600d059ed19815a',1,'QXmppLogger::loggingType()'],['../classQXmppLogger.html#a896f3347ee0c517db3404e07c6853187',1,'QXmppLogger::loggingType()']]],
+  ['loggingtypechanged_41',['loggingTypeChanged',['../classQXmppLogger.html#a648aa85ccce2a24c2590eb35550ef8f5',1,'QXmppLogger']]],
+  ['login_42',['Login',['../structQXmpp_1_1Uri_1_1Login.html',1,'QXmpp::Uri']]],
+  ['logmessage_43',['logMessage',['../classQXmppLoggable.html#a403fa46ba15c65da706e8188d4312a05',1,'QXmppLoggable']]],
+  ['logreceived_44',['logReceived',['../classQXmppLoggable.html#afcb384597aa4cdee1dad7d2ec50871f4',1,'QXmppLoggable']]],
+  ['logsent_45',['logSent',['../classQXmppLoggable.html#a50feb6fc691e90ba6b2e69c2a9aea794',1,'QXmppLoggable']]],
+  ['longitude_46',['longitude',['../classQXmppGeolocItem.html#aa4e177b7a24e84eb03a9fcf480ecf8a3',1,'QXmppGeolocItem']]]
 ];
