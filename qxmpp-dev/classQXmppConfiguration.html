@@ -118,6 +118,8 @@ QString&#160;</td><td class="memItemRight" valign="bottom"><b>domain</b> () cons
 int&#160;</td><td class="memItemRight" valign="bottom"><b>port</b> () const</td></tr>
 <tr class="memdesc:aba1172d10bd036417bfe587ad1127790"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the port number. <br /></td></tr>
 <tr class="separator:aba1172d10bd036417bfe587ad1127790"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a34bc5c8e64ddb578fe56d94079e8b214"><td class="memItemLeft" align="right" valign="top">quint16&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppConfiguration.html#a34bc5c8e64ddb578fe56d94079e8b214">port16</a> () const</td></tr>
+<tr class="separator:a34bc5c8e64ddb578fe56d94079e8b214"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af6d5a5df2a2100302fef321298bb0d0b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppConfiguration.html#af6d5a5df2a2100302fef321298bb0d0b">setPort</a> (int)</td></tr>
 <tr class="separator:af6d5a5df2a2100302fef321298bb0d0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a66bde580f9525a5da6e133197b490d3c"><td class="memItemLeft" align="right" valign="top"><a id="a66bde580f9525a5da6e133197b490d3c" name="a66bde580f9525a5da6e133197b490d3c"></a>
@@ -308,7 +310,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>setCaCertificates</b>
 </td></tr>
 <tr><td class="fieldname"><a id="a7c6e193a68beb792038c066cfc574a18a3cb02f5970640730f94f516ae3924d47" name="a7c6e193a68beb792038c066cfc574a18a3cb02f5970640730f94f516ae3924d47"></a>TLSRequired&#160;</td><td class="fielddoc"><p >Encryption must be available, otherwise the connection will not be established. </p>
 </td></tr>
-<tr><td class="fieldname"><a id="a7c6e193a68beb792038c066cfc574a18abd514255916ad53a66078e6f7c644d4c" name="a7c6e193a68beb792038c066cfc574a18abd514255916ad53a66078e6f7c644d4c"></a>LegacySSL&#160;</td><td class="fielddoc"><p >Use only legacy SSL mode. </p>
+<tr><td class="fieldname"><a id="a7c6e193a68beb792038c066cfc574a18abd514255916ad53a66078e6f7c644d4c" name="a7c6e193a68beb792038c066cfc574a18abd514255916ad53a66078e6f7c644d4c"></a>LegacySSL&#160;</td><td class="fielddoc"><p >Use direct TLS connection only and connect to configured host and port or domain and 5223 or 5222. No SRV records are looked up. </p>
 </td></tr>
 </table>
 
@@ -522,6 +524,25 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>setCaCertificates</b>
       </table>
 </div><div class="memdoc">
 <p >Returns the specified network proxy. The default value is QNetworkProxy::DefaultProxy that is the proxy is determined based on the application proxy set using QNetworkProxy::setApplicationProxy(). </p>
+
+</div>
+</div>
+<a id="a34bc5c8e64ddb578fe56d94079e8b214" name="a34bc5c8e64ddb578fe56d94079e8b214"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a34bc5c8e64ddb578fe56d94079e8b214">&#9670;&nbsp;</a></span>port16()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">quint16 QXmppConfiguration::port16 </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Returns the port number as quint16.</p>
+<dl class="section since"><dt>Since</dt><dd><a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.8 </dd></dl>
 
 </div>
 </div>

@@ -65,25 +65,25 @@ $(function() {
   <div class="headertitle"><div class="title">README </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><h1><a class="anchor" id="autotoc_md7"></a>
+<div class="textblock"><h1><a class="anchor" id="autotoc_md8"></a>
 QXmpp OMEMO module</h1>
 <p >The <a class="el" href="namespaceQXmpp.html">QXmpp</a> OMEMO module adds support for OMEMO (v0.8+) end-to-end encryption by providing the <code><a class="el" href="classQXmppOmemoManager.html">QXmppOmemoManager</a></code>.</p>
-<h2><a class="anchor" id="autotoc_md8"></a>
+<h2><a class="anchor" id="autotoc_md9"></a>
 Dependencies</h2>
 <ul>
 <li><a href="https://invent.kde.org/libraries/qca">QCA (Qt Cryptographic Architecture)</a></li>
 <li><a href="https://github.com/dino/libomemo-c">libomemo-c</a> (built with <code>-DBUILD_SHARED_LIBS=ON</code>)</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md9"></a>
+<h2><a class="anchor" id="autotoc_md10"></a>
 Building</h2>
 <p >By default <a class="el" href="namespaceQXmpp.html">QXmpp</a> is built without the OMEMO module. To enable it you need to provide <code>-DBUILD_OMEMO=ON</code> to cmake: </p><pre class="fragment">cmake &lt;qxmpp folder&gt; -DBUILD_OMEMO=ON
-</pre> <h2><a class="anchor" id="autotoc_md10"></a>
+</pre> <h2><a class="anchor" id="autotoc_md11"></a>
 Usage</h2>
 <p ><a class="el" href="namespaceQXmpp.html">QXmpp</a> OMEMO is available as a CMake module. You can use it like this:</p>
 <div class="fragment"><div class="line">find_package(QXmpp COMPONENTS Omemo)</div>
 <div class="line">target_link_libraries(${PROJECT} PRIVATE QXmpp::QXmpp QXmpp::Omemo)</div>
 </div><!-- fragment --><p >How to use the OMEMO Manager is explained in the code documentation.</p>
-<h2><a class="anchor" id="autotoc_md11"></a>
+<h2><a class="anchor" id="autotoc_md12"></a>
 Licensing issues</h2>
 <p >QXmppOmemo itself is (like the core) licensed under LGPL-2.1-or-later. However, as of today it is linking to <code>libomemo-c</code> which uses GPL-3.0. <em>This means that the resulting binaries must be used under the terms of the <b>GPL-3.0</b>.</em></p>
 <p >We might move to a different, more permissive OMEMO library in the future and in that case no relicensing would be necessary. </p>
