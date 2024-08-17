@@ -2,8 +2,8 @@ var searchData=
 [
   ['e2eefallbackbody_0',['e2eeFallbackBody',['../classQXmppMessage.html#a5e3263c36364b080e22852225ff0d981',1,'QXmppMessage']]],
   ['e2eemetadata_1',['e2eeMetadata',['../classQXmppStanza.html#ab2da5b97106b46c9d36523b2f216a743',1,'QXmppStanza']]],
-  ['element_2',['element',['../structQXmppFallback_1_1Reference.html#a48c0899f41f6764e737093635e0a2a76',1,'QXmppFallback::Reference']]],
-  ['element_3',['Element',['../classQXmppFallback.html#a8d822973e2a8ab3e39e19b8078a30a88',1,'QXmppFallback']]],
+  ['element_2',['Element',['../classQXmppFallback.html#a8d822973e2a8ab3e39e19b8078a30a88',1,'QXmppFallback']]],
+  ['element_3',['element',['../structQXmppFallback_1_1Reference.html#a48c0899f41f6764e737093635e0a2a76',1,'QXmppFallback::Reference']]],
   ['elementreceived_4',['elementReceived',['../classQXmppIncomingClient.html#a9fc922ad5adeac98a02912ac9d0fb861',1,'QXmppIncomingClient::elementReceived()'],['../classQXmppIncomingServer.html#ac5f83e86ebdeca832eff1176cdce0e9d',1,'QXmppIncomingServer::elementReceived()']]],
   ['email_5',['email',['../classQXmppRegisterIq.html#ad46522813a94e41159c527df5ffdd4b0',1,'QXmppRegisterIq::email()'],['../classQXmppVCardIq.html#a1da51096d5e36f049501a482f11dbe36',1,'QXmppVCardIq::email() const']]],
   ['emails_6',['emails',['../classQXmppVCardIq.html#a826234bc5d771da548d6f9774d10b90c',1,'QXmppVCardIq']]],

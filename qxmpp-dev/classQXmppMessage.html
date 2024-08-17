@@ -161,7 +161,9 @@ Public Member Functions</h2></td></tr>
 QString&#160;</td><td class="memItemRight" valign="bottom"><b>body</b> () const</td></tr>
 <tr class="memdesc:a03ca378952b2324319afc379a66df5fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the message's body. <br /></td></tr>
 <tr class="separator:a03ca378952b2324319afc379a66df5fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adfc1b70b910079c76c93ba472fc4e9e7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppMessage.html#adfc1b70b910079c76c93ba472fc4e9e7">setBody</a> (const QString &amp;)</td></tr>
+<tr class="memitem:adfc1b70b910079c76c93ba472fc4e9e7"><td class="memItemLeft" align="right" valign="top"><a id="adfc1b70b910079c76c93ba472fc4e9e7" name="adfc1b70b910079c76c93ba472fc4e9e7"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setBody</b> (const QString &amp;)</td></tr>
+<tr class="memdesc:adfc1b70b910079c76c93ba472fc4e9e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the message's body. <br /></td></tr>
 <tr class="separator:adfc1b70b910079c76c93ba472fc4e9e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5e3263c36364b080e22852225ff0d981"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppMessage.html#a5e3263c36364b080e22852225ff0d981">e2eeFallbackBody</a> () const</td></tr>
 <tr class="separator:a5e3263c36364b080e22852225ff0d981"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -351,6 +353,10 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>setType</b> (<a class
 <tr class="separator:a8f406b6850214129794e781713dfbe03"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac0eb66aedff21c854f769af87d13f2cf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppMessage.html#ac0eb66aedff21c854f769af87d13f2cf">setFallbackMarkers</a> (const QVector&lt; <a class="el" href="classQXmppFallback.html">QXmppFallback</a> &gt; &amp;)</td></tr>
 <tr class="separator:ac0eb66aedff21c854f769af87d13f2cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa29f99bf7bddd15dd29f314962209a47"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppMessage.html#aa29f99bf7bddd15dd29f314962209a47">readFallbackRemovedText</a> (<a class="el" href="classQXmppFallback.html#a8d822973e2a8ab3e39e19b8078a30a88">QXmppFallback::Element</a> element, const QVector&lt; QString &gt; &amp;supportedNamespaces) const</td></tr>
+<tr class="separator:aa29f99bf7bddd15dd29f314962209a47"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ca3834f5cf3e468a863d719df647338"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppMessage.html#a6ca3834f5cf3e468a863d719df647338">readFallbackText</a> (<a class="el" href="classQXmppFallback.html#a8d822973e2a8ab3e39e19b8078a30a88">QXmppFallback::Element</a> element, QStringView forNamespace) const</td></tr>
+<tr class="separator:a6ca3834f5cf3e468a863d719df647338"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a018cf876c41c5b070261c51645610d33"><td class="memItemLeft" align="right" valign="top">std::optional&lt; <a class="el" href="classQXmppTrustMessageElement.html">QXmppTrustMessageElement</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppMessage.html#a018cf876c41c5b070261c51645610d33">trustMessageElement</a> () const</td></tr>
 <tr class="separator:a018cf876c41c5b070261c51645610d33"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae454b14a553d3d8d1a26ab5e628540e0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppMessage.html#ae454b14a553d3d8d1a26ab5e628540e0">setTrustMessageElement</a> (const std::optional&lt; <a class="el" href="classQXmppTrustMessageElement.html">QXmppTrustMessageElement</a> &gt; &amp;<a class="el" href="classQXmppMessage.html#a018cf876c41c5b070261c51645610d33">trustMessageElement</a>)</td></tr>
@@ -367,6 +373,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>setType</b> (<a class
 <tr class="separator:ad1e8add27a4d0c4d0dc5e918969fb9f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab5f684323525044a88d682507e1f1d19"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppMessage.html#ab5f684323525044a88d682507e1f1d19">setFileSourcesAttachments</a> (const QVector&lt; <a class="el" href="classQXmppFileSourcesAttachment.html">QXmppFileSourcesAttachment</a> &gt; &amp;)</td></tr>
 <tr class="separator:ab5f684323525044a88d682507e1f1d19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a22aa9c6627a2f550fd39ffa9d5f0f4cd"><td class="memItemLeft" align="right" valign="top">std::optional&lt; <a class="el" href="structQXmpp_1_1Reply.html">QXmpp::Reply</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppMessage.html#a22aa9c6627a2f550fd39ffa9d5f0f4cd">reply</a> () const</td></tr>
+<tr class="separator:a22aa9c6627a2f550fd39ffa9d5f0f4cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6c58971a37972876c7beae294ef7d4ae"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppMessage.html#a6c58971a37972876c7beae294ef7d4ae">setReply</a> (const std::optional&lt; <a class="el" href="structQXmpp_1_1Reply.html">QXmpp::Reply</a> &gt; &amp;)</td></tr>
+<tr class="separator:a6c58971a37972876c7beae294ef7d4ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af24c4b1b0156fe864731d051a1239d0f"><td class="memItemLeft" align="right" valign="top">QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppMessage.html#af24c4b1b0156fe864731d051a1239d0f">readReplyQuoteFromBody</a> () const</td></tr>
+<tr class="separator:af24c4b1b0156fe864731d051a1239d0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6bc013cc977338f485a21a6fd60f15a5"><td class="memItemLeft" align="right" valign="top">std::optional&lt; <a class="el" href="classQXmppCallInviteElement.html">QXmppCallInviteElement</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppMessage.html#a6bc013cc977338f485a21a6fd60f15a5">callInviteElement</a> () const</td></tr>
 <tr class="separator:a6bc013cc977338f485a21a6fd60f15a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3abe15e48c2f5aceb7533426c1a76aa1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppMessage.html#a3abe15e48c2f5aceb7533426c1a76aa1">setCallInviteElement</a> (std::optional&lt; <a class="el" href="classQXmppCallInviteElement.html">QXmppCallInviteElement</a> &gt; <a class="el" href="classQXmppMessage.html#a6bc013cc977338f485a21a6fd60f15a5">callInviteElement</a>)</td></tr>
@@ -1414,6 +1426,99 @@ If this returns QXmppMessage::UnknownEncryption, you can still get the namespace
 
 </div>
 </div>
+<a id="aa29f99bf7bddd15dd29f314962209a47" name="aa29f99bf7bddd15dd29f314962209a47"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa29f99bf7bddd15dd29f314962209a47">&#9670;&nbsp;</a></span>readFallbackRemovedText()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString QXmppMessage::readFallbackRemovedText </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classQXmppFallback.html#a8d822973e2a8ab3e39e19b8078a30a88">QXmppFallback::Element</a>&#160;</td>
+          <td class="paramname"><em>element</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QVector&lt; QString &gt; &amp;&#160;</td>
+          <td class="paramname"><em>supportedNamespaces</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Returns the body or subject text of the message without parts that have a fallback marker with a supported namespace.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">element</td><td>whether to use the body or the subject text </td></tr>
+    <tr><td class="paramname">supportedNamespaces</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>Since</dt><dd><a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.9 </dd></dl>
+
+</div>
+</div>
+<a id="a6ca3834f5cf3e468a863d719df647338" name="a6ca3834f5cf3e468a863d719df647338"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6ca3834f5cf3e468a863d719df647338">&#9670;&nbsp;</a></span>readFallbackText()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString QXmppMessage::readFallbackText </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classQXmppFallback.html#a8d822973e2a8ab3e39e19b8078a30a88">QXmppFallback::Element</a>&#160;</td>
+          <td class="paramname"><em>element</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">QStringView&#160;</td>
+          <td class="paramname"><em>forNamespace</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Returns the parts of the body or subject that are marked as fallback for this namespace.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">element</td><td>whether to use the body or the subject text </td></tr>
+    <tr><td class="paramname">forNamespace</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section since"><dt>Since</dt><dd><a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.9 </dd></dl>
+
+</div>
+</div>
+<a id="af24c4b1b0156fe864731d051a1239d0f" name="af24c4b1b0156fe864731d051a1239d0f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af24c4b1b0156fe864731d051a1239d0f">&#9670;&nbsp;</a></span>readReplyQuoteFromBody()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString QXmppMessage::readReplyQuoteFromBody </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Returns the part of the body that is marked as fallback for <a href="https://xmpp.org/extensions/xep-0461.html">XEP-0461: Message Replies</a>, without any quotation marks ('&gt; ').</p>
+<dl class="section since"><dt>Since</dt><dd><a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.9 </dd></dl>
+
+</div>
+</div>
 <a id="a0323038ef0a0e9af8b620202fc7d53d8" name="a0323038ef0a0e9af8b620202fc7d53d8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0323038ef0a0e9af8b620202fc7d53d8">&#9670;&nbsp;</a></span>receiptId()</h2>
 
@@ -1488,6 +1593,25 @@ If this returns QXmppMessage::UnknownEncryption, you can still get the namespace
 </div><div class="memdoc">
 <p >Returns the message id to replace with this message as used in <a href="https://xmpp.org/extensions/xep-0308.html">XEP-0308</a>: Last Message Correction. If the returned string is empty, this message is not replacing another.</p>
 <dl class="section since"><dt>Since</dt><dd><a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.0 </dd></dl>
+
+</div>
+</div>
+<a id="a22aa9c6627a2f550fd39ffa9d5f0f4cd" name="a22aa9c6627a2f550fd39ffa9d5f0f4cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a22aa9c6627a2f550fd39ffa9d5f0f4cd">&#9670;&nbsp;</a></span>reply()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::optional&lt; <a class="el" href="structQXmpp_1_1Reply.html">QXmpp::Reply</a> &gt; QXmppMessage::reply </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Returns the message reply extension as defined in <a href="https://xmpp.org/extensions/xep-0461.html">XEP-0461: Message Replies</a>.</p>
+<dl class="section since"><dt>Since</dt><dd><a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.9 </dd></dl>
 
 </div>
 </div>
@@ -1607,31 +1731,6 @@ If this returns QXmppMessage::UnknownEncryption, you can still get the namespace
 </div><div class="memdoc">
 <p >Sets a list of <a href="https://xmpp.org/extensions/xep-0231.html">XEP-0231</a>: Bits of Binary attachments to be included.</p>
 <dl class="section since"><dt>Since</dt><dd><a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.2 </dd></dl>
-
-</div>
-</div>
-<a id="adfc1b70b910079c76c93ba472fc4e9e7" name="adfc1b70b910079c76c93ba472fc4e9e7"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adfc1b70b910079c76c93ba472fc4e9e7">&#9670;&nbsp;</a></span>setBody()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void QXmppMessage::setBody </td>
-          <td>(</td>
-          <td class="paramtype">const QString &amp;&#160;</td>
-          <td class="paramname"><em>body</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<p >Sets the message's body.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">body</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
 
 </div>
 </div>
@@ -2185,9 +2284,9 @@ If this returns QXmppMessage::UnknownEncryption, you can still get the namespace
 <p >Sets a reaction to a message as defined by <a href="https://xmpp.org/extensions/xep-0444.html">XEP-0444: Message Reactions</a>.</p>
 <p >The corresponding hint must be set manually: </p><div class="fragment"><div class="line"><a class="code hl_class" href="classQXmppMessage.html">QXmppMessage</a> message;</div>
 <div class="line">message.<a class="code hl_function" href="classQXmppMessage.html#a31394f18bd084a5adaa0794aab2e4a24">addHint</a>(<a class="code hl_enumvalue" href="classQXmppMessage.html#aea1a3c281a281bc3a4fbc9f48b554256a32bacb2cf0afce2b83ef293d10a7db17">QXmppMessage::Store</a>);</div>
-<div class="ttc" id="aclassQXmppMessage_html"><div class="ttname"><a href="classQXmppMessage.html">QXmppMessage</a></div><div class="ttdoc">The QXmppMessage class represents an XMPP message.</div><div class="ttdef"><b>Definition:</b> QXmppMessage.h:46</div></div>
-<div class="ttc" id="aclassQXmppMessage_html_a31394f18bd084a5adaa0794aab2e4a24"><div class="ttname"><a href="classQXmppMessage.html#a31394f18bd084a5adaa0794aab2e4a24">QXmppMessage::addHint</a></div><div class="ttdeci">void addHint(const Hint hint)</div><div class="ttdef"><b>Definition:</b> QXmppMessage.cpp:840</div></div>
-<div class="ttc" id="aclassQXmppMessage_html_aea1a3c281a281bc3a4fbc9f48b554256a32bacb2cf0afce2b83ef293d10a7db17"><div class="ttname"><a href="classQXmppMessage.html#aea1a3c281a281bc3a4fbc9f48b554256a32bacb2cf0afce2b83ef293d10a7db17">QXmppMessage::Store</a></div><div class="ttdeci">@ Store</div><div class="ttdoc">Do store the message.</div><div class="ttdef"><b>Definition:</b> QXmppMessage.h:106</div></div>
+<div class="ttc" id="aclassQXmppMessage_html"><div class="ttname"><a href="classQXmppMessage.html">QXmppMessage</a></div><div class="ttdoc">The QXmppMessage class represents an XMPP message.</div><div class="ttdef"><b>Definition:</b> QXmppMessage.h:64</div></div>
+<div class="ttc" id="aclassQXmppMessage_html_a31394f18bd084a5adaa0794aab2e4a24"><div class="ttname"><a href="classQXmppMessage.html#a31394f18bd084a5adaa0794aab2e4a24">QXmppMessage::addHint</a></div><div class="ttdeci">void addHint(const Hint hint)</div><div class="ttdef"><b>Definition:</b> QXmppMessage.cpp:844</div></div>
+<div class="ttc" id="aclassQXmppMessage_html_aea1a3c281a281bc3a4fbc9f48b554256a32bacb2cf0afce2b83ef293d10a7db17"><div class="ttname"><a href="classQXmppMessage.html#aea1a3c281a281bc3a4fbc9f48b554256a32bacb2cf0afce2b83ef293d10a7db17">QXmppMessage::Store</a></div><div class="ttdeci">@ Store</div><div class="ttdoc">Do store the message.</div><div class="ttdef"><b>Definition:</b> QXmppMessage.h:124</div></div>
 </div><!-- fragment --><dl class="section since"><dt>Since</dt><dd><a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.5 </dd></dl>
 
 </div>
@@ -2249,6 +2348,26 @@ If this returns QXmppMessage::UnknownEncryption, you can still get the namespace
 </div><div class="memdoc">
 <p >Sets the message id to replace with this message as in <a href="https://xmpp.org/extensions/xep-0308.html">XEP-0308</a>: Last Message Correction.</p>
 <dl class="section since"><dt>Since</dt><dd><a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.0 </dd></dl>
+
+</div>
+</div>
+<a id="a6c58971a37972876c7beae294ef7d4ae" name="a6c58971a37972876c7beae294ef7d4ae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c58971a37972876c7beae294ef7d4ae">&#9670;&nbsp;</a></span>setReply()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void QXmppMessage::setReply </td>
+          <td>(</td>
+          <td class="paramtype">const std::optional&lt; <a class="el" href="structQXmpp_1_1Reply.html">QXmpp::Reply</a> &gt; &amp;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Sets the message reply extension as defined in <a href="https://xmpp.org/extensions/xep-0461.html">XEP-0461: Message Replies</a>.</p>
+<dl class="section since"><dt>Since</dt><dd><a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.9 </dd></dl>
 
 </div>
 </div>
