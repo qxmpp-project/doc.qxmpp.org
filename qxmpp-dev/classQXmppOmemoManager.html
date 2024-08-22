@@ -161,6 +161,8 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:adb6b64bd56aa9d37c9e6137226cf8cc6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2ae362ec4344a90ceb0b369200fe6f3e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classQXmppTask.html">QXmppTask</a>&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppOmemoManager.html#a2ae362ec4344a90ceb0b369200fe6f3e">resetOwnDevice</a> ()</td></tr>
 <tr class="separator:a2ae362ec4344a90ceb0b369200fe6f3e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5f0f96bdda5866237d897f8ee13cd710"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classQXmppTask.html">QXmppTask</a>&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppOmemoManager.html#a5f0f96bdda5866237d897f8ee13cd710">resetOwnDeviceLocally</a> ()</td></tr>
+<tr class="separator:a5f0f96bdda5866237d897f8ee13cd710"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9d57d9ebf26874f8ccb303ae787355b6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classQXmppTask.html">QXmppTask</a>&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppOmemoManager.html#a9d57d9ebf26874f8ccb303ae787355b6">resetAll</a> ()</td></tr>
 <tr class="separator:a9d57d9ebf26874f8ccb303ae787355b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9771cc525f24c8ac73312e0673cf1efb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classQXmppTask.html">QXmppTask</a>&lt; void &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppOmemoManager.html#a9771cc525f24c8ac73312e0673cf1efb">setSecurityPolicy</a> (<a class="el" href="namespaceQXmpp.html#af6e4885b9b07444825d3bf59877a1f10">QXmpp::TrustSecurityPolicy</a> <a class="el" href="classQXmppOmemoManager.html#a35e8427ee89f057a9b678cff269bc939">securityPolicy</a>)</td></tr>
@@ -925,6 +927,27 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>updateCounter</b> (co
 <p >The user must be logged in while calling this.</p>
 <p >Call <code><a class="el" href="classQXmppOmemoManager.html#a5ad05f9fd9e40b2bcdb9611b4982f680">setUp()</a></code> once this method is finished if you want to set up everything again for this device. Existing sessions are reset, which might lead to undecryptable incoming stanzas until everything is set up again.</p>
 <dl class="section return"><dt>Returns</dt><dd>whether the action was successful </dd></dl>
+
+</div>
+</div>
+<a id="a5f0f96bdda5866237d897f8ee13cd710" name="a5f0f96bdda5866237d897f8ee13cd710"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5f0f96bdda5866237d897f8ee13cd710">&#9670;&nbsp;</a></span>resetOwnDeviceLocally()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classQXmppTask.html">QXmppTask</a>&lt; void &gt; QXmppOmemoManager::resetOwnDeviceLocally </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Resets all local OMEMO data for this device and the trust data used by OMEMO.</p>
+<p >ATTENTION: This should only be called after an account is removed from the server since the data on the server is not reset.</p>
+<p >Call <code><a class="el" href="classQXmppOmemoManager.html#a5ad05f9fd9e40b2bcdb9611b4982f680">setUp()</a></code> once this method is finished and you are logged in to a new account if you want to set up everything for it.</p>
+<dl class="section since"><dt>Since</dt><dd><a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.9 </dd></dl>
 
 </div>
 </div>
