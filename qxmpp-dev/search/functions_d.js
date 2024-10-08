@@ -14,5 +14,6 @@ var searchData=
   ['nodes_11',['nodes',['../classQXmppMixConfigItem.html#a4c2eecc054c7be31433c3562b1c5549f',1,'QXmppMixConfigItem::nodes()'],['../classQXmppMixIq.html#a4de78c090c29044c86776bd5b65d7d08',1,'QXmppMixIq::nodes()']]],
   ['nonsaslauthmechanism_12',['nonSASLAuthMechanism',['../classQXmppConfiguration.html#a3ab566ba70d2a385dc73f2ebfe778b7e',1,'QXmppConfiguration']]],
   ['nonsaslauthmode_13',['nonSaslAuthMode',['../classQXmppStreamFeatures.html#a8da013aabba65d1379bbf4f9f931b6cd',1,'QXmppStreamFeatures']]],
-  ['number_14',['number',['../classQXmppVCardPhone.html#a99a23d508a9c3a5180872f66fc1d7d7e',1,'QXmppVCardPhone']]]
+  ['notifycontact_14',['notifyContact',['../classQXmppMovedManager.html#acf65e34207e35abc333ee2e842ce1ae4',1,'QXmppMovedManager']]],
+  ['number_15',['number',['../classQXmppVCardPhone.html#a99a23d508a9c3a5180872f66fc1d7d7e',1,'QXmppVCardPhone']]]
 ];
