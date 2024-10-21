@@ -94,9 +94,8 @@ Collaboration diagram for QXmppMovedManager:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:a58b7de1fa9157d840eb53eca7930f968"><td class="memItemLeft" align="right" valign="top"><a id="a58b7de1fa9157d840eb53eca7930f968" name="a58b7de1fa9157d840eb53eca7930f968"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>Result</b> = std::variant&lt; <a class="el" href="structQXmpp_1_1Success.html">QXmpp::Success</a>, <a class="el" href="structQXmppError.html">QXmppError</a> &gt;</td></tr>
-<tr class="separator:a58b7de1fa9157d840eb53eca7930f968"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1a1e8e59f5943130497ae7a6ef2090f7"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppMovedManager.html#a1a1e8e59f5943130497ae7a6ef2090f7">Result</a> = std::variant&lt; <a class="el" href="structQXmpp_1_1Success.html">QXmpp::Success</a>, <a class="el" href="structQXmppError.html">QXmppError</a> &gt;</td></tr>
+<tr class="separator:a1a1e8e59f5943130497ae7a6ef2090f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -108,9 +107,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a7654178fdd7ee355a9f2e5690109333e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adfe1bcfaae4cdfbc0646851c0b0200a1"><td class="memItemLeft" align="right" valign="top">Q_SIGNAL void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppMovedManager.html#adfe1bcfaae4cdfbc0646851c0b0200a1">supportedByServerChanged</a> ()</td></tr>
 <tr class="separator:adfe1bcfaae4cdfbc0646851c0b0200a1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a747146c8104434a8959ecb8fa771c867"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classQXmppTask.html">QXmppTask</a>&lt; Result &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppMovedManager.html#a747146c8104434a8959ecb8fa771c867">publishStatement</a> (const QString &amp;newBareJid)</td></tr>
+<tr class="memitem:a747146c8104434a8959ecb8fa771c867"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classQXmppTask.html">QXmppTask</a>&lt; <a class="el" href="classQXmppMovedManager.html#a1a1e8e59f5943130497ae7a6ef2090f7">Result</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppMovedManager.html#a747146c8104434a8959ecb8fa771c867">publishStatement</a> (const QString &amp;newBareJid)</td></tr>
 <tr class="separator:a747146c8104434a8959ecb8fa771c867"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae270d02b9556225a1a810ca42e8b728e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classQXmppTask.html">QXmppTask</a>&lt; Result &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppMovedManager.html#ae270d02b9556225a1a810ca42e8b728e">verifyStatement</a> (const QString &amp;oldBareJid, const QString &amp;newBareJid)</td></tr>
+<tr class="memitem:ae270d02b9556225a1a810ca42e8b728e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classQXmppTask.html">QXmppTask</a>&lt; <a class="el" href="classQXmppMovedManager.html#a1a1e8e59f5943130497ae7a6ef2090f7">Result</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppMovedManager.html#ae270d02b9556225a1a810ca42e8b728e">verifyStatement</a> (const QString &amp;oldBareJid, const QString &amp;newBareJid)</td></tr>
 <tr class="separator:ae270d02b9556225a1a810ca42e8b728e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acf65e34207e35abc333ee2e842ce1ae4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classQXmppTask.html">QXmppTask</a>&lt; <a class="el" href="namespaceQXmpp.html#a8450fdd55dbc654e0220eafe35d922fc">QXmpp::SendResult</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppMovedManager.html#acf65e34207e35abc333ee2e842ce1ae4">notifyContact</a> (const QString &amp;contactBareJid, const QString &amp;oldBareJid, bool sensitive=true, const QString &amp;reason={})</td></tr>
 <tr class="separator:acf65e34207e35abc333ee2e842ce1ae4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -194,12 +193,28 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>updateCounter</b> (co
 <div class="ttc" id="aclassQXmppDiscoveryManager_html"><div class="ttname"><a href="classQXmppDiscoveryManager.html">QXmppDiscoveryManager</a></div><div class="ttdoc">The QXmppDiscoveryManager class makes it possible to discover information about other entities as def...</div><div class="ttdef"><b>Definition:</b> QXmppDiscoveryManager.h:26</div></div>
 <div class="ttc" id="aclassQXmppPubSubManager_html"><div class="ttname"><a href="classQXmppPubSubManager.html">QXmppPubSubManager</a></div><div class="ttdoc">The QXmppPubSubManager aims to provide publish-subscribe functionality as specified in XEP-0060: Publ...</div><div class="ttdef"><b>Definition:</b> QXmppPubSubManager.h:21</div></div>
 </div><!-- fragment --><p >Afterwards, you need to add this manager to the client: </p><div class="fragment"><div class="line"><span class="keyword">auto</span> *manager = <a class="code hl_function" href="classQXmppClientExtension.html#a893a3e1acaee65bd1bbd781e4e387646">client</a>-&gt;<a class="code hl_function" href="classQXmppClient.html#ab6df7c877500e1548ffb351c46ae48e4">addNewExtension</a>&lt;<a class="code hl_class" href="classQXmppMovedManager.html">QXmppMovedManager</a>&gt;();</div>
-<div class="ttc" id="aclassQXmppMovedManager_html"><div class="ttname"><a href="classQXmppMovedManager.html">QXmppMovedManager</a></div><div class="ttdef"><b>Definition:</b> QXmppMovedManager.h:14</div></div>
+<div class="ttc" id="aclassQXmppMovedManager_html"><div class="ttname"><a href="classQXmppMovedManager.html">QXmppMovedManager</a></div><div class="ttdef"><b>Definition:</b> QXmppMovedManager.h:17</div></div>
 </div><!-- fragment --><p >If you want to publish a moved statement use the publishStatement call with the old account: </p><div class="fragment"><div class="line">manager-&gt;publishStatement(<span class="stringliteral">&quot;new@example.org&quot;</span>);</div>
 </div><!-- fragment --><p >Once you published your statement, you then need to subscribe to your old contacts with the new account: </p><div class="fragment"><div class="line">manager-&gt;notifyContact(<span class="stringliteral">&quot;contact@xmpp.example&quot;</span>, <span class="stringliteral">&quot;old@example.org&quot;</span>, <span class="stringliteral">&quot;Hey, I moved my account, please accept me.&quot;</span>);</div>
 </div><!-- fragment --><p >When a contact receive a subscription request from a moved user he needs to verify the authenticity of the request. The <a class="el" href="classQXmppRosterManager.html" title="The QXmppRosterManager class provides access to a connected client&#39;s roster.">QXmppRosterManager</a> handle it on its own if the client has the <a class="el" href="classQXmppMovedManager.html">QXmppMovedManager</a> extension available. The request will be ignored entirely if the old jid incoming subscription is not part of the roster with a 'from' or 'both' type. In case of the authenticity can't be established the moved element is ignored entirely. Alternatively, if the client does not has <a class="el" href="classQXmppMovedManager.html">QXmppMovedManager</a> support the request message will be changed to introduce a warning message before emitting the subscription{Request}Received signal.</p>
 <dl class="section since"><dt>Since</dt><dd><a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.9 </dd></dl>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+</div><h2 class="groupheader">Member Typedef Documentation</h2>
+<a id="a1a1e8e59f5943130497ae7a6ef2090f7" name="a1a1e8e59f5943130497ae7a6ef2090f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1a1e8e59f5943130497ae7a6ef2090f7">&#9670;&nbsp;</a></span>Result</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classQXmppMovedManager.html#a1a1e8e59f5943130497ae7a6ef2090f7">QXmppMovedManager::Result</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Contains <a class="el" href="structQXmpp_1_1Success.html">QXmpp::Success</a> or an error. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="afb131a3aa5b3fec4d45ec519e94cd63d" name="afb131a3aa5b3fec4d45ec519e94cd63d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afb131a3aa5b3fec4d45ec519e94cd63d">&#9670;&nbsp;</a></span>QXmppMovedManager()</h2>
 
@@ -376,7 +391,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>updateCounter</b> (co
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classQXmppTask.html">QXmppTask</a>&lt; QXmppMovedManager::Result &gt; QXmppMovedManager::verifyStatement </td>
+          <td class="memname"><a class="el" href="classQXmppTask.html">QXmppTask</a>&lt; <a class="el" href="classQXmppMovedManager.html#a1a1e8e59f5943130497ae7a6ef2090f7">QXmppMovedManager::Result</a> &gt; QXmppMovedManager::verifyStatement </td>
           <td>(</td>
           <td class="paramtype">const QString &amp;&#160;</td>
           <td class="paramname"><em>oldBareJid</em>, </td>
