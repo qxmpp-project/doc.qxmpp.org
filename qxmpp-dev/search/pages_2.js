@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['readme_0',['README',['../md____w_qxmpp_qxmpp_src_omemo_README.html',1,'']]]
+  ['list_0',['list',['../deprecated.html',1,'Deprecated List'],['../todo.html',1,'Todo List']]]
 ];

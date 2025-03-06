@@ -1,6 +1,9 @@
 <map id="QXmppEntityTimeIq" name="QXmppEntityTimeIq">
-<area shape="rect" id="node1" title="QXmppEntityTimeIq represents an entity time request/response as defined in XEP&#45;0202: Entity Time." alt="" coords="5,229,159,256"/>
-<area shape="rect" id="node2" href="$classQXmppIq.html" title="The QXmppIq class is the base class for all IQs." alt="" coords="41,155,123,181"/>
-<area shape="rect" id="node3" href="$classQXmppStanza.html" title="The QXmppStanza class is the base class for all XMPP stanzas." alt="" coords="25,80,139,107"/>
-<area shape="rect" id="node4" href="$classQXmppNonza.html" title=" " alt="" coords="27,5,137,32"/>
+<area shape="rect" id="Node000001" title="QXmppEntityTimeIq represents an entity time request/response as defined in XEP&#45;0202: Entity Time." alt="" coords="5,225,159,251"/>
+<area shape="rect" id="Node000002" href="$classQXmppIq.html" title="The QXmppIq class is the base class for all IQs." alt="" coords="41,152,123,177"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="85,191,85,225,79,225,79,191"/>
+<area shape="rect" id="Node000003" href="$classQXmppStanza.html" title="The QXmppStanza class is the base class for all XMPP stanzas." alt="" coords="25,79,139,104"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="85,118,85,152,79,152,79,118"/>
+<area shape="rect" id="Node000004" href="$classQXmppNonza.html" title=" " alt="" coords="27,5,137,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="85,44,85,79,79,79,79,44"/>
 </map>

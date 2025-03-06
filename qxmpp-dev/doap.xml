@@ -613,6 +613,14 @@ SPDX-License-Identifier: CC0-1.0
     </implements>
     <implements>
       <xmpp:SupportedXep>
+        <xmpp:xep rdf:resource='https://xmpp.org/extensions/xep-0392.html'/>
+        <xmpp:status>complete</xmpp:status>
+        <xmpp:version>1.0.0</xmpp:version>
+        <xmpp:since>1.10</xmpp:since>
+      </xmpp:SupportedXep>
+    </implements>
+    <implements>
+      <xmpp:SupportedXep>
         <xmpp:xep rdf:resource='https://xmpp.org/extensions/xep-0405.html'/>
         <xmpp:status>complete</xmpp:status>
         <xmpp:version>0.5.3</xmpp:version>
@@ -703,6 +711,14 @@ SPDX-License-Identifier: CC0-1.0
     </implements>
     <implements>
       <xmpp:SupportedXep>
+        <xmpp:xep rdf:resource='https://xmpp.org/extensions/xep-0453.html'/>
+        <xmpp:status>complete</xmpp:status>
+        <xmpp:version>0.1.2</xmpp:version>
+        <xmpp:since>1.5</xmpp:since>
+      </xmpp:SupportedXep>
+    </implements>
+    <implements>
+      <xmpp:SupportedXep>
         <xmpp:xep rdf:resource='https://xmpp.org/extensions/xep-0461.html'/>
         <xmpp:status>complete</xmpp:status>
         <xmpp:version>0.2.0</xmpp:version>
@@ -725,6 +741,34 @@ SPDX-License-Identifier: CC0-1.0
         <xmpp:since>1.8</xmpp:since>
       </xmpp:SupportedXep>
     </implements>
+    <release>
+      <Version>
+        <revision>1.10.1</revision>
+        <created>2025-02-25</created>
+        <file-release rdf:resource='https://github.com/qxmpp-project/qxmpp/archive/refs/tags/v1.10.1.tar.gz'/>
+      </Version>
+    </release>
+    <release>
+      <Version>
+        <revision>1.10.0</revision>
+        <created>2025-02-22</created>
+        <file-release rdf:resource='https://github.com/qxmpp-project/qxmpp/archive/refs/tags/v1.10.0.tar.gz'/>
+      </Version>
+    </release>
+    <release>
+      <Version>
+        <revision>1.9.4</revision>
+        <created>2025-02-01</created>
+        <file-release rdf:resource='https://github.com/qxmpp-project/qxmpp/archive/refs/tags/v1.9.4.tar.gz'/>
+      </Version>
+    </release>
+    <release>
+      <Version>
+        <revision>1.9.3</revision>
+        <created>2025-01-23</created>
+        <file-release rdf:resource='https://github.com/qxmpp-project/qxmpp/archive/refs/tags/v1.9.3.tar.gz'/>
+      </Version>
+    </release>
     <release>
       <Version>
         <revision>1.9.2</revision>

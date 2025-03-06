@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['todo_20list_0',['Todo List',['../todo.html',1,'']]]
+  ['protocols_0',['XMPP Extension Protocols',['../xep.html',1,'']]]
 ];

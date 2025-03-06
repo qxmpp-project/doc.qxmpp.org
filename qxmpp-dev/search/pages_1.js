@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['qxmpp_0',['QXmpp',['../index.html',1,'']]]
+  ['extension_20protocols_0',['XMPP Extension Protocols',['../xep.html',1,'']]]
 ];

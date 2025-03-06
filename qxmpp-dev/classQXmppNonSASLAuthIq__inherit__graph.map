@@ -1,6 +1,9 @@
 <map id="QXmppNonSASLAuthIq" name="QXmppNonSASLAuthIq">
-<area shape="rect" id="node1" title=" " alt="" coords="5,229,177,256"/>
-<area shape="rect" id="node2" href="$classQXmppIq.html" title="The QXmppIq class is the base class for all IQs." alt="" coords="50,155,133,181"/>
-<area shape="rect" id="node3" href="$classQXmppStanza.html" title="The QXmppStanza class is the base class for all XMPP stanzas." alt="" coords="34,80,149,107"/>
-<area shape="rect" id="node4" href="$classQXmppNonza.html" title=" " alt="" coords="36,5,147,32"/>
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,225,177,251"/>
+<area shape="rect" id="Node000002" href="$classQXmppIq.html" title="The QXmppIq class is the base class for all IQs." alt="" coords="50,152,133,177"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="94,191,94,225,89,225,89,191"/>
+<area shape="rect" id="Node000003" href="$classQXmppStanza.html" title="The QXmppStanza class is the base class for all XMPP stanzas." alt="" coords="34,79,149,104"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="94,118,94,152,89,152,89,118"/>
+<area shape="rect" id="Node000004" href="$classQXmppNonza.html" title=" " alt="" coords="36,5,147,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="94,44,94,79,89,79,89,44"/>
 </map>

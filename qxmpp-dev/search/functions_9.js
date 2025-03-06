@@ -16,6 +16,6 @@ var searchData=
   ['jobfinished_13',['jobFinished',['../classQXmppTransferManager.html#af2dcae40840d04530e5aef97a6586188',1,'QXmppTransferManager']]],
   ['jobstarted_14',['jobStarted',['../classQXmppTransferManager.html#a2a19e77348fe9df618d7e289bbe84f21',1,'QXmppTransferManager']]],
   ['join_15',['join',['../classQXmppMucRoom.html#afd01483eb367ecfa4f1fc2828919b4c1',1,'QXmppMucRoom']]],
-  ['joinchannel_16',['joinChannel',['../classQXmppMixManager.html#a57f880920940f81f8c465a8ed4c8011c',1,'QXmppMixManager::joinChannel(const QString &amp;channelJid, const QString &amp;nickname={}, QXmppMixConfigItem::Nodes nodes=~QXmppMixConfigItem::Nodes())'],['../classQXmppMixManager.html#ab4b2708f837d7348b3349447ae274ed8',1,'QXmppMixManager::joinChannel(const QXmppMixInvitation &amp;invitation, const QString &amp;nickname={}, QXmppMixConfigItem::Nodes nodes=~QXmppMixConfigItem::Nodes())']]],
+  ['joinchannel_16',['joinchannel',['../classQXmppMixManager.html#a57f880920940f81f8c465a8ed4c8011c',1,'QXmppMixManager::joinChannel(const QString &amp;channelJid, const QString &amp;nickname={}, QXmppMixConfigItem::Nodes nodes=~QXmppMixConfigItem::Nodes())'],['../classQXmppMixManager.html#ab4b2708f837d7348b3349447ae274ed8',1,'QXmppMixManager::joinChannel(const QXmppMixInvitation &amp;invitation, const QString &amp;nickname={}, QXmppMixConfigItem::Nodes nodes=~QXmppMixConfigItem::Nodes())']]],
   ['joined_17',['joined',['../classQXmppMucRoom.html#ab01ece57f344187b5fca066051fedb81',1,'QXmppMucRoom']]]
 ];

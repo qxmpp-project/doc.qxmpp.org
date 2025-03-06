@@ -1,4 +1,5 @@
 <map id="QXmppIncomingClient" name="QXmppIncomingClient">
-<area shape="rect" id="node1" title="The QXmppIncomingClient class represents an incoming XMPP stream from an XMPP client." alt="" coords="5,80,173,107"/>
-<area shape="rect" id="node2" href="$classQXmppLoggable.html" title="The QXmppLoggable class represents a source of logging messages." alt="" coords="25,5,154,32"/>
+<area shape="rect" id="Node000001" title="The QXmppIncomingClient class represents an incoming XMPP stream from an XMPP client." alt="" coords="5,79,173,104"/>
+<area shape="rect" id="Node000002" href="$classQXmppLoggable.html" title="The QXmppLoggable class represents a source of logging messages." alt="" coords="25,5,154,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="92,44,92,79,87,79,87,44"/>
 </map>

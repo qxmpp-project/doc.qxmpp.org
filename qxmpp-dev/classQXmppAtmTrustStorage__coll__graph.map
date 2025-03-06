@@ -1,4 +1,5 @@
 <map id="QXmppAtmTrustStorage" name="QXmppAtmTrustStorage">
-<area shape="rect" id="node1" title="The QXmppAtmTrustStorage class stores trust data for XEP&#45;0450: Automatic Trust Management (ATM)." alt="" coords="5,80,184,107"/>
-<area shape="rect" id="node2" href="$classQXmppTrustStorage.html" title="The QXmppTrustStorage class stores end&#45;to&#45;end encryption trust data." alt="" coords="19,5,170,32"/>
+<area shape="rect" id="Node000001" title="The QXmppAtmTrustStorage class stores trust data for XEP&#45;0450: Automatic Trust Management (ATM)." alt="" coords="5,79,184,104"/>
+<area shape="rect" id="Node000002" href="$classQXmppTrustStorage.html" title="The QXmppTrustStorage class stores end&#45;to&#45;end encryption trust data." alt="" coords="19,5,170,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="97,44,97,79,92,79,92,44"/>
 </map>
