@@ -249,7 +249,18 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>QXmppMixManager</b><
 <p>After the <a class="el" href="namespaceQXmpp.html">QXmpp</a> connected successfully to the XMPP server the signal <code><a class="el" href="classQXmppClient.html#a46e84c5280564cdc2d60307309f97b92">QXmppClient::connected()</a></code> is emitted and the roster is requested from the server. Once <a class="el" href="namespaceQXmpp.html">QXmpp</a> receives the roster the signal <code><a class="el" href="classQXmppRosterManager.html#a978cf900248b0ef144460bb52052ded8">QXmppRosterManager::rosterReceived()</a></code> is emitted and after that the methods of this class can be used to get the roster entries.</p>
 <p><code><a class="el" href="classQXmppRosterManager.html#a150c5702bc7b876a0f59ec5ec6b3ee64">QXmppRosterManager::isRosterReceived()</a></code> can be used to find out whether the roster has been received yet.</p>
 <p>The <code><a class="el" href="classQXmppRosterManager.html#aa02bc7a630e38d0c3c1830b34381cdb0">itemAdded()</a></code>, <code><a class="el" href="classQXmppRosterManager.html#a946fa5a6386ce44b898b70bdc0eca159">itemChanged()</a></code> and <code><a class="el" href="classQXmppRosterManager.html#a676caab8bdf1feb4753c0285744e77c7">itemRemoved()</a></code> signals are emitted whenever roster entries are added, changed or removed.</p>
-<p>The <code><a class="el" href="classQXmppRosterManager.html#ac95dd87aaa2c4cb61aa6ead2a17bc56e" title="This signal is emitted when the presence of a particular bareJid and resource changes.">presenceChanged()</a></code> signal is emitted whenever the presence for a roster item changes. </p>
+<p>The <code><a class="el" href="classQXmppRosterManager.html#ac95dd87aaa2c4cb61aa6ead2a17bc56e" title="This signal is emitted when the presence of a particular bareJid and resource changes.">presenceChanged()</a></code> signal is emitted whenever the presence for a roster item changes.</p>
+<p><a class="anchor" id="rostermanager_moved"></a></p>
+<h2><a class="anchor" id="autotoc_md8"></a>
+XEP-0283: Moved</h2>
+<p><a href="https://xmpp.org/extensions/xep-0283.html">XEP-0283: Moved</a> provides a way to inform other users that an account has moved. This allows a presence subscription request from a new account to be automatically linked to the old account. However, this requires verification via a corresponding PubSub node on the old account.</p>
+<p>The roster manager automatically checks entries using the <a class="el" href="classQXmppMovedManager.html">QXmppMovedManager</a>. For this to work, the moved manager must be added to the <a class="el" href="classQXmppClient.html" title="Main class for starting and managing connections to XMPP servers.">QXmppClient</a>. If the moved manager is not found or the specified old JID is incorrect, the entry in the presence subscription request will be removed.</p>
+<p>The received and verified presence subscription request is emitted via <a class="el" href="classQXmppRosterManager.html#a3605f2a0f7af87593143f8ac8b9db151">subscriptionRequestReceived()</a> and the old JID can be found in <a class="el" href="classQXmppPresence.html#afa224aea76c08b91b23570a6ca5270c1">QXmppPresence::oldJid()</a>. It is safe to assume that this old JID is valid since <a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.10.2.</p>
+<p>Accepting moved subscription requests automatically is discouraged in <a href="https://xmpp.org/extensions/xep-0283.html#receive-notification-client">section 4.3</a> of the XEP.</p>
+<h3><a class="anchor" id="autotoc_md9"></a>
+Behaviour in previous versions</h3>
+<p>Support in the roster manager and in <a class="el" href="classQXmppPresence.html" title="The QXmppPresence class represents an XMPP presence stanza.">QXmppPresence</a> was initially added in 1.9.0.</p>
+<p>In <a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.9.0 until 1.9.4 and 1.10.0 until 1.10.1 subscription requests with a Moved element are verified and automatically accepted without emitting <a class="el" href="classQXmppRosterManager.html#a3605f2a0f7af87593143f8ac8b9db151">subscriptionRequestReceived()</a>. If verification fails, the <b>invalid</b> old JID is passed in <a class="el" href="classQXmppRosterManager.html#a3605f2a0f7af87593143f8ac8b9db151">subscriptionRequestReceived()</a>! </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="aa96bd124e15813b402bc1de93f9e4f7b" name="aa96bd124e15813b402bc1de93f9e4f7b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa96bd124e15813b402bc1de93f9e4f7b">&#9670;&#160;</a></span>QXmppRosterManager()</h2>
@@ -1062,11 +1073,12 @@ class&#160;</td><td class="memItemRight" valign="bottom"><b>QXmppMixManager</b><
 </div><div class="memdoc">
 <p>This signal is emitted when a JID asks to subscribe to the user's presence.</p>
 <p>The user can either accept the request by calling <a class="el" href="classQXmppRosterManager.html#ae9622791dc98bb24e31d6a01aeb1f7e9">acceptSubscription()</a> or refuse it by calling <a class="el" href="classQXmppRosterManager.html#a36bfe26e7b664d21dff5b57c4bbbf13e">refuseSubscription()</a>.</p>
+<p>Since <em><a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.10.2</em> only verified <a href="https://xmpp.org/extensions/xep-0283.html">XEP-0283: Moved</a> old JIDs are passed in <em>presence</em>. If verification fails or the given old JID is not valid, the attribute is cleared in the <a class="el" href="classQXmppPresence.html" title="The QXmppPresence class represents an XMPP presence stanza.">QXmppPresence</a>. See <a class="el" href="classQXmppRosterManager.html#rostermanager_moved">above</a> for more details.</p>
 <dl class="section note"><dt>Note</dt><dd>If <a class="el" href="classQXmppConfiguration.html#a0d2b3dd9dc4723a5f8cf1894fa0ea1f3">QXmppConfiguration::autoAcceptSubscriptions()</a> is set to true or the subscription request is automatically accepted by the <a class="el" href="classQXmppMovedManager.html">QXmppMovedManager</a>, this signal will not be emitted.</dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">subscriberBareJid</td><td>bare JID that wants to subscribe to the user's presence </td></tr>
-    <tr><td class="paramname">presence</td><td>presence stanza containing the reason / message (presence.statusText())</td></tr>
+    <tr><td class="paramname">presence</td><td>presence stanza, e.g. containing the message (presence.statusText()), <a href="https://xmpp.org/extensions/xep-0283.html">XEP-0283: Moved</a> old JID or other information</td></tr>
   </table>
   </dd>
 </dl>
