@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">QXmpp<span id="projectnumber">&#160;Version: 1.11.0</span>
+   <div id="projectname">QXmpp<span id="projectnumber">&#160;Version: 1.12.0</span>
    </div>
   </td>
  </tr>
@@ -89,13 +89,13 @@ $(function() {
 <div class="line">    <span class="comment">// creating the object of the client class QXmppClient</span></div>
 <div class="line">    <span class="comment">// and then calling the connectToServer function to connect to gtalk server</span></div>
 <div class="line">    <a class="code hl_class" href="classQXmppClient.html">QXmppClient</a> client;</div>
-<div class="line">    client.<a class="code hl_slot" href="classQXmppClient.html#afebe3b0955b81c6dd0e738db328cf06b">connectToServer</a>(<span class="stringliteral">&quot;qxmpp.test1@gmail.com&quot;</span>, <span class="stringliteral">&quot;qxmpp123&quot;</span>);</div>
+<div class="line">    client.<a class="code hl_function" href="classQXmppClient.html#ab0db5935d96fa0b79235be25bfa01fbf">connectToServer</a>(<span class="stringliteral">&quot;qxmpp.test1@gmail.com&quot;</span>, <span class="stringliteral">&quot;qxmpp123&quot;</span>);</div>
 <div class="line"> </div>
 <div class="line">    <span class="comment">// run the application main loop</span></div>
 <div class="line">    <span class="keywordflow">return</span> a.exec();</div>
 <div class="line">}</div>
 <div class="ttc" id="aclassQXmppClient_html"><div class="ttname"><a href="classQXmppClient.html">QXmppClient</a></div><div class="ttdoc">Main class for starting and managing connections to XMPP servers.</div><div class="ttdef"><b>Definition</b> QXmppClient.h:62</div></div>
-<div class="ttc" id="aclassQXmppClient_html_afebe3b0955b81c6dd0e738db328cf06b"><div class="ttname"><a href="classQXmppClient.html#afebe3b0955b81c6dd0e738db328cf06b">QXmppClient::connectToServer</a></div><div class="ttdeci">void connectToServer(const QXmppConfiguration &amp;, const QXmppPresence &amp;initialPresence=QXmppPresence())</div><div class="ttdef"><b>Definition</b> QXmppClient.cpp:454</div></div>
+<div class="ttc" id="aclassQXmppClient_html_ab0db5935d96fa0b79235be25bfa01fbf"><div class="ttname"><a href="classQXmppClient.html#ab0db5935d96fa0b79235be25bfa01fbf">QXmppClient::connectToServer</a></div><div class="ttdeci">Q_SLOT void connectToServer(const QXmppConfiguration &amp;, const QXmppPresence &amp;initialPresence={})</div><div class="ttdef"><b>Definition</b> QXmppClient.cpp:456</div></div>
 <div class="ttc" id="aclassQXmppLogger_html_a0b60be94fa2f768d3eabcdba8357f15b"><div class="ttname"><a href="classQXmppLogger.html#a0b60be94fa2f768d3eabcdba8357f15b">QXmppLogger::setLoggingType</a></div><div class="ttdeci">void setLoggingType(QXmppLogger::LoggingType type)</div><div class="ttdoc">Sets the handler for logging messages.</div><div class="ttdef"><b>Definition</b> QXmppLogger.cpp:139</div></div>
 <div class="ttc" id="aclassQXmppLogger_html_a9a52fe426322ef8e10e05b7092be6c20acd51c8c54ebb5284752f224c69709998"><div class="ttname"><a href="classQXmppLogger.html#a9a52fe426322ef8e10e05b7092be6c20acd51c8c54ebb5284752f224c69709998">QXmppLogger::StdoutLogging</a></div><div class="ttdeci">@ StdoutLogging</div><div class="ttdoc">Log messages are written to the standard output.</div><div class="ttdef"><b>Definition</b> QXmppLogger.h:45</div></div>
 <div class="ttc" id="aclassQXmppLogger_html_ac261f30eeb3caaec02e9a97f9529ac49"><div class="ttname"><a href="classQXmppLogger.html#ac261f30eeb3caaec02e9a97f9529ac49">QXmppLogger::getLogger</a></div><div class="ttdeci">static QXmppLogger * getLogger()</div><div class="ttdef"><b>Definition</b> QXmppLogger.cpp:124</div></div>
@@ -117,10 +117,10 @@ $(function() {
 <div class="line">    ~echoClient();</div>
 <div class="line"> </div>
 <div class="line"><span class="keyword">public</span> slots:</div>
-<div class="line">    <span class="keywordtype">void</span> <a class="code hl_signal" href="classQXmppClient.html#aa3023a1ba0628cff1032f86df93d7bc3">messageReceived</a>(<span class="keyword">const</span> <a class="code hl_class" href="classQXmppMessage.html">QXmppMessage</a>&amp;);</div>
+<div class="line">    <span class="keywordtype">void</span> <a class="code hl_function" href="classQXmppClient.html#a4bc6a50b4f743df6963c88e2a854368c">messageReceived</a>(<span class="keyword">const</span> <a class="code hl_class" href="classQXmppMessage.html">QXmppMessage</a>&amp;);</div>
 <div class="line">};</div>
 <div class="line">}}}</div>
-<div class="ttc" id="aclassQXmppClient_html_aa3023a1ba0628cff1032f86df93d7bc3"><div class="ttname"><a href="classQXmppClient.html#aa3023a1ba0628cff1032f86df93d7bc3">QXmppClient::messageReceived</a></div><div class="ttdeci">void messageReceived(const QXmppMessage &amp;message)</div></div>
+<div class="ttc" id="aclassQXmppClient_html_a4bc6a50b4f743df6963c88e2a854368c"><div class="ttname"><a href="classQXmppClient.html#a4bc6a50b4f743df6963c88e2a854368c">QXmppClient::messageReceived</a></div><div class="ttdeci">Q_SIGNAL void messageReceived(const QXmppMessage &amp;message)</div></div>
 <div class="ttc" id="aclassQXmppMessage_html"><div class="ttname"><a href="classQXmppMessage.html">QXmppMessage</a></div><div class="ttdoc">The QXmppMessage class represents an XMPP message.</div><div class="ttdef"><b>Definition</b> QXmppMessage.h:64</div></div>
 </div><!-- fragment --><div class="fragment"><div class="line"><span class="preprocessor">#include &quot;echoClient.h&quot;</span></div>
 <div class="line"><span class="preprocessor">#include &quot;QXmppMessage.h&quot;</span></div>

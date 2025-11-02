@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">QXmpp<span id="projectnumber">&#160;Version: 1.11.0</span>
+   <div id="projectname">QXmpp<span id="projectnumber">&#160;Version: 1.12.0</span>
    </div>
   </td>
  </tr>
@@ -488,7 +488,7 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p><a href="https://xmpp.org/extensions/xep-0334.html">XEP-0334</a>: Message Processing Hints</p>
+<p><a href="https://xmpp.org/extensions/xep-0334.html">XEP-0334: Message Processing Hints</a></p>
 <dl class="section since"><dt>Since</dt><dd><a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.1 </dd></dl>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="aea1a3c281a281bc3a4fbc9f48b554256a75e808e83ff91973a7e245dd84a5fda9" name="aea1a3c281a281bc3a4fbc9f48b554256a75e808e83ff91973a7e245dd84a5fda9"></a>NoPermanentStore&#160;</td><td class="fielddoc"><p>Do not allow permanent storage. </p>
@@ -514,7 +514,7 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>This enum describes a chat marker as defined by <a href="https://xmpp.org/extensions/xep-0333.html">XEP-0333</a>: Chat Markers.</p>
+<p>This enum describes a chat marker as defined by <a href="https://xmpp.org/extensions/xep-0333.html">XEP-0333: Chat Markers</a>.</p>
 <dl class="section since"><dt>Since</dt><dd><a class="el" href="namespaceQXmpp.html">QXmpp</a> 0.8.1 </dd></dl>
 
 </div>
@@ -530,9 +530,9 @@ Static Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>This enum describes a chat state as defined by <a href="https://xmpp.org/extensions/xep-0085.html">XEP-0085</a>: Chat State Notifications.</p>
-<dl class="section since"><dt>Since</dt><dd><a class="el" href="namespaceQXmpp.html">QXmpp</a> 0.2 </dd></dl>
-<table class="fieldtable">
+<pre class="fragment">   This enum describes a chat state as defined by &lt;a href="https://xmpp.org/extensions/xep-0085.html"&gt;XEP-0085:  Chat State
+</pre><p> Notifications. </p><pre class="fragment">   \since QXmpp 0.2
+</pre> <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="aeaa3cc5ccb7d451067a80dd1f3c7099aabe52ccd452233405cb3a9f86ce086236" name="aeaa3cc5ccb7d451067a80dd1f3c7099aabe52ccd452233405cb3a9f86ce086236"></a>None&#160;</td><td class="fielddoc"><p>The message does not contain any chat state information. </p>
 </td></tr>
 <tr><td class="fieldname"><a id="aeaa3cc5ccb7d451067a80dd1f3c7099aa2a197e88be8355a853534c2342e64c48" name="aeaa3cc5ccb7d451067a80dd1f3c7099aa2a197e88be8355a853534c2342e64c48"></a>Active&#160;</td><td class="fielddoc"><p>User is actively participating in the chat session. </p>
@@ -734,7 +734,7 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Returns the encryption method this message is advertised to be encrypted with.</p>
-<dl class="section note"><dt>Note</dt><dd>QXmppMessage::NoEncryption does not necesserily mean that the message is not encrypted; it may also be that the author of the message does not support <a href="https://xmpp.org/extensions/xep-0380.html">XEP-0380</a>: Explicit Message Encryption.</dd>
+<dl class="section note"><dt>Note</dt><dd>QXmppMessage::NoEncryption does not necesserily mean that the message is not encrypted; it may also be that the author of the message does not support <a href="https://xmpp.org/extensions/xep-0380.html">XEP-0380: Explicit Message Encryption</a>.</dd>
 <dd>
 If this returns QXmppMessage::UnknownEncryption, you can still get the namespace of the encryption with <code><a class="el" href="classQXmppMessage.html#a048454b382ffd400f48ff553267f01e0">encryptionMethodNs()</a></code> and possibly also a name with <code><a class="el" href="classQXmppMessage.html#a3a802383c45c0f1f2b7858015a61b605">encryptionName()</a></code>.</dd></dl>
 <dl class="section since"><dt>Since</dt><dd><a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.1 </dd></dl>
@@ -755,7 +755,7 @@ If this returns QXmppMessage::UnknownEncryption, you can still get the namespace
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Returns the namespace of the advertised encryption method via. <a href="https://xmpp.org/extensions/xep-0380.html">XEP-0380</a>: Explicit Message Encryption.</p>
+<p>Returns the namespace of the advertised encryption method via. <a href="https://xmpp.org/extensions/xep-0380.html">XEP-0380: Explicit Message Encryption</a>.</p>
 <dl class="section since"><dt>Since</dt><dd><a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.1 </dd></dl>
 
 </div>
@@ -774,7 +774,7 @@ If this returns QXmppMessage::UnknownEncryption, you can still get the namespace
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Returns the associated name of the encryption method this message advertises to be encrypted with. See <a href="https://xmpp.org/extensions/xep-0380.html">XEP-0380</a>: Explicit Message Encryption for details.</p>
+<p>Returns the associated name of the encryption method this message advertises to be encrypted with. See <a href="https://xmpp.org/extensions/xep-0380.html">XEP-0380: Explicit Message Encryption</a> for details.</p>
 <dl class="section since"><dt>Since</dt><dd><a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.1 </dd></dl>
 
 </div>
@@ -891,7 +891,7 @@ If this returns QXmppMessage::UnknownEncryption, you can still get the namespace
 </div><div class="memdoc">
 <p>Sets whether this message is only a fallback according to <a href="https://xmpp.org/extensions/xep-0428.html">XEP-0428: Fallback Indication</a>.</p>
 <p>This is useful for clients not supporting end-to-end encryption to indicate that the message body does not contain the intended text of the author.</p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000032">Deprecated:</a></b></dt><dd>Use <a class="el" href="classQXmppMessage.html#a8f406b6850214129794e781713dfbe03">fallbackMarkers()</a> instead, it provides full access to the fallback elements.</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000035">Deprecated:</a></b></dt><dd>Use <a class="el" href="classQXmppMessage.html#a8f406b6850214129794e781713dfbe03">fallbackMarkers()</a> instead, it provides full access to the fallback elements.</dd></dl>
 <dl class="section since"><dt>Since</dt><dd><a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.3 </dd></dl>
 
 </div>
@@ -1827,7 +1827,7 @@ If this returns QXmppMessage::UnknownEncryption, you can still get the namespace
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Advertises that this message is encrypted with the given encryption method. See <a href="https://xmpp.org/extensions/xep-0380.html">XEP-0380</a>: Explicit Message Encryption for details.</p>
+<p>Advertises that this message is encrypted with the given encryption method. See <a href="https://xmpp.org/extensions/xep-0380.html">XEP-0380: Explicit Message Encryption</a> for details.</p>
 <dl class="section since"><dt>Since</dt><dd><a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.1 </dd></dl>
 
 </div>
@@ -1847,7 +1847,7 @@ If this returns QXmppMessage::UnknownEncryption, you can still get the namespace
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Sets the namespace of the encryption method this message advertises to be encrypted with. See <a href="https://xmpp.org/extensions/xep-0380.html">XEP-0380</a>: Explicit Message Encryption for details.</p>
+<p>Sets the namespace of the encryption method this message advertises to be encrypted with. See <a href="https://xmpp.org/extensions/xep-0380.html">XEP-0380: Explicit Message Encryption</a> for details.</p>
 <dl class="section since"><dt>Since</dt><dd><a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.1 </dd></dl>
 
 </div>
@@ -1930,7 +1930,7 @@ If this returns QXmppMessage::UnknownEncryption, you can still get the namespace
 </div><div class="memdoc">
 <p>Sets whether this message is only a fallback according to <a href="https://xmpp.org/extensions/xep-0428.html">XEP-0428: Fallback Indication</a>.</p>
 <p>This is useful for clients not supporting end-to-end encryption to indicate that the message body does not contain the intended text of the author.</p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000033">Deprecated:</a></b></dt><dd>Use <a class="el" href="classQXmppMessage.html#ac0eb66aedff21c854f769af87d13f2cf">setFallbackMarkers()</a> instead, it provides full access to the fallback elements.</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000036">Deprecated:</a></b></dt><dd>Use <a class="el" href="classQXmppMessage.html#ac0eb66aedff21c854f769af87d13f2cf">setFallbackMarkers()</a> instead, it provides full access to the fallback elements.</dd></dl>
 <dl class="section since"><dt>Since</dt><dd><a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.3 </dd></dl>
 
 </div>
@@ -2296,7 +2296,7 @@ If this returns QXmppMessage::UnknownEncryption, you can still get the namespace
 <p>The corresponding hint must be set manually: </p><div class="fragment"><div class="line"><a class="code hl_class" href="classQXmppMessage.html">QXmppMessage</a> message;</div>
 <div class="line">message.<a class="code hl_function" href="classQXmppMessage.html#a31394f18bd084a5adaa0794aab2e4a24">addHint</a>(<a class="code hl_enumvalue" href="classQXmppMessage.html#aea1a3c281a281bc3a4fbc9f48b554256a32bacb2cf0afce2b83ef293d10a7db17">QXmppMessage::Store</a>);</div>
 <div class="ttc" id="aclassQXmppMessage_html"><div class="ttname"><a href="classQXmppMessage.html">QXmppMessage</a></div><div class="ttdoc">The QXmppMessage class represents an XMPP message.</div><div class="ttdef"><b>Definition</b> QXmppMessage.h:64</div></div>
-<div class="ttc" id="aclassQXmppMessage_html_a31394f18bd084a5adaa0794aab2e4a24"><div class="ttname"><a href="classQXmppMessage.html#a31394f18bd084a5adaa0794aab2e4a24">QXmppMessage::addHint</a></div><div class="ttdeci">void addHint(const Hint hint)</div><div class="ttdef"><b>Definition</b> QXmppMessage.cpp:845</div></div>
+<div class="ttc" id="aclassQXmppMessage_html_a31394f18bd084a5adaa0794aab2e4a24"><div class="ttname"><a href="classQXmppMessage.html#a31394f18bd084a5adaa0794aab2e4a24">QXmppMessage::addHint</a></div><div class="ttdeci">void addHint(const Hint hint)</div><div class="ttdef"><b>Definition</b> QXmppMessage.cpp:870</div></div>
 <div class="ttc" id="aclassQXmppMessage_html_aea1a3c281a281bc3a4fbc9f48b554256a32bacb2cf0afce2b83ef293d10a7db17"><div class="ttname"><a href="classQXmppMessage.html#aea1a3c281a281bc3a4fbc9f48b554256a32bacb2cf0afce2b83ef293d10a7db17">QXmppMessage::Store</a></div><div class="ttdeci">@ Store</div><div class="ttdoc">Do store the message.</div><div class="ttdef"><b>Definition</b> QXmppMessage.h:124</div></div>
 </div><!-- fragment --><dl class="section since"><dt>Since</dt><dd><a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.5 </dd></dl>
 
@@ -2461,7 +2461,7 @@ If this returns QXmppMessage::UnknownEncryption, you can still get the namespace
       </table>
 </div><div class="memdoc">
 <p>Sets the stanza ID of the message according to <a href="https://xmpp.org/extensions/xep-0359.html">XEP-0359</a>: Unique and Stable Stanza IDs.</p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000029">Deprecated:</a></b></dt><dd>Use <a class="el" href="classQXmppMessage.html#afc03b79e22b6033ef7178706f8a52f20">setStanzaIds()</a> instead.</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000032">Deprecated:</a></b></dt><dd>Use <a class="el" href="classQXmppMessage.html#afc03b79e22b6033ef7178706f8a52f20">setStanzaIds()</a> instead.</dd></dl>
 <dl class="section since"><dt>Since</dt><dd><a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.3 </dd></dl>
 
 </div>
@@ -2482,7 +2482,7 @@ If this returns QXmppMessage::UnknownEncryption, you can still get the namespace
       </table>
 </div><div class="memdoc">
 <p>Sets the creator of the stanza ID according to <a href="https://xmpp.org/extensions/xep-0359.html">XEP-0359</a>: Unique and Stable Stanza IDs.</p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000031">Deprecated:</a></b></dt><dd>Use <a class="el" href="classQXmppMessage.html#afc03b79e22b6033ef7178706f8a52f20">setStanzaIds()</a> instead.</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000034">Deprecated:</a></b></dt><dd>Use <a class="el" href="classQXmppMessage.html#afc03b79e22b6033ef7178706f8a52f20">setStanzaIds()</a> instead.</dd></dl>
 <dl class="section since"><dt>Since</dt><dd><a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.3 </dd></dl>
 
 </div>
@@ -2691,7 +2691,7 @@ If this returns QXmppMessage::UnknownEncryption, you can still get the namespace
       </table>
 </div><div class="memdoc">
 <p>Returns the stanza ID of the message according to <a href="https://xmpp.org/extensions/xep-0359.html">XEP-0359</a>: Unique and Stable Stanza IDs.</p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000028">Deprecated:</a></b></dt><dd>Use <a class="el" href="classQXmppMessage.html#ada5be5795c05208c10378bbf6f0f2cd0">stanzaIds()</a> instead.</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000031">Deprecated:</a></b></dt><dd>Use <a class="el" href="classQXmppMessage.html#ada5be5795c05208c10378bbf6f0f2cd0">stanzaIds()</a> instead.</dd></dl>
 <dl class="section since"><dt>Since</dt><dd><a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.3 </dd></dl>
 
 </div>
@@ -2711,7 +2711,7 @@ If this returns QXmppMessage::UnknownEncryption, you can still get the namespace
       </table>
 </div><div class="memdoc">
 <p>Returns the creator of the stanza ID according to <a href="https://xmpp.org/extensions/xep-0359.html">XEP-0359</a>: Unique and Stable Stanza IDs.</p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000030">Deprecated:</a></b></dt><dd>Use <a class="el" href="classQXmppMessage.html#ada5be5795c05208c10378bbf6f0f2cd0">stanzaIds()</a> instead.</dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000033">Deprecated:</a></b></dt><dd>Use <a class="el" href="classQXmppMessage.html#ada5be5795c05208c10378bbf6f0f2cd0">stanzaIds()</a> instead.</dd></dl>
 <dl class="section since"><dt>Since</dt><dd><a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.3 </dd></dl>
 
 </div>

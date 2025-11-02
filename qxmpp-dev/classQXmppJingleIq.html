@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">QXmpp<span id="projectnumber">&#160;Version: 1.11.0</span>
+   <div id="projectname">QXmpp<span id="projectnumber">&#160;Version: 1.12.0</span>
    </div>
   </td>
  </tr>
@@ -208,13 +208,13 @@ QString&#160;</td><td class="memItemRight" valign="bottom"><b>initiator</b> () c
 void&#160;</td><td class="memItemRight" valign="bottom"><b>setInitiator</b> (const QString &amp;<a class="el" href="classQXmppJingleIq.html#adbe25834149977708a4cf628dd4c42e8">initiator</a>)</td></tr>
 <tr class="memdesc:ae2ff3ea68609d6bcd79c41e0e6351730"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the session initiator. <br /></td></tr>
 <tr class="separator:ae2ff3ea68609d6bcd79c41e0e6351730"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af6f1260f0b6570d13a3ef06ddfa5644a" id="r_af6f1260f0b6570d13a3ef06ddfa5644a"><td class="memItemLeft" align="right" valign="top"><a id="af6f1260f0b6570d13a3ef06ddfa5644a" name="af6f1260f0b6570d13a3ef06ddfa5644a"></a>
-<a class="el" href="classQXmppJingleReason.html">QXmppJingleReason</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>reason</b> ()</td></tr>
-<tr class="memdesc:af6f1260f0b6570d13a3ef06ddfa5644a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a reference to the IQ's reason element. <br /></td></tr>
+<tr class="memitem:abc551b22273b1cfd7d62557779c7092d" id="r_abc551b22273b1cfd7d62557779c7092d"><td class="memItemLeft" align="right" valign="top">std::optional&lt; <a class="el" href="classQXmppJingleReason.html">QXmppJingleReason</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppJingleIq.html#abc551b22273b1cfd7d62557779c7092d">actionReason</a> () const</td></tr>
+<tr class="separator:abc551b22273b1cfd7d62557779c7092d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4af56dabb6844d5f22c5fbbb33a89656" id="r_a4af56dabb6844d5f22c5fbbb33a89656"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppJingleIq.html#a4af56dabb6844d5f22c5fbbb33a89656">setActionReason</a> (const std::optional&lt; <a class="el" href="classQXmppJingleReason.html">QXmppJingleReason</a> &gt; &amp;)</td></tr>
+<tr class="separator:a4af56dabb6844d5f22c5fbbb33a89656"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6f1260f0b6570d13a3ef06ddfa5644a" id="r_af6f1260f0b6570d13a3ef06ddfa5644a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classQXmppJingleReason.html">QXmppJingleReason</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppJingleIq.html#af6f1260f0b6570d13a3ef06ddfa5644a">reason</a> ()</td></tr>
 <tr class="separator:af6f1260f0b6570d13a3ef06ddfa5644a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a332efc024578161b40e514137b052b2b" id="r_a332efc024578161b40e514137b052b2b"><td class="memItemLeft" align="right" valign="top"><a id="a332efc024578161b40e514137b052b2b" name="a332efc024578161b40e514137b052b2b"></a>
-const <a class="el" href="classQXmppJingleReason.html">QXmppJingleReason</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>reason</b> () const</td></tr>
-<tr class="memdesc:a332efc024578161b40e514137b052b2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a const reference to the IQ's reason element. <br /></td></tr>
+<tr class="memitem:a332efc024578161b40e514137b052b2b" id="r_a332efc024578161b40e514137b052b2b"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="classQXmppJingleReason.html">QXmppJingleReason</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppJingleIq.html#a332efc024578161b40e514137b052b2b">reason</a> () const</td></tr>
 <tr class="separator:a332efc024578161b40e514137b052b2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0741419a3fd8b4005582365f336a93d8" id="r_a0741419a3fd8b4005582365f336a93d8"><td class="memItemLeft" align="right" valign="top"><a id="a0741419a3fd8b4005582365f336a93d8" name="a0741419a3fd8b4005582365f336a93d8"></a>
 QString&#160;</td><td class="memItemRight" valign="bottom"><b>responder</b> () const</td></tr>
@@ -395,6 +395,25 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>setSid</b> (const QSt
 
 </div>
 </div>
+<a id="abc551b22273b1cfd7d62557779c7092d" name="abc551b22273b1cfd7d62557779c7092d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc551b22273b1cfd7d62557779c7092d">&#9670;&#160;</a></span>actionReason()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::optional&lt; <a class="el" href="classQXmppJingleReason.html">QXmppJingleReason</a> &gt; QXmppJingleIq::actionReason </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns the reason for the action (in most cases the error).</p>
+<dl class="section since"><dt>Since</dt><dd><a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.11 </dd></dl>
+
+</div>
+</div>
 <a id="a229054fddf868666ff6c4848536d404c" name="a229054fddf868666ff6c4848536d404c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a229054fddf868666ff6c4848536d404c">&#9670;&#160;</a></span>addContent()</h2>
 
@@ -454,6 +473,44 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>setSid</b> (const QSt
 
 </div>
 </div>
+<a id="af6f1260f0b6570d13a3ef06ddfa5644a" name="af6f1260f0b6570d13a3ef06ddfa5644a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af6f1260f0b6570d13a3ef06ddfa5644a">&#9670;&#160;</a></span>reason() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classQXmppJingleReason.html">QXmppJingleReason</a> &amp; QXmppJingleIq::reason </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns a reference to the IQ's reason element.</p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000027">Deprecated:</a></b></dt><dd>Deprecated since <a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.11: Use <a class="el" href="classQXmppJingleIq.html#abc551b22273b1cfd7d62557779c7092d">actionReason()</a> instead. </dd></dl>
+
+</div>
+</div>
+<a id="a332efc024578161b40e514137b052b2b" name="a332efc024578161b40e514137b052b2b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a332efc024578161b40e514137b052b2b">&#9670;&#160;</a></span>reason() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const <a class="el" href="classQXmppJingleReason.html">QXmppJingleReason</a> &amp; QXmppJingleIq::reason </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Returns a const reference to the IQ's reason element.</p>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000028">Deprecated:</a></b></dt><dd>Deprecated since <a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.11: Use <a class="el" href="classQXmppJingleIq.html#abc551b22273b1cfd7d62557779c7092d">actionReason()</a> instead. </dd></dl>
+
+</div>
+</div>
 <a id="aca7639c371621260b23615f0c4658c6f" name="aca7639c371621260b23615f0c4658c6f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aca7639c371621260b23615f0c4658c6f">&#9670;&#160;</a></span>ringing()</h2>
 
@@ -469,7 +526,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>setSid</b> (const QSt
       </table>
 </div><div class="memdoc">
 <p>Returns true if the call is ringing.</p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000026">Deprecated:</a></b></dt><dd>This method is deprecated since <a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.5. Use <code><a class="el" href="classQXmppJingleIq.html#a8ca26334df670ecd4dbf3d883950b901">QXmppJingleIq::rtpSessionState()</a></code> instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000029">Deprecated:</a></b></dt><dd>This method is deprecated since <a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.5. Use <code><a class="el" href="classQXmppJingleIq.html#a8ca26334df670ecd4dbf3d883950b901">QXmppJingleIq::rtpSessionState()</a></code> instead. </dd></dl>
 
 </div>
 </div>
@@ -515,6 +572,26 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>setSid</b> (const QSt
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a4af56dabb6844d5f22c5fbbb33a89656" name="a4af56dabb6844d5f22c5fbbb33a89656"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4af56dabb6844d5f22c5fbbb33a89656">&#9670;&#160;</a></span>setActionReason()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void QXmppJingleIq::setActionReason </td>
+          <td>(</td>
+          <td class="paramtype">const std::optional&lt; <a class="el" href="classQXmppJingleReason.html">QXmppJingleReason</a> &gt; &amp;&#160;</td>
+          <td class="paramname"><em>reason</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Sets the reason for the action (in most cases the error).</p>
+<dl class="section since"><dt>Since</dt><dd><a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.11 </dd></dl>
 
 </div>
 </div>
@@ -586,7 +663,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>setSid</b> (const QSt
   </table>
   </dd>
 </dl>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000027">Deprecated:</a></b></dt><dd>This method is deprecated since <a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.5. Use <code><a class="el" href="classQXmppJingleIq.html#af08c2324be419b07e6baf4aaf4aab13e">QXmppJingleIq::setRtpSessionState()</a></code> instead. </dd></dl>
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000030">Deprecated:</a></b></dt><dd>This method is deprecated since <a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.5. Use <code><a class="el" href="classQXmppJingleIq.html#af08c2324be419b07e6baf4aaf4aab13e">QXmppJingleIq::setRtpSessionState()</a></code> instead. </dd></dl>
 
 </div>
 </div>

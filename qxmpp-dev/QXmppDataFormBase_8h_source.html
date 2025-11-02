@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">QXmpp<span id="projectnumber">&#160;Version: 1.11.0</span>
+   <div id="projectname">QXmpp<span id="projectnumber">&#160;Version: 1.12.0</span>
    </div>
   </td>
  </tr>
@@ -147,7 +147,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="foldopen" id="foldopen00057" data-start="{" data-end="}">
 <div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="classQXmppDataFormBase.html#a4f62e26a1978d3f5160c6d38669d611b">   57</a></span>    <span class="keyword">static</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classQXmppDataFormBase.html#a4f62e26a1978d3f5160c6d38669d611b">serializeValue</a>(<a class="code hl_class" href="classQXmppDataForm.html">QXmppDataForm</a> &amp;form, <a class="code hl_enumeration" href="classQXmppDataForm_1_1Field.html#a2de5e3af9b018b97d450797f7e4a3b44">QXmppDataForm::Field::Type</a> type, <span class="keyword">const</span> QString &amp;name, <span class="keyword">const</span> T &amp;value)</div>
 <div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    {</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        form.<a class="code hl_function" href="classQXmppDataForm.html#a3ac876cdc1c854574a7b832d3a43bf0e">fields</a>() &lt;&lt; <a class="code hl_class" href="classQXmppDataForm_1_1Field.html">QXmppDataForm::Field</a>(type, name, value);</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        form.<a class="code hl_function" href="classQXmppDataForm.html#a3943d6fff7fd8093accadecb66f1fa44">appendField</a>(<a class="code hl_class" href="classQXmppDataForm_1_1Field.html">QXmppDataForm::Field</a>(type, name, value));</div>
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    }</div>
 </div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
@@ -224,7 +224,20 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>};</div>
 </div>
 <div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span> </div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span><span class="preprocessor">#endif  </span><span class="comment">// QXMPPDATAFORMBASED_H</span></div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span><span class="keyword">namespace </span>QXmpp::Private {</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span> </div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span><span class="keyword">concept </span>DataFormConvertible = <span class="keyword">requires</span>(<span class="keyword">const</span> <a class="code hl_class" href="classQXmppDataForm.html">QXmppDataForm</a> &amp;form) {</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>    { T::DataFormType };</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>    { T::fromDataForm(form) } -&gt; std::same_as&lt;std::optional&lt;T&gt;&gt;;</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>};</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span> </div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span><span class="keyword">template</span>&lt;DataFormConvertible T&gt;</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span><span class="keyword">inline</span> <span class="keyword">constexpr</span> <span class="keyword">auto</span> DataFormType = T::DataFormType;</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span> </div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>}  <span class="comment">// namespace QXmpp::Private</span></div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span> </div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span><span class="preprocessor">#endif  </span><span class="comment">// QXMPPDATAFORMBASED_H</span></div>
 <div class="ttc" id="aclassQXmppDataFormBase_html"><div class="ttname"><a href="classQXmppDataFormBase.html">QXmppDataFormBase</a></div><div class="ttdef"><b>Definition</b> QXmppDataFormBase.h:15</div></div>
 <div class="ttc" id="aclassQXmppDataFormBase_html_a0a2aa86081b9843ecc79689ab5ff65bc"><div class="ttname"><a href="classQXmppDataFormBase.html#a0a2aa86081b9843ecc79689ab5ff65bc">QXmppDataFormBase::serializeOptionalNumber</a></div><div class="ttdeci">static void serializeOptionalNumber(QXmppDataForm &amp;form, QXmppDataForm::Field::Type type, QStringView name, std::optional&lt; T &gt; optional)</div><div class="ttdef"><b>Definition</b> QXmppDataFormBase.h:88</div></div>
 <div class="ttc" id="aclassQXmppDataFormBase_html_a14d0b8d113e3704200064aa53d0a3952"><div class="ttname"><a href="classQXmppDataFormBase.html#a14d0b8d113e3704200064aa53d0a3952">QXmppDataFormBase::parseUInt</a></div><div class="ttdeci">std::optional&lt; quint32 &gt; parseUInt(const QVariant &amp;variant)</div><div class="ttdef"><b>Definition</b> QXmppDataFormBase.h:26</div></div>
@@ -237,10 +250,10 @@ $(document).ready(function() { init_codefold(0); });
 <div class="ttc" id="aclassQXmppDataFormBase_html_a8950d9a7a7a97700bddbd42ac427805a"><div class="ttname"><a href="classQXmppDataFormBase.html#a8950d9a7a7a97700bddbd42ac427805a">QXmppDataFormBase::serializeEmptyable</a></div><div class="ttdeci">static void serializeEmptyable(QXmppDataForm &amp;form, QXmppDataForm::Field::Type type, QStringView name, const T &amp;value)</div><div class="ttdef"><b>Definition</b> QXmppDataFormBase.h:71</div></div>
 <div class="ttc" id="aclassQXmppDataFormBase_html_a8f26dd9b00e219aaebfa6ad5ed92eea0"><div class="ttname"><a href="classQXmppDataFormBase.html#a8f26dd9b00e219aaebfa6ad5ed92eea0">QXmppDataFormBase::serializeOptional</a></div><div class="ttdeci">static void serializeOptional(QXmppDataForm &amp;form, QXmppDataForm::Field::Type type, QStringView name, const std::optional&lt; T &gt; &amp;optional, ValueConverter convert=[](T a) { return a;})</div><div class="ttdef"><b>Definition</b> QXmppDataFormBase.h:79</div></div>
 <div class="ttc" id="aclassQXmppDataFormBase_html_ac1f3db4ee9d1b275ae3b7c6d47443183"><div class="ttname"><a href="classQXmppDataFormBase.html#ac1f3db4ee9d1b275ae3b7c6d47443183">QXmppDataFormBase::parseBool</a></div><div class="ttdeci">std::optional&lt; bool &gt; parseBool(const QVariant &amp;variant)</div><div class="ttdef"><b>Definition</b> QXmppDataFormBase.h:44</div></div>
-<div class="ttc" id="aclassQXmppDataForm_1_1Field_html"><div class="ttname"><a href="classQXmppDataForm_1_1Field.html">QXmppDataForm::Field</a></div><div class="ttdef"><b>Definition</b> QXmppDataForm.h:89</div></div>
-<div class="ttc" id="aclassQXmppDataForm_1_1Field_html_a2de5e3af9b018b97d450797f7e4a3b44"><div class="ttname"><a href="classQXmppDataForm_1_1Field.html#a2de5e3af9b018b97d450797f7e4a3b44">QXmppDataForm::Field::Type</a></div><div class="ttdeci">Type</div><div class="ttdoc">This enum is used to describe a field's type.</div><div class="ttdef"><b>Definition</b> QXmppDataForm.h:92</div></div>
-<div class="ttc" id="aclassQXmppDataForm_html"><div class="ttname"><a href="classQXmppDataForm.html">QXmppDataForm</a></div><div class="ttdef"><b>Definition</b> QXmppDataForm.h:27</div></div>
-<div class="ttc" id="aclassQXmppDataForm_html_a3ac876cdc1c854574a7b832d3a43bf0e"><div class="ttname"><a href="classQXmppDataForm.html#a3ac876cdc1c854574a7b832d3a43bf0e">QXmppDataForm::fields</a></div><div class="ttdeci">QList&lt; Field &gt; fields() const</div><div class="ttdef"><b>Definition</b> QXmppDataForm.cpp:688</div></div>
+<div class="ttc" id="aclassQXmppDataForm_1_1Field_html"><div class="ttname"><a href="classQXmppDataForm_1_1Field.html">QXmppDataForm::Field</a></div><div class="ttdef"><b>Definition</b> QXmppDataForm.h:93</div></div>
+<div class="ttc" id="aclassQXmppDataForm_1_1Field_html_a2de5e3af9b018b97d450797f7e4a3b44"><div class="ttname"><a href="classQXmppDataForm_1_1Field.html#a2de5e3af9b018b97d450797f7e4a3b44">QXmppDataForm::Field::Type</a></div><div class="ttdeci">Type</div><div class="ttdoc">This enum is used to describe a field's type.</div><div class="ttdef"><b>Definition</b> QXmppDataForm.h:96</div></div>
+<div class="ttc" id="aclassQXmppDataForm_html"><div class="ttname"><a href="classQXmppDataForm.html">QXmppDataForm</a></div><div class="ttdef"><b>Definition</b> QXmppDataForm.h:28</div></div>
+<div class="ttc" id="aclassQXmppDataForm_html_a3943d6fff7fd8093accadecb66f1fa44"><div class="ttname"><a href="classQXmppDataForm.html#a3943d6fff7fd8093accadecb66f1fa44">QXmppDataForm::appendField</a></div><div class="ttdeci">void appendField(QXmppDataForm::Field &amp;&amp;field)</div><div class="ttdef"><b>Definition</b> QXmppDataForm.cpp:779</div></div>
 <div class="ttc" id="aclassQXmppExtensibleDataFormBase_html"><div class="ttname"><a href="classQXmppExtensibleDataFormBase.html">QXmppExtensibleDataFormBase</a></div><div class="ttdef"><b>Definition</b> QXmppDataFormBase.h:101</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->

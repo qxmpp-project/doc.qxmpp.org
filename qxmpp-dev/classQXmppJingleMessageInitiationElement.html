@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">QXmpp<span id="projectnumber">&#160;Version: 1.11.0</span>
+   <div id="projectname">QXmpp<span id="projectnumber">&#160;Version: 1.12.0</span>
    </div>
   </td>
  </tr>
@@ -78,7 +78,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>The <a class="el" href="classQXmppJingleMessageInitiationElement.html" title="The QXmppJingleMessageInitiationElement class represents a Jingle Message Initiation element as speci...">QXmppJingleMessageInitiationElement</a> class represents a Jingle Message Initiation element as specified by <a href="https://xmpp.org/extensions/xep-0353.html">XEP-0353</a>: Jingle Message Initiation.  
+<p>The <a class="el" href="classQXmppJingleMessageInitiationElement.html" title="The QXmppJingleMessageInitiationElement class represents a Jingle Message Initiation element as speci...">QXmppJingleMessageInitiationElement</a> class represents a Jingle Message Initiation element as specified by <a href="https://xmpp.org/extensions/xep-0353.html">XEP-0353: Jingle Message Initiation</a>.  
  <a href="classQXmppJingleMessageInitiationElement.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-types" name="pub-types"></a>
@@ -131,13 +131,9 @@ Public Member Functions</h2></td></tr>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a45c1d09cb9452b3c4846a5f73f4609d1" id="r_a45c1d09cb9452b3c4846a5f73f4609d1"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppJingleMessageInitiationElement.html#a45c1d09cb9452b3c4846a5f73f4609d1">isJingleMessageInitiationElement</a> (const QDomElement &amp;)</td></tr>
 <tr class="separator:a45c1d09cb9452b3c4846a5f73f4609d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab87d5562b0aa423c513abe6fcdc7ebb8" id="r_ab87d5562b0aa423c513abe6fcdc7ebb8"><td class="memItemLeft" align="right" valign="top">static QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppJingleMessageInitiationElement.html#ab87d5562b0aa423c513abe6fcdc7ebb8">jmiElementTypeToString</a> (<a class="el" href="classQXmppJingleMessageInitiationElement.html#ad21a2f9ca61bd0ae461a48a037ddda1c">Type</a> <a class="el" href="classQXmppJingleMessageInitiationElement.html#a1211b5c1563b30e0b3f1393863b458ee">type</a>)</td></tr>
-<tr class="separator:ab87d5562b0aa423c513abe6fcdc7ebb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7e0e2179779e7fd2330bcb2f1e63c90e" id="r_a7e0e2179779e7fd2330bcb2f1e63c90e"><td class="memItemLeft" align="right" valign="top">static std::optional&lt; <a class="el" href="classQXmppJingleMessageInitiationElement.html#ad21a2f9ca61bd0ae461a48a037ddda1c">Type</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppJingleMessageInitiationElement.html#a7e0e2179779e7fd2330bcb2f1e63c90e">stringToJmiElementType</a> (const QString &amp;typeStr)</td></tr>
-<tr class="separator:a7e0e2179779e7fd2330bcb2f1e63c90e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>The <a class="el" href="classQXmppJingleMessageInitiationElement.html" title="The QXmppJingleMessageInitiationElement class represents a Jingle Message Initiation element as speci...">QXmppJingleMessageInitiationElement</a> class represents a Jingle Message Initiation element as specified by <a href="https://xmpp.org/extensions/xep-0353.html">XEP-0353</a>: Jingle Message Initiation. </p>
+<div class="textblock"><p>The <a class="el" href="classQXmppJingleMessageInitiationElement.html" title="The QXmppJingleMessageInitiationElement class represents a Jingle Message Initiation element as speci...">QXmppJingleMessageInitiationElement</a> class represents a Jingle Message Initiation element as specified by <a href="https://xmpp.org/extensions/xep-0353.html">XEP-0353: Jingle Message Initiation</a>. </p>
 <dl class="section since"><dt>Since</dt><dd><a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.6 </dd></dl>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
 <a id="ad21a2f9ca61bd0ae461a48a037ddda1c" name="ad21a2f9ca61bd0ae461a48a037ddda1c"></a>
@@ -242,33 +238,6 @@ Static Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 <p>Returns true if passed QDomElement is a Jingle Message Initiation element </p>
-
-</div>
-</div>
-<a id="ab87d5562b0aa423c513abe6fcdc7ebb8" name="ab87d5562b0aa423c513abe6fcdc7ebb8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab87d5562b0aa423c513abe6fcdc7ebb8">&#9670;&#160;</a></span>jmiElementTypeToString()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">QString QXmppJingleMessageInitiationElement::jmiElementTypeToString </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="classQXmppJingleMessageInitiationElement.html#ad21a2f9ca61bd0ae461a48a037ddda1c">Type</a>&#160;</td>
-          <td class="paramname"><em>type</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Takes a Jingle Message Initiation element type and parses it to a string. </p>
 
 </div>
 </div>
@@ -419,33 +388,6 @@ Static Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 <p>Sets the Jingle Message Initiation element type. </p>
-
-</div>
-</div>
-<a id="a7e0e2179779e7fd2330bcb2f1e63c90e" name="a7e0e2179779e7fd2330bcb2f1e63c90e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7e0e2179779e7fd2330bcb2f1e63c90e">&#9670;&#160;</a></span>stringToJmiElementType()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::optional&lt; <a class="el" href="classQXmppJingleMessageInitiationElement.html#ad21a2f9ca61bd0ae461a48a037ddda1c">QXmppJingleMessageInitiationElement::Type</a> &gt; QXmppJingleMessageInitiationElement::stringToJmiElementType </td>
-          <td>(</td>
-          <td class="paramtype">const QString &amp;&#160;</td>
-          <td class="paramname"><em>typeStr</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Takes a string and parses it to a Jingle Message Initiation element type. </p>
 
 </div>
 </div>

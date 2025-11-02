@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">QXmpp<span id="projectnumber">&#160;Version: 1.11.0</span>
+   <div id="projectname">QXmpp<span id="projectnumber">&#160;Version: 1.12.0</span>
    </div>
   </td>
  </tr>
@@ -116,10 +116,10 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a3f5c98737a88cbdcdb56e4f5ec1489c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3873ae30d9de8d218dae1dba161393d9" id="r_a3873ae30d9de8d218dae1dba161393d9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppExternalService.html#a3873ae30d9de8d218dae1dba161393d9">setPassword</a> (std::optional&lt; QString &gt;)</td></tr>
 <tr class="separator:a3873ae30d9de8d218dae1dba161393d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00962e9319789bfec6f55a769dc73b71" id="r_a00962e9319789bfec6f55a769dc73b71"><td class="memItemLeft" align="right" valign="top">std::optional&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppExternalService.html#a00962e9319789bfec6f55a769dc73b71">port</a> () const</td></tr>
-<tr class="separator:a00962e9319789bfec6f55a769dc73b71"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae99b8b519b6436a23e2af8db83e8cf51" id="r_ae99b8b519b6436a23e2af8db83e8cf51"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppExternalService.html#ae99b8b519b6436a23e2af8db83e8cf51">setPort</a> (std::optional&lt; int &gt;)</td></tr>
-<tr class="separator:ae99b8b519b6436a23e2af8db83e8cf51"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e7b18ccfabc89bbbedb02147037525a" id="r_a4e7b18ccfabc89bbbedb02147037525a"><td class="memItemLeft" align="right" valign="top">std::optional&lt; quint16 &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppExternalService.html#a4e7b18ccfabc89bbbedb02147037525a">port</a> () const</td></tr>
+<tr class="separator:a4e7b18ccfabc89bbbedb02147037525a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad750fdefdb3d1983f70ac5be53ea67d8" id="r_ad750fdefdb3d1983f70ac5be53ea67d8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppExternalService.html#ad750fdefdb3d1983f70ac5be53ea67d8">setPort</a> (std::optional&lt; quint16 &gt;)</td></tr>
+<tr class="separator:ad750fdefdb3d1983f70ac5be53ea67d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2ab4d7014b680be7c03481f01377ca5c" id="r_a2ab4d7014b680be7c03481f01377ca5c"><td class="memItemLeft" align="right" valign="top">std::optional&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppExternalService.html#a2ab4d7014b680be7c03481f01377ca5c">restricted</a> () const</td></tr>
 <tr class="separator:a2ab4d7014b680be7c03481f01377ca5c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a19fbdb1b70d754398469c47d6d8838ea" id="r_a19fbdb1b70d754398469c47d6d8838ea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppExternalService.html#a19fbdb1b70d754398469c47d6d8838ea">setRestricted</a> (std::optional&lt; bool &gt;)</td></tr>
@@ -332,21 +332,21 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="a00962e9319789bfec6f55a769dc73b71" name="a00962e9319789bfec6f55a769dc73b71"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a00962e9319789bfec6f55a769dc73b71">&#9670;&#160;</a></span>port()</h2>
+<a id="a4e7b18ccfabc89bbbedb02147037525a" name="a4e7b18ccfabc89bbbedb02147037525a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e7b18ccfabc89bbbedb02147037525a">&#9670;&#160;</a></span>port()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">std::optional&lt; int &gt; QXmppExternalService::port </td>
+          <td class="memname">std::optional&lt; quint16 &gt; QXmppExternalService::port </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Returns the port of the external service. </p>
+<p>Returns the port of the external service. </p><dl class="section note"><dt>Note</dt><dd>quint16 since <a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.11 </dd></dl>
 
 </div>
 </div>
@@ -463,8 +463,8 @@ Static Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a id="ae99b8b519b6436a23e2af8db83e8cf51" name="ae99b8b519b6436a23e2af8db83e8cf51"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae99b8b519b6436a23e2af8db83e8cf51">&#9670;&#160;</a></span>setPort()</h2>
+<a id="ad750fdefdb3d1983f70ac5be53ea67d8" name="ad750fdefdb3d1983f70ac5be53ea67d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad750fdefdb3d1983f70ac5be53ea67d8">&#9670;&#160;</a></span>setPort()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -472,13 +472,13 @@ Static Public Member Functions</h2></td></tr>
         <tr>
           <td class="memname">void QXmppExternalService::setPort </td>
           <td>(</td>
-          <td class="paramtype">std::optional&lt; int &gt;&#160;</td>
+          <td class="paramtype">std::optional&lt; quint16 &gt;&#160;</td>
           <td class="paramname"><em>port</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Sets the port of the external service. </p>
+<p>Sets the port of the external service. </p><dl class="section note"><dt>Note</dt><dd>quint16 since <a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.11 </dd></dl>
 
 </div>
 </div>
@@ -575,13 +575,7 @@ Static Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p><a class="el" href="classQXmppExternalService.html#a84e1966a030f1140f94b6f1ebb0ed874" title="QXmppExternalService::toXml.">QXmppExternalService::toXml</a>. </p>
-<p>Translates the external service to XML using the provided XML stream writer.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">writer</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Translates the external service to XML using the provided XML stream writer. </p>
 
 </div>
 </div>

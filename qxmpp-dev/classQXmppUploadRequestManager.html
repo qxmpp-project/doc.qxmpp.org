@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">QXmpp<span id="projectnumber">&#160;Version: 1.11.0</span>
+   <div id="projectname">QXmpp<span id="projectnumber">&#160;Version: 1.12.0</span>
    </div>
   </td>
  </tr>
@@ -169,8 +169,8 @@ QVector&lt; <a class="el" href="classQXmppUploadService.html">QXmppUploadService
 <tr class="separator:aec299452688f50431f1028668186e3ec inherit pub_methods_classQXmppClientExtension"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3ef15300fd584457adc40378a3103511 inherit pub_methods_classQXmppClientExtension" id="r_a3ef15300fd584457adc40378a3103511"><td class="memItemLeft" align="right" valign="top">virtual QStringList&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppClientExtension.html#a3ef15300fd584457adc40378a3103511">discoveryFeatures</a> () const</td></tr>
 <tr class="separator:a3ef15300fd584457adc40378a3103511 inherit pub_methods_classQXmppClientExtension"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a71a4c2372fa29521c6d9dec1db43a9d4 inherit pub_methods_classQXmppClientExtension" id="r_a71a4c2372fa29521c6d9dec1db43a9d4"><td class="memItemLeft" align="right" valign="top">virtual QList&lt; <a class="el" href="classQXmppDiscoveryIq_1_1Identity.html">QXmppDiscoveryIq::Identity</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppClientExtension.html#a71a4c2372fa29521c6d9dec1db43a9d4">discoveryIdentities</a> () const</td></tr>
-<tr class="separator:a71a4c2372fa29521c6d9dec1db43a9d4 inherit pub_methods_classQXmppClientExtension"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a086199c26dafb35b3146cbb5c4f49d69 inherit pub_methods_classQXmppClientExtension" id="r_a086199c26dafb35b3146cbb5c4f49d69"><td class="memItemLeft" align="right" valign="top">virtual QList&lt; <a class="el" href="classQXmppDiscoIdentity.html">QXmppDiscoIdentity</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppClientExtension.html#a086199c26dafb35b3146cbb5c4f49d69">discoveryIdentities</a> () const</td></tr>
+<tr class="separator:a086199c26dafb35b3146cbb5c4f49d69 inherit pub_methods_classQXmppClientExtension"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a85897e9335e7d15cacbf974caa37459d inherit pub_methods_classQXmppClientExtension" id="r_a85897e9335e7d15cacbf974caa37459d"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppClientExtension.html#a85897e9335e7d15cacbf974caa37459d">handleStanza</a> (const QDomElement &amp;stanza, const std::optional&lt; <a class="el" href="classQXmppE2eeMetadata.html">QXmppE2eeMetadata</a> &gt; &amp;e2eeMetadata)</td></tr>
 <tr class="memdesc:a85897e9335e7d15cacbf974caa37459d inherit pub_methods_classQXmppClientExtension"><td class="mdescLeft">&#160;</td><td class="mdescRight">You need to implement this method to process incoming XMPP stanzas.  <br /></td></tr>
 <tr class="separator:a85897e9335e7d15cacbf974caa37459d inherit pub_methods_classQXmppClientExtension"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -212,7 +212,7 @@ Protected Member Functions</h2></td></tr>
 <div class="fragment"><div class="line"><span class="keyword">auto</span> *manager = <span class="keyword">new</span> <a class="code hl_class" href="classQXmppUploadRequestManager.html">QXmppUploadRequestManager</a>;</div>
 <div class="line"><a class="code hl_function" href="classQXmppClientExtension.html#a893a3e1acaee65bd1bbd781e4e387646">client</a>-&gt;<a class="code hl_function" href="classQXmppClient.html#a61ccf1c37ca3f26bfd14e65c8ecf1740">addExtension</a>(manager);</div>
 <div class="ttc" id="aclassQXmppClientExtension_html_a893a3e1acaee65bd1bbd781e4e387646"><div class="ttname"><a href="classQXmppClientExtension.html#a893a3e1acaee65bd1bbd781e4e387646">QXmppClientExtension::client</a></div><div class="ttdeci">QXmppClient * client() const</div><div class="ttdef"><b>Definition</b> QXmppClientExtension.cpp:57</div></div>
-<div class="ttc" id="aclassQXmppClient_html_a61ccf1c37ca3f26bfd14e65c8ecf1740"><div class="ttname"><a href="classQXmppClient.html#a61ccf1c37ca3f26bfd14e65c8ecf1740">QXmppClient::addExtension</a></div><div class="ttdeci">bool addExtension(QXmppClientExtension *extension)</div><div class="ttdoc">Registers a new extension with the client.</div><div class="ttdef"><b>Definition</b> QXmppClient.cpp:376</div></div>
+<div class="ttc" id="aclassQXmppClient_html_a61ccf1c37ca3f26bfd14e65c8ecf1740"><div class="ttname"><a href="classQXmppClient.html#a61ccf1c37ca3f26bfd14e65c8ecf1740">QXmppClient::addExtension</a></div><div class="ttdeci">bool addExtension(QXmppClientExtension *extension)</div><div class="ttdoc">Registers a new extension with the client.</div><div class="ttdef"><b>Definition</b> QXmppClient.cpp:378</div></div>
 <div class="ttc" id="aclassQXmppUploadRequestManager_html"><div class="ttname"><a href="classQXmppUploadRequestManager.html">QXmppUploadRequestManager</a></div><div class="ttdoc">The QXmppUploadRequestManager implements the core of XEP-0369: HTTP File Upload.</div><div class="ttdef"><b>Definition</b> QXmppUploadRequestManager.h:85</div></div>
 </div><!-- fragment --><p>Apart from that, you also need to discover HTTP File Upload service(s) by requesting the Service Discovery info for each Service Discovery item of the server. The QXmppUploadManager will then automatically recognize upload services and add them to the list of discovered services <code><a class="el" href="classQXmppUploadRequestManager.html#a66360385ff63f8bd46c4a5ffd879a1f3" title="Returns all discovered HTTP File Upload services.">uploadServices()</a></code>.</p>
 <p>Keep in mind that theoretically any XMPP entity could promote to be an upload service and so is recognized by this manager. A potential attacker could exploit this vulnerability, so the client could be uploading files to the attacker (e.g. a normal user JID) instead of the own server.</p>
@@ -263,7 +263,7 @@ Protected Member Functions</h2></td></tr>
 <p>You need to implement this method to process incoming XMPP stanzas. </p>
 <p>You should return true if the stanza was handled and no further processing should occur, or false to let other extensions process the stanza.</p>
 <p>End-to-end encrypted stanzas are not passed to this overload, for that purpose use the new overload instead.</p>
-<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000042">Deprecated:</a></b></dt><dd>This is deprecated since <a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.5. Please use <a class="el" href="classQXmppClientExtension.html#a85897e9335e7d15cacbf974caa37459d" title="You need to implement this method to process incoming XMPP stanzas.">QXmppClientExtension::handleStanza(const QDomElement &amp;stanza,
+<dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000045">Deprecated:</a></b></dt><dd>This is deprecated since <a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.5. Please use <a class="el" href="classQXmppClientExtension.html#a85897e9335e7d15cacbf974caa37459d" title="You need to implement this method to process incoming XMPP stanzas.">QXmppClientExtension::handleStanza(const QDomElement &amp;stanza,
 const std::optional&lt;QXmppE2eeMetadata&gt; &amp;e2eeMetadata)</a>. Currently both methods are called by the client, so only implement one! </dd></dl>
 
 <p>Reimplemented from <a class="el" href="classQXmppClientExtension.html#af836e49c31e96854b8d344f29f7e6b54">QXmppClientExtension</a>.</p>
@@ -413,7 +413,6 @@ const std::optional&lt;QXmppE2eeMetadata&gt; &amp;e2eeMetadata)</a>. Currently b
   </table>
   </dd>
 </dl>
-<dl class="section warning"><dt>Warning</dt><dd>THIS API IS NOT FINALIZED YET!</dd></dl>
 <dl class="section since"><dt>Since</dt><dd><a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.5 </dd></dl>
 
 </div>
@@ -451,7 +450,6 @@ const std::optional&lt;QXmppE2eeMetadata&gt; &amp;e2eeMetadata)</a>. Currently b
   </table>
   </dd>
 </dl>
-<dl class="section warning"><dt>Warning</dt><dd>THIS API IS NOT FINALIZED YET!</dd></dl>
 <dl class="section since"><dt>Since</dt><dd><a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.5 </dd></dl>
 
 </div>
@@ -503,7 +501,6 @@ const std::optional&lt;QXmppE2eeMetadata&gt; &amp;e2eeMetadata)</a>. Currently b
   </table>
   </dd>
 </dl>
-<dl class="section warning"><dt>Warning</dt><dd>THIS API IS NOT FINALIZED YET!</dd></dl>
 <dl class="section since"><dt>Since</dt><dd><a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.5 </dd></dl>
 
 </div>

@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">QXmpp<span id="projectnumber">&#160;Version: 1.11.0</span>
+   <div id="projectname">QXmpp<span id="projectnumber">&#160;Version: 1.12.0</span>
    </div>
   </td>
  </tr>
@@ -122,17 +122,18 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <span class="keyword">const</span> QVector&lt;QXmppHttpFileSource&gt; &amp;httpSources() <span class="keyword">const</span>;</div>
 <div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    <span class="keywordtype">void</span> setHttpSources(<span class="keyword">const</span> QVector&lt;QXmppHttpFileSource&gt; &amp;newHttpSources);</div>
 <div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keywordtype">bool</span> parse(<span class="keyword">const</span> QDomElement &amp;el);</div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="keywordtype">void</span> toXml(QXmlStreamWriter *writer) <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    QSharedDataPointer&lt;QXmppEncryptedFileSourcePrivate&gt; d;</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>};</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>    <span class="keyword">static</span> <span class="keyword">constexpr</span> std::tuple XmlTag = { u<span class="stringliteral">&quot;encrypted&quot;</span>, QXmpp::Private::ns_esfs };</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <span class="keywordtype">bool</span> parse(<span class="keyword">const</span> QDomElement &amp;el);</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>    <span class="keywordtype">void</span> toXml(QXmlStreamWriter *writer) <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    QSharedDataPointer&lt;QXmppEncryptedFileSourcePrivate&gt; d;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>};</div>
 </div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span> </div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="preprocessor">#endif  </span><span class="comment">// QXMPPENCRYPTEDFILESOURCE_H</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="preprocessor">#endif  </span><span class="comment">// QXMPPENCRYPTEDFILESOURCE_H</span></div>
 <div class="ttc" id="aclassQXmppEncryptedFileSource_html"><div class="ttname"><a href="classQXmppEncryptedFileSource.html">QXmppEncryptedFileSource</a></div><div class="ttdoc">Represents an encrypted file source for file sharing.</div><div class="ttdef"><b>Definition</b> QXmppEncryptedFileSource.h:21</div></div>
-<div class="ttc" id="anamespaceQXmpp_html_a2585ffb71e6e11c042199a94eb9719a9"><div class="ttname"><a href="namespaceQXmpp.html#a2585ffb71e6e11c042199a94eb9719a9">QXmpp::Cipher</a></div><div class="ttdeci">Cipher</div><div class="ttdef"><b>Definition</b> QXmppGlobal.h:160</div></div>
+<div class="ttc" id="anamespaceQXmpp_html_a2585ffb71e6e11c042199a94eb9719a9"><div class="ttname"><a href="namespaceQXmpp.html#a2585ffb71e6e11c042199a94eb9719a9">QXmpp::Cipher</a></div><div class="ttdeci">Cipher</div><div class="ttdef"><b>Definition</b> QXmppGlobal.h:170</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

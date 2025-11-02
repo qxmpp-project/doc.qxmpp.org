@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">QXmpp<span id="projectnumber">&#160;Version: 1.11.0</span>
+   <div id="projectname">QXmpp<span id="projectnumber">&#160;Version: 1.12.0</span>
    </div>
   </td>
  </tr>
@@ -186,42 +186,45 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    QByteArray capabilityVer() <span class="keyword">const</span>;</div>
 <div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    <span class="keywordtype">void</span> setCapabilityVer(<span class="keyword">const</span> QByteArray &amp;);</div>
 <div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    QStringList capabilityExt() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span> </div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    <span class="comment">// XEP-0272: Multiparty Jingle (Muji)</span></div>
-<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>    <span class="keywordtype">bool</span> isPreparingMujiSession() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    <span class="keywordtype">void</span> setIsPreparingMujiSession(<span class="keywordtype">bool</span> isPreparingMujiSession);</div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span> </div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>    QVector&lt;QXmppJingleIq::Content&gt; mujiContents() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>    <span class="keywordtype">void</span> setMujiContents(<span class="keyword">const</span> QVector&lt;QXmppJingleIq::Content&gt; &amp;mujiContents);</div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span> </div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>    <span class="comment">// XEP-0283: Moved</span></div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>    QString oldJid() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>    <span class="keywordtype">void</span> setOldJid(<span class="keyword">const</span> QString &amp;oldJid);</div>
-<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span> </div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>    <span class="comment">// XEP-0319: Last User Interaction in Presence</span></div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>    QDateTime lastUserInteraction() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>    <span class="keywordtype">void</span> setLastUserInteraction(<span class="keyword">const</span> QDateTime &amp;);</div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span> </div>
-<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>    <span class="comment">// XEP-0405: Mediated Information eXchange (MIX): Participant Server Requirements</span></div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>    QString mixUserJid() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>    <span class="keywordtype">void</span> setMixUserJid(<span class="keyword">const</span> QString &amp;);</div>
-<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span> </div>
-<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>    QString mixUserNick() <span class="keyword">const</span>;</div>
-<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>    <span class="keywordtype">void</span> setMixUserNick(<span class="keyword">const</span> QString &amp;);</div>
-<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span> </div>
-<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classQXmppNonza.html#abc49e8874e808d39210b2be3abeba63a">parse</a>(<span class="keyword">const</span> QDomElement &amp;element) <span class="keyword">override</span>;</div>
-<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classQXmppNonza.html#aff27abe8740fc054a67d55c239ff8cc3">toXml</a>(QXmlStreamWriter *writer) <span class="keyword">const override</span>;</div>
-<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span> </div>
-<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>    <span class="keywordtype">void</span> parseExtension(<span class="keyword">const</span> QDomElement &amp;element, QXmppElementList &amp;unknownElements);</div>
-<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span> </div>
-<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>    QSharedDataPointer&lt;QXmppPresencePrivate&gt; d;</div>
-<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>};</div>
-</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    <span class="comment">// XEP-0272: Multiparty Jingle (Muji)</span></div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>    <span class="keywordtype">bool</span> isPreparingMujiSession() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>    <span class="keywordtype">void</span> setIsPreparingMujiSession(<span class="keywordtype">bool</span> isPreparingMujiSession);</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span> </div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>    QVector&lt;QXmppJingleIq::Content&gt; mujiContents() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>    <span class="keywordtype">void</span> setMujiContents(<span class="keyword">const</span> QVector&lt;QXmppJingleIq::Content&gt; &amp;mujiContents);</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span> </div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>    <span class="comment">// XEP-0283: Moved</span></div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>    QString oldJid() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>    <span class="keywordtype">void</span> setOldJid(<span class="keyword">const</span> QString &amp;oldJid);</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span> </div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>    <span class="comment">// XEP-0319: Last User Interaction in Presence</span></div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>    QDateTime lastUserInteraction() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>    <span class="keywordtype">void</span> setLastUserInteraction(<span class="keyword">const</span> QDateTime &amp;);</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span> </div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>    <span class="comment">// XEP-0405: Mediated Information eXchange (MIX): Participant Server Requirements</span></div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>    QString mixUserJid() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>    <span class="keywordtype">void</span> setMixUserJid(<span class="keyword">const</span> QString &amp;);</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span> </div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>    QString mixUserNick() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>    <span class="keywordtype">void</span> setMixUserNick(<span class="keyword">const</span> QString &amp;);</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span> </div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classQXmppNonza.html#abc49e8874e808d39210b2be3abeba63a">parse</a>(<span class="keyword">const</span> QDomElement &amp;element) <span class="keyword">override</span>;</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>    <span class="keywordtype">void</span> <a class="code hl_function" href="classQXmppNonza.html#aff27abe8740fc054a67d55c239ff8cc3">toXml</a>(QXmlStreamWriter *writer) <span class="keyword">const override</span>;</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span> </div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span><span class="preprocessor">#if QXMPP_DEPRECATED_SINCE(1, 12)</span></div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>    [[deprecated(<span class="stringliteral">&quot;Legacy entity capabilities (used 2003-2007)&quot;</span>)]]</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>    QStringList capabilityExt() <span class="keyword">const</span>;</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span> </div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>    <span class="keywordtype">void</span> parseExtension(<span class="keyword">const</span> QDomElement &amp;element, QXmppElementList &amp;unknownElements);</div>
 <div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span> </div>
-<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span><span class="preprocessor">#endif  </span><span class="comment">// QXMPPPRESENCE_H</span></div>
-<div class="ttc" id="aclassQXmppMucItem_html"><div class="ttname"><a href="classQXmppMucItem.html">QXmppMucItem</a></div><div class="ttdoc">The QXmppMucItem class represents a chat room &quot;item&quot;.</div><div class="ttdef"><b>Definition</b> QXmppMucIq.h:18</div></div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>    QSharedDataPointer&lt;QXmppPresencePrivate&gt; d;</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>};</div>
+</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span> </div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span><span class="preprocessor">#endif  </span><span class="comment">// QXMPPPRESENCE_H</span></div>
+<div class="ttc" id="aclassQXmppMucItem_html"><div class="ttname"><a href="classQXmppMucItem.html">QXmppMucItem</a></div><div class="ttdoc">The QXmppMucItem class represents a chat room &quot;item&quot;.</div><div class="ttdef"><b>Definition</b> QXmppMucIq.h:19</div></div>
 <div class="ttc" id="aclassQXmppNonza_html_abc49e8874e808d39210b2be3abeba63a"><div class="ttname"><a href="classQXmppNonza.html#abc49e8874e808d39210b2be3abeba63a">QXmppNonza::parse</a></div><div class="ttdeci">virtual void parse(const QDomElement &amp;)=0</div></div>
 <div class="ttc" id="aclassQXmppNonza_html_ae1c3b04b284c0f2b2f8ff6935bcc652a"><div class="ttname"><a href="classQXmppNonza.html#ae1c3b04b284c0f2b2f8ff6935bcc652a">QXmppNonza::isXmppStanza</a></div><div class="ttdeci">virtual bool isXmppStanza() const</div><div class="ttdef"><b>Definition</b> QXmppNonza.h:19</div></div>
 <div class="ttc" id="aclassQXmppNonza_html_aff27abe8740fc054a67d55c239ff8cc3"><div class="ttname"><a href="classQXmppNonza.html#aff27abe8740fc054a67d55c239ff8cc3">QXmppNonza::toXml</a></div><div class="ttdeci">virtual void toXml(QXmlStreamWriter *writer) const =0</div></div>
@@ -246,8 +249,8 @@ $(document).ready(function() { init_codefold(0); });
 <div class="ttc" id="aclassQXmppPresence_html_ad56af0f57b732c09b080b9347c4dba94a665a0346b1da2e5ddc521b47456ce729"><div class="ttname"><a href="classQXmppPresence.html#ad56af0f57b732c09b080b9347c4dba94a665a0346b1da2e5ddc521b47456ce729">QXmppPresence::DND</a></div><div class="ttdeci">@ DND</div><div class="ttdoc">The entity or resource is busy (&quot;Do Not Disturb&quot;).</div><div class="ttdef"><b>Definition</b> QXmppPresence.h:41</div></div>
 <div class="ttc" id="aclassQXmppPresence_html_ad56af0f57b732c09b080b9347c4dba94acebcb202966ea59ea213459d36e2d949"><div class="ttname"><a href="classQXmppPresence.html#ad56af0f57b732c09b080b9347c4dba94acebcb202966ea59ea213459d36e2d949">QXmppPresence::Away</a></div><div class="ttdeci">@ Away</div><div class="ttdoc">The entity or resource is temporarily away.</div><div class="ttdef"><b>Definition</b> QXmppPresence.h:39</div></div>
 <div class="ttc" id="aclassQXmppPresence_html_ad56af0f57b732c09b080b9347c4dba94af2b440870b33ce88182aaf32f871696b"><div class="ttname"><a href="classQXmppPresence.html#ad56af0f57b732c09b080b9347c4dba94af2b440870b33ce88182aaf32f871696b">QXmppPresence::XA</a></div><div class="ttdeci">@ XA</div><div class="ttdoc">The entity or resource is away for an extended period.</div><div class="ttdef"><b>Definition</b> QXmppPresence.h:40</div></div>
-<div class="ttc" id="aclassQXmppStanza_1_1Error_html"><div class="ttname"><a href="classQXmppStanza_1_1Error.html">QXmppStanza::Error</a></div><div class="ttdoc">The Error class represents a stanza error.</div><div class="ttdef"><b>Definition</b> QXmppStanza.h:94</div></div>
-<div class="ttc" id="aclassQXmppStanza_html"><div class="ttname"><a href="classQXmppStanza.html">QXmppStanza</a></div><div class="ttdoc">The QXmppStanza class is the base class for all XMPP stanzas.</div><div class="ttdef"><b>Definition</b> QXmppStanza.h:88</div></div>
+<div class="ttc" id="aclassQXmppStanza_1_1Error_html"><div class="ttname"><a href="classQXmppStanza_1_1Error.html">QXmppStanza::Error</a></div><div class="ttdoc">The Error class represents a stanza error.</div><div class="ttdef"><b>Definition</b> QXmppStanza.h:96</div></div>
+<div class="ttc" id="aclassQXmppStanza_html"><div class="ttname"><a href="classQXmppStanza.html">QXmppStanza</a></div><div class="ttdoc">The QXmppStanza class is the base class for all XMPP stanzas.</div><div class="ttdef"><b>Definition</b> QXmppStanza.h:90</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

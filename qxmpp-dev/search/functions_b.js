@@ -2,7 +2,7 @@ var searchData=
 [
   ['label_0',['label',['../classQXmppOmemoOwnDevice.html#a7de1bf3e2b0a55a1e32520dd03534dbc',1,'QXmppOmemoOwnDevice::label()'],['../classQXmppDataForm_1_1Field.html#a3bfb16eb372a69130fa1678e8c87ba3f',1,'QXmppDataForm::Field::label()'],['../classQXmppOmemoDevice.html#a079e6d73b9107df1300a3bd3b83bbe56',1,'QXmppOmemoDevice::label()']]],
   ['lang_1',['lang',['../classQXmppStanza.html#a0f6eda0c8bf5689528636b6c5a2b935f',1,'QXmppStanza']]],
-  ['language_2',['language',['../classQXmppDiscoveryIq_1_1Identity.html#aa2aae574a2d989715bed4f85ea73ba58',1,'QXmppDiscoveryIq::Identity']]],
+  ['language_2',['language',['../classQXmppDiscoIdentity.html#ab25bbb5e303f35705a6b472dd42f9f3a',1,'QXmppDiscoIdentity']]],
   ['last_3',['last',['../classQXmppResultSetReply.html#a20f5f338126e9f0549cd63853d0770fb',1,'QXmppResultSetReply']]],
   ['lasteditorjid_4',['lastEditorJid',['../classQXmppMixConfigItem.html#aa917145ddbcec80fed430370a7e4c8dc',1,'QXmppMixConfigItem']]],
   ['lastmodified_5',['lastModified',['../classQXmppFileMetadata.html#adeea4493c5eba3d867415a64bcb6623d',1,'QXmppFileMetadata']]],
@@ -32,7 +32,7 @@ var searchData=
   ['logfilepath_29',['logFilePath',['../classQXmppLogger.html#a9414c4b97563091020646741fe75ee7c',1,'QXmppLogger']]],
   ['logfilepathchanged_30',['logFilePathChanged',['../classQXmppLogger.html#acf6132c73a54fa5dca189c7e9e1e4e87',1,'QXmppLogger']]],
   ['logger_31',['logger',['../classQXmppClient.html#a4da08b7465b0aee53f5da92fd697a1fa',1,'QXmppClient::logger()'],['../classQXmppServer.html#a289bef14c92ff46f8ceb5b12a904d8be',1,'QXmppServer::logger()']]],
-  ['loggerchanged_32',['loggerchanged',['../classQXmppClient.html#a74a8754f3e14945e597d964442281e70',1,'QXmppClient::loggerChanged()'],['../classQXmppServer.html#af49a15f76003d1e3b2ff280f55e1ca54',1,'QXmppServer::loggerChanged()']]],
+  ['loggerchanged_32',['loggerchanged',['../classQXmppClient.html#a3c80242618bf85d7b3c272c2a1eeb768',1,'QXmppClient::loggerChanged()'],['../classQXmppServer.html#af49a15f76003d1e3b2ff280f55e1ca54',1,'QXmppServer::loggerChanged()']]],
   ['loggingtype_33',['loggingType',['../classQXmppLogger.html#a2dfda8cd9f90f398e600d059ed19815a',1,'QXmppLogger']]],
   ['loggingtypechanged_34',['loggingTypeChanged',['../classQXmppLogger.html#a648aa85ccce2a24c2590eb35550ef8f5',1,'QXmppLogger']]],
   ['logmessage_35',['logMessage',['../classQXmppLoggable.html#a403fa46ba15c65da706e8188d4312a05',1,'QXmppLoggable']]],

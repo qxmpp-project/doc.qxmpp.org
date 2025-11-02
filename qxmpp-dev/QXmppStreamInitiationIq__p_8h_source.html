@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">QXmpp<span id="projectnumber">&#160;Version: 1.11.0</span>
+   <div id="projectname">QXmpp<span id="projectnumber">&#160;Version: 1.12.0</span>
    </div>
   </td>
  </tr>
@@ -130,7 +130,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    QString siId() <span class="keyword">const</span>;</div>
 <div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <span class="keywordtype">void</span> setSiId(<span class="keyword">const</span> QString &amp;<span class="keywordtype">id</span>);</div>
 <div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="keyword">static</span> <span class="keywordtype">bool</span> isStreamInitiationIq(<span class="keyword">const</span> QDomElement &amp;element);</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <span class="keyword">static</span> <span class="keyword">constexpr</span> std::tuple PayloadXmlTag = { u<span class="stringliteral">&quot;si&quot;</span>, QXmpp::Private::ns_stream_initiation };</div>
 <div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
 <div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="keyword">protected</span>:</div>
 <div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <span class="keywordtype">void</span> parseElementFromChild(<span class="keyword">const</span> QDomElement &amp;element) <span class="keyword">override</span>;</div>
@@ -145,7 +145,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>};</div>
 <div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
 <div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="preprocessor">#endif</span></div>
-<div class="ttc" id="aclassQXmppDataForm_html"><div class="ttname"><a href="classQXmppDataForm.html">QXmppDataForm</a></div><div class="ttdef"><b>Definition</b> QXmppDataForm.h:27</div></div>
+<div class="ttc" id="aclassQXmppDataForm_html"><div class="ttname"><a href="classQXmppDataForm.html">QXmppDataForm</a></div><div class="ttdef"><b>Definition</b> QXmppDataForm.h:28</div></div>
 <div class="ttc" id="aclassQXmppIq_html"><div class="ttname"><a href="classQXmppIq.html">QXmppIq</a></div><div class="ttdoc">The QXmppIq class is the base class for all IQs.</div><div class="ttdef"><b>Definition</b> QXmppIq.h:23</div></div>
 <div class="ttc" id="aclassQXmppTransferFileInfo_html"><div class="ttname"><a href="classQXmppTransferFileInfo.html">QXmppTransferFileInfo</a></div><div class="ttdef"><b>Definition</b> QXmppTransferManager.h:28</div></div>
 </div><!-- fragment --></div><!-- contents -->

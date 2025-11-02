@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">QXmpp<span id="projectnumber">&#160;Version: 1.11.0</span>
+   <div id="projectname">QXmpp<span id="projectnumber">&#160;Version: 1.12.0</span>
    </div>
   </td>
  </tr>
@@ -90,33 +90,77 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span> </div>
 <div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &quot;QXmppStanza.h&quot;</span></div>
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span> </div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &lt;optional&gt;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &quot;Enums.h&quot;</span></div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment">//  W A R N I N G</span></div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment">//  -------------</span></div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment">//</span></div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment">// This file is not part of the QXmpp API. It exists for the convenience</span></div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment">// of the QXmppStanza class.</span></div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment">//</span></div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment">// This header file may change from version to version without notice,</span></div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment">// or even be removed.</span></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment">//</span></div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment">// We mean it.</span></div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment">//</span></div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="keyword">namespace </span>QXmpp::Private {</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="comment">// defined in QXmppStanza.cpp</span></div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="keyword">auto</span> conditionToString(<a class="code hl_enumeration" href="classQXmppStanza_1_1Error.html#abcf1cbbe7b15ec82f3ac34723b604852">QXmppStanza::Error::Condition</a> condition) -&gt; QString;</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="keyword">auto</span> conditionFromString(<span class="keyword">const</span> QString &amp;<span class="keywordtype">string</span>) -&gt; std::optional&lt;QXmppStanza::Error::Condition&gt;;</div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="keyword">auto</span> typeToString(<a class="code hl_enumeration" href="classQXmppStanza_1_1Error.html#a8a7b0e1c203bce100dff524e1ca444af">QXmppStanza::Error::Type</a> type) -&gt; QString;</div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="keyword">auto</span> typeFromString(<span class="keyword">const</span> QString &amp;<span class="keywordtype">string</span>) -&gt; std::optional&lt;QXmppStanza::Error::Type&gt;;</div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>}  <span class="comment">// namespace QXmpp::Private</span></div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span> </div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="preprocessor">#endif</span></div>
-<div class="ttc" id="aclassQXmppStanza_1_1Error_html_a8a7b0e1c203bce100dff524e1ca444af"><div class="ttname"><a href="classQXmppStanza_1_1Error.html#a8a7b0e1c203bce100dff524e1ca444af">QXmppStanza::Error::Type</a></div><div class="ttdeci">Type</div><div class="ttdef"><b>Definition</b> QXmppStanza.h:100</div></div>
-<div class="ttc" id="aclassQXmppStanza_1_1Error_html_abcf1cbbe7b15ec82f3ac34723b604852"><div class="ttname"><a href="classQXmppStanza_1_1Error.html#abcf1cbbe7b15ec82f3ac34723b604852">QXmppStanza::Error::Condition</a></div><div class="ttdeci">Condition</div><div class="ttdoc">A detailed condition of the error.</div><div class="ttdef"><b>Definition</b> QXmppStanza.h:110</div></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="comment">//</span></div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="comment">//  W A R N I N G</span></div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span><span class="comment">//  -------------</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span><span class="comment">//</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="comment">// This file is not part of the QXmpp API. It exists for the convenience</span></div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="comment">// of the QXmppStanza class.</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="comment">//</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="comment">// This header file may change from version to version without notice,</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="comment">// or even be removed.</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="comment">//</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="comment">// We mean it.</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="comment">//</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="keyword">namespace </span>QXmpp::Private {</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="keyword">template</span>&lt;&gt;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="keyword">struct </span>Enums::Data&lt;<a class="code hl_class" href="classQXmppStanza.html">QXmppStanza</a>::Error::Condition&gt; {</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="keyword">using </span>enum <a class="code hl_enumeration" href="classQXmppStanza_1_1Error.html#abcf1cbbe7b15ec82f3ac34723b604852">QXmppStanza::Error::Condition</a>;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    QT_WARNING_PUSH</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>    QT_WARNING_DISABLE_DEPRECATED</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keyword">auto</span> Values = makeValues&lt;QXmppStanza::Error::Condition&gt;({</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>        { NoCondition, {} },</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>        { BadRequest, u<span class="stringliteral">&quot;bad-request&quot;</span> },</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>        { Conflict, u<span class="stringliteral">&quot;conflict&quot;</span> },</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>        { FeatureNotImplemented, u<span class="stringliteral">&quot;feature-not-implemented&quot;</span> },</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>        { Forbidden, u<span class="stringliteral">&quot;forbidden&quot;</span> },</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>        { Gone, u<span class="stringliteral">&quot;gone&quot;</span> },</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>        { InternalServerError, u<span class="stringliteral">&quot;internal-server-error&quot;</span> },</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>        { ItemNotFound, u<span class="stringliteral">&quot;item-not-found&quot;</span> },</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>        { JidMalformed, u<span class="stringliteral">&quot;jid-malformed&quot;</span> },</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>        { NotAcceptable, u<span class="stringliteral">&quot;not-acceptable&quot;</span> },</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>        { NotAllowed, u<span class="stringliteral">&quot;not-allowed&quot;</span> },</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>        { NotAuthorized, u<span class="stringliteral">&quot;not-authorized&quot;</span> },</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>        { PaymentRequired, u<span class="stringliteral">&quot;payment-required&quot;</span> },</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>        { RecipientUnavailable, u<span class="stringliteral">&quot;recipient-unavailable&quot;</span> },</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>        { Redirect, u<span class="stringliteral">&quot;redirect&quot;</span> },</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>        { RegistrationRequired, u<span class="stringliteral">&quot;registration-required&quot;</span> },</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>        { RemoteServerNotFound, u<span class="stringliteral">&quot;remote-server-not-found&quot;</span> },</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>        { RemoteServerTimeout, u<span class="stringliteral">&quot;remote-server-timeout&quot;</span> },</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>        { ResourceConstraint, u<span class="stringliteral">&quot;resource-constraint&quot;</span> },</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>        { ServiceUnavailable, u<span class="stringliteral">&quot;service-unavailable&quot;</span> },</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>        { SubscriptionRequired, u<span class="stringliteral">&quot;subscription-required&quot;</span> },</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>        { UndefinedCondition, u<span class="stringliteral">&quot;undefined-condition&quot;</span> },</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>        { UnexpectedRequest, u<span class="stringliteral">&quot;unexpected-request&quot;</span> },</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>        { PolicyViolation, u<span class="stringliteral">&quot;policy-violation&quot;</span> },</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    });</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    QT_WARNING_POP</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>};</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="keyword">template</span>&lt;&gt;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="keyword">struct </span>Enums::Data&lt;<a class="code hl_class" href="classQXmppStanza.html">QXmppStanza</a>::Error::Type&gt; {</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    <span class="keyword">using </span>enum <a class="code hl_enumeration" href="classQXmppStanza_1_1Error.html#a8a7b0e1c203bce100dff524e1ca444af">QXmppStanza::Error::Type</a>;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keyword">auto</span> NullValue = NoType;</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <span class="keyword">static</span> <span class="keyword">constexpr</span> <span class="keyword">auto</span> Values = makeValues&lt;QXmppStanza::Error::Type&gt;({</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        { NoType, {} },</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        { Cancel, u<span class="stringliteral">&quot;cancel&quot;</span> },</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        { Continue, u<span class="stringliteral">&quot;continue&quot;</span> },</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        { Modify, u<span class="stringliteral">&quot;modify&quot;</span> },</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        { Auth, u<span class="stringliteral">&quot;auth&quot;</span> },</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        { Wait, u<span class="stringliteral">&quot;wait&quot;</span> },</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    });</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>};</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>}  <span class="comment">// namespace QXmpp::Private</span></div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="aclassQXmppStanza_1_1Error_html_a8a7b0e1c203bce100dff524e1ca444af"><div class="ttname"><a href="classQXmppStanza_1_1Error.html#a8a7b0e1c203bce100dff524e1ca444af">QXmppStanza::Error::Type</a></div><div class="ttdeci">Type</div><div class="ttdef"><b>Definition</b> QXmppStanza.h:102</div></div>
+<div class="ttc" id="aclassQXmppStanza_1_1Error_html_abcf1cbbe7b15ec82f3ac34723b604852"><div class="ttname"><a href="classQXmppStanza_1_1Error.html#abcf1cbbe7b15ec82f3ac34723b604852">QXmppStanza::Error::Condition</a></div><div class="ttdeci">Condition</div><div class="ttdoc">A detailed condition of the error.</div><div class="ttdef"><b>Definition</b> QXmppStanza.h:112</div></div>
+<div class="ttc" id="aclassQXmppStanza_html"><div class="ttname"><a href="classQXmppStanza.html">QXmppStanza</a></div><div class="ttdoc">The QXmppStanza class is the base class for all XMPP stanzas.</div><div class="ttdef"><b>Definition</b> QXmppStanza.h:90</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

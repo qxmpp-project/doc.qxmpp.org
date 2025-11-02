@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">QXmpp<span id="projectnumber">&#160;Version: 1.11.0</span>
+   <div id="projectname">QXmpp<span id="projectnumber">&#160;Version: 1.12.0</span>
    </div>
   </td>
  </tr>
@@ -71,13 +71,12 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="classQXmppEntityTimeIq-members.html">List of all members</a>  </div>
   <div class="headertitle"><div class="title">QXmppEntityTimeIq Class Reference<div class="ingroups"><a class="el" href="group__Stanzas.html">Stanzas</a></div></div></div>
 </div><!--header-->
 <div class="contents">
 
-<p><a class="el" href="classQXmppEntityTimeIq.html" title="QXmppEntityTimeIq represents an entity time request/response as defined in XEP-0202: Entity Time.">QXmppEntityTimeIq</a> represents an entity time request/response as defined in <a href="https://xmpp.org/extensions/xep-0202.html">XEP-0202</a>: Entity Time.  
+<p><a class="el" href="classQXmppEntityTimeIq.html" title="QXmppEntityTimeIq represents an entity time request/response as defined in XEP-0202: Entity Time.">QXmppEntityTimeIq</a> represents an entity time request/response as defined in <a href="https://xmpp.org/extensions/xep-0202.html">XEP-0202: Entity Time</a>.  
  <a href="classQXmppEntityTimeIq.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="QXmppEntityTimeIq_8h_source.html">QXmppEntityTimeIq.h</a>&gt;</code></p>
@@ -210,11 +209,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aff27abe8740fc054a67d55c239ff8cc3 inherit pub_methods_classQXmppNonza" id="r_aff27abe8740fc054a67d55c239ff8cc3"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppNonza.html#aff27abe8740fc054a67d55c239ff8cc3">toXml</a> (QXmlStreamWriter *writer) const =0</td></tr>
 <tr class="separator:aff27abe8740fc054a67d55c239ff8cc3 inherit pub_methods_classQXmppNonza"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
-Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a384f79f8941a6d9960e98812de2b9f22" id="r_a384f79f8941a6d9960e98812de2b9f22"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classQXmppEntityTimeIq.html#a384f79f8941a6d9960e98812de2b9f22">isEntityTimeIq</a> (const QDomElement &amp;element)</td></tr>
-<tr class="separator:a384f79f8941a6d9960e98812de2b9f22"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="inherited" name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header pub_types_classQXmppIq"><td colspan="2" onclick="javascript:toggleInherit('pub_types_classQXmppIq')"><img src="closed.png" alt="-"/>&#160;Public Types inherited from <a class="el" href="classQXmppIq.html">QXmppIq</a></td></tr>
@@ -227,35 +221,8 @@ Additional Inherited Members</h2></td></tr>
 <tr class="separator:a6bc7a0505a3be7309051ae2432a3d826 inherit pub_types_classQXmppIq"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p><a class="el" href="classQXmppEntityTimeIq.html" title="QXmppEntityTimeIq represents an entity time request/response as defined in XEP-0202: Entity Time.">QXmppEntityTimeIq</a> represents an entity time request/response as defined in <a href="https://xmpp.org/extensions/xep-0202.html">XEP-0202</a>: Entity Time. </p>
+<div class="textblock"><p><a class="el" href="classQXmppEntityTimeIq.html" title="QXmppEntityTimeIq represents an entity time request/response as defined in XEP-0202: Entity Time.">QXmppEntityTimeIq</a> represents an entity time request/response as defined in <a href="https://xmpp.org/extensions/xep-0202.html">XEP-0202: Entity Time</a>. </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="a384f79f8941a6d9960e98812de2b9f22" name="a384f79f8941a6d9960e98812de2b9f22"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a384f79f8941a6d9960e98812de2b9f22">&#9670;&#160;</a></span>isEntityTimeIq()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool QXmppEntityTimeIq::isEntityTimeIq </td>
-          <td>(</td>
-          <td class="paramtype">const QDomElement &amp;&#160;</td>
-          <td class="paramname"><em>element</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Returns true, if the element is a valid entity time IQ. </p>
-
-</div>
-</div>
 <a id="ad6bfba8f0d20dec0c4cf0cb3fc114591" name="ad6bfba8f0d20dec0c4cf0cb3fc114591"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad6bfba8f0d20dec0c4cf0cb3fc114591">&#9670;&#160;</a></span>setTzo()</h2>
 

@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">QXmpp<span id="projectnumber">&#160;Version: 1.11.0</span>
+   <div id="projectname">QXmpp<span id="projectnumber">&#160;Version: 1.12.0</span>
    </div>
   </td>
  </tr>
@@ -82,11 +82,13 @@ Inheritance diagram for QXmppDataFormBase:</div>
 <div class="dyncontent">
 <div class="center"><img src="classQXmppDataFormBase__inherit__graph.png" border="0" usemap="#aQXmppDataFormBase_inherit__map" alt="Inheritance graph"/></div>
 <map name="aQXmppDataFormBase_inherit__map" id="aQXmppDataFormBase_inherit__map">
-<area shape="rect" title=" " alt="" coords="39,5,206,31"/>
-<area shape="rect" href="classQXmppExtensibleDataFormBase.html" title=" " alt="" coords="5,79,240,104"/>
-<area shape="poly" title=" " alt="" coords="125,44,125,79,120,79,120,44"/>
-<area shape="rect" href="classQXmppPubSubSubAuthorization.html" title=" " alt="" coords="8,152,237,177"/>
-<area shape="poly" title=" " alt="" coords="125,118,125,152,120,152,120,118"/>
+<area shape="rect" title=" " alt="" coords="131,5,298,31"/>
+<area shape="rect" href="classQXmppExtensibleDataFormBase.html" title=" " alt="" coords="97,79,332,104"/>
+<area shape="poly" title=" " alt="" coords="217,44,217,79,212,79,212,44"/>
+<area shape="rect" href="classQXmppContactAddresses.html" title=" " alt="" coords="5,152,192,177"/>
+<area shape="poly" title=" " alt="" coords="186,113,119,154,116,149,183,109"/>
+<area shape="rect" href="classQXmppPubSubSubAuthorization.html" title=" " alt="" coords="216,152,445,177"/>
+<area shape="poly" title=" " alt="" coords="246,109,313,149,310,154,243,113"/>
 </map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
@@ -136,7 +138,7 @@ Static Protected Member Functions</h2></td></tr>
 <div class="textblock"><p><a class="el" href="classQXmppDataFormBase.html">QXmppDataFormBase</a> is an abstract class types that can be serialized to data forms.</p>
 <p><a class="el" href="classQXmppDataFormBase.html">QXmppDataFormBase</a> based types can easily be converted to QXmppDataForms, it is as simple as this: </p><div class="fragment"><div class="line">MyDataFormBase foo;</div>
 <div class="line"><a class="code hl_class" href="classQXmppDataForm.html">QXmppDataForm</a> dataForm(foo);</div>
-<div class="ttc" id="aclassQXmppDataForm_html"><div class="ttname"><a href="classQXmppDataForm.html">QXmppDataForm</a></div><div class="ttdef"><b>Definition</b> QXmppDataForm.h:27</div></div>
+<div class="ttc" id="aclassQXmppDataForm_html"><div class="ttname"><a href="classQXmppDataForm.html">QXmppDataForm</a></div><div class="ttdef"><b>Definition</b> QXmppDataForm.h:28</div></div>
 </div><!-- fragment --><p>To make this work, you will need to at least implement the <a class="el" href="classQXmppDataFormBase.html#af2df31e7540e042a77d776ff6b2973bf">toDataForm()</a> method. For parsing your type you should also create a static creator method, like this: </p><div class="fragment"><div class="line"><span class="keyword">static</span> std::optional&lt;MyType&gt; <a class="code hl_function" href="classQXmppDataFormBase.html#a092696e88fd861a624ed902d498923bb">fromDataForm</a>(<span class="keyword">const</span> <a class="code hl_class" href="classQXmppDataForm.html">QXmppDataForm</a> &amp;);</div>
 <div class="ttc" id="aclassQXmppDataFormBase_html_a092696e88fd861a624ed902d498923bb"><div class="ttname"><a href="classQXmppDataFormBase.html#a092696e88fd861a624ed902d498923bb">QXmppDataFormBase::fromDataForm</a></div><div class="ttdeci">static bool fromDataForm(const QXmppDataForm &amp;form, QXmppDataFormBase &amp;parent)</div><div class="ttdef"><b>Definition</b> QXmppDataFormBase.cpp:55</div></div>
 </div><!-- fragment --><dl class="section since"><dt>Since</dt><dd><a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.5 </dd></dl>
@@ -165,7 +167,7 @@ Static Protected Member Functions</h2></td></tr>
 </div><div class="memdoc">
 <p>Returns the 'FORM_TYPE' value of the parsed form. </p>
 
-<p>Implemented in <a class="el" href="classQXmppPubSubSubAuthorization.html#a74844168ba52370e6bf10f26216e7533">QXmppPubSubSubAuthorization</a>.</p>
+<p>Implemented in <a class="el" href="classQXmppContactAddresses.html#a5979564f2811a6becb22ccd574f536ba">QXmppContactAddresses</a>, and <a class="el" href="classQXmppPubSubSubAuthorization.html#a74844168ba52370e6bf10f26216e7533">QXmppPubSubSubAuthorization</a>.</p>
 
 </div>
 </div>
@@ -442,7 +444,7 @@ template&lt;typename T &gt; </div>
 </div><div class="memdoc">
 <p>This is called the object is serialized to a <a class="el" href="classQXmppDataForm.html">QXmppDataForm</a>. You need to create a new <a class="el" href="classQXmppDataForm.html">QXmppDataForm</a> and serialize all fields and values. </p>
 
-<p>Implemented in <a class="el" href="classQXmppExtensibleDataFormBase.html#a5b6cd39b1968e07d38a07fd06445209a">QXmppExtensibleDataFormBase</a>, and <a class="el" href="classQXmppPubSubSubAuthorization.html#a8cfa73a4c40bdd4412186e0dc31fe786">QXmppPubSubSubAuthorization</a>.</p>
+<p>Implemented in <a class="el" href="classQXmppContactAddresses.html#a45f98d26669851b7611fdd766b7fb0af">QXmppContactAddresses</a>, <a class="el" href="classQXmppExtensibleDataFormBase.html#a5b6cd39b1968e07d38a07fd06445209a">QXmppExtensibleDataFormBase</a>, and <a class="el" href="classQXmppPubSubSubAuthorization.html#a8cfa73a4c40bdd4412186e0dc31fe786">QXmppPubSubSubAuthorization</a>.</p>
 
 </div>
 </div>

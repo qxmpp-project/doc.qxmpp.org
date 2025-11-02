@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">QXmpp<span id="projectnumber">&#160;Version: 1.11.0</span>
+   <div id="projectname">QXmpp<span id="projectnumber">&#160;Version: 1.12.0</span>
    </div>
   </td>
  </tr>
@@ -103,6 +103,9 @@ Classes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
+<tr class="memitem:a1314c0481a3c62f0ede6b6aed7c53384" id="r_a1314c0481a3c62f0ede6b6aed7c53384"><td class="memTemplParams" colspan="2">template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a1314c0481a3c62f0ede6b6aed7c53384"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceQXmpp.html#a1314c0481a3c62f0ede6b6aed7c53384">Result</a> = std::variant&lt; T, <a class="el" href="structQXmppError.html">QXmppError</a> &gt;</td></tr>
+<tr class="separator:a1314c0481a3c62f0ede6b6aed7c53384"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8450fdd55dbc654e0220eafe35d922fc" id="r_a8450fdd55dbc654e0220eafe35d922fc"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceQXmpp.html#a8450fdd55dbc654e0220eafe35d922fc">SendResult</a> = std::variant&lt; <a class="el" href="structQXmpp_1_1SendSuccess.html">SendSuccess</a>, <a class="el" href="structQXmppError.html">QXmppError</a> &gt;</td></tr>
 <tr class="separator:a8450fdd55dbc654e0220eafe35d922fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -217,6 +220,18 @@ Enumerations</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:aa99256168d2956f77c1a06952d955e64" id="r_aa99256168d2956f77c1a06952d955e64"><td class="memItemLeft" align="right" valign="top">constexpr bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceQXmpp.html#aa99256168d2956f77c1a06952d955e64">operator&amp;</a> (<a class="el" href="namespaceQXmpp.html#abc6005b5a30290db2a9da3a9dde99a0d">SceMode</a> mode1, <a class="el" href="namespaceQXmpp.html#abc6005b5a30290db2a9da3a9dde99a0d">SceMode</a> mode2)</td></tr>
 <tr class="separator:aa99256168d2956f77c1a06952d955e64"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5336186a0869404321dd8d6fc3d2e651" id="r_a5336186a0869404321dd8d6fc3d2e651"><td class="memItemLeft" align="right" valign="top">QXMPP_EXPORT QString&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespaceQXmpp.html#a5336186a0869404321dd8d6fc3d2e651">generateSequentialStanzaId</a> ()</td></tr>
+<tr class="separator:a5336186a0869404321dd8d6fc3d2e651"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4eee9d913c6fe5f6bcbd738b4e337bd5" id="r_a4eee9d913c6fe5f6bcbd738b4e337bd5"><td class="memTemplParams" colspan="2"><a id="a4eee9d913c6fe5f6bcbd738b4e337bd5" name="a4eee9d913c6fe5f6bcbd738b4e337bd5"></a>
+template&lt;typename T &gt; </td></tr>
+<tr class="memitem:a4eee9d913c6fe5f6bcbd738b4e337bd5"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>isIqElement</b> (const QDomElement &amp;el)</td></tr>
+<tr class="memdesc:a4eee9d913c6fe5f6bcbd738b4e337bd5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether a QDomElement is an IQ stanza of a specific type T. <br /></td></tr>
+<tr class="separator:a4eee9d913c6fe5f6bcbd738b4e337bd5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5bb47c8baa69b08cadf22d19702ffe5" id="r_af5bb47c8baa69b08cadf22d19702ffe5"><td class="memTemplParams" colspan="2"><a id="af5bb47c8baa69b08cadf22d19702ffe5" name="af5bb47c8baa69b08cadf22d19702ffe5"></a>
+template&lt;Private::HasXmlTag T&gt; </td></tr>
+<tr class="memitem:af5bb47c8baa69b08cadf22d19702ffe5"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><b>isElement</b> (const QDomElement &amp;el)</td></tr>
+<tr class="memdesc:af5bb47c8baa69b08cadf22d19702ffe5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks whether an XML element has the correct tag name and namespace URI for type T. <br /></td></tr>
+<tr class="separator:af5bb47c8baa69b08cadf22d19702ffe5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2044b316b259e1ee80ba4d8c4c5012c9" id="r_a2044b316b259e1ee80ba4d8c4c5012c9"><td class="memTemplParams" colspan="2">template&lt;typename... IqTypes, typename Handler &gt; </td></tr>
 <tr class="memitem:a2044b316b259e1ee80ba4d8c4c5012c9"><td class="memTemplItemLeft" align="right" valign="top">bool&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="namespaceQXmpp.html#a2044b316b259e1ee80ba4d8c4c5012c9">handleIqRequests</a> (const QDomElement &amp;element, const std::optional&lt; <a class="el" href="classQXmppE2eeMetadata.html">QXmppE2eeMetadata</a> &gt; &amp;e2eeMetadata, <a class="el" href="classQXmppClient.html">QXmppClient</a> *client, Handler handler)</td></tr>
 <tr class="separator:a2044b316b259e1ee80ba4d8c4c5012c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -228,6 +243,24 @@ Functions</h2></td></tr>
 <div class="textblock"><p>Contains global functions and enumerations.</p>
 <dl class="section since"><dt>Since</dt><dd><a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.5 </dd></dl>
 </div><h2 class="groupheader">Typedef Documentation</h2>
+<a id="a1314c0481a3c62f0ede6b6aed7c53384" name="a1314c0481a3c62f0ede6b6aed7c53384"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1314c0481a3c62f0ede6b6aed7c53384">&#9670;&#160;</a></span>Result</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T &gt; </div>
+      <table class="memname">
+        <tr>
+          <td class="memname">using <a class="el" href="namespaceQXmpp.html#a1314c0481a3c62f0ede6b6aed7c53384">QXmpp::Result</a> = typedef std::variant&lt;T, <a class="el" href="structQXmppError.html">QXmppError</a>&gt;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Generic result type offering value or <a class="el" href="structQXmppError.html">QXmppError</a></p>
+<dl class="section since"><dt>Since</dt><dd><a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.12 </dd></dl>
+
+</div>
+</div>
 <a id="a8450fdd55dbc654e0220eafe35d922fc" name="a8450fdd55dbc654e0220eafe35d922fc"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8450fdd55dbc654e0220eafe35d922fc">&#9670;&#160;</a></span>SendResult</h2>
 
@@ -291,13 +324,13 @@ Functions</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="adbe84fa39564cc52d80d015448a56dd6a49de70140287dbda13aceab3b22b1078" name="adbe84fa39564cc52d80d015448a56dd6a49de70140287dbda13aceab3b22b1078"></a>Omemo2&#160;</td><td class="fielddoc"><p><a href="https://xmpp.org/extensions/xep-0384.html">XEP-0384: OMEMO Encryption</a> since version 0.8 </p>
 </td></tr>
-<tr><td class="fieldname"><a id="adbe84fa39564cc52d80d015448a56dd6a4d9c0c170e88e7bc30af6f98505049df" name="adbe84fa39564cc52d80d015448a56dd6a4d9c0c170e88e7bc30af6f98505049df"></a>OTR&#160;</td><td class="fielddoc"><p><a href="https://xmpp.org/extensions/xep-0364.html">XEP-0364: Current Off-the-Record Messaging Usage</a> </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000015">Deprecated:</a></b></dt><dd>This enum is deprecated since <a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.5. Use <code><a class="el" href="namespaceQXmpp.html#adbe84fa39564cc52d80d015448a56dd6a5feaaf54325266b531d04cce6aa05969" title="XEP-0364: Current Off-the-Record Messaging Usage">QXmpp::Otr</a></code> instead. </dd></dl>
+<tr><td class="fieldname"><a id="adbe84fa39564cc52d80d015448a56dd6a4d9c0c170e88e7bc30af6f98505049df" name="adbe84fa39564cc52d80d015448a56dd6a4d9c0c170e88e7bc30af6f98505049df"></a>OTR&#160;</td><td class="fielddoc"><p><a href="https://xmpp.org/extensions/xep-0364.html">XEP-0364: Current Off-the-Record Messaging Usage</a> </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000016">Deprecated:</a></b></dt><dd>This enum is deprecated since <a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.5. Use <code><a class="el" href="namespaceQXmpp.html#adbe84fa39564cc52d80d015448a56dd6a5feaaf54325266b531d04cce6aa05969" title="XEP-0364: Current Off-the-Record Messaging Usage">QXmpp::Otr</a></code> instead. </dd></dl>
 </td></tr>
-<tr><td class="fieldname"><a id="adbe84fa39564cc52d80d015448a56dd6a7a7c6956031203038f4fffb88f9feed6" name="adbe84fa39564cc52d80d015448a56dd6a7a7c6956031203038f4fffb88f9feed6"></a>LegacyOpenPGP&#160;</td><td class="fielddoc"><p><a href="https://xmpp.org/extensions/xep-0027.html">XEP-0027: Current Jabber OpenPGP Usage</a> </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000016">Deprecated:</a></b></dt><dd>This enum is deprecated since <a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.5. Use <code><a class="el" href="namespaceQXmpp.html#adbe84fa39564cc52d80d015448a56dd6a18f21dcb88d8cff364d0b68f5e580607" title="XEP-0027: Current Jabber OpenPGP Usage">QXmpp::LegacyOpenPgp</a></code> instead. </dd></dl>
+<tr><td class="fieldname"><a id="adbe84fa39564cc52d80d015448a56dd6a7a7c6956031203038f4fffb88f9feed6" name="adbe84fa39564cc52d80d015448a56dd6a7a7c6956031203038f4fffb88f9feed6"></a>LegacyOpenPGP&#160;</td><td class="fielddoc"><p><a href="https://xmpp.org/extensions/xep-0027.html">XEP-0027: Current Jabber OpenPGP Usage</a> </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000017">Deprecated:</a></b></dt><dd>This enum is deprecated since <a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.5. Use <code><a class="el" href="namespaceQXmpp.html#adbe84fa39564cc52d80d015448a56dd6a18f21dcb88d8cff364d0b68f5e580607" title="XEP-0027: Current Jabber OpenPGP Usage">QXmpp::LegacyOpenPgp</a></code> instead. </dd></dl>
 </td></tr>
-<tr><td class="fieldname"><a id="adbe84fa39564cc52d80d015448a56dd6a6ae0c1c63f5527cb050e942a38f6c726" name="adbe84fa39564cc52d80d015448a56dd6a6ae0c1c63f5527cb050e942a38f6c726"></a>OX&#160;</td><td class="fielddoc"><p><a href="https://xmpp.org/extensions/xep-0373.html">XEP-0373: OpenPGP for XMPP</a> </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000017">Deprecated:</a></b></dt><dd>This enum is deprecated since <a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.5. Use <code><a class="el" href="namespaceQXmpp.html#adbe84fa39564cc52d80d015448a56dd6a4051b83a948e2a334e5b75f07557b77a" title="XEP-0373: OpenPGP for XMPP">QXmpp::Ox</a></code> instead. </dd></dl>
+<tr><td class="fieldname"><a id="adbe84fa39564cc52d80d015448a56dd6a6ae0c1c63f5527cb050e942a38f6c726" name="adbe84fa39564cc52d80d015448a56dd6a6ae0c1c63f5527cb050e942a38f6c726"></a>OX&#160;</td><td class="fielddoc"><p><a href="https://xmpp.org/extensions/xep-0373.html">XEP-0373: OpenPGP for XMPP</a> </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000018">Deprecated:</a></b></dt><dd>This enum is deprecated since <a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.5. Use <code><a class="el" href="namespaceQXmpp.html#adbe84fa39564cc52d80d015448a56dd6a4051b83a948e2a334e5b75f07557b77a" title="XEP-0373: OpenPGP for XMPP">QXmpp::Ox</a></code> instead. </dd></dl>
 </td></tr>
-<tr><td class="fieldname"><a id="adbe84fa39564cc52d80d015448a56dd6a3bd98dcdc982bab762928a820ab82a17" name="adbe84fa39564cc52d80d015448a56dd6a3bd98dcdc982bab762928a820ab82a17"></a>OMEMO&#160;</td><td class="fielddoc"><p><a href="https://xmpp.org/extensions/xep-0384.html">XEP-0384: OMEMO Encryption</a> </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000018">Deprecated:</a></b></dt><dd>This enum is deprecated since <a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.5. Use <code><a class="el" href="namespaceQXmpp.html#adbe84fa39564cc52d80d015448a56dd6a3dc65fecff6d7bda071abed886b37593" title="XEP-0384: OMEMO Encryption">QXmpp::Omemo0</a></code> instead. </dd></dl>
+<tr><td class="fieldname"><a id="adbe84fa39564cc52d80d015448a56dd6a3bd98dcdc982bab762928a820ab82a17" name="adbe84fa39564cc52d80d015448a56dd6a3bd98dcdc982bab762928a820ab82a17"></a>OMEMO&#160;</td><td class="fielddoc"><p><a href="https://xmpp.org/extensions/xep-0384.html">XEP-0384: OMEMO Encryption</a> </p><dl class="deprecated"><dt><b><a class="el" href="deprecated.html#_deprecated000019">Deprecated:</a></b></dt><dd>This enum is deprecated since <a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.5. Use <code><a class="el" href="namespaceQXmpp.html#adbe84fa39564cc52d80d015448a56dd6a3dc65fecff6d7bda071abed886b37593" title="XEP-0384: OMEMO Encryption">QXmpp::Omemo0</a></code> instead. </dd></dl>
 </td></tr>
 </table>
 
@@ -469,6 +502,26 @@ Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Function Documentation</h2>
+<a id="a5336186a0869404321dd8d6fc3d2e651" name="a5336186a0869404321dd8d6fc3d2e651"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5336186a0869404321dd8d6fc3d2e651">&#9670;&#160;</a></span>generateSequentialStanzaId()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">QString QXmpp::generateSequentialStanzaId </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p>Generates a new sequential stanza id. The ID is locally unique, not globally unique (see <a class="el" href="classQXmppUtils.html#a36f082013849450a716771a55f31f818">QXmppUtils::generateStanzaUuid()</a>).</p>
+<p>This is used for all QXmppStanzas automatically.</p>
+<dl class="section since"><dt>Since</dt><dd><a class="el" href="namespaceQXmpp.html">QXmpp</a> 1.11 </dd></dl>
+
+</div>
+</div>
 <a id="a2044b316b259e1ee80ba4d8c4c5012c9" name="a2044b316b259e1ee80ba4d8c4c5012c9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2044b316b259e1ee80ba4d8c4c5012c9">&#9670;&#160;</a></span>handleIqRequests() <span class="overload">[1/2]</span></h2>
 
@@ -523,8 +576,8 @@ template&lt;typename... IqTypes, typename Handler &gt; </div>
 <div class="line">});</div>
 <div class="ttc" id="aclassQXmppIq_html_a6bc7a0505a3be7309051ae2432a3d826a3dc74d347c7b00a2a1cd3b02b4cfd7b0"><div class="ttname"><a href="classQXmppIq.html#a6bc7a0505a3be7309051ae2432a3d826a3dc74d347c7b00a2a1cd3b02b4cfd7b0">QXmppIq::Set</a></div><div class="ttdeci">@ Set</div><div class="ttdoc">Set request.</div><div class="ttdef"><b>Definition</b> QXmppIq.h:29</div></div>
 <div class="ttc" id="aclassQXmppIq_html_a6bc7a0505a3be7309051ae2432a3d826a78ce31809da9bddb4ab04ad512293eb1"><div class="ttname"><a href="classQXmppIq.html#a6bc7a0505a3be7309051ae2432a3d826a78ce31809da9bddb4ab04ad512293eb1">QXmppIq::Get</a></div><div class="ttdeci">@ Get</div><div class="ttdoc">Get request.</div><div class="ttdef"><b>Definition</b> QXmppIq.h:28</div></div>
-<div class="ttc" id="aclassQXmppIq_html_aeec9bc83e6c869cd52bf11917d0186b2"><div class="ttname"><a href="classQXmppIq.html#aeec9bc83e6c869cd52bf11917d0186b2">QXmppIq::type</a></div><div class="ttdeci">QXmppIq::Type type() const</div><div class="ttdef"><b>Definition</b> QXmppIq.cpp:55</div></div>
-<div class="ttc" id="aclassQXmppVersionIq_html"><div class="ttname"><a href="classQXmppVersionIq.html">QXmppVersionIq</a></div><div class="ttdoc">The QXmppVersionIq class represents an IQ for conveying a software version as defined by XEP-0092: So...</div><div class="ttdef"><b>Definition</b> QXmppVersionIq.h:16</div></div>
+<div class="ttc" id="aclassQXmppIq_html_aeec9bc83e6c869cd52bf11917d0186b2"><div class="ttname"><a href="classQXmppIq.html#aeec9bc83e6c869cd52bf11917d0186b2">QXmppIq::type</a></div><div class="ttdeci">QXmppIq::Type type() const</div><div class="ttdef"><b>Definition</b> QXmppIq.cpp:60</div></div>
+<div class="ttc" id="aclassQXmppVersionIq_html"><div class="ttname"><a href="classQXmppVersionIq.html">QXmppVersionIq</a></div><div class="ttdoc">The QXmppVersionIq class represents an IQ for conveying a software version as defined by XEP-0092: So...</div><div class="ttdef"><b>Definition</b> QXmppVersionIq.h:17</div></div>
 </div><!-- fragment --><p>It is also possible to handle multiple IQ types. </p><div class="fragment"><div class="line"><span class="keyword">auto</span> handled = QXmpp::handleIqElements&lt;QXmppVersionIq, QXmppVCardIq&gt;(</div>
 <div class="line">    element, e2eeMetadata, client, [](std::variant&lt;QXmppVersionIq, QXmppVCardIq&gt; iqVariant) {</div>
 <div class="line">    <span class="comment">// ...</span></div>
@@ -546,7 +599,7 @@ template&lt;typename... IqTypes, typename Handler &gt; </div>
 <div class="line">            <span class="comment">// ...</span></div>
 <div class="line">        }</div>
 <div class="line">    });</div>
-<div class="ttc" id="aclassQXmppVCardIq_html"><div class="ttname"><a href="classQXmppVCardIq.html">QXmppVCardIq</a></div><div class="ttdoc">Represents the XMPP vCard.</div><div class="ttdef"><b>Definition</b> QXmppVCardIq.h:214</div></div>
+<div class="ttc" id="aclassQXmppVCardIq_html"><div class="ttname"><a href="classQXmppVCardIq.html">QXmppVCardIq</a></div><div class="ttdoc">Represents the XMPP vCard.</div><div class="ttdef"><b>Definition</b> QXmppVCardIq.h:217</div></div>
 </div><!-- fragment --><p>And another option is to an object with <code>handleIq()</code> functions. </p><div class="fragment"><div class="line"><span class="keyword">auto</span> handled = QXmpp::handleIqElements&lt;QXmppVersionIq, QXmppVCardIq&gt;(element, e2eeMetadata, client, <span class="keyword">this</span>);</div>
 <div class="line"><span class="comment">// will call this-&gt;handleIq(QXmppVersionIq) or this-&gt;handleIq(QXmppVCardIq)</span></div>
 </div><!-- fragment --><p>The return type of the handler function can be:</p><ol type="1">

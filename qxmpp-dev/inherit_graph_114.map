@@ -1,3 +1,13 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="Node000000" href="$structQXmppPubSubManager_1_1InvalidServiceType.html" title=" " alt="" coords="5,5,180,45"/>
+<area shape="rect" id="Node000000" href="$classQXmppPubSubBaseItem.html" title=" " alt="" coords="5,104,185,129"/>
+<area shape="rect" id="Node000001" href="$classQXmppGeolocItem.html" title=" " alt="" coords="257,5,403,31"/>
+<area shape="poly" id="edge96_Node000000_Node000001" title=" " alt="" coords="126,94,175,66,232,40,268,28,269,33,234,44,178,71,129,99"/>
+<area shape="rect" id="Node000002" href="$classQXmppMixConfigItem.html" title="The QXmppMixConfigItem class represents a PubSub item of a MIX channel containing its configuration a..." alt="" coords="247,55,413,80"/>
+<area shape="poly" id="edge97_Node000000_Node000002" title=" " alt="" coords="169,99,268,77,269,83,170,104"/>
+<area shape="rect" id="Node000003" href="$classQXmppMixInfoItem.html" title="The QXmppMixInfoItem class represents a PubSub item of a MIX channel containing channel information a..." alt="" coords="255,104,405,129"/>
+<area shape="poly" id="edge98_Node000000_Node000003" title=" " alt="" coords="199,114,255,114,255,119,199,119"/>
+<area shape="rect" id="Node000004" href="$classQXmppMixParticipantItem.html" title=" " alt="" coords="233,153,427,179"/>
+<area shape="poly" id="edge99_Node000000_Node000004" title=" " alt="" coords="170,130,269,151,268,156,169,135"/>
+<area shape="rect" id="Node000005" href="$classQXmppTuneItem.html" title=" " alt="" coords="265,203,395,228"/>
+<area shape="poly" id="edge100_Node000000_Node000005" title=" " alt="" coords="130,134,178,161,234,188,273,200,271,205,232,192,176,166,127,139"/>
 </map>

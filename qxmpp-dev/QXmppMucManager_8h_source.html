@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">QXmpp<span id="projectnumber">&#160;Version: 1.11.0</span>
+   <div id="projectname">QXmpp<span id="projectnumber">&#160;Version: 1.12.0</span>
    </div>
   </td>
  </tr>
@@ -243,29 +243,28 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span> </div>
 <div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span><span class="keyword">private</span> Q_SLOTS:</div>
 <div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>    <span class="keywordtype">void</span> _q_disconnected();</div>
-<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>    <span class="keywordtype">void</span> _q_discoveryInfoReceived(<span class="keyword">const</span> <a class="code hl_class" href="classQXmppDiscoveryIq.html">QXmppDiscoveryIq</a> &amp;iq);</div>
-<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>    <span class="keywordtype">void</span> _q_messageReceived(<span class="keyword">const</span> <a class="code hl_class" href="classQXmppMessage.html">QXmppMessage</a> &amp;message);</div>
-<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>    <span class="keywordtype">void</span> _q_presenceReceived(<span class="keyword">const</span> <a class="code hl_class" href="classQXmppPresence.html">QXmppPresence</a> &amp;presence);</div>
-<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span> </div>
-<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span><span class="keyword">private</span>:</div>
-<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>    <a class="code hl_class" href="classQXmppMucRoom.html">QXmppMucRoom</a>(<a class="code hl_class" href="classQXmppClient.html">QXmppClient</a> *client, <span class="keyword">const</span> QString &amp;jid, QObject *parent);</div>
-<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>    <span class="keyword">const</span> std::unique_ptr&lt;QXmppMucRoomPrivate&gt; d;</div>
-<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code hl_class" href="classQXmppMucManager.html">QXmppMucManager</a>;</div>
-<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span>};</div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>    <span class="keywordtype">void</span> _q_messageReceived(<span class="keyword">const</span> <a class="code hl_class" href="classQXmppMessage.html">QXmppMessage</a> &amp;message);</div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span>    <span class="keywordtype">void</span> _q_presenceReceived(<span class="keyword">const</span> <a class="code hl_class" href="classQXmppPresence.html">QXmppPresence</a> &amp;presence);</div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span> </div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span><span class="keyword">private</span>:</div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>    <a class="code hl_class" href="classQXmppMucRoom.html">QXmppMucRoom</a>(<a class="code hl_class" href="classQXmppClient.html">QXmppClient</a> *client, <span class="keyword">const</span> QString &amp;jid, QObject *parent);</div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>    <span class="keyword">const</span> std::unique_ptr&lt;QXmppMucRoomPrivate&gt; d;</div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>    <span class="keyword">friend</span> <span class="keyword">class </span><a class="code hl_class" href="classQXmppMucManager.html">QXmppMucManager</a>;</div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>};</div>
 </div>
-<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span> </div>
-<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>Q_DECLARE_OPERATORS_FOR_FLAGS(QXmppMucRoom::Actions)</div>
-<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span> </div>
-<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span> </div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>Q_DECLARE_OPERATORS_FOR_FLAGS(QXmppMucRoom::Actions)</div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span> </div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span><span class="preprocessor">#endif</span></div>
 <div class="ttc" id="aclassQXmppClientExtension_html"><div class="ttname"><a href="classQXmppClientExtension.html">QXmppClientExtension</a></div><div class="ttdoc">The QXmppClientExtension class is the base class for QXmppClient extensions.</div><div class="ttdef"><b>Definition</b> QXmppClientExtension.h:32</div></div>
 <div class="ttc" id="aclassQXmppClientExtension_html_a3ef15300fd584457adc40378a3103511"><div class="ttname"><a href="classQXmppClientExtension.html#a3ef15300fd584457adc40378a3103511">QXmppClientExtension::discoveryFeatures</a></div><div class="ttdeci">virtual QStringList discoveryFeatures() const</div><div class="ttdef"><b>Definition</b> QXmppClientExtension.cpp:22</div></div>
 <div class="ttc" id="aclassQXmppClientExtension_html_a6c8f2e1238405019c49a65ee9774dd23"><div class="ttname"><a href="classQXmppClientExtension.html#a6c8f2e1238405019c49a65ee9774dd23">QXmppClientExtension::onUnregistered</a></div><div class="ttdeci">virtual void onUnregistered(QXmppClient *client)</div><div class="ttdef"><b>Definition</b> QXmppClientExtension.cpp:95</div></div>
 <div class="ttc" id="aclassQXmppClientExtension_html_a6daab3c506be17d1f8dc571d213dae23"><div class="ttname"><a href="classQXmppClientExtension.html#a6daab3c506be17d1f8dc571d213dae23">QXmppClientExtension::onRegistered</a></div><div class="ttdeci">virtual void onRegistered(QXmppClient *client)</div><div class="ttdef"><b>Definition</b> QXmppClientExtension.cpp:85</div></div>
-<div class="ttc" id="aclassQXmppClientExtension_html_af836e49c31e96854b8d344f29f7e6b54"><div class="ttname"><a href="classQXmppClientExtension.html#af836e49c31e96854b8d344f29f7e6b54">QXmppClientExtension::handleStanza</a></div><div class="ttdeci">virtual bool handleStanza(const QDomElement &amp;stanza)</div><div class="ttdoc">You need to implement this method to process incoming XMPP stanzas.</div><div class="ttdef"><b>Definition</b> client/compat/removed_api.cpp:26</div></div>
+<div class="ttc" id="aclassQXmppClientExtension_html_af836e49c31e96854b8d344f29f7e6b54"><div class="ttname"><a href="classQXmppClientExtension.html#af836e49c31e96854b8d344f29f7e6b54">QXmppClientExtension::handleStanza</a></div><div class="ttdeci">virtual bool handleStanza(const QDomElement &amp;stanza)</div><div class="ttdoc">You need to implement this method to process incoming XMPP stanzas.</div><div class="ttdef"><b>Definition</b> client/compat/removed_api.cpp:44</div></div>
 <div class="ttc" id="aclassQXmppClient_html"><div class="ttname"><a href="classQXmppClient.html">QXmppClient</a></div><div class="ttdoc">Main class for starting and managing connections to XMPP servers.</div><div class="ttdef"><b>Definition</b> QXmppClient.h:62</div></div>
-<div class="ttc" id="aclassQXmppDataForm_html"><div class="ttname"><a href="classQXmppDataForm.html">QXmppDataForm</a></div><div class="ttdef"><b>Definition</b> QXmppDataForm.h:27</div></div>
-<div class="ttc" id="aclassQXmppDiscoveryIq_html"><div class="ttname"><a href="classQXmppDiscoveryIq.html">QXmppDiscoveryIq</a></div><div class="ttdef"><b>Definition</b> QXmppDiscoveryIq.h:18</div></div>
-<div class="ttc" id="aclassQXmppExternalService_html_af0c7d434fdd347fd2aa774be3929bad8"><div class="ttname"><a href="classQXmppExternalService.html#af0c7d434fdd347fd2aa774be3929bad8">QXmppExternalService::Action</a></div><div class="ttdeci">Action</div><div class="ttdef"><b>Definition</b> QXmppExternalService.h:27</div></div>
+<div class="ttc" id="aclassQXmppDataForm_html"><div class="ttname"><a href="classQXmppDataForm.html">QXmppDataForm</a></div><div class="ttdef"><b>Definition</b> QXmppDataForm.h:28</div></div>
+<div class="ttc" id="aclassQXmppDiscoveryIq_html"><div class="ttname"><a href="classQXmppDiscoveryIq.html">QXmppDiscoveryIq</a></div><div class="ttdef"><b>Definition</b> QXmppDiscoveryIq.h:200</div></div>
+<div class="ttc" id="aclassQXmppExternalService_html_af0c7d434fdd347fd2aa774be3929bad8"><div class="ttname"><a href="classQXmppExternalService.html#af0c7d434fdd347fd2aa774be3929bad8">QXmppExternalService::Action</a></div><div class="ttdeci">Action</div><div class="ttdef"><b>Definition</b> QXmppExternalService.h:28</div></div>
 <div class="ttc" id="aclassQXmppMessage_html"><div class="ttname"><a href="classQXmppMessage.html">QXmppMessage</a></div><div class="ttdoc">The QXmppMessage class represents an XMPP message.</div><div class="ttdef"><b>Definition</b> QXmppMessage.h:64</div></div>
 <div class="ttc" id="aclassQXmppMucManager_html"><div class="ttname"><a href="classQXmppMucManager.html">QXmppMucManager</a></div><div class="ttdoc">The QXmppMucManager class makes it possible to interact with multi-user chat rooms as defined by XEP-...</div><div class="ttdef"><b>Definition</b> QXmppMucManager.h:42</div></div>
 <div class="ttc" id="aclassQXmppMucManager_html_a8ad1ab6b9c8bf656bedbd8cd31a0076b"><div class="ttname"><a href="classQXmppMucManager.html#a8ad1ab6b9c8bf656bedbd8cd31a0076b">QXmppMucManager::invitationReceived</a></div><div class="ttdeci">void invitationReceived(const QString &amp;roomJid, const QString &amp;inviter, const QString &amp;reason)</div><div class="ttdoc">This signal is emitted when an invitation to a chat room is received.</div></div>
@@ -287,7 +286,7 @@ $(document).ready(function() { init_codefold(0); });
 <div class="ttc" id="aclassQXmppMucRoom_html_acd3129293f69d7e7cdd91b65aae0606f"><div class="ttname"><a href="classQXmppMucRoom.html#acd3129293f69d7e7cdd91b65aae0606f">QXmppMucRoom::Action</a></div><div class="ttdeci">Action</div><div class="ttdoc">This enum is used to describe chat room actions.</div><div class="ttdef"><b>Definition</b> QXmppMucManager.h:112</div></div>
 <div class="ttc" id="aclassQXmppMucRoom_html_afc2ca70209ab1ab43f75c86221f34cdc"><div class="ttname"><a href="classQXmppMucRoom.html#afc2ca70209ab1ab43f75c86221f34cdc">QXmppMucRoom::kicked</a></div><div class="ttdeci">void kicked(const QString &amp;jid, const QString &amp;reason)</div><div class="ttdoc">This signal is emitted if you get kicked from the room.</div></div>
 <div class="ttc" id="aclassQXmppPresence_html"><div class="ttname"><a href="classQXmppPresence.html">QXmppPresence</a></div><div class="ttdoc">The QXmppPresence class represents an XMPP presence stanza.</div><div class="ttdef"><b>Definition</b> QXmppPresence.h:22</div></div>
-<div class="ttc" id="aclassQXmppStanza_1_1Error_html"><div class="ttname"><a href="classQXmppStanza_1_1Error.html">QXmppStanza::Error</a></div><div class="ttdoc">The Error class represents a stanza error.</div><div class="ttdef"><b>Definition</b> QXmppStanza.h:94</div></div>
+<div class="ttc" id="aclassQXmppStanza_1_1Error_html"><div class="ttname"><a href="classQXmppStanza_1_1Error.html">QXmppStanza::Error</a></div><div class="ttdoc">The Error class represents a stanza error.</div><div class="ttdef"><b>Definition</b> QXmppStanza.h:96</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

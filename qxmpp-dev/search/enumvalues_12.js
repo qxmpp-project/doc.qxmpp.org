@@ -16,10 +16,11 @@ var searchData=
   ['starttls_13',['StartTls',['../classQXmppStartTlsPacket.html#adeb1fedba9c3d0dc109201fa4fa7cb59ace4f9c7a9b4ea2edc81f3e20eeca8408',1,'QXmppStartTlsPacket']]],
   ['stdoutlogging_14',['StdoutLogging',['../classQXmppLogger.html#a9a52fe426322ef8e10e05b7092be6c20acd51c8c54ebb5284752f224c69709998',1,'QXmppLogger']]],
   ['store_15',['Store',['../classQXmppMessage.html#aea1a3c281a281bc3a4fbc9f48b554256a32bacb2cf0afce2b83ef293d10a7db17',1,'QXmppMessage']]],
-  ['subjectaction_16',['SubjectAction',['../classQXmppMucRoom.html#acd3129293f69d7e7cdd91b65aae0606fa1b691dc1004e867aa844ba380bb383ad',1,'QXmppMucRoom']]],
-  ['submit_17',['Submit',['../classQXmppDataForm.html#adab12c436b8c450e2b4f59da1aecadeeae6ab517a99b8c387056bd5d341de4082',1,'QXmppDataForm']]],
-  ['subscribe_18',['Subscribe',['../classQXmppPresence.html#a47ab8dd08436f9d7c90d2990678b5a6da27a106dd1fc50ecdba0ad9b95307ce62',1,'QXmppPresence']]],
-  ['subscribed_19',['subscribed',['../classQXmppPresence.html#a47ab8dd08436f9d7c90d2990678b5a6da59304e64fb15ce69c9395f6d217dcb6b',1,'QXmppPresence::Subscribed'],['../classQXmppPubSubSubscription.html#aad82576dfb8c85c7b658958c65727cf9a223faf63ce143e4aee4863d9cc1ddba9',1,'QXmppPubSubSubscription::Subscribed']]],
-  ['subscriptionrequired_20',['SubscriptionRequired',['../classQXmppStanza_1_1Error.html#abcf1cbbe7b15ec82f3ac34723b604852acf4f5e2e8bbdb4268fa3d27a031ea4e3',1,'QXmppStanza::Error']]],
-  ['supported_21',['Supported',['../classQXmppMixManager.html#a6f86fc70a3919811935481d3936d83c5aeaa4dc5078017a5c5bebf383ab6f5124',1,'QXmppMixManager']]]
+  ['strict_16',['Strict',['../classQXmppDiscoveryManager.html#a10fec695eeab493f9a388a123b188cf1a2e979835dd62324f5bfe217449ba4974',1,'QXmppDiscoveryManager']]],
+  ['subjectaction_17',['SubjectAction',['../classQXmppMucRoom.html#acd3129293f69d7e7cdd91b65aae0606fa1b691dc1004e867aa844ba380bb383ad',1,'QXmppMucRoom']]],
+  ['submit_18',['Submit',['../classQXmppDataForm.html#adab12c436b8c450e2b4f59da1aecadeeae6ab517a99b8c387056bd5d341de4082',1,'QXmppDataForm']]],
+  ['subscribe_19',['Subscribe',['../classQXmppPresence.html#a47ab8dd08436f9d7c90d2990678b5a6da27a106dd1fc50ecdba0ad9b95307ce62',1,'QXmppPresence']]],
+  ['subscribed_20',['subscribed',['../classQXmppPresence.html#a47ab8dd08436f9d7c90d2990678b5a6da59304e64fb15ce69c9395f6d217dcb6b',1,'QXmppPresence::Subscribed'],['../classQXmppPubSubSubscription.html#aad82576dfb8c85c7b658958c65727cf9a223faf63ce143e4aee4863d9cc1ddba9',1,'QXmppPubSubSubscription::Subscribed']]],
+  ['subscriptionrequired_21',['SubscriptionRequired',['../classQXmppStanza_1_1Error.html#abcf1cbbe7b15ec82f3ac34723b604852acf4f5e2e8bbdb4268fa3d27a031ea4e3',1,'QXmppStanza::Error']]],
+  ['supported_22',['Supported',['../classQXmppMixManager.html#a6f86fc70a3919811935481d3936d83c5aeaa4dc5078017a5c5bebf383ab6f5124',1,'QXmppMixManager']]]
 ];

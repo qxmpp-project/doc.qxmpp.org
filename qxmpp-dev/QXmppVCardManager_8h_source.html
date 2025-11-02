@@ -21,7 +21,7 @@
  <tbody>
  <tr id="projectrow">
   <td id="projectalign">
-   <div id="projectname">QXmpp<span id="projectnumber">&#160;Version: 1.11.0</span>
+   <div id="projectname">QXmpp<span id="projectnumber">&#160;Version: 1.12.0</span>
    </div>
   </td>
  </tr>
@@ -141,10 +141,10 @@ $(document).ready(function() { init_codefold(0); });
 <div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span><span class="preprocessor">#endif  </span><span class="comment">// QXMPPVCARDMANAGER_H</span></div>
 <div class="ttc" id="aclassQXmppClientExtension_html"><div class="ttname"><a href="classQXmppClientExtension.html">QXmppClientExtension</a></div><div class="ttdoc">The QXmppClientExtension class is the base class for QXmppClient extensions.</div><div class="ttdef"><b>Definition</b> QXmppClientExtension.h:32</div></div>
 <div class="ttc" id="aclassQXmppClientExtension_html_a3ef15300fd584457adc40378a3103511"><div class="ttname"><a href="classQXmppClientExtension.html#a3ef15300fd584457adc40378a3103511">QXmppClientExtension::discoveryFeatures</a></div><div class="ttdeci">virtual QStringList discoveryFeatures() const</div><div class="ttdef"><b>Definition</b> QXmppClientExtension.cpp:22</div></div>
-<div class="ttc" id="aclassQXmppClientExtension_html_af836e49c31e96854b8d344f29f7e6b54"><div class="ttname"><a href="classQXmppClientExtension.html#af836e49c31e96854b8d344f29f7e6b54">QXmppClientExtension::handleStanza</a></div><div class="ttdeci">virtual bool handleStanza(const QDomElement &amp;stanza)</div><div class="ttdoc">You need to implement this method to process incoming XMPP stanzas.</div><div class="ttdef"><b>Definition</b> client/compat/removed_api.cpp:26</div></div>
+<div class="ttc" id="aclassQXmppClientExtension_html_af836e49c31e96854b8d344f29f7e6b54"><div class="ttname"><a href="classQXmppClientExtension.html#af836e49c31e96854b8d344f29f7e6b54">QXmppClientExtension::handleStanza</a></div><div class="ttdeci">virtual bool handleStanza(const QDomElement &amp;stanza)</div><div class="ttdoc">You need to implement this method to process incoming XMPP stanzas.</div><div class="ttdef"><b>Definition</b> client/compat/removed_api.cpp:44</div></div>
 <div class="ttc" id="aclassQXmppClient_html"><div class="ttname"><a href="classQXmppClient.html">QXmppClient</a></div><div class="ttdoc">Main class for starting and managing connections to XMPP servers.</div><div class="ttdef"><b>Definition</b> QXmppClient.h:62</div></div>
-<div class="ttc" id="aclassQXmppTask_html"><div class="ttname"><a href="classQXmppTask.html">QXmppTask</a></div><div class="ttdef"><b>Definition</b> QXmppTask.h:62</div></div>
-<div class="ttc" id="aclassQXmppVCardIq_html"><div class="ttname"><a href="classQXmppVCardIq.html">QXmppVCardIq</a></div><div class="ttdoc">Represents the XMPP vCard.</div><div class="ttdef"><b>Definition</b> QXmppVCardIq.h:214</div></div>
+<div class="ttc" id="aclassQXmppTask_html"><div class="ttname"><a href="classQXmppTask.html">QXmppTask</a></div><div class="ttdef"><b>Definition</b> QXmppTask.h:46</div></div>
+<div class="ttc" id="aclassQXmppVCardIq_html"><div class="ttname"><a href="classQXmppVCardIq.html">QXmppVCardIq</a></div><div class="ttdoc">Represents the XMPP vCard.</div><div class="ttdef"><b>Definition</b> QXmppVCardIq.h:217</div></div>
 <div class="ttc" id="aclassQXmppVCardManager_html"><div class="ttname"><a href="classQXmppVCardManager.html">QXmppVCardManager</a></div><div class="ttdoc">The QXmppVCardManager class gets/sets XMPP vCards. It is an implementation of XEP-0054: vcard-temp.</div><div class="ttdef"><b>Definition</b> QXmppVCardManager.h:43</div></div>
 <div class="ttc" id="aclassQXmppVCardManager_html_a685fb5c27e06d3beb3595ff423d1dbaf"><div class="ttname"><a href="classQXmppVCardManager.html#a685fb5c27e06d3beb3595ff423d1dbaf">QXmppVCardManager::VCardIqResult</a></div><div class="ttdeci">std::variant&lt; QXmppVCardIq, QXmppError &gt; VCardIqResult</div><div class="ttdoc">QXmppVCardIq or QXmppError.</div><div class="ttdef"><b>Definition</b> QXmppVCardManager.h:50</div></div>
 <div class="ttc" id="aclassQXmppVCardManager_html_a6c67da960890760e54fec8f7c675af55"><div class="ttname"><a href="classQXmppVCardManager.html#a6c67da960890760e54fec8f7c675af55">QXmppVCardManager::vCardReceived</a></div><div class="ttdeci">void vCardReceived(const QXmppVCardIq &amp;)</div></div>
