@@ -1,0 +1,9 @@
+<map id="QXmppCallInviteManager" name="QXmppCallInviteManager">
+<area shape="rect" id="Node000001" title="The QXmppCallInviteManager class makes it possible to retrieve Call Invite elements as defined by XEP..." alt="" coords="97,152,286,177"/>
+<area shape="rect" id="Node000002" href="$classQXmppClientExtension.html" title="The QXmppClientExtension class is the base class for QXmppClient extensions." alt="" coords="5,79,177,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="120,110,177,150,173,154,117,114"/>
+<area shape="rect" id="Node000003" href="$classQXmppLoggable.html" title="The QXmppLoggable class represents a source of logging messages." alt="" coords="27,5,156,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="94,44,94,79,89,79,89,44"/>
+<area shape="rect" id="Node000004" href="$classQXmppMessageHandler.html" title=" " alt="" coords="202,79,381,104"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="266,114,209,154,206,150,263,110"/>
+</map>

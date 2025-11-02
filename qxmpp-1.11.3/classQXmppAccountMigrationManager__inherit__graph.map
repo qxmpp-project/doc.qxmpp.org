@@ -1,0 +1,7 @@
+<map id="QXmppAccountMigrationManager" name="QXmppAccountMigrationManager">
+<area shape="rect" id="Node000001" title="Allows to export and import account data." alt="" coords="5,152,247,177"/>
+<area shape="rect" id="Node000002" href="$classQXmppClientExtension.html" title="The QXmppClientExtension class is the base class for QXmppClient extensions." alt="" coords="40,79,212,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="129,118,129,152,123,152,123,118"/>
+<area shape="rect" id="Node000003" href="$classQXmppLoggable.html" title="The QXmppLoggable class represents a source of logging messages." alt="" coords="61,5,191,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="129,44,129,79,123,79,123,44"/>
+</map>

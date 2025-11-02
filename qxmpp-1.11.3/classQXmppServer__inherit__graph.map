@@ -1,0 +1,5 @@
+<map id="QXmppServer" name="QXmppServer">
+<area shape="rect" id="Node000001" title="The QXmppServer class represents an XMPP server." alt="" coords="14,79,126,104"/>
+<area shape="rect" id="Node000002" href="$classQXmppLoggable.html" title="The QXmppLoggable class represents a source of logging messages." alt="" coords="5,5,135,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="73,44,73,79,67,79,67,44"/>
+</map>
